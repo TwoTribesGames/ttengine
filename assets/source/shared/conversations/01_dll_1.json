@@ -1,0 +1,79 @@
+{
+	"start": 
+	[
+		{
+			"textID": "01_DLL_A_DL",
+			"actor": 1,
+			"emotion": "happy"
+		},
+		{
+			"textID": "01_DLL_B_RS",
+			"actor": 0,
+			"emotion": "scared"
+		},
+		{
+			"delay": 0.5,
+			"textID": "01_DLL_C_RS",
+			"actor": 0,
+			"emotion": "neutral"
+		},
+		{
+			"textID": "01_DLL_D_DL",
+			"actor": 1,
+			"emotion": "happy"
+		},
+		{
+			"textID": "01_DLL_E_RS",
+			"actor": 0,
+			"emotion": "angry"
+		},
+		{
+			"textID": "01_DLL_G_DL",
+			"actor": 1,
+			"emotion": "neutral"
+		},
+		{
+			"textID": "01_DLL_H_DL",
+			"actor": 1,
+			"emotion": "happy"
+		},
+		{
+			"textID": "01_DLL_I_RS",
+			"actor": 0,
+			"emotion": "angry"
+		},
+		{
+			"textID": "01_DLL_J_DL",
+			"actor": 1,
+			"emotion": "neutral"
+		},
+		{
+			"actor": 1,
+			"emotion": "working",
+			"duration": 2.0
+		},
+		{
+			"trigger": 1
+		},
+		{
+			"actor": 1,
+			"callback": {"name": "goHome"}
+		},
+		{
+			"actor": 1,
+			"emotion": "neutral",
+			"duration": 0.01
+		}
+	],
+	"abort": 
+	[
+		{
+			"textID": "01_DLL_EXIT1_RS",
+			"actor": 0,
+			"emotion": "happy"
+		},
+		{
+			"trigger": 2
+		}	
+	]
+}

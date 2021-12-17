@@ -1,0 +1,1 @@
+..\tools\tttray\TTtray.exe --register-config ttgame.tttray

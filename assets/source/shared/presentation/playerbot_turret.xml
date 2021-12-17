@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		permanent="true">
+	<startvalues>
+		<rotation value="90"/> <!-- offset to match actual angle in game -->
+		<scale scale="1.3"/>
+		<translation z="0.02"/>
+	</startvalues>
+
+	<frameanimstack name="idle">
+		<frameanim directory="spritestrip/playerbot/turret/turret" quad_height="2" quad_width="2" fps="10" looping="true">
+			<begin frame="0"/>
+			<end   frame="0"/>
+		</frameanim>
+	</frameanimstack>
+
+	<frameanimstack name="fire">
+		<frameanim directory="spritestrip/playerbot/turret/turret" quad_height="2" quad_width="2" fps="6" looping="false">
+			<begin frame="0"/>
+			<end   frame="0"/>
+		</frameanim>
+	</frameanimstack>
+
+	<frameanimstack name="fire">
+		<musthave>
+			<tag name="player"/>
+		</musthave>
+		<frameanim lightmask="use_alpha" directory="spritestrip/playerbot/turret/muzzleflash" quad_height="1.2" quad_width="2.4" fps="60" duration="0.05" looping="true" blendmode="add">
+			<begin frame="0"/>
+			<end   frame="2"/>
+			<translation y="0" x="0.9"/>
+		</frameanim>
+	</frameanimstack>
+
+	<frameanimstack name="fire">
+		<musthave>
+			<tag name="enemy"/>
+		</musthave>
+		<frameanim directory="spritestrip/turretenemy/muzzleflash" quad_height="2" quad_width="2" fps="10" duration="0.05" looping="true" blendmode="add">
+			<begin frame="0"/>
+			<end   frame="2"/>
+			<translation y="0.04" x="1.22"/>
+		</frameanim>
+	</frameanimstack>
+
+	<particles name="fire" file="particles/bullet_casing.trigger" position_type="relative">
+		<musthave>
+			<tag name="player"/>
+		</musthave>
+		<mustnothave>
+			<tag name="zerogravity"/>
+		</mustnothave>
+		<mustnothave>
+			<tag name="submerged"/>
+		</mustnothave>
+		<translation x="0" y="0" z="0"/>
+	</particles>
+
+	<particles name="fire" file="particles/bullet_casing_zerogravity.trigger" position_type="relative">
+		<musthave>
+			<tag name="player"/>
+			<tag name="zerogravity"/>
+		</musthave>
+		<translation x="0" y="0" z="0"/>
+	</particles>
+
+	<particles name="fire" file="particles/bullet_casing_underwater.trigger" position_type="relative">
+		<musthave>
+			<tag name="player"/>
+			<tag name="submerged"/>
+		</musthave>
+		<translation x="0" y="0" z="0"/>
+	</particles>
+
+</presentation>

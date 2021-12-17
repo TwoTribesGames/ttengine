@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		permanent="true">
+
+	<startvalues>
+		<scale scale="r(0.55),(0.65)"/>
+	</startvalues>
+	
+	<!--IDLE-->
+	<frameanimstack name="idle" type="sequence">
+		<frameanim directory="spritestrip/bullet/grenade/idle" lightmask="use_lightmask" ignore_fog="true" fps="r(30),(50)" duration="1" delay="0" quad_width="2.3" quad_height="2.3" direction="forward" looping="true">
+			<begin frame="0" hold="true"/>
+			<end   frame="7" hold="true"/>
+		</frameanim>
+	<frameanim directory="spritestrip/bullet/grenade/idle" lightmask="use_lightmask" ignore_fog="true" fps="r(15),(30)" duration="0.5" delay="0" quad_width="2.3" quad_height="2.3" direction="forward" looping="true">
+			<begin frame="0" hold="true"/>
+			<end   frame="7" hold="true"/>
+		</frameanim>
+	<frameanim directory="spritestrip/bullet/grenade/idle" lightmask="use_lightmask" ignore_fog="true" fps="r(15),(30)" delay="0" quad_width="2.3" quad_height="2.3" direction="forward" looping="true">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<particles file="particles/grenade_glow.trigger" name="idle" looping="true" duration="0" position_type="follow">
+		<translation x="0" z="-0.1" y="0.0"/>
+	</particles>
+
+	<!--defused-->
+	<frameanimstack name="defused">
+		<frameanim directory="spritestrip/bullet/grenade/countdown" lightmask="use_lightmask" ignore_fog="true" fps="22" quad_width="2.3" quad_height="2.3" direction="forward" looping="true">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+		</frameanim>
+	</frameanimstack>
+
+	<particles file="particles/grenade_defused.trigger" name="defused" looping="true" duration="0" position_type="follow"/>
+
+	<coloranimstack name="defused">
+		<color duration="0.25" delay="2.75">
+			<begin r="0" g="0" b="0" a="0"/>
+			<end   r="0" g="0" b="0" a="-255"/>
+		</color>
+	</coloranimstack>
+
+	<anim2dstack name="idle">
+		<rotation duration="1" looping="true">
+			<begin rotation="0"/>
+			<end rotation="360"/>
+		</rotation>
+	</anim2dstack>
+	
+	<!-- disabled -->
+		<frameanimstack name="disabled">
+		<frameanim directory="spritestrip/bullet/grenade/idle" lightmask="use_lightmask" ignore_fog="true" fps="r(20),(40)" quad_width="2.3" quad_height="2.3" direction="forward" looping="true">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+		</frameanim>
+	</frameanimstack>
+
+	<anim2dstack name="disabled">
+		<rotation duration="1.5" direction="forward" timing="easeout">
+			<begin rotation="r(0),(60)"/>
+			<end rotation="r(320),(380)"/>
+		</rotation>
+	</anim2dstack>
+
+	<coloranimstack name="disabled">
+		<color duration="1" delay="1.75">
+			<begin a="0"/>
+			<end a="-255"/>
+		</color>
+	</coloranimstack>
+
+	<particles name="disabled" file="particles/water_splash_missile.trigger" position_type="relative">
+		<musthave>
+			<tag name="splash"/>
+		</musthave>
+		<translation x="0" z="0.0" y="0.0"/>
+	</particles>
+
+	<trigger name="disabled" type="audio" data="impact_missile_water">
+		<musthave>
+			<tag name="water"/>
+		</musthave>
+	</trigger>
+
+	<particles name="disabled" file="particles/rocket_underwater.trigger" duration="0.5" position_type="follow">
+		<musthave>
+			<tag name="water"/>
+		</musthave>	
+		<translation x="0" z="0.0" y="0.0"/>
+	</particles>
+
+	<particles name="disabled" file="particles/rocket_sinking.trigger" looping="true" position_type="follow">
+		<musthave>
+			<tag name="water"/>
+		</musthave>	
+		<translation x="0" z="0.0" y="0.0"/>
+	</particles>
+</presentation>
+
+

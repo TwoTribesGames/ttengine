@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		dont_precache="true" permanent="true">
+
+  <startvalues>
+    <translation z="-1.11"/>
+  </startvalues>
+
+  <frameanimstack>
+		<frameanim directory="spritestrip/logo/twotribes" fps="30" looping="true" quad_width="0.5" quad_height="0.25">
+			<begin frame="0" hold="true" />
+			<end   frame="0" hold="true" />
+			<translation y="4.3"/>
+			<scale scale="1.5"/>
+		</frameanim>
+	</frameanimstack>
+
+	<frameanimstack>
+		<frameanim directory="spritestrip/credits" fps="30" looping="true" quad_width="1" quad_height="4">
+			<begin frame="0" hold="true" />
+			<end   frame="0" hold="true" />
+			<translation y="2.0"/>
+		</frameanim>
+	</frameanimstack>
+
+	<frameanimstack>
+		<frameanim directory="spritestrip/credits" fps="30" looping="true" quad_width="1" quad_height="4">
+			<begin frame="1" hold="true" />
+			<end   frame="1" hold="true" />
+			<translation y="-2.0"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<frameanimstack>
+		<frameanim directory="spritestrip/credits" fps="30" looping="true" quad_width="1" quad_height="4">
+			<begin frame="2" hold="true" />
+			<end   frame="2" hold="true" />
+			<translation y="-6.0"/>
+		</frameanim>
+	</frameanimstack>
+
+	<anim2dstack>
+		<translation duration="160">
+			<begin x="-0.4" y="-5.5"/>
+			<end x="-0.4" y="10.2"/>
+		</translation>
+	</anim2dstack>
+
+</presentation>
+
+

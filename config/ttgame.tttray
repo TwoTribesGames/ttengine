@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trayconfig xmlns="http://twotribes.com/schemas/common/trayconfig.xsd"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="http://twotribes.com/schemas/common/trayconfig.xsd http://twotribes.com/schemas/common/trayconfig.xsd"
+            name="Two Tribes Game">
+	<!-- Asset tool -->
+	<command name="Asset Tool (Windows)">
+		<target>$(ConfigDir)..\tools\assetconverters\AssetTool.exe</target>
+		<arguments>$(ConfigDir)..\assets\windows.xml</arguments>
+		<working_dir>$(ConfigDir)..\assets</working_dir>
+	</command>
+
+	<!-- Shoebox Editor -->
+	<command name="Shoebox Editor">
+		<target>$(ConfigDir)..\tools\shoeboxedit\shoeboxedit.exe</target>
+	</command>
+
+	<!--  Particle Editor -->
+	<command name="Particle Editor">
+		<target>$(ConfigDir)..\tools\ParticleEditor\ParticleEditor.exe</target>
+		<arguments>--resizable --config $(ConfigDir)particleeditor.xml</arguments>
+		<working_dir>$(ConfigDir)..\assets\output</working_dir>
+	</command>
+	
+	<!-- Presentation Viewer -->
+	<command name="Presentation Viewer">
+		<target>$(ConfigDir)..\build\win\ttgame.exe</target>
+		<arguments>--state presentation_viewer --windowed-width 1200 --windowed-height 950 --resizable --no_precache --developer</arguments>
+		<working_dir>$(ConfigDir)..\assets\output</working_dir>
+	</command>
+	
+	<separator/>
+	
+	<!-- Asset conversion -->
+	<command name="Build PC">
+		<target>$(ConfigDir)..\assets\conversion\convert_win.bat</target>
+		<working_dir>$(ConfigDir)..\assets\conversion</working_dir>
+	</command>
+	<command name="Rebuild PC">
+		<target>$(ConfigDir)..\assets\conversion\convert_win_rebuild.bat</target>
+		<working_dir>$(ConfigDir)..\assets\conversion</working_dir>
+	</command>
+	<command name="Rebuild Scripts (PC)">
+		<target>$(ConfigDir)..\assets\conversion\convert_win_rebuild_script.bat</target>
+		<working_dir>$(ConfigDir)..\assets\conversion</working_dir>
+	</command>
+	
+	<command name="Rebuild Levels (PC)">
+		<target>$(ConfigDir)..\assets\conversion\convert_win_rebuild_levels.bat</target>
+		<working_dir>$(ConfigDir)..\assets\conversion</working_dir>
+	</command>
+	
+	<separator/>
+	
+	<!-- Game launchers -->
+	<command name="Game Launcher">
+		<target>$(ConfigDir)..\tools\gamelauncher\GameLauncher.exe</target>
+		<arguments>$(ConfigDir)gamelauncher.xml</arguments>
+	</command>
+	
+	<separator/>
+
+	<command name="Run PC">
+		<target>$(ConfigDir)..\build\win\ttgame.exe</target>
+		<arguments>--no_precache --developer</arguments>
+		<working_dir>$(ConfigDir)..\assets\output</working_dir>
+	</command>
+	
+	<separator/>
+	
+	<!-- Scripts -->
+	<command name="Script Workspace">
+		<target>$(ConfigDir)..\assets\scripts.code-workspace</target>
+		<working_dir>$(ConfigDir)..\assets\source\shared\scripts\</working_dir>
+	</command>	
+	
+	<command name="Open Scripts Folder">
+		<target>$(ConfigDir)..\assets\source\shared\scripts</target>
+	</command>
+	
+	<separator/>
+	
+	<!-- Solution launcher -->
+	<command name="ttgame.sln">
+		<target>$(ConfigDir)..\src\ttgame.sln</target>
+		<working_dir>$(ConfigDir)..\src</working_dir>
+	</command>
+</trayconfig>

@@ -1,0 +1,849 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toki xmlns="http://www.twotribes.com/schemas/config.xsd"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.twotribes.com/schemas/config.xsd config.xsd">
+	<startup>
+		<!-- Name of the level to start if no level was specified explicitly -->
+		<default_level>menu</default_level>
+		<restore_failure_level>menu</restore_failure_level>
+	</startup>
+	
+	<loading>
+		<presentations>presentation/loading</presentations>
+		<level_preview>
+			<time>10</time>
+			<scale_min>1.0</scale_min>
+			<scale_max>1.1</scale_max>
+		</level_preview>
+	</loading>
+	
+	<effects>
+		<camera_position>
+			<decay>0.04</decay>
+		</camera_position>
+	</effects>
+	
+	<glyphsets>
+		<title>
+			<name>title</name>
+			<character_spacing>11</character_spacing>
+			<character_spacing_jp>11</character_spacing_jp>
+			<character_spacing_zh>11</character_spacing_zh>
+			<word_separator_width>40</word_separator_width>
+			<vertical_spacing>20</vertical_spacing>
+		</title>
+		
+		<header>
+			<name>header</name>
+			<character_spacing>9</character_spacing>
+			<character_spacing_jp>9</character_spacing_jp>
+			<character_spacing_zh>9</character_spacing_zh>
+			<word_separator_width>22</word_separator_width>
+			<vertical_spacing>20</vertical_spacing>
+		</header>
+		
+		<text>
+			<name>text</name>
+			<character_spacing>5</character_spacing>
+			<character_spacing_jp>5</character_spacing_jp>
+			<character_spacing_zh>5</character_spacing_zh>
+			<word_separator_width>20</word_separator_width>
+			<vertical_spacing>14</vertical_spacing>
+		</text>
+		
+		<leaderboard_text>
+			<name>leaderboard_text</name>
+			<character_spacing>5</character_spacing>
+			<word_separator_width>20</word_separator_width>
+			<vertical_spacing>14</vertical_spacing>
+		</leaderboard_text>
+		
+		<notes>
+			<name>notes</name>
+			<character_spacing>4</character_spacing>
+			<word_separator_width>10</word_separator_width>
+			<vertical_spacing>12</vertical_spacing>
+		</notes>
+		
+		<editor_helptext>
+			<name>editor_helptext</name>
+			<character_spacing>2</character_spacing>
+			<word_separator_width>10</word_separator_width>
+			<vertical_spacing>9</vertical_spacing>
+		</editor_helptext>
+	</glyphsets>
+	
+	<fluids>
+		<water>
+			<grow_interval>
+				<fall_single>0.0275</fall_single>
+				<left>0.05</left>
+				<right>0.05</right>
+				<drain_fall>0.0275</drain_fall>
+				<drain_flow>0.1</drain_flow>
+			</grow_interval>
+			<texture_speed>
+				<fall>20</fall>
+				<fall_back>25</fall_back>
+				<sideways>10</sideways>
+			</texture_speed>
+		</water>
+		<lava>
+			<grow_interval>
+				<fall_single>0.04</fall_single>
+				<left>0.08</left>
+				<right>0.08</right>
+				<drain_fall>0.03</drain_fall>
+				<drain_flow>0.04</drain_flow>
+			</grow_interval>
+			<texture_speed>
+				<fall>6</fall>
+				<fall_back>2.5</fall_back>
+				<sideways>2</sideways>
+			</texture_speed>
+		</lava>
+		<waves>
+			<!-- Heights relative to the default height where the simulation willbe clamped to-->
+			<maxheight>1</maxheight>
+			<minheight>-0.33</minheight>
+			
+			<!-- Height relative to the bottom of the tile where the wave surface will be when there are no waves -->
+			<default_height>1.0</default_height>
+			<!-- Height relative to the bottom of the tile where the wave quads are split (visible with F8)-->
+			<quad_split_height>0.3</quad_split_height>
+			<water>
+				<!-- Diffusion of the waves and the velocity of the waves in a single simulation update-->
+				<diffusion>0.92</diffusion>
+				<velocitydiffusion>0.99</velocitydiffusion>
+				<!-- height and interval waves will be triggerd where a fall hits a pool surface-->
+				<wave_trigger_height>-0.1</wave_trigger_height>
+				<wave_trigger_interval>0.3</wave_trigger_interval>
+
+				<!-- settings for waves that are generated.
+				     left, right and still are for the pools that move left, right or are still respectively.-->
+				<default_wave_left1>
+					<movespeed>15</movespeed>
+					<wavewidth>0.04</wavewidth>
+					<waveheight>0.006</waveheight>
+				</default_wave_left1>
+				<default_wave_left2>
+					<movespeed>10</movespeed>
+					<wavewidth>0.0252</wavewidth>
+					<waveheight>0.004725</waveheight>
+				</default_wave_left2>
+
+				<default_wave_still1>
+					<movespeed>-2</movespeed>
+					<wavewidth>0.02</wavewidth>
+					<waveheight>0.015</waveheight>
+				</default_wave_still1>
+				<default_wave_still2>
+					<movespeed>3</movespeed>
+					<wavewidth>0.01</wavewidth>
+					<waveheight>0.025</waveheight>
+				</default_wave_still2>
+
+				<default_wave_right1>
+					<movespeed>-15</movespeed>
+					<wavewidth>0.04</wavewidth>
+					<waveheight>0.006</waveheight>
+				</default_wave_right1>
+				<default_wave_right2>
+					<movespeed>-10</movespeed>
+					<wavewidth>0.0252</wavewidth>
+					<waveheight>0.004725</waveheight>
+				</default_wave_right2>
+			</water>
+			<lava>
+				<!-- Diffusion of the waves and the velocity of the waves in a single simulation update-->
+				<diffusion>0.95</diffusion>
+				<velocitydiffusion>0.99</velocitydiffusion>
+				<!-- height and interval waves will be triggerd where a fall hits a pool surface-->
+				<wave_trigger_height>-0.4</wave_trigger_height>
+				<wave_trigger_interval>0.2</wave_trigger_interval>
+
+				<!-- settings for waves that are generated.
+				     left, right and still are for the pools that move left, right or are still respectively.-->
+				<default_wave_left1>
+					<movespeed>6</movespeed>
+					<wavewidth>0.01</wavewidth>
+					<waveheight>0.005</waveheight>
+				</default_wave_left1>
+				<default_wave_left2>
+					<movespeed>2</movespeed>
+					<wavewidth>0.04</wavewidth>
+					<waveheight>0.0025</waveheight>
+				</default_wave_left2>
+				
+				<default_wave_still1>
+					<movespeed>1</movespeed>
+					<wavewidth>0.01</wavewidth>
+					<waveheight>0.015</waveheight>
+				</default_wave_still1>
+				<default_wave_still2>
+					<movespeed>2</movespeed>
+					<wavewidth>0.04</wavewidth>
+					<waveheight>0.005</waveheight>
+				</default_wave_still2>
+				
+				<default_wave_right1>
+					<movespeed>-6</movespeed>
+					<wavewidth>0.01</wavewidth>
+					<waveheight>0.005</waveheight>
+				</default_wave_right1>
+				<default_wave_right2>
+					<movespeed>-2</movespeed>
+					<wavewidth>0.04</wavewidth>
+					<waveheight>0.0025</waveheight>
+				</default_wave_right2>
+			</lava>
+		</waves>
+	</fluids>
+	
+	<camera>
+		<game>
+			<culling_scale>1.6</culling_scale>
+			<unculling_scale>1.3</unculling_scale>
+			<fov>65.0</fov>
+			<fov_zoom_step>10.0</fov_zoom_step>  <!-- By how many degrees to change the FOV when zooming using keyboard shortcuts -->
+			<min_fov>5.0</min_fov>
+			<max_fov>150.0</max_fov>
+			<scroll_length>4.0</scroll_length>
+		</game>
+		
+		<editor>
+			<fov>45.0</fov>
+			<fov_zoom_step>15.0</fov_zoom_step>  <!-- By how many degrees to change the FOV when zooming using keyboard shortcuts -->
+			<min_fov>2.0</min_fov>
+			<max_fov>175.0</max_fov>
+			<scroll_length>4.0</scroll_length>
+		</editor>
+	</camera>
+	
+	<!-- ========== HACK BEAM ========== -->
+	<hack_beam>
+		<show_if_blocked>false</show_if_blocked>
+		<break_on_entityhit>false</break_on_entityhit>		
+		
+		<rider>
+			<!-- Name of the texture to load for the rider (required). -->
+			<texture_name>energy_recharge</texture_name>
+			<texture_namespace>textures.electricity_beam</texture_namespace>
+			<render_additive>false</render_additive>
+			
+			<!-- How "long" the texture is in world units (tiles). Texture will be repeated every this many tiles. -->
+			<texture_length>8.0</texture_length>
+			
+			<!-- Offset (along the beam) for the start point of the beam rider, in world units. -->
+			<begin_offset>0.0</begin_offset>
+			
+			<!-- Offset (along the beam) for the end point of the beam rider, in world units. -->
+			<end_offset>0.0</end_offset>
+			
+			<!-- Offset (along the beam) for the end point of the beam rider when the beam is blocked by something, in world units. -->
+			<end_offset_blocked>0.0</end_offset_blocked>
+			
+			<!-- The thickness of the beam rider graphic, in world units. -->
+			<thickness>3.5</thickness>
+			
+			<!-- Settings for the beam rider UV animation -->
+			<uv_animation>
+				<u>-30</u>    <!-- By how much to move the U component in one animation cycle -->
+				<v>0.0</v>    <!-- By how much to move the V component in one animation cycle -->
+			</uv_animation>
+		</rider>
+		
+		<start>
+			<!-- Name of the texture to load. If no texture name specified, no graphic will be created. -->
+			<texture_name>beam_end</texture_name>
+			<texture_namespace>textures.electricity_beam</texture_namespace>
+			
+			<offset>0.0</offset> <!-- Offset (along the beam) for the start point graphic, in world units. -->
+			<width>3.0</width>   <!-- Width of the start point graphic, in world units. -->
+			<height>3.0</height> <!-- Height of the start point graphic, in world units. -->
+		</start>
+		
+		<end>
+			<!-- Name of the texture to load. If no texture name specified, no graphic will be created. -->
+			<texture_name>beam_end</texture_name>
+			<texture_namespace>textures.electricity_beam</texture_namespace>
+
+			<offset>0.0</offset>  <!-- Offset (along the beam) for the start point graphic, in world units. -->
+			<width>6.0</width>    <!-- Width of the end point graphic, in world units. -->
+			<height>6.0</height>  <!-- Height of the end point graphic, in world units. -->
+		</end>
+		
+		<particles>
+			<!-- For these particle effects: leave filename empty to not spawn a particle effect -->
+			
+			<start>
+				<!-- Particle effect to spawn for the beam start point -->
+				<filename></filename>
+				<!-- Offset (along the beam) for the particle effect, in world units. -->
+				<offset>1.0</offset>
+				<!-- Sound effect for the start point -->
+				<sound></sound>
+			</start>
+			
+			<end>
+				<!-- Particle effect to spawn when the beam reaches the end point -->
+				<filename>particles/virusupload_binary</filename>
+				<!-- Offset (along the beam) for the particle effect, in world units. -->
+				<offset>0.0</offset>
+				<!-- Sound effect for the non-blocking end point -->
+				<sound></sound>
+			</end>
+			
+			<end_blocked>
+				<!-- Particle effect to spawn when the beam is blocked by something -->
+				<filename></filename>
+				<!-- Offset (along the beam) for the particle effect, in world units. -->
+				<offset>0.0</offset>
+				<!-- Sound effect for the blocking end point -->
+				<sound></sound>
+			</end_blocked>
+		</particles>
+	</hack_beam>
+	<!-- ========== HACK BEAM   END  ========== -->
+	
+	<!-- ========== ELECTRICITY BEAM ========== -->
+	<electricity_beam>
+		<show_if_blocked>false</show_if_blocked>
+		<break_on_entityhit>false</break_on_entityhit>
+		
+		<line>
+			<!-- Name of the texture to load for the line (required). -->
+			<texture_name>beam_line</texture_name>
+			<texture_namespace>textures.electricity_beam</texture_namespace>
+			<render_additive>false</render_additive>
+			
+			<!-- Offset (along the beam) for the start point of the line, in world units. -->
+			<begin_offset>0.0</begin_offset>
+			
+			<!-- Offset (along the beam) for the end point of the line, in world units. -->
+			<end_offset>0.0</end_offset>
+			
+			<!-- Offset (along the beam) for the end point of the line when the beam is blocked by something, in world units. -->
+			<end_offset_blocked>0.0</end_offset_blocked>
+			
+			<!-- Settings for the thickness animation of the line. The thickness is in world units.
+			     These settings represent the values in the following formula:
+			     base_value + (sin(sine_a.frequency) * sine_a.amplitude) + (sin(sine_b.frequency) * sine_b.amplitude)
+			     
+			     That is, two sines are combined, and a base value is provided to offset the result. -->
+			<thickness>
+				<!-- Value to start with, before adding the sines
+				     (so that the result of the sines can be offset, preventing negative scale values) -->
+				<base_value>2.75</base_value>
+				
+				<sine_a>
+					<frequency>8.5214</frequency> <!-- How many times per second this sine completes a wave. -->
+					<amplitude>0.1</amplitude> <!-- How big the wave is (resulting value goes from -amplitude to +amplitude).-->
+				</sine_a>
+				
+				<sine_b>
+					<frequency>3.11442</frequency> <!-- How many times per second this sine completes a wave. -->
+					<amplitude>0.05</amplitude> <!-- How big the wave is (resulting value goes from -amplitude to +amplitude).-->
+				</sine_b>
+			</thickness>
+		</line>
+		
+		<rider>
+			<!-- Name of the texture to load for the rider (required). -->
+			<texture_name>beam_rider</texture_name>
+			<texture_namespace>textures.electricity_beam</texture_namespace>
+			<render_additive>true</render_additive>
+			
+			<!-- How "long" the texture is in world units (tiles). Texture will be repeated every this many tiles. -->
+			<texture_length>30.0</texture_length>
+			
+			<!-- Offset (along the beam) for the start point of the beam rider, in world units. -->
+			<begin_offset>0.0</begin_offset>
+			
+			<!-- Offset (along the beam) for the end point of the beam rider, in world units. -->
+			<end_offset>0.0</end_offset>
+			
+			<!-- Offset (along the beam) for the end point of the beam rider when the beam is blocked by something, in world units. -->
+			<end_offset_blocked>0.0</end_offset_blocked>
+			
+			<!-- The thickness of the beam rider graphic, in world units. -->
+			<thickness>1.45</thickness>
+			
+			<!-- Settings for the beam rider UV animation -->
+			<uv_animation>
+				<u>33.3</u>    <!-- By how much to move the U component in one animation cycle -->
+				<v>0.0</v>            <!-- By how much to move the V component in one animation cycle -->
+			</uv_animation>
+		</rider>
+		
+		<start>
+			<!-- Name of the texture to load. If no texture name specified, no graphic will be created. -->
+			<texture_name></texture_name>
+			<texture_namespace>textures.electricity_beam</texture_namespace>
+			
+			<offset>0.0</offset> <!-- Offset (along the beam) for the start point graphic, in world units. -->
+			<width>2.0</width>   <!-- Width of the start point graphic, in world units. -->
+			<height>2.0</height> <!-- Height of the start point graphic, in world units. -->
+		</start>
+		
+		<end>
+			<!-- Name of the texture to load. If no texture name specified, no graphic will be created. -->
+			<texture_name></texture_name>
+			<texture_namespace>textures.electricity_beam</texture_namespace>
+
+			<offset>0.0</offset>  <!-- Offset (along the beam) for the start point graphic, in world units. -->
+			<width>2.0</width>    <!-- Width of the end point graphic, in world units. -->
+			<height>2.0</height>  <!-- Height of the end point graphic, in world units. -->
+		</end>
+		
+		<particles>
+			<!-- For these particle effects: leave filename empty to not spawn a particle effect -->
+			
+			<start>
+				<!-- Particle effect to spawn for the beam start point -->
+				<filename></filename>
+				<!-- Offset (along the beam) for the particle effect, in world units. -->
+				<offset>0.0</offset>
+				<!-- Sound effect for the start point -->
+				<sound></sound>
+			</start>
+			
+			<end>
+				<!-- Particle effect to spawn when the beam reaches the end point -->
+				<filename></filename>
+				<!-- Offset (along the beam) for the particle effect, in world units. -->
+				<offset>0</offset>
+				<!-- Sound effect for the non-blocking end point -->
+				<sound></sound>
+			</end>
+			
+			<end_blocked>
+				<!-- Particle effect to spawn when the beam is blocked by something -->
+				<filename></filename>
+				<!-- Offset (along the beam) for the particle effect, in world units. -->
+				<offset>0.0</offset>
+				<!-- Sound effect for the blocking end point -->
+				<sound></sound>
+			</end_blocked>
+		</particles>
+	</electricity_beam>
+	<!-- ========== ELECTRICITY BEAM   END  ========== -->
+	
+	<!-- ========== LASER BEAM ========== -->
+	<laser_beam>
+		<show_if_blocked>true</show_if_blocked>
+		<break_on_entityhit>true</break_on_entityhit>		
+
+		<line>
+			<!-- Name of the texture to load for the line (required). -->
+			<texture_name>purple_laser</texture_name>
+			<texture_namespace>textures.electricity_beam</texture_namespace>
+			<render_additive>false</render_additive>
+			
+			<!-- Offset (along the beam) for the start point of the line, in world units. -->
+			<begin_offset>0.0</begin_offset>
+
+			<!-- Offset (along the beam) for the end point of the line, in world units. -->
+			<end_offset>0.0</end_offset>
+
+			<!-- Offset (along the beam) for the end point of the line when the beam is blocked by something, in world units. -->
+			<end_offset_blocked>0.0</end_offset_blocked>
+
+			<!-- Settings for the thickness animation of the line. The thickness is in world units.
+			     These settings represent the values in the following formula:
+			     base_value + (sin(sine_a.frequency) * sine_a.amplitude) + (sin(sine_b.frequency) * sine_b.amplitude)
+			     
+			     That is, two sines are combined, and a base value is provided to offset the result. -->
+			<thickness>
+				<!-- Value to start with, before adding the sines
+				     (so that the result of the sines can be offset, preventing negative scale values) -->
+				<base_value>1</base_value>
+
+				<sine_a>
+					<frequency>19.836454</frequency>
+					<!-- How many times per second this sine completes a wave. -->
+					<amplitude>0.5</amplitude>
+					<!-- How big the wave is (resulting value goes from -amplitude to +amplitude).-->
+				</sine_a>
+
+				<sine_b>
+					<frequency>23.1673</frequency>
+					<!-- How many times per second this sine completes a wave. -->
+					<amplitude>0.5</amplitude>
+					<!-- How big the wave is (resulting value goes from -amplitude to +amplitude).-->
+				</sine_b>
+			</thickness>
+		</line>
+		
+		<rider>
+			<!-- Name of the texture to load for the rider (required). -->
+			<texture_name>purple_laser_rider</texture_name>
+			<texture_namespace>textures.electricity_beam</texture_namespace>
+			<render_additive>true</render_additive>
+			
+			<!-- How "long" the texture is in world units (tiles). Texture will be repeated every this many tiles. -->
+			<texture_length>40</texture_length>
+			
+			<!-- Offset (along the beam) for the start point of the beam rider, in world units. -->
+			<begin_offset>0.0</begin_offset>
+			
+			<!-- Offset (along the beam) for the end point of the beam rider, in world units. -->
+			<end_offset>0.0</end_offset>
+			
+			<!-- Offset (along the beam) for the end point of the beam rider when the beam is blocked by something, in world units. -->
+			<end_offset_blocked>0.0</end_offset_blocked>
+			
+			<!-- The thickness of the beam rider graphic, in world units. -->
+			<thickness>2</thickness>
+			
+			<!-- Settings for the beam rider UV animation -->
+			<uv_animation>
+				<u>-14.293472</u>    <!-- By how much to move the U component in one animation cycle -->
+				<v>0.0</v>    <!-- By how much to move the V component in one animation cycle -->
+			</uv_animation>
+		</rider>
+		
+		<start>
+			<!-- Name of the texture to load. If no texture name specified, no graphic will be created. -->
+			<texture_name></texture_name>
+			<texture_namespace></texture_namespace>
+			
+			<offset>0.0</offset> <!-- Offset (along the beam) for the start point graphic, in world units. -->
+			<width>2.0</width>   <!-- Width of the start point graphic, in world units. -->
+			<height>2.0</height> <!-- Height of the start point graphic, in world units. -->
+		</start>
+		
+		<end>
+			<!-- Name of the texture to load. If no texture name specified, no graphic will be created. -->
+			<texture_name></texture_name>
+			<texture_namespace></texture_namespace>
+
+			<offset>0.0</offset>  <!-- Offset (along the beam) for the start point graphic, in world units. -->
+			<width>2.0</width>    <!-- Width of the end point graphic, in world units. -->
+			<height>2.0</height>  <!-- Height of the end point graphic, in world units. -->
+		</end>
+		
+		<particles>
+			<!-- For these particle effects: leave filename empty to not spawn a particle effect -->
+			
+			<start>
+				<!-- Particle effect to spawn for the beam start point -->
+				<filename>particles/purple_laserbeam_start</filename>
+				<!-- Offset (along the beam) for the particle effect, in world units. -->
+				<offset>0.0</offset>
+				<!-- Sound effect for the start point -->
+				<sound></sound>
+			</start>
+			
+			<end>
+				<!-- Particle effect to spawn when the beam reaches the end point -->
+				<filename>particles/purple_laserbeam_end</filename>
+				<!-- Offset (along the beam) for the particle effect, in world units. -->
+				<offset>0.0</offset>
+				<!-- Sound effect for the non-blocking end point -->
+				<sound></sound>
+			</end>
+			
+			<end_blocked>
+				<!-- Particle effect to spawn when the beam is blocked by something -->
+				<filename>particles/purple_laserbeam_endonwater</filename>
+				<!-- Offset (along the beam) for the particle effect, in world units. -->
+				<offset>0.0</offset>
+				<!-- Sound effect for the non-blocking end point -->
+				<sound></sound>	
+			</end_blocked>
+		</particles>
+	</laser_beam>
+	<!-- ========== LASER BEAM END ========== -->
+
+	<!-- ========== PREVIEWLASER BEAM PREVIEW ========== -->
+	<previewlaser_beam>
+		<show_if_blocked>true</show_if_blocked>
+		<break_on_entityhit>true</break_on_entityhit>
+
+		<line>
+			<!-- Name of the texture to load for the line (required). -->
+			<texture_name>purple_laser_preview</texture_name>
+			<texture_namespace>textures.electricity_beam</texture_namespace>
+			<render_additive>false</render_additive>
+
+			<!-- Offset (along the beam) for the start point of the line, in world units. -->
+			<begin_offset>0.0</begin_offset>
+
+			<!-- Offset (along the beam) for the end point of the line, in world units. -->
+			<end_offset>0.0</end_offset>
+
+			<!-- Offset (along the beam) for the end point of the line when the beam is blocked by something, in world units. -->
+			<end_offset_blocked>0.0</end_offset_blocked>
+
+			<!-- Settings for the thickness animation of the line. The thickness is in world units.
+			     These settings represent the values in the following formula:
+			     base_value + (sin(sine_a.frequency) * sine_a.amplitude) + (sin(sine_b.frequency) * sine_b.amplitude)
+			     
+			     That is, two sines are combined, and a base value is provided to offset the result. -->
+			<thickness>
+				<!-- Value to start with, before adding the sines
+				     (so that the result of the sines can be offset, preventing negative scale values) -->
+				<base_value>1</base_value>
+
+				<sine_a>
+					<frequency>19.836454</frequency>
+					<!-- How many times per second this sine completes a wave. -->
+					<amplitude>0.2</amplitude>
+					<!-- How big the wave is (resulting value goes from -amplitude to +amplitude).-->
+				</sine_a>
+
+				<sine_b>
+					<frequency>23.1673</frequency>
+					<!-- How many times per second this sine completes a wave. -->
+					<amplitude>0.2</amplitude>
+					<!-- How big the wave is (resulting value goes from -amplitude to +amplitude).-->
+				</sine_b>
+			</thickness>
+		</line>
+
+		<rider>
+			<!-- Name of the texture to load for the rider (required). -->
+			<texture_name></texture_name>
+			<texture_namespace>textures.electricity_beam</texture_namespace>
+			<render_additive>true</render_additive>
+
+			<!-- How "long" the texture is in world units (tiles). Texture will be repeated every this many tiles. -->
+			<texture_length>40</texture_length>
+
+			<!-- Offset (along the beam) for the start point of the beam rider, in world units. -->
+			<begin_offset>0.0</begin_offset>
+
+			<!-- Offset (along the beam) for the end point of the beam rider, in world units. -->
+			<end_offset>0.0</end_offset>
+
+			<!-- Offset (along the beam) for the end point of the beam rider when the beam is blocked by something, in world units. -->
+			<end_offset_blocked>0.0</end_offset_blocked>
+
+			<!-- The thickness of the beam rider graphic, in world units. -->
+			<thickness>0.9</thickness>
+
+			<!-- Settings for the beam rider UV animation -->
+			<uv_animation>
+				<u>-20</u>
+				<!-- By how much to move the U component in one animation cycle -->
+				<v>0.0</v>
+				<!-- By how much to move the V component in one animation cycle -->
+			</uv_animation>
+		</rider>
+
+		<start>
+			<!-- Name of the texture to load. If no texture name specified, no graphic will be created. -->
+			<texture_name></texture_name>
+			<texture_namespace></texture_namespace>
+
+			<offset>0.0</offset>
+			<!-- Offset (along the beam) for the start point graphic, in world units. -->
+			<width>2.0</width>
+			<!-- Width of the start point graphic, in world units. -->
+			<height>2.0</height>
+			<!-- Height of the start point graphic, in world units. -->
+		</start>
+
+		<end>
+			<!-- Name of the texture to load. If no texture name specified, no graphic will be created. -->
+			<texture_name>laser_preview_end</texture_name>
+			<texture_namespace>textures.electricity_beam</texture_namespace>
+
+			<offset>0.0</offset>
+			<!-- Offset (along the beam) for the start point graphic, in world units. -->
+			<width>0.5</width>
+			<!-- Width of the end point graphic, in world units. -->
+			<height>0.5</height>
+			<!-- Height of the end point graphic, in world units. -->
+		</end>
+
+		<particles>
+			<!-- For these particle effects: leave filename empty to not spawn a particle effect -->
+
+			<start>
+				<!-- Particle effect to spawn for the beam start point -->
+				<filename></filename>
+				<!-- Offset (along the beam) for the particle effect, in world units. -->
+				<offset>0.0</offset>
+				<!-- Sound effect for the start point -->
+				<sound></sound>
+			</start>
+
+			<end>
+				<!-- Particle effect to spawn when the beam reaches the end point -->
+				<filename></filename>
+				<!-- Offset (along the beam) for the particle effect, in world units. -->
+				<offset>0.0</offset>
+				<!-- Sound effect for the non-blocking end point -->
+				<sound></sound>
+			</end>
+
+			<end_blocked>
+				<!-- Particle effect to spawn when the beam is blocked by something -->
+				<filename></filename>
+				<!-- Offset (along the beam) for the particle effect, in world units. -->
+				<offset>0.0</offset>
+				<!-- Sound effect for the blocking end point -->
+				<sound></sound>
+			</end_blocked>
+		</particles>
+	</previewlaser_beam>
+	<!-- ========== PREVIEWLASER BEAM END ========== -->
+	
+	<!-- ========== SIGHT BEAM ========== -->
+	<sight_beam>
+		<show_if_blocked>true</show_if_blocked>
+		<break_on_entityhit>true</break_on_entityhit>
+
+		<line>
+			<!-- Name of the texture to load for the line (required). -->
+			<texture_name>sightbeam</texture_name>
+			<texture_namespace>textures.electricity_beam</texture_namespace>
+			<render_additive>true</render_additive>
+
+			<!-- Offset (along the beam) for the start point of the line, in world units. -->
+			<begin_offset>0.0</begin_offset>
+
+			<!-- Offset (along the beam) for the end point of the line, in world units. -->
+			<end_offset>0.0</end_offset>
+
+			<!-- Offset (along the beam) for the end point of the line when the beam is blocked by something, in world units. -->
+			<end_offset_blocked>0.0</end_offset_blocked>
+
+			<!-- Settings for the thickness animation of the line. The thickness is in world units.
+			     These settings represent the values in the following formula:
+			     base_value + (sin(sine_a.frequency) * sine_a.amplitude) + (sin(sine_b.frequency) * sine_b.amplitude)
+			     
+			     That is, two sines are combined, and a base value is provided to offset the result. -->
+			<thickness>
+				<!-- Value to start with, before adding the sines
+				     (so that the result of the sines can be offset, preventing negative scale values) -->
+				<base_value>1</base_value>
+
+				<sine_a>
+					<frequency>19.836454</frequency>
+					<!-- How many times per second this sine completes a wave. -->
+					<amplitude>0.1</amplitude>
+					<!-- How big the wave is (resulting value goes from -amplitude to +amplitude).-->
+				</sine_a>
+
+				<sine_b>
+					<frequency>23.1673</frequency>
+					<!-- How many times per second this sine completes a wave. -->
+					<amplitude>0.1</amplitude>
+					<!-- How big the wave is (resulting value goes from -amplitude to +amplitude).-->
+				</sine_b>
+			</thickness>
+		</line>
+
+		<rider>
+			<!-- Name of the texture to load for the rider (required). -->
+			<texture_name></texture_name>
+			<texture_namespace></texture_namespace>
+			<render_additive>true</render_additive>
+
+			<!-- How "long" the texture is in world units (tiles). Texture will be repeated every this many tiles. -->
+			<texture_length>40</texture_length>
+
+			<!-- Offset (along the beam) for the start point of the beam rider, in world units. -->
+			<begin_offset>0.0</begin_offset>
+
+			<!-- Offset (along the beam) for the end point of the beam rider, in world units. -->
+			<end_offset>0.0</end_offset>
+
+			<!-- Offset (along the beam) for the end point of the beam rider when the beam is blocked by something, in world units. -->
+			<end_offset_blocked>0.0</end_offset_blocked>
+
+			<!-- The thickness of the beam rider graphic, in world units. -->
+			<thickness>0.9</thickness>
+
+			<!-- Settings for the beam rider UV animation -->
+			<uv_animation>
+				<u>-20</u>
+				<!-- By how much to move the U component in one animation cycle -->
+				<v>0.0</v>
+				<!-- By how much to move the V component in one animation cycle -->
+			</uv_animation>
+		</rider>
+
+		<start>
+			<!-- Name of the texture to load. If no texture name specified, no graphic will be created. -->
+			<texture_name></texture_name>
+			<texture_namespace></texture_namespace>
+
+			<offset>0.0</offset>
+			<!-- Offset (along the beam) for the start point graphic, in world units. -->
+			<width>2.0</width>
+			<!-- Width of the start point graphic, in world units. -->
+			<height>2.0</height>
+			<!-- Height of the start point graphic, in world units. -->
+		</start>
+
+		<end>
+			<!-- Name of the texture to load. If no texture name specified, no graphic will be created. -->
+			<texture_name></texture_name>
+			<texture_namespace></texture_namespace>
+
+			<offset>0.0</offset>
+			<!-- Offset (along the beam) for the start point graphic, in world units. -->
+			<width>0.5</width>
+			<!-- Width of the end point graphic, in world units. -->
+			<height>0.5</height>
+			<!-- Height of the end point graphic, in world units. -->
+		</end>
+
+		<particles>
+			<!-- For these particle effects: leave filename empty to not spawn a particle effect -->
+
+			<start>
+				<!-- Particle effect to spawn for the beam start point -->
+				<filename></filename>
+				<!-- Offset (along the beam) for the particle effect, in world units. -->
+				<offset>0.0</offset>
+				<!-- Sound effect for the start point -->
+				<sound></sound>
+			</start>
+
+			<end>
+				<!-- Particle effect to spawn when the beam reaches the end point -->
+				<filename></filename>
+				<!-- Offset (along the beam) for the particle effect, in world units. -->
+				<offset>0.0</offset>
+				<!-- Sound effect for the non-blocking end point -->
+				<sound></sound>
+			</end>
+
+			<end_blocked>
+				<!-- Particle effect to spawn when the beam is blocked by something -->
+				<filename>particles/sightbeam_end</filename>
+				<!-- Offset (along the beam) for the particle effect, in world units. -->
+				<offset>0.0</offset>
+				<!-- Sound effect for the blocking end point -->
+				<sound></sound>
+			</end_blocked>
+		</particles>
+	</sight_beam>
+	<!-- ========== SIGHT BEAM   END  ========== -->
+	
+	<shoebox>
+		<!-- The shoebox forground is split at this priority.
+		     We use this split for what gets lit by light and what doesn't. -->
+		<split_priority>50</split_priority>
+	</shoebox>
+	
+	<input>
+		<!-- After this many seconds of no pointer movement, the pointer is hidden -->
+		<pointer_autohide_timeout>5.0</pointer_autohide_timeout>
+		
+		<!-- Speed of input recording playback (multiplier, 5 means 5x normal speed, etc) -->
+		<recording_ff_speed>10</recording_ff_speed>
+	</input>
+	
+	<demo>
+		<!-- demo timer duration in minutes -->
+		<duration>60.0</duration>
+	</demo>
+	
+	<level_screenshot_texels_per_tile>16.0</level_screenshot_texels_per_tile>
+</toki>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		permanent="true" fixed_timestep="0.016">
+	
+	<include file="presentation/menu/include"/>
+	
+	<coloranimstack>
+		<color duration="0.1" delay="0.0">
+			<begin r="0" g="0" b="0"/>
+			<end r="0" g="0" b="0"/>
+		</color>
+	</coloranimstack>
+
+	<anim2dstack>
+		<scale delay="0.25" duration="0.125" timing="easeout">
+			<begin y="0.02"/>
+			<end y="1"/>
+		</scale>
+		<scale duration="0.25" timing="easeout">
+			<begin x="0.02"/>
+			<end x="1"/>
+		</scale>
+	</anim2dstack>
+
+	<frameanimstack>
+		<frameanim directory="spritestrip/__visualboy" looping="false" fps="60" quad_width="1.0" quad_height="0.66666" direction="forward" blendmode="add">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+			<translation x="0.002" y="-0.002"/>
+		</frameanim>
+	</frameanimstack>
+</presentation>

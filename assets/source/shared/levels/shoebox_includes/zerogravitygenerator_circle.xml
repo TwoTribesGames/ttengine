@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<shoebox xmlns="http://intranet.twotribes.com/schemas/common/shoebox.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/shoebox.xsd http://intranet.twotribes.com/schemas/common/shoebox.xsd">
+  <particle effect_file="generator_coil.trigger" x="0.000000000" y="-0.000000000" z="1.34375000" scale="2.00000000"/>
+  <particle effect_file="generator_circle.trigger" x="0.000000000" y="-0.000000000" z="1.84375000" scale="1.00000000"/>
+  <plane texture="backgrounds/generator_back.png" x="0.000000000" y="-0.000000000" z="1.14374995" width="8.62709618" height="8.62709618" priority="0" rotation="0.000000000" texture_top_left_u="0.000000000" texture_top_left_v="0.000000000" texture_top_right_u="1.00000000" texture_top_right_v="0.000000000" texture_bottom_right_u="1.00000000" texture_bottom_right_v="1.00000000" texture_bottom_left_u="0.000000000" texture_bottom_left_v="1.00000000" ignore_fog="false">
+    <color_whole_quad r="185" g="185" b="185" a="255"/>
+    <animations>
+      <translation duration="0.1" preset="oscillating">
+        <begin x="0" y="0" z="0"/>
+        <end x="0.05" y="0" z="0"/>
+      </translation>
+      <translation duration="0.1" delay="0.05" preset="oscillating">
+        <begin x="0" y="0" z="0"/>
+        <end x="0" y="0.05" z="0"/>
+      </translation>
+      <rotation duration="4" preset="oscillating">
+        <begin rotation="0"/>
+        <end rotation="6"/>
+      </rotation>
+    </animations>
+  </plane>
+  <plane texture="backgrounds/generator_front.png" x="0.000000000" y="-0.000000000" z="1.54375005" width="8.62709618" height="8.62709618" priority="0" rotation="0.000000000" texture_top_left_u="0.000000000" texture_top_left_v="0.000000000" texture_top_right_u="1.00000000" texture_top_right_v="0.000000000" texture_bottom_right_u="1.00000000" texture_bottom_right_v="1.00000000" texture_bottom_left_u="0.000000000" texture_bottom_left_v="1.00000000" ignore_fog="false">
+    <color_whole_quad r="185" g="185" b="185" a="255"/>
+    <animations>
+      <translation duration="0.1" preset="oscillating">
+        <begin x="0" y="0" z="0"/>
+        <end x="0.05" y="0" z="0"/>
+      </translation>
+      <translation duration="0.1" delay="0.05" preset="oscillating">
+        <begin x="0" y="0" z="0"/>
+        <end x="0" y="0.05" z="0"/>
+      </translation>
+      <rotation duration="4" preset="oscillating">
+        <begin rotation="0"/>
+        <end rotation="6"/>
+      </rotation>
+    </animations>
+  </plane>
+  <plane texture="backgrounds/generator_light.png" x="0.000000000" y="-0.000000000" z="1.54375005" width="8.62709618" height="8.62709618" priority="10" rotation="0.000000000" texture_top_left_u="0.000000000" texture_top_left_v="0.000000000" texture_top_right_u="1.00000000" texture_top_right_v="0.000000000" texture_bottom_right_u="1.00000000" texture_bottom_right_v="1.00000000" texture_bottom_left_u="0.000000000" texture_bottom_left_v="1.00000000" blend_mode="add" ignore_fog="true">
+    <color_whole_quad r="185" g="185" b="185" a="255"/>
+    <coloranimations>
+      <color duration="r(0.2),(0.5)" delay="r(0.0),(0.123)" looping="true">
+        <begin a="0"/>
+        <end a="-51"/>
+      </color>
+      <color duration="r(0.2),(0.5)" delay="r(0.0),(0.123)" looping="true">
+        <begin a="0"/>
+        <end a="-51"/>
+      </color>
+      <color duration="r(1),(2)" delay="r(0.0),(0.123)" looping="true">
+        <begin a="0"/>
+        <end a="-51"/>
+      </color>
+    </coloranimations>
+    <animations>
+      <translation duration="0.1" preset="oscillating">
+        <begin x="0" y="0" z="0"/>
+        <end x="0.05" y="0" z="0"/>
+      </translation>
+      <translation duration="0.1" delay="0.05" preset="oscillating">
+        <begin x="0" y="0" z="0"/>
+        <end x="0" y="0.05" z="0"/>
+      </translation>
+      <rotation duration="4" preset="oscillating">
+        <begin rotation="0"/>
+        <end rotation="6"/>
+      </rotation>
+    </animations>
+  </plane>
+</shoebox>

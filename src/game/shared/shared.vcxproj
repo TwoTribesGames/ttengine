@@ -1,0 +1,840 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="STEAM_Dev|x64">
+      <Configuration>STEAM_Dev</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="STEAM_Final|x64">
+      <Configuration>STEAM_Final</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="STEAM_Test|x64">
+      <Configuration>STEAM_Test</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="WIN_Dev|x64">
+      <Configuration>WIN_Dev</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="WIN_Final|x64">
+      <Configuration>WIN_Final</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="WIN_Test|x64">
+      <Configuration>WIN_Test</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4F843726-B2A4-4CC5-B018-0A43E16604AE}</ProjectGuid>
+    <RootNamespace>shared</RootNamespace>
+    <Keyword>x64Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='STEAM_Final|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='STEAM_Test|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='STEAM_Dev|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='STEAM_Final|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='STEAM_Test|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='STEAM_Dev|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'">$(ProjectDir)obj\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='STEAM_Dev|x64'">$(ProjectDir)obj\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'">$(ProjectDir)obj\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='STEAM_Test|x64'">$(ProjectDir)obj\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'">$(ProjectDir)obj\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='STEAM_Final|x64'">$(ProjectDir)obj\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'">
+    <OutDir>$(ProjectDir)lib\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'">
+    <OutDir>$(ProjectDir)lib\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'">
+    <OutDir>$(ProjectDir)lib\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='STEAM_Test|x64'">
+    <OutDir>$(ProjectDir)lib\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='STEAM_Final|x64'">
+    <OutDir>$(ProjectDir)lib\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='STEAM_Dev|x64'">
+    <OutDir>$(ProjectDir)lib\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'">
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>
+      </Message>
+      <Command>cd .
+</Command>
+      <Outputs> ;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>inc;$(SolutionDir)engine\windows\inc;$(SolutionDir)engine\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;TT_ASSERT_ON;TT_PLATFORM_WIN;TT_BUILD_DEV;TT_DEMO_BUILD=0;TT_REGION_EU;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='STEAM_Dev|x64'">
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>
+      </Message>
+      <Command>cd .
+</Command>
+      <Outputs> ;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>inc;$(SolutionDir)engine\windows\inc;$(SolutionDir)engine\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;TT_ASSERT_ON;TT_PLATFORM_WIN;TT_BUILD_DEV;TT_DEMO_BUILD=0;TT_STEAM_BUILD;TT_REGION_EU;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'">
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>
+      </Message>
+      <Command>cd .
+</Command>
+      <Outputs> ;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <ClCompile>
+      <AdditionalIncludeDirectories>inc;$(SolutionDir)engine\windows\inc;$(SolutionDir)engine\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CRT_SECURE_NO_WARNINGS;TT_ASSERT_ON;TT_PLATFORM_WIN;TT_BUILD_TEST;TT_DEMO_BUILD=0;TT_REGION_EU;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Lib>
+      <LinkTimeCodeGeneration>false</LinkTimeCodeGeneration>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='STEAM_Test|x64'">
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>
+      </Message>
+      <Command>cd .
+</Command>
+      <Outputs> ;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <ClCompile>
+      <AdditionalIncludeDirectories>inc;$(SolutionDir)engine\windows\inc;$(SolutionDir)engine\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CRT_SECURE_NO_WARNINGS;TT_ASSERT_ON;TT_PLATFORM_WIN;TT_BUILD_TEST;TT_DEMO_BUILD=0;TT_STEAM_BUILD;TT_REGION_EU;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+    </ClCompile>
+    <Lib>
+      <LinkTimeCodeGeneration>false</LinkTimeCodeGeneration>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'">
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>
+      </Message>
+      <Command>cd .
+</Command>
+      <Outputs> ;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <ClCompile>
+      <AdditionalIncludeDirectories>inc;$(SolutionDir)engine\windows\inc;$(SolutionDir)engine\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CRT_SECURE_NO_WARNINGS;TT_PLATFORM_WIN;TT_BUILD_FINAL;TT_DEMO_BUILD=0;TT_REGION_EU;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='STEAM_Final|x64'">
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>
+      </Message>
+      <Command>cd .
+</Command>
+      <Outputs> ;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <ClCompile>
+      <AdditionalIncludeDirectories>inc;$(SolutionDir)engine\windows\inc;$(SolutionDir)engine\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CRT_SECURE_NO_WARNINGS;TT_PLATFORM_WIN;TT_BUILD_FINAL;TT_DEMO_BUILD=0;TT_STEAM_BUILD;TT_REGION_EU;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\toki\AppOptions.cpp" />
+    <ClCompile Include="src\toki\AppGlobal.cpp" />
+    <ClCompile Include="src\toki\AppMain.cpp" />
+    <ClCompile Include="src\toki\audio\AudioPlayer.cpp" />
+    <ClCompile Include="src\toki\audio\constants.cpp" />
+    <ClCompile Include="src\toki\audio\MusicTrack.cpp" />
+    <ClCompile Include="src\toki\audio\MusicTrackMgr.cpp" />
+    <ClCompile Include="src\toki\audio\PositionalEffect.cpp" />
+    <ClCompile Include="src\toki\audio\SoundCue.cpp" />
+    <ClCompile Include="src\toki\cfg.cpp" />
+    <ClCompile Include="src\toki\effects\ColorGrading.cpp" />
+    <ClCompile Include="src\toki\game\AttributeDebugView.cpp" />
+    <ClCompile Include="src\toki\game\Border.cpp" />
+    <ClCompile Include="src\toki\game\Camera.cpp" />
+    <ClCompile Include="src\toki\game\CameraEffect.cpp" />
+    <ClCompile Include="src\toki\game\CameraMgr.cpp" />
+    <ClCompile Include="src\toki\game\CheckPointMgr.cpp" />
+    <ClCompile Include="src\toki\game\DebugView.cpp" />
+    <ClCompile Include="src\toki\game\DemoMgr.cpp" />
+    <ClCompile Include="src\toki\game\editor\commands\CommandAddRemoveEntities.cpp" />
+    <ClCompile Include="src\toki\game\editor\commands\CommandAddRemoveNotes.cpp" />
+    <ClCompile Include="src\toki\game\editor\commands\CommandApplyLevelSection.cpp" />
+    <ClCompile Include="src\toki\game\editor\commands\CommandChangeEntityProperties.cpp" />
+    <ClCompile Include="src\toki\game\editor\commands\CommandChangeNoteRect.cpp" />
+    <ClCompile Include="src\toki\game\editor\commands\CommandChangeNoteText.cpp" />
+    <ClCompile Include="src\toki\game\editor\commands\CommandMoveEntities.cpp" />
+    <ClCompile Include="src\toki\game\editor\commands\CommandPaintTiles.cpp" />
+    <ClCompile Include="src\toki\game\editor\commands\CommandReplaceLevel.cpp" />
+    <ClCompile Include="src\toki\game\editor\commands\CommandResizeLevel.cpp" />
+    <ClCompile Include="src\toki\game\editor\commands\CommandSetDefaultMission.cpp" />
+    <ClCompile Include="src\toki\game\editor\commands\CommandSetLevelBackground.cpp" />
+    <ClCompile Include="src\toki\game\editor\commands\CommandSetLevelTheme.cpp" />
+    <ClCompile Include="src\toki\game\editor\commands\CommandSetThemeColor.cpp" />
+    <ClCompile Include="src\toki\game\editor\Editor.cpp" />
+    <ClCompile Include="src\toki\game\editor\EditorSettings.cpp" />
+    <ClCompile Include="src\toki\game\editor\helpers_editor.cpp" />
+    <ClCompile Include="src\toki\game\editor\hotkey\HotKeyMgr.cpp" />
+    <ClCompile Include="src\toki\game\editor\hotkey\types_editor_hotkey.cpp" />
+    <ClCompile Include="src\toki\game\editor\tools\NotesTool.cpp" />
+    <ClCompile Include="src\toki\game\editor\ui\DebugSteamCloudFileManager.cpp" />
+    <ClCompile Include="src\toki\game\editor\ui\DialogBoxBase.cpp" />
+    <ClCompile Include="src\toki\game\editor\ui\EntityPropertyControl.cpp" />
+    <ClCompile Include="src\toki\game\editor\ui\GenericDialogBox.cpp" />
+    <ClCompile Include="src\toki\game\editor\ui\helpers_editor_ui.cpp" />
+    <ClCompile Include="src\toki\game\editor\ui\NewLevelDialog.cpp" />
+    <ClCompile Include="src\toki\game\editor\ui\PublishedLevelBrowser.cpp" />
+    <ClCompile Include="src\toki\game\editor\ui\PublishToWorkshopDialog.cpp" />
+    <ClCompile Include="src\toki\game\editor\ui\SaveAsDialog.cpp" />
+    <ClCompile Include="src\toki\game\editor\ui\SaveChangesDialog.cpp" />
+    <ClCompile Include="src\toki\game\editor\ui\SetThemeColorUI.cpp" />
+    <ClCompile Include="src\toki\game\editor\ui\SteamWorkshopTest.cpp" />
+    <ClCompile Include="src\toki\game\editor\ui\SvnCommands.cpp" />
+    <ClCompile Include="src\toki\game\editor\ui\Testbed.cpp" />
+    <ClCompile Include="src\toki\game\entity\effect\ColorGradingEffectMgr.cpp" />
+    <ClCompile Include="src\toki\game\entity\effect\EffectMgr.cpp" />
+    <ClCompile Include="src\toki\game\entity\effect\EffectRect.cpp" />
+    <ClCompile Include="src\toki\game\entity\effect\EffectRectMgr.cpp" />
+    <ClCompile Include="src\toki\game\entity\effect\FogEffectMgr.cpp" />
+    <ClCompile Include="src\toki\game\entity\EntityLibrary.cpp" />
+    <ClCompile Include="src\toki\game\editor\tools\BoxSelectTool.cpp" />
+    <ClCompile Include="src\toki\game\editor\tools\EntityMoveTool.cpp" />
+    <ClCompile Include="src\toki\game\editor\tools\EntityPaintTool.cpp" />
+    <ClCompile Include="src\toki\game\editor\tools\FloodFillTool.cpp" />
+    <ClCompile Include="src\toki\game\editor\tools\HandTool.cpp" />
+    <ClCompile Include="src\toki\game\editor\tools\PaintTool.cpp" />
+    <ClCompile Include="src\toki\game\editor\tools\ResizeTool.cpp" />
+    <ClCompile Include="src\toki\game\editor\tools\Tool.cpp" />
+    <ClCompile Include="src\toki\game\editor\ui\EntityPropertyList.cpp" />
+    <ClCompile Include="src\toki\game\entity\Entity.cpp" />
+    <ClCompile Include="src\toki\game\entity\EntityMgr.cpp" />
+    <ClCompile Include="src\toki\game\entity\EntityTiles.cpp" />
+    <ClCompile Include="src\toki\game\entity\graphics\PowerBeamGraphic.cpp" />
+    <ClCompile Include="src\toki\game\entity\graphics\PowerBeamGraphicMgr.cpp" />
+    <ClCompile Include="src\toki\game\entity\graphics\TextLabel.cpp" />
+    <ClCompile Include="src\toki\game\entity\graphics\TextLabelMgr.cpp" />
+    <ClCompile Include="src\toki\game\entity\movementcontroller\DirectionalMovementController.cpp" />
+    <ClCompile Include="src\toki\game\entity\movementcontroller\MovementControllerMgr.cpp" />
+    <ClCompile Include="src\toki\game\entity\movementcontroller\PhysicsSettings.cpp" />
+    <ClCompile Include="src\toki\game\entity\PresStartSettings.cpp" />
+    <ClCompile Include="src\toki\game\entity\sensor\RayTracer.cpp" />
+    <ClCompile Include="src\toki\game\entity\sensor\Sensor.cpp" />
+    <ClCompile Include="src\toki\game\entity\sensor\SensorMgr.cpp" />
+    <ClCompile Include="src\toki\game\entity\sensor\Shape.cpp" />
+    <ClCompile Include="src\toki\game\entity\sensor\TileSensor.cpp" />
+    <ClCompile Include="src\toki\game\entity\sensor\TileSensorMgr.cpp" />
+    <ClCompile Include="src\toki\game\entity\types.cpp" />
+    <ClCompile Include="src\toki\game\event\Event.cpp" />
+    <ClCompile Include="src\toki\game\event\EventMgr.cpp" />
+    <ClCompile Include="src\toki\game\event\helpers\SoundChecker.cpp" />
+    <ClCompile Include="src\toki\game\event\input\PointerEvent.cpp" />
+    <ClCompile Include="src\toki\game\event\SoundGraphicsMgr.cpp" />
+    <ClCompile Include="src\toki\game\fluid\FluidGraphicsMgr.cpp" />
+    <ClCompile Include="src\toki\game\fluid\FluidMgr.cpp" />
+    <ClCompile Include="src\toki\game\fluid\FluidParticlesMgr.cpp" />
+    <ClCompile Include="src\toki\game\fluid\FluidSettings.cpp" />
+    <ClCompile Include="src\toki\game\fluid\graphics_helpers.cpp" />
+    <ClCompile Include="src\toki\game\fluid\WaveGenerator.cpp" />
+    <ClCompile Include="src\toki\game\Game.cpp" />
+    <ClCompile Include="src\toki\game\hud\DebugUI.cpp" />
+    <ClCompile Include="src\toki\game\hud\ListBox.cpp" />
+    <ClCompile Include="src\toki\game\hud\ResolutionPicker.cpp" />
+    <ClCompile Include="src\toki\game\hud\types_hud.cpp" />
+    <ClCompile Include="src\toki\game\hud\WorkshopLevelPicker.cpp" />
+    <ClCompile Include="src\toki\game\light\Circle.cpp" />
+    <ClCompile Include="src\toki\game\light\Darkness.cpp" />
+    <ClCompile Include="src\toki\game\light\DarknessMgr.cpp" />
+    <ClCompile Include="src\toki\game\light\Glow.cpp" />
+    <ClCompile Include="src\toki\game\light\JitterEffect.cpp" />
+    <ClCompile Include="src\toki\game\light\Light.cpp" />
+    <ClCompile Include="src\toki\game\light\LightMgr.cpp" />
+    <ClCompile Include="src\toki\game\light\LightShape.cpp" />
+    <ClCompile Include="src\toki\game\light\LightTriangle.cpp" />
+    <ClCompile Include="src\toki\game\light\Polygon.cpp" />
+    <ClCompile Include="src\toki\game\Minimap.cpp" />
+    <ClCompile Include="src\toki\game\movement\MoveAnimation.cpp" />
+    <ClCompile Include="src\toki\game\movement\MoveBase.cpp" />
+    <ClCompile Include="src\toki\game\movement\MovementSet.cpp" />
+    <ClCompile Include="src\toki\game\movement\MovementSetCache.cpp" />
+    <ClCompile Include="src\toki\game\movement\MoveVector.cpp" />
+    <ClCompile Include="src\toki\game\movement\SurroundingsSurvey.cpp" />
+    <ClCompile Include="src\toki\game\movement\TileCollisionHelper.cpp" />
+    <ClCompile Include="src\toki\game\movement\Transition.cpp" />
+    <ClCompile Include="src\toki\game\movement\Validator.cpp" />
+    <ClCompile Include="src\toki\game\pathfinding\PathMgr.cpp" />
+    <ClCompile Include="src\toki\game\pathfinding\TileCache.cpp" />
+    <ClCompile Include="src\toki\game\pathfinding\TileRasterizationContext.cpp" />
+    <ClCompile Include="src\toki\game\script\Bindings.cpp" />
+    <ClCompile Include="src\toki\game\script\Callback.cpp" />
+    <ClCompile Include="src\toki\game\script\EntityBase.cpp" />
+    <ClCompile Include="src\toki\game\script\EntityScriptClass.cpp" />
+    <ClCompile Include="src\toki\game\script\EntityScriptMgr.cpp" />
+    <ClCompile Include="src\toki\game\script\EntityState.cpp" />
+    <ClCompile Include="src\toki\game\script\Registry.cpp" />
+    <ClCompile Include="src\toki\game\script\Timer.cpp" />
+    <ClCompile Include="src\toki\game\script\TimerMgr.cpp" />
+    <ClCompile Include="src\toki\game\script\wrappers\AudioWrapper.cpp" />
+    <ClCompile Include="src\toki\game\script\wrappers\CameraEffectWrapper.cpp" />
+    <ClCompile Include="src\toki\game\script\wrappers\CameraWrapper.cpp" />
+    <ClCompile Include="src\toki\game\script\wrappers\CheckPointMgrWrapper.cpp" />
+    <ClCompile Include="src\toki\game\script\wrappers\DarknessWrapper.cpp" />
+    <ClCompile Include="src\toki\game\script\wrappers\DebugViewWrapper.cpp" />
+    <ClCompile Include="src\toki\game\script\wrappers\EffectMgrWrapper.cpp" />
+    <ClCompile Include="src\toki\game\script\wrappers\EffectRectWrapper.cpp" />
+    <ClCompile Include="src\toki\game\script\wrappers\FluidSettingsWrapper.cpp" />
+    <ClCompile Include="src\toki\game\script\wrappers\MusicTrackWrapper.cpp" />
+    <ClCompile Include="src\toki\game\script\wrappers\OptionsWrapper.cpp" />
+    <ClCompile Include="src\toki\game\script\wrappers\PhysicsSettingsWrapper.cpp" />
+    <ClCompile Include="src\toki\game\script\wrappers\PowerBeamGraphicWrapper.cpp" />
+    <ClCompile Include="src\toki\game\script\wrappers\PresentationObjectWrapper.cpp" />
+    <ClCompile Include="src\toki\game\script\wrappers\PresentationStartSettingsWrapper.cpp" />
+    <ClCompile Include="src\toki\game\script\wrappers\ResolutionChangerWrapper.cpp" />
+    <ClCompile Include="src\toki\game\script\wrappers\ResolutionPickerWrapper.cpp" />
+    <ClCompile Include="src\toki\game\script\wrappers\ShoeboxPlaneDataWrapper.cpp" />
+    <ClCompile Include="src\toki\game\script\wrappers\SoundCueWrapper.cpp" />
+    <ClCompile Include="src\toki\game\script\wrappers\EntityWrapper.cpp" />
+    <ClCompile Include="src\toki\game\script\wrappers\EventWrapper.cpp" />
+    <ClCompile Include="src\toki\game\script\wrappers\LevelWrapper.cpp" />
+    <ClCompile Include="src\toki\game\script\wrappers\LightWrapper.cpp" />
+    <ClCompile Include="src\toki\game\script\wrappers\ParticleEffectWrapper.cpp" />
+    <ClCompile Include="src\toki\game\script\wrappers\PointerEventWrapper.cpp" />
+    <ClCompile Include="src\toki\game\script\wrappers\SensorWrapper.cpp" />
+    <ClCompile Include="src\toki\game\script\wrappers\ShapeWrapper.cpp" />
+    <ClCompile Include="src\toki\game\script\wrappers\StatsWrapper.cpp" />
+    <ClCompile Include="src\toki\game\script\wrappers\TextLabelWrapper.cpp" />
+    <ClCompile Include="src\toki\game\script\wrappers\TextureWrapper.cpp" />
+    <ClCompile Include="src\toki\game\script\wrappers\TileSensorWrapper.cpp" />
+    <ClCompile Include="src\toki\game\script\wrappers\WorkshopLevelPickerWrapper.cpp" />
+    <ClCompile Include="src\toki\game\ShutdownDataMgr.cpp" />
+    <ClCompile Include="src\toki\game\StartInfo.cpp" />
+    <ClCompile Include="src\toki\game\StateGame.cpp" />
+    <ClCompile Include="src\toki\game\StateLoadGame.cpp" />
+    <ClCompile Include="src\toki\game\TextView.cpp" />
+    <ClCompile Include="src\toki\game\types_game.cpp" />
+    <ClCompile Include="src\toki\input\Controller.cpp" />
+    <ClCompile Include="src\toki\input\Recorder.cpp" />
+    <ClCompile Include="src\toki\input\RecorderGui.cpp" />
+    <ClCompile Include="src\toki\input\Recording.cpp" />
+    <ClCompile Include="src\toki\level\AttributeLayer.cpp" />
+    <ClCompile Include="src\toki\level\AttributeLayerSection.cpp" />
+    <ClCompile Include="src\toki\level\entity\editor\EntityInstanceEditorRepresentation.cpp" />
+    <ClCompile Include="src\toki\level\entity\helpers_level_entity.cpp" />
+    <ClCompile Include="src\toki\level\LevelSection.cpp" />
+    <ClCompile Include="src\toki\level\entity\EntityInfo.cpp" />
+    <ClCompile Include="src\toki\level\entity\EntityInstance.cpp" />
+    <ClCompile Include="src\toki\level\entity\EntityProperty.cpp" />
+    <ClCompile Include="src\toki\level\helpers_level.cpp" />
+    <ClCompile Include="src\toki\level\LevelData.cpp" />
+    <ClCompile Include="src\toki\level\MetaDataGenerator.cpp" />
+    <ClCompile Include="src\toki\level\Note.cpp" />
+    <ClCompile Include="src\toki\level\skin\EdgeCache.cpp" />
+    <ClCompile Include="src\toki\level\skin\functions_skin.cpp" />
+    <ClCompile Include="src\toki\level\skin\GrowEdge.cpp" />
+    <ClCompile Include="src\toki\level\skin\MaterialCache.cpp" />
+    <ClCompile Include="src\toki\level\skin\SkinConfig.cpp" />
+    <ClCompile Include="src\toki\level\skin\SkinContext.cpp" />
+    <ClCompile Include="src\toki\level\skin\types_skin.cpp" />
+    <ClCompile Include="src\toki\level\TileRegistrationMgr.cpp" />
+    <ClCompile Include="src\toki\level\types_level.cpp" />
+    <ClCompile Include="src\toki\loc\Loc.cpp" />
+    <ClCompile Include="src\toki\loc\SheetList.cpp" />
+    <ClCompile Include="src\toki\main\AppStateMachine.cpp" />
+    <ClCompile Include="src\toki\main\loadstate\LoadStateAudioPlayer.cpp" />
+    <ClCompile Include="src\toki\main\loadstate\LoadStateEntityLibrary.cpp" />
+    <ClCompile Include="src\toki\main\loadstate\LoadStateGame.cpp" />
+    <ClCompile Include="src\toki\main\loadstate\LoadStateGenerateMetaData.cpp" />
+    <ClCompile Include="src\toki\main\loadstate\LoadStateInitSaveSystem.cpp" />
+    <ClCompile Include="src\toki\main\loadstate\LoadStatePrecache.cpp" />
+    <ClCompile Include="src\toki\main\loadstate\LoadStateScriptLists.cpp" />
+    <ClCompile Include="src\toki\main\loadstate\LoadStateScriptMgr.cpp" />
+    <ClCompile Include="src\toki\main\loadstate\LoadStateShoeboxPrecache.cpp" />
+    <ClCompile Include="src\toki\main\loadstate\LoadStateSkinConfigs.cpp" />
+    <ClCompile Include="src\toki\main\StateExitApp.cpp" />
+    <ClCompile Include="src\toki\main\StateLoadApp.cpp" />
+    <ClCompile Include="src\toki\pres\AudioTrigger.cpp" />
+    <ClCompile Include="src\toki\pres\OverallVolumeTrigger.cpp" />
+    <ClCompile Include="src\toki\pres\PresentationObject.cpp" />
+    <ClCompile Include="src\toki\pres\PresentationObjectMgr.cpp" />
+    <ClCompile Include="src\toki\pres\ResetTrigger.cpp" />
+    <ClCompile Include="src\toki\pres\RumbleTrigger.cpp" />
+    <ClCompile Include="src\toki\pres\TriggerFactory.cpp" />
+    <ClCompile Include="src\toki\savedata\utils_savedata.cpp" />
+    <ClCompile Include="src\toki\script\attributes\Attribute.cpp" />
+    <ClCompile Include="src\toki\script\attributes\ClassAttributes.cpp" />
+    <ClCompile Include="src\toki\script\ScriptMgr.cpp" />
+    <ClCompile Include="src\toki\script\serialization\SQCache.cpp" />
+    <ClCompile Include="src\toki\script\serialization\SQSerializer.cpp" />
+    <ClCompile Include="src\toki\script\serialization\SQUnserializer.cpp" />
+    <ClCompile Include="src\toki\script\serialization\UserType.cpp" />
+    <ClCompile Include="src\toki\serialization\SerializationMgr.cpp" />
+    <ClCompile Include="src\toki\serialization\Serializer.cpp" />
+    <ClCompile Include="src\toki\serialization\utils.cpp" />
+    <ClCompile Include="src\toki\SharedGraphics.cpp" />
+    <ClCompile Include="src\toki\statelist\statelist.cpp" />
+    <ClCompile Include="src\toki\steam\Workshop.cpp" />
+    <ClCompile Include="src\toki\unittest\unittest.cpp" />
+    <ClCompile Include="src\toki\utils\AssetMonitor.cpp" />
+    <ClCompile Include="src\toki\utils\GlyphSetMgr.cpp" />
+    <ClCompile Include="src\toki\utils\SectionProfiler.cpp" />
+    <ClCompile Include="src\toki\utils\utils_utils.cpp" />
+    <ClCompile Include="src\toki\viewer\StatePresentationViewer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="inc\toki\AppGlobal.h" />
+    <ClInclude Include="inc\toki\AppMain.h" />
+    <ClInclude Include="inc\toki\AppOptions.h" />
+    <ClInclude Include="inc\toki\audio\AudioPlayer.h" />
+    <ClInclude Include="inc\toki\audio\constants.h" />
+    <ClInclude Include="inc\toki\audio\fwd.h" />
+    <ClInclude Include="inc\toki\audio\MusicTrack.h" />
+    <ClInclude Include="inc\toki\audio\MusicTrackMgr.h" />
+    <ClInclude Include="inc\toki\audio\PositionalEffect.h" />
+    <ClInclude Include="inc\toki\audio\SoundCue.h" />
+    <ClInclude Include="inc\toki\audio\SoundCueWithPosition.h" />
+    <ClInclude Include="inc\toki\cfg.h" />
+    <ClInclude Include="inc\toki\constants.h" />
+    <ClInclude Include="inc\toki\effects\ColorGrading.h" />
+    <ClInclude Include="inc\toki\effects\fwd.h" />
+    <ClInclude Include="inc\toki\game\AttributeDebugView.h" />
+    <ClInclude Include="inc\toki\game\Border.h" />
+    <ClInclude Include="inc\toki\game\Camera.h" />
+    <ClInclude Include="inc\toki\game\CameraEffect.h" />
+    <ClInclude Include="inc\toki\game\CameraMgr.h" />
+    <ClInclude Include="inc\toki\game\CheckPointMgr.h" />
+    <ClInclude Include="inc\toki\game\DebugView.h" />
+    <ClInclude Include="inc\toki\game\DemoMgr.h" />
+    <ClInclude Include="inc\toki\game\editor\commands\CommandAddRemoveEntities.h" />
+    <ClInclude Include="inc\toki\game\editor\commands\CommandAddRemoveNotes.h" />
+    <ClInclude Include="inc\toki\game\editor\commands\CommandApplyLevelSection.h" />
+    <ClInclude Include="inc\toki\game\editor\commands\CommandChangeEntityProperties.h" />
+    <ClInclude Include="inc\toki\game\editor\commands\CommandChangeNoteRect.h" />
+    <ClInclude Include="inc\toki\game\editor\commands\CommandChangeNoteText.h" />
+    <ClInclude Include="inc\toki\game\editor\commands\CommandMoveEntities.h" />
+    <ClInclude Include="inc\toki\game\editor\commands\CommandPaintTiles.h" />
+    <ClInclude Include="inc\toki\game\editor\commands\CommandReplaceLevel.h" />
+    <ClInclude Include="inc\toki\game\editor\commands\CommandResizeLevel.h" />
+    <ClInclude Include="inc\toki\game\editor\commands\CommandSetDefaultMission.h" />
+    <ClInclude Include="inc\toki\game\editor\commands\CommandSetLevelBackground.h" />
+    <ClInclude Include="inc\toki\game\editor\commands\CommandSetLevelTheme.h" />
+    <ClInclude Include="inc\toki\game\editor\commands\CommandSetThemeColor.h" />
+    <ClInclude Include="inc\toki\game\editor\Editor.h" />
+    <ClInclude Include="inc\toki\game\editor\EditorSettings.h" />
+    <ClInclude Include="inc\toki\game\editor\features.h" />
+    <ClInclude Include="inc\toki\game\editor\fwd.h" />
+    <ClInclude Include="inc\toki\game\editor\helpers.h" />
+    <ClInclude Include="inc\toki\game\editor\hotkey\Handler.h" />
+    <ClInclude Include="inc\toki\game\editor\hotkey\HotKeyMgr.h" />
+    <ClInclude Include="inc\toki\game\editor\hotkey\types.h" />
+    <ClInclude Include="inc\toki\game\editor\tools\NotesTool.h" />
+    <ClInclude Include="inc\toki\game\editor\ui\DebugSteamCloudFileManager.h" />
+    <ClInclude Include="inc\toki\game\editor\ui\DialogBoxBase.h" />
+    <ClInclude Include="inc\toki\game\editor\ui\EntityPropertyControl.h" />
+    <ClInclude Include="inc\toki\game\editor\ui\GenericDialogBox.h" />
+    <ClInclude Include="inc\toki\game\editor\ui\fwd.h" />
+    <ClInclude Include="inc\toki\game\editor\ui\helpers.h" />
+    <ClInclude Include="inc\toki\game\editor\ui\LevelNameTextBox.h" />
+    <ClInclude Include="inc\toki\game\editor\ui\NewLevelDialog.h" />
+    <ClInclude Include="inc\toki\game\editor\ui\PublishedLevelBrowser.h" />
+    <ClInclude Include="inc\toki\game\editor\ui\PublishToWorkshopDialog.h" />
+    <ClInclude Include="inc\toki\game\editor\ui\SaveAsDialog.h" />
+    <ClInclude Include="inc\toki\game\editor\ui\SaveChangesDialog.h" />
+    <ClInclude Include="inc\toki\game\editor\ui\SetThemeColorUI.h" />
+    <ClInclude Include="inc\toki\game\editor\ui\SteamWorkshopTest.h" />
+    <ClInclude Include="inc\toki\game\editor\ui\SvnCommands.h" />
+    <ClInclude Include="inc\toki\game\editor\ui\Testbed.h" />
+    <ClInclude Include="inc\toki\game\editor\ui\types.h" />
+    <ClInclude Include="inc\toki\game\entity\effect\ColorGradingEffectMgr.h" />
+    <ClInclude Include="inc\toki\game\entity\effect\EffectMgr.h" />
+    <ClInclude Include="inc\toki\game\entity\effect\EffectRect.h" />
+    <ClInclude Include="inc\toki\game\entity\effect\EffectRectMgr.h" />
+    <ClInclude Include="inc\toki\game\entity\effect\FogEffectMgr.h" />
+    <ClInclude Include="inc\toki\game\entity\effect\fwd.h" />
+    <ClInclude Include="inc\toki\game\entity\effect\types.h" />
+    <ClInclude Include="inc\toki\game\entity\EntityLibrary.h" />
+    <ClInclude Include="inc\toki\game\editor\tools\BoxSelectTool.h" />
+    <ClInclude Include="inc\toki\game\editor\tools\EntityMoveTool.h" />
+    <ClInclude Include="inc\toki\game\editor\tools\EntityPaintTool.h" />
+    <ClInclude Include="inc\toki\game\editor\tools\FloodFillTool.h" />
+    <ClInclude Include="inc\toki\game\editor\tools\HandTool.h" />
+    <ClInclude Include="inc\toki\game\editor\tools\PaintTool.h" />
+    <ClInclude Include="inc\toki\game\editor\tools\ResizeTool.h" />
+    <ClInclude Include="inc\toki\game\editor\tools\Tool.h" />
+    <ClInclude Include="inc\toki\game\editor\tools\types.h" />
+    <ClInclude Include="inc\toki\game\editor\types.h" />
+    <ClInclude Include="inc\toki\game\editor\ui\EntityPropertyList.h" />
+    <ClInclude Include="inc\toki\game\entity\Entity.h" />
+    <ClInclude Include="inc\toki\game\entity\EntityMgr.h" />
+    <ClInclude Include="inc\toki\game\entity\EntityTiles.h" />
+    <ClInclude Include="inc\toki\game\entity\fwd.h" />
+    <ClInclude Include="inc\toki\game\entity\graphics\fwd.h" />
+    <ClInclude Include="inc\toki\game\entity\graphics\PowerBeamGraphic.h" />
+    <ClInclude Include="inc\toki\game\entity\graphics\PowerBeamGraphicMgr.h" />
+    <ClInclude Include="inc\toki\game\entity\graphics\TextLabel.h" />
+    <ClInclude Include="inc\toki\game\entity\graphics\TextLabelMgr.h" />
+    <ClInclude Include="inc\toki\game\entity\graphics\types.h" />
+    <ClInclude Include="inc\toki\game\entity\movementcontroller\DirectionalMovementController.h" />
+    <ClInclude Include="inc\toki\game\entity\movementcontroller\MovementControllerMgr.h" />
+    <ClInclude Include="inc\toki\game\entity\movementcontroller\PhysicsSettings.h" />
+    <ClInclude Include="inc\toki\game\entity\movementcontroller\physics_integration.h" />
+    <ClInclude Include="inc\toki\game\entity\PresStartSettings.h" />
+    <ClInclude Include="inc\toki\game\entity\sensor\fwd.h" />
+    <ClInclude Include="inc\toki\game\entity\sensor\RayTracer.h" />
+    <ClInclude Include="inc\toki\game\entity\sensor\Sensor.h" />
+    <ClInclude Include="inc\toki\game\entity\sensor\SensorMgr.h" />
+    <ClInclude Include="inc\toki\game\entity\sensor\Shape.h" />
+    <ClInclude Include="inc\toki\game\entity\sensor\TileSensor.h" />
+    <ClInclude Include="inc\toki\game\entity\sensor\TileSensorMgr.h" />
+    <ClInclude Include="inc\toki\game\entity\types.h" />
+    <ClInclude Include="inc\toki\game\event\Event.h" />
+    <ClInclude Include="inc\toki\game\event\EventMgr.h" />
+    <ClInclude Include="inc\toki\game\event\fwd.h" />
+    <ClInclude Include="inc\toki\game\event\helpers\fwd.h" />
+    <ClInclude Include="inc\toki\game\event\helpers\SoundChecker.h" />
+    <ClInclude Include="inc\toki\game\event\input\fwd.h" />
+    <ClInclude Include="inc\toki\game\event\input\PointerEvent.h" />
+    <ClInclude Include="inc\toki\game\event\Signal.h" />
+    <ClInclude Include="inc\toki\game\event\SoundGraphicsMgr.h" />
+    <ClInclude Include="inc\toki\game\fluid\FluidGraphicsMgr.h" />
+    <ClInclude Include="inc\toki\game\fluid\FluidMgr.h" />
+    <ClInclude Include="inc\toki\game\fluid\FluidParticlesMgr.h" />
+    <ClInclude Include="inc\toki\game\fluid\FluidSettings.h" />
+    <ClInclude Include="inc\toki\game\fluid\fwd.h" />
+    <ClInclude Include="inc\toki\game\fluid\graphics_helpers.h" />
+    <ClInclude Include="inc\toki\game\fluid\types.h" />
+    <ClInclude Include="inc\toki\game\fluid\WaveGenerator.h" />
+    <ClInclude Include="inc\toki\game\fwd.h" />
+    <ClInclude Include="inc\toki\game\Game.h" />
+    <ClInclude Include="inc\toki\game\hud\DebugUI.h" />
+    <ClInclude Include="inc\toki\game\hud\fwd.h" />
+    <ClInclude Include="inc\toki\game\hud\ListBox.h" />
+    <ClInclude Include="inc\toki\game\hud\ResolutionPicker.h" />
+    <ClInclude Include="inc\toki\game\hud\types.h" />
+    <ClInclude Include="inc\toki\game\hud\WorkshopLevelPicker.h" />
+    <ClInclude Include="inc\toki\game\light\BlobData.h" />
+    <ClInclude Include="inc\toki\game\light\Circle.h" />
+    <ClInclude Include="inc\toki\game\light\Darkness.h" />
+    <ClInclude Include="inc\toki\game\light\DarknessMgr.h" />
+    <ClInclude Include="inc\toki\game\light\fwd.h" />
+    <ClInclude Include="inc\toki\game\light\Glow.h" />
+    <ClInclude Include="inc\toki\game\light\JitterEffect.h" />
+    <ClInclude Include="inc\toki\game\light\Light.h" />
+    <ClInclude Include="inc\toki\game\light\LightMgr.h" />
+    <ClInclude Include="inc\toki\game\light\LightRayTracer.h" />
+    <ClInclude Include="inc\toki\game\light\LightShape.h" />
+    <ClInclude Include="inc\toki\game\light\LightTriangle.h" />
+    <ClInclude Include="inc\toki\game\light\Polygon.h" />
+    <ClInclude Include="inc\toki\game\Minimap.h" />
+    <ClInclude Include="inc\toki\game\movement\fwd.h" />
+    <ClInclude Include="inc\toki\game\movement\MoveAnimation.h" />
+    <ClInclude Include="inc\toki\game\movement\MoveBase.h" />
+    <ClInclude Include="inc\toki\game\movement\MovementSet.h" />
+    <ClInclude Include="inc\toki\game\movement\MovementSetCache.h" />
+    <ClInclude Include="inc\toki\game\movement\MoveVector.h" />
+    <ClInclude Include="inc\toki\game\movement\SurroundingsSurvey.h" />
+    <ClInclude Include="inc\toki\game\movement\TileCollisionHelper.h" />
+    <ClInclude Include="inc\toki\game\movement\Transition.h" />
+    <ClInclude Include="inc\toki\game\movement\Validator.h" />
+    <ClInclude Include="inc\toki\game\pathfinding\fwd.h" />
+    <ClInclude Include="inc\toki\game\pathfinding\PathMgr.h" />
+    <ClInclude Include="inc\toki\game\pathfinding\TileCache.h" />
+    <ClInclude Include="inc\toki\game\pathfinding\TileRasterizationContext.h" />
+    <ClInclude Include="inc\toki\game\script\Bindings.h" />
+    <ClInclude Include="inc\toki\game\script\Callback.h" />
+    <ClInclude Include="inc\toki\game\script\EntityBase.h" />
+    <ClInclude Include="inc\toki\game\script\EntityScriptClass.h" />
+    <ClInclude Include="inc\toki\game\script\EntityScriptMgr.h" />
+    <ClInclude Include="inc\toki\game\script\EntityState.h" />
+    <ClInclude Include="inc\toki\game\script\fwd.h" />
+    <ClInclude Include="inc\toki\game\script\Registry.h" />
+    <ClInclude Include="inc\toki\game\script\sqbind_bindings.h" />
+    <ClInclude Include="inc\toki\game\script\Timer.h" />
+    <ClInclude Include="inc\toki\game\script\TimerMgr.h" />
+    <ClInclude Include="inc\toki\game\script\wrappers\AudioWrapper.h" />
+    <ClInclude Include="inc\toki\game\script\wrappers\CameraEffectWrapper.h" />
+    <ClInclude Include="inc\toki\game\script\wrappers\CameraWrapper.h" />
+    <ClInclude Include="inc\toki\game\script\wrappers\CheckPointMgrWrapper.h" />
+    <ClInclude Include="inc\toki\game\script\wrappers\DarknessWrapper.h" />
+    <ClInclude Include="inc\toki\game\script\wrappers\DebugViewWrapper.h" />
+    <ClInclude Include="inc\toki\game\script\wrappers\EffectMgrWrapper.h" />
+    <ClInclude Include="inc\toki\game\script\wrappers\EffectRectWrapper.h" />
+    <ClInclude Include="inc\toki\game\script\wrappers\FluidSettingsWrapper.h" />
+    <ClInclude Include="inc\toki\game\script\wrappers\MusicTrackWrapper.h" />
+    <ClInclude Include="inc\toki\game\script\wrappers\OptionsWrapper.h" />
+    <ClInclude Include="inc\toki\game\script\wrappers\PhysicsSettingsWrapper.h" />
+    <ClInclude Include="inc\toki\game\script\wrappers\PowerBeamGraphicWrapper.h" />
+    <ClInclude Include="inc\toki\game\script\wrappers\PresentationObjectWrapper.h" />
+    <ClInclude Include="inc\toki\game\script\wrappers\PresentationStartSettingsWrapper.h" />
+    <ClInclude Include="inc\toki\game\script\wrappers\ResolutionChangerWrapper.h" />
+    <ClInclude Include="inc\toki\game\script\wrappers\ResolutionPickerWrapper.h" />
+    <ClInclude Include="inc\toki\game\script\wrappers\ShoeboxPlaneDataWrapper.h" />
+    <ClInclude Include="inc\toki\game\script\wrappers\SoundCueWrapper.h" />
+    <ClInclude Include="inc\toki\game\script\wrappers\EntityWrapper.h" />
+    <ClInclude Include="inc\toki\game\script\wrappers\EventWrapper.h" />
+    <ClInclude Include="inc\toki\game\script\wrappers\fwd.h" />
+    <ClInclude Include="inc\toki\game\script\wrappers\LevelWrapper.h" />
+    <ClInclude Include="inc\toki\game\script\wrappers\LightWrapper.h" />
+    <ClInclude Include="inc\toki\game\script\wrappers\ParticleEffectWrapper.h" />
+    <ClInclude Include="inc\toki\game\script\wrappers\PointerEventWrapper.h" />
+    <ClInclude Include="inc\toki\game\script\wrappers\SensorWrapper.h" />
+    <ClInclude Include="inc\toki\game\script\wrappers\ShapeWrapper.h" />
+    <ClInclude Include="inc\toki\game\script\wrappers\StatsWrapper.h" />
+    <ClInclude Include="inc\toki\game\script\wrappers\TextLabelWrapper.h" />
+    <ClInclude Include="inc\toki\game\script\wrappers\TextureWrapper.h" />
+    <ClInclude Include="inc\toki\game\script\wrappers\TileSensorWrapper.h" />
+    <ClInclude Include="inc\toki\game\script\wrappers\WorkshopLevelPickerWrapper.h" />
+    <ClInclude Include="inc\toki\game\ShutdownDataMgr.h" />
+    <ClInclude Include="inc\toki\game\StartInfo.h" />
+    <ClInclude Include="inc\toki\game\StateGame.h" />
+    <ClInclude Include="inc\toki\game\StateLoadGame.h" />
+    <ClInclude Include="inc\toki\game\TextView.h" />
+    <ClInclude Include="inc\toki\game\types.h" />
+    <ClInclude Include="inc\toki\input\Controller.h" />
+    <ClInclude Include="inc\toki\input\fwd.h" />
+    <ClInclude Include="inc\toki\input\Recorder.h" />
+    <ClInclude Include="inc\toki\input\RecorderGui.h" />
+    <ClInclude Include="inc\toki\input\Recording.h" />
+    <ClInclude Include="inc\toki\input\types.h" />
+    <ClInclude Include="inc\toki\level\AttributeLayer.h" />
+    <ClInclude Include="inc\toki\level\AttributeLayerSection.h" />
+    <ClInclude Include="inc\toki\level\entity\editor\EntityInstanceEditorRepresentation.h" />
+    <ClInclude Include="inc\toki\level\entity\editor\fwd.h" />
+    <ClInclude Include="inc\toki\level\entity\EntityInstanceObserver.h" />
+    <ClInclude Include="inc\toki\level\entity\helpers.h" />
+    <ClInclude Include="inc\toki\level\LevelDataObserver.h" />
+    <ClInclude Include="inc\toki\level\LevelSection.h" />
+    <ClInclude Include="inc\toki\level\entity\EntityInfo.h" />
+    <ClInclude Include="inc\toki\level\entity\EntityInstance.h" />
+    <ClInclude Include="inc\toki\level\entity\EntityProperty.h" />
+    <ClInclude Include="inc\toki\level\entity\fwd.h" />
+    <ClInclude Include="inc\toki\level\fwd.h" />
+    <ClInclude Include="inc\toki\level\helpers.h" />
+    <ClInclude Include="inc\toki\level\LevelData.h" />
+    <ClInclude Include="inc\toki\level\MetaDataGenerator.h" />
+    <ClInclude Include="inc\toki\level\Note.h" />
+    <ClInclude Include="inc\toki\level\skin\BlobData.h" />
+    <ClInclude Include="inc\toki\level\skin\EdgeCache.h" />
+    <ClInclude Include="inc\toki\level\skin\functions.h" />
+    <ClInclude Include="inc\toki\level\skin\fwd.h" />
+    <ClInclude Include="inc\toki\level\skin\GrowEdge.h" />
+    <ClInclude Include="inc\toki\level\skin\MaterialCache.h" />
+    <ClInclude Include="inc\toki\level\skin\SkinConfig.h" />
+    <ClInclude Include="inc\toki\level\skin\SkinContext.h" />
+    <ClInclude Include="inc\toki\level\skin\TileMaterial.h" />
+    <ClInclude Include="inc\toki\level\skin\types.h" />
+    <ClInclude Include="inc\toki\level\TileChangedObserver.h" />
+    <ClInclude Include="inc\toki\level\TileRegistrationMgr.h" />
+    <ClInclude Include="inc\toki\level\types.h" />
+    <ClInclude Include="inc\toki\loc\fwd.h" />
+    <ClInclude Include="inc\toki\loc\Loc.h" />
+    <ClInclude Include="inc\toki\loc\SheetList.h" />
+    <ClInclude Include="inc\toki\main\AppStateMachine.h" />
+    <ClInclude Include="inc\toki\main\loadstate\LoadState.h" />
+    <ClInclude Include="inc\toki\main\loadstate\LoadStateAudioPlayer.h" />
+    <ClInclude Include="inc\toki\main\loadstate\LoadStateEntityLibrary.h" />
+    <ClInclude Include="inc\toki\main\loadstate\LoadStateGame.h" />
+    <ClInclude Include="inc\toki\main\loadstate\LoadStateGenerateMetaData.h" />
+    <ClInclude Include="inc\toki\main\loadstate\LoadStateInitSaveSystem.h" />
+    <ClInclude Include="inc\toki\main\loadstate\LoadStatePrecache.h" />
+    <ClInclude Include="inc\toki\main\loadstate\LoadStateScriptLists.h" />
+    <ClInclude Include="inc\toki\main\loadstate\LoadStateScriptMgr.h" />
+    <ClInclude Include="inc\toki\main\loadstate\LoadStateShoeboxPrecache.h" />
+    <ClInclude Include="inc\toki\main\loadstate\LoadStateSkinConfigs.h" />
+    <ClInclude Include="inc\toki\main\StateExitApp.h" />
+    <ClInclude Include="inc\toki\main\StateLoadApp.h" />
+    <ClInclude Include="inc\toki\pres\AudioTrigger.h" />
+    <ClInclude Include="inc\toki\pres\fwd.h" />
+    <ClInclude Include="inc\toki\pres\OverallVolumeTrigger.h" />
+    <ClInclude Include="inc\toki\pres\PresentationObject.h" />
+    <ClInclude Include="inc\toki\pres\PresentationObjectMgr.h" />
+    <ClInclude Include="inc\toki\pres\ResetTrigger.h" />
+    <ClInclude Include="inc\toki\pres\RumbleTrigger.h" />
+    <ClInclude Include="inc\toki\pres\TriggerFactory.h" />
+    <ClInclude Include="inc\toki\savedata\utils.h" />
+    <ClInclude Include="inc\toki\ScreenshotSettings.h" />
+    <ClInclude Include="inc\toki\script\attributes\Attribute.h" />
+    <ClInclude Include="inc\toki\script\attributes\AttributeCollection.h" />
+    <ClInclude Include="inc\toki\script\attributes\ClassAttributes.h" />
+    <ClInclude Include="inc\toki\script\fwd.h" />
+    <ClInclude Include="inc\toki\script\ScriptMgr.h" />
+    <ClInclude Include="inc\toki\script\serialization\fwd.h" />
+    <ClInclude Include="inc\toki\script\serialization\ProcessedObject.h" />
+    <ClInclude Include="inc\toki\script\serialization\Registry.h" />
+    <ClInclude Include="inc\toki\script\serialization\SQCache.h" />
+    <ClInclude Include="inc\toki\script\serialization\SQData.h" />
+    <ClInclude Include="inc\toki\script\serialization\SQSerializer.h" />
+    <ClInclude Include="inc\toki\script\serialization\SQUnserializer.h" />
+    <ClInclude Include="inc\toki\script\serialization\UserType.h" />
+    <ClInclude Include="inc\toki\serialization\fwd.h" />
+    <ClInclude Include="inc\toki\serialization\SerializationMgr.h" />
+    <ClInclude Include="inc\toki\serialization\Serializer.h" />
+    <ClInclude Include="inc\toki\serialization\utils.h" />
+    <ClInclude Include="inc\toki\SharedGraphics.h" />
+    <ClInclude Include="inc\toki\statelist\statelist.h" />
+    <ClInclude Include="inc\toki\steam\fwd.h" />
+    <ClInclude Include="inc\toki\steam\Workshop.h" />
+    <ClInclude Include="inc\toki\steam\WorkshopObserver.h" />
+    <ClInclude Include="inc\toki\unittest\orientation_unittests.h" />
+    <ClInclude Include="inc\toki\unittest\serialization_unittests.h" />
+    <ClInclude Include="inc\toki\unittest\squirrel_compile_unittests.h" />
+    <ClInclude Include="inc\toki\unittest\unittest.h" />
+    <ClInclude Include="inc\toki\utils\AssetMonitor.h" />
+    <ClInclude Include="inc\toki\utils\GlyphSetMgr.h" />
+    <ClInclude Include="inc\toki\utils\SectionProfiler.h" />
+    <ClInclude Include="inc\toki\utils\types.h" />
+    <ClInclude Include="inc\toki\utils\utils.h" />
+    <ClInclude Include="inc\toki\viewer\StatePresentationViewer.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

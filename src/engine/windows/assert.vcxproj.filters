@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Shared">
+      <UniqueIdentifier>{0052599c-abff-4c79-a970-c9f5c3a3586e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows">
+      <UniqueIdentifier>{d498c085-623a-4d49-a21e-fe7d102b04b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows\Resources">
+      <UniqueIdentifier>{c9cc3ffe-5476-4c3d-adf6-0b9a3145dc55}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\tt\assert\Assert.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\assert\AssertHandler.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\assert\dllmain.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\assert\ExceptionHandler.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="inc\tt\assert\Assert.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\assert\AssertHandler.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\assert\ExceptionHandler.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\assert\String.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="res\tt\assert\resource.h">
+      <Filter>Windows\Resources</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\tt\assert\logo.bmp">
+      <Filter>Windows\Resources</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="res\tt\assert\Script1.rc">
+      <Filter>Windows\Resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuildStep Include="inc\tt\assert\dll.h">
+      <Filter>Windows</Filter>
+    </CustomBuildStep>
+  </ItemGroup>
+</Project>

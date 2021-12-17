@@ -1,0 +1,95 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+
+//#include "afxres.h"
+#include "WinResrc.h"
+#define IDC_STATIC  -1
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""application.rc2""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_APP_ICON            ICON                    "..\\..\\..\\assets\\source\\win\\icons\\app_icon.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR_GAME CURSOR                                            "..\\..\\..\\assets\\source\\win\\cursors\\game_cursor.cur"
+IDC_CURSOR_EDITOR_SELECTION_CONTENT_CLONE CURSOR                  "..\\..\\..\\assets\\source\\win\\cursors\\editor_selection_content_clone.cur"
+IDC_CURSOR_EDITOR_SELECTION_CONTENT_CUT CURSOR                    "..\\..\\..\\assets\\source\\win\\cursors\\editor_selection_content_cut.cur"
+IDC_CURSOR_EDITOR_SELECTION_CONTENT_MOVE CURSOR                   "..\\..\\..\\assets\\source\\win\\cursors\\editor_selection_content_move.cur"
+IDC_CURSOR_EDITOR_SELECTION_RECT_CREATE CURSOR                    "..\\..\\..\\assets\\source\\win\\cursors\\editor_selection_rect_create.cur"
+IDC_CURSOR_EDITOR_SELECTION_RECT_MOVE CURSOR                      "..\\..\\..\\assets\\source\\win\\cursors\\editor_selection_rect_move.cur"
+IDC_CURSOR_EDITOR_HAND_CLOSED CURSOR                              "..\\..\\..\\assets\\source\\win\\cursors\\editor_hand_closed.cur"
+IDC_CURSOR_EDITOR_HAND_OPEN CURSOR                                "..\\..\\..\\assets\\source\\win\\cursors\\editor_hand_open.cur"
+IDC_CURSOR_EDITOR_DRAW  CURSOR                                    "..\\..\\..\\assets\\source\\win\\cursors\\editor_draw.cur"
+IDC_CURSOR_EDITOR_FLOODFILL CURSOR                                "..\\..\\..\\assets\\source\\win\\cursors\\editor_floodfill.cur"
+IDC_CURSOR_EDITOR_ERASE CURSOR                                    "..\\..\\..\\assets\\source\\win\\cursors\\editor_erase.cur"
+IDC_CURSOR_EDITOR_DRAWENTITY CURSOR                               "..\\..\\..\\assets\\source\\win\\cursors\\editor_drawentity.cur"
+IDC_CURSOR_EDITOR_TILEPICKER CURSOR                               "..\\..\\..\\assets\\source\\win\\cursors\\editor_tilepicker.cur"
+IDC_CURSOR_EDITOR_ENTITYPICKER_INVALID CURSOR                     "..\\..\\..\\assets\\source\\win\\cursors\\editor_entitypicker_invalid.cur"
+IDC_CURSOR_EDITOR_ENTITYPICKER_VALID CURSOR                       "..\\..\\..\\assets\\source\\win\\cursors\\editor_entitypicker_valid.cur"
+IDC_CURSOR_EDITOR_ADDNOTE CURSOR                                  "..\\..\\..\\assets\\source\\win\\cursors\\editor_addnote.cur"
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "application.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

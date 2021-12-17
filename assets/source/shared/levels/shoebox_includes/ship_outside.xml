@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<shoebox xmlns="http://intranet.twotribes.com/schemas/common/shoebox.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/shoebox.xsd http://intranet.twotribes.com/schemas/common/shoebox.xsd">
+  <particle effect_file="jet_engine.trigger" x="171.574" y="8.850" z="-14.030" scale="4.581" pid="0"/>
+  <particle effect_file="jet_engine.trigger" x="14.860" y="12.149" z="-14.030" scale="4.581" pid="1"/>
+  <particle effect_file="smoke_rewind.trigger" x="157.904" y="25.789" z="0.090" scale="2.535" pid="2"/>
+  <particle effect_file="smoke_rewind.trigger" x="187.134" y="24.072" z="-8.980" scale="2.535" pid="3"/>
+  <particle effect_file="smoke_rewind.trigger" x="22.798" y="24.848" z="-8.980" scale="2.535" pid="4"/>
+  <particle effect_file="smoke_rewind.trigger" x="125.452" y="21.011" z="-15.980" scale="2.535" pid="5"/>
+  <particle effect_file="smoke_rewind.trigger" x="114.836" y="20.894" z="-15.980" scale="2.535" pid="6"/>
+  <plane texture="backgrounds/harpoon_front.png" x="29.957" y="10.781" z="-16.010" width="20.328" height="24.742" priority="2" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="7">
+    <color_whole_quad r="117" g="117" b="117" a="255"/>
+  </plane>
+  <plane texture="backgrounds/harpoon_back.png" x="197.040" y="12.437" z="-16.010" width="27.818" height="25.166" priority="2" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="8">
+    <color_whole_quad r="117" g="117" b="117" a="255"/>
+  </plane>
+  <plane texture="backgrounds/engine_coil.png" x="148.157" texture_anim_v="10" y="8.525" z="-14.010" width="14.719" height="24.033" priority="-28" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="9">
+    <color_whole_quad r="107" g="107" b="107" a="255"/>
+  </plane>
+  <plane texture="backgrounds/engine_coil.png" x="-8.482" texture_anim_v="10" y="12.424" z="-14.010" width="14.719" height="24.033" priority="-28" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="10">
+    <color_whole_quad r="107" g="107" b="107" a="255"/>
+  </plane>
+  <plane texture="backgrounds/engine.png" x="154.818" y="8.963" z="-14.010" width="38.875" height="30.236" priority="2" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="11">
+    <color_whole_quad r="158" g="158" b="158" a="255"/>
+    <animations>
+      <translation duration="r(0.1),(0.3)" looping="true" direction="pingpong">
+        <begin y="r(-0.04),(-0.08)" x="0" z="0"/>
+        <end y="r(0.04),(0.08)" x="0" z="0"/>
+      </translation>
+    </animations>
+  </plane>
+  <plane texture="backgrounds/engine.png" x="-1.821" y="11.862" z="-14.010" width="38.875" height="30.236" priority="2" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="12">
+    <color_whole_quad r="141" g="141" b="141" a="255"/>
+    <animations>
+      <translation duration="r(0.1),(0.3)" looping="true" direction="pingpong">
+        <begin y="r(-0.04),(-0.08)" x="0" z="0"/>
+        <end y="r(0.04),(0.08)" x="0" z="0"/>
+      </translation>
+    </animations>
+  </plane>
+  <plane texture="backgrounds/harpoon_front.png" x="197.464" y="28.294" z="5.000" width="24.195" height="29.449" priority="52" rotation="1.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="13">
+    <color_whole_quad r="190" g="190" b="190" a="255"/>
+  </plane>
+  <plane texture="backgrounds/harpoon_back.png" x="34.396" y="23.454" z="5.000" width="28.217" height="25.527" priority="52" rotation="1.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="14">
+    <color_whole_quad r="190" g="190" b="190" a="255"/>
+  </plane>
+  <plane texture="backgrounds/harpoon_back.png" x="75.541" y="16.650" z="-4.010" width="28.217" height="25.527" priority="2" rotation="1.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="15">
+    <color_whole_quad r="190" g="190" b="190" a="255"/>
+  </plane>
+  <plane texture="backgrounds/harpoon_front.png" x="162.712" y="17.471" z="-5.010" width="24.740" height="30.111" priority="2" rotation="1.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="16">
+    <color_whole_quad r="190" g="190" b="190" a="255"/>
+  </plane>
+  <plane texture="backgrounds/lavacave_fog.png" x="-42.977" y="45.959" z="-20.020" width="584.765" height="77.601" priority="0" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="4.233" texture_top_right_v="0.000" texture_bottom_right_u="4.233" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="true" blend_mode="add" pid="17">
+    <color_whole_quad r="0" g="88" b="159" a="255"/>
+  </plane>
+  <plane texture="backgrounds/gradient.png" x="-78.311" y="20.211" z="-9.020" width="710.980" height="5.690" priority="-50" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="204.450" texture_top_right_v="0.000" texture_bottom_right_u="204.450" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="true" blend_mode="add" pid="18">
+    <color_whole_quad r="254" g="65" b="202" a="255"/>
+  </plane>
+  <plane texture="backgrounds/gradient.png" x="-41.414" y="20.143" z="-0.020" width="534.424" height="5.690" priority="0" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="151.586" texture_top_right_v="0.000" texture_bottom_right_u="151.586" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="true" blend_mode="add" pid="19">
+    <color_whole_quad r="254" g="65" b="202" a="255"/>
+  </plane>
+  <plane texture="backgrounds/ship_exterior_grate.png" x="187.690" y="24.540" z="-9.000" width="9.688" height="6.031" priority="5" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="20">
+    <color_whole_quad r="172" g="172" b="172" a="255"/>
+  </plane>
+  <plane texture="backgrounds/ship_exterior_grate.png" x="106.797" y="25.997" z="0.080" width="9.688" height="6.031" priority="5" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="21">
+    <color_whole_quad r="172" g="172" b="172" a="255"/>
+  </plane>
+  <plane texture="backgrounds/ship_exterior_grate.png" x="157.127" y="26.689" z="0.080" width="9.688" height="6.031" priority="5" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="22">
+    <color_whole_quad r="172" g="172" b="172" a="255"/>
+  </plane>
+  <plane texture="backgrounds/ship_exterior_grate.png" x="188.187" y="26.000" z="0.080" width="9.688" height="6.031" priority="5" rotation="0.000" texture_top_left_u="1.000" texture_top_left_v="0.000" texture_top_right_u="0.000" texture_top_right_v="0.000" texture_bottom_right_u="0.000" texture_bottom_right_v="1.000" texture_bottom_left_u="1.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="23">
+    <color_whole_quad r="172" g="172" b="172" a="255"/>
+  </plane>
+  <plane texture="backgrounds/ship_exterior_grate.png" x="23.354" y="25.316" z="-9.000" width="9.688" height="6.031" priority="5" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="24">
+    <color_whole_quad r="172" g="172" b="172" a="255"/>
+  </plane>
+  <plane texture="backgrounds/ship_exterior_grate.png" x="126.008" y="21.479" z="-16.000" width="9.688" height="6.031" priority="5" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="25">
+    <color_whole_quad r="172" g="172" b="172" a="255"/>
+  </plane>
+  <plane texture="backgrounds/ship_exterior_grate.png" x="115.392" y="21.362" z="-16.000" width="9.688" height="6.031" priority="5" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="26">
+    <color_whole_quad r="172" g="172" b="172" a="255"/>
+  </plane>
+  <plane texture="backgrounds/ship_exterior_pipe.png" x="126.665" y="27.187" z="-9.000" width="4.835" height="6.890" priority="5" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="27">
+    <color_whole_quad r="172" g="172" b="172" a="255"/>
+  </plane>
+  <plane texture="backgrounds/ship_exterior_pipe.png" x="174.802" y="25.357" z="-9.000" width="6.031" height="8.594" priority="5" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="28">
+    <color_whole_quad r="172" g="172" b="172" a="255"/>
+  </plane>
+  <plane texture="backgrounds/ship_exterior_pipe.png" x="132.111" y="26.614" z="-9.000" width="6.031" height="8.594" priority="5" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="29">
+    <color_whole_quad r="172" g="172" b="172" a="255"/>
+  </plane>
+  <plane texture="backgrounds/ship_exterior_pipe.png" x="180.081" y="27.482" z="-9.000" width="4.310" height="6.142" priority="5" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="30">
+    <color_whole_quad r="172" g="172" b="172" a="255"/>
+  </plane>
+  <plane texture="backgrounds/ship_exterior_pumpmiddle_02.png" x="95.576" y="27.524" z="1.000" width="6.829" height="6.971" priority="3" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="31">
+    <animations>
+      <translation delay="r(0.1),(0.3)" duration="r(1.5),(2.5)" preset="oscillating" looping="true">
+        <begin x="0" y="0" z="0"/>
+        <end x="0" y="1.6" z="0"/>
+      </translation>
+    </animations>
+  </plane>
+  <plane texture="backgrounds/ship_exterior_pumpmiddle_02.png" x="51.777" y="26.140" z="-9.000" width="6.829" height="6.971" priority="3" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="32">
+    <animations>
+      <translation delay="r(0.1),(0.3)" duration="r(1.5),(2.5)" preset="oscillating" looping="true">
+        <begin x="0" y="0" z="0"/>
+        <end x="0" y="1.6" z="0"/>
+      </translation>
+    </animations>
+  </plane>
+  <plane texture="backgrounds/ship_exterior_bulge.png" x="148.820" y="27.114" z="-9.000" width="22.508" height="11.694" priority="3" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="33">
+    <color_whole_quad r="182" g="182" b="182" a="255"/>
+  </plane>
+  <plane texture="backgrounds/ship_exterior_pumpmiddle_01.png" x="114.311" y="26.105" z="-9.000" width="6.829" height="6.971" priority="3" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="34">
+    <animations>
+      <translation delay="r(0.1),(0.3)" duration="r(1.5),(2.5)" preset="oscillating" looping="true">
+        <begin x="0" y="0" z="0"/>
+        <end x="0" y="1.6" z="0"/>
+      </translation>
+    </animations>
+  </plane>
+  <plane texture="backgrounds/ship_exterior_pumpmiddle_01.png" x="143.125" y="27.014" z="1.000" width="6.829" height="6.971" priority="3" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="35">
+    <animations>
+      <translation delay="r(0.1),(0.3)" duration="r(1.5),(2.5)" preset="oscillating" looping="true">
+        <begin x="0" y="0" z="0"/>
+        <end x="0" y="1.6" z="0"/>
+      </translation>
+    </animations>
+  </plane>
+  <plane texture="backgrounds/ship_exterior_pumpmiddle_01.png" x="78.626" y="27.437" z="1.000" width="6.829" height="6.971" priority="3" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="36">
+    <animations>
+      <translation delay="r(0.1),(0.3)" duration="r(1.5),(2.5)" preset="oscillating" looping="true">
+        <begin x="0" y="0" z="0"/>
+        <end x="0" y="1.6" z="0"/>
+      </translation>
+    </animations>
+  </plane>
+  <plane texture="backgrounds/ship_exterior_pumpmiddle_01.png" x="34.866" y="26.074" z="-9.000" width="6.829" height="6.971" priority="3" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="37">
+    <animations>
+      <translation delay="r(0.1),(0.3)" duration="r(1.5),(2.5)" preset="oscillating" looping="true">
+        <begin x="0" y="0" z="0"/>
+        <end x="0" y="1.6" z="0"/>
+      </translation>
+    </animations>
+  </plane>
+  <plane texture="backgrounds/ship_exterior_pumpback_01.png" x="95.622" y="25.218" z="1.000" width="12.907" height="5.277" priority="2" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="38"/>
+  <plane texture="backgrounds/ship_exterior_pumpback_01.png" x="51.783" y="23.840" z="-9.000" width="12.907" height="5.277" priority="2" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="39"/>
+  <plane texture="backgrounds/ship_exterior_pumpback_02.png" x="114.323" y="23.898" z="-9.000" width="12.907" height="5.277" priority="2" rotation="1.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="40"/>
+  <plane texture="backgrounds/ship_exterior_pumpback_02.png" x="143.137" y="24.807" z="1.000" width="12.907" height="5.277" priority="2" rotation="1.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="41"/>
+  <plane texture="backgrounds/ship_exterior_pumpback_02.png" x="78.622" y="25.151" z="1.000" width="12.907" height="5.277" priority="2" rotation="1.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="42"/>
+  <plane texture="backgrounds/ship_exterior_pumpback_02.png" x="34.783" y="23.774" z="-9.000" width="12.907" height="5.277" priority="2" rotation="1.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="43"/>
+  <plane texture="backgrounds/ship_exterior_pumpfront_02.png" x="114.845" y="27.508" z="-9.000" width="14.253" height="6.562" priority="4" rotation="1.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="44"/>
+  <plane texture="backgrounds/ship_exterior_pumpfront_02.png" x="143.659" y="28.417" z="1.000" width="14.253" height="6.562" priority="4" rotation="1.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="45"/>
+  <plane texture="backgrounds/ship_exterior_pumpfront_02.png" x="79.164" y="28.742" z="1.000" width="14.253" height="6.562" priority="4" rotation="1.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="46"/>
+  <plane texture="backgrounds/ship_exterior_pumpfront_02.png" x="35.311" y="27.440" z="-9.000" width="14.253" height="6.562" priority="4" rotation="1.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="47"/>
+  <plane texture="backgrounds/ship_exterior_pumpfront_01.png" x="95.233" y="28.811" z="1.000" width="14.431" height="6.644" priority="4" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="48"/>
+  <plane texture="backgrounds/ship_exterior_pumpfront_01.png" x="51.400" y="27.529" z="-9.000" width="14.431" height="6.644" priority="4" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="49"/>
+  <plane texture="backgrounds/ship_exterior_wall.png" x="-53.917" y="26.904" z="-17.000" width="679.566" height="17.160" priority="0" rotation="0.000" texture_top_left_u="-0.265" texture_top_left_v="0.000" texture_top_right_u="9.742" texture_top_right_v="0.000" texture_bottom_right_u="9.742" texture_bottom_right_v="0.978" texture_bottom_left_u="-0.265" texture_bottom_left_v="0.978" ignore_fog="false" pid="50">
+    <color_whole_quad r="103" g="103" b="103" a="255"/>
+  </plane>
+  <plane texture="backgrounds/ship_exterior_pipe.png" x="226.940" y="26.871" z="0.030" width="6.520" height="9.290" priority="63" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="51">
+    <color_whole_quad r="150" g="150" b="150" a="255"/>
+  </plane>
+  <plane texture="backgrounds/ship_exterior_pipe.png" x="220.919" y="26.808" z="0.030" width="6.520" height="9.290" priority="63" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="52">
+    <color_whole_quad r="150" g="150" b="150" a="255"/>
+  </plane>
+  <plane texture="backgrounds/ship_exterior_bulge.png" x="224.018" y="35.031" z="0.030" width="19.959" height="10.370" priority="43" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="53">
+    <color_whole_quad r="150" g="150" b="150" a="255"/>
+  </plane>
+  <plane texture="backgrounds/ship_exterior_bulge.png" x="223.966" y="25.604" z="0.030" width="19.959" height="10.370" priority="43" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="54">
+    <color_whole_quad r="150" g="150" b="150" a="255"/>
+  </plane>
+  <plane texture="backgrounds/floor.png" x="-47.221" y="19.789" z="-18.000" width="675.024" height="7.318" priority="10" rotation="0.000" texture_top_left_u="-0.569" texture_top_left_v="0.487" texture_top_right_u="21.339" texture_top_right_v="0.487" texture_bottom_right_u="21.339" texture_bottom_right_v="0.944" texture_bottom_left_u="-0.569" texture_bottom_left_v="0.944" ignore_fog="false" pid="55">
+    <color_whole_quad r="150" g="150" b="150" a="255"/>
+  </plane>
+  <plane texture="backgrounds/floor.png" x="-47.430" y="21.252" z="-10.000" width="622.811" height="7.318" priority="10" rotation="0.000" texture_top_left_u="8.339" texture_top_left_v="0.487" texture_top_right_u="-11.799" texture_top_right_v="0.487" texture_bottom_right_u="-11.799" texture_bottom_right_v="0.944" texture_bottom_left_u="8.339" texture_bottom_left_v="0.944" ignore_fog="false" pid="56">
+    <color_whole_quad r="187" g="187" b="187" a="255"/>
+  </plane>
+  <plane texture="backgrounds/floor.png" x="-45.072" y="22.419" z="-1.000" width="448.518" height="7.318" priority="10" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.487" texture_top_right_u="14.249" texture_top_right_v="0.487" texture_bottom_right_u="14.249" texture_bottom_right_v="0.944" texture_bottom_left_u="0.000" texture_bottom_left_v="0.944" ignore_fog="false" pid="57">
+    <color_whole_quad r="187" g="187" b="187" a="255"/>
+  </plane>
+  <plane texture="backgrounds/floor.png" x="208.683" y="20.608" z="-1.000" width="33.673" height="7.367" priority="10" rotation="7.000" texture_top_left_u="0.000" texture_top_left_v="0.487" texture_top_right_u="0.996" texture_top_right_v="0.487" texture_bottom_right_u="0.996" texture_bottom_right_v="0.947" texture_bottom_left_u="0.000" texture_bottom_left_v="0.947" ignore_fog="false" pid="58">
+    <color_whole_quad r="131" g="131" b="131" a="255"/>
+  </plane>
+  <plane texture="backgrounds/ship_exterior_wall.png" x="-31.942" y="29.792" z="0.030" width="493.784" height="17.526" priority="20" rotation="0.000" texture_top_left_u="-4.118" texture_top_left_v="0.007" texture_top_right_u="2.639" texture_top_right_v="0.007" texture_bottom_right_u="2.639" texture_bottom_right_v="0.982" texture_bottom_left_u="-4.118" texture_bottom_left_v="0.982" ignore_fog="false" pid="59">
+    <color_whole_quad r="178" g="178" b="178" a="255"/>
+  </plane>
+  <plane texture="backgrounds/ship_exterior_wall.png" x="-60.141" y="28.797" z="-9.000" width="679.062" height="17.526" priority="0" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="10.001" texture_top_right_v="0.000" texture_bottom_right_u="10.001" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="60">
+    <color_whole_quad r="168" g="168" b="168" a="255"/>
+  </plane>
+</shoebox>

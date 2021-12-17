@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Shared">
+      <UniqueIdentifier>{886a7967-03b1-4967-82a7-b1147d0ac8fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows">
+      <UniqueIdentifier>{f2368725-87d6-4039-992a-9853827956f7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\shared\src\libpng\png.c">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\libpng\pngerror.c">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\libpng\pngget.c">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\libpng\pngmem.c">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\libpng\pngpread.c">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\libpng\pngread.c">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\libpng\pngrio.c">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\libpng\pngrtran.c">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\libpng\pngrutil.c">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\libpng\pngset.c">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\libpng\pngtrans.c">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\libpng\pngwio.c">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\libpng\pngwrite.c">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\libpng\pngwtran.c">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\libpng\pngwutil.c">
+      <Filter>Shared</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\shared\inc\libpng\png.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\libpng\pngconf.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\libpng\pngstruct.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\libpng\pngdebug.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\libpng\pnginfo.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\libpng\pnglibconf.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\libpng\pngpriv.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

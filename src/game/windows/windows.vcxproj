@@ -1,0 +1,512 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="STEAM_Dev|x64">
+      <Configuration>STEAM_Dev</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="STEAM_Final|x64">
+      <Configuration>STEAM_Final</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="STEAM_Test|x64">
+      <Configuration>STEAM_Test</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="WIN_Dev|x64">
+      <Configuration>WIN_Dev</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="WIN_Final|x64">
+      <Configuration>WIN_Final</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="WIN_Test|x64">
+      <Configuration>WIN_Test</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6F028302-B2A5-4CF5-B0C2-8FC2C7E66242}</ProjectGuid>
+    <RootNamespace>windows</RootNamespace>
+    <Keyword>x64Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='STEAM_Final|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='STEAM_Final|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='STEAM_Test|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='STEAM_Dev|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='STEAM_Final|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='STEAM_Test|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='STEAM_Dev|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'">$(ProjectDir)obj\$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'">true</LinkIncremental>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'">$(ProjectDir)obj\$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'">false</LinkIncremental>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'">$(ProjectDir)obj\$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'">false</LinkIncremental>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='STEAM_Dev|x64'">$(ProjectDir)obj\$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='STEAM_Dev|x64'">true</LinkIncremental>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='STEAM_Test|x64'">$(ProjectDir)obj\$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='STEAM_Test|x64'">false</LinkIncremental>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='STEAM_Final|x64'">$(ProjectDir)obj\$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='STEAM_Final|x64'">false</LinkIncremental>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'">$(SolutionName)</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'">$(SolutionName)</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'">$(SolutionName)</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='STEAM_Dev|x64'">$(SolutionName)</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='STEAM_Final|x64'">$(SolutionName)</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='STEAM_Test|x64'">$(SolutionName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='STEAM_Dev|x64'">
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <OutDir>$(ProjectDir)bin\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'">
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <OutDir>$(ProjectDir)bin\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'">
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <OutDir>$(ProjectDir)bin\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'">
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <OutDir>$(ProjectDir)bin\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='STEAM_Final|x64'">
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <OutDir>$(ProjectDir)bin\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='STEAM_Test|x64'">
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <OutDir>$(ProjectDir)bin\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)engine\windows\inc;$(SolutionDir)engine\shared\inc;$(SolutionDir)game\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;TT_ASSERT_ON;TT_PLATFORM_WIN;TT_BUILD_DEV;TT_DEMO_BUILD=0;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <EnableEnhancedInstructionSet>
+      </EnableEnhancedInstructionSet>
+      <EnablePREfast>false</EnablePREfast>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>legacy_stdio_definitions.lib;winhttp.lib;winmm.lib;comctl32.lib;dbghelp.lib;d3d9.lib;SDL2.lib;d3dx9d.lib;d3dx10.lib;dinput8.lib;xinput9_1_0.lib;x3daudio.lib;dxerr.lib;dxguid.lib;dsound.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(SolutionName).exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\engine\windows\prebuilt\sdl\x64;..\..\engine\windows\prebuilt\steam;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libc.lib;libcmt.lib;msvcrt.lib;libcd.lib;libcmtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+    <Manifest>
+      <AdditionalManifestFiles>$(ProjectDir)res\visualstyle.manifest;%(AdditionalManifestFiles)</AdditionalManifestFiles>
+    </Manifest>
+    <PostBuildEvent>
+      <Command>copy $(SolutionDir)..\tools\dlls\* $(OutDir) &amp;&amp; $(TargetPath) --unittest</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Performing Unit Tests...</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)engine\windows\inc;$(SolutionDir)engine\shared\inc;$(SolutionDir)game\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CRT_SECURE_NO_WARNINGS;TT_ASSERT_ON;TT_PLATFORM_WIN;TT_BUILD_TEST;TT_DEMO_BUILD=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <EnableEnhancedInstructionSet>
+      </EnableEnhancedInstructionSet>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnablePREfast>false</EnablePREfast>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>legacy_stdio_definitions.lib;winhttp.lib;winmm.lib;comctl32.lib;dbghelp.lib;d3d9.lib;SDL2.lib;d3dx9.lib;d3dx10.lib;dinput8.lib;xinput9_1_0.lib;x3daudio.lib;dxerr.lib;dxguid.lib;dsound.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(SolutionName).exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\engine\windows\prebuilt\sdl\x64;..\..\engine\windows\prebuilt\steam;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libc.lib;libcmt.lib;libcd.lib;libcmtd.lib;msvcrtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+      <AdditionalOptions>/PDBSTRIPPED:$(OutDir)$(SolutionName)_small.pdb %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <Manifest>
+      <AdditionalManifestFiles>$(ProjectDir)res\visualstyle.manifest;%(AdditionalManifestFiles)</AdditionalManifestFiles>
+    </Manifest>
+    <PostBuildEvent>
+      <Command>copy $(SolutionDir)..\tools\dlls\* $(OutDir) &amp;&amp; $(TargetPath) --unittest</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Performing Unit Tests...</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)engine\windows\inc;$(SolutionDir)engine\shared\inc;$(SolutionDir)game\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CRT_SECURE_NO_WARNINGS;TT_PLATFORM_WIN;TT_BUILD_FINAL;TT_DEMO_BUILD=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <EnableEnhancedInstructionSet>
+      </EnableEnhancedInstructionSet>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnablePREfast>false</EnablePREfast>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>legacy_stdio_definitions.lib;winhttp.lib;winmm.lib;comctl32.lib;dbghelp.lib;d3d9.lib;SDL2.lib;d3dx9.lib;d3dx10.lib;dinput8.lib;xinput9_1_0.lib;x3daudio.lib;dxerr.lib;dxguid.lib;dsound.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(SolutionName).exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\engine\windows\prebuilt\sdl\x64;..\..\engine\windows\prebuilt\steam;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libc.lib;libcmt.lib;libcd.lib;libcmtd.lib;msvcrtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+    <Manifest>
+      <AdditionalManifestFiles>$(ProjectDir)res\visualstyle.manifest;%(AdditionalManifestFiles)</AdditionalManifestFiles>
+    </Manifest>
+    <PostBuildEvent>
+      <Command>copy $(SolutionDir)..\tools\dlls\* $(OutDir) &amp;&amp; $(TargetPath) --unittest</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Performing Unit Tests...</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='STEAM_Dev|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)engine\windows\inc;$(SolutionDir)engine\shared\inc;$(SolutionDir)game\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;TT_ASSERT_ON;TT_PLATFORM_WIN;TT_BUILD_DEV;TT_DEMO_BUILD=0;TT_STEAM_BUILD;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <EnableEnhancedInstructionSet>
+      </EnableEnhancedInstructionSet>
+      <EnablePREfast>false</EnablePREfast>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>legacy_stdio_definitions.lib;winhttp.lib;winmm.lib;comctl32.lib;dbghelp.lib;d3d9.lib;SDL2.lib;d3dx9d.lib;d3dx10.lib;dinput8.lib;xinput9_1_0.lib;x3daudio.lib;dxerr.lib;dxguid.lib;dsound.lib;steam_api64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(SolutionName).exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\engine\windows\prebuilt\sdl\x64;..\..\engine\windows\prebuilt\steam;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libc.lib;libcmt.lib;msvcrt.lib;libcd.lib;libcmtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+    <Manifest>
+      <AdditionalManifestFiles>$(ProjectDir)res\visualstyle.manifest;%(AdditionalManifestFiles)</AdditionalManifestFiles>
+    </Manifest>
+    <PostBuildEvent>
+      <Command>copy $(SolutionDir)..\tools\dlls\* $(OutDir) &amp;&amp; $(TargetPath) --unittest</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Performing Unit Tests...</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='STEAM_Test|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)engine\windows\inc;$(SolutionDir)engine\shared\inc;$(SolutionDir)game\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CRT_SECURE_NO_WARNINGS;TT_ASSERT_ON;TT_PLATFORM_WIN;TT_BUILD_TEST;TT_DEMO_BUILD=0;TT_STEAM_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <EnableEnhancedInstructionSet>
+      </EnableEnhancedInstructionSet>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnablePREfast>false</EnablePREfast>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>legacy_stdio_definitions.lib;winhttp.lib;winmm.lib;comctl32.lib;dbghelp.lib;d3d9.lib;SDL2.lib;d3dx9.lib;d3dx10.lib;dinput8.lib;xinput9_1_0.lib;x3daudio.lib;dxerr.lib;dxguid.lib;dsound.lib;steam_api64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(SolutionName).exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\engine\windows\prebuilt\sdl\x64;..\..\engine\windows\prebuilt\steam;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libc.lib;libcmt.lib;libcd.lib;libcmtd.lib;msvcrtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+      <AdditionalOptions>/PDBSTRIPPED:$(OutDir)$(SolutionName)_small.pdb %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <Manifest>
+      <AdditionalManifestFiles>$(ProjectDir)res\visualstyle.manifest;%(AdditionalManifestFiles)</AdditionalManifestFiles>
+    </Manifest>
+    <PostBuildEvent>
+      <Command>copy $(SolutionDir)..\tools\dlls\* $(OutDir) &amp;&amp; $(TargetPath) --unittest</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Performing Unit Tests...</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='STEAM_Final|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)engine\windows\inc;$(SolutionDir)engine\shared\inc;$(SolutionDir)game\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CRT_SECURE_NO_WARNINGS;TT_PLATFORM_WIN;TT_BUILD_FINAL;TT_DEMO_BUILD=0;TT_STEAM_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <EnableEnhancedInstructionSet>
+      </EnableEnhancedInstructionSet>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnablePREfast>false</EnablePREfast>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>legacy_stdio_definitions.lib;winhttp.lib;winmm.lib;comctl32.lib;dbghelp.lib;d3d9.lib;SDL2.lib;d3dx9.lib;d3dx10.lib;dinput8.lib;xinput9_1_0.lib;x3daudio.lib;dxerr.lib;dxguid.lib;dsound.lib;steam_api64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(SolutionName).exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\engine\windows\prebuilt\sdl\x64;..\..\engine\windows\prebuilt\steam;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libc.lib;libcmt.lib;libcd.lib;libcmtd.lib;msvcrtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+    <Manifest>
+      <AdditionalManifestFiles>$(ProjectDir)res\visualstyle.manifest;%(AdditionalManifestFiles)</AdditionalManifestFiles>
+    </Manifest>
+    <PostBuildEvent>
+      <Command>copy $(SolutionDir)..\tools\dlls\* $(OutDir) &amp;&amp; $(TargetPath) --unittest</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Performing Unit Tests...</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\audio\AudioPlayerWin.cpp" />
+    <ClCompile Include="src\input\Controller.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\seh_main.cpp">
+      <ExceptionHandling Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'">Async</ExceptionHandling>
+      <ExceptionHandling Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'">Async</ExceptionHandling>
+      <ExceptionHandling Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'">Async</ExceptionHandling>
+      <ExceptionHandling Condition="'$(Configuration)|$(Platform)'=='STEAM_Dev|x64'">Async</ExceptionHandling>
+      <ExceptionHandling Condition="'$(Configuration)|$(Platform)'=='STEAM_Final|x64'">Async</ExceptionHandling>
+      <ExceptionHandling Condition="'$(Configuration)|$(Platform)'=='STEAM_Test|x64'">Async</ExceptionHandling>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\assets\source\win\cursors\editor_addnote.cur" />
+    <None Include="..\..\assets\source\win\cursors\editor_draw.cur" />
+    <None Include="..\..\assets\source\win\cursors\editor_drawentity.cur" />
+    <None Include="..\..\assets\source\win\cursors\editor_entitypicker_invalid.cur" />
+    <None Include="..\..\assets\source\win\cursors\editor_entitypicker_valid.cur" />
+    <None Include="..\..\assets\source\win\cursors\editor_erase.cur" />
+    <None Include="..\..\assets\source\win\cursors\editor_floodfill.cur" />
+    <None Include="..\..\assets\source\win\cursors\editor_hand_closed.cur" />
+    <None Include="..\..\assets\source\win\cursors\editor_hand_open.cur" />
+    <None Include="..\..\assets\source\win\cursors\editor_selection_content_clone.cur" />
+    <None Include="..\..\assets\source\win\cursors\editor_selection_content_cut.cur" />
+    <None Include="..\..\assets\source\win\cursors\editor_selection_content_move.cur" />
+    <None Include="..\..\assets\source\win\cursors\editor_selection_rect_create.cur" />
+    <None Include="..\..\assets\source\win\cursors\editor_selection_rect_move.cur" />
+    <None Include="..\..\assets\source\win\cursors\editor_tilepicker.cur" />
+    <None Include="..\..\assets\source\win\cursors\game_cursor.cur" />
+    <None Include="..\..\assets\source\win\icons\app_icon.ico" />
+    <None Include="src\application.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="src\application.rc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'">..\..\engine\windows\inc;..\..\engine\shared\inc;$(ProjectDir)..\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'">..\..\engine\windows\inc;..\..\engine\shared\inc;$(ProjectDir)..\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'">..\..\engine\windows\inc;..\..\engine\shared\inc;$(ProjectDir)..\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='STEAM_Dev|x64'">..\..\engine\windows\inc;..\..\engine\shared\inc;$(ProjectDir)..\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='STEAM_Final|x64'">..\..\engine\windows\inc;..\..\engine\shared\inc;$(ProjectDir)..\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='STEAM_Test|x64'">..\..\engine\windows\inc;..\..\engine\shared\inc;$(ProjectDir)..\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\audio\constants_win.h" />
+    <ClInclude Include="src\resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\engine\windows\engine.vcxproj">
+      <Project>{f3685da5-e627-4b5d-8a5c-a402760ca7a0}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\engine\windows\math.vcxproj">
+      <Project>{47862621-ed56-4eb3-89da-a58e3bb1d887}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\engine\windows\platform.vcxproj">
+      <Project>{3e384a71-8890-4162-9ef2-4ec33194c341}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\engine\windows\shared.vcxproj">
+      <Project>{29ee394d-b66e-41a5-94c5-ff92db344814}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\engine\windows\sys.vcxproj">
+      <Project>{4f5bf3c7-d6c7-4983-9ab0-79b6cc4804a1}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\engine\windows\squirrel.vcxproj">
+      <Project>{f05f1f62-4404-4fec-8bee-89bfd208e521}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\engine\windows\json_cpp.vcxproj">
+      <Project>{54fc860b-b030-4d74-b08a-7bc7107bf81b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\engine\windows\libpng.vcxproj">
+      <Project>{f2e3a0c3-8b8b-4722-b744-5963503ac9d4}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\engine\windows\unittestpp.vcxproj">
+      <Project>{dcf00d8e-ce7d-448a-aece-84c76f3fc295}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\engine\windows\libz.vcxproj">
+      <Project>{2ff607a6-16b7-418c-a563-615102750e3a}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\engine\windows\ogg.vcxproj">
+      <Project>{77631a1d-370e-4dc1-81f5-d4f5be91e151}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\engine\windows\vorbis.vcxproj">
+      <Project>{57ab3fa2-3e02-4b17-9d2d-9f8cf5a1fcbc}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\engine\windows\gwen.vcxproj">
+      <Project>{5ff5843d-2b9a-4c51-b60d-425d18f0c451}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\engine\windows\recastnavigation.vcxproj">
+      <Project>{e4743a51-5f4a-49ed-b72d-2fd28d5276ad}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\engine\windows\visualboy.vcxproj">
+      <Project>{51589d6e-9497-4502-aa73-5f25bba5c2fa}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\shared\shared.vcxproj">
+      <Project>{4f843726-b2a4-4cc5-b018-0a43e16604ae}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

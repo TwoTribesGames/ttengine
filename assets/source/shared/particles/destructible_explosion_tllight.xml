@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<ParticleTrigger xmlns="http://intranet.twotribes.com/schemas/common/particletrigger.xsd" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/particletrigger.xsd http://intranet.twotribes.com/schemas/common/particletrigger.xsd">
+	<ParticleCulling enabled="true"/>
+	<ParticleEmitter max_particles="50" x="0" y="0" delay="0" space="world" ignore_fog="false">
+		<RenderGroup value="400"/>
+		<Texture filename="particles/generic_hardedge_drip.png"/>
+		<FrameAnimations framesize="0"/>
+		<EmissionRect width="6" height="1"/>
+		<ExternalForce min_x="0" max_x="0" min_y="-1.1" max_y="-0.9"/>
+		<BlendMode type="add"/>
+		<BlendModeAlpha type="lightmask"/>
+		<PreGeneration time="0" step="0"/>
+		<Emission particles="50" type="burst" lifetime="0.5"/>
+		<ParticleOrientation type="direction"/>
+		<Velocity min_x="0" max_x="0" min_y="2.5" max_y="3.5"/>
+		<VelocityFriction min="0" max="0"/>
+		<ParticleLife min="0.9" max="1.1"/>
+		<Size min_start="0.068359" max_start="0.131641" min_end="0.0375" max_end="0.0625"/>
+		<Weight min_start="0" max_start="0" min_end="0.9" max_end="1.1"/>
+		<Rotation min_start="0" max_start="0" min_speed="0" max_speed="0"/>
+		<RotationForce min="0" max="0"/>
+		<RotationFriction min="0" max="0"/>
+		<Frame min_start="0" max_start="0"/>
+		<DirectionFromSpawnLocation/>
+		<MinStartColor r="205" g="235" b="255" a="255"/>
+		<MaxStartColor r="0" g="148" b="255" a="255"/>
+		<MinEndColor r="35" g="227" b="253" a="255"/>
+		<MaxEndColor r="171" g="255" b="243" a="255"/>
+		<Fade in="0.2" out="0.3" type="percentage"/>
+		<ExternalImpulseWeight min="0" max="0"/>
+	</ParticleEmitter>
+	<ParticleEmitter max_particles="5" x="0" y="0" delay="0" space="world" ignore_fog="false">
+		<RenderGroup value="400"/>
+		<Texture filename="particles/tl_shard_0000.png"/>
+		<FrameAnimations framesize="0"/>
+		<EmissionRect width="5" height="0.5"/>
+		<ExternalForce min_x="0" max_x="0" min_y="-1.45" max_y="-0.95"/>
+		<BlendMode type="add"/>
+		<PreGeneration time="0" step="0"/>
+		<Emission particles="5" type="burst" lifetime="0.5"/>
+		<ParticleOrientation type="rotation"/>
+		<Velocity min_x="0" max_x="0" min_y="2.5" max_y="3.5"/>
+		<VelocityFriction min="0" max="0"/>
+		<ParticleLife min="0.9" max="1.1"/>
+		<Size min_start="0.5" max_start="0.5"/>
+		<Weight min_start="0" max_start="0" min_end="0.9" max_end="1.1"/>
+		<Rotation min_start="360" max_start="360" min_speed="540" max_speed="900"/>
+		<RotationForce min="0" max="0"/>
+		<RotationFriction min="0" max="0"/>
+		<Frame min_start="0" max_start="0"/>
+		<DirectionFromSpawnLocation/>
+		<MinStartColor r="255" g="255" b="255" a="255"/>
+		<MaxStartColor r="255" g="255" b="255" a="255"/>
+		<MinEndColor r="255" g="255" b="255" a="255"/>
+		<MaxEndColor r="255" g="255" b="255" a="255"/>
+		<Fade in="0.2" out="0.3" type="percentage"/>
+		<ExternalImpulseWeight min="0" max="0"/>
+	</ParticleEmitter>
+	<ParticleEmitter max_particles="5" x="0" y="0" delay="0" space="world" ignore_fog="false">
+		<RenderGroup value="400"/>
+		<Texture filename="particles/tl_shard_0001.png"/>
+		<FrameAnimations framesize="0"/>
+		<EmissionRect width="5" height="0.5"/>
+		<ExternalForce min_x="0" max_x="0" min_y="-1.75" max_y="-1.25"/>
+		<BlendMode type="add"/>
+		<PreGeneration time="0" step="0"/>
+		<Emission particles="5" type="burst" lifetime="0.5"/>
+		<ParticleOrientation type="rotation"/>
+		<Velocity min_x="0" max_x="0" min_y="2.5" max_y="3.5"/>
+		<VelocityFriction min="0" max="0"/>
+		<ParticleLife min="0.9" max="1.1"/>
+		<Size min_start="0.5" max_start="0.5"/>
+		<Weight min_start="0" max_start="0" min_end="0.9" max_end="1.1"/>
+		<Rotation min_start="360" max_start="360" min_speed="540" max_speed="900"/>
+		<RotationForce min="0" max="0"/>
+		<RotationFriction min="0" max="0"/>
+		<Frame min_start="0" max_start="0"/>
+		<DirectionFromSpawnLocation/>
+		<MinStartColor r="255" g="255" b="255" a="255"/>
+		<MaxStartColor r="255" g="255" b="255" a="255"/>
+		<MinEndColor r="255" g="255" b="255" a="255"/>
+		<MaxEndColor r="255" g="255" b="255" a="255"/>
+		<Fade in="0.2" out="0.3" type="percentage"/>
+		<ExternalImpulseWeight min="0" max="0"/>
+	</ParticleEmitter>
+	<ParticleEmitter max_particles="5" x="0" y="0" delay="0" space="world" ignore_fog="false">
+		<RenderGroup value="400"/>
+		<Texture filename="particles/tl_shard_0002.png"/>
+		<FrameAnimations framesize="0"/>
+		<EmissionRect width="5" height="0.5"/>
+		<ExternalForce min_x="0" max_x="0" min_y="-1.75" max_y="-1.25"/>
+		<BlendMode type="add"/>
+		<PreGeneration time="0" step="0"/>
+		<Emission particles="5" type="burst" lifetime="0.5"/>
+		<ParticleOrientation type="rotation"/>
+		<Velocity min_x="0" max_x="0" min_y="2.5" max_y="3.5"/>
+		<VelocityFriction min="0" max="0"/>
+		<ParticleLife min="0.9" max="1.1"/>
+		<Size min_start="0.5" max_start="0.5"/>
+		<Weight min_start="0" max_start="0" min_end="0.9" max_end="1.1"/>
+		<Rotation min_start="360" max_start="360" min_speed="540" max_speed="900"/>
+		<RotationForce min="0" max="0"/>
+		<RotationFriction min="0" max="0"/>
+		<Frame min_start="0" max_start="0"/>
+		<DirectionFromSpawnLocation/>
+		<MinStartColor r="255" g="255" b="255" a="255"/>
+		<MaxStartColor r="255" g="255" b="255" a="255"/>
+		<MinEndColor r="255" g="255" b="255" a="255"/>
+		<MaxEndColor r="255" g="255" b="255" a="255"/>
+		<Fade in="0.2" out="0.3" type="percentage"/>
+		<ExternalImpulseWeight min="0" max="0"/>
+	</ParticleEmitter>
+</ParticleTrigger>

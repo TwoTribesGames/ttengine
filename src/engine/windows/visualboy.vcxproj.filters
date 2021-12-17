@@ -1,0 +1,521 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="lib">
+      <UniqueIdentifier>{9be88ebe-8de3-4b7e-b2f4-085b89e4aa62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\gba">
+      <UniqueIdentifier>{311887da-f1ed-4169-9a57-cb9b8ac6d54e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\gb">
+      <UniqueIdentifier>{1337bde0-b988-4e21-90ea-f747d9f64453}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\fex">
+      <UniqueIdentifier>{5f9004ff-20ff-47ae-8621-1ad81af901f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\common">
+      <UniqueIdentifier>{3c01f82d-93ce-4f72-97c7-4c555ab4dabf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\apu">
+      <UniqueIdentifier>{cbdbf516-aa38-4fff-8015-9ec58da69778}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\sdl">
+      <UniqueIdentifier>{b7565bd7-6a36-4ab0-b945-b7594c396d13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\filters">
+      <UniqueIdentifier>{9bbed68e-5a30-4130-a99d-6fba8f303483}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\filters\hq">
+      <UniqueIdentifier>{6561fe4a-8ad9-4e10-a156-34833f7bf796}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\filters\xBRZ">
+      <UniqueIdentifier>{e6bcad2c-9825-4bf2-a989-b06e83f55f5c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\shared\inc\visualboy\VisualBoy.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\apu\blargg_source.h">
+      <Filter>lib\apu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\apu\Blip_Buffer.h">
+      <Filter>lib\apu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\apu\Effects_Buffer.h">
+      <Filter>lib\apu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\apu\Gb_Apu.h">
+      <Filter>lib\apu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\apu\Gb_Oscs.h">
+      <Filter>lib\apu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\apu\Multi_Buffer.h">
+      <Filter>lib\apu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\apu\blargg_common.h">
+      <Filter>lib\apu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\apu\blargg_config.h">
+      <Filter>lib\apu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\common\dictionary.h">
+      <Filter>lib\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\common\ffmpeg.h">
+      <Filter>lib\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\common\iniparser.h">
+      <Filter>lib\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\common\memgzio.h">
+      <Filter>lib\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\common\Patch.h">
+      <Filter>lib\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\common\Port.h">
+      <Filter>lib\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\common\ringbuffer.h">
+      <Filter>lib\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\common\SoundDriver.h">
+      <Filter>lib\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\common\SoundSDL.h">
+      <Filter>lib\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\common\Types.h">
+      <Filter>lib\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\common\array.h">
+      <Filter>lib\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\common\ConfigManager.h">
+      <Filter>lib\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\common\cstdint.h">
+      <Filter>lib\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\fex\Data_Reader.h">
+      <Filter>lib\fex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\fex\fex.h">
+      <Filter>lib\fex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\fex\File_Extractor.h">
+      <Filter>lib\fex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\fex\Gzip_Extractor.h">
+      <Filter>lib\fex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\fex\Gzip_Reader.h">
+      <Filter>lib\fex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\fex\Rar_Extractor.h">
+      <Filter>lib\fex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\fex\Zip_Extractor.h">
+      <Filter>lib\fex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\fex\Zip7_Extractor.h">
+      <Filter>lib\fex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\fex\Zlib_Inflater.h">
+      <Filter>lib\fex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\fex\Binary_Extractor.h">
+      <Filter>lib\fex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\fex\blargg_common.h">
+      <Filter>lib\fex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\fex\blargg_config.h">
+      <Filter>lib\fex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\fex\blargg_endian.h">
+      <Filter>lib\fex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\fex\blargg_errors.h">
+      <Filter>lib\fex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\fex\blargg_source.h">
+      <Filter>lib\fex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\gb\gbGlobals.h">
+      <Filter>lib\gb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\gb\gbMemory.h">
+      <Filter>lib\gb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\gb\gbPrinter.h">
+      <Filter>lib\gb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\gb\gbSGB.h">
+      <Filter>lib\gb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\gb\gbSound.h">
+      <Filter>lib\gb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\gb\gb.h">
+      <Filter>lib\gb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\gb\gbCheats.h">
+      <Filter>lib\gb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\gb\gbCodes.h">
+      <Filter>lib\gb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\gb\gbCodesCB.h">
+      <Filter>lib\gb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\gba\Flash.h">
+      <Filter>lib\gba</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\gba\GBA.h">
+      <Filter>lib\gba</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\gba\GBAcpu.h">
+      <Filter>lib\gba</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\gba\gbafilter.h">
+      <Filter>lib\gba</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\gba\GBAGfx.h">
+      <Filter>lib\gba</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\gba\GBAinline.h">
+      <Filter>lib\gba</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\gba\GBALink.h">
+      <Filter>lib\gba</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\gba\GBASockClient.h">
+      <Filter>lib\gba</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\gba\Globals.h">
+      <Filter>lib\gba</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\gba\remote.h">
+      <Filter>lib\gba</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\gba\RTC.h">
+      <Filter>lib\gba</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\gba\Sound.h">
+      <Filter>lib\gba</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\gba\Sram.h">
+      <Filter>lib\gba</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\gba\agbprint.h">
+      <Filter>lib\gba</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\gba\armdis.h">
+      <Filter>lib\gba</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\gba\bios.h">
+      <Filter>lib\gba</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\gba\BreakpointStructures.h">
+      <Filter>lib\gba</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\gba\Cheats.h">
+      <Filter>lib\gba</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\gba\CheatSearch.h">
+      <Filter>lib\gba</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\gba\debugger-expr-yacc.hpp">
+      <Filter>lib\gba</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\gba\EEprom.h">
+      <Filter>lib\gba</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\gba\elf.h">
+      <Filter>lib\gba</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\gba\ereader.h">
+      <Filter>lib\gba</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\System.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\Util.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\NLS.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\sdl\filters.h">
+      <Filter>lib\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\filters\interframe.hpp">
+      <Filter>lib\filters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\filters\interp.h">
+      <Filter>lib\filters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\filters\lq2x.h">
+      <Filter>lib\filters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\filters\hq2x.h">
+      <Filter>lib\filters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\filters\xBRZ\config.h">
+      <Filter>lib\filters\xBRZ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\filters\xBRZ\xbrz.h">
+      <Filter>lib\filters\xBRZ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\filters\hq\hq_shared.h">
+      <Filter>lib\filters\hq</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\filters\hq\hq3x_pattern.h">
+      <Filter>lib\filters\hq</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\filters\hq\hq4x_pattern.h">
+      <Filter>lib\filters\hq</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\filters\hq\hq_base.h">
+      <Filter>lib\filters\hq</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\shared\src\visualboy\VisualBoy.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\apu\Gb_Apu.cpp">
+      <Filter>lib\apu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\apu\Gb_Apu_State.cpp">
+      <Filter>lib\apu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\apu\Gb_Oscs.cpp">
+      <Filter>lib\apu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\apu\Multi_Buffer.cpp">
+      <Filter>lib\apu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\apu\Blip_Buffer.cpp">
+      <Filter>lib\apu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\apu\Effects_Buffer.cpp">
+      <Filter>lib\apu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\common\dictionary.c">
+      <Filter>lib\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\common\ffmpeg.cpp">
+      <Filter>lib\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\common\iniparser.c">
+      <Filter>lib\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\common\memgzio.c">
+      <Filter>lib\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\common\Patch.cpp">
+      <Filter>lib\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\common\SoundSDL.cpp">
+      <Filter>lib\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\common\ConfigManager.cpp">
+      <Filter>lib\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\fex\fex.cpp">
+      <Filter>lib\fex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\fex\File_Extractor.cpp">
+      <Filter>lib\fex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\fex\Gzip_Extractor.cpp">
+      <Filter>lib\fex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\fex\Gzip_Reader.cpp">
+      <Filter>lib\fex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\fex\Rar_Extractor.cpp">
+      <Filter>lib\fex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\fex\Zip_Extractor.cpp">
+      <Filter>lib\fex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\fex\Zip7_Extractor.cpp">
+      <Filter>lib\fex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\fex\Zlib_Inflater.cpp">
+      <Filter>lib\fex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\fex\Binary_Extractor.cpp">
+      <Filter>lib\fex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\fex\blargg_common.cpp">
+      <Filter>lib\fex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\fex\blargg_errors.cpp">
+      <Filter>lib\fex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\fex\Data_Reader.cpp">
+      <Filter>lib\fex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\gb\gbGfx.cpp">
+      <Filter>lib\gb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\gb\gbGlobals.cpp">
+      <Filter>lib\gb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\gb\gbMemory.cpp">
+      <Filter>lib\gb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\gb\gbPrinter.cpp">
+      <Filter>lib\gb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\gb\gbSGB.cpp">
+      <Filter>lib\gb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\gb\gbSound.cpp">
+      <Filter>lib\gb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\gb\GB.cpp">
+      <Filter>lib\gb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\gb\gbCheats.cpp">
+      <Filter>lib\gb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\gb\gbDis.cpp">
+      <Filter>lib\gb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\ereader.cpp">
+      <Filter>lib\gba</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\Flash.cpp">
+      <Filter>lib\gba</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\GBA.cpp">
+      <Filter>lib\gba</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\GBA-arm.cpp">
+      <Filter>lib\gba</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\gbafilter.cpp">
+      <Filter>lib\gba</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\GBAGfx.cpp">
+      <Filter>lib\gba</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\GBALink.cpp">
+      <Filter>lib\gba</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\GBASockClient.cpp">
+      <Filter>lib\gba</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\GBA-thumb.cpp">
+      <Filter>lib\gba</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\Globals.cpp">
+      <Filter>lib\gba</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\Mode0.cpp">
+      <Filter>lib\gba</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\Mode1.cpp">
+      <Filter>lib\gba</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\Mode2.cpp">
+      <Filter>lib\gba</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\Mode3.cpp">
+      <Filter>lib\gba</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\Mode4.cpp">
+      <Filter>lib\gba</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\Mode5.cpp">
+      <Filter>lib\gba</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\remote.cpp">
+      <Filter>lib\gba</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\RTC.cpp">
+      <Filter>lib\gba</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\Sound.cpp">
+      <Filter>lib\gba</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\Sram.cpp">
+      <Filter>lib\gba</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\agbprint.cpp">
+      <Filter>lib\gba</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\armdis.cpp">
+      <Filter>lib\gba</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\bios.cpp">
+      <Filter>lib\gba</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\BreakpointStructures.cpp">
+      <Filter>lib\gba</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\Cheats.cpp">
+      <Filter>lib\gba</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\CheatSearch.cpp">
+      <Filter>lib\gba</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\debugger-expr-lex.cpp">
+      <Filter>lib\gba</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\debugger-expr-yacc.cpp">
+      <Filter>lib\gba</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\EEprom.cpp">
+      <Filter>lib\gba</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\elf.cpp">
+      <Filter>lib\gba</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\System.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\Util.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\sdl\filters.cpp">
+      <Filter>lib\sdl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\filters\bilinear.cpp">
+      <Filter>lib\filters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\filters\hq2x.cpp">
+      <Filter>lib\filters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\filters\interframe.cpp">
+      <Filter>lib\filters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\filters\pixel.cpp">
+      <Filter>lib\filters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\filters\scanline.cpp">
+      <Filter>lib\filters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\filters\simpleFilter.cpp">
+      <Filter>lib\filters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\filters\xbrzfilter.cpp">
+      <Filter>lib\filters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\filters\2xSaI.cpp">
+      <Filter>lib\filters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\filters\admame.cpp">
+      <Filter>lib\filters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\filters\xBRZ\xbrz.cpp">
+      <Filter>lib\filters\xBRZ</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\filters\hq\hq_implementation.cpp">
+      <Filter>lib\filters\hq</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

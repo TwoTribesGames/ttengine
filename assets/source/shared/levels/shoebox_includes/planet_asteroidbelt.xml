@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<shoebox xmlns="http://intranet.twotribes.com/schemas/common/shoebox.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/shoebox.xsd http://intranet.twotribes.com/schemas/common/shoebox.xsd">
+  <particle pid="0" effect_file="asteroids.trigger" x="212.054" y="-5.554" z="-23.333" scale="3.251">
+    <tag name="high_end"/>
+  </particle>
+  <particle pid="1" effect_file="asteroids.trigger" x="178.639" y="-14.012" z="-25.833" scale="4.217"/>
+  <particle pid="2" effect_file="asteroids.trigger" x="142.607" y="-11.300" z="-23.333" scale="3.251">
+    <tag name="high_end"/>
+  </particle>
+  <particle pid="3" effect_file="asteroids.trigger" x="102.788" y="-17.267" z="-25.833" scale="4.217"/>
+  <particle pid="4" effect_file="asteroids.trigger" x="67.053" y="-25.409" z="-23.333" scale="3.251">
+    <tag name="high_end"/>
+  </particle>
+  <particle pid="5" effect_file="asteroids.trigger" x="35.315" y="-25.269" z="-25.833" scale="4.217"/>
+  <particle pid="6" effect_file="asteroids.trigger" x="-2.340" y="-29.096" z="-23.333" scale="3.251">
+    <tag name="high_end"/>
+  </particle>
+  <particle pid="7" effect_file="asteroids.trigger" x="-36.427" y="-33.088" z="-25.833" scale="4.217"/>
+  <particle pid="8" effect_file="asteroids.trigger" x="-66.861" y="-35.569" z="-23.333" scale="3.251">
+    <tag name="high_end"/>
+  </particle>
+  <particle pid="9" effect_file="asteroid_belt_front.trigger" x="-114.976" y="-3.425" z="-13.604" scale="1.600"/>
+  <particle pid="10" effect_file="asteroid_belt_front.trigger" x="-122.799" y="-5.050" z="-23.000" scale="1.400"/>
+  <particle pid="11" effect_file="asteroid_belt_front.trigger" x="-120.549" y="-5.050" z="-35.000" scale="1.200"/>
+  <particle pid="12" effect_file="asteroid_belt_front.trigger" x="-107.607" y="-3.908" z="-42.000" scale="1.000"/>
+  <particle pid="13" effect_file="asteroid_belt.trigger" x="-93.457" y="-2.183" z="-50.000" scale="0.800"/>
+  <particle pid="14" effect_file="asteroid_belt.trigger" x="-76.143" y="-1.294" z="-58.000" scale="0.800"/>
+  <particle pid="15" effect_file="asteroid_belt.trigger" x="-61.987" y="1.973" z="-66.000" scale="0.500"/>
+  <particle pid="16" effect_file="asteroid_belt.trigger" x="-46.976" y="5.006" z="-72.000" scale="0.500"/>
+  <particle pid="17" effect_file="asteroid_belt.trigger" x="-31.537" y="8.000" z="-76.000" scale="0.400"/>
+  <particle pid="18" effect_file="asteroid_belt.trigger" x="-14.310" y="9.906" z="-78.000" scale="0.400"/>
+  <particle pid="19" effect_file="asteroid_belt.trigger" x="1.129" y="12.589" z="-80.000" scale="0.300"/>
+  <particle pid="20" effect_file="asteroid_belt.trigger" x="19.057" y="15.350" z="-80.000" scale="0.300"/>
+  <plane pid="21" texture="backgrounds/planet_yellowish.png" x="-239.267" y="-37.859" z="-74.000" width="14.850" height="14.850" priority="84" rotation="-432.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false">
+    <color_whole_quad r="183" g="183" b="183" a="255"/>
+  </plane>
+  <plane pid="22" texture="backgrounds/planet.png" x="-415.365" y="-55.551" z="-30.000" width="102.627" height="102.627" priority="84" rotation="-458.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false">
+    <color_whole_quad r="248" g="118" b="235" a="255"/>
+  </plane>
+  <plane pid="23" texture="backgrounds/planet.png" x="-275.017" y="-17.409" z="-55.000" width="36.350" height="36.350" priority="84" rotation="-432.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false">
+    <color_whole_quad r="183" g="183" b="183" a="255"/>
+  </plane>
+  <plane pid="24" texture="backgrounds/planet_purple.png" x="80.677" y="56.953" z="-50.000" width="211.500" height="211.500" priority="84" rotation="-323.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false"/>
+  <plane pid="25" texture="backgrounds/titleradial.png" x="15.842" y="1.449" z="-100.000" width="94.424" height="94.424" priority="104" rotation="-366.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="true">
+    <animations>
+      <rotation duration="200.12345" looping="true">
+        <begin rotation="0"/>
+        <end rotation="360"/>
+      </rotation>
+    </animations>
+  </plane>
+  <plane pid="26" texture="backgrounds/titleradial.png" x="16.976" y="3.076" z="-101.000" width="100.934" height="100.934" priority="104" rotation="-527.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="true">
+    <animations>
+      <rotation duration="305" looping="true">
+        <begin rotation="0"/>
+        <end rotation="-360"/>
+      </rotation>
+    </animations>
+  </plane>
+  <plane pid="27" texture="backgrounds/gradient_circle.png" x="7.939" y="1.547" z="-110.000" width="54.758" height="54.758" priority="104" rotation="-540.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="true">
+    <animations>
+      <scale duration="0.3123" timing="easeends" direction="pingpong" looping="true">
+        <begin scale="1"/>
+        <end scale="1.02"/>
+      </scale>
+      <scale duration="0.23" timing="easeends" direction="pingpong" looping="true">
+        <begin scale="1"/>
+        <end scale="1.02"/>
+      </scale>
+      <scale duration="10" timing="easeends" direction="pingpong" looping="true">
+        <begin scale="1"/>
+        <end scale="1.15"/>
+      </scale>
+    </animations>
+  </plane>
+  <plane pid="28" texture="backgrounds/stars.png" x="-499.571" y="41.017" z="-140.000" width="701.346" height="746.661" priority="94" rotation="94.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="3.458" texture_top_right_v="0.000" texture_bottom_right_u="3.458" texture_bottom_right_v="3.519" texture_bottom_left_u="0.000" texture_bottom_left_v="3.519" ignore_fog="false"/>
+  <plane pid="29" texture="backgrounds/stars.png" x="-495.512" y="62.601" z="-91.000" width="731.717" height="544.357" priority="94" rotation="146.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="3.747" texture_top_right_v="0.000" texture_bottom_right_u="3.747" texture_bottom_right_v="2.657" texture_bottom_left_u="0.000" texture_bottom_left_v="2.657" ignore_fog="false"/>
+  <plane pid="30" texture="backgrounds/stars.png" x="166.659" y="69.719" z="-75.000" width="1602.463" height="593.228" priority="94" rotation="-184.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="7.551" texture_top_right_v="0.000" texture_bottom_right_u="7.551" texture_bottom_right_v="2.657" texture_bottom_left_u="0.000" texture_bottom_left_v="2.657" ignore_fog="false">
+    <tag name="high_end"/>
+  </plane>
+  <plane pid="31" texture="backgrounds/stars.png" x="166.659" y="69.719" z="-115.000" width="1602.463" height="593.228" priority="94" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="7.551" texture_top_right_v="0.000" texture_bottom_right_u="7.551" texture_bottom_right_v="2.657" texture_bottom_left_u="0.000" texture_bottom_left_v="2.657" ignore_fog="false"/>
+  <plane pid="32" texture="backgrounds/nebula_front.png" x="-16.846" y="-31.347" z="-120.000" width="708.896" height="232.518" priority="84" rotation="-531.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false"/>
+  <plane pid="33" texture="backgrounds/spacedust.png" x="106.227" y="3.008" z="3.338" width="73.919" height="24.245" priority="84" rotation="171.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="true"/>
+  <plane pid="34" texture="backgrounds/spacedust.png" x="23.877" y="-1.717" z="3.338" width="67.395" height="22.106" priority="84" rotation="-8.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="true"/>
+  <plane pid="35" texture="backgrounds/spacedust.png" x="75.379" y="3.201" z="3.338" width="67.863" height="22.259" priority="84" rotation="-555.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="true"/>
+  <plane pid="36" texture="backgrounds/spacedust.png" x="40.520" y="3.793" z="3.338" width="67.863" height="22.259" priority="84" rotation="-351.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="true"/>
+  <plane pid="37" texture="backgrounds/spacedust.png" x="-8.341" y="-0.645" z="3.338" width="67.863" height="22.259" priority="84" rotation="-197.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="true"/>
+  <plane pid="38" texture="backgrounds/spacedust.png" x="-297.495" y="-13.563" z="-56.662" width="289.603" height="94.990" priority="84" rotation="-190.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="true"/>
+  <plane pid="39" texture="backgrounds/spacedust.png" x="-390.109" y="-20.499" z="-31.662" width="239.692" height="78.619" priority="84" rotation="-199.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="true"/>
+  <plane pid="40" texture="backgrounds/spacedust.png" x="-378.960" y="-23.504" z="-13.662" width="110.835" height="36.354" priority="84" rotation="-203.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="true"/>
+  <plane pid="42" texture="backgrounds/spacedust.png" x="-282.655" y="-13.506" z="3.338" width="41.557" height="13.631" priority="84" rotation="-743.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="true">
+    <color_whole_quad r="255" g="255" b="255" a="120"/>
+  </plane>
+  <plane pid="47" texture="backgrounds/spacedust.png" x="-37.580" y="-0.694" z="3.338" width="67.863" height="22.259" priority="84" rotation="-10.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="true"/>
+  <plane pid="48" texture="backgrounds/spacedust.png" x="-71.354" y="-2.617" z="3.338" width="67.863" height="22.259" priority="84" rotation="-5.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="true"/>
+  <plane pid="49" texture="backgrounds/nebula_back.png" x="-35.138" y="10.218" z="-100.000" width="651.357" height="213.645" priority="84" rotation="-531.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false"/>
+</shoebox>

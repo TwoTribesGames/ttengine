@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		permanent="true">
+
+	<startvalues>
+		<translation y="0.5" z="-0.01"/>
+	</startvalues>
+
+	<!--blink-->
+	<frameanimstack name="blink">
+		<frameanim directory="spritestrip/pickup/crate" lightmask="use_alpha" ignore_fog="false" fps="5" delay="r(0.0),(0.5)" looping="true" quad_width="2.373" quad_height="2" direction="forward">
+			<begin frame="0" hold="true"/>
+			<end   frame="1" hold="true"/>
+			<translation y="0.15"/>
+		</frameanim>
+	</frameanimstack>
+
+	<particles name="blink" file="particles/pickup.trigger" position_type="follow">
+		<mustnothave>
+			<tag name="zerogravity"/>
+		</mustnothave>
+		<translation x="0" y="0.3" z="0"/>
+	</particles>
+
+	<particles name="blink" file="particles/pickup_zerogravity.trigger" position_type="follow">
+		<musthave>
+			<tag name="zerogravity"/>
+		</musthave>
+		<translation x="0" y="0.3" z="0"/>
+	</particles>
+
+	<anim2dstack name="blink">
+		<translation duration="r(4.5),(6)" preset="oscillating">
+			<begin y="0"/>
+			<end y="0.2"/>
+		</translation>
+		<rotation duration="r(4.5),(6)" delay="r(0.45),(0.6)" preset="oscillating">
+			<begin rotation="-5"/>
+			<end rotation="5"/>
+		</rotation>
+	</anim2dstack>	
+	
+	<!--idle-->
+	<frameanimstack name="idle">
+		<frameanim directory="spritestrip/pickup/crate" lightmask="use_alpha" ignore_fog="false" fps="30" delay="r(0.0),(0.5)" looping="true" quad_width="2.373" quad_height="2" direction="forward">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+			<translation y="0.15"/>
+		</frameanim>
+	</frameanimstack>
+
+	<particles name="idle" file="particles/pickup.trigger" position_type="follow">
+		<mustnothave>
+			<tag name="zerogravity"/>
+		</mustnothave>
+		<translation x="0" y="0.3" z="0"/>
+	</particles>
+
+	<particles name="idle" file="particles/pickup_zerogravity.trigger" position_type="follow">
+		<musthave>
+			<tag name="zerogravity"/>
+		</musthave>
+		<translation x="0" y="0.3" z="0"/>
+	</particles>
+
+	<anim2dstack name="idle">
+		<translation duration="r(4.5),(6)" preset="oscillating">
+			<begin y="0"/>
+			<end y="0.2"/>
+		</translation>
+		<rotation duration="r(4.5),(6)" delay="r(0.45),(0.6)" preset="oscillating">
+			<begin rotation="-5"/>
+			<end rotation="5"/>
+		</rotation>
+	</anim2dstack>
+
+	<!-- collected -->	
+	<particles name="collected" file="particles/pickup_collected.trigger" position_type="follow">
+		<translation x="0" y="0.3" z="0"/>
+		<scale scale="1.5"/>
+	</particles>
+
+	<trigger name="collected" delay="2.2" type="callback" data="kill_parent"/>
+
+	<trigger name="collected" type="audio" data="pickup_emp">
+		<musthave>
+			<tag name="emp"/>
+		</musthave>
+	</trigger>
+
+	<trigger name="collected" type="global_audio" data="pickup_missiles">
+		<musthave>
+			<tag name="missile"/>
+		</musthave>
+	</trigger>
+
+	<trigger name="collected" type="global_audio" data="pickup_homing_missiles">
+		<musthave>
+			<tag name="homingmissile"/>
+		</musthave>
+	</trigger>
+
+	<trigger name="collected" type="global_audio" data="pickup_grenade">
+		<musthave>
+			<tag name="grenade"/>
+		</musthave>
+	</trigger>
+
+	<trigger name="collected" type="global_audio" data="pickup_shotgun">
+		<musthave>
+			<tag name="shotgun"/>
+		</musthave>
+	</trigger>
+
+	<!-- corpse -->
+	<particles name="corpse" file="particles/pickup_collected.trigger" position_type="follow">
+		<translation x="0" y="0.3" z="0"/>
+		<scale scale="1.5"/>
+	</particles>
+	
+	<trigger name="corpse" type="audio" data="collectible_destroyed"/>
+</presentation>
+

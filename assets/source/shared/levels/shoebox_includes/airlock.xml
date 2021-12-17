@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<shoebox xmlns="http://intranet.twotribes.com/schemas/common/shoebox.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/shoebox.xsd http://intranet.twotribes.com/schemas/common/shoebox.xsd">
+  <includes>
+    <shoebox filename="levels/shoebox_includes/aircompressor" priority="200" scale="0.739" x_offset="-9.192" y_offset="34.767" z_offset="-5.000" pid="0"/>
+    <shoebox filename="levels/shoebox_includes/airvent_smoke_broken" priority="200" scale="1.136" x_offset="44.490" y_offset="49.810" z_offset="0.000" pid="1"/>
+    <shoebox filename="levels/shoebox_includes/fan_nolight" priority="200" scale="0.722" x_offset="2.580" y_offset="13.581" z_offset="-8.000" pid="2"/>
+  </includes>
+  <plane texture="backgrounds/airlock_doorframe_cables.png" x="31.268" y="18.487" z="0.000" width="3.839" height="10.911" priority="116" rotation="-6.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="3"/>
+  <plane texture="backgrounds/airlock_doorframe_cables.png" x="51.568" y="17.729" z="0.000" width="3.839" height="10.911" priority="-93" rotation="0.000" texture_top_left_u="1.000" texture_top_left_v="0.000" texture_top_right_u="0.000" texture_top_right_v="0.000" texture_bottom_right_u="0.000" texture_bottom_right_v="1.000" texture_bottom_left_u="1.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="4"/>
+  <plane texture="backgrounds/airlock_doorframe_cables.png" x="-38.966" y="16.463" z="0.000" width="3.839" height="10.911" priority="-94" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="5"/>
+  <plane texture="backgrounds/airlock_doorframe_panel.png" x="36.801" y="12.301" z="0.000" width="3.335" height="5.774" priority="116" rotation="0.000" texture_top_left_u="1.000" texture_top_left_v="0.000" texture_top_right_u="0.000" texture_top_right_v="0.000" texture_bottom_right_u="0.000" texture_bottom_right_v="1.000" texture_bottom_left_u="1.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="6"/>
+  <plane texture="backgrounds/airlock_doorframe_panel.png" x="-24.429" y="24.738" z="0.000" width="3.335" height="5.774" priority="117" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="7"/>
+  <plane texture="backgrounds/airlock_doorframe_smallpipe.png" x="39.357" y="33.057" z="0.000" width="3.398" height="5.312" priority="116" rotation="0.000" texture_top_left_u="1.000" texture_top_left_v="0.000" texture_top_right_u="0.000" texture_top_right_v="0.000" texture_bottom_right_u="0.000" texture_bottom_right_v="1.000" texture_bottom_left_u="1.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="8"/>
+  <plane texture="backgrounds/airlock_doorframe_smallpipe.png" x="-38.751" y="31.753" z="0.000" width="3.398" height="5.312" priority="-94" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="9"/>
+  <plane texture="backgrounds/claw_rope.png" x="8.534" y="-3.794" z="-4.500" width="1.000" height="18.750" priority="113" rotation="-5.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="10">
+    <color_whole_quad r="188" g="188" b="188" a="255"/>
+    <animations>
+      <translation duration="8" preset="oscillating">
+        <begin x="-1" y="0" z="0"/>
+        <end x="1" y="0" z="0"/>
+      </translation>
+    </animations>
+    <textureanimations>
+      <translation duration="8" delay="0.5" preset="oscillating">
+        <begin x="0" y="0" z="0"/>
+        <end x="0" y="0.06" z="0"/>
+      </translation>
+    </textureanimations>
+  </plane>
+  <plane texture="backgrounds/claw_rope.png" x="3.676" y="-3.733" z="-4.500" width="1.000" height="18.750" priority="113" rotation="3.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="11">
+    <color_whole_quad r="188" g="188" b="188" a="255"/>
+    <animations>
+      <translation duration="8" preset="oscillating">
+        <begin x="-1" y="0" z="0"/>
+        <end x="1" y="0" z="0"/>
+      </translation>
+    </animations>
+  </plane>
+  <plane texture="backgrounds/claw.png" x="4.908" y="4.246" z="-4.500" width="15.781" height="37.469" priority="114" rotation="1.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="12">
+    <color_whole_quad r="188" g="188" b="188" a="255"/>
+    <animations>
+      <rotation duration="8" delay="1.5" preset="oscillating">
+        <begin rotation="0"/>
+        <end rotation="4"/>
+      </rotation>
+      <translation duration="8" preset="oscillating">
+        <begin x="-1" y="0" z="0"/>
+        <end x="1" y="0" z="0"/>
+      </translation>
+    </animations>
+  </plane>
+  <plane texture="backgrounds/claw_rope.png" x="25.412" y="-1.993" z="-5.000" width="0.491" height="17.277" priority="115" rotation="-4.000" texture_top_left_u="1.000" texture_top_left_v="0.000" texture_top_right_u="0.031" texture_top_right_v="0.000" texture_bottom_right_u="0.031" texture_bottom_right_v="1.891" texture_bottom_left_u="1.000" texture_bottom_left_v="1.891" ignore_fog="false" pid="13"/>
+  <plane texture="backgrounds/claw_rope.png" x="11.134" y="-2.799" z="-5.000" width="0.491" height="17.277" priority="115" rotation="2.000" texture_top_left_u="1.000" texture_top_left_v="0.000" texture_top_right_u="0.031" texture_top_right_v="0.000" texture_bottom_right_u="0.031" texture_bottom_right_v="1.891" texture_bottom_left_u="1.000" texture_bottom_left_v="1.891" ignore_fog="false" pid="14"/>
+  <plane texture="backgrounds/claw_rope.png" x="-2.949" y="-3.993" z="-5.000" width="0.491" height="17.277" priority="115" rotation="-3.000" texture_top_left_u="1.000" texture_top_left_v="0.000" texture_top_right_u="0.031" texture_top_right_v="0.000" texture_bottom_right_u="0.031" texture_bottom_right_v="1.891" texture_bottom_left_u="1.000" texture_bottom_left_v="1.891" ignore_fog="false" pid="15"/>
+  <plane texture="backgrounds/claw_rope.png" x="-17.061" y="-3.410" z="-5.000" width="0.491" height="17.277" priority="115" rotation="3.000" texture_top_left_u="1.000" texture_top_left_v="0.000" texture_top_right_u="0.031" texture_top_right_v="0.000" texture_bottom_right_u="0.031" texture_bottom_right_v="1.891" texture_bottom_left_u="1.000" texture_bottom_left_v="1.891" ignore_fog="false" pid="16"/>
+  <plane texture="backgrounds/tllight_0000.png" x="18.014" y="7.243" z="-5.000" width="15.922" height="3.538" priority="116" rotation="-1.000" texture_top_left_u="1.000" texture_top_left_v="0.000" texture_top_right_u="0.000" texture_top_right_v="0.000" texture_bottom_right_u="0.000" texture_bottom_right_v="1.000" texture_bottom_left_u="1.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="17"/>
+  <plane texture="backgrounds/tllight_beam.png" x="17.522" y="30.860" z="-5.000" width="58.208" height="48.412" priority="117" rotation="-2.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.041" texture_bottom_left_u="0.000" texture_bottom_left_v="1.041" ignore_fog="false" blendmode="add" pid="18">
+    <color_whole_quad r="102" g="165" b="196" a="128"/>
+  </plane>
+  <plane texture="backgrounds/tllight_beam.png" x="-8.867" y="29.388" z="-5.000" width="58.208" height="48.412" priority="117" rotation="3.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.041" texture_bottom_left_u="0.000" texture_bottom_left_v="1.041" ignore_fog="false" blendmode="add" pid="19">
+    <color_whole_quad r="102" g="165" b="196" a="128"/>
+  </plane>
+  <plane texture="backgrounds/tllight_0000.png" x="-9.950" y="5.860" z="-5.000" width="15.922" height="3.538" priority="116" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="20"/>
+  <plane texture="backgrounds/airlock_doorframe_pipes.png" x="46.549" y="-11.887" z="0.000" width="14.625" height="22.865" priority="116" rotation="0.000" texture_top_left_u="1.000" texture_top_left_v="0.000" texture_top_right_u="0.000" texture_top_right_v="0.000" texture_bottom_right_u="0.000" texture_bottom_right_v="1.000" texture_bottom_left_u="1.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="21"/>
+  <plane texture="backgrounds/numbers/big_06.png" x="-21.445" y="33.823" z="0.000" width="4.127" height="10.809" priority="116" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="22">
+    <color_whole_quad r="166" g="166" b="166" a="255"/>
+  </plane>
+  <plane texture="backgrounds/numbers/big_06.png" x="46.355" y="34.923" z="0.000" width="4.127" height="10.809" priority="-123" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="23">
+    <color_whole_quad r="181" g="181" b="181" a="117"/>
+  </plane>
+  <plane texture="backgrounds/airlock_doorframe_pipes.png" x="-35.613" y="-12.667" z="0.000" width="14.625" height="22.865" priority="116" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="24"/>
+  <plane texture="backgrounds/airlock_doorpost_background.png" x="48.458" y="18.213" z="0.000" width="11.040" height="48.566" priority="-126" rotation="0.000" texture_top_left_u="1.000" texture_top_left_v="0.000" texture_top_right_u="0.000" texture_top_right_v="0.000" texture_bottom_right_u="0.000" texture_bottom_right_v="1.000" texture_bottom_left_u="1.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="25"/>
+  <plane texture="backgrounds/airlock_doorpost_background.png" x="-35.822" y="16.913" z="0.000" width="11.040" height="48.566" priority="-126" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="26"/>
+  <plane texture="backgrounds/brokenpipes/pipes_broken_rubbercorner_vertical02.png" x="25.374" y="48.587" z="0.000" width="4.731" height="7.932" priority="116" rotation="-28.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="27">
+    <color_whole_quad r="112" g="112" b="112" a="255"/>
+  </plane>
+  <plane texture="backgrounds/barrel_horizontal_01.png" x="22.278" y="40.433" z="-5.000" width="6.944" height="6.944" priority="115" rotation="-68.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="28">
+    <color_whole_quad r="150" g="150" b="150" a="255"/>
+  </plane>
+  <plane texture="backgrounds/white_circle_soft.png" x="7.328" y="49.412" z="0.010" width="6.419" height="6.419" priority="114" rotation="-4.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="29">
+    <color_whole_quad r="0" g="0" b="0" a="255"/>
+  </plane>
+  <plane texture="backgrounds/white_circle_soft.png" x="13.272" y="52.449" z="0.010" width="4.862" height="4.862" priority="114" rotation="-4.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="30">
+    <color_whole_quad r="0" g="0" b="0" a="255"/>
+  </plane>
+  <plane texture="backgrounds/brokenpipes/pipes_broken_wallending_top.png" x="13.146" y="54.394" z="0.010" width="4.316" height="8.056" priority="115" rotation="-4.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="31">
+    <color_whole_quad r="150" g="150" b="150" a="255"/>
+  </plane>
+  <plane texture="backgrounds/brokenpipes/pipes_broken_wallending_top.png" x="7.424" y="52.255" z="0.010" width="6.094" height="11.375" priority="115" rotation="1.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="32">
+    <color_whole_quad r="150" g="150" b="150" a="255"/>
+  </plane>
+  <plane texture="backgrounds/grate_side.png" x="-10.638" y="50.957" z="0.010" width="12.204" height="12.087" priority="115" rotation="4.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="33">
+    <color_whole_quad r="150" g="150" b="150" a="255"/>
+  </plane>
+  <plane texture="backgrounds/barrel_horizontal_02.png" x="20.222" y="41.183" z="-5.000" width="7.267" height="7.267" priority="115" rotation="4.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="34">
+    <color_whole_quad r="150" g="150" b="150" a="255"/>
+  </plane>
+  <plane texture="backgrounds/brokenpipes/pipes_broken_corner_topright.png" x="41.763" y="59.824" z="0.000" width="6.174" height="6.152" priority="117" rotation="-12.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="35">
+    <color_whole_quad r="112" g="112" b="112" a="255"/>
+  </plane>
+  <plane texture="backgrounds/brokenpipes/pipes_broken_rubbercorner_vertical02.png" x="37.437" y="56.834" z="0.000" width="5.010" height="8.400" priority="117" rotation="43.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="36">
+    <color_whole_quad r="112" g="112" b="112" a="255"/>
+  </plane>
+  <plane texture="backgrounds/brokenpipes/pipes_broken_rubbercorner_vertical01.png" x="24.093" y="53.456" z="0.000" width="4.713" height="7.584" priority="115" rotation="-29.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="37">
+    <color_whole_quad r="112" g="112" b="112" a="255"/>
+  </plane>
+  <plane texture="backgrounds/brokenpipes/pipes_broken_bend_vertical02.png" x="18.596" y="58.926" z="0.000" width="4.066" height="10.904" priority="114" rotation="-45.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="38">
+    <color_whole_quad r="112" g="112" b="112" a="255"/>
+  </plane>
+  <plane texture="backgrounds/brokenpipes/pipes_broken_bend_vertical01.png" x="40.441" y="67.681" z="0.000" width="4.441" height="11.909" priority="115" rotation="-24.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="39">
+    <color_whole_quad r="112" g="112" b="112" a="255"/>
+  </plane>
+  <plane texture="backgrounds/brokenpipes/pipes_broken_bend_horizontal02.png" x="33.868" y="50.528" z="0.000" width="10.323" height="3.787" priority="115" rotation="-62.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="0.996" texture_top_right_v="0.000" texture_bottom_right_u="0.996" texture_bottom_right_v="0.998" texture_bottom_left_u="0.000" texture_bottom_left_v="0.998" ignore_fog="false" pid="40">
+    <color_whole_quad r="112" g="112" b="112" a="255"/>
+  </plane>
+  <plane texture="backgrounds/brokenpipes/pipes_broken_tpiece_horizontal.png" x="30.168" y="45.031" z="0.000" width="8.193" height="6.221" priority="117" rotation="38.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="41">
+    <color_whole_quad r="112" g="112" b="112" a="255"/>
+  </plane>
+  <plane texture="backgrounds/brokenpipes/pipes_broken_rubbercorner_vertical01.png" x="33.953" y="40.021" z="0.000" width="4.958" height="7.978" priority="116" rotation="-32.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="42">
+    <color_whole_quad r="112" g="112" b="112" a="255"/>
+  </plane>
+  <plane texture="backgrounds/brokenpipes/pipes_broken_wallending_top.png" x="34.756" y="34.315" z="0.000" width="4.035" height="7.533" priority="117" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="43">
+    <color_whole_quad r="112" g="112" b="112" a="255"/>
+  </plane>
+  <plane texture="backgrounds/ship_exterior_bulge.png" x="34.420" y="32.969" z="0.000" width="11.446" height="5.947" priority="115" rotation="89.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="44">
+    <color_whole_quad r="153" g="153" b="153" a="255"/>
+  </plane>
+  <plane texture="backgrounds/airlock_doorframe_front.png" x="41.140" y="17.584" z="0.000" width="22.770" height="50.000" priority="114" rotation="0.000" texture_top_left_u="1.000" texture_top_left_v="0.000" texture_top_right_u="0.000" texture_top_right_v="0.000" texture_bottom_right_u="0.000" texture_bottom_right_v="1.000" texture_bottom_left_u="1.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="45"/>
+  <plane texture="backgrounds/airlock_doorframe_front.png" x="-28.516" y="16.338" z="0.000" width="22.770" height="50.000" priority="114" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="46"/>
+  <plane texture="backgrounds/floorplane_gradient.png" x="0.929" y="42.914" z="-5.000" width="80.793" height="9.375" priority="30" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="5.836" texture_top_right_v="0.000" texture_bottom_right_u="5.836" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="47">
+    <color_whole_quad r="51" g="52" b="62" a="255"/>
+  </plane>
+  <plane texture="backgrounds/floorplane_gradient.png" x="3.336" y="44.631" z="-1.000" width="80.793" height="9.375" priority="30" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="5.836" texture_top_right_v="0.000" texture_bottom_right_u="5.836" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="48">
+    <color_whole_quad r="74" g="75" b="89" a="255"/>
+  </plane>
+  <plane texture="backgrounds/floorplane_gradient.png" x="3.036" y="44.021" z="-3.000" width="80.793" height="9.375" priority="0" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="5.836" texture_top_right_v="0.000" texture_bottom_right_u="5.836" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="49">
+    <color_whole_quad r="58" g="60" b="69" a="255"/>
+  </plane>
+  <plane texture="backgrounds/white_fog.png" x="5.938" y="28.758" z="-8.000" width="71.202" height="32.489" priority="70" rotation="2.000" texture_anim_u="0.012" texture_top_left_u="1.400" texture_top_left_v="0.000" texture_top_right_u="0.846" texture_top_right_v="0.000" texture_bottom_right_u="0.846" texture_bottom_right_v="1.009" texture_bottom_left_u="1.400" texture_bottom_left_v="1.009" ignore_fog="false" pid="50">
+    <color_whole_quad r="81" g="96" b="117" a="229"/>
+    <animations suspended="true">
+      <translation duration="8" timing="easeends">
+        <begin x="0" y="0"/>
+        <end x="0" y="-6"/>
+      </translation>
+    </animations>
+    <coloranimations suspended="true">
+      <color duration="4" timing="easeends">
+        <begin r="0" g="0" b="0" a="0"/>
+        <end r="0" g="0" b="0" a="-200"/>
+      </color>
+    </coloranimations>
+    <tag name="aircompressor_start"/>
+  </plane>
+  <plane texture="backgrounds/white_fog.png" x="7.501" y="30.508" z="-5.000" width="71.202" height="32.489" priority="0" rotation="-2.000" texture_anim_u="0.012" texture_top_left_u="0.265" texture_top_left_v="0.000" texture_top_right_u="0.819" texture_top_right_v="0.000" texture_bottom_right_u="0.819" texture_bottom_right_v="1.009" texture_bottom_left_u="0.265" texture_bottom_left_v="1.009" ignore_fog="false" pid="51">
+    <color_whole_quad r="81" g="96" b="117" a="229"/>
+    <animations suspended="true">
+      <translation duration="4" timing="easeends">
+        <begin x="0" y="0"/>
+        <end x="0" y="-6"/>
+      </translation>
+    </animations>
+    <coloranimations suspended="true">
+      <color duration="4" timing="easeends">
+        <begin r="0" g="0" b="0" a="0"/>
+        <end r="0" g="0" b="0" a="-200"/>
+      </color>
+    </coloranimations>
+    <tag name="aircompressor_start"/>
+  </plane>
+  <plane texture="backgrounds/white_fog.png" x="6.291" y="30.534" z="-0.010" width="61.939" height="32.194" priority="0" rotation="2.000" texture_anim_u="-0.01" texture_top_left_u="-0.108" texture_top_left_v="0.000" texture_top_right_u="0.373" texture_top_right_v="0.000" texture_bottom_right_u="0.373" texture_bottom_right_v="1.000" texture_bottom_left_u="-0.108" texture_bottom_left_v="1.000" ignore_fog="false" pid="52">
+    <color_whole_quad r="81" g="96" b="117" a="255"/>
+    <animations suspended="true">
+      <translation duration="4" timing="easeends">
+        <begin x="0" y="0"/>
+        <end x="0" y="-4"/>
+      </translation>
+    </animations>
+    <coloranimations suspended="true">
+      <color duration="4" timing="easeends">
+        <begin r="0" g="0" b="0" a="0"/>
+        <end r="0" g="0" b="0" a="-200"/>
+      </color>
+    </coloranimations>
+    <tag name="aircompressor_start"/>
+  </plane>
+  <plane texture="backgrounds/brokenpipes/pipes_broken_corner_bottomright.png" x="-22.146" y="35.990" z="-5.000" width="5.831" height="5.873" priority="14" rotation="4.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="53">
+    <color_whole_quad r="163" g="167" b="173" a="255"/>
+  </plane>
+  <plane texture="backgrounds/brokenpipes/pipes_broken_bend_vertical02.png" x="-21.913" y="29.406" z="-5.000" width="4.178" height="8.456" priority="13" rotation="3.000" texture_top_left_u="0.000" texture_top_left_v="0.149" texture_top_right_u="1.000" texture_top_right_v="0.149" texture_bottom_right_u="1.000" texture_bottom_right_v="0.882" texture_bottom_left_u="0.000" texture_bottom_left_v="0.882" ignore_fog="false" pid="54">
+    <color_whole_quad r="163" g="167" b="173" a="255"/>
+  </plane>
+  <plane texture="backgrounds/brokenpipes/pipes_broken_straight_horizontal01.png" x="-28.349" y="37.103" z="-5.000" width="8.115" height="3.784" priority="13" rotation="-3.000" texture_top_left_u="0.779" texture_top_left_v="0.000" texture_top_right_u="0.052" texture_top_right_v="0.000" texture_bottom_right_u="0.052" texture_bottom_right_v="1.000" texture_bottom_left_u="0.779" texture_bottom_left_v="1.000" ignore_fog="false" pid="55">
+    <color_whole_quad r="163" g="167" b="173" a="255"/>
+  </plane>
+  <plane texture="backgrounds/white_circle_soft.png" x="6.091" y="34.995" z="-5.010" width="11.400" height="29.875" priority="43" rotation="-149.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="0.378" texture_top_right_v="0.000" texture_bottom_right_u="0.378" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="56">
+    <color_whole_quad r="0" g="0" b="0" a="175"/>
+  </plane>
+  <plane texture="backgrounds/brokenpipes/pipes_broken_bend_horizontal02.png" x="-15.259" y="35.669" z="-7.000" width="9.161" height="3.418" priority="-27" rotation="-46.000" texture_top_left_u="0.198" texture_top_left_v="0.000" texture_top_right_u="1.169" texture_top_right_v="0.000" texture_bottom_right_u="1.169" texture_bottom_right_v="0.984" texture_bottom_left_u="0.198" texture_bottom_left_v="0.984" ignore_fog="false" pid="57">
+    <color_whole_quad r="104" g="109" b="119" a="255"/>
+  </plane>
+  <plane texture="backgrounds/brokenpipes/pipes_broken_rubbercorner_vertical02.png" x="-19.950" y="30.510" z="-7.000" width="4.369" height="7.325" priority="-26" rotation="21.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="58">
+    <color_whole_quad r="104" g="109" b="119" a="255"/>
+  </plane>
+  <plane texture="backgrounds/brokenpipes/pipes_broken_straight_horizontal01.png" x="-27.581" y="24.837" z="-7.000" width="8.115" height="3.784" priority="-27" rotation="-3.000" texture_top_left_u="0.151" texture_top_left_v="0.000" texture_top_right_u="0.878" texture_top_right_v="0.000" texture_bottom_right_u="0.878" texture_bottom_right_v="1.000" texture_bottom_left_u="0.151" texture_bottom_left_v="1.000" ignore_fog="false" pid="59">
+    <color_whole_quad r="104" g="109" b="119" a="255"/>
+  </plane>
+  <plane texture="backgrounds/brokenpipes/pipes_broken_straight_horizontal01.png" x="-28.599" y="21.770" z="-5.000" width="8.115" height="3.784" priority="13" rotation="-3.000" texture_top_left_u="0.151" texture_top_left_v="0.000" texture_top_right_u="0.878" texture_top_right_v="0.000" texture_bottom_right_u="0.878" texture_bottom_right_v="1.000" texture_bottom_left_u="0.151" texture_bottom_left_v="1.000" ignore_fog="false" pid="60">
+    <color_whole_quad r="163" g="167" b="173" a="255"/>
+  </plane>
+  <plane texture="backgrounds/brokenpipes/pipes_broken_corner_topright.png" x="-21.597" y="26.003" z="-7.000" width="5.875" height="5.854" priority="-25" rotation="-3.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="61">
+    <color_whole_quad r="104" g="109" b="119" a="255"/>
+  </plane>
+  <plane texture="backgrounds/brokenpipes/pipes_broken_straight_horizontal01.png" x="-30.072" y="22.777" z="-5.000" width="6.195" height="5.525" priority="34" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="0.380" texture_top_right_v="0.000" texture_bottom_right_u="0.380" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="62">
+    <color_whole_quad r="105" g="111" b="120" a="255"/>
+  </plane>
+  <plane texture="backgrounds/brokenpipes/pipes_broken_straight_vertical01.png" x="-48.169" y="45.658" z="-5.000" width="5.197" height="8.523" priority="27" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.067" texture_top_right_v="0.000" texture_bottom_right_u="1.067" texture_bottom_right_v="0.588" texture_bottom_left_u="0.000" texture_bottom_left_v="0.588" ignore_fog="false" pid="63">
+    <color_whole_quad r="105" g="111" b="120" a="255"/>
+  </plane>
+  <plane texture="backgrounds/brokenpipes/pipes_broken_straight_horizontal01.png" x="-42.744" y="34.356" z="-5.000" width="5.802" height="4.660" priority="27" rotation="33.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="0.421" texture_top_right_v="0.000" texture_bottom_right_u="0.421" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="64">
+    <color_whole_quad r="105" g="111" b="120" a="255"/>
+  </plane>
+  <plane texture="backgrounds/brokenpipes/pipes_broken_rubbercorner_horizontal01.png" x="-47.179" y="38.210" z="-5.000" width="9.927" height="5.880" priority="34" rotation="56.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="65">
+    <color_whole_quad r="105" g="111" b="120" a="255"/>
+  </plane>
+  <plane texture="backgrounds/brokenpipes/pipes_broken_rubbercorner_horizontal02.png" x="-38.288" y="30.158" z="-5.000" width="10.479" height="6.362" priority="34" rotation="56.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="66">
+    <color_whole_quad r="105" g="111" b="120" a="255"/>
+  </plane>
+  <plane texture="backgrounds/brokenpipes/pipes_broken_corner_topleft.png" x="-35.913" y="23.908" z="-5.000" width="8.001" height="8.088" priority="44" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="67">
+    <color_whole_quad r="105" g="111" b="120" a="255"/>
+  </plane>
+  <plane texture="backgrounds/brokenpipes/pipes_broken_tpiece_horizontal.png" x="15.369" y="36.562" z="-5.010" width="6.939" height="5.269" priority="115" rotation="1.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="68">
+    <color_whole_quad r="141" g="141" b="141" a="255"/>
+    <animations suspended="true">
+      <translation duration="0.07437" delay="0.02" preset="oscillating">
+        <begin x="-0.04" y="0" z="0"/>
+        <end x="0.04" y="0" z="0"/>
+      </translation>
+      <translation duration="0.12324" delay="0.02" preset="oscillating">
+        <begin x="0" y="-0.04" z="0"/>
+        <end x="0" y="0.04" z="0"/>
+      </translation>
+    </animations>
+    <tag name="aircompressor_start"/>
+  </plane>
+  <plane texture="backgrounds/brokenpipes/pipes_broken_corner_topright.png" x="25.280" y="36.534" z="-5.010" width="4.795" height="4.778" priority="115" rotation="-1.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="69">
+    <color_whole_quad r="141" g="141" b="141" a="255"/>
+    <animations suspended="true">
+      <translation duration="0.07437" delay="0.02" preset="oscillating">
+        <begin x="-0.04" y="0" z="0"/>
+        <end x="0.04" y="0" z="0"/>
+      </translation>
+      <translation duration="0.12324" delay="0.02" preset="oscillating">
+        <begin x="0" y="-0.04" z="0"/>
+        <end x="0" y="0.04" z="0"/>
+      </translation>
+    </animations>
+    <tag name="aircompressor_start"/>
+  </plane>
+  <plane texture="backgrounds/brokenpipes/pipes_broken_straight_vertical02.png" x="15.169" y="40.927" z="-5.010" width="3.057" height="4.354" priority="114" rotation="-5.000" texture_top_left_u="1.000" texture_top_left_v="0.495" texture_top_right_u="0.000" texture_top_right_v="0.495" texture_bottom_right_u="0.000" texture_bottom_right_v="0.992" texture_bottom_left_u="1.000" texture_bottom_left_v="0.992" ignore_fog="false" pid="70">
+    <color_whole_quad r="160" g="160" b="160" a="255"/>
+    <animations suspended="true">
+      <translation duration="0.07437" delay="0.02" preset="oscillating">
+        <begin x="-0.04" y="0" z="0"/>
+        <end x="0.04" y="0" z="0"/>
+      </translation>
+      <translation duration="0.12324" delay="0.02" preset="oscillating">
+        <begin x="0" y="-0.04" z="0"/>
+        <end x="0" y="0.04" z="0"/>
+      </translation>
+    </animations>
+    <tag name="aircompressor_start"/>
+  </plane>
+  <plane texture="backgrounds/brokenpipes/pipes_broken_straight_vertical02.png" x="26.047" y="40.713" z="-5.010" width="3.057" height="4.354" priority="114" rotation="2.000" texture_top_left_u="0.000" texture_top_left_v="0.039" texture_top_right_u="1.000" texture_top_right_v="0.039" texture_bottom_right_u="1.000" texture_bottom_right_v="0.536" texture_bottom_left_u="0.000" texture_bottom_left_v="0.536" ignore_fog="false" pid="71">
+    <color_whole_quad r="141" g="141" b="141" a="255"/>
+    <animations suspended="true">
+      <translation duration="0.07437" delay="0.02" preset="oscillating">
+        <begin x="-0.04" y="0" z="0"/>
+        <end x="0.04" y="0" z="0"/>
+      </translation>
+      <translation duration="0.12324" delay="0.02" preset="oscillating">
+        <begin x="0" y="-0.04" z="0"/>
+        <end x="0" y="0.04" z="0"/>
+      </translation>
+    </animations>
+    <tag name="aircompressor_start"/>
+  </plane>
+  <plane texture="backgrounds/brokenpipes/pipes_broken_straight_horizontal01.png" x="20.829" y="35.814" z="-5.010" width="5.631" height="3.174" priority="114" rotation="-1.000" texture_top_left_u="0.306" texture_top_left_v="0.000" texture_top_right_u="0.905" texture_top_right_v="0.000" texture_bottom_right_u="0.905" texture_bottom_right_v="1.000" texture_bottom_left_u="0.306" texture_bottom_left_v="1.000" ignore_fog="false" pid="72">
+    <color_whole_quad r="141" g="141" b="141" a="255"/>
+    <animations suspended="true">
+      <translation duration="0.07437" delay="0.02" preset="oscillating">
+        <begin x="-0.04" y="0" z="0"/>
+        <end x="0.04" y="0" z="0"/>
+      </translation>
+      <translation duration="0.12324" delay="0.02" preset="oscillating">
+        <begin x="0" y="-0.04" z="0"/>
+        <end x="0" y="0.04" z="0"/>
+      </translation>
+    </animations>
+    <tag name="aircompressor_start"/>
+  </plane>
+  <plane texture="backgrounds/brokenpipes/pipes_broken_straight_horizontal01.png" x="8.862" y="35.976" z="-5.010" width="9.315" height="3.174" priority="114" rotation="1.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="73">
+    <color_whole_quad r="141" g="141" b="141" a="255"/>
+    <animations suspended="true">
+      <translation duration="0.07437" delay="0.02" preset="oscillating">
+        <begin x="-0.04" y="0" z="0"/>
+        <end x="0.04" y="0" z="0"/>
+      </translation>
+      <translation duration="0.12324" delay="0.02" preset="oscillating">
+        <begin x="0" y="-0.04" z="0"/>
+        <end x="0" y="0.04" z="0"/>
+      </translation>
+    </animations>
+    <tag name="aircompressor_start"/>
+  </plane>
+  <plane texture="backgrounds/brokenpipes/pipes_broken_corner_topright.png" x="28.097" y="36.019" z="-5.450" width="12.875" height="12.829" priority="15" rotation="1.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="74">
+    <color_whole_quad r="85" g="85" b="85" a="255"/>
+    <animations suspended="true">
+      <translation duration="0.08437" preset="oscillating">
+        <begin x="-0.04" y="0" z="0"/>
+        <end x="0.04" y="0" z="0"/>
+      </translation>
+      <translation duration="0.14324" preset="oscillating">
+        <begin x="0" y="-0.04" z="0"/>
+        <end x="0" y="0.04" z="0"/>
+      </translation>
+    </animations>
+    <tag name="aircompressor_start"/>
+  </plane>
+  <plane texture="backgrounds/brokenpipes/pipes_broken_straight_horizontal01.png" x="10.360" y="34.712" z="-5.450" width="26.795" height="9.131" priority="13" rotation="1.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="75">
+    <color_whole_quad r="85" g="85" b="85" a="255"/>
+    <animations suspended="true">
+      <translation duration="0.08437" preset="oscillating">
+        <begin x="-0.04" y="0" z="0"/>
+        <end x="0.04" y="0" z="0"/>
+      </translation>
+      <translation duration="0.14324" preset="oscillating">
+        <begin x="0" y="-0.04" z="0"/>
+        <end x="0" y="0.04" z="0"/>
+      </translation>
+    </animations>
+    <tag name="aircompressor_start"/>
+  </plane>
+  <plane texture="backgrounds/brokenpipes/pipes_broken_bend_vertical02.png" x="30.221" y="17.385" z="-5.010" width="6.694" height="18.399" priority="15" rotation="-37.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="76">
+    <color_whole_quad r="144" g="144" b="144" a="255"/>
+    <animations suspended="true">
+      <translation duration="0.10437" preset="oscillating">
+        <begin x="-0.04" y="0" z="0"/>
+        <end x="0.04" y="0" z="0"/>
+      </translation>
+      <translation duration="0.12324" preset="oscillating">
+        <begin x="0" y="-0.04" z="0"/>
+        <end x="0" y="0.04" z="0"/>
+      </translation>
+    </animations>
+    <tag name="aircompressor_start"/>
+  </plane>
+  <plane texture="backgrounds/brokenpipes/pipes_broken_rubbercorner_horizontal01.png" x="37.808" y="10.969" z="-5.010" width="15.180" height="8.991" priority="15" rotation="21.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="77">
+    <color_whole_quad r="144" g="144" b="144" a="255"/>
+    <animations suspended="true">
+      <translation duration="0.10437" preset="oscillating">
+        <begin x="-0.04" y="0" z="0"/>
+        <end x="0.04" y="0" z="0"/>
+      </translation>
+      <translation duration="0.12324" preset="oscillating">
+        <begin x="0" y="-0.04" z="0"/>
+        <end x="0" y="0.04" z="0"/>
+      </translation>
+    </animations>
+    <tag name="aircompressor_start"/>
+  </plane>
+  <plane texture="backgrounds/brokenpipes/pipes_broken_rubbercorner_horizontal02.png" x="22.478" y="28.167" z="-5.010" width="13.121" height="7.966" priority="15" rotation="30.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="78">
+    <color_whole_quad r="144" g="144" b="144" a="255"/>
+    <animations suspended="true">
+      <translation duration="0.10437" preset="oscillating">
+        <begin x="-0.04" y="0" z="0"/>
+        <end x="0.04" y="0" z="0"/>
+      </translation>
+      <translation duration="0.12324" preset="oscillating">
+        <begin x="0" y="-0.04" z="0"/>
+        <end x="0" y="0.04" z="0"/>
+      </translation>
+    </animations>
+    <tag name="aircompressor_start"/>
+  </plane>
+  <plane texture="backgrounds/brokenpipes/pipes_broken_straight_horizontal01.png" x="10.301" y="30.474" z="-5.010" width="16.781" height="5.719" priority="14" rotation="1.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="79">
+    <color_whole_quad r="144" g="144" b="144" a="255"/>
+    <animations suspended="true">
+      <translation duration="0.10437" preset="oscillating">
+        <begin x="-0.04" y="0" z="0"/>
+        <end x="0.04" y="0" z="0"/>
+      </translation>
+      <translation duration="0.12324" preset="oscillating">
+        <begin x="0" y="-0.04" z="0"/>
+        <end x="0" y="0.04" z="0"/>
+      </translation>
+    </animations>
+    <tag name="aircompressor_start"/>
+  </plane>
+  <plane texture="backgrounds/brokenpipes/pipes_broken_corner_topright.png" x="-22.615" y="22.937" z="-5.000" width="5.875" height="5.854" priority="14" rotation="-3.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="80">
+    <color_whole_quad r="163" g="167" b="173" a="255"/>
+  </plane>
+  <plane texture="backgrounds/white_gradient.png" x="-19.554" y="13.298" z="-4.980" width="25.656" height="66.160" priority="-45" rotation="-180.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="0.963" texture_top_right_v="0.000" texture_bottom_right_u="0.963" texture_bottom_right_v="1.438" texture_bottom_left_u="0.000" texture_bottom_left_v="1.438" ignore_fog="false" pid="81">
+    <color_whole_quad r="0" g="0" b="0" a="255"/>
+  </plane>
+  <plane texture="backgrounds/white_gradient.png" x="4.285" y="23.316" z="-7.980" width="63.875" height="66.903" priority="-96" rotation="-90.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="0.994" texture_top_right_v="0.000" texture_bottom_right_u="0.994" texture_bottom_right_v="1.438" texture_bottom_left_u="0.000" texture_bottom_left_v="1.438" ignore_fog="false" pid="82">
+    <color_whole_quad r="0" g="0" b="0" a="255"/>
+  </plane>
+  <plane texture="backgrounds/rocks_center.png" x="-28.371" y="17.660" z="0.000" width="11.573" height="58.371" priority="-97" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="-0.009" texture_top_right_u="0.162" texture_top_right_v="-0.009" texture_bottom_right_u="0.162" texture_bottom_right_v="4.848" texture_bottom_left_u="0.000" texture_bottom_left_v="4.848" ignore_fog="false" pid="83">
+    <color_whole_quad r="38" g="40" b="45" a="255"/>
+  </plane>
+  <plane texture="backgrounds/rocks_center.png" x="42.113" y="19.537" z="-0.100" width="13.319" height="66.751" priority="-97" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="-0.009" texture_top_right_u="0.443" texture_top_right_v="-0.009" texture_bottom_right_u="0.443" texture_bottom_right_v="4.848" texture_bottom_left_u="0.000" texture_bottom_left_v="4.848" ignore_fog="false" pid="84">
+    <color_whole_quad r="103" g="109" b="122" a="255"/>
+  </plane>
+  <plane texture="backgrounds/rocks_center.png" x="6.285" y="18.691" z="-8.020" width="69.448" height="66.751" priority="-97" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="-0.009" texture_top_right_u="2.294" texture_top_right_v="-0.009" texture_bottom_right_u="2.294" texture_bottom_right_v="4.848" texture_bottom_left_u="0.000" texture_bottom_left_v="4.848" ignore_fog="false" pid="85">
+    <color_whole_quad r="103" g="109" b="122" a="255"/>
+  </plane>
+  <particle effect_file="smoke_rewind.trigger" x="10.595" y="34.174" z="-5.980" scale="1.936" pid="86"/>
+  <particle effect_file="smoke_rewind.trigger" x="-7.356" y="50.494" z="0.020" scale="0.565" pid="87"/>
+  <particle effect_file="smoke_rewind.trigger" x="-7.877" y="49.452" z="0.020" scale="0.930" pid="88"/>
+  <fog>
+    <range near="25.000" far="100.000"/>
+    <color r="255" g="255" b="255"/>
+  </fog>
+</shoebox>

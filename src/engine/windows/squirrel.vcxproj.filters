@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Shared">
+      <UniqueIdentifier>{272557a3-b8e6-4f06-857d-f04e2baf6326}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\sqstdlib">
+      <UniqueIdentifier>{c33e2581-c89c-4119-b7b2-6c3987edb95a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\sqdbg">
+      <UniqueIdentifier>{049ffdcd-0288-4844-8db8-f2e16717832a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\sqprofiler">
+      <UniqueIdentifier>{eaf224dc-8730-445e-9e29-ea346edabbdc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\shared\src\squirrel\sqarray.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\squirrel\sqbind.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\squirrel\sqclass.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\squirrel\sqclosure.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\squirrel\sqcompiler.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\squirrel\sqfuncproto.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\squirrel\sqfuncstate.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\squirrel\sqlexer.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\squirrel\sqobject.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\squirrel\sqopcodes.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\squirrel\sqpcheader.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\squirrel\sqstate.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\squirrel\sqstdaux.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\squirrel\sqstdblob.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\squirrel\sqstdio.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\squirrel\sqstdmath.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\squirrel\sqstdstring.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\squirrel\sqstdsystem.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\squirrel\sqstring.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\squirrel\sqtable.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\squirrel\squirrel.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\squirrel\squserdata.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\squirrel\squtils.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\squirrel\sqvm.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\squirrel\sqstdlib\sqstdblobimpl.h">
+      <Filter>Shared\sqstdlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\squirrel\sqstdlib\sqstdstream.h">
+      <Filter>Shared\sqstdlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\squirrel\sqmem.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\squirrel\sqdbg\sqdbgserver.h">
+      <Filter>Shared\sqdbg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\squirrel\sqdbg\sqrdbg.h">
+      <Filter>Shared\sqdbg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\squirrel\sqassert.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\squirrel\sqprofiler\memorypool.h">
+      <Filter>Shared\sqprofiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\squirrel\sqprofiler\sqprofiler.h">
+      <Filter>Shared\sqprofiler</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\shared\src\squirrel\sqapi.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\squirrel\sqbaselib.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\squirrel\sqclass.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\squirrel\sqcompiler.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\squirrel\sqdebug.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\squirrel\sqfuncstate.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\squirrel\sqlexer.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\squirrel\sqmem.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\squirrel\sqobject.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\squirrel\sqstate.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\squirrel\sqtable.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\squirrel\sqvm.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\squirrel\sqstdlib\sqstdaux.cpp">
+      <Filter>Shared\sqstdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\squirrel\sqstdlib\sqstdblob.cpp">
+      <Filter>Shared\sqstdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\squirrel\sqstdlib\sqstdio.cpp">
+      <Filter>Shared\sqstdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\squirrel\sqstdlib\sqstdmath.cpp">
+      <Filter>Shared\sqstdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\squirrel\sqstdlib\sqstdrex.cpp">
+      <Filter>Shared\sqstdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\squirrel\sqstdlib\sqstdstream.cpp">
+      <Filter>Shared\sqstdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\squirrel\sqstdlib\sqstdstring.cpp">
+      <Filter>Shared\sqstdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\squirrel\sqstdlib\sqstdsystem.cpp">
+      <Filter>Shared\sqstdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\squirrel\sqbind.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\squirrel\sqdbg\sqdbgserver.cpp">
+      <Filter>Shared\sqdbg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\squirrel\sqdbg\sqrdbg.cpp">
+      <Filter>Shared\sqdbg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\squirrel\sqprofiler\sqprofiler.cpp">
+      <Filter>Shared\sqprofiler</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\shared\inc\squirrel\sqmethods.inc">
+      <Filter>Shared</Filter>
+    </None>
+    <None Include="..\shared\src\squirrel\sqdbg\serialize_state.inl">
+      <Filter>Shared\sqdbg</Filter>
+    </None>
+    <None Include="..\shared\src\squirrel\sqdbg\serialize_state.nut">
+      <Filter>Shared\sqdbg</Filter>
+    </None>
+  </ItemGroup>
+</Project>

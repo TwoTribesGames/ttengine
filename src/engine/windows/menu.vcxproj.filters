@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Shared">
+      <UniqueIdentifier>{e1a2dcb0-8b38-481a-836e-01e2d00031f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\elements">
+      <UniqueIdentifier>{f5dd74b0-120b-4b0c-9980-586977dbac29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\actionlisteners">
+      <UniqueIdentifier>{f4e16e54-f13c-4990-8352-930450fc3575}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows">
+      <UniqueIdentifier>{cc7485ee-24c7-468f-986e-ec396cee6b50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pch">
+      <UniqueIdentifier>{bd554b23-1cff-4869-a914-02b3daa17dcd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\shared\src\tt\menu\MenuAction.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\MenuElementAction.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\MenuFactory.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\MenuKeyboard.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\MenuLayout.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\MenuLayoutManager.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\MenuSkin.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\MenuSoundPlayer.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\MenuStringFormatter.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\MenuSystem.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\MenuTemplate.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\MenuTransition.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\MenuTreeNode.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\MenuUtils.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\elements\BouncePositionAnimation.cpp">
+      <Filter>Shared\elements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\elements\BusyBar.cpp">
+      <Filter>Shared\elements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\elements\Button.cpp">
+      <Filter>Shared\elements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\elements\ColourItem.cpp">
+      <Filter>Shared\elements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\elements\Container.cpp">
+      <Filter>Shared\elements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\elements\Decorator.cpp">
+      <Filter>Shared\elements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\elements\DefaultColors.cpp">
+      <Filter>Shared\elements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\elements\DynamicLabel.cpp">
+      <Filter>Shared\elements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\elements\ElementLayout.cpp">
+      <Filter>Shared\elements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\elements\FATImage.cpp">
+      <Filter>Shared\elements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\elements\FileBlocksBar.cpp">
+      <Filter>Shared\elements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\elements\FileItem.cpp">
+      <Filter>Shared\elements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\elements\FileList.cpp">
+      <Filter>Shared\elements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\elements\Image.cpp">
+      <Filter>Shared\elements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\elements\ImageEditor.cpp">
+      <Filter>Shared\elements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\elements\Label.cpp">
+      <Filter>Shared\elements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\elements\Line.cpp">
+      <Filter>Shared\elements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\elements\LinearTranslationAnimation.cpp">
+      <Filter>Shared\elements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\elements\Marker.cpp">
+      <Filter>Shared\elements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\elements\Menu.cpp">
+      <Filter>Shared\elements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\elements\MenuElement.cpp">
+      <Filter>Shared\elements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\elements\MultiPageLabel.cpp">
+      <Filter>Shared\elements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\elements\ProgressBar.cpp">
+      <Filter>Shared\elements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\elements\ScrollableList.cpp">
+      <Filter>Shared\elements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\elements\Scrollbar.cpp">
+      <Filter>Shared\elements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\elements\SelectionCursor.cpp">
+      <Filter>Shared\elements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\elements\SelectionCursorType.cpp">
+      <Filter>Shared\elements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\elements\ShowOneChild.cpp">
+      <Filter>Shared\elements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\elements\ShowOneValueChild.cpp">
+      <Filter>Shared\elements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\elements\ShowOneValueText.cpp">
+      <Filter>Shared\elements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\elements\SoftwareKeyboard.cpp">
+      <Filter>Shared\elements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\elements\SunkenBorderDecorator.cpp">
+      <Filter>Shared\elements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\elements\Table.cpp">
+      <Filter>Shared\elements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\elements\ValueDecorator.cpp">
+      <Filter>Shared\elements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\elements\Window.cpp">
+      <Filter>Shared\elements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\actionlisteners\BlockingMenuListener.cpp">
+      <Filter>Shared\actionlisteners</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\actionlisteners\EditorCommandListener.cpp">
+      <Filter>Shared\actionlisteners</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\actionlisteners\MenuCommandListener.cpp">
+      <Filter>Shared\actionlisteners</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\menu\actionlisteners\MenuElementListener.cpp">
+      <Filter>Shared\actionlisteners</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\pch\pch.cpp">
+      <Filter>pch</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\shared\inc\tt\menu\MenuAction.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\MenuActionListener.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\MenuDebug.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\MenuElementAction.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\MenuFactory.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\MenuKeyboard.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\MenuLayout.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\MenuLayoutManager.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\MenuSkin.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\MenuSound.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\MenuSoundPlayer.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\MenuStringFormatter.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\MenuSystem.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\MenuTemplate.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\MenuTransition.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\MenuTreeNode.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\MenuUtils.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\elements\BouncePositionAnimation.h">
+      <Filter>Shared\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\elements\BusyBar.h">
+      <Filter>Shared\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\elements\Button.h">
+      <Filter>Shared\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\elements\ColourItem.h">
+      <Filter>Shared\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\elements\Container.h">
+      <Filter>Shared\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\elements\ContainerBase.h">
+      <Filter>Shared\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\elements\Decorator.h">
+      <Filter>Shared\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\elements\DefaultColours.h">
+      <Filter>Shared\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\elements\DynamicLabel.h">
+      <Filter>Shared\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\elements\element_traits.h">
+      <Filter>Shared\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\elements\ElementLayout.h">
+      <Filter>Shared\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\elements\FATImage.h">
+      <Filter>Shared\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\elements\FileBlocksBar.h">
+      <Filter>Shared\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\elements\FileItem.h">
+      <Filter>Shared\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\elements\FileList.h">
+      <Filter>Shared\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\elements\Image.h">
+      <Filter>Shared\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\elements\ImageEditor.h">
+      <Filter>Shared\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\elements\Label.h">
+      <Filter>Shared\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\elements\Line.h">
+      <Filter>Shared\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\elements\LinearTranslationAnimation.h">
+      <Filter>Shared\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\elements\Marker.h">
+      <Filter>Shared\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\elements\Menu.h">
+      <Filter>Shared\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\elements\MenuElement.h">
+      <Filter>Shared\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\elements\MenuElementInterface.h">
+      <Filter>Shared\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\elements\MultiPageLabel.h">
+      <Filter>Shared\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\elements\PositionAnimationInterface.h">
+      <Filter>Shared\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\elements\ProgressBar.h">
+      <Filter>Shared\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\elements\ScrollableList.h">
+      <Filter>Shared\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\elements\Scrollbar.h">
+      <Filter>Shared\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\elements\SelectionCursor.h">
+      <Filter>Shared\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\elements\SelectionCursorType.h">
+      <Filter>Shared\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\elements\ShowOneChild.h">
+      <Filter>Shared\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\elements\ShowOneValueChild.h">
+      <Filter>Shared\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\elements\ShowOneValueText.h">
+      <Filter>Shared\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\elements\SkinElementIDs.h">
+      <Filter>Shared\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\elements\SoftwareKeyboard.h">
+      <Filter>Shared\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\elements\SunkenBorderDecorator.h">
+      <Filter>Shared\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\elements\Table.h">
+      <Filter>Shared\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\elements\TranslationAnimationInterface.h">
+      <Filter>Shared\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\elements\ValueDecorator.h">
+      <Filter>Shared\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\elements\Window.h">
+      <Filter>Shared\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\actionlisteners\BlockingMenuListener.h">
+      <Filter>Shared\actionlisteners</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\actionlisteners\EditorCommandListener.h">
+      <Filter>Shared\actionlisteners</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\actionlisteners\MenuCommandListener.h">
+      <Filter>Shared\actionlisteners</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\menu\actionlisteners\MenuElementListener.h">
+      <Filter>Shared\actionlisteners</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\pch\pch.h">
+      <Filter>pch</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\shared\inc\tt\menu\elements\ContainerBase.tpl">
+      <Filter>Shared\elements</Filter>
+    </None>
+  </ItemGroup>
+</Project>

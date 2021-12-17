@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		permanent="true" dont_precache="true" fixed_timestep="0.016">
+	
+	<include file="presentation/menu/include"/>
+	
+	<startvalues>
+		<scale scale="0.48"/>
+	</startvalues>
+	
+	<frameanimstack>
+		<musthave>
+		  <tag name="locked"/>
+		</musthave>
+		<frameanim directory="spritestrip/hud/achievements/icons/locked" fps="4" looping="false" quad_width="0.375" quad_height="0.375">
+			<begin frame="c(id)" hold="true"/>
+			<end   frame="c(id)" hold="true"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<frameanimstack>
+		<musthave>
+		  <tag name="unlocked"/>
+		</musthave>
+		<frameanim directory="spritestrip/hud/achievements/icons/unlocked" fps="4" looping="false" quad_width="0.375" quad_height="0.375">
+			<begin frame="c(id)" hold="true"/>
+			<end   frame="c(id)" hold="true"/>
+		</frameanim>
+	</frameanimstack>
+	
+</presentation>

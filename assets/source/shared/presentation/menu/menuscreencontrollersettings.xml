@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		permanent="true" fixed_timestep="0.016">
+
+	<include file="presentation/menu/include"/>
+			
+	<startvalues>
+		<translation z="-1"/>
+	</startvalues>
+
+	<startvalues>
+		<musthave>
+			<tag name="nx"/>
+			<tag name="multiplayer"/>
+		</musthave>
+		<translation y="0.01"/>
+	</startvalues>
+	
+	<startvalues>
+		<musthave>
+			<tag name="nx"/>
+			<tag name="singleplayer"/>
+		</musthave>
+		<translation y="0.04"/>
+	</startvalues>
+	
+	<coloranimstack>
+		<color duration="0.01">
+			<begin r="-214" g="-39" b="-100"/>
+			<end r="-214" g="-39" b="-100"/>
+		</color>
+	</coloranimstack>
+	
+	<frameanimstack>
+		<musthave>
+			<tag name="controller"/>
+			<tag name="ps4"/>
+		</musthave>
+		<musthave>
+			<tag name="keyboard"/>
+			<tag name="pc"/>
+		</musthave>
+		<musthave>
+			<tag name="controller"/>
+			<tag name="pc"/>
+		</musthave>
+		<frameanim directory="spritestrip/hud/controls/ps4" ignore_fog="true" fps="12" looping="true" quad_width="0.54" quad_height="0.3475">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+			<translation x="0.0" y="-0.19"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<frameanimstack>
+		<musthave>
+			<tag name="singleplayer"/>
+			<tag name="nx"/>
+		</musthave>
+		<frameanim directory="spritestrip/hud/controls/nx" ignore_fog="true" fps="12" looping="true" quad_width="0.54" quad_height="0.3475">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+			<translation x="0.0" y="-0.19"/>
+		</frameanim>
+	</frameanimstack>
+
+	<frameanimstack>
+		<musthave>
+			<tag name="multiplayer"/>
+			<tag name="nx"/>
+		</musthave>
+		<frameanim directory="spritestrip/hud/controls/nx" ignore_fog="true" fps="12" looping="true" quad_width="0.54" quad_height="0.3475">
+			<begin frame="1" hold="true"/>
+			<end   frame="1" hold="true"/>
+			<translation x="0.0" y="-0.19"/>
+		</frameanim>
+	</frameanimstack>
+
+</presentation>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		permanent="true">
+
+	<!-- text fade in -->
+	<startvalues>
+		<origin y="0.6"/>
+		<translation z="0.1" y="1.8"/>
+		<scale scale="0.65"/>
+	</startvalues>
+
+	<startvalues>
+		<mustnothave>
+			<tag name="player"/>
+		</mustnothave>
+		<translation y="0.45"/>
+	</startvalues>	
+	
+  <startvalues>
+    <musthave>
+      <tag name="angry_shout"/>
+    </musthave>
+    <musthave>
+      <tag name="happy_shout"/>
+    </musthave>
+    <musthave>
+      <tag name="scared_shout"/>
+    </musthave>
+    <translation y="0.5"/>
+    <scale scale="1.8"/>
+  </startvalues>
+
+
+  <anim2dstack name="fadein">
+		<translation duration="0.25" delay="0" direction="forward" timing="easeout">
+			<begin y="-0.3"/>
+			<end y="0.0"/>
+		</translation>
+		<scale duration="0.25" timing="easeends">
+			<begin x="0.01"/>
+			<end x="1"/>
+		</scale>
+	</anim2dstack>
+	<coloranimstack name="fadein">
+		<color duration="0.25" delay="0" direction="forward" timing="linear">
+			<begin a="-255"/>
+			<end a="0"/>
+		</color>
+	</coloranimstack>
+	
+	<!-- text fade out -->
+	
+	<anim2dstack name="fadeout">
+		<translation duration="0.25" delay="0.0" direction="forward" timing="easeout">
+			<begin y="0.0"/>
+			<end y="-0.3"/>
+		</translation>
+		<scale duration="0.25" timing="easeends">
+			<begin x="1"/>
+			<end x="0.01"/>
+		</scale>
+	</anim2dstack>
+	<coloranimstack name="fadeout">
+		<color duration="0.25" delay="0.0" direction="forward" timing="linear">
+		  <begin a="0"/>
+		  <end a="-255"/>
+		</color>
+	</coloranimstack>
+	
+	<!--conversation_back-->
+	<frameanimstack>
+		<mustnothave>
+			<tag name="typing"/>
+		</mustnothave>
+		<frameanim directory="spritestrip/hud/avatar_bg" flip_horizontal="false" ignore_fog="false" fps="60" looping="false" quad_width="3.15" quad_height="11.0" direction="pingpong">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+			<translation y="-0.085" x="-0.0"/>
+			<scale x="c(labelWidth)" y="c(labelHeight)"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<!-- FIXME: Cannot use this for now, because the presentation 'lives' in the aligner, NOT the calling entity
+	<trigger name="fadeout" delay="0.5" type="callback" data="remove"/>
+	-->
+</presentation>

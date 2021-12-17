@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<shoebox xmlns="http://intranet.twotribes.com/schemas/common/shoebox.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/shoebox.xsd http://intranet.twotribes.com/schemas/common/shoebox.xsd">
+  <clearcolor r="0" g="0" b="0"/>
+  <particle hidden="true" effect_file="aircompressor_steam.trigger" x="-3.27500463" y="3.19999862" z="0.0299999993" scale="1.20486176">
+    <tag name="aircompressor_start_particle"/>
+  </particle>
+  <plane texture="backgrounds/aircompressor_piston_cap.png" x="11.4882278" y="0.738719285" z="0.000000000" width="13.9062500" height="19.4062500" priority="12" rotation="0.000000000" texture_top_left_u="0.000000000" texture_top_left_v="0.000000000" texture_top_right_u="1.00000000" texture_top_right_v="0.000000000" texture_bottom_right_u="1.00000000" texture_bottom_right_v="1.00000000" texture_bottom_left_u="0.000000000" texture_bottom_left_v="1.00000000" ignore_fog="false">
+    <animations suspended="true">
+      <translation duration="0.5" delay="0" preset="oscillating" looping="false">
+        <begin x="0" y="0"/>
+        <end x="6" y="0.3"/>
+      </translation>
+      <scale duration="0.5" delay="0" preset="oscillating" looping="false">
+        <begin scale="1"/>
+        <end scale="1.14"/>
+      </scale>
+		<translation duration="0.5" delay="0.6" preset="oscillating" looping="false">
+			<begin x="0" y="0"/>
+			<end x="6" y="0.3"/>
+		</translation>
+		<scale duration="0.5" delay="0.6" preset="oscillating" looping="false">
+			<begin scale="1"/>
+			<end scale="1.14"/>
+		</scale>
+		<translation duration="0.5" delay="1.2" preset="oscillating" looping="false">
+			<begin x="0" y="0"/>
+			<end x="6" y="0.3"/>
+		</translation>
+		<scale duration="0.5" delay="1.2" preset="oscillating" looping="false">
+			<begin scale="1"/>
+			<end scale="1.14"/>
+		</scale>
+		<translation duration="0.5" delay="1.8" preset="oscillating" looping="false">
+			<begin x="0" y="0"/>
+			<end x="6" y="0.3"/>
+		</translation>
+		<scale duration="0.5" delay="1.8" preset="oscillating" looping="false">
+			<begin scale="1"/>
+			<end scale="1.14"/>
+		</scale>
+		<translation duration="0.5" delay="2.4" preset="oscillating" looping="false">
+			<begin x="0" y="0"/>
+			<end x="6" y="0.3"/>
+		</translation>
+		<scale duration="0.5" delay="2.4" preset="oscillating" looping="false">
+			<begin scale="1"/>
+			<end scale="1.14"/>
+		</scale>
+		<translation duration="0.5" delay="3" preset="oscillating" looping="false">
+			<begin x="0" y="0"/>
+			<end x="6" y="0.3"/>
+		</translation>
+		<scale duration="0.5" delay="3" preset="oscillating" looping="false">
+			<begin scale="1"/>
+			<end scale="1.14"/>
+		</scale>
+		      <translation duration="0.5" delay="3.6" preset="oscillating" looping="false">
+        <begin x="0" y="0"/>
+        <end x="6" y="0.3"/>
+      </translation>
+      <scale duration="0.5" delay="3.6" preset="oscillating" looping="false">
+        <begin scale="1"/>
+        <end scale="1.14"/>
+      </scale>
+
+		<translation duration="0.5" delay="4.2" preset="oscillating" looping="false">
+			<begin x="0" y="0"/>
+			<end x="5" y="0.3"/>
+		</translation>
+		<scale duration="0.5" delay="4.2" preset="oscillating" looping="false">
+			<begin scale="1"/>
+			<end scale="1.12"/>
+		</scale>
+
+		<translation duration="0.5" delay="4.8" preset="oscillating" looping="false">
+			<begin x="0" y="0"/>
+			<end x="4" y="0.3"/>
+		</translation>
+		<scale duration="0.5" delay="4.8" preset="oscillating" looping="false">
+			<begin scale="1"/>
+			<end scale="1.1"/>
+		</scale>
+
+		<translation duration="0.5" delay="5.4" preset="oscillating" looping="false">
+			<begin x="0" y="0"/>
+			<end x="3" y="0.3"/>
+		</translation>
+		<scale duration="0.50" delay="5.4" preset="oscillating" looping="false">
+			<begin scale="1"/>
+			<end scale="1.08"/>
+		</scale>
+
+		<translation duration="0.5" delay="6" preset="oscillating" looping="false">
+			<begin x="0" y="0"/>
+			<end x="2" y="0.3"/>
+		</translation>
+		<scale duration="0.5" delay="6" preset="oscillating" looping="false">
+			<begin scale="1"/>
+			<end scale="1.06"/>
+		</scale>
+
+		<translation duration="0.5" delay="6.60" preset="oscillating" looping="false">
+			<begin x="0" y="0"/>
+			<end x="1" y="0.3"/>
+		</translation>
+		<scale duration="0.5" delay="6.60" preset="oscillating" looping="false">
+			<begin scale="1"/>
+			<end scale="1.04"/>
+		</scale>
+		
+      <translation duration="0.08437" preset="oscillating">
+        <begin x="-0.04" y="0" z="0"/>
+        <end x="0.04" y="0" z="0"/>
+      </translation>
+      <translation duration="0.14324" preset="oscillating">
+        <begin x="0" y="-0.04" z="0"/>
+        <end x="0" y="0.04" z="0"/>
+      </translation>
+    </animations>
+    <tag name="aircompressor_start"/>
+  </plane>
+  <plane texture="backgrounds/aircompressor_piston.png" x="6.05766964" y="0.642199278" z="0.000000000" width="16.9256783" height="17.4054813" priority="7" rotation="0.000000000" texture_top_left_u="0.000000000" texture_top_left_v="0.000000000" texture_top_right_u="1.00000000" texture_top_right_v="0.000000000" texture_bottom_right_u="1.00000000" texture_bottom_right_v="1.00000000" texture_bottom_left_u="0.000000000" texture_bottom_left_v="1.00000000" ignore_fog="false">
+    <animations suspended="true">
+		<translation duration="0.5" delay="0" preset="oscillating" looping="false">
+			<begin x="0" y="0"/>
+			<end x="6" y="0.3"/>
+		</translation>
+		<scale duration="0.5" delay="0" preset="oscillating" looping="false">
+			<begin scale="1"/>
+			<end scale="1.14"/>
+		</scale>
+		<translation duration="0.5" delay="0.6" preset="oscillating" looping="false">
+			<begin x="0" y="0"/>
+			<end x="6" y="0.3"/>
+		</translation>
+		<scale duration="0.5" delay="0.6" preset="oscillating" looping="false">
+			<begin scale="1"/>
+			<end scale="1.14"/>
+		</scale>
+		<translation duration="0.5" delay="1.2" preset="oscillating" looping="false">
+			<begin x="0" y="0"/>
+			<end x="6" y="0.3"/>
+		</translation>
+		<scale duration="0.5" delay="1.2" preset="oscillating" looping="false">
+			<begin scale="1"/>
+			<end scale="1.14"/>
+		</scale>
+		<translation duration="0.5" delay="1.8" preset="oscillating" looping="false">
+			<begin x="0" y="0"/>
+			<end x="6" y="0.3"/>
+		</translation>
+		<scale duration="0.5" delay="1.8" preset="oscillating" looping="false">
+			<begin scale="1"/>
+			<end scale="1.14"/>
+		</scale>
+		<translation duration="0.5" delay="2.4" preset="oscillating" looping="false">
+			<begin x="0" y="0"/>
+			<end x="6" y="0.3"/>
+		</translation>
+		<scale duration="0.5" delay="2.4" preset="oscillating" looping="false">
+			<begin scale="1"/>
+			<end scale="1.14"/>
+		</scale>
+		<translation duration="0.5" delay="3" preset="oscillating" looping="false">
+			<begin x="0" y="0"/>
+			<end x="6" y="0.3"/>
+		</translation>
+		<scale duration="0.5" delay="3" preset="oscillating" looping="false">
+			<begin scale="1"/>
+			<end scale="1.14"/>
+		</scale>
+		<translation duration="0.5" delay="3.6" preset="oscillating" looping="false">
+			<begin x="0" y="0"/>
+			<end x="6" y="0.3"/>
+		</translation>
+		<scale duration="0.5" delay="3.6" preset="oscillating" looping="false">
+			<begin scale="1"/>
+			<end scale="1.14"/>
+		</scale>
+
+		<translation duration="0.5" delay="4.2" preset="oscillating" looping="false">
+			<begin x="0" y="0"/>
+			<end x="5" y="0.3"/>
+		</translation>
+		<scale duration="0.5" delay="4.2" preset="oscillating" looping="false">
+			<begin scale="1"/>
+			<end scale="1.12"/>
+		</scale>
+
+		<translation duration="0.5" delay="4.8" preset="oscillating" looping="false">
+			<begin x="0" y="0"/>
+			<end x="4" y="0.3"/>
+		</translation>
+		<scale duration="0.5" delay="4.8" preset="oscillating" looping="false">
+			<begin scale="1"/>
+			<end scale="1.1"/>
+		</scale>
+
+		<translation duration="0.5" delay="5.4" preset="oscillating" looping="false">
+			<begin x="0" y="0"/>
+			<end x="3" y="0.3"/>
+		</translation>
+		<scale duration="0.50" delay="5.4" preset="oscillating" looping="false">
+			<begin scale="1"/>
+			<end scale="1.08"/>
+		</scale>
+
+		<translation duration="0.5" delay="6" preset="oscillating" looping="false">
+			<begin x="0" y="0"/>
+			<end x="2" y="0.3"/>
+		</translation>
+		<scale duration="0.5" delay="6" preset="oscillating" looping="false">
+			<begin scale="1"/>
+			<end scale="1.06"/>
+		</scale>
+
+		<translation duration="0.5" delay="6.60" preset="oscillating" looping="false">
+			<begin x="0" y="0"/>
+			<end x="1" y="0.3"/>
+		</translation>
+		<scale duration="0.5" delay="6.60" preset="oscillating" looping="false">
+			<begin scale="1"/>
+			<end scale="1.04"/>
+		</scale>
+    </animations>
+    <tag name="aircompressor_start"/>
+    <color_whole_quad r="200" g="200" b="200" a="255"/>
+  </plane>
+  <plane texture="backgrounds/floor_panels.png" x="15.7868137" y="11.8568020" z="0.000000000" width="32.9715691" height="8.17708397" priority="-9" rotation="4.00000000" texture_top_left_u="0.000000000" texture_top_left_v="0.000000000" texture_top_right_u="1.00000000" texture_top_right_v="0.000000000" texture_bottom_right_u="1.00000000" texture_bottom_right_v="1.00000000" texture_bottom_left_u="0.000000000" texture_bottom_left_v="1.00000000" ignore_fog="false">
+    <color_whole_quad r="87" g="94" b="117" a="255"/>
+  </plane>
+  <plane texture="backgrounds/aircompressor_back.png" x="9.90904236" y="0.484578133" z="0.000000000" width="16.3750000" height="24.6250000" priority="-10" rotation="0.000000000" texture_top_left_u="0.000000000" texture_top_left_v="0.000000000" texture_top_right_u="1.00000000" texture_top_right_v="0.000000000" texture_bottom_right_u="1.00000000" texture_bottom_right_v="1.00000000" texture_bottom_left_u="0.000000000" texture_bottom_left_v="1.00000000" ignore_fog="false">
+    <animations suspended="true">
+      <translation duration="0.09437" preset="oscillating">
+        <begin x="-0.07" y="0" z="0"/>
+        <end x="0.07" y="0" z="0"/>
+      </translation>
+      <translation duration="0.12324" preset="oscillating">
+        <begin x="0" y="-0.07" z="0"/>
+        <end x="0" y="0.07" z="0"/>
+      </translation>
+    </animations>
+    <tag name="aircompressor_start"/>
+    <color_whole_quad r="139" g="139" b="139" a="255"/>
+  </plane>
+  <plane texture="backgrounds/arrow.png" x="-3.99580765" y="3.94153214" z="0.000000000" width="1.56250000" height="1.56250000" priority="30" rotation="0.000000000" texture_top_left_u="0.000000000" texture_top_left_v="0.000000000" texture_top_right_u="1.00000000" texture_top_right_v="0.000000000" texture_bottom_right_u="1.00000000" texture_bottom_right_v="1.00000000" texture_bottom_left_u="0.000000000" texture_bottom_left_v="1.00000000" ignore_fog="false">
+    <animations suspended="true">
+      <rotation duration="0.1" preset="oscillating">
+        <begin rotation="0"/>
+        <end rotation="4"/>
+      </rotation>
+      <rotation duration="0.5" preset="oscillating">
+        <begin rotation="0"/>
+        <end rotation="10"/>
+      </rotation>
+      <rotation duration="2" preset="oscillating">
+        <begin rotation="0"/>
+        <end rotation="40"/>
+      </rotation>
+      <translation duration="0.08437" preset="oscillating">
+        <begin x="-0.04" y="0" z="0"/>
+        <end x="0.04" y="0" z="0"/>
+      </translation>
+      <translation duration="0.14324" preset="oscillating">
+        <begin x="0" y="-0.04" z="0"/>
+        <end x="0" y="0.04" z="0"/>
+      </translation>
+    </animations>
+    <tag name="aircompressor_start"/>
+  </plane>
+  <plane texture="backgrounds/aircompressor_front.png" x="-3.10552597" y="-1.03346717" z="0.000000000" width="27.8437500" height="31.5625000" priority="10" rotation="0.000000000" texture_top_left_u="0.000000000" texture_top_left_v="0.000000000" texture_top_right_u="1.00000000" texture_top_right_v="0.000000000" texture_bottom_right_u="1.00000000" texture_bottom_right_v="1.00000000" texture_bottom_left_u="0.000000000" texture_bottom_left_v="1.00000000" ignore_fog="false">
+    <animations suspended="true">
+      <translation duration="0.08437" preset="oscillating">
+        <begin x="-0.04" y="0" z="0"/>
+        <end x="0.04" y="0" z="0"/>
+      </translation>
+      <translation duration="0.14324" preset="oscillating">
+        <begin x="0" y="-0.04" z="0"/>
+        <end x="0" y="0.04" z="0"/>
+      </translation>
+    </animations>
+    <tag name="aircompressor_start"/>
+    <color_whole_quad r="197" g="197" b="197" a="255"/>
+  </plane>
+</shoebox>

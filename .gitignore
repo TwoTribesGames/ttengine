@@ -1,0 +1,16 @@
+/src/.vs
+/src/engine/windows/obj
+/src/engine/windows/lib
+/src/game/windows/obj
+/src/game/windows/bin
+/src/game/shared/obj
+/src/game/shared/lib
+/assets/conversion/intermediate
+/assets/output
+/tools/assetconverters/debug_cout.txt
+/tools/assetconverters/debug_cerr.txt
+/tools/assetconverters/debug_clog.txt
+/assets/debug_cout.txt
+/assets/debug_cerr.txt
+/assets/debug_clog.txt
+/assets/source/shared/levels_unsavedchanges

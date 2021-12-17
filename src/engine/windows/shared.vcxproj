@@ -1,0 +1,746 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="WIN_Dev|Win32">
+      <Configuration>WIN_Dev</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="WIN_Dev|x64">
+      <Configuration>WIN_Dev</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="WIN_Final|Win32">
+      <Configuration>WIN_Final</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="WIN_Final|x64">
+      <Configuration>WIN_Final</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="WIN_Test|Win32">
+      <Configuration>WIN_Test</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="WIN_Test|x64">
+      <Configuration>WIN_Test</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{29EE394D-B66E-41A5-94C5-FF92DB344814}</ProjectGuid>
+    <RootNamespace>shared</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>tt_shared</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">$(ProjectDir)lib\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">$(ProjectDir)obj\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'">$(ProjectDir)obj\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">$(ProjectDir)lib\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">$(ProjectDir)obj\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'">$(ProjectDir)obj\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">$(ProjectDir)lib\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">$(ProjectDir)obj\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'">$(ProjectDir)obj\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'">
+    <OutDir>$(ProjectDir)lib\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'">
+    <OutDir>$(ProjectDir)lib\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'">
+    <OutDir>$(ProjectDir)lib\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">
+    <PreBuildEvent>
+      <Command>$(ProjectDir)..\..\tools\windows\revision_info\updaterevision.bat $(ProjectDir).. $(ProjectDir)..\shared\inc\tt\version "%TTDEV_ROOT%/tools/windows/revision_info/__revision_template_libs.h"</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>inc;..\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;TT_ASSERT_ON;TT_PLATFORM_WIN;TT_BUILD_DEV;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>tt\pch\pch.h</PrecompiledHeaderFile>
+      <ProgramDataBaseFileName>$(TargetDir)\$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <ForcedIncludeFiles>tt\pch\pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'">
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>inc;..\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;TT_ASSERT_ON;TT_PLATFORM_WIN;TT_BUILD_DEV;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>tt\pch\pch.h</PrecompiledHeaderFile>
+      <ProgramDataBaseFileName>$(TargetDir)\$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ForcedIncludeFiles>tt\pch\pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">
+    <PreBuildEvent>
+      <Command>$(ProjectDir)..\..\tools\windows\revision_info\updaterevision.bat $(ProjectDir).. $(ProjectDir)..\shared\inc\tt\version "%TTDEV_ROOT%/tools/windows/revision_info/__revision_template_libs.h"</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>inc;..\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;TT_ASSERT_ON;TT_PLATFORM_WIN;TT_BUILD_TEST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>tt\pch\pch.h</PrecompiledHeaderFile>
+      <ProgramDataBaseFileName>$(TargetDir)\$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ForcedIncludeFiles>tt\pch\pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'">
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>inc;..\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;TT_ASSERT_ON;TT_PLATFORM_WIN;TT_BUILD_TEST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>tt\pch\pch.h</PrecompiledHeaderFile>
+      <ProgramDataBaseFileName>$(TargetDir)\$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ForcedIncludeFiles>tt\pch\pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">
+    <PreBuildEvent>
+      <Command>$(ProjectDir)..\..\tools\windows\revision_info\updaterevision.bat $(ProjectDir).. $(ProjectDir)..\shared\inc\tt\version "%TTDEV_ROOT%/tools/windows/revision_info/__revision_template_libs.h"</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>inc;..\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;TT_PLATFORM_WIN;TT_BUILD_FINAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>tt\pch\pch.h</PrecompiledHeaderFile>
+      <ProgramDataBaseFileName>$(TargetDir)\$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ForcedIncludeFiles>tt\pch\pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'">
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>inc;..\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;TT_PLATFORM_WIN;TT_BUILD_FINAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>tt\pch\pch.h</PrecompiledHeaderFile>
+      <ProgramDataBaseFileName>$(TargetDir)\$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ForcedIncludeFiles>tt\pch\pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\shared\inc\tt\app\Platform.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\player\fwd.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\player\MusicPlayerCallbackInterface.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\player\SoundCueSettings.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\xact\fwd.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\xact\RPCCurve.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\xact\RuntimeParameterControl.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\xact\utils.h" />
+    <ClInclude Include="..\shared\inc\tt\cfg\ConfigRegistry.h" />
+    <ClInclude Include="..\shared\inc\tt\code\AutoGrowBuffer.h" />
+    <ClInclude Include="..\shared\inc\tt\code\BitMask.h" />
+    <ClInclude Include="..\shared\inc\tt\code\BufferReadContext.h" />
+    <ClInclude Include="..\shared\inc\tt\code\bufferutils_be_get.h" />
+    <ClInclude Include="..\shared\inc\tt\code\bufferutils_be_put.h" />
+    <ClInclude Include="..\shared\inc\tt\code\bufferutils_get.h" />
+    <ClInclude Include="..\shared\inc\tt\code\bufferutils_put.h" />
+    <ClInclude Include="..\shared\inc\tt\code\BufferWriteContext.h" />
+    <ClInclude Include="..\shared\inc\tt\code\enum.h" />
+    <ClInclude Include="..\shared\inc\tt\code\FourCC.h" />
+    <ClInclude Include="..\shared\inc\tt\code\fwd.h" />
+    <ClInclude Include="..\shared\inc\tt\code\Handle.h" />
+    <ClInclude Include="..\shared\inc\tt\code\HandleArrayMgr.h" />
+    <ClInclude Include="..\shared\inc\tt\code\HandleArrayMgr_utils.h" />
+    <ClInclude Include="..\shared\inc\tt\code\HandleMgr.h" />
+    <ClInclude Include="..\shared\inc\tt\doc\json\json_util.h" />
+    <ClInclude Include="..\shared\inc\tt\fileformat\cursor\CursorData.h" />
+    <ClInclude Include="..\shared\inc\tt\fileformat\cursor\CursorDirectory.h" />
+    <ClInclude Include="..\shared\inc\tt\fileformat\cursor\fwd.h" />
+    <ClInclude Include="..\shared\inc\tt\gwen\AdaptiveSlider.h" />
+    <ClInclude Include="..\shared\inc\tt\gwen\BusyBar.h" />
+    <ClInclude Include="..\shared\inc\tt\gwen\ButtonList.h" />
+    <ClInclude Include="..\shared\inc\tt\gwen\ColorButton.h" />
+    <ClInclude Include="..\shared\inc\tt\gwen\ColorRGBAPicker.h" />
+    <ClInclude Include="..\shared\inc\tt\gwen\EqualSizes.h" />
+    <ClInclude Include="..\shared\inc\tt\gwen\GroupedButtonList.h" />
+    <ClInclude Include="..\shared\inc\tt\gwen\GroupedList.h" />
+    <ClInclude Include="..\shared\inc\tt\gwen\GwenMgr.h" />
+    <ClInclude Include="..\shared\inc\tt\gwen\ListBoxEx.h" />
+    <ClInclude Include="..\shared\inc\tt\gwen\PanelBase.h" />
+    <ClInclude Include="..\shared\inc\tt\gwen\RootCanvasWrapper.h" />
+    <ClInclude Include="..\shared\inc\tt\gwen\utils.h" />
+    <ClInclude Include="..\shared\inc\tt\gwen\VectorControl.h" />
+    <ClInclude Include="..\shared\inc\tt\input\ControllerType.h" />
+    <ClInclude Include="..\shared\inc\tt\input\SDLJoypadController.h" />
+    <ClInclude Include="..\shared\inc\tt\input\SDLKeyboardController.h" />
+    <ClInclude Include="..\shared\inc\tt\input\SDLMouseController.h" />
+    <ClInclude Include="..\shared\inc\tt\input\Touch.h" />
+    <ClInclude Include="..\shared\inc\tt\pres\anim2d\Animation2D.h" />
+    <ClInclude Include="..\shared\inc\tt\pres\anim2d\AnimationFactory2D.h" />
+    <ClInclude Include="..\shared\inc\tt\pres\anim2d\AnimationStack2D.h" />
+    <ClInclude Include="..\shared\inc\tt\pres\anim2d\ColorAnimation2D.h" />
+    <ClInclude Include="..\shared\inc\tt\pres\anim2d\ColorAnimationStack2D.h" />
+    <ClInclude Include="..\shared\inc\tt\pres\anim2d\fwd.h" />
+    <ClInclude Include="..\shared\inc\tt\pres\anim2d\PositionAnimation2D.h" />
+    <ClInclude Include="..\shared\inc\tt\pres\anim2d\RotationAnimation2D.h" />
+    <ClInclude Include="..\shared\inc\tt\pres\anim2d\ScaleAnimation2D.h" />
+    <ClInclude Include="..\shared\inc\tt\pres\anim2d\Sequence.h" />
+    <ClInclude Include="..\shared\inc\tt\pres\anim2d\StackBase.h" />
+    <ClInclude Include="..\shared\inc\tt\pres\anim2d\Transform.h" />
+    <ClInclude Include="..\shared\inc\tt\pres\anim2d\TranslationAnimation2D.h" />
+    <ClInclude Include="..\shared\inc\tt\pres\anim2d\TweenTypes.h" />
+    <ClInclude Include="..\shared\inc\tt\pres\CallbackTrigger.h" />
+    <ClInclude Include="..\shared\inc\tt\pres\CallbackTriggerInterface.h" />
+    <ClInclude Include="..\shared\inc\tt\pres\DataTags.h" />
+    <ClInclude Include="..\shared\inc\tt\pres\GroupFactoryInterface.h" />
+    <ClInclude Include="..\shared\inc\tt\pres\PresentationGroupInterface.h" />
+    <ClInclude Include="..\shared\inc\tt\pres\PresentationValue.h" />
+    <ClInclude Include="..\shared\inc\tt\pres\TriggerBase.h" />
+    <ClInclude Include="..\shared\inc\tt\pres\TriggerInfo.h" />
+    <ClInclude Include="..\shared\inc\tt\score\Score.h" />
+    <ClInclude Include="..\shared\inc\tt\script\bindings\bindings.h" />
+    <ClInclude Include="..\shared\inc\tt\script\fwd.h" />
+    <ClInclude Include="..\shared\inc\tt\script\helpers.h" />
+    <ClInclude Include="..\shared\inc\tt\script\ScriptValue.h" />
+    <ClInclude Include="..\shared\inc\tt\script\utils.h" />
+    <ClInclude Include="..\shared\inc\tt\script\wrappers\VisualBoyWrapper.h" />
+    <ClInclude Include="..\shared\inc\tt\stats\stats.h" />
+    <ClInclude Include="..\shared\inc\tt\undo\fwd.h" />
+    <ClInclude Include="..\shared\inc\tt\undo\UndoCommand.h" />
+    <ClInclude Include="..\shared\inc\tt\undo\UndoCommandGroup.h" />
+    <ClInclude Include="..\shared\inc\tt\undo\UndoStack.h" />
+    <ClInclude Include="..\shared\inc\tt\xml\fast_atof.h" />
+    <ClInclude Include="..\shared\inc\tt\xml\fwd.h" />
+    <ClInclude Include="..\shared\inc\tt\xml\XmlDocument.h" />
+    <ClInclude Include="..\shared\inc\tt\xml\XmlFileReader.h" />
+    <ClInclude Include="..\shared\inc\tt\xml\XmlFileWriter.h" />
+    <ClInclude Include="..\shared\inc\tt\xml\XmlNode.h" />
+    <ClInclude Include="..\shared\inc\tt\xml\XmlReader.h" />
+    <ClInclude Include="..\shared\inc\tt\xml\XmlStreamReader.h" />
+    <ClInclude Include="..\shared\inc\tt\xml\util\check.h" />
+    <ClInclude Include="..\shared\inc\tt\xml\util\parse.h" />
+    <ClInclude Include="..\shared\inc\tt\xml\util\store.h" />
+    <ClInclude Include="..\shared\inc\tt\doc\xap\XapReader.h" />
+    <ClInclude Include="..\shared\inc\tt\doc\xap\XapWriter.h" />
+    <ClInclude Include="..\shared\inc\tt\doc\ini\IniDocument.h" />
+    <ClInclude Include="..\shared\inc\tt\doc\str\StringDocument.h" />
+    <ClInclude Include="..\shared\inc\tt\version\Version.h" />
+    <ClInclude Include="..\shared\inc\tt\str\c_str.h" />
+    <ClInclude Include="..\shared\inc\tt\str\common.h" />
+    <ClInclude Include="..\shared\inc\tt\str\format.h" />
+    <ClInclude Include="..\shared\inc\tt\str\manip.h" />
+    <ClInclude Include="..\shared\inc\tt\str\parse.h" />
+    <ClInclude Include="..\shared\inc\tt\str\str.h" />
+    <ClInclude Include="..\shared\inc\tt\str\str_types.h" />
+    <ClInclude Include="..\shared\inc\tt\str\StringFormatter.h" />
+    <ClInclude Include="..\shared\inc\tt\str\toStr.h" />
+    <ClInclude Include="..\shared\inc\tt\streams\BIFStream.h" />
+    <ClInclude Include="..\shared\inc\tt\streams\BIOStreamBase.h" />
+    <ClInclude Include="..\shared\inc\tt\streams\BIStream.h" />
+    <ClInclude Include="..\shared\inc\tt\streams\BOFStream.h" />
+    <ClInclude Include="..\shared\inc\tt\streams\BOStream.h" />
+    <ClInclude Include="..\shared\inc\tt\streams\fwd.h" />
+    <ClInclude Include="..\shared\inc\tt\profiler\MemoryProfiler.h" />
+    <ClInclude Include="..\shared\inc\tt\profiler\PerformanceProfiler.h" />
+    <ClInclude Include="..\shared\inc\tt\profiler\SceneObjectProfiler.h" />
+    <ClInclude Include="..\shared\inc\tt\profiler\TextureProfiler.h" />
+    <ClInclude Include="inc\tt\audio\player\platform_fwd.h" />
+    <ClInclude Include="inc\tt\profiler\MemoryProfilerConstants.h" />
+    <ClInclude Include="inc\tt\profiler\PerformanceProfilerConstants.h" />
+    <ClInclude Include="inc\tt\profiler\SceneObjectProfilerConstants.h" />
+    <ClInclude Include="inc\tt\profiler\TextureProfilerConstants.h" />
+    <ClInclude Include="..\shared\inc\tt\args\CmdLine.h" />
+    <ClInclude Include="..\shared\inc\tt\log\Log.h" />
+    <ClInclude Include="..\shared\inc\tt\loc\LocStr.h" />
+    <ClInclude Include="..\shared\inc\tt\loc\LocStringFormatter.h" />
+    <ClInclude Include="..\shared\inc\tt\loc\LocStrRegistry.h" />
+    <ClInclude Include="..\shared\inc\tt\input\Accelerometer.h" />
+    <ClInclude Include="..\shared\inc\tt\input\Button.h" />
+    <ClInclude Include="..\shared\inc\tt\input\ControllerIndex.h" />
+    <ClInclude Include="..\shared\inc\tt\input\fwd.h" />
+    <ClInclude Include="..\shared\inc\tt\input\KeyBindings.h" />
+    <ClInclude Include="..\shared\inc\tt\input\KeyList.h" />
+    <ClInclude Include="..\shared\inc\tt\input\Pointer.h" />
+    <ClInclude Include="..\shared\inc\tt\input\Stick.h" />
+    <ClInclude Include="..\shared\inc\tt\input\Trigger.h" />
+    <ClInclude Include="..\shared\inc\tt\cfg\ConfigHive.h" />
+    <ClInclude Include="..\shared\inc\tt\cfg\Handle.h" />
+    <ClInclude Include="..\shared\inc\tt\com\ComponentBase.h" />
+    <ClInclude Include="..\shared\inc\tt\com\ComponentIterators.h" />
+    <ClInclude Include="..\shared\inc\tt\com\ComponentManager.h" />
+    <ClInclude Include="..\shared\inc\tt\com\InterfaceTrait.h" />
+    <ClInclude Include="..\shared\inc\tt\com\Message.h" />
+    <ClInclude Include="..\shared\inc\tt\com\Object.h" />
+    <ClInclude Include="..\shared\inc\tt\com\ObjectComponent.h" />
+    <ClInclude Include="..\shared\inc\tt\com\types.h" />
+    <ClInclude Include="..\shared\inc\tt\code\Buffer.h" />
+    <ClInclude Include="..\shared\inc\tt\code\bufferutils.h" />
+    <ClInclude Include="..\shared\inc\tt\code\DefaultValue.h" />
+    <ClInclude Include="..\shared\inc\tt\code\ErrorStatus.h" />
+    <ClInclude Include="..\shared\inc\tt\code\FloodFiller.h" />
+    <ClInclude Include="..\shared\inc\tt\code\functional.h" />
+    <ClInclude Include="..\shared\inc\tt\code\helpers.h" />
+    <ClInclude Include="..\shared\inc\tt\code\Identifier.h" />
+    <ClInclude Include="..\shared\inc\tt\code\Int2Type.h" />
+    <ClInclude Include="..\shared\inc\tt\code\NoDeleter.h" />
+    <ClInclude Include="..\shared\inc\tt\code\OptionalValue.h" />
+    <ClInclude Include="..\shared\inc\tt\code\PointerLess.h" />
+    <ClInclude Include="..\shared\inc\tt\code\SimpleStateMachine.h" />
+    <ClInclude Include="..\shared\inc\tt\code\SrcPos.h" />
+    <ClInclude Include="..\shared\inc\tt\code\SrcPosNested.h" />
+    <ClInclude Include="..\shared\inc\tt\code\State.h" />
+    <ClInclude Include="..\shared\inc\tt\code\StateID.h" />
+    <ClInclude Include="..\shared\inc\tt\code\StateMachine.h" />
+    <ClInclude Include="..\shared\inc\tt\code\TypeWithByteSize.h" />
+    <ClInclude Include="..\shared\inc\tt\code\Uncopyable.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\helpers.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\chibi\OpenALMixer.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\chibi\StreamMixer.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\chibi\TTFileIO.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\chibi\TTMemoryManager.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\chibi\types.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\chibi\XMCompressor.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\chibi\XMEnvelope.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\chibi\XMFileIO.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\chibi\XMInstrument.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\chibi\XMLoader.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\chibi\XMMemoryManager.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\chibi\XMMixer.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\chibi\XMPlayer.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\chibi\XMSoftwareMixer.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\chibi\XMSong.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\chibi\XMUtil.h" />
+    <ClInclude Include="inc\tt\audio\chibi\DXMixer.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\xact\AudioTT.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\xact\Category.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\xact\Cue.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\xact\CueInstance.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\xact\PitchEvent.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\xact\PitchEventInstance.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\xact\PlayWaveEvent.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\xact\PlayWaveEventInstance.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\xact\Sound.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\xact\SoundBank.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\xact\SoundInstance.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\xact\StopEvent.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\xact\StopEventInstance.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\xact\Track.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\xact\TrackInstance.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\xact\VolumeEvent.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\xact\VolumeEventInstance.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\xact\Wave.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\xact\WaveBank.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\xact\WaveInstance.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\codec\Decoder.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\codec\Encoder.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\codec\fwd.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\codec\SampleConverter.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\codec\types.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\codec\wav\WavDecoder.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\codec\wav\WavEncoder.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\codec\wav\WavFormat.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\codec\wav\WavFormatDecoder.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\codec\wav\WavFormatDecoderImaAdpcm.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\codec\wav\WavFormatDecoderPcm.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\codec\ogg\OggDecoder.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\codec\ogg\OggEncoder.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\codec\ttadpcm\ImaAdpcm.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\codec\ttadpcm\TTAdpcmDecoder.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\codec\ttadpcm\TTAdpcmEncoder.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\codec\caf\CafDecoder.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\mixer\mixer.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\mixer\types.h" />
+    <ClInclude Include="inc\tt\audio\player\WMPPlayer.h" />
+    <ClInclude Include="inc\tt\audio\player\Xact3Cue.h" />
+    <ClInclude Include="inc\tt\audio\player\Xact3Helpers.h" />
+    <ClInclude Include="inc\tt\audio\player\Xact3Player.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\player\MusicJinglePlayer.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\player\MusicPlayer.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\player\OggPlayer.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\player\SoundCue.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\player\SoundPlayer.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\player\TTIMPlayer.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\player\TTXactCue.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\player\TTXactPlayer.h" />
+    <ClInclude Include="..\shared\inc\tt\audio\player\XMMusicPlayer.h" />
+    <ClInclude Include="..\shared\inc\tt\asset\asset.h" />
+    <ClInclude Include="..\shared\inc\tt\asset\AssetMgrBase.h" />
+    <ClInclude Include="..\shared\inc\tt\asset\NameHashFunc.h" />
+    <ClInclude Include="..\shared\inc\tt\app\AppInterface.h" />
+    <ClInclude Include="..\shared\inc\tt\app\Application.h" />
+    <ClInclude Include="..\shared\inc\tt\app\AppOrientation.h" />
+    <ClInclude Include="..\shared\inc\tt\app\AppSettings.h" />
+    <ClInclude Include="..\shared\inc\tt\app\AppSystems.h" />
+    <ClInclude Include="..\shared\inc\tt\app\PlatformApi.h" />
+    <ClInclude Include="..\shared\inc\tt\app\PlatformCallbackInterface.h" />
+    <ClInclude Include="..\shared\inc\tt\app\StartupState.h" />
+    <ClInclude Include="inc\tt\pch\pch.h" />
+    <ClInclude Include="..\shared\inc\tt\script\ScriptEngine.h" />
+    <ClInclude Include="..\shared\inc\tt\script\ScriptObject.h" />
+    <ClInclude Include="..\shared\inc\tt\script\SqTopRestorerHelper.h" />
+    <ClInclude Include="..\shared\inc\tt\script\VirtualMachine.h" />
+    <ClInclude Include="..\shared\inc\tt\algorithms\set_helpers.h" />
+    <ClInclude Include="..\shared\inc\tt\pres\CueToTag.h" />
+    <ClInclude Include="..\shared\inc\tt\pres\FrameAnimation.h" />
+    <ClInclude Include="..\shared\inc\tt\pres\FrameAnimationStack.h" />
+    <ClInclude Include="..\shared\inc\tt\pres\fwd.h" />
+    <ClInclude Include="..\shared\inc\tt\pres\GroupFactory.h" />
+    <ClInclude Include="..\shared\inc\tt\pres\ParticleLayer.h" />
+    <ClInclude Include="..\shared\inc\tt\pres\ParticleSpawner.h" />
+    <ClInclude Include="..\shared\inc\tt\pres\ParticlesStack.h" />
+    <ClInclude Include="..\shared\inc\tt\pres\PresentationCache.h" />
+    <ClInclude Include="..\shared\inc\tt\pres\PresentationGroup.h" />
+    <ClInclude Include="..\shared\inc\tt\pres\PresentationLoader.h" />
+    <ClInclude Include="..\shared\inc\tt\pres\PresentationMgr.h" />
+    <ClInclude Include="..\shared\inc\tt\pres\PresentationObject.h" />
+    <ClInclude Include="..\shared\inc\tt\pres\PresentationQuad.h" />
+    <ClInclude Include="..\shared\inc\tt\pres\RenderableInterface.h" />
+    <ClInclude Include="..\shared\inc\tt\pres\RootMatrixInterface.h" />
+    <ClInclude Include="..\shared\inc\tt\pres\SpriteStrip.h" />
+    <ClInclude Include="..\shared\inc\tt\pres\Timer.h" />
+    <ClInclude Include="..\shared\inc\tt\pres\TimerStack.h" />
+    <ClInclude Include="..\shared\inc\tt\pres\TriggerFactoryInterface.h" />
+    <ClInclude Include="..\shared\inc\tt\pres\TriggerInterface.h" />
+    <ClInclude Include="..\shared\inc\tt\pres\TriggerStack.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\shared\src\tt\app\AppSettings.cpp" />
+    <ClCompile Include="..\shared\src\tt\app\Platform.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\player\SoundCueSettings.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\xact\RPCCurve.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\xact\RuntimeParameterControl.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\xact\utils_xact.cpp" />
+    <ClCompile Include="..\shared\src\tt\cfg\ConfigRegistry.cpp" />
+    <ClCompile Include="..\shared\src\tt\code\AutoGrowBuffer.cpp" />
+    <ClCompile Include="..\shared\src\tt\code\Handle.cpp" />
+    <ClCompile Include="..\shared\src\tt\doc\json\json_util.cpp" />
+    <ClCompile Include="..\shared\src\tt\fileformat\cursor\CursorData.cpp" />
+    <ClCompile Include="..\shared\src\tt\fileformat\cursor\CursorDirectory.cpp" />
+    <ClCompile Include="..\shared\src\tt\gwen\AdaptiveSlider.cpp" />
+    <ClCompile Include="..\shared\src\tt\gwen\BusyBar.cpp" />
+    <ClCompile Include="..\shared\src\tt\gwen\ButtonList.cpp" />
+    <ClCompile Include="..\shared\src\tt\gwen\ColorRGBAPicker.cpp" />
+    <ClCompile Include="..\shared\src\tt\gwen\GroupedButtonList.cpp" />
+    <ClCompile Include="..\shared\src\tt\gwen\GroupedList.cpp" />
+    <ClCompile Include="..\shared\src\tt\gwen\GwenMgr.cpp" />
+    <ClCompile Include="..\shared\src\tt\gwen\PanelBase.cpp" />
+    <ClCompile Include="..\shared\src\tt\gwen\RootCanvasWrapper.cpp" />
+    <ClCompile Include="..\shared\src\tt\gwen\VectorControl.cpp" />
+    <ClCompile Include="..\shared\src\tt\input\ControllerType.cpp" />
+    <ClCompile Include="..\shared\src\tt\input\SDLJoypadController.cpp" />
+    <ClCompile Include="..\shared\src\tt\input\SDLKeyboardController.cpp" />
+    <ClCompile Include="..\shared\src\tt\input\SDLMouseController.cpp" />
+    <ClCompile Include="..\shared\src\tt\input\Touch.cpp" />
+    <ClCompile Include="..\shared\src\tt\pres\anim2d\Animation2D.cpp" />
+    <ClCompile Include="..\shared\src\tt\pres\anim2d\AnimationFactory2D.cpp" />
+    <ClCompile Include="..\shared\src\tt\pres\anim2d\AnimationStack2D.cpp" />
+    <ClCompile Include="..\shared\src\tt\pres\anim2d\ColorAnimation2D.cpp" />
+    <ClCompile Include="..\shared\src\tt\pres\anim2d\ColorAnimationStack2D.cpp" />
+    <ClCompile Include="..\shared\src\tt\pres\anim2d\PositionAnimation2D.cpp" />
+    <ClCompile Include="..\shared\src\tt\pres\anim2d\RotationAnimation2D.cpp" />
+    <ClCompile Include="..\shared\src\tt\pres\anim2d\ScaleAnimation2D.cpp" />
+    <ClCompile Include="..\shared\src\tt\pres\anim2d\TranslationAnimation2D.cpp" />
+    <ClCompile Include="..\shared\src\tt\pres\anim2d\TweenTypes.cpp" />
+    <ClCompile Include="..\shared\src\tt\pres\CallbackTrigger.cpp" />
+    <ClCompile Include="..\shared\src\tt\pres\DataTags.cpp" />
+    <ClCompile Include="..\shared\src\tt\pres\PresentationValue.cpp" />
+    <ClCompile Include="..\shared\src\tt\pres\TriggerBase.cpp" />
+    <ClCompile Include="..\shared\src\tt\pres\TriggerInfo.cpp" />
+    <ClCompile Include="..\shared\src\tt\script\bindings\bindings.cpp" />
+    <ClCompile Include="..\shared\src\tt\script\ScriptValue.cpp" />
+    <ClCompile Include="..\shared\src\tt\script\utils.cpp" />
+    <ClCompile Include="..\shared\src\tt\script\wrappers\VisualBoyWrapper.cpp" />
+    <ClCompile Include="..\shared\src\tt\stats\stats.cpp" />
+    <ClCompile Include="..\shared\src\tt\undo\UndoCommand.cpp" />
+    <ClCompile Include="..\shared\src\tt\undo\UndoCommandGroup.cpp" />
+    <ClCompile Include="..\shared\src\tt\undo\UndoStack.cpp" />
+    <ClCompile Include="..\shared\src\tt\xml\XmlDocument.cpp" />
+    <ClCompile Include="..\shared\src\tt\xml\XmlFileReader.cpp" />
+    <ClCompile Include="..\shared\src\tt\xml\XmlFileWriter.cpp" />
+    <ClCompile Include="..\shared\src\tt\xml\XmlNode.cpp" />
+    <ClCompile Include="..\shared\src\tt\xml\XmlReader.cpp" />
+    <ClCompile Include="..\shared\src\tt\xml\XmlStreamReader.cpp" />
+    <ClCompile Include="..\shared\src\tt\xml\util\check_xml.cpp" />
+    <ClCompile Include="..\shared\src\tt\xml\util\parse_xml.cpp" />
+    <ClCompile Include="..\shared\src\tt\xml\util\store_xml.cpp" />
+    <ClCompile Include="..\shared\src\tt\doc\xap\XapReader.cpp" />
+    <ClCompile Include="..\shared\src\tt\doc\xap\XapWriter.cpp" />
+    <ClCompile Include="..\shared\src\tt\doc\ini\IniDocument.cpp" />
+    <ClCompile Include="..\shared\src\tt\doc\str\StringDocument.cpp" />
+    <ClCompile Include="..\shared\src\tt\version\Version.cpp" />
+    <ClCompile Include="..\shared\src\tt\str\c_str.cpp" />
+    <ClCompile Include="..\shared\src\tt\str\common.cpp" />
+    <ClCompile Include="..\shared\src\tt\str\format.cpp" />
+    <ClCompile Include="..\shared\src\tt\str\manip.cpp" />
+    <ClCompile Include="..\shared\src\tt\str\parse.cpp" />
+    <ClCompile Include="..\shared\src\tt\str\str.cpp" />
+    <ClCompile Include="..\shared\src\tt\str\StringFormatter.cpp" />
+    <ClCompile Include="..\shared\src\tt\str\toStr.cpp" />
+    <ClCompile Include="..\shared\src\tt\streams\BIFStream.cpp" />
+    <ClCompile Include="..\shared\src\tt\streams\BIOStreamBase.cpp" />
+    <ClCompile Include="..\shared\src\tt\streams\BIStream.cpp" />
+    <ClCompile Include="..\shared\src\tt\streams\BOFStream.cpp" />
+    <ClCompile Include="..\shared\src\tt\streams\BOStream.cpp" />
+    <ClCompile Include="..\shared\src\tt\profiler\MemoryProfiler.cpp" />
+    <ClCompile Include="..\shared\src\tt\profiler\PerformanceProfiler.cpp" />
+    <ClCompile Include="..\shared\src\tt\profiler\SceneObjectProfiler.cpp" />
+    <ClCompile Include="..\shared\src\tt\profiler\TextureProfiler.cpp" />
+    <ClCompile Include="..\shared\src\tt\args\CmdLine.cpp" />
+    <ClCompile Include="src\tt\args\CmdLineWin.cpp" />
+    <ClCompile Include="..\shared\src\tt\loc\LocStr.cpp" />
+    <ClCompile Include="..\shared\src\tt\loc\LocStringFormatter.cpp" />
+    <ClCompile Include="..\shared\src\tt\loc\LocStrRegistry.cpp" />
+    <ClCompile Include="..\shared\src\tt\input\Accelerometer.cpp" />
+    <ClCompile Include="..\shared\src\tt\input\Button.cpp" />
+    <ClCompile Include="..\shared\src\tt\input\KeyBindings.cpp" />
+    <ClCompile Include="..\shared\src\tt\input\KeyList.cpp" />
+    <ClCompile Include="..\shared\src\tt\input\Pointer.cpp" />
+    <ClCompile Include="..\shared\src\tt\input\Stick.cpp" />
+    <ClCompile Include="..\shared\src\tt\input\Trigger.cpp" />
+    <ClCompile Include="..\shared\src\tt\cfg\ConfigHive.cpp" />
+    <ClCompile Include="..\shared\src\tt\com\ComponentBase.cpp" />
+    <ClCompile Include="..\shared\src\tt\com\ComponentIterators.cpp" />
+    <ClCompile Include="..\shared\src\tt\com\ComponentManager.cpp" />
+    <ClCompile Include="..\shared\src\tt\com\Object.cpp" />
+    <ClCompile Include="..\shared\src\tt\com\ObjectComponent.cpp" />
+    <ClCompile Include="..\shared\src\tt\code\Buffer.cpp" />
+    <ClCompile Include="..\shared\src\tt\code\ErrorStatus.cpp" />
+    <ClCompile Include="..\shared\src\tt\code\SimpleStateMachine.cpp" />
+    <ClCompile Include="..\shared\src\tt\code\SrcPos.cpp" />
+    <ClCompile Include="..\shared\src\tt\code\SrcPosNested.cpp" />
+    <ClCompile Include="..\shared\src\tt\code\State.cpp" />
+    <ClCompile Include="..\shared\src\tt\code\StateMachine.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\chibi\OpenALMixer.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\chibi\StreamMixer.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\chibi\TTFileIO.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\chibi\XMCompressor.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\chibi\XMLoader.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\chibi\XMPlayer.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\chibi\XMPlayerStaticData.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\chibi\XMSoftwareMixer.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\chibi\XMSong.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\chibi\XMUtil.cpp" />
+    <ClCompile Include="src\tt\audio\chibi\DXMixer.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\xact\AudioTT.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\xact\Category.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\xact\Cue.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\xact\CueInstance.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\xact\PitchEvent.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\xact\PitchEventInstance.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\xact\PlayWaveEvent.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\xact\PlayWaveEventInstance.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\xact\Sound.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\xact\SoundBank.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\xact\SoundInstance.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\xact\StopEvent.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\xact\StopEventInstance.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\xact\Track.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\xact\TrackInstance.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\xact\VolumeEvent.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\xact\VolumeEventInstance.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\xact\Wave.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\xact\WaveBank.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\xact\WaveInstance.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\codec\SampleConverter.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\codec\wav\WavDecoder.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\codec\wav\WavEncoder.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\codec\wav\WavFormatDecoderImaAdpcm.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\codec\wav\WavFormatDecoderPcm.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\codec\ogg\OggDecoder.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\codec\ogg\OggEncoder.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\codec\ttadpcm\ImaAdpcm.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\codec\ttadpcm\TTAdpcmDecoder.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\codec\ttadpcm\TTAdpcmEncoder.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\codec\caf\CafDecoder.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\mixer\mixer.cpp" />
+    <ClCompile Include="src\tt\audio\player\WMPPlayer.cpp" />
+    <ClCompile Include="src\tt\audio\player\Xact3Cue.cpp" />
+    <ClCompile Include="src\tt\audio\player\Xact3Helpers.cpp" />
+    <ClCompile Include="src\tt\audio\player\Xact3Player.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\player\OggPlayer.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\player\SoundPlayer.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\player\TTIMPlayer.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\player\TTXactCue.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\player\TTXactPlayer.cpp" />
+    <ClCompile Include="..\shared\src\tt\audio\player\XMMusicPlayer.cpp" />
+    <ClCompile Include="..\shared\src\tt\asset\NameHashFunc.cpp" />
+    <ClCompile Include="..\shared\src\tt\app\Application.cpp" />
+    <ClCompile Include="..\shared\src\tt\app\AppOrientation.cpp" />
+    <ClCompile Include="..\shared\src\tt\app\AppSystems.cpp" />
+    <ClCompile Include="..\shared\src\tt\app\PlatformApi.cpp" />
+    <ClCompile Include="..\shared\src\tt\app\StartupState.cpp" />
+    <ClCompile Include="src\tt\pch\pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\script\ScriptEngine.cpp" />
+    <ClCompile Include="..\shared\src\tt\script\VirtualMachine.cpp" />
+    <ClCompile Include="..\shared\src\tt\pres\CueToTag.cpp" />
+    <ClCompile Include="..\shared\src\tt\pres\FrameAnimation.cpp" />
+    <ClCompile Include="..\shared\src\tt\pres\FrameAnimationStack.cpp" />
+    <ClCompile Include="..\shared\src\tt\pres\ParticleSpawner.cpp" />
+    <ClCompile Include="..\shared\src\tt\pres\ParticlesStack.cpp" />
+    <ClCompile Include="..\shared\src\tt\pres\PresentationCache.cpp" />
+    <ClCompile Include="..\shared\src\tt\pres\PresentationLoader.cpp" />
+    <ClCompile Include="..\shared\src\tt\pres\PresentationMgr.cpp" />
+    <ClCompile Include="..\shared\src\tt\pres\PresentationObject.cpp" />
+    <ClCompile Include="..\shared\src\tt\pres\PresentationQuad.cpp" />
+    <ClCompile Include="..\shared\src\tt\pres\SpriteStrip.cpp" />
+    <ClCompile Include="..\shared\src\tt\pres\Timer.cpp" />
+    <ClCompile Include="..\shared\src\tt\pres\TimerStack.cpp" />
+    <ClCompile Include="..\shared\src\tt\pres\TriggerStack.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\shared\inc\tt\code\HandleArrayMgr.inl" />
+    <None Include="..\shared\inc\tt\code\HandleMgr.inl" />
+    <None Include="..\shared\inc\tt\pres\anim2d\Sequence.inl" />
+    <None Include="..\shared\inc\tt\pres\anim2d\StackBase.inl" />
+    <None Include="..\shared\inc\tt\script\VirtualMachineMethods.inc" />
+    <None Include="..\shared\inc\tt\pres\PresentationGroup.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="platform.vcxproj">
+      <Project>{3e384a71-8890-4162-9ef2-4ec33194c341}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

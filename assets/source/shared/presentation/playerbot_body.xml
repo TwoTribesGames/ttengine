@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		permanent="true">
+
+	<startvalues>
+		<scale scale="1.3"/>
+		<translation y="0.3" z="0.03"/>
+	</startvalues>
+
+	<!--IDLE ANIMATION-->
+	<frameanimstack name="idle">
+		<frameanim lightmask="use_lightmask" directory="spritestrip/playerbot/body/idle_front" quad_height="1.56" quad_width="2.73" fps="30" looping="true">
+			<begin frame="0"/>
+			<end   frame="44"/>
+			<translation y="-0.075"/>
+			<scale scale="0.95"/>
+		</frameanim>
+	</frameanimstack>
+
+	<!--surface particles-->
+	<particles name="idle" file="particles/water_surface_idle.trigger" position_type="follow">
+		<mustnothave>
+			<tag name="submerged"/>
+		</mustnothave>
+		<musthave>
+			<tag name="touchwater"/>
+		</musthave>
+		<translation x="0" z="0" y="0"/>
+		<scale scale="0.77"/>
+	</particles>
+
+	<!--WALK ANIMATION-->
+	<frameanimstack name="run">
+		<frameanim lightmask="use_lightmask" id="id_run" directory="spritestrip/playerbot/body/walk_front" quad_height="1.56" quad_width="2.73" fps="60" looping="true" direction="forward">
+			<begin frame="0"/>
+			<end   frame="13"/>
+			<translation y="-0.05"/>
+		</frameanim>
+	</frameanimstack>
+
+	<frameanimstack name="walk">
+		<frameanim lightmask="use_lightmask" id="id_walk" directory="spritestrip/playerbot/body/walk_front" quad_height="1.56" quad_width="2.73" fps="40" looping="true" direction="forward">
+			<begin frame="0"/>
+			<end   frame="13"/>
+			<translation y="-0.05"/>
+		</frameanim>
+	</frameanimstack>
+
+	<particles name="run" file="particles/playerbot_walk.trigger" position_type="follow">
+		<mustnothave>
+			<tag name="submerged"/>
+		</mustnothave>
+		<mustnothave>
+			<tag name="touchwater"/>
+		</mustnothave>
+		<translation x="0" z="0" y="0.0"/>
+		<scale scale="0.77"/>
+	</particles>
+	
+	<!--surface particles-->
+	<particles name="run" file="particles/water_surface.trigger" position_type="follow">
+		<mustnothave>
+			<tag name="submerged"/>
+		</mustnothave>
+		<musthave>
+			<tag name="touchwater"/>
+		</musthave>
+		<translation x="0" z="0" y="-0.5"/>
+		<scale scale="0.77"/>
+	</particles>
+	
+	<particles name="walk" file="particles/water_surface.trigger" position_type="follow">
+		<mustnothave>
+			<tag name="submerged"/>
+		</mustnothave>
+		<musthave>
+			<tag name="touchwater"/>
+		</musthave>
+		<translation x="0" z="0" y="-0.5"/>
+		<scale scale="0.77"/>
+	</particles>
+
+	<trigger type="audio" data="playerbot_body_walk" name="run" sync_id="id_run"/>
+
+	<trigger type="audio" data="playerbot_body_walk" delay="0.2" name="run" sync_id="id_run"/>
+
+	<trigger type="audio" data="playerbot_body_walk" name="walk" sync_id="id_walk"/>
+
+	<trigger type="audio" data="playerbot_body_walk" delay="0.2" name="walk" sync_id="id_walk"/>
+
+	<trigger type="audio" data="entity_water_walk" name="walk" sync_id="id_walk">
+		<musthave>
+			<tag name="touchwater"/>
+		</musthave>
+    </trigger>
+    
+    <trigger type="audio" data="entity_water_walk" name="run" sync_id="id_run">
+		<musthave>
+			<tag name="touchwater"/>
+		</musthave>
+    </trigger>
+
+	<!--WALK BACKWARDS ANIMATION-->
+	<frameanimstack name="run_backwards">
+		<frameanim lightmask="use_lightmask" id="id_runbackwards" directory="spritestrip/playerbot/body/walk_front" quad_height="1.56" quad_width="2.73" fps="60" looping="true" direction="backward">
+			<begin frame="0"/>
+			<end   frame="13"/>
+			<translation y="-0.05"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<frameanimstack name="walk_backwards">
+		<frameanim lightmask="use_lightmask" id="id_walkbackwards" directory="spritestrip/playerbot/body/walk_front" quad_height="1.56" quad_width="2.73" fps="40" looping="true" direction="backward">
+			<begin frame="0"/>
+			<end   frame="13"/>
+			<translation y="-0.05"/>
+		</frameanim>
+	</frameanimstack>
+
+	<particles name="run_backwards" file="particles/playerbot_walk.trigger" position_type="follow">
+		<mustnothave>
+			<tag name="submerged"/>
+		</mustnothave>
+		<mustnothave>
+			<tag name="touchwater"/>
+		</mustnothave>
+		<translation x="0" z="0" y="0.0"/>
+		<scale scale="0.77"/>
+	</particles>
+	
+	<!--surface particles-->
+	<particles name="run_backwards" file="particles/water_surface.trigger" position_type="follow">
+		<musthave>
+			<tag name="touchwater"/>
+		</musthave>
+		<translation x="0" z="0" y="-0.5"/>
+		<scale scale="0.77"/>
+	</particles>
+	
+	<particles name="walk_backwards" file="particles/water_surface.trigger" position_type="follow">
+		<musthave>
+			<tag name="touchwater"/>
+		</musthave>
+		<translation x="0" z="0" y="-0.5"/>
+		<scale scale="0.77"/>
+	</particles>
+
+	<trigger name="run_backwards" type="audio" data="playerbot_body_walk_backwards" sync_id="id_runbackwards"/>
+	<trigger name="walk_backwards" type="audio" data="playerbot_body_walk_backwards" sync_id="id_walkbackwards"/>
+
+
+	<trigger type="audio" data="entity_water_walk" name="walk_backwards" sync_id="id_walkbackwards">
+		<musthave>
+			<tag name="touchwater"/>
+		</musthave>
+    </trigger>
+    
+    <trigger type="audio" data="entity_water_walk" name="run_backwards" sync_id="id_runbackwards">
+		<musthave>
+			<tag name="touchwater"/>
+		</musthave>
+    </trigger>
+
+	<!--FLY ANIMATION-->
+	<frameanimstack name="fly">
+		<frameanim lightmask="use_lightmask" directory="spritestrip/playerbot/body/fly_front" quad_height="1.953" quad_width="2.73" fps="40" looping="true">
+			<begin frame="0"/>
+			<end   frame="9"/>
+			<translation y="-0.26"/>
+		</frameanim>
+	</frameanimstack>
+
+	<anim2dstack name="fly">
+		<rotation duration="0.2" timing="easeout" looping="false">
+			<begin rotation="-60"/>
+			<end rotation="0"/>
+		</rotation>
+		<rotation duration="0.2" delay="0.2" timing="easein" looping="false">
+			<begin rotation="0"/>
+			<end rotation="-10"/>
+		</rotation>
+		<rotation duration="1" delay="0.4" timing="easeends" direction="pingpong" looping="true">
+			<begin rotation="-10"/>
+			<end rotation="0"/>
+		</rotation>
+	</anim2dstack>
+	
+	<trigger type="audio" data="submerged_ambience_loop" name="fly">
+		<musthave>
+			<tag name="submerged"/>
+		</musthave>
+        </trigger>
+        
+        <trigger type="audio" data="submerged_ambience_loop" name="idle">
+		<musthave>
+			<tag name="submerged"/>
+		</musthave>
+        </trigger>
+
+	<!--submerged BUBBLES PARTICLES-->
+	<particles file="particles/submerged_bubbles.trigger" position_type="follow">
+		<musthave>
+			<tag name="submerged"/>
+			<tag name="touchwater"/>
+		</musthave>
+		<translation x="0" z="0" y="0.0"/>
+    <scale scale="0.77"/>
+	</particles>
+
+	<!--WATERFALL PARTICLES-->
+	<particles file="particles/water_underfall.trigger" position_type="follow">
+		<musthave>
+			<tag name="waterfall"/>
+		</musthave>
+		<translation x="0" z="0" y="0.0"/>
+    <scale scale="0.77"/>
+	</particles>
+
+	<!--CORPSE ANIMATION-->
+	<trigger name="corpse" type="audio" data="playerbot_body_corpse">
+		<mustnothave>
+			<tag name="submerged"/>
+		</mustnothave>
+    </trigger>
+
+
+	<trigger type="audio" data="playerbot_body_corpse_submerged" name="corpse">
+		<musthave>
+			<tag name="submerged"/>
+		</musthave>
+    </trigger>
+    
+    </presentation>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		permanent="true">
+	
+	<startvalues>
+		<translation z="0.1"/>
+	</startvalues>
+	
+	<anim2dstack>
+		<translation duration="1.7" direction="forward" timing="easeout">
+			<begin y="0"/>
+			<end y="-0.1"/>
+		</translation>
+	</anim2dstack>
+
+	<coloranimstack>
+		<color direction="forward" duration="0.3" delay="0.0">
+			<begin a="-255"/>
+			<end a="0"/>
+		</color>
+		<color direction="forward" duration="0.3" delay="1.7">
+			<begin a="0"/>
+			<end a="-255"/>
+		</color>
+	</coloranimstack>
+	
+	<!-- max multikill value is c_maxMultikills (see ScoreContainer.nut) -->
+	<coloranimstack>
+		<musthave>
+			<tag name="multikill_2"/>
+		</musthave>
+		<color duration="1.5">
+			<begin r="-78" g="215" b="-153" />
+			<end r="255" g="255" b="255" />
+		</color>
+	</coloranimstack>	
+</presentation>

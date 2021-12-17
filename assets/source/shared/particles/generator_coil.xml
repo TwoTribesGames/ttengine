@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<ParticleTrigger xmlns="http://intranet.twotribes.com/schemas/common/particletrigger.xsd" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/particletrigger.xsd http://intranet.twotribes.com/schemas/common/particletrigger.xsd">
+	<ParticleCulling enabled="true"/>
+	<ParticleEmitter max_particles="1" x="0" y="0" delay="0" space="world" ignore_fog="false">
+		<RenderGroup value="500"/>
+		<Texture filename="particles/generator_coil.png"/>
+		<FrameAnimations framesize="256">
+			<Animation start="0" end="3" fps="60" type="loop"/>
+		</FrameAnimations>
+		<EmissionRect width="0" height="0"/>
+		<ExternalForce min_x="0" max_x="0" min_y="0" max_y="0"/>
+		<BlendMode type="blend"/>
+		<BlendModeAlpha type="lightmask"/>
+		<PreGeneration time="1" step="0.2"/>
+		<Emission particles="1" type="continuous" lifetime="0"/>
+		<ParticleOrientation type="rotation"/>
+		<Velocity min_x="0" max_x="0" min_y="0" max_y="0"/>
+		<VelocityFriction min="0" max="0"/>
+		<ParticleLife min="100000" max="100000"/>
+		<Size min_start="5" max_start="5"/>
+		<Weight min_start="0" max_start="0" min_end="0" max_end="0"/>
+		<Rotation min_start="0" max_start="0" min_speed="0" max_speed="0"/>
+		<RotationForce min="0" max="0"/>
+		<RotationFriction min="0" max="0"/>
+		<Frame min_start="0" max_start="0"/>
+		<MinStartColor r="255" g="255" b="255" a="255"/>
+		<MaxStartColor r="255" g="255" b="255" a="255"/>
+		<MinEndColor r="255" g="255" b="255" a="255"/>
+		<MaxEndColor r="255" g="255" b="255" a="255"/>
+		<Fade in="0" out="0" type="percentage"/>
+		<ExternalImpulseWeight min="0" max="0"/>
+	</ParticleEmitter>
+	<ParticleEmitter max_particles="1" x="0" y="0" delay="0" space="world" ignore_fog="false">
+		<RenderGroup value="500"/>
+		<Texture filename="particles/generator_coil.png"/>
+		<FrameAnimations framesize="256">
+			<Animation start="0" end="3" fps="60" type="loop"/>
+		</FrameAnimations>
+		<EmissionRect width="0" height="0"/>
+		<ExternalForce min_x="0" max_x="0" min_y="0" max_y="0"/>
+		<BlendMode type="add"/>
+		<BlendModeAlpha type="lightmask"/>
+		<PreGeneration time="1" step="0.2"/>
+		<Emission particles="1" type="continuous" lifetime="0"/>
+		<ParticleOrientation type="rotation"/>
+		<Velocity min_x="0" max_x="0" min_y="0" max_y="0"/>
+		<VelocityFriction min="0" max="0"/>
+		<ParticleLife min="100000" max="100000"/>
+		<Size min_start="5" max_start="5"/>
+		<Weight min_start="0" max_start="0" min_end="0" max_end="0"/>
+		<Rotation min_start="0" max_start="0" min_speed="0" max_speed="0"/>
+		<RotationForce min="0" max="0"/>
+		<RotationFriction min="0" max="0"/>
+		<Frame min_start="0" max_start="0"/>
+		<MinStartColor r="255" g="255" b="255" a="130"/>
+		<MaxStartColor r="255" g="255" b="255" a="130"/>
+		<MinEndColor r="255" g="255" b="255" a="130"/>
+		<MaxEndColor r="255" g="255" b="255" a="130"/>
+		<Fade in="0" out="0" type="percentage"/>
+		<ExternalImpulseWeight min="0" max="0"/>
+	</ParticleEmitter>
+	<ParticleEmitter max_particles="2" x="0.2" y="0" delay="0" space="world" ignore_fog="false">
+		<RenderGroup value="200"/>
+		<Texture filename="particles/core_burst_CA.png"/>
+		<FrameAnimations framesize="128">
+			<Animation start="0" end="7" fps="30" type="once"/>
+		</FrameAnimations>
+		<EmissionCircle radius="0.5" innerradius="1.4"/>
+		<ExternalForce min_x="-0.015" max_x="0.015" min_y="-0.015" max_y="0.015"/>
+		<BlendMode type="add"/>
+		<BlendModeAlpha type="lightmask"/>
+		<PreGeneration time="0" step="0"/>
+		<Emission particles="5.85393" type="continuous" lifetime="0"/>
+		<ParticleOrientation type="from_origin"/>
+		<Velocity min_x="-0.45" max_x="0.45" min_y="-0.006" max_y="0.006"/>
+		<VelocityFriction min="0" max="0"/>
+		<ParticleLife min="0.317089" max="0.482911"/>
+		<Size min_start="0.45" max_start="0.75" min_end="0.675" max_end="1.125"/>
+		<Weight min_start="1" max_start="1" min_end="0" max_end="0"/>
+		<Rotation min_start="180" max_start="540" min_speed="-25" max_speed="25"/>
+		<RotationForce min="0" max="0"/>
+		<RotationFriction min="0" max="0"/>
+		<Frame min_start="0" max_start="0"/>
+		<MinStartColor r="205" g="39" b="251" a="255"/>
+		<MaxStartColor r="199" g="37" b="253" a="255"/>
+		<MinEndColor r="30" g="81" b="247" a="255"/>
+		<MaxEndColor r="31" g="207" b="251" a="255"/>
+		<Fade in="0.1" out="0.2" type="percentage"/>
+		<ExternalImpulseWeight min="0" max="0"/>
+	</ParticleEmitter>
+	<ParticleEmitter max_particles="2" x="0.2" y="0" delay="0.4" space="world" ignore_fog="false">
+		<RenderGroup value="200"/>
+		<Texture filename="particles/core_burst_CA.png" flip="X"/>
+		<FrameAnimations framesize="128">
+			<Animation start="0" end="7" fps="30" type="once"/>
+		</FrameAnimations>
+		<EmissionCircle radius="0.5" innerradius="1.4"/>
+		<ExternalForce min_x="-0.015" max_x="0.015" min_y="-0.015" max_y="0.015"/>
+		<BlendMode type="add"/>
+		<BlendModeAlpha type="lightmask"/>
+		<PreGeneration time="0" step="0"/>
+		<Emission particles="8.22188" type="continuous" lifetime="0"/>
+		<ParticleOrientation type="from_origin"/>
+		<Velocity min_x="-0.45" max_x="0.45" min_y="-0.006" max_y="0.006"/>
+		<VelocityFriction min="0" max="0"/>
+		<ParticleLife min="0.364167" max="0.435833"/>
+		<Size min_start="0.6" max_start="1.8" min_end="0.9" max_end="2.1"/>
+		<Weight min_start="1" max_start="1" min_end="0" max_end="0"/>
+		<Rotation min_start="180" max_start="540" min_speed="-25" max_speed="25"/>
+		<RotationForce min="0" max="0"/>
+		<RotationFriction min="0" max="0"/>
+		<Frame min_start="0" max_start="0"/>
+		<MinStartColor r="188" g="41" b="251" a="255"/>
+		<MaxStartColor r="251" g="39" b="251" a="255"/>
+		<MinEndColor r="29" g="174" b="247" a="255"/>
+		<MaxEndColor r="35" g="242" b="249" a="255"/>
+		<Fade in="0.1" out="0.2" type="percentage"/>
+		<ExternalImpulseWeight min="0" max="0"/>
+	</ParticleEmitter>
+	<ParticleEmitter max_particles="2" x="0.2" y="0" delay="0.4" space="world" ignore_fog="false">
+		<RenderGroup value="200"/>
+		<Texture filename="particles/core_burst_CA.png" flip="X"/>
+		<FrameAnimations framesize="128">
+			<Animation start="0" end="7" fps="30" type="once"/>
+		</FrameAnimations>
+		<EmissionCircle radius="0.5" innerradius="1.4"/>
+		<ExternalForce min_x="-0.015" max_x="0.015" min_y="-0.015" max_y="0.015"/>
+		<BlendMode type="add"/>
+		<BlendModeAlpha type="lightmask"/>
+		<PreGeneration time="0" step="0"/>
+		<Emission particles="6.69318" type="continuous" lifetime="0"/>
+		<ParticleOrientation type="from_origin"/>
+		<Velocity min_x="-0.45" max_x="0.45" min_y="-0.006" max_y="0.006"/>
+		<VelocityFriction min="0" max="0"/>
+		<ParticleLife min="0.223833" max="0.576167"/>
+		<Size min_start="0.6" max_start="1.8" min_end="0.9" max_end="2.1"/>
+		<Weight min_start="1" max_start="1" min_end="0" max_end="0"/>
+		<Rotation min_start="180" max_start="540" min_speed="-25" max_speed="25"/>
+		<RotationForce min="0" max="0"/>
+		<RotationFriction min="0" max="0"/>
+		<Frame min_start="0" max_start="0"/>
+		<MinStartColor r="244" g="39" b="251" a="255"/>
+		<MaxStartColor r="195" g="75" b="255" a="255"/>
+		<MinEndColor r="38" g="178" b="247" a="255"/>
+		<MaxEndColor r="41" g="144" b="255" a="255"/>
+		<Fade in="0.1" out="0.2" type="percentage"/>
+		<ExternalImpulseWeight min="0" max="0"/>
+	</ParticleEmitter>
+</ParticleTrigger>

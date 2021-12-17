@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<particleeditor xmlns="http://twotribes.com/schemas/common/particleeditor.xsd"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://twotribes.com/schemas/common/particleeditor.xsd http://twotribes.com/schemas/common/particleeditor.xsd">
+	<paths>
+		<!-- Paths are relative to the assets output directory -->
+		<source>
+			<triggers>../../source/shared/particles/</triggers>
+			<textures>../../source/shared/textures/particles/</textures>
+		</source>
+		
+		<output>
+			<triggers>particles/</triggers>
+			<textures>particles/</textures>
+		</output>
+	</paths>
+	
+	<!-- Name of the GWEN skin texture to use -->
+	<gwen_skin>gwen_skin</gwen_skin>
+	
+	<camera>
+		<distance>25.0</distance>
+		<fov>30.0</fov>
+		<zoom_speed>0.125</zoom_speed>
+		<zoom_using_fov>true</zoom_using_fov>
+	</camera>
+	
+	<render_groups>
+		<group value="100" name="behind_shoebox_zero"/>
+		<group value="200" name="behind_entities"/>
+		<group value="240" name="behind_entities_sub_only"/>
+		<group value="300" name="in_front_of_entities"/>
+		<group value="340" name="in_front_of_entities_sub_only"/>
+		<group value="325" name="in_front_of_water"/>
+		<group value="327" name="in_front_of_still_water"/>
+		<group value="350" name="in_front_of_split"/>
+		<group value="400" name="in_front_of_shoebox_zero_one"/>
+		<group value="450" name="in_front_of_shoebox_zero_two"/>
+		<group value="500" name="behind_hud"/>
+		<group value="510" name="behind_hud_tv_only"/>
+		<group value="520" name="behind_hud_drc_only"/>
+		<group value="600" name="hud"/>
+		<group value="610" name="hud_tv_only"/>
+		<group value="620" name="hud_drc_only"/>
+		<group value="700" name="minimap"/>
+		<group value="800" name="in_front_of_hud"/>
+	</render_groups>
+</particleeditor>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launcher xmlns="http://intranet.twotribes.com/schemas/common/gamelauncher.xsd"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/gamelauncher.xsd http://intranet.twotribes.com/schemas/common/gamelauncher.xsd"
+          game_name="TTGame"
+          extra_arguments="--resizable --resize-height-for-widescreen">
+	<!-- Paths are all relative to this config file's directory -->
+	<assets root="..\assets\output"/>
+	<game executable="..\build\win\ttgame.exe"/>
+	<arguments delimiter="--"/>
+	
+	<states>
+		<state display_name="Normal Startup"               platform="win" uses_content="false"                                                                                         extra_arguments="--windowed-width 1777 --windowed-height 1000 --developer"/>
+		<state display_name="Load Mission"                 platform="win" uses_content="true"  name="game" content_dir="missions" pattern="*.json*"       pattern_argument="mission"   extra_arguments="--windowed-width 1777 --windowed-height 1000 --developer"/>
+		<state display_name="Load Level (720p)"            platform="win" uses_content="true"  name="game" content_dir="levels"   pattern="*.t*"          pattern_argument="level"     extra_arguments="--windowed-width 1280 --windowed-height 720 --developer"/>
+		<state display_name="Load Level (1080p)"           platform="win" uses_content="true"  name="game" content_dir="levels"   pattern="*.t*"          pattern_argument="level"     extra_arguments="--windowed-width 1920 --windowed-height 1080 --developer"/>
+		<state display_name="Load Level (1000p)"           platform="win" uses_content="true"  name="game" content_dir="levels"   pattern="*.t*"          pattern_argument="level"     extra_arguments="--windowed-width 1777 --windowed-height 1000 --developer"/>
+		<state display_name="Generate Meta Data"           platform="win" uses_content="false"                                                            pattern_argument="level"     extra_arguments="--windowed-width 1200 --windowed-height 950 --developer --generate_meta_data &quot;../../source/shared/metadata&quot; "/>
+		<state display_name="Loading Test"                 platform="win" uses_content="false"                                                            extra_arguments="--windowed-width 1280 --windowed-height 720 --developer --show_loading_screen"/>
+	</states>
+</launcher>

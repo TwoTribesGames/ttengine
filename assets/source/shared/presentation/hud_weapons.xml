@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		permanent="true">
+
+	<startvalues>
+		<translation x="-0.155" y="-0.36"/>
+	</startvalues>
+
+	<!--animation when switching TO this weapon-->
+	<anim2dstack>
+		<musthave>
+			<tag name="select"/>
+		</musthave>
+		<scale duration="0.05"  timing="easeends" tweening="bounce">
+			<begin scale="0.8"/>
+			<end   scale="1.1"/>
+		</scale>
+		<translation duration="0.05"  timing="easeends"  tweening="bounce">
+			<begin x="0" y="0" z="0"/>
+			<end   x="-0.01" y="0.0025" z="0"/>
+		</translation>
+	</anim2dstack>
+	
+	<coloranimstack>
+		<musthave>
+			<tag name="select"/>
+		</musthave>
+		<musthave>
+			<tag name="selected"/>
+		</musthave>
+		<mustnothave>
+			<tag name="empty"/>
+		</mustnothave>
+		<color duration="0.05">
+			<begin r="0" g="0" b="0" a="-180"/>
+			<end   r="0" g="0" b="0" a="0"/>
+		</color>
+	</coloranimstack>
+	
+	<!--animation when switching AWAY from this weapon-->
+	<anim2dstack>
+		<musthave>
+			<tag name="deselect"/>
+		</musthave>
+		<scale duration="0.125"  timing="easeends">
+			<begin scale="1.1"/>
+			<end   scale="0.8"/>
+		</scale>
+		<translation duration="0.125" timing="easeends">
+			<begin x="-0.01" y="0.0025" z="0"/>
+			<end   x="0" y="0" z="0"/>
+		</translation>
+	</anim2dstack>
+	
+	<coloranimstack>
+		<musthave>
+			<tag name="deselect"/>
+		</musthave>
+		<mustnothave>
+			<tag name="empty"/>
+		</mustnothave>
+		<color duration="0.125">
+			<begin r="0" g="0" b="0" a="0"/>
+			<end   r="0" g="0" b="0" a="-180"/>
+		</color>
+	</coloranimstack>
+	
+	<!--animation for when weapon was already deselected -->
+	<anim2dstack>
+		<musthave>
+			<tag name="deselected"/>
+		</musthave>
+		<scale duration="0.01"  timing="easeends">
+			<begin scale="0.8"/>
+			<end   scale="0.8"/>
+		</scale>
+	</anim2dstack>
+	
+	<coloranimstack>
+		<musthave>
+			<tag name="deselected"/>
+		</musthave>
+		<color duration="0.01">
+			<begin r="0" g="0" b="0" a="-180"/>
+			<end   r="0" g="0" b="0" a="-180"/>
+		</color>
+	</coloranimstack>
+	
+	<!-- EMPTY: Color change when the weapon is selected but EMPTY-->
+	<!--Color changes when switching to a new ammo type-->
+	<coloranimstack>
+		<musthave>
+			<tag name="select"/>
+			<tag name="empty"/>
+		</musthave>
+		<color duration="0.125">
+			<begin r="0" g="0" b="0" a="-180"/>
+			<end   r="0" g="0" b="0" a="-180"/>
+		</color>
+	
+</coloranimstack>
+
+	<!--Color stays the same when switching to the same weapon and plays a scale animation-->
+	<coloranimstack>
+		<musthave>
+			<tag name="selected"/>
+			<tag name="empty"/>
+		</musthave>
+		<color duration="0.125" direction="forward" looping="false">
+			<begin r="0" g="0" b="-0" a="-180"/>
+			<end   r="0" g="-255" b="-255" a="-100"/>
+		</color>
+		<color duration="0.3" delay="0.125" direction="forward" looping="false">
+			<begin r="0" g="0" b="0" a="0"/>
+			<end   r="0" g="255" b="255" a="-80"/>
+		</color>
+	</coloranimstack>
+
+	<coloranimstack>
+		<musthave>
+			<tag name="select"/>
+			<tag name="empty"/>
+		</musthave>
+		<color duration="0.125" direction="forward" looping="false">
+			<begin r="0" g="0" b="-0" a="0"/>
+			<end   r="0" g="-255" b="-255" a="80"/>
+		</color>
+		<color duration="0.3" delay="0.125" direction="forward" looping="false">
+			<begin r="0" g="0" b="0" a="0"/>
+			<end   r="0" g="255" b="255" a="-80"/>
+		</color>
+	</coloranimstack>
+
+	<!--Color changes back when switching to a new ammo type-->
+	<coloranimstack>
+		<musthave>
+			<tag name="deselect"/>
+			<tag name="empty"/>
+		</musthave>
+		<color duration="0.125">
+			<begin r="0" g="0" b="0" a="-180"/>
+			<end   r="0" g="0" b="0" a="-180"/>
+		</color>
+	</coloranimstack>
+	
+	<anim2dstack>
+		<musthave>
+			<tag name="selected"/>
+			<tag name="empty"/>
+		</musthave>
+		<scale duration="0.125" timing="easeends" direction="pingpong">
+			<begin scale="1.1"/>
+			<end   scale="1.2"/>
+		</scale>
+		<translation duration="0.125" direction="pingpong"  timing="easeends">
+			<begin x="-0.01" y="0.0025" z="0"/>
+			<end   x="-0.015" y="0.0075" z="0"/>
+		</translation>
+	</anim2dstack>
+	
+	<anim2dstack>
+		<musthave>
+			<tag name="selected"/>
+		</musthave>
+		<mustnothave>
+			<tag name="empty"/>
+		</mustnothave>
+		<scale duration="0.125" timing="easeends" direction="pingpong">
+			<begin scale="1.1"/>
+			<end   scale="1.2"/>
+		</scale>
+		<translation duration="0.125" direction="pingpong"  timing="easeends">
+			<begin x="-0.01" y="0.0025" z="0"/>
+			<end   x="-0.015" y="0.0075" z="0"/>
+		</translation>
+	</anim2dstack>
+	
+	<!-- CONTROLLER OFFSETS (Top first, clockwise) -->
+	<startvalues >
+		<musthave>
+			<tag name="controller"/>
+			<tag name="grenade"/>
+		</musthave>
+		<translation x="0.005" y="0.06"/>
+	</startvalues>
+	<startvalues >
+		<musthave>
+			<tag name="controller"/>
+			<tag name="emp"/>
+		</musthave>
+		<translation x="0.06" y="0.0"/>
+	</startvalues>
+	<startvalues >
+		<musthave>
+			<tag name="controller"/>
+			<tag name="shotgun"/>
+		</musthave>
+		<translation x="-0.005" y="-0.06"/>
+	</startvalues>
+	<startvalues >
+		<musthave>
+			<tag name="controller"/>
+			<tag name="homingmissile"/>
+		</musthave>
+		<translation x="-0.06" y="0.0"/>
+	</startvalues>
+	
+	<!-- KEYBOARD OFFSETS (Left to right) -->
+	<startvalues >
+		<musthave>
+			<tag name="keyboard"/>
+			<tag name="homingmissile"/>
+		</musthave>
+		<translation x="-0.14" y="-0.06"/>
+	</startvalues>
+	<startvalues >
+		<musthave>
+			<tag name="keyboard"/>
+			<tag name="shotgun"/>
+		</musthave>
+		<translation x="-0.07" y="-0.06"/>
+	</startvalues>	
+	<startvalues >
+		<musthave>
+			<tag name="keyboard"/>
+			<tag name="grenade"/>
+		</musthave>
+		<translation x="0.0" y="-0.06"/>
+	</startvalues>
+	<startvalues >
+		<musthave>
+			<tag name="keyboard"/>
+			<tag name="emp"/>
+		</musthave>
+		<translation x="0.07" y="-0.06"/>
+	</startvalues>
+
+	<!-- WEAPONS -->
+	<!--grenade-->
+	<frameanimstack name="grenade">
+		<frameanim directory="spritestrip/hud/weapons/grenade" looping="false" fps="60" quad_width="0.08" quad_height="0.08">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<trigger type="global_audio" data="hud_weapon_select_grenades" name="grenade">
+		<musthave>
+			<tag name="select"/>
+		</musthave>
+		<mustnothave>
+			<tag name="empty"/>
+		</mustnothave>
+	</trigger>
+
+	<!--emp-->
+	<frameanimstack name="emp">
+		<frameanim directory="spritestrip/hud/weapons/emp" looping="false" fps="60" quad_width="0.08" quad_height="0.08">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<trigger type="global_audio" data="hud_weapon_select_emp" name="emp">
+		<musthave>
+			<tag name="select"/>
+		</musthave>
+		<mustnothave>
+			<tag name="empty"/>
+		</mustnothave>
+    </trigger>
+
+	
+	<!--shotgun-->
+	<frameanimstack name="shotgun">
+		<frameanim directory="spritestrip/hud/weapons/shotgun" looping="false" fps="60" quad_width="0.08" quad_height="0.08">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<trigger type="global_audio" data="hud_weapon_select_shotgun" name="shotgun">
+		<musthave>
+			<tag name="select"/>
+		</musthave>
+			<mustnothave>
+			<tag name="empty"/>
+		</mustnothave>
+    </trigger>
+
+	
+	<!--homingmissile-->
+	<frameanimstack name="homingmissile">
+		<frameanim directory="spritestrip/hud/weapons/homingmissile" looping="false" fps="60" quad_width="0.08" quad_height="0.08">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+		</frameanim>
+	</frameanimstack>
+
+	<trigger type="global_audio" data="hud_weapon_select_homingmissile" name="homingmissile">
+		<musthave>
+			<tag name="select"/>
+		</musthave>
+			<mustnothave>
+			<tag name="empty"/>
+		</mustnothave>
+    </trigger>
+    
+    <trigger type="global_audio" data="hud_weapon_select_cannot">
+		<musthave>
+			<tag name="empty"/>
+		</musthave>
+    </trigger>
+
+
+	<!-- XBOX_BUTTONS-->
+	<!--TOP BUTTON-->
+	<frameanimstack name="grenade_inactive">
+		<musthave>
+			<tag name="pc"/>
+			<tag name="controller"/>
+		</musthave>
+		<frameanim directory="spritestrip/hud/weapons/xbox/top_button" looping="false" fps="60" quad_width="0.08" quad_height="0.08">
+			<begin frame="0"/>
+			<end   frame="0"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<!--RIGHT BUTTON-->
+	<frameanimstack name="emp_inactive">
+		<musthave>
+			<tag name="pc"/>
+			<tag name="controller"/>
+		</musthave>
+		<frameanim directory="spritestrip/hud/weapons/xbox/right_button" looping="false" fps="60" quad_width="0.08" quad_height="0.08">
+			<begin frame="0"/>
+			<end   frame="0"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<!--BOTTOM BUTTON-->
+	<frameanimstack name="shotgun_inactive">
+		<musthave>
+			<tag name="pc"/>
+			<tag name="controller"/>
+		</musthave>
+		<frameanim directory="spritestrip/hud/weapons/xbox/bottom_button" looping="false" fps="60" quad_width="0.08" quad_height="0.08">
+			<begin frame="0"/>
+			<end   frame="0"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<!--LEFT BUTTON-->
+	<frameanimstack name="homingmissile_inactive">
+		<musthave>
+			<tag name="pc"/>
+			<tag name="controller"/>
+		</musthave>
+		<frameanim directory="spritestrip/hud/weapons/xbox/left_button" looping="false" fps="60" quad_width="0.08" quad_height="0.08">
+			<begin frame="0"/>
+			<end   frame="0"/>
+		</frameanim>
+	</frameanimstack>
+
+	<!-- KEYBOARD_BUTTONS-->
+	<!--TOP BUTTON-->
+	<frameanimstack name="grenade_inactive">
+		<musthave>
+			<tag name="pc"/>
+			<tag name="keyboard"/>
+		</musthave>
+		<frameanim directory="spritestrip/hud/weapons/keyboard/top_button" looping="false" fps="60" quad_width="0.08" quad_height="0.08">
+			<begin frame="0"/>
+			<end   frame="0"/>
+		</frameanim>
+	</frameanimstack>
+
+	<!--RIGHT BUTTON-->
+	<frameanimstack name="emp_inactive">
+		<musthave>
+			<tag name="pc"/>
+			<tag name="keyboard"/>
+		</musthave>
+		<frameanim directory="spritestrip/hud/weapons/keyboard/right_button" looping="false" fps="60" quad_width="0.08" quad_height="0.08">
+			<begin frame="0"/>
+			<end   frame="0"/>
+		</frameanim>
+	</frameanimstack>
+
+	<!--BOTTOM BUTTON-->
+	<frameanimstack name="shotgun_inactive">
+		<musthave>
+			<tag name="pc"/>
+			<tag name="keyboard"/>
+		</musthave>
+		<frameanim directory="spritestrip/hud/weapons/keyboard/bottom_button" looping="false" fps="60" quad_width="0.08" quad_height="0.08">
+			<begin frame="0"/>
+			<end   frame="0"/>
+		</frameanim>
+	</frameanimstack>
+
+	<!--LEFT BUTTON-->
+	<frameanimstack name="homingmissile_inactive">
+		<musthave>
+			<tag name="pc"/>
+			<tag name="keyboard"/>
+		</musthave>
+		<frameanim directory="spritestrip/hud/weapons/keyboard/left_button" looping="false" fps="60" quad_width="0.08" quad_height="0.08">
+			<begin frame="0"/>
+			<end   frame="0"/>
+		</frameanim>
+	</frameanimstack>
+
+	<!-- PS4_BUTTONS-->
+	<!--TOP BUTTON-->
+	<frameanimstack name="grenade_inactive">
+		<musthave>
+			<tag name="ps4"/>
+			<tag name="controller"/>
+		</musthave>
+		<frameanim directory="spritestrip/hud/weapons/ps4/top_button" looping="false" fps="60" quad_width="0.08" quad_height="0.08">
+			<begin frame="0"/>
+			<end   frame="0"/>
+		</frameanim>
+	</frameanimstack>
+
+	<!--RIGHT BUTTON-->
+	<frameanimstack name="emp_inactive">
+		<musthave>
+			<tag name="ps4"/>
+			<tag name="controller"/>
+		</musthave>
+		<frameanim directory="spritestrip/hud/weapons/ps4/right_button" looping="false" fps="60" quad_width="0.08" quad_height="0.08">
+			<begin frame="0"/>
+			<end   frame="0"/>
+		</frameanim>
+	</frameanimstack>
+
+	<!--BOTTOM BUTTON-->
+	<frameanimstack name="shotgun_inactive">
+		<musthave>
+			<tag name="ps4"/>
+			<tag name="controller"/>
+		</musthave>
+		<frameanim directory="spritestrip/hud/weapons/ps4/bottom_button" looping="false" fps="60" quad_width="0.08" quad_height="0.08">
+			<begin frame="0"/>
+			<end   frame="0"/>
+		</frameanim>
+	</frameanimstack>
+
+	<!--LEFT BUTTON-->
+	<frameanimstack name="homingmissile_inactive">
+		<musthave>
+			<tag name="ps4"/>
+			<tag name="controller"/>
+		</musthave>
+		<frameanim directory="spritestrip/hud/weapons/nx/left_button" looping="false" fps="60" quad_width="0.08" quad_height="0.08">
+			<begin frame="0"/>
+			<end   frame="0"/>
+		</frameanim>
+	</frameanimstack>
+
+	<!-- NX_BUTTONS-->
+	<!--TOP BUTTON-->
+	<frameanimstack name="grenade_inactive">
+		<musthave>
+			<tag name="nx"/>
+			<tag name="controller"/>
+		</musthave>
+		<frameanim directory="spritestrip/hud/weapons/nx/top_button" looping="false" fps="60" quad_width="0.08" quad_height="0.08">
+			<begin frame="0"/>
+			<end   frame="0"/>
+			<scale scale="1.2"/>
+		</frameanim>
+	</frameanimstack>
+
+	<!--RIGHT BUTTON-->
+	<frameanimstack name="emp_inactive">
+		<musthave>
+			<tag name="nx"/>
+			<tag name="controller"/>
+		</musthave>
+		<frameanim directory="spritestrip/hud/weapons/nx/right_button" looping="false" fps="60" quad_width="0.08" quad_height="0.08">
+			<begin frame="0"/>
+			<end   frame="0"/>
+			<scale scale="1.2"/>
+		</frameanim>
+	</frameanimstack>
+
+	<!--BOTTOM BUTTON-->
+	<frameanimstack name="shotgun_inactive">
+		<musthave>
+			<tag name="nx"/>
+			<tag name="controller"/>
+		</musthave>
+		<frameanim directory="spritestrip/hud/weapons/nx/bottom_button" looping="false" fps="60" quad_width="0.08" quad_height="0.08">
+			<begin frame="0"/>
+			<end   frame="0"/>
+			<scale scale="1.2"/>
+		</frameanim>
+	</frameanimstack>
+
+	<!--LEFT BUTTON-->
+	<frameanimstack name="homingmissile_inactive">
+		<musthave>
+			<tag name="nx"/>
+			<tag name="controller"/>
+		</musthave>
+		<frameanim directory="spritestrip/hud/weapons/nx/left_button" looping="false" fps="60" quad_width="0.08" quad_height="0.08">
+			<begin frame="0"/>
+			<end   frame="0"/>
+			<scale scale="1.2"/>
+		</frameanim>
+	</frameanimstack>
+</presentation>

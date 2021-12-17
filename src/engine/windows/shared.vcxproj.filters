@@ -1,0 +1,1556 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="xml">
+      <UniqueIdentifier>{c40619e5-493b-4e40-94aa-ef64ae270a23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xml\util">
+      <UniqueIdentifier>{54f5e871-a65a-45b2-848b-0ccd6d7f93ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="doc">
+      <UniqueIdentifier>{0e939831-fc69-4e51-9e82-9a542bcd3114}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="doc\xap">
+      <UniqueIdentifier>{88aa32e1-0e33-49fa-aecd-82cfef952120}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="doc\ini">
+      <UniqueIdentifier>{5c5a9380-bb90-4fcd-b643-bb0bd4810c3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="doc\str">
+      <UniqueIdentifier>{5a505cdb-bc38-4237-9841-fcbcf368e648}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="version">
+      <UniqueIdentifier>{80ee6c2e-5ff3-438e-8940-4e9485e3613b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="streams">
+      <UniqueIdentifier>{d0b7dfc8-349e-425a-8faa-1460d96511f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="profiler">
+      <UniqueIdentifier>{b6e11ebe-f4ee-4bde-95c5-b63c2b630dae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="profiler\Shared">
+      <UniqueIdentifier>{f3fde97c-898f-4d9f-a04c-faae5d27c0ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="profiler\Windows">
+      <UniqueIdentifier>{80b18f93-9059-4333-83af-e6d387acef28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="args">
+      <UniqueIdentifier>{3ca3e413-aa01-417d-b815-5e75c77f3374}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="args\Shared">
+      <UniqueIdentifier>{0c2a6067-0680-4ef4-b061-d65a51d0eafd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="args\Windows">
+      <UniqueIdentifier>{b5c4c1f6-dbd9-4741-9ea3-a39d9b58e0e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="log">
+      <UniqueIdentifier>{1668ae5f-ea08-4453-893a-6823b8407d87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="loc">
+      <UniqueIdentifier>{6dbc7ec7-e9a9-4315-a068-06740af03fd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="input">
+      <UniqueIdentifier>{63818e2e-22ac-431e-9aac-03e5dde9c357}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cfg">
+      <UniqueIdentifier>{537c172b-08aa-475c-b8c7-ed1f1666f27e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="com">
+      <UniqueIdentifier>{f51586f2-bc0f-4bbd-a1ed-a19b0e0d6f3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="code">
+      <UniqueIdentifier>{fedc2984-253d-4736-a5f0-49da8457df50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio">
+      <UniqueIdentifier>{6b72787e-bdaa-44f7-aa15-39284fb7aa73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio\chibi">
+      <UniqueIdentifier>{c9acc302-41cb-437b-ba48-e9ec980ac916}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio\chibi\Shared">
+      <UniqueIdentifier>{635d568c-b7fd-4962-905e-4fc4132b274e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio\chibi\Windows">
+      <UniqueIdentifier>{66eb0fa6-6a3f-401f-addd-b8cf8d9d36ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio\xact">
+      <UniqueIdentifier>{965d2d05-11c2-48fa-a3e0-865952524ba1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio\codec">
+      <UniqueIdentifier>{85d383df-e422-4288-8802-410588d2c393}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio\codec\wav">
+      <UniqueIdentifier>{4f8eb6b0-0101-463d-b94e-fd19870e1cfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio\codec\ogg">
+      <UniqueIdentifier>{7eef9a85-73a3-4ccb-b007-cbce4bc65409}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio\codec\ttadpcm">
+      <UniqueIdentifier>{c8354348-d12f-4298-b8ed-a3e3156644a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio\codec\caf">
+      <UniqueIdentifier>{4f5c7b4f-86b7-45ed-8df4-4e451252d6be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio\mixer">
+      <UniqueIdentifier>{39a1f67e-527a-4384-bd6e-047ed122378b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio\player">
+      <UniqueIdentifier>{ba865bde-f911-409e-9faf-309906765214}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio\player\Windows">
+      <UniqueIdentifier>{a5058225-53ff-43bf-a28b-4187ac695c44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio\player\Shared">
+      <UniqueIdentifier>{fb176927-c3c9-44f4-9c1d-eeb3c0fdedc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="asset">
+      <UniqueIdentifier>{6356e7d0-217c-4933-9204-91e86ab0399a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="app">
+      <UniqueIdentifier>{f3160831-cddf-45a3-8fc0-029f030a735a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pch">
+      <UniqueIdentifier>{c2ae9bf5-0975-4b1e-915f-e068cf6cda9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="script">
+      <UniqueIdentifier>{ae707cda-da65-470d-bd1e-4fb9441791b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="algorithms">
+      <UniqueIdentifier>{01c02618-b681-4372-a9e6-4103e6d49691}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pres">
+      <UniqueIdentifier>{69dc4de6-9090-4881-8409-a35bec919805}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="doc\json">
+      <UniqueIdentifier>{a09faa9c-8c57-49c9-afc3-efc86dd597ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="str">
+      <UniqueIdentifier>{1c6d2089-a04b-4999-84f9-e1a21acddd2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="undo">
+      <UniqueIdentifier>{d4d1326a-a18d-4860-a606-0fb38c5d0b0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gwen">
+      <UniqueIdentifier>{fc47b58f-b659-48ab-9566-d961f2103da6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="script\bindings">
+      <UniqueIdentifier>{6eb22e2d-9880-4280-beaa-98715c71cecb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pres\anim2d">
+      <UniqueIdentifier>{bc9efb1f-0847-426b-a20e-0d452c9c5e49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fileformat">
+      <UniqueIdentifier>{88877665-ea6e-44b6-ba25-4753fdcc03bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fileformat\cursor">
+      <UniqueIdentifier>{5e8c1934-f5e6-4607-9961-4d50e69ad10d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="score">
+      <UniqueIdentifier>{60f3106c-1561-468e-a80c-c37d417719c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stats">
+      <UniqueIdentifier>{93d2e83a-6903-4611-8fac-cf7bdf79934e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="script\wrappers">
+      <UniqueIdentifier>{3ed142d8-29ab-4461-a003-8890ecb63497}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\shared\inc\tt\xml\fast_atof.h">
+      <Filter>xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\xml\fwd.h">
+      <Filter>xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\xml\XmlDocument.h">
+      <Filter>xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\xml\XmlFileReader.h">
+      <Filter>xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\xml\XmlFileWriter.h">
+      <Filter>xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\xml\XmlNode.h">
+      <Filter>xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\xml\XmlReader.h">
+      <Filter>xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\xml\XmlStreamReader.h">
+      <Filter>xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\xml\util\check.h">
+      <Filter>xml\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\xml\util\parse.h">
+      <Filter>xml\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\xml\util\store.h">
+      <Filter>xml\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\doc\xap\XapReader.h">
+      <Filter>doc\xap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\doc\xap\XapWriter.h">
+      <Filter>doc\xap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\doc\ini\IniDocument.h">
+      <Filter>doc\ini</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\doc\str\StringDocument.h">
+      <Filter>doc\str</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\version\Version.h">
+      <Filter>version</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\streams\BIFStream.h">
+      <Filter>streams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\streams\BIOStreamBase.h">
+      <Filter>streams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\streams\BIStream.h">
+      <Filter>streams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\streams\BOFStream.h">
+      <Filter>streams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\streams\BOStream.h">
+      <Filter>streams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\streams\fwd.h">
+      <Filter>streams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\profiler\MemoryProfiler.h">
+      <Filter>profiler\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\profiler\PerformanceProfiler.h">
+      <Filter>profiler\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\profiler\SceneObjectProfiler.h">
+      <Filter>profiler\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\profiler\TextureProfiler.h">
+      <Filter>profiler\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\profiler\MemoryProfilerConstants.h">
+      <Filter>profiler\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\profiler\PerformanceProfilerConstants.h">
+      <Filter>profiler\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\profiler\SceneObjectProfilerConstants.h">
+      <Filter>profiler\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\profiler\TextureProfilerConstants.h">
+      <Filter>profiler\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\args\CmdLine.h">
+      <Filter>args\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\log\Log.h">
+      <Filter>log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\loc\LocStr.h">
+      <Filter>loc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\loc\LocStringFormatter.h">
+      <Filter>loc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\loc\LocStrRegistry.h">
+      <Filter>loc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\input\Accelerometer.h">
+      <Filter>input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\input\Button.h">
+      <Filter>input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\input\ControllerIndex.h">
+      <Filter>input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\input\fwd.h">
+      <Filter>input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\input\KeyBindings.h">
+      <Filter>input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\input\KeyList.h">
+      <Filter>input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\input\Pointer.h">
+      <Filter>input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\input\Stick.h">
+      <Filter>input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\input\Trigger.h">
+      <Filter>input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\cfg\ConfigHive.h">
+      <Filter>cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\cfg\Handle.h">
+      <Filter>cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\com\ComponentBase.h">
+      <Filter>com</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\com\ComponentIterators.h">
+      <Filter>com</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\com\ComponentManager.h">
+      <Filter>com</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\com\InterfaceTrait.h">
+      <Filter>com</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\com\Message.h">
+      <Filter>com</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\com\Object.h">
+      <Filter>com</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\com\ObjectComponent.h">
+      <Filter>com</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\com\types.h">
+      <Filter>com</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\code\Buffer.h">
+      <Filter>code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\code\bufferutils.h">
+      <Filter>code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\code\DefaultValue.h">
+      <Filter>code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\code\ErrorStatus.h">
+      <Filter>code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\code\FloodFiller.h">
+      <Filter>code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\code\functional.h">
+      <Filter>code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\code\helpers.h">
+      <Filter>code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\code\Identifier.h">
+      <Filter>code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\code\Int2Type.h">
+      <Filter>code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\code\NoDeleter.h">
+      <Filter>code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\code\OptionalValue.h">
+      <Filter>code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\code\PointerLess.h">
+      <Filter>code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\code\SimpleStateMachine.h">
+      <Filter>code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\code\SrcPos.h">
+      <Filter>code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\code\SrcPosNested.h">
+      <Filter>code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\code\State.h">
+      <Filter>code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\code\StateID.h">
+      <Filter>code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\code\StateMachine.h">
+      <Filter>code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\code\TypeWithByteSize.h">
+      <Filter>code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\code\Uncopyable.h">
+      <Filter>code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\helpers.h">
+      <Filter>audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\chibi\OpenALMixer.h">
+      <Filter>audio\chibi\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\chibi\StreamMixer.h">
+      <Filter>audio\chibi\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\chibi\TTFileIO.h">
+      <Filter>audio\chibi\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\chibi\TTMemoryManager.h">
+      <Filter>audio\chibi\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\chibi\types.h">
+      <Filter>audio\chibi\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\chibi\XMCompressor.h">
+      <Filter>audio\chibi\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\chibi\XMEnvelope.h">
+      <Filter>audio\chibi\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\chibi\XMFileIO.h">
+      <Filter>audio\chibi\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\chibi\XMInstrument.h">
+      <Filter>audio\chibi\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\chibi\XMLoader.h">
+      <Filter>audio\chibi\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\chibi\XMMemoryManager.h">
+      <Filter>audio\chibi\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\chibi\XMMixer.h">
+      <Filter>audio\chibi\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\chibi\XMPlayer.h">
+      <Filter>audio\chibi\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\chibi\XMSoftwareMixer.h">
+      <Filter>audio\chibi\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\chibi\XMSong.h">
+      <Filter>audio\chibi\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\chibi\XMUtil.h">
+      <Filter>audio\chibi\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\audio\chibi\DXMixer.h">
+      <Filter>audio\chibi\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\xact\AudioTT.h">
+      <Filter>audio\xact</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\xact\Category.h">
+      <Filter>audio\xact</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\xact\Cue.h">
+      <Filter>audio\xact</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\xact\CueInstance.h">
+      <Filter>audio\xact</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\xact\PitchEvent.h">
+      <Filter>audio\xact</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\xact\PitchEventInstance.h">
+      <Filter>audio\xact</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\xact\PlayWaveEvent.h">
+      <Filter>audio\xact</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\xact\PlayWaveEventInstance.h">
+      <Filter>audio\xact</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\xact\Sound.h">
+      <Filter>audio\xact</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\xact\SoundBank.h">
+      <Filter>audio\xact</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\xact\SoundInstance.h">
+      <Filter>audio\xact</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\xact\StopEvent.h">
+      <Filter>audio\xact</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\xact\StopEventInstance.h">
+      <Filter>audio\xact</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\xact\Track.h">
+      <Filter>audio\xact</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\xact\TrackInstance.h">
+      <Filter>audio\xact</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\xact\VolumeEvent.h">
+      <Filter>audio\xact</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\xact\VolumeEventInstance.h">
+      <Filter>audio\xact</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\xact\Wave.h">
+      <Filter>audio\xact</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\xact\WaveBank.h">
+      <Filter>audio\xact</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\xact\WaveInstance.h">
+      <Filter>audio\xact</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\codec\Decoder.h">
+      <Filter>audio\codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\codec\Encoder.h">
+      <Filter>audio\codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\codec\fwd.h">
+      <Filter>audio\codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\codec\SampleConverter.h">
+      <Filter>audio\codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\codec\types.h">
+      <Filter>audio\codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\codec\wav\WavDecoder.h">
+      <Filter>audio\codec\wav</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\codec\wav\WavEncoder.h">
+      <Filter>audio\codec\wav</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\codec\wav\WavFormat.h">
+      <Filter>audio\codec\wav</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\codec\wav\WavFormatDecoder.h">
+      <Filter>audio\codec\wav</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\codec\wav\WavFormatDecoderImaAdpcm.h">
+      <Filter>audio\codec\wav</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\codec\wav\WavFormatDecoderPcm.h">
+      <Filter>audio\codec\wav</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\codec\ogg\OggDecoder.h">
+      <Filter>audio\codec\ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\codec\ogg\OggEncoder.h">
+      <Filter>audio\codec\ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\codec\ttadpcm\ImaAdpcm.h">
+      <Filter>audio\codec\ttadpcm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\codec\ttadpcm\TTAdpcmDecoder.h">
+      <Filter>audio\codec\ttadpcm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\codec\ttadpcm\TTAdpcmEncoder.h">
+      <Filter>audio\codec\ttadpcm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\codec\caf\CafDecoder.h">
+      <Filter>audio\codec\caf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\mixer\mixer.h">
+      <Filter>audio\mixer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\mixer\types.h">
+      <Filter>audio\mixer</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\audio\player\WMPPlayer.h">
+      <Filter>audio\player\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\audio\player\Xact3Cue.h">
+      <Filter>audio\player\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\audio\player\Xact3Helpers.h">
+      <Filter>audio\player\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\audio\player\Xact3Player.h">
+      <Filter>audio\player\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\player\MusicJinglePlayer.h">
+      <Filter>audio\player\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\player\MusicPlayer.h">
+      <Filter>audio\player\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\player\OggPlayer.h">
+      <Filter>audio\player\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\player\SoundCue.h">
+      <Filter>audio\player\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\player\SoundPlayer.h">
+      <Filter>audio\player\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\player\TTIMPlayer.h">
+      <Filter>audio\player\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\player\TTXactCue.h">
+      <Filter>audio\player\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\player\TTXactPlayer.h">
+      <Filter>audio\player\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\player\XMMusicPlayer.h">
+      <Filter>audio\player\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\asset\asset.h">
+      <Filter>asset</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\asset\AssetMgrBase.h">
+      <Filter>asset</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\asset\NameHashFunc.h">
+      <Filter>asset</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\app\AppInterface.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\app\Application.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\app\AppOrientation.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\app\AppSettings.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\app\AppSystems.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\app\PlatformApi.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\app\PlatformCallbackInterface.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\app\StartupState.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\pch\pch.h">
+      <Filter>pch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\script\ScriptEngine.h">
+      <Filter>script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\script\ScriptObject.h">
+      <Filter>script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\script\SqTopRestorerHelper.h">
+      <Filter>script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\script\VirtualMachine.h">
+      <Filter>script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\algorithms\set_helpers.h">
+      <Filter>algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\pres\CueToTag.h">
+      <Filter>pres</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\pres\FrameAnimation.h">
+      <Filter>pres</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\pres\FrameAnimationStack.h">
+      <Filter>pres</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\pres\fwd.h">
+      <Filter>pres</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\pres\GroupFactory.h">
+      <Filter>pres</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\pres\ParticleLayer.h">
+      <Filter>pres</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\pres\ParticleSpawner.h">
+      <Filter>pres</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\pres\ParticlesStack.h">
+      <Filter>pres</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\pres\PresentationCache.h">
+      <Filter>pres</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\pres\PresentationGroup.h">
+      <Filter>pres</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\pres\PresentationLoader.h">
+      <Filter>pres</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\pres\PresentationMgr.h">
+      <Filter>pres</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\pres\PresentationObject.h">
+      <Filter>pres</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\pres\PresentationQuad.h">
+      <Filter>pres</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\pres\RenderableInterface.h">
+      <Filter>pres</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\pres\RootMatrixInterface.h">
+      <Filter>pres</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\pres\SpriteStrip.h">
+      <Filter>pres</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\pres\Timer.h">
+      <Filter>pres</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\pres\TimerStack.h">
+      <Filter>pres</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\pres\TriggerFactoryInterface.h">
+      <Filter>pres</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\pres\TriggerInterface.h">
+      <Filter>pres</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\pres\TriggerStack.h">
+      <Filter>pres</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\app\Platform.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\input\Touch.h">
+      <Filter>input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\doc\json\json_util.h">
+      <Filter>doc\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\cfg\ConfigRegistry.h">
+      <Filter>cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\str\toStr.h">
+      <Filter>str</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\str\c_str.h">
+      <Filter>str</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\str\common.h">
+      <Filter>str</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\str\format.h">
+      <Filter>str</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\str\manip.h">
+      <Filter>str</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\str\parse.h">
+      <Filter>str</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\str\str.h">
+      <Filter>str</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\str\str_types.h">
+      <Filter>str</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\str\StringFormatter.h">
+      <Filter>str</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\undo\fwd.h">
+      <Filter>undo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\undo\UndoCommand.h">
+      <Filter>undo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\undo\UndoStack.h">
+      <Filter>undo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\script\helpers.h">
+      <Filter>script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\code\Handle.h">
+      <Filter>code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\code\HandleMgr.h">
+      <Filter>code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\code\BitMask.h">
+      <Filter>code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\gwen\RootCanvasWrapper.h">
+      <Filter>gwen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\gwen\GwenMgr.h">
+      <Filter>gwen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\gwen\ButtonList.h">
+      <Filter>gwen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\code\HandleArrayMgr.h">
+      <Filter>code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\code\AutoGrowBuffer.h">
+      <Filter>code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\script\bindings\bindings.h">
+      <Filter>script\bindings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\code\BufferWriteContext.h">
+      <Filter>code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\code\BufferReadContext.h">
+      <Filter>code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\script\utils.h">
+      <Filter>script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\pres\PresentationValue.h">
+      <Filter>pres</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\pres\GroupFactoryInterface.h">
+      <Filter>pres</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\pres\PresentationGroupInterface.h">
+      <Filter>pres</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\pres\anim2d\Animation2D.h">
+      <Filter>pres\anim2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\pres\anim2d\AnimationFactory2D.h">
+      <Filter>pres\anim2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\pres\anim2d\AnimationStack2D.h">
+      <Filter>pres\anim2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\pres\anim2d\ColorAnimation2D.h">
+      <Filter>pres\anim2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\pres\anim2d\ColorAnimationStack2D.h">
+      <Filter>pres\anim2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\pres\anim2d\fwd.h">
+      <Filter>pres\anim2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\pres\anim2d\PositionAnimation2D.h">
+      <Filter>pres\anim2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\pres\anim2d\RotationAnimation2D.h">
+      <Filter>pres\anim2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\pres\anim2d\ScaleAnimation2D.h">
+      <Filter>pres\anim2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\pres\anim2d\StackBase.h">
+      <Filter>pres\anim2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\pres\anim2d\TranslationAnimation2D.h">
+      <Filter>pres\anim2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\pres\anim2d\TweenTypes.h">
+      <Filter>pres\anim2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\xact\RuntimeParameterControl.h">
+      <Filter>audio\xact</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\xact\RPCCurve.h">
+      <Filter>audio\xact</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\pres\TriggerBase.h">
+      <Filter>pres</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\pres\TriggerBase.h">
+      <Filter>pres</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\pres\TriggerInfo.h">
+      <Filter>pres</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\pres\DataTags.h">
+      <Filter>pres</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\code\bufferutils_be_get.h">
+      <Filter>code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\code\bufferutils_be_put.h">
+      <Filter>code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\code\bufferutils_get.h">
+      <Filter>code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\code\bufferutils_put.h">
+      <Filter>code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\code\fwd.h">
+      <Filter>code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\code\FourCC.h">
+      <Filter>code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\pres\CallbackTrigger.h">
+      <Filter>pres</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\pres\CallbackTriggerInterface.h">
+      <Filter>pres</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\pres\anim2d\Sequence.h">
+      <Filter>pres\anim2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\undo\UndoCommandGroup.h">
+      <Filter>undo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\pres\anim2d\Transform.h">
+      <Filter>pres\anim2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\xact\fwd.h">
+      <Filter>audio\xact</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\audio\player\platform_fwd.h">
+      <Filter>audio\player\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\player\fwd.h">
+      <Filter>audio\player\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\player\MusicPlayerCallbackInterface.h">
+      <Filter>audio\player\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\xact\utils.h">
+      <Filter>audio\xact</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\gwen\ColorButton.h">
+      <Filter>gwen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\gwen\utils.h">
+      <Filter>gwen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\audio\player\SoundCueSettings.h">
+      <Filter>audio\player\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\gwen\GroupedButtonList.h">
+      <Filter>gwen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\fileformat\cursor\CursorData.h">
+      <Filter>fileformat\cursor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\fileformat\cursor\CursorDirectory.h">
+      <Filter>fileformat\cursor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\fileformat\cursor\fwd.h">
+      <Filter>fileformat\cursor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\script\fwd.h">
+      <Filter>script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\script\ScriptValue.h">
+      <Filter>script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\code\HandleArrayMgr_utils.h">
+      <Filter>code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\input\ControllerType.h">
+      <Filter>input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\gwen\BusyBar.h">
+      <Filter>gwen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\gwen\EqualSizes.h">
+      <Filter>gwen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\gwen\ColorRGBAPicker.h">
+      <Filter>gwen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\gwen\ListBoxEx.h">
+      <Filter>gwen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\input\SDLJoypadController.h">
+      <Filter>input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\input\SDLKeyboardController.h">
+      <Filter>input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\input\SDLMouseController.h">
+      <Filter>input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\gwen\AdaptiveSlider.h">
+      <Filter>gwen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\gwen\PanelBase.h">
+      <Filter>gwen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\gwen\VectorControl.h">
+      <Filter>gwen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\code\enum.h">
+      <Filter>code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\gwen\GroupedList.h">
+      <Filter>gwen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\score\Score.h">
+      <Filter>score</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\stats\stats.h">
+      <Filter>stats</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\script\wrappers\VisualBoyWrapper.h">
+      <Filter>script\wrappers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\shared\src\tt\xml\XmlDocument.cpp">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\xml\XmlFileReader.cpp">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\xml\XmlFileWriter.cpp">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\xml\XmlNode.cpp">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\xml\XmlReader.cpp">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\xml\XmlStreamReader.cpp">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\xml\util\check_xml.cpp">
+      <Filter>xml\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\xml\util\parse_xml.cpp">
+      <Filter>xml\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\xml\util\store_xml.cpp">
+      <Filter>xml\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\doc\xap\XapReader.cpp">
+      <Filter>doc\xap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\doc\xap\XapWriter.cpp">
+      <Filter>doc\xap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\doc\ini\IniDocument.cpp">
+      <Filter>doc\ini</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\doc\str\StringDocument.cpp">
+      <Filter>doc\str</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\version\Version.cpp">
+      <Filter>version</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\streams\BIFStream.cpp">
+      <Filter>streams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\streams\BIOStreamBase.cpp">
+      <Filter>streams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\streams\BIStream.cpp">
+      <Filter>streams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\streams\BOFStream.cpp">
+      <Filter>streams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\streams\BOStream.cpp">
+      <Filter>streams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\profiler\MemoryProfiler.cpp">
+      <Filter>profiler\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\profiler\PerformanceProfiler.cpp">
+      <Filter>profiler\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\profiler\SceneObjectProfiler.cpp">
+      <Filter>profiler\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\profiler\TextureProfiler.cpp">
+      <Filter>profiler\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\args\CmdLine.cpp">
+      <Filter>args\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\args\CmdLineWin.cpp">
+      <Filter>args\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\loc\LocStr.cpp">
+      <Filter>loc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\loc\LocStringFormatter.cpp">
+      <Filter>loc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\loc\LocStrRegistry.cpp">
+      <Filter>loc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\input\Accelerometer.cpp">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\input\Button.cpp">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\input\KeyBindings.cpp">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\input\KeyList.cpp">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\input\Pointer.cpp">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\input\Stick.cpp">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\input\Trigger.cpp">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\cfg\ConfigHive.cpp">
+      <Filter>cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\com\ComponentBase.cpp">
+      <Filter>com</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\com\ComponentIterators.cpp">
+      <Filter>com</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\com\ComponentManager.cpp">
+      <Filter>com</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\com\Object.cpp">
+      <Filter>com</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\com\ObjectComponent.cpp">
+      <Filter>com</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\code\Buffer.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\code\ErrorStatus.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\code\SimpleStateMachine.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\code\SrcPos.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\code\SrcPosNested.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\code\State.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\code\StateMachine.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\chibi\OpenALMixer.cpp">
+      <Filter>audio\chibi\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\chibi\StreamMixer.cpp">
+      <Filter>audio\chibi\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\chibi\TTFileIO.cpp">
+      <Filter>audio\chibi\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\chibi\XMCompressor.cpp">
+      <Filter>audio\chibi\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\chibi\XMLoader.cpp">
+      <Filter>audio\chibi\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\chibi\XMPlayer.cpp">
+      <Filter>audio\chibi\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\chibi\XMPlayerStaticData.cpp">
+      <Filter>audio\chibi\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\chibi\XMSoftwareMixer.cpp">
+      <Filter>audio\chibi\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\chibi\XMSong.cpp">
+      <Filter>audio\chibi\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\chibi\XMUtil.cpp">
+      <Filter>audio\chibi\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\audio\chibi\DXMixer.cpp">
+      <Filter>audio\chibi\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\xact\AudioTT.cpp">
+      <Filter>audio\xact</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\xact\Category.cpp">
+      <Filter>audio\xact</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\xact\Cue.cpp">
+      <Filter>audio\xact</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\xact\CueInstance.cpp">
+      <Filter>audio\xact</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\xact\PitchEvent.cpp">
+      <Filter>audio\xact</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\xact\PitchEventInstance.cpp">
+      <Filter>audio\xact</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\xact\PlayWaveEvent.cpp">
+      <Filter>audio\xact</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\xact\PlayWaveEventInstance.cpp">
+      <Filter>audio\xact</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\xact\Sound.cpp">
+      <Filter>audio\xact</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\xact\SoundBank.cpp">
+      <Filter>audio\xact</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\xact\SoundInstance.cpp">
+      <Filter>audio\xact</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\xact\StopEvent.cpp">
+      <Filter>audio\xact</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\xact\StopEventInstance.cpp">
+      <Filter>audio\xact</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\xact\Track.cpp">
+      <Filter>audio\xact</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\xact\TrackInstance.cpp">
+      <Filter>audio\xact</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\xact\VolumeEvent.cpp">
+      <Filter>audio\xact</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\xact\VolumeEventInstance.cpp">
+      <Filter>audio\xact</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\xact\Wave.cpp">
+      <Filter>audio\xact</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\xact\WaveBank.cpp">
+      <Filter>audio\xact</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\xact\WaveInstance.cpp">
+      <Filter>audio\xact</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\codec\SampleConverter.cpp">
+      <Filter>audio\codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\codec\wav\WavDecoder.cpp">
+      <Filter>audio\codec\wav</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\codec\wav\WavEncoder.cpp">
+      <Filter>audio\codec\wav</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\codec\wav\WavFormatDecoderImaAdpcm.cpp">
+      <Filter>audio\codec\wav</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\codec\wav\WavFormatDecoderPcm.cpp">
+      <Filter>audio\codec\wav</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\codec\ogg\OggDecoder.cpp">
+      <Filter>audio\codec\ogg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\codec\ogg\OggEncoder.cpp">
+      <Filter>audio\codec\ogg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\codec\ttadpcm\ImaAdpcm.cpp">
+      <Filter>audio\codec\ttadpcm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\codec\ttadpcm\TTAdpcmDecoder.cpp">
+      <Filter>audio\codec\ttadpcm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\codec\ttadpcm\TTAdpcmEncoder.cpp">
+      <Filter>audio\codec\ttadpcm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\codec\caf\CafDecoder.cpp">
+      <Filter>audio\codec\caf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\mixer\mixer.cpp">
+      <Filter>audio\mixer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\audio\player\WMPPlayer.cpp">
+      <Filter>audio\player\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\audio\player\Xact3Cue.cpp">
+      <Filter>audio\player\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\audio\player\Xact3Helpers.cpp">
+      <Filter>audio\player\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\audio\player\Xact3Player.cpp">
+      <Filter>audio\player\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\player\OggPlayer.cpp">
+      <Filter>audio\player\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\player\SoundPlayer.cpp">
+      <Filter>audio\player\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\player\TTIMPlayer.cpp">
+      <Filter>audio\player\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\player\TTXactCue.cpp">
+      <Filter>audio\player\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\player\TTXactPlayer.cpp">
+      <Filter>audio\player\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\player\XMMusicPlayer.cpp">
+      <Filter>audio\player\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\asset\NameHashFunc.cpp">
+      <Filter>asset</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\app\Application.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\app\AppOrientation.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\app\AppSystems.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\app\PlatformApi.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\app\StartupState.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\pch\pch.cpp">
+      <Filter>pch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\script\ScriptEngine.cpp">
+      <Filter>script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\script\VirtualMachine.cpp">
+      <Filter>script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\pres\CueToTag.cpp">
+      <Filter>pres</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\pres\FrameAnimation.cpp">
+      <Filter>pres</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\pres\FrameAnimationStack.cpp">
+      <Filter>pres</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\pres\ParticleSpawner.cpp">
+      <Filter>pres</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\pres\ParticlesStack.cpp">
+      <Filter>pres</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\pres\PresentationCache.cpp">
+      <Filter>pres</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\pres\PresentationLoader.cpp">
+      <Filter>pres</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\pres\PresentationMgr.cpp">
+      <Filter>pres</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\pres\PresentationObject.cpp">
+      <Filter>pres</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\pres\PresentationQuad.cpp">
+      <Filter>pres</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\pres\SpriteStrip.cpp">
+      <Filter>pres</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\pres\Timer.cpp">
+      <Filter>pres</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\pres\TimerStack.cpp">
+      <Filter>pres</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\pres\TriggerStack.cpp">
+      <Filter>pres</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\app\Platform.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\input\Touch.cpp">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\doc\json\json_util.cpp">
+      <Filter>doc\json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\cfg\ConfigRegistry.cpp">
+      <Filter>cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\app\AppSettings.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\str\c_str.cpp">
+      <Filter>str</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\str\common.cpp">
+      <Filter>str</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\str\format.cpp">
+      <Filter>str</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\str\manip.cpp">
+      <Filter>str</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\str\parse.cpp">
+      <Filter>str</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\str\str.cpp">
+      <Filter>str</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\str\StringFormatter.cpp">
+      <Filter>str</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\str\toStr.cpp">
+      <Filter>str</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\undo\UndoCommand.cpp">
+      <Filter>undo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\undo\UndoStack.cpp">
+      <Filter>undo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\code\Handle.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\gwen\RootCanvasWrapper.cpp">
+      <Filter>gwen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\gwen\GwenMgr.cpp">
+      <Filter>gwen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\gwen\ButtonList.cpp">
+      <Filter>gwen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\code\AutoGrowBuffer.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\script\bindings\bindings.cpp">
+      <Filter>script\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\script\utils.cpp">
+      <Filter>script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\pres\PresentationValue.cpp">
+      <Filter>pres</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\pres\anim2d\Animation2D.cpp">
+      <Filter>pres\anim2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\pres\anim2d\AnimationFactory2D.cpp">
+      <Filter>pres\anim2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\pres\anim2d\AnimationStack2D.cpp">
+      <Filter>pres\anim2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\pres\anim2d\ColorAnimation2D.cpp">
+      <Filter>pres\anim2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\pres\anim2d\ColorAnimationStack2D.cpp">
+      <Filter>pres\anim2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\pres\anim2d\PositionAnimation2D.cpp">
+      <Filter>pres\anim2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\pres\anim2d\RotationAnimation2D.cpp">
+      <Filter>pres\anim2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\pres\anim2d\ScaleAnimation2D.cpp">
+      <Filter>pres\anim2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\pres\anim2d\TranslationAnimation2D.cpp">
+      <Filter>pres\anim2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\pres\anim2d\TweenTypes.cpp">
+      <Filter>pres\anim2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\xact\RuntimeParameterControl.cpp">
+      <Filter>audio\xact</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\xact\RPCCurve.cpp">
+      <Filter>audio\xact</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\pres\TriggerBase.cpp">
+      <Filter>pres</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\pres\TriggerBase.cpp">
+      <Filter>pres</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\pres\TriggerInfo.cpp">
+      <Filter>pres</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\pres\DataTags.cpp">
+      <Filter>pres</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\pres\CallbackTrigger.cpp">
+      <Filter>pres</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\undo\UndoCommandGroup.cpp">
+      <Filter>undo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\xact\utils_xact.cpp">
+      <Filter>audio\xact</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\audio\player\SoundCueSettings.cpp">
+      <Filter>audio\player\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\gwen\GroupedButtonList.cpp">
+      <Filter>gwen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\fileformat\cursor\CursorData.cpp">
+      <Filter>fileformat\cursor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\fileformat\cursor\CursorDirectory.cpp">
+      <Filter>fileformat\cursor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\script\ScriptValue.cpp">
+      <Filter>script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\input\ControllerType.cpp">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\gwen\BusyBar.cpp">
+      <Filter>gwen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\gwen\ColorRGBAPicker.cpp">
+      <Filter>gwen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\input\SDLJoypadController.cpp">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\input\SDLKeyboardController.cpp">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\input\SDLMouseController.cpp">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\gwen\PanelBase.cpp">
+      <Filter>gwen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\gwen\AdaptiveSlider.cpp">
+      <Filter>gwen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\gwen\VectorControl.cpp">
+      <Filter>gwen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\gwen\GroupedList.cpp">
+      <Filter>gwen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\stats\stats.cpp">
+      <Filter>stats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\script\wrappers\VisualBoyWrapper.cpp">
+      <Filter>script\wrappers</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\shared\inc\tt\script\VirtualMachineMethods.inc">
+      <Filter>script</Filter>
+    </None>
+    <None Include="..\shared\inc\tt\pres\PresentationGroup.inl">
+      <Filter>pres</Filter>
+    </None>
+    <None Include="..\shared\inc\tt\code\HandleMgr.inl">
+      <Filter>code</Filter>
+    </None>
+    <None Include="..\shared\inc\tt\code\HandleArrayMgr.inl">
+      <Filter>code</Filter>
+    </None>
+    <None Include="..\shared\inc\tt\pres\anim2d\StackBase.inl">
+      <Filter>pres\anim2d</Filter>
+    </None>
+    <None Include="..\shared\inc\tt\pres\anim2d\Sequence.inl">
+      <Filter>pres\anim2d</Filter>
+    </None>
+  </ItemGroup>
+</Project>

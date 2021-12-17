@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		permanent="true" fixed_timestep="0.016">
+	
+	<include file="presentation/menu/include"/>
+	
+	<startvalues>
+		<translation z="0.39"/>
+	</startvalues>
+	
+	<frameanimstack>
+		<frameanim frame_width="5" frame_height="2" image="black" image_namespace="textures.backgrounds" fps="60" looping="false" quad_width="8" quad_height="2">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<frameanimstack>
+		<frameanim texture_anim_v="0.17" flip_horizontal="false" flip_vertical="true" frame_width="3" frame_height="1" blendmode="add" image="static_heavy" filter_magnify="point" image_namespace="textures.hud" fps="60" looping="false" quad_width="7.2" quad_height="1.2">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+			<translation x="0" y="0"/>
+		</frameanim>
+	</frameanimstack>
+
+	<frameanimstack>
+		<frameanim texture_anim_v="-0.37" flip_horizontal="true" flip_vertical="true" frame_width="4" frame_height="1" blendmode="add" image="static_heavy" filter_magnify="point" image_namespace="textures.hud" fps="60" looping="false" quad_width="7.2" quad_height="1.2">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+			<translation x="-0.5" y="0"/>
+		</frameanim>
+	</frameanimstack>
+
+	<anim2dstack>
+		<translation duration="0.0317834" preset="pingpong" timing="linear">
+			<begin x="-1.3"/>
+			<end x="1.3"/>
+		</translation>
+		<translation duration="0.0217" preset="pingpong" timing="linear">
+			<begin x="-1.3"/>
+			<end x="1.3"/>
+		</translation>
+		<translation duration="1.2622" preset="oscillating">
+			<begin y="-0.025"/>
+			<end y="0.025"/>
+		</translation>
+		<translation duration="0.7522" preset="oscillating">
+			<begin y="-0.025"/>
+			<end y="0.025"/>
+		</translation>
+		<translation duration="4.157367" preset="oscillating">
+			<begin y="-0.05"/>
+			<end y="0.05"/>
+		</translation>
+	</anim2dstack>
+	
+	<trigger type="global_audio" data="intro_noise"/>
+
+</presentation>

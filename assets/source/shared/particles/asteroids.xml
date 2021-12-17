@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<ParticleTrigger xmlns="http://intranet.twotribes.com/schemas/common/particletrigger.xsd" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/particletrigger.xsd http://intranet.twotribes.com/schemas/common/particletrigger.xsd">
+	<ParticleCulling enabled="true"/>
+	<ParticleEmitter max_particles="11" x="0" y="1" delay="0" space="world" ignore_fog="true">
+		<RenderGroup value="300"/>
+		<Texture filename="particles/asteroidbelt.png"/>
+		<FrameAnimations framesize="256">
+			<Animation start="0" end="3" fps="0" type="once"/>
+		</FrameAnimations>
+		<EmissionCircle radius="15" innerradius="1"/>
+		<ExternalForce min_x="0" max_x="0" min_y="0" max_y="0"/>
+		<BlendMode type="blend"/>
+		<PreGeneration time="0" step="0"/>
+		<Emission particles="0.25" type="continuous" lifetime="0"/>
+		<ParticleOrientation type="rotation"/>
+		<Velocity min_x="-0.2" max_x="0.2" min_y="-0.2" max_y="0.2"/>
+		<VelocityFriction min="0" max="0"/>
+		<ParticleLife min="3950" max="4050"/>
+		<Size min_start="0.75" max_start="1.25"/>
+		<Weight min_start="1" max_start="1" min_end="1" max_end="1"/>
+		<Rotation min_start="-180" max_start="180" min_speed="-20" max_speed="20"/>
+		<RotationForce min="0" max="0"/>
+		<RotationFriction min="0" max="0"/>
+		<Frame min_start="0" max_start="3"/>
+		<MinStartColor r="118" g="85" b="51" a="255"/>
+		<MaxStartColor r="167" g="149" b="132" a="255"/>
+		<MinEndColor r="145" g="127" b="114" a="255"/>
+		<MaxEndColor r="109" g="59" b="19" a="255"/>
+		<Fade in="3" out="3" type="time"/>
+		<ExternalImpulseWeight min="0" max="0"/>
+	</ParticleEmitter>
+	<ParticleEmitter max_particles="1" x="0" y="1" delay="0" space="world" ignore_fog="true">
+		<RenderGroup value="300"/>
+		<Texture filename="particles/asteroid_big_01.png"/>
+		<FrameAnimations framesize="0">
+			<Animation start="0" end="15" fps="0" type="once"/>
+		</FrameAnimations>
+		<EmissionCircle radius="15" innerradius="1"/>
+		<ExternalForce min_x="0" max_x="0" min_y="0" max_y="0"/>
+		<BlendMode type="blend"/>
+		<PreGeneration time="5" step="0.5"/>
+		<Emission particles="0.01" type="continuous" lifetime="0"/>
+		<ParticleOrientation type="rotation"/>
+		<Velocity min_x="-0.2" max_x="0.2" min_y="-0.2" max_y="0.2"/>
+		<VelocityFriction min="0" max="0"/>
+		<ParticleLife min="4000" max="4000"/>
+		<Size min_start="1.5" max_start="2.5"/>
+		<Weight min_start="1" max_start="1" min_end="1" max_end="1"/>
+		<Rotation min_start="-180" max_start="180" min_speed="-20" max_speed="20"/>
+		<RotationForce min="0" max="0"/>
+		<RotationFriction min="0" max="0"/>
+		<Frame min_start="0" max_start="15"/>
+		<MinStartColor r="112" g="76" b="41" a="255"/>
+		<MaxStartColor r="127" g="113" b="97" a="255"/>
+		<MinEndColor r="131" g="111" b="97" a="255"/>
+		<MaxEndColor r="109" g="73" b="37" a="255"/>
+		<Fade in="0" out="0" type="percentage"/>
+		<ExternalImpulseWeight min="0" max="0"/>
+	</ParticleEmitter>
+	<ParticleEmitter max_particles="1" x="0" y="1" delay="0" space="world" ignore_fog="true">
+		<RenderGroup value="300"/>
+		<Texture filename="particles/asteroid_big_02.png"/>
+		<FrameAnimations framesize="0">
+			<Animation start="0" end="15" fps="0" type="once"/>
+		</FrameAnimations>
+		<EmissionCircle radius="15" innerradius="1"/>
+		<ExternalForce min_x="0" max_x="0" min_y="0" max_y="0"/>
+		<BlendMode type="blend"/>
+		<PreGeneration time="5" step="0.5"/>
+		<Emission particles="0.01" type="continuous" lifetime="0"/>
+		<ParticleOrientation type="rotation"/>
+		<Velocity min_x="-0.2" max_x="0.2" min_y="-0.2" max_y="0.2"/>
+		<VelocityFriction min="0" max="0"/>
+		<ParticleLife min="4000" max="4000"/>
+		<Size min_start="1.5" max_start="2.5"/>
+		<Weight min_start="1" max_start="1" min_end="1" max_end="1"/>
+		<Rotation min_start="-180" max_start="180" min_speed="-20" max_speed="20"/>
+		<RotationForce min="0" max="0"/>
+		<RotationFriction min="0" max="0"/>
+		<Frame min_start="0" max_start="15"/>
+		<MinStartColor r="94" g="61" b="27" a="255"/>
+		<MaxStartColor r="131" g="119" b="107" a="255"/>
+		<MinEndColor r="140" g="118" b="106" a="255"/>
+		<MaxEndColor r="116" g="84" b="20" a="255"/>
+		<Fade in="0" out="0" type="percentage"/>
+		<ExternalImpulseWeight min="0" max="0"/>
+	</ParticleEmitter>
+	<ParticleEmitter max_particles="1" x="0" y="1" delay="0" space="world" ignore_fog="true">
+		<RenderGroup value="300"/>
+		<Texture filename="particles/asteroid_big_03.png"/>
+		<FrameAnimations framesize="0">
+			<Animation start="0" end="15" fps="0" type="once"/>
+		</FrameAnimations>
+		<EmissionCircle radius="15" innerradius="1"/>
+		<ExternalForce min_x="0" max_x="0" min_y="0" max_y="0"/>
+		<BlendMode type="blend"/>
+		<PreGeneration time="5" step="0.5"/>
+		<Emission particles="0.01" type="continuous" lifetime="0"/>
+		<ParticleOrientation type="rotation"/>
+		<Velocity min_x="-0.2" max_x="0.2" min_y="-0.2" max_y="0.2"/>
+		<VelocityFriction min="0" max="0"/>
+		<ParticleLife min="4000" max="4000"/>
+		<Size min_start="1.5" max_start="2.5"/>
+		<Weight min_start="1" max_start="1" min_end="1" max_end="1"/>
+		<Rotation min_start="-180" max_start="180" min_speed="-20" max_speed="20"/>
+		<RotationForce min="0" max="0"/>
+		<RotationFriction min="0" max="0"/>
+		<Frame min_start="0" max_start="15"/>
+		<MinStartColor r="109" g="65" b="16" a="255"/>
+		<MaxStartColor r="134" g="123" b="111" a="255"/>
+		<MinEndColor r="143" g="125" b="114" a="255"/>
+		<MaxEndColor r="107" g="70" b="32" a="255"/>
+		<Fade in="0" out="0" type="percentage"/>
+		<ExternalImpulseWeight min="0" max="0"/>
+	</ParticleEmitter>
+	<ParticleEmitter max_particles="1" x="0" y="1" delay="0" space="world" ignore_fog="true">
+		<RenderGroup value="300"/>
+		<Texture filename="particles/asteroid_big_04.png"/>
+		<FrameAnimations framesize="0">
+			<Animation start="0" end="15" fps="0" type="once"/>
+		</FrameAnimations>
+		<EmissionCircle radius="15" innerradius="1"/>
+		<ExternalForce min_x="0" max_x="0" min_y="0" max_y="0"/>
+		<BlendMode type="blend"/>
+		<PreGeneration time="100" step="0.5"/>
+		<Emission particles="0.01" type="continuous" lifetime="0"/>
+		<ParticleOrientation type="rotation"/>
+		<Velocity min_x="-0.2" max_x="0.2" min_y="-0.2" max_y="0.2"/>
+		<VelocityFriction min="0" max="0"/>
+		<ParticleLife min="4000" max="4000"/>
+		<Size min_start="1.5" max_start="2.5"/>
+		<Weight min_start="1" max_start="1" min_end="1" max_end="1"/>
+		<Rotation min_start="-180" max_start="180" min_speed="-20" max_speed="20"/>
+		<RotationForce min="0" max="0"/>
+		<RotationFriction min="0" max="0"/>
+		<Frame min_start="0" max_start="15"/>
+		<MinStartColor r="87" g="59" b="21" a="255"/>
+		<MaxStartColor r="123" g="108" b="93" a="255"/>
+		<MinEndColor r="134" g="120" b="110" a="255"/>
+		<MaxEndColor r="114" g="73" b="33" a="255"/>
+		<Fade in="0" out="0" type="percentage"/>
+		<ExternalImpulseWeight min="0" max="0"/>
+	</ParticleEmitter>
+	<ParticleEmitter max_particles="1" x="0" y="1" delay="0" space="world" ignore_fog="true">
+		<RenderGroup value="300"/>
+		<Texture filename="particles/asteroid_medium_01.png"/>
+		<FrameAnimations framesize="0">
+			<Animation start="0" end="15" fps="0" type="once"/>
+		</FrameAnimations>
+		<EmissionCircle radius="15" innerradius="1"/>
+		<ExternalForce min_x="0" max_x="0" min_y="0" max_y="0"/>
+		<BlendMode type="blend"/>
+		<PreGeneration time="100" step="0.5"/>
+		<Emission particles="0.01" type="continuous" lifetime="0"/>
+		<ParticleOrientation type="rotation"/>
+		<Velocity min_x="-0.2" max_x="0.2" min_y="-0.2" max_y="0.2"/>
+		<VelocityFriction min="0" max="0"/>
+		<ParticleLife min="4000" max="4000"/>
+		<Size min_start="1.5" max_start="2.5"/>
+		<Weight min_start="1" max_start="1" min_end="1" max_end="1"/>
+		<Rotation min_start="-180" max_start="180" min_speed="-20" max_speed="20"/>
+		<RotationForce min="0" max="0"/>
+		<RotationFriction min="0" max="0"/>
+		<Frame min_start="0" max_start="15"/>
+		<MinStartColor r="103" g="57" b="16" a="255"/>
+		<MaxStartColor r="129" g="116" b="101" a="255"/>
+		<MinEndColor r="132" g="109" b="94" a="255"/>
+		<MaxEndColor r="91" g="69" b="34" a="255"/>
+		<Fade in="0" out="0" type="percentage"/>
+		<ExternalImpulseWeight min="0" max="0"/>
+	</ParticleEmitter>
+	<ParticleEmitter max_particles="1" x="0" y="1" delay="0" space="world" ignore_fog="true">
+		<RenderGroup value="300"/>
+		<Texture filename="particles/asteroid_medium_02.png"/>
+		<FrameAnimations framesize="0">
+			<Animation start="0" end="15" fps="0" type="once"/>
+		</FrameAnimations>
+		<EmissionCircle radius="15" innerradius="1"/>
+		<ExternalForce min_x="0" max_x="0" min_y="0" max_y="0"/>
+		<BlendMode type="blend"/>
+		<PreGeneration time="100" step="0.5"/>
+		<Emission particles="0.01" type="continuous" lifetime="0"/>
+		<ParticleOrientation type="rotation"/>
+		<Velocity min_x="-0.2" max_x="0.2" min_y="-0.2" max_y="0.2"/>
+		<VelocityFriction min="0" max="0"/>
+		<ParticleLife min="4000" max="4000"/>
+		<Size min_start="1.5" max_start="2.5"/>
+		<Weight min_start="1" max_start="1" min_end="1" max_end="1"/>
+		<Rotation min_start="-180" max_start="180" min_speed="-20" max_speed="20"/>
+		<RotationForce min="0" max="0"/>
+		<RotationFriction min="0" max="0"/>
+		<Frame min_start="0" max_start="15"/>
+		<MinStartColor r="98" g="61" b="25" a="255"/>
+		<MaxStartColor r="111" g="101" b="90" a="255"/>
+		<MinEndColor r="116" g="99" b="88" a="255"/>
+		<MaxEndColor r="94" g="61" b="14" a="255"/>
+		<Fade in="0" out="0" type="percentage"/>
+		<ExternalImpulseWeight min="0" max="0"/>
+	</ParticleEmitter>
+	<ParticleEmitter max_particles="1" x="0" y="1" delay="0" space="world" ignore_fog="true">
+		<RenderGroup value="300"/>
+		<Texture filename="particles/asteroid_medium_03.png"/>
+		<FrameAnimations framesize="0">
+			<Animation start="0" end="15" fps="0" type="once"/>
+		</FrameAnimations>
+		<EmissionCircle radius="15" innerradius="1"/>
+		<ExternalForce min_x="0" max_x="0" min_y="0" max_y="0"/>
+		<BlendMode type="blend"/>
+		<PreGeneration time="100" step="0.5"/>
+		<Emission particles="0.01" type="continuous" lifetime="0"/>
+		<ParticleOrientation type="rotation"/>
+		<Velocity min_x="-0.2" max_x="0.2" min_y="-0.2" max_y="0.2"/>
+		<VelocityFriction min="0" max="0"/>
+		<ParticleLife min="4000" max="4000"/>
+		<Size min_start="1.5" max_start="2.5"/>
+		<Weight min_start="1" max_start="1" min_end="1" max_end="1"/>
+		<Rotation min_start="-180" max_start="180" min_speed="-20" max_speed="20"/>
+		<RotationForce min="0" max="0"/>
+		<RotationFriction min="0" max="0"/>
+		<Frame min_start="0" max_start="15"/>
+		<MinStartColor r="109" g="67" b="16" a="255"/>
+		<MaxStartColor r="125" g="113" b="99" a="255"/>
+		<MinEndColor r="120" g="100" b="86" a="255"/>
+		<MaxEndColor r="114" g="83" b="20" a="255"/>
+		<Fade in="0" out="0" type="percentage"/>
+		<ExternalImpulseWeight min="0" max="0"/>
+	</ParticleEmitter>
+	<ParticleEmitter max_particles="11" x="0" y="1" delay="0" space="world" ignore_fog="true">
+		<RenderGroup value="300"/>
+		<Texture filename="particles/asteroidbelt.png"/>
+		<FrameAnimations framesize="256">
+			<Animation start="0" end="3" fps="0" type="once"/>
+		</FrameAnimations>
+		<EmissionCircle radius="15" innerradius="1"/>
+		<ExternalForce min_x="0" max_x="0" min_y="0" max_y="0"/>
+		<BlendMode type="blend"/>
+		<PreGeneration time="100" step="0.5"/>
+		<Emission particles="0.25" type="continuous" lifetime="0"/>
+		<ParticleOrientation type="rotation"/>
+		<Velocity min_x="-0.2" max_x="0.2" min_y="-0.2" max_y="0.2"/>
+		<VelocityFriction min="0" max="0"/>
+		<ParticleLife min="4000" max="4000"/>
+		<Size min_start="1.5" max_start="2.5"/>
+		<Weight min_start="1" max_start="1" min_end="1" max_end="1"/>
+		<Rotation min_start="-180" max_start="180" min_speed="-20" max_speed="20"/>
+		<RotationForce min="0" max="0"/>
+		<RotationFriction min="0" max="0"/>
+		<Frame min_start="0" max_start="3"/>
+		<MinStartColor r="118" g="79" b="17" a="255"/>
+		<MaxStartColor r="103" g="92" b="80" a="255"/>
+		<MinEndColor r="109" g="96" b="87" a="255"/>
+		<MaxEndColor r="87" g="59" b="30" a="255"/>
+		<Fade in="0" out="0" type="percentage"/>
+		<ExternalImpulseWeight min="0" max="0"/>
+	</ParticleEmitter>
+</ParticleTrigger>

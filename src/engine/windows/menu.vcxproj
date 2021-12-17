@@ -1,0 +1,391 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="WIN_Dev|Win32">
+      <Configuration>WIN_Dev</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="WIN_Dev|x64">
+      <Configuration>WIN_Dev</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="WIN_Final|Win32">
+      <Configuration>WIN_Final</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="WIN_Final|x64">
+      <Configuration>WIN_Final</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="WIN_Test|Win32">
+      <Configuration>WIN_Test</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="WIN_Test|x64">
+      <Configuration>WIN_Test</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4A7CF136-B73B-4DA8-9A30-D516E567C935}</ProjectGuid>
+    <RootNamespace>menu</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>tt_menu</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">$(ProjectDir)lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">$(ProjectDir)obj\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'">$(ProjectDir)obj\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">$(ProjectDir)lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">$(ProjectDir)obj\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'">$(ProjectDir)obj\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">$(ProjectDir)lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">$(ProjectDir)obj\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'">$(ProjectDir)obj\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'">
+    <OutDir>$(ProjectDir)lib\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'">
+    <OutDir>$(ProjectDir)lib\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'">
+    <OutDir>$(ProjectDir)lib\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>inc;..\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;TT_ASSERT_ON;TT_PLATFORM_WIN;TT_BUILD_DEV;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>tt\pch\pch.h</PrecompiledHeaderFile>
+      <ProgramDataBaseFileName>$(TargetDir)\$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <ForcedIncludeFiles>tt\pch\pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>inc;..\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;TT_ASSERT_ON;TT_PLATFORM_WIN;TT_BUILD_DEV;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>tt\pch\pch.h</PrecompiledHeaderFile>
+      <ProgramDataBaseFileName>$(TargetDir)\$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ForcedIncludeFiles>tt\pch\pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">
+    <ClCompile>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>inc;..\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;TT_ASSERT_ON;TT_PLATFORM_WIN;TT_BUILD_TEST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>tt\pch\pch.h</PrecompiledHeaderFile>
+      <ProgramDataBaseFileName>$(TargetDir)\$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ForcedIncludeFiles>tt\pch\pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'">
+    <ClCompile>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>inc;..\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;TT_ASSERT_ON;TT_PLATFORM_WIN;TT_BUILD_TEST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>tt\pch\pch.h</PrecompiledHeaderFile>
+      <ProgramDataBaseFileName>$(TargetDir)\$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ForcedIncludeFiles>tt\pch\pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">
+    <ClCompile>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>inc;..\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;TT_PLATFORM_WIN;TT_BUILD_FINAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>tt\pch\pch.h</PrecompiledHeaderFile>
+      <ProgramDataBaseFileName>$(TargetDir)\$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ForcedIncludeFiles>tt\pch\pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'">
+    <ClCompile>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>inc;..\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;TT_PLATFORM_WIN;TT_BUILD_FINAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>tt\pch\pch.h</PrecompiledHeaderFile>
+      <ProgramDataBaseFileName>$(TargetDir)\$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ForcedIncludeFiles>tt\pch\pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\shared\src\tt\menu\MenuAction.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\MenuElementAction.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\MenuFactory.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\MenuKeyboard.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\MenuLayout.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\MenuLayoutManager.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\MenuSkin.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\MenuSoundPlayer.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\MenuStringFormatter.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\MenuSystem.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\MenuTemplate.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\MenuTransition.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\MenuTreeNode.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\MenuUtils.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\elements\BouncePositionAnimation.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\elements\BusyBar.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\elements\Button.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\elements\ColourItem.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\elements\Container.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\elements\Decorator.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\elements\DefaultColors.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\elements\DynamicLabel.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\elements\ElementLayout.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\elements\FATImage.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\elements\FileBlocksBar.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\elements\FileItem.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\elements\FileList.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\elements\Image.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\elements\ImageEditor.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\elements\Label.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\elements\Line.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\elements\LinearTranslationAnimation.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\elements\Marker.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\elements\Menu.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\elements\MenuElement.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\elements\MultiPageLabel.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\elements\ProgressBar.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\elements\ScrollableList.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\elements\Scrollbar.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\elements\SelectionCursor.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\elements\SelectionCursorType.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\elements\ShowOneChild.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\elements\ShowOneValueChild.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\elements\ShowOneValueText.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\elements\SoftwareKeyboard.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\elements\SunkenBorderDecorator.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\elements\Table.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\elements\ValueDecorator.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\elements\Window.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\actionlisteners\BlockingMenuListener.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\actionlisteners\EditorCommandListener.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\actionlisteners\MenuCommandListener.cpp" />
+    <ClCompile Include="..\shared\src\tt\menu\actionlisteners\MenuElementListener.cpp" />
+    <ClCompile Include="src\tt\pch\pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\shared\inc\tt\menu\MenuAction.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\MenuActionListener.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\MenuDebug.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\MenuElementAction.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\MenuFactory.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\MenuKeyboard.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\MenuLayout.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\MenuLayoutManager.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\MenuSkin.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\MenuSound.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\MenuSoundPlayer.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\MenuStringFormatter.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\MenuSystem.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\MenuTemplate.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\MenuTransition.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\MenuTreeNode.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\MenuUtils.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\elements\BouncePositionAnimation.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\elements\BusyBar.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\elements\Button.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\elements\ColourItem.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\elements\Container.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\elements\ContainerBase.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\elements\Decorator.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\elements\DefaultColours.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\elements\DynamicLabel.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\elements\element_traits.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\elements\ElementLayout.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\elements\FATImage.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\elements\FileBlocksBar.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\elements\FileItem.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\elements\FileList.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\elements\Image.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\elements\ImageEditor.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\elements\Label.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\elements\Line.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\elements\LinearTranslationAnimation.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\elements\Marker.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\elements\Menu.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\elements\MenuElement.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\elements\MenuElementInterface.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\elements\MultiPageLabel.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\elements\PositionAnimationInterface.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\elements\ProgressBar.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\elements\ScrollableList.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\elements\Scrollbar.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\elements\SelectionCursor.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\elements\SelectionCursorType.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\elements\ShowOneChild.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\elements\ShowOneValueChild.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\elements\ShowOneValueText.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\elements\SkinElementIDs.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\elements\SoftwareKeyboard.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\elements\SunkenBorderDecorator.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\elements\Table.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\elements\TranslationAnimationInterface.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\elements\ValueDecorator.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\elements\Window.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\actionlisteners\BlockingMenuListener.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\actionlisteners\EditorCommandListener.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\actionlisteners\MenuCommandListener.h" />
+    <ClInclude Include="..\shared\inc\tt\menu\actionlisteners\MenuElementListener.h" />
+    <ClInclude Include="inc\tt\pch\pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\shared\inc\tt\menu\elements\ContainerBase.tpl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

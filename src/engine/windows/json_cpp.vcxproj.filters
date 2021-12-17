@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Shared">
+      <UniqueIdentifier>{e1d4fa9a-496c-460c-aacc-0f9390203664}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\inc">
+      <UniqueIdentifier>{a75e084b-2e0b-443e-93aa-61fc7a64c27d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\shared\src\json\json_batchallocator.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\json\autolink.h">
+      <Filter>Shared\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\json\config.h">
+      <Filter>Shared\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\json\features.h">
+      <Filter>Shared\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\json\forwards.h">
+      <Filter>Shared\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\json\json.h">
+      <Filter>Shared\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\json\reader.h">
+      <Filter>Shared\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\json\value.h">
+      <Filter>Shared\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\json\writer.h">
+      <Filter>Shared\inc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\shared\src\json\json_internalarray.inl">
+      <Filter>Shared</Filter>
+    </None>
+    <None Include="..\shared\src\json\json_internalmap.inl">
+      <Filter>Shared</Filter>
+    </None>
+    <None Include="..\shared\src\json\json_valueiterator.inl">
+      <Filter>Shared</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\shared\src\json\json_reader.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\json\json_value.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\json\json_writer.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

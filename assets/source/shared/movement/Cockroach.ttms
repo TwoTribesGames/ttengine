@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<movementset xmlns="http://intranet.twotribes.com/schemas/projects/tokitori2/movementset.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/projects/tokitori2/movementset.xsd http://intranet.twotribes.com/schemas/projects/tokitori2/movementset.xsd">
+	<moves>
+		<!-- on parent -->
+		<vector_move always="false" priority="10" name="on_parent">
+			<directions/>
+			<local_dir>forward</local_dir>
+			<speed x="0.0" y="0.0" />
+			<survey_musthave>
+				<survey>stand_on_solid</survey>	
+				<survey>on_parent</survey>
+			</survey_musthave>
+
+			<animation_name>idle</animation_name>
+		</vector_move>
+
+		<!-- walk -->
+		<vector_move always="false" priority="2" name="forward">
+			<directions/>
+			<local_dir>forward</local_dir>
+			<speed x="3.5" y="0.0" />
+			<survey_musthave>
+				<survey>stand_on_solid</survey>
+			</survey_musthave>
+			<survey_mustnothave>
+				<survey>wall_right</survey>
+				<survey>on_right_edge</survey>
+			</survey_mustnothave>
+			<survey_mustnothave>
+				<survey>drop_right</survey>
+				<survey>on_right_edge</survey>
+			</survey_mustnothave>
+
+			<animation_name>run</animation_name>
+		</vector_move>
+
+		<!-- fall check for when the level changes around the berrybug (priority should be less than the fall move)-->
+		<vector_move always="true" priority="-1" name="fallcheck">
+			<directions/>
+			<local_dir>none</local_dir>
+			<speed x="0.0" y="0.0" />
+			<survey_mustnothave>
+				<survey>stand_on_solid</survey>
+			</survey_mustnothave>
+			<callbacks>
+				<start>onFallCheck</start>
+			</callbacks>
+		</vector_move>
+
+		<!-- fall -->
+		<vector_move always="true" priority="0" name="fall">
+			<directions>
+				<direction>down</direction>
+			</directions>
+			<speed x="0.0" y="-20.0" />
+			<survey_mustnothave>
+				<survey>stand_on_solid</survey>
+			</survey_mustnothave>
+			<flags>
+				<flag>x_snap</flag>
+			</flags>
+			<animation_name>fall</animation_name>
+			<callbacks>
+				<start>onFall</start>
+				<end>onLand</end>
+			</callbacks>
+		</vector_move>
+
+		<!-- stuck -->
+		<vector_move always="false" priority="2" name="stuck">
+			<directions/>
+			<local_dir>forward</local_dir>
+			<speed x="0.0" y="0.0" />
+			<survey_musthave>
+				<survey>stand_on_solid</survey>
+				<survey>wall_right</survey>
+				<survey>wall_left</survey>
+			</survey_musthave>
+			<survey_musthave>
+				<survey>stand_on_solid</survey>
+				<survey>drop_right</survey>
+				<survey>wall_left</survey>
+			</survey_musthave>
+			<survey_musthave>
+				<survey>stand_on_solid</survey>
+				<survey>drop_right</survey>
+				<survey>drop_left</survey>
+			</survey_musthave>
+
+			<animation_name>idle</animation_name>
+		</vector_move>
+
+		<!-- idle -->
+		<vector_move always="true" priority="1" name="idle">
+			<directions/>
+			<local_dir>none</local_dir>
+			<speed x="0.0" y="0.0" />
+			<survey_musthave>
+				<survey>stand_on_solid</survey>
+			</survey_musthave>
+
+			<animation_name>idle</animation_name>
+		</vector_move>
+
+		<!-- Nothing else is valid - Fallback move -->
+		<vector_move always="true" priority="-999" name="fallback">
+			<directions>
+			</directions>
+			<local_dir>none</local_dir>
+			<speed x="0.0" y="0.0" />
+		</vector_move>
+	</moves>
+</movementset>

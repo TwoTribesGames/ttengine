@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<config>
+	<basedir           value="../../assets/source/shared/levels/" />
+	<leveldir          value="../../assets/output/win/levels/" />
+	<shoeboxdir        value="../../assets/source/shared/levels/shoebox_includes/" />
+	<gfxdir            value="../../assets/source/shared/textures/" />
+	<texturedir        value="../../assets/source/shared/textures/backgrounds/" />
+	<emitterdir        value="../../assets/source/shared/particles/" />
+	<brushdir          value="../../assets/source/shared/shoebox_brushes/" />
+	<leveleditordir    value="../TokiLevelEditor/bin" />
+	<windowwidth       value="1780" />
+	<windowheight      value="1000" />
+	<levelpreviewdir   value="./levelpreviews" />
+	<emittertexture    value="emitter.png" />
+	<triggertexture    value="trigger.png" />
+	<includetexture    value="include.png" />
+	<popuptexture      value="popup.png" />
+	<xmleditor         value="C:\Program Files (x86)\Notepad++\notepad++.exe" />
+	<camerafov         value="90" />
+	<showlevel         value="true" />
+	<levelalpha        value="0.75" />
+	<levelpriority     value="0" />
+	<cameradamping     value="0.99" />
+	<zoomstep          value="15.0" />
+	<scrollstep        value="2.0" />
+	
+	<movestep_0        value="0.1"  />
+	<movestep_1        value="1.0"  />
+	<movestep_2        value="30.0" />
+	
+	<prioritystep_0    value="1.0"  />
+	<prioritystep_1    value="10.0" />
+	<prioritystep_2    value="30.0" />
+	
+	<rotatestep_0      value="0.1"  />
+	<rotatestep_1      value="1.0"  />
+	<rotatestep_2      value="30.0" />
+	
+	<lookMouseButton   value="3" /> <!-- 1 = left, 2 = right, 3 = middle mouse -->
+	
+	<tiles>
+		<!--          BottomLeft     TopLeft        TopRight       BottomRight  -->
+		<!--          U      V       U      V       U      V       U      V     -->
+		<t1  value = "0.005, 0.120,  0.005, 0.005,  0.120, 0.005,  0.120, 0.120" /> <!-- solid                  -->
+		<t2  value = "0.000, 0.250,  0.000, 0.125,  0.125, 0.125,  0.125, 0.250" /> <!-- water source           -->
+		<t3  value = "0.500, 0.250,  0.500, 0.125,  0.625, 0.125,  0.625, 0.250" /> <!-- water still            -->
+		<t4  value = "0.000, 0.500,  0.000, 0.375,  0.125, 0.375,  0.125, 0.500" /> <!-- lava source            -->
+		<t5  value = "0.500, 0.500,  0.500, 0.375,  0.625, 0.375,  0.625, 0.500" /> <!-- lava still             -->
+		<t6  value = "0.875, 0.250,  0.875, 0.125,  1.000, 0.125,  1.000, 0.250" /> <!-- solid fluid kill       -->
+		<t7  value = "0.000, 0.750,  0.000, 0.625,  0.125, 0.625,  0.125, 0.750" /> <!-- crystal solid          -->
+		<t8  value = "0.250, 0.750,  0.250, 0.625,  0.375, 0.625,  0.375, 0.750" /> <!-- fluid kill             -->
+		<t9  value = "0.000, 1.000,  0.000, 0.875,  0.125, 0.875,  0.125, 1.000" /> <!-- air prefer             -->
+		<t10 value = "0.125, 1.000,  0.125, 0.875,  0.250, 0.875,  0.250, 1.000" /> <!-- air avoid              -->
+		
+		<!-- special tiles -->
+		<t100 value= "0.250, 1.000,  0.250, 0.875,  0.375, 0.875,  0.375, 1.000" /> <!-- piston indicator       -->
+		<t101 value= "0.375, 1.000,  0.375, 0.875,  0.500, 0.875,  0.500, 1.000" /> <!-- piston conver          -->
+		<t102 value= "0.500, 1.000,  0.500, 0.875,  0.625, 0.875,  0.625, 1.000" /> <!-- lightsource            -->
+		
+	</tiles>
+</config>

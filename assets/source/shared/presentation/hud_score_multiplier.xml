@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		permanent="true">
+
+	<startvalues>
+		<scale scale="1.6"/>
+		<translation x="0.03"/>
+		<origin x="-0.04"/>
+	</startvalues>
+	
+	<coloranimstack >
+		<color duration="c(multiplierMaxTimer, 5.0)" delay="0" direction="forward" timing="easein" tweening="circ">
+			<begin a="-65"/>
+			<end a="-65"/>
+		</color>
+		<color duration="0.2" delay="4" direction="forward">
+		  <begin r="0" g="0" b="0" />
+		  <end r="0" g="0" b="0" />
+		</color>
+	</coloranimstack>
+
+	<anim2dstack>
+		<translation duration="0.3" delay="c(multiplierMaxTimer, 5.0)" direction="forward" timing="easeout">
+			<begin y="0"/>
+			<end   y="0.3"/>
+		</translation>
+		<scale duration="0.5" delay="0.0" direction="pingpong" timing="easein" tweening="quad" looping="false">
+			<begin scale="1.00"/>
+			<end scale="1.20"/>
+		</scale>
+		<scale duration="0.25" delay="4.0" direction="pingpong" timing="easein" looping="true">
+			<begin scale="1.00"/>
+			<end scale="0.65"/>
+		</scale>
+		<translation duration="0.5" delay="0" direction="pingpong" timing="easein" tweening="quad" looping="false">
+			<begin x="0"/>
+			<end   x="0.017"/>
+		</translation>
+	</anim2dstack>
+</presentation>

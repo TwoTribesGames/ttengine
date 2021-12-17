@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		permanent="true">
+	<startvalues>
+		<scale scale="1.5"/>
+	</startvalues>
+	
+	<frameanimstack>
+		<frameanim blendmode="add" directory="spritestrip/pickup/collecteffect" quad_height="0.10" quad_width="0.10" fps="1">
+			<begin frame="1"/>
+			<end   frame="1"/>
+		</frameanim>
+	</frameanimstack>
+
+	<particles file="particles/collecteffect_health.trigger" position_type="follow">
+		<scale scale="0.035"/>
+	</particles>
+	
+	<anim2dstack>
+		<translation duration="0.35" direction="forward" timing="linear" looping="false">
+			<begin x="0" y="0"/>
+			<end   x="c(diff_x)" y="c(diff_y)"/>
+		</translation>
+		<!--<translation duration="0.4" direction="pingpong" timing="easeends" looping="false">
+			<begin x="0" y="0"/>
+			<end   x="0" y="r(0.2),(0.3)"/>
+		</translation>-->
+		<scale duration="0.35" timing="easeends">
+			<begin scale="0.5"/>
+			<end   scale="1"/>
+		</scale>
+	</anim2dstack>
+
+	<coloranimstack>
+		<color duration="0.2">
+			<begin a="-255"/>
+			<end a="0"/>
+		</color>
+	</coloranimstack>
+	
+	<trigger delay="0.35" type="callback" data="kill_parent"/>
+</presentation>
+

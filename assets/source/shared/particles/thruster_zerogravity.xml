@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<ParticleTrigger xmlns="http://intranet.twotribes.com/schemas/common/particletrigger.xsd" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/particletrigger.xsd http://intranet.twotribes.com/schemas/common/particletrigger.xsd">
+	<GameEvent name="booster"/>
+	<ParticleEmitter max_particles="50" x="0" y="0" delay="0" space="world">
+		<RenderGroup value="200"/>
+		<Texture filename="particles/generic_hardedge_drip.png"/>
+		<FrameAnimations framesize="0"/>
+		<EmissionRect width="0.6" height="0"/>
+		<ExternalForce min_x="0" max_x="0" min_y="-0.1" max_y="0.1"/>
+		<BlendMode type="add"/>
+		<BlendModeAlpha type="lightmask"/>
+		<PreGeneration time="0" step="0"/>
+		<Emission particles="100" type="continuous" lifetime="0"/>
+		<ParticleOrientation type="direction"/>
+		<Velocity min_x="-1.25" max_x="1.25" min_y="-7.5" max_y="7.5"/>
+		<VelocityFriction min="0" max="0.14"/>
+		<ParticleLife min="0.32" max="0.72"/>
+		<Size min_start="0.125" max_start="0.175" min_end="0.025" max_end="0.075"/>
+		<Weight min_start="1" max_start="1" min_end="1" max_end="1"/>
+		<Rotation min_start="0" max_start="0" min_speed="0" max_speed="0"/>
+		<RotationForce min="0" max="0"/>
+		<RotationFriction min="0" max="0"/>
+		<Frame min_start="0" max_start="0"/>
+		<MinStartColor r="0" g="203" b="255" a="255"/>
+		<MaxStartColor r="0" g="191" b="255" a="255"/>
+		<MinEndColor r="0" g="178" b="255" a="255"/>
+		<MaxEndColor r="171" g="234" b="255" a="255"/>
+		<Fade in="0.2" out="0.4" type="percentage"/>
+	</ParticleEmitter>
+	<ParticleEmitter max_particles="20" x="0" y="0" delay="0" space="world">
+		<RenderGroup value="200"/>
+		<Texture filename="particles/generic_hardedge_drip.png"/>
+		<FrameAnimations framesize="0"/>
+		<EmissionRect width="0.8" height="0"/>
+		<ExternalForce min_x="0" max_x="0" min_y="-0.1" max_y="0.1"/>
+		<BlendMode type="add"/>
+		<BlendModeAlpha type="lightmask"/>
+		<PreGeneration time="0" step="0"/>
+		<Emission particles="40" type="continuous" lifetime="0"/>
+		<ParticleOrientation type="direction"/>
+		<Velocity min_x="-10" max_x="10" min_y="-10" max_y="10"/>
+		<VelocityFriction min="0" max="0.2"/>
+		<ParticleLife min="0.4" max="0.6"/>
+		<Size min_start="0.175" max_start="0.225" min_end="0.075" max_end="0.125"/>
+		<Weight min_start="1" max_start="1" min_end="0" max_end="0"/>
+		<Rotation min_start="0" max_start="0" min_speed="0" max_speed="0"/>
+		<RotationForce min="0" max="0"/>
+		<RotationFriction min="0" max="0"/>
+		<Frame min_start="0" max_start="0"/>
+		<MinStartColor r="0" g="203" b="255" a="255"/>
+		<MaxStartColor r="0" g="191" b="255" a="255"/>
+		<MinEndColor r="255" g="255" b="255" a="255"/>
+		<MaxEndColor r="255" g="255" b="255" a="255"/>
+		<Fade in="0.2" out="0.4" type="percentage"/>
+	</ParticleEmitter>
+	<ParticleEmitter max_particles="23" x="0" y="0.2" delay="0" space="world">
+		<RenderGroup value="200"/>
+		<Texture filename="particles/generic_circle_gradient.png"/>
+		<FrameAnimations framesize="0"/>
+		<EmissionRect width="0.2" height="0"/>
+		<ExternalForce min_x="0" max_x="0" min_y="-0.1" max_y="0.1"/>
+		<BlendMode type="add"/>
+		<BlendModeAlpha type="lightmask"/>
+		<PreGeneration time="0" step="0"/>
+		<Emission particles="30" type="continuous" lifetime="0"/>
+		<ParticleOrientation type="direction"/>
+		<Velocity min_x="0" max_x="0" min_y="-2.5" max_y="2.5"/>
+		<VelocityFriction min="0" max="0"/>
+		<ParticleLife min="0.45" max="0.75"/>
+		<Size min_start="3.25" max_start="4.75" min_end="1.125" max_end="1.875"/>
+		<Weight min_start="1" max_start="1" min_end="0" max_end="0"/>
+		<Rotation min_start="0" max_start="0" min_speed="0" max_speed="0"/>
+		<RotationForce min="0" max="0"/>
+		<RotationFriction min="0" max="0"/>
+		<Frame min_start="0" max_start="0"/>
+		<MinStartColor r="0" g="203" b="255" a="134"/>
+		<MaxStartColor r="0" g="191" b="255" a="127"/>
+		<MinEndColor r="255" g="255" b="255" a="65"/>
+		<MaxEndColor r="255" g="255" b="255" a="60"/>
+		<Fade in="0.2" out="0.8" type="percentage"/>
+	</ParticleEmitter>
+</ParticleTrigger>

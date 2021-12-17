@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		permanent="true">
+	<startvalues>
+		<translation y="0.5" z="-0.01"/>
+	</startvalues>
+	
+	<!-- blink -->
+	<frameanimstack name="blink">
+		<frameanim directory="spritestrip/pickup/burger" lightmask="use_lightmask" ignore_fog="false" fps="4" delay="r(0.0),(0.5)" looping="true" quad_width="1.5" quad_height="1.5" direction="forward">
+			<begin frame="0" hold="true"/>
+			<end   frame="1" hold="true"/>
+			<translation y="0.15"/>
+		</frameanim>
+	</frameanimstack>
+
+	<particles name="blink" file="particles/pickup_health.trigger" position_type="follow">
+		<mustnothave>
+			<tag name="zerogravity"/>
+		</mustnothave>
+		<translation x="0" y="0.3" z="0"/>
+	</particles>
+
+	<particles name="blink" file="particles/pickup_health_zerogravity.trigger" position_type="follow">
+		<musthave>
+			<tag name="zerogravity"/>
+		</musthave>
+		<translation x="0" y="0.3" z="0"/>
+	</particles>
+	
+	<anim2dstack name="blink">
+		<translation duration="r(1.5),(3)" preset="oscillating">
+			<begin y="0"/>
+			<end y="0.2"/>
+		</translation>
+		<rotation duration="r(1.5),(3)" delay="r(0.1),(0.3)" preset="oscillating">
+			<begin rotation="-5"/>
+			<end rotation="5"/>
+		</rotation>
+	</anim2dstack>
+
+	<!-- idle -->
+	<frameanimstack name="idle">
+		<frameanim directory="spritestrip/pickup/burger" lightmask="use_lightmask" ignore_fog="false" fps="4" delay="r(0.0),(0.5)" looping="true" quad_width="1.5" quad_height="1.5" direction="forward">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+			<translation y="0.15"/>
+		</frameanim>
+	</frameanimstack>
+
+	<particles name="idle" file="particles/pickup_health.trigger" position_type="follow">
+		<mustnothave>
+			<tag name="zerogravity"/>
+		</mustnothave>
+		<translation x="0" y="0.3" z="0"/>
+	</particles>
+
+	<particles name="idle" file="particles/pickup_health_zerogravity.trigger" position_type="follow">
+		<musthave>
+			<tag name="zerogravity"/>
+		</musthave>
+		<translation x="0" y="0.3" z="0"/>
+	</particles>
+
+	<anim2dstack name="idle">
+		<translation duration="r(1.5),(3)" preset="oscillating">
+			<begin y="0"/>
+			<end y="0.2"/>
+		</translation>
+		<rotation duration="r(1.5),(3)" delay="r(0.1),(0.3)" preset="oscillating">
+			<begin rotation="-5"/>
+			<end rotation="5"/>
+		</rotation>
+	</anim2dstack>
+
+	<!-- collected -->
+	<trigger name="collected" type="global_audio" data="pickup_health"/>
+	<trigger name="collected" delay="2.2" type="callback" data="kill_parent"/>
+	
+	<particles name="collected" file="particles/pickup_health_collected.trigger" position_type="follow">
+		<translation x="0" y="0.3" z="0"/>
+		<scale scale="1.5"/>
+	</particles>
+	
+	<!-- full -->	
+	<frameanimstack name="full">
+		<frameanim directory="spritestrip/pickup/burger" ignore_fog="false" fps="30" delay="r(0.0),(0.5)" looping="true" quad_width="1.75" quad_height="1.75" direction="forward">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+			<translation y="0.15"/>
+		</frameanim>
+	</frameanimstack>
+
+	<anim2dstack name="full">
+		<translation duration="0.1" preset="oscillating">
+			<begin x="-0.1" y="0.1"/>
+			<end x="0.1" y="0.1"/>
+		</translation>
+	</anim2dstack>
+
+	<trigger name="full" delay="0.5" type="callback" data="gotoidle"/>
+	
+	<!-- corpse -->
+	<particles name="corpse" file="particles/pickup_health_collected.trigger" position_type="follow">
+		<translation x="0" y="0.3" z="0"/>
+		<scale scale="1.5"/>
+	</particles>
+	<trigger name="corpse" type="audio" data="collectible_destroyed"/>
+	
+</presentation>
+

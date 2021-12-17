@@ -1,0 +1,27 @@
+{
+	"start": 
+	[
+		{
+			"textID": "01_DLL_K_DL",
+			"actor": 1,
+			"emotion": "angry"
+		},
+		{
+			"actor": 1,
+			"emotion": "working",
+			"duration": 2.0
+		},
+		{
+			"trigger": 1
+		},
+		{
+			"actor": 1,
+			"callback": {"name": "goHome"}
+		},
+		{
+			"textID": "01_DLL_L_DL",
+			"actor": 1,
+			"emotion": "angry"
+		}
+	]
+}

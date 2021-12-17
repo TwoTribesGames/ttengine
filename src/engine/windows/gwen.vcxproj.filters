@@ -1,0 +1,579 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Shared">
+      <UniqueIdentifier>{7930e51f-acd3-4fea-8291-f7b3491f50e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\Controls">
+      <UniqueIdentifier>{2253bbd2-68f9-44af-b411-374a3c9b3560}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\Controls\Dialogs">
+      <UniqueIdentifier>{54708b03-10e6-404e-be3f-00c48f4c8954}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\Controls\Layout">
+      <UniqueIdentifier>{b1150231-b751-4537-983d-373473e417d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\Controls\Property">
+      <UniqueIdentifier>{928059a4-a388-4d41-a898-8b00e827f88a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\Input">
+      <UniqueIdentifier>{d0bb49bc-ac78-480e-946e-9dd5a2d2069a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\Renderers">
+      <UniqueIdentifier>{90001c5c-c6a4-42b9-85ae-61c62cb7075e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\Skins">
+      <UniqueIdentifier>{a14192f5-1d75-481f-a3e3-fe846ed7b0c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\Platforms">
+      <UniqueIdentifier>{8633aacb-e7ac-451e-984c-81141d9262dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\Renderers\DebugFont">
+      <UniqueIdentifier>{3426f9f4-b763-420f-a81a-b02ab2cc5171}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\shared\inc\Gwen\Align.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Anim.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\BaseRender.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Config.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\DragAndDrop.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Events.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Exports.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Font.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Gwen.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Hook.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\InputHandler.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Macros.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Platform.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Skin.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Structures.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\TextObject.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Texture.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\ToolTip.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Utility.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Base.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Button.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Canvas.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\CheckBox.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\CollapsibleCategory.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\CollapsibleList.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\ColorControls.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\ColorPicker.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\ComboBox.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\CrossSplitter.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\DockBase.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\DockedTabControl.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Dragger.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\GroupBox.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Highlight.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\HorizontalScrollBar.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\HorizontalSlider.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\ImagePanel.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Label.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\LabelClickable.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\ListBox.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Menu.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\MenuItem.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\MenuStrip.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Modal.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\NumericUpDown.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\ProgressBar.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Properties.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\PropertyTree.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\RadioButton.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\RadioButtonController.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\ResizableControl.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Resizer.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\RichLabel.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\ScrollBar.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\ScrollBarBar.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\ScrollBarButton.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\ScrollControl.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Slider.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\SplitterBar.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\StatusBar.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\TabButton.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\TabControl.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\TabStrip.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\TabTitleBar.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Text.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\TextBox.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\ToolBar.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\TreeControl.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\TreeNode.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\VerticalScrollBar.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\VerticalSlider.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\WindowControl.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Dialogs\FileSave.h">
+      <Filter>Shared\Controls\Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Dialogs\Query.h">
+      <Filter>Shared\Controls\Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Dialogs\FileOpen.h">
+      <Filter>Shared\Controls\Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Layout\Position.h">
+      <Filter>Shared\Controls\Layout</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Layout\Table.h">
+      <Filter>Shared\Controls\Layout</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Property\Checkbox.h">
+      <Filter>Shared\Controls\Property</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Property\ColorSelector.h">
+      <Filter>Shared\Controls\Property</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Property\Text.h">
+      <Filter>Shared\Controls\Property</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Property\BaseProperty.h">
+      <Filter>Shared\Controls\Property</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Skins\Simple.h">
+      <Filter>Shared\Skins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Skins\TexturedBase.h">
+      <Filter>Shared\Skins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Skins\Texturing.h">
+      <Filter>Shared\Skins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\gwen\Renderers\DebugFont\FontData.h">
+      <Filter>Shared\Renderers\DebugFont</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Renderers\TTRenderer.h">
+      <Filter>Shared\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Renderers\DirectX9.h">
+      <Filter>Shared\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Renderers\OpenGL.h">
+      <Filter>Shared\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Renderers\OpenGL_DebugFont.h">
+      <Filter>Shared\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\ControlList.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\UserData.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\WindowProvider.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\FieldLabel.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\FilePicker.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\FolderPicker.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Splitters.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\WindowButtons.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\WindowCanvas.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Dialogs\FolderOpen.h">
+      <Filter>Shared\Controls\Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Layout\Tile.h">
+      <Filter>Shared\Controls\Layout</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Property\ComboBox.h">
+      <Filter>Shared\Controls\Property</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Property\File.h">
+      <Filter>Shared\Controls\Property</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Property\Folder.h">
+      <Filter>Shared\Controls\Property</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\PageControl.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Rectangle.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\Gwen\Controls\RGBColorPicker.h">
+      <Filter>Shared\Controls</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\shared\src\gwen\Anim.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\BaseRender.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\DragAndDrop.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\events.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Gwen.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Hook.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\inputhandler.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Skin.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\ToolTip.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Utility.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\Base.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\Button.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\Canvas.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\CheckBox.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\CollapsibleCategory.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\ColorControls.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\ColorPicker.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\ComboBox.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\CrossSplitter.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\DockBase.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\DockedTabControl.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\Dragger.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\GroupBox.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\HorizontalScrollBar.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\HorizontalSlider.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\ImagePanel.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\Label.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\LabelClickable.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\ListBox.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\Menu.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\MenuItem.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\MenuStrip.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\NumericUpDown.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\ProgressBar.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\Properties.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\RadioButton.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\RadioButtonController.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\ResizableControl.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\Resizer.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\RichLabel.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\ScrollBar.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\ScrollBarBar.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\ScrollBarButton.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\ScrollControl.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\Slider.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\SplitterBar.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\TabButton.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\TabControl.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\TabStrip.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\Text.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\TextBox.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\TextBoxNumeric.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\TreeControl.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\TreeNode.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\VerticalScrollBar.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\VerticalSlider.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\WindowControl.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\Dialog\FileOpen.cpp">
+      <Filter>Shared\Controls\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\Dialog\FileSave.cpp">
+      <Filter>Shared\Controls\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\Dialog\Query.cpp">
+      <Filter>Shared\Controls\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Platforms\Null.cpp">
+      <Filter>Shared\Platforms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Platforms\Windows.cpp">
+      <Filter>Shared\Platforms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Renderers\TTRenderer.cpp">
+      <Filter>Shared\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Renderers\DirectX9.cpp">
+      <Filter>Shared\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Renderers\OpenGL.cpp">
+      <Filter>Shared\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Renderers\DebugFont\OpenGL_DebugFont.cpp">
+      <Filter>Shared\Renderers\DebugFont</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\ControlList.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\PropertyTree.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\WindowCanvas.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\Dialog\FolderOpen.cpp">
+      <Filter>Shared\Controls\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\PageControl.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\Rectangle.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Controls\RGBColorPicker.cpp">
+      <Filter>Shared\Controls</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

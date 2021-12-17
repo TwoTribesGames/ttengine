@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<movementset xmlns="http://intranet.twotribes.com/schemas/projects/tokitori2/movementset.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/projects/tokitori2/movementset.xsd http://intranet.twotribes.com/schemas/projects/tokitori2/movementset.xsd">
+
+	<moves>
+		<!-- idle -->
+		<vector_move always="true" priority="-1" name="idle">
+			<directions>
+				<direction>none</direction>
+			</directions>
+			<flags>
+				<flag>x_snap_end</flag>
+				<flag>y_snap_end</flag>
+				<flag>persistent_move</flag>
+			</flags>
+			<speed x="0.0" y="0.0" />
+		</vector_move>
+
+		<!-- down -->
+		<vector_move always="false" priority="1" name="close">
+			<directions>
+				<direction>down</direction>
+			</directions>
+			<survey_mustnothave>
+				<survey>stand_on_solid</survey>
+			</survey_mustnothave>
+			<flags>
+				<flag>x_snap_end</flag>
+				<flag>y_snap_end</flag>
+				<flag>persistent_move</flag>
+			</flags>
+			<speed x="0.0" y="-15.0" />
+
+			<callbacks>
+				<end>onClosed</end>
+			</callbacks>
+		</vector_move>
+
+		<!-- up -->
+		<vector_move always="false" priority="1" name="open">
+			<directions>
+				<direction>up</direction>
+			</directions>
+			<survey_mustnothave>
+				<survey>ceiling</survey>
+				<survey>on_top_edge</survey>
+			</survey_mustnothave>
+			<flags>
+				<flag>x_snap_end</flag>
+				<flag>y_snap_end</flag>
+				<flag>persistent_move</flag>
+			</flags>
+			<speed x="0.0" y="15" />
+		</vector_move>
+	</moves>
+</movementset>

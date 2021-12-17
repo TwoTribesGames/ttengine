@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		permanent="true">
+
+	<!--0-->
+	<startvalues>
+		<musthave>
+			<tag name="0"/>
+		</musthave>
+		<scale scale="0.75"/>
+		<scale scale="c(scale)"/>
+		<origin x="1.1" y="0.8"/>
+		<translation x="0.0" y="-0.9" z="-0.051"/>
+	</startvalues>
+
+	<!--90-->
+	<startvalues>
+		<musthave>
+			<tag name="90"/>
+		</musthave>
+		<scale scale="0.75"/>
+		<scale scale="c(scale)"/>
+		<origin x="0.8" y="-1.1"/>
+		<translation x="-0.9" y="1.2" z="-0.051"/>
+	</startvalues>
+
+	<!--180-->
+	<startvalues>
+		<musthave>
+			<tag name="180"/>
+		</musthave>
+		<scale scale="0.75"/>
+		<scale scale="c(scale)"/>
+		<origin x="-1.1" y="0.8"/>
+		<translation x="0" y="-0.9" z="-0.051"/>
+	</startvalues>
+
+	<!--270-->
+	<startvalues>
+		<musthave>
+			<tag name="270"/>
+		</musthave>
+		<scale scale="0.75"/>
+		<scale scale="c(scale)"/>
+		<origin x="0.8" y="1.1"/>
+		<translation x="-0.9" y="1.2" z="-0.051"/>
+	</startvalues>
+
+	<!--mainbox back-->
+	<!--0-->
+	<frameanimstack>
+		<musthave>
+			<tag name="0"/>
+		</musthave>
+		<frameanim directory="spritestrip/pipegate/mainbox_0" fps="30" quad_width="4.297" quad_height="8" looping="true">
+			<begin frame="1" hold="true"/>
+			<end   frame="1" hold="true"/>
+		</frameanim>
+	</frameanimstack>
+
+	<!--90-->
+	<frameanimstack>
+		<musthave>
+			<tag name="90"/>
+		</musthave>
+		<frameanim directory="spritestrip/pipegate/mainbox_90" fps="30" quad_width="8" quad_height="4.297" looping="true">
+			<begin frame="1" hold="true"/>
+			<end   frame="1" hold="true"/>
+		</frameanim>
+	</frameanimstack>
+
+	<!--180-->
+	<frameanimstack>
+		<musthave>
+			<tag name="180"/>
+		</musthave>
+		<frameanim directory="spritestrip/pipegate/mainbox_0" flip_horizontal="true" fps="30" quad_width="4.297" quad_height="8" looping="true">
+			<begin frame="1" hold="true"/>
+			<end   frame="1" hold="true"/>
+		</frameanim>
+	</frameanimstack>
+
+	<!--270-->
+	<frameanimstack>
+		<musthave>
+			<tag name="270"/>
+		</musthave>
+		<frameanim directory="spritestrip/pipegate/mainbox_270" fps="30" quad_width="8" quad_height="4.297" looping="true">
+			<begin frame="1" hold="true"/>
+			<end   frame="1" hold="true"/>
+		</frameanim>
+	</frameanimstack>
+
+	<!--gate_idle-->
+	<!--0-->
+	<frameanimstack name="idle">
+		<musthave>
+			<tag name="0"/>
+		</musthave>
+		<frameanim directory="spritestrip/pipegate/aperture_0" lightmask="use_lightmask" fps="30" quad_width="0.938" quad_height="3.125">
+			<begin frame="7" hold="true"/>
+			<end   frame="7" hold="true"/>
+			<scale scale="1.4"/>
+			<translation x="1" y="0.7"/>
+		</frameanim>
+	</frameanimstack>
+
+	<!--90-->
+	<frameanimstack name="idle">
+		<musthave>
+			<tag name="90"/>
+		</musthave>
+		<frameanim directory="spritestrip/pipegate/aperture_90" lightmask="use_lightmask" fps="30" quad_width="3.125" quad_height="0.938">
+			<begin frame="7" hold="true"/>
+			<end   frame="7" hold="true"/>
+			<scale scale="1.4"/>
+			<translation x="0.7" y="-1"/>
+		</frameanim>
+	</frameanimstack>
+
+	<!--180-->
+	<frameanimstack name="idle">
+		<musthave>
+			<tag name="180"/>
+		</musthave>
+		<frameanim directory="spritestrip/pipegate/aperture_0" flip_horizontal="true" lightmask="use_lightmask" fps="30" quad_width="0.938" quad_height="3.125">
+			<begin frame="7" hold="true"/>
+			<end   frame="7" hold="true"/>
+			<scale scale="1.4"/>
+			<translation x="-1" y="0.7"/>
+		</frameanim>
+	</frameanimstack>
+
+	<!--270-->
+	<frameanimstack name="idle">
+		<musthave>
+			<tag name="270"/>
+		</musthave>
+		<frameanim directory="spritestrip/pipegate/aperture_90" flip_vertical="true" lightmask="use_lightmask" fps="30" quad_width="3.125" quad_height="0.938">
+			<begin frame="7" hold="true"/>
+			<end   frame="7" hold="true"/>
+			<scale scale="1.4"/>
+			<translation x="0.7" y="1"/>
+		</frameanim>
+	</frameanimstack>
+
+	<!--gate_close-->
+	<!--0-->
+	<frameanimstack name="close">
+		<musthave>
+			<tag name="0"/>
+		</musthave>
+		<frameanim directory="spritestrip/pipegate/aperture_0" lightmask="use_lightmask" fps="30" quad_width="0.938" quad_height="3.125">
+			<begin frame="1" hold="true"/>
+			<end   frame="7" hold="true"/>
+			<scale scale="1.4"/>
+			<translation x="1" y="0.7"/>
+		</frameanim>
+	</frameanimstack>
+
+	<!--90-->
+	<frameanimstack name="close">
+		<musthave>
+			<tag name="90"/>
+		</musthave>
+		<frameanim directory="spritestrip/pipegate/aperture_90" lightmask="use_lightmask" fps="30" quad_width="3.125" quad_height="0.938">
+			<begin frame="1" hold="true"/>
+			<end   frame="7" hold="true"/>
+			<scale scale="1.4"/>
+			<translation x="0.7" y="-1"/>
+		</frameanim>
+	</frameanimstack>
+
+	<!--180-->
+	<frameanimstack name="close">
+		<musthave>
+			<tag name="180"/>
+		</musthave>
+		<frameanim directory="spritestrip/pipegate/aperture_0" flip_horizontal="true" lightmask="use_lightmask" fps="30" quad_width="0.938" quad_height="3.125">
+			<begin frame="1" hold="true"/>
+			<end   frame="7" hold="true"/>
+			<scale scale="1.4"/>
+			<translation x="-1" y="0.7"/>
+		</frameanim>
+	</frameanimstack>
+
+	<!--270-->
+	<frameanimstack name="close">
+		<musthave>
+			<tag name="270"/>
+		</musthave>
+		<frameanim directory="spritestrip/pipegate/aperture_90" flip_vertical="true" lightmask="use_lightmask" fps="30" quad_width="3.125" quad_height="0.938">
+			<begin frame="1" hold="true"/>
+			<end   frame="7" hold="true"/>
+			<scale scale="1.4"/>
+			<translation x="0.7" y="1"/>
+		</frameanim>
+	</frameanimstack>
+
+	<!--gate_open-->
+	<!--0-->
+	<frameanimstack type="sequence" name="open">
+		<musthave>
+			<tag name="0"/>
+		</musthave>
+		<frameanim directory="spritestrip/pipegate/aperture_0" lightmask="use_lightmask" fps="30" quad_width="0.938" direction="backward" quad_height="3.125">
+			<begin frame="1" hold="true"/>
+			<end   frame="7" hold="true"/>
+			<scale scale="1.4"/>
+			<translation x="1" y="0.7"/>
+		</frameanim>
+		<frameanim directory="spritestrip/pipegate/aperture_0" lightmask="use_lightmask" fps="30" quad_width="0.938" quad_height="3.125" looping="true">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+			<scale scale="1.4"/>
+			<translation x="1" y="0.7"/>
+		</frameanim>
+	</frameanimstack>
+
+	<!--90-->
+	<frameanimstack type="sequence" name="open">
+		<musthave>
+			<tag name="90"/>
+		</musthave>
+		<frameanim directory="spritestrip/pipegate/aperture_90" lightmask="use_lightmask" fps="30" quad_width="3.125" direction="backward" quad_height="0.938">
+			<begin frame="1" hold="true"/>
+			<end   frame="7" hold="true"/>
+			<scale scale="1.4"/>
+			<translation x="0.7" y="-1"/>
+		</frameanim>
+		<frameanim directory="spritestrip/pipegate/aperture_90" lightmask="use_lightmask" fps="30" quad_width="3.125" quad_height="0.938" looping="true">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+			<scale scale="1.4"/>
+			<translation x="0.7" y="-1"/>
+		</frameanim>
+	</frameanimstack>
+
+	<!--180-->
+	<frameanimstack type="sequence" name="open">
+		<musthave>
+			<tag name="180"/>
+		</musthave>
+		<frameanim directory="spritestrip/pipegate/aperture_0" flip_horizontal="true" lightmask="use_lightmask" fps="30" quad_width="0.938" direction="backward" quad_height="3.125">
+			<begin frame="1" hold="true"/>
+			<end   frame="7" hold="true"/>
+			<translation x="-1" y="0.7"/>
+			<scale scale="1.4"/>
+		</frameanim>
+		<frameanim directory="spritestrip/pipegate/aperture_0" flip_horizontal="true" lightmask="use_lightmask" fps="30" quad_width="0.938" quad_height="3.125" looping="true">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+			<translation x="-1" y="0.7"/>
+			<scale scale="1.4"/>
+		</frameanim>
+	</frameanimstack>
+
+	<!--270-->
+	<frameanimstack type="sequence" name="open">
+		<musthave>
+			<tag name="270"/>
+		</musthave>
+		<frameanim directory="spritestrip/pipegate/aperture_90" flip_vertical="true" lightmask="use_lightmask" fps="30" quad_width="3.125" direction="backward" quad_height="0.938">
+			<begin frame="1" hold="true"/>
+			<end   frame="7" hold="true"/>
+			<scale scale="1.4"/>
+			<translation x="0.7" y="1"/>
+		</frameanim>
+		<frameanim directory="spritestrip/pipegate/aperture_90" flip_vertical="true" lightmask="use_lightmask" fps="30" quad_width="3.125" quad_height="0.938" looping="true">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+			<scale scale="1.4"/>
+			<translation x="0.7" y="1"/>
+		</frameanim>
+	</frameanimstack>
+</presentation>

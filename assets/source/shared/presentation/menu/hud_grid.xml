@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		permanent="true" fixed_timestep="0.016">
+
+	<startvalues>
+		<scale scale="1.35"/>
+		<translation x="-0.002" y="-0.008" z="-1.1"/>
+	</startvalues>
+
+	<coloranimstack>
+		<color duration="0.01">
+			<begin r="-214" g="-39" b="-100"/>
+			<end r="-214" g="-39" b="-100"/>
+		</color>
+	</coloranimstack>
+	
+	<frameanimstack>
+		<frameanim filter_mipmap="none" flip_horizontal="false" flip_vertical="true" frame_width="8" frame_height="5.85" blendmode="blend" image="grid" image_namespace="textures.hud" fps="1" looping="true" quad_width="1.78" quad_height="1.3">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+			<translation x="0.0" y="-0.005"/>
+		</frameanim>
+	</frameanimstack>
+
+</presentation>

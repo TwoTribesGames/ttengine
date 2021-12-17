@@ -1,0 +1,468 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="WIN_Dev|Win32">
+      <Configuration>WIN_Dev</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="WIN_Dev|x64">
+      <Configuration>WIN_Dev</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="WIN_Final|Win32">
+      <Configuration>WIN_Final</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="WIN_Final|x64">
+      <Configuration>WIN_Final</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="WIN_Test|Win32">
+      <Configuration>WIN_Test</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="WIN_Test|x64">
+      <Configuration>WIN_Test</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4F5BF3C7-D6C7-4983-9AB0-79B6CC4804A1}</ProjectGuid>
+    <RootNamespace>sys</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>tt_sys</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">$(ProjectDir)lib\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">$(ProjectDir)obj\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'">$(ProjectDir)obj\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">$(ProjectDir)lib\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">$(ProjectDir)obj\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'">$(ProjectDir)obj\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">$(ProjectDir)lib\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">$(ProjectDir)obj\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'">$(ProjectDir)obj\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'">
+    <OutDir>$(ProjectDir)lib\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'">
+    <OutDir>$(ProjectDir)lib\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'">
+    <OutDir>$(ProjectDir)lib\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>inc;..\shared\inc;$(TTSDK_ROOT)\ntr\debugger\X86\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;TT_ASSERT_ON;TT_PLATFORM_WIN;TT_BUILD_DEV;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>tt\pch\pch.h</PrecompiledHeaderFile>
+      <ProgramDataBaseFileName>$(TargetDir)\$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <ForcedIncludeFiles>tt\pch\pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>inc;..\shared\inc;$(TTSDK_ROOT)\ntr\debugger\X86\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;TT_ASSERT_ON;TT_PLATFORM_WIN;TT_BUILD_DEV;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>tt\pch\pch.h</PrecompiledHeaderFile>
+      <ProgramDataBaseFileName>$(TargetDir)\$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ForcedIncludeFiles>tt\pch\pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">
+    <ClCompile>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>inc;..\shared\inc;$(TTSDK_ROOT)\ntr\debugger\X86\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;TT_ASSERT_ON;TT_PLATFORM_WIN;TT_BUILD_TEST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>tt\pch\pch.h</PrecompiledHeaderFile>
+      <ProgramDataBaseFileName>$(TargetDir)\$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ForcedIncludeFiles>tt\pch\pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'">
+    <ClCompile>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>inc;..\shared\inc;$(TTSDK_ROOT)\ntr\debugger\X86\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;TT_ASSERT_ON;TT_PLATFORM_WIN;TT_BUILD_TEST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>tt\pch\pch.h</PrecompiledHeaderFile>
+      <ProgramDataBaseFileName>$(TargetDir)\$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ForcedIncludeFiles>tt\pch\pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">
+    <ClCompile>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>inc;..\shared\inc;$(TTSDK_ROOT)\ntr\debugger\X86\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;TT_PLATFORM_WIN;TT_BUILD_FINAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>tt\pch\pch.h</PrecompiledHeaderFile>
+      <ProgramDataBaseFileName>$(TargetDir)\$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ForcedIncludeFiles>tt\pch\pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'">
+    <ClCompile>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>inc;..\shared\inc;$(TTSDK_ROOT)\ntr\debugger\X86\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;TT_PLATFORM_WIN;TT_BUILD_FINAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>tt\pch\pch.h</PrecompiledHeaderFile>
+      <ProgramDataBaseFileName>$(TargetDir)\$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ForcedIncludeFiles>tt\pch\pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\shared\inc\tt\app\fatal_error.h" />
+    <ClInclude Include="..\shared\inc\tt\compression\context.h" />
+    <ClInclude Include="..\shared\inc\tt\compression\dds.h" />
+    <ClInclude Include="..\shared\inc\tt\compression\fastlz.h" />
+    <ClInclude Include="..\shared\inc\tt\compression\image.h" />
+    <ClInclude Include="..\shared\inc\tt\compression\lz4\lz4.h" />
+    <ClInclude Include="..\shared\inc\tt\compression\lz4\lz4frame.h" />
+    <ClInclude Include="..\shared\inc\tt\compression\lz4\lz4frame_static.h" />
+    <ClInclude Include="..\shared\inc\tt\compression\lz4\lz4hc.h" />
+    <ClInclude Include="..\shared\inc\tt\compression\lz4\lz4opt.h" />
+    <ClInclude Include="..\shared\inc\tt\compression\lz4\xxhash.h" />
+    <ClInclude Include="..\shared\inc\tt\compression\lzma.h" />
+    <ClInclude Include="..\shared\inc\tt\compression\png.h" />
+    <ClInclude Include="..\shared\inc\tt\fs\utils\memoryarchive_utils.h" />
+    <ClInclude Include="..\shared\inc\tt\http\fwd.h" />
+    <ClInclude Include="..\shared\inc\tt\http\helpers.h" />
+    <ClInclude Include="..\shared\inc\tt\http\HttpConnectMgr.h" />
+    <ClInclude Include="..\shared\inc\tt\http\HttpRequest.h" />
+    <ClInclude Include="..\shared\inc\tt\http\HttpResponseHandler.h" />
+    <ClInclude Include="..\shared\inc\tt\iap\ProductInfo.h" />
+    <ClInclude Include="..\shared\inc\tt\iap\PurchaseEventHandler.h" />
+    <ClInclude Include="..\shared\inc\tt\snd\utils.h" />
+    <ClInclude Include="..\shared\inc\tt\steam\errorhelpers.h" />
+    <ClInclude Include="..\shared\inc\tt\steam\helpers.h" />
+    <ClInclude Include="..\shared\inc\tt\steam\Leaderboards.h" />
+    <ClInclude Include="..\shared\inc\tt\system\Calendar.h" />
+    <ClInclude Include="..\shared\inc\tt\system\CPUInfo.h" />
+    <ClInclude Include="..\shared\inc\tt\system\Language.h" />
+    <ClInclude Include="..\shared\inc\tt\settings\mac.h" />
+    <ClInclude Include="..\shared\inc\tt\settings\settings.h" />
+    <ClInclude Include="..\shared\inc\tt\system\Time.h" />
+    <ClInclude Include="..\shared\inc\tt\system\utils.h" />
+    <ClInclude Include="..\shared\inc\tt\thread\Semaphore.h" />
+    <ClInclude Include="..\shared\inc\tt\thread\ThreadedWorkload.h" />
+    <ClInclude Include="..\shared\src\tt\compression\lzma\LzFind.h" />
+    <ClInclude Include="..\shared\src\tt\compression\lzma\LzHash.h" />
+    <ClInclude Include="..\shared\src\tt\compression\lzma\LzmaDec.h" />
+    <ClInclude Include="..\shared\src\tt\compression\lzma\LzmaEnc.h" />
+    <ClInclude Include="..\shared\src\tt\compression\lzma\Types.h" />
+    <ClInclude Include="inc\tt\app\ComHelper.h" />
+    <ClInclude Include="inc\tt\app\StartupStateWin.h" />
+    <ClInclude Include="inc\tt\app\WinApp.h" />
+    <ClInclude Include="..\shared\inc\tt\app\SteamApi.h" />
+    <ClInclude Include="..\shared\inc\tt\app\SteamAppSystems.h" />
+    <ClInclude Include="..\shared\inc\tt\mem\cache.h" />
+    <ClInclude Include="..\shared\inc\tt\mem\types.h" />
+    <ClInclude Include="..\shared\inc\tt\mem\util.h" />
+    <ClInclude Include="inc\tt\app\WindowMessageHelpers.h" />
+    <ClInclude Include="inc\tt\iap\PurchaseMgr.h" />
+    <ClInclude Include="inc\tt\mem\Heap.h" />
+    <ClInclude Include="inc\tt\mem\mem.h" />
+    <ClInclude Include="inc\tt\mem\MemTracer.h" />
+    <ClInclude Include="inc\tt\input\KeyboardController.h" />
+    <ClInclude Include="inc\tt\input\MouseController.h" />
+    <ClInclude Include="inc\tt\input\platform_fwd.h" />
+    <ClInclude Include="inc\tt\input\Xbox360Controller.h" />
+    <ClInclude Include="..\shared\inc\tt\fs\BufferedFileSystem.h" />
+    <ClInclude Include="..\shared\inc\tt\fs\CrcFileSystem.h" />
+    <ClInclude Include="..\shared\inc\tt\fs\Dir.h" />
+    <ClInclude Include="..\shared\inc\tt\fs\DirEntry.h" />
+    <ClInclude Include="..\shared\inc\tt\fs\File.h" />
+    <ClInclude Include="..\shared\inc\tt\fs\FileSystem.h" />
+    <ClInclude Include="..\shared\inc\tt\fs\fs.h" />
+    <ClInclude Include="..\shared\inc\tt\fs\MemoryArchive.h" />
+    <ClInclude Include="..\shared\inc\tt\fs\MemoryFileSystem.h" />
+    <ClInclude Include="..\shared\inc\tt\fs\PassThroughFileSystem.h" />
+    <ClInclude Include="..\shared\inc\tt\fs\StdFileSystem.h" />
+    <ClInclude Include="..\shared\inc\tt\fs\SteamFileSystem.h" />
+    <ClInclude Include="..\shared\inc\tt\fs\types.h" />
+    <ClInclude Include="..\shared\inc\tt\fs\utils\utils.h" />
+    <ClInclude Include="..\shared\inc\tt\fs\utils\WorkingDir.h" />
+    <ClInclude Include="inc\tt\fs\WindowsFileSystem.h" />
+    <ClInclude Include="inc\tt\thread\Atomic.h" />
+    <ClInclude Include="inc\tt\thread\BackgroundThread.h" />
+    <ClInclude Include="..\shared\inc\tt\thread\Alarm.h" />
+    <ClInclude Include="..\shared\inc\tt\thread\ConditionVariable.h" />
+    <ClInclude Include="..\shared\inc\tt\thread\CriticalSection.h" />
+    <ClInclude Include="..\shared\inc\tt\thread\Defer.h" />
+    <ClInclude Include="..\shared\inc\tt\thread\MessageQueue.h" />
+    <ClInclude Include="..\shared\inc\tt\thread\Mutex.h" />
+    <ClInclude Include="..\shared\inc\tt\thread\thread.h" />
+    <ClInclude Include="..\shared\inc\tt\thread\types.h" />
+    <ClInclude Include="..\shared\inc\tt\compression\compression.h" />
+    <ClInclude Include="inc\tt\snd\XAudio2SoundSystem.h" />
+    <ClInclude Include="..\shared\inc\tt\snd\Buffer.h" />
+    <ClInclude Include="..\shared\inc\tt\snd\OpenALSoundSystem.h" />
+    <ClInclude Include="..\shared\inc\tt\snd\snd.h" />
+    <ClInclude Include="..\shared\inc\tt\snd\SoundSystem.h" />
+    <ClInclude Include="..\shared\inc\tt\snd\Stream.h" />
+    <ClInclude Include="..\shared\inc\tt\snd\StreamSource.h" />
+    <ClInclude Include="..\shared\inc\tt\snd\types.h" />
+    <ClInclude Include="..\shared\inc\tt\snd\Voice.h" />
+    <ClInclude Include="inc\tt\system\Environment.h" />
+    <ClInclude Include="inc\tt\system\Process.h" />
+    <ClInclude Include="inc\tt\pch\pch.h" />
+    <ClInclude Include="..\shared\inc\tt\steam\Achievements.h" />
+    <ClInclude Include="..\shared\inc\tt\piracy\file_verification.h" />
+    <ClInclude Include="..\shared\inc\tt\piracy\obfuscate.h" />
+    <ClInclude Include="..\shared\inc\tt\piracy\obfuscate_string.h" />
+    <ClInclude Include="inc\tt\dlg\ButtonResource.h" />
+    <ClInclude Include="inc\tt\dlg\CheckBoxResource.h" />
+    <ClInclude Include="inc\tt\dlg\ComboBoxResource.h" />
+    <ClInclude Include="inc\tt\dlg\ControlResource.h" />
+    <ClInclude Include="inc\tt\dlg\DialogResource.h" />
+    <ClInclude Include="inc\tt\dlg\EditControlResource.h" />
+    <ClInclude Include="inc\tt\dlg\GroupBoxResource.h" />
+    <ClInclude Include="inc\tt\dlg\ListBoxResource.h" />
+    <ClInclude Include="inc\tt\dlg\RadioButtonResource.h" />
+    <ClInclude Include="inc\tt\dlg\StaticResource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\shared\src\tt\compression\dds.cpp" />
+    <ClCompile Include="..\shared\src\tt\compression\fastlz.cpp" />
+    <ClCompile Include="..\shared\src\tt\compression\lz4\lz4.cpp" />
+    <ClCompile Include="..\shared\src\tt\compression\lz4\lz4frame.cpp" />
+    <ClCompile Include="..\shared\src\tt\compression\lz4\lz4hc.cpp" />
+    <ClCompile Include="..\shared\src\tt\compression\lz4\xxhash.cpp" />
+    <ClCompile Include="..\shared\src\tt\compression\lzma.cpp" />
+    <ClCompile Include="..\shared\src\tt\compression\lzma\LzFind.cpp" />
+    <ClCompile Include="..\shared\src\tt\compression\lzma\LzmaDec.cpp" />
+    <ClCompile Include="..\shared\src\tt\compression\lzma\LzmaEnc.cpp" />
+    <ClCompile Include="..\shared\src\tt\compression\png.cpp" />
+    <ClCompile Include="..\shared\src\tt\fs\utils\memoryarchive_utils.cpp" />
+    <ClCompile Include="..\shared\src\tt\http\helpers_http.cpp" />
+    <ClCompile Include="..\shared\src\tt\http\HttpConnectMgr.cpp" />
+    <ClCompile Include="..\shared\src\tt\settings\mac.cpp" />
+    <ClCompile Include="..\shared\src\tt\settings\settings.cpp" />
+    <ClCompile Include="..\shared\src\tt\steam\helpers.cpp" />
+    <ClCompile Include="..\shared\src\tt\steam\Leaderboards.cpp" />
+    <ClCompile Include="..\shared\src\tt\system\CPUInfo.cpp" />
+    <ClCompile Include="..\shared\src\tt\thread\ThreadedWorkload.cpp" />
+    <ClCompile Include="src\tt\app\fatal_error.cpp" />
+    <ClCompile Include="src\tt\app\WindowMessageHelpers.cpp" />
+    <ClCompile Include="src\tt\http\WinHttpConnectMgr.cpp" />
+    <ClCompile Include="src\tt\iap\PurchaseMgr.cpp" />
+    <ClCompile Include="src\tt\input\IPhoneController.cpp" />
+    <ClCompile Include="src\tt\system\Calendar.cpp" />
+    <ClCompile Include="src\tt\system\Language.cpp" />
+    <ClCompile Include="src\tt\settings\mac_win.cpp" />
+    <ClCompile Include="src\tt\system\Time.cpp" />
+    <ClCompile Include="src\tt\app\ComHelper.cpp" />
+    <ClCompile Include="src\tt\app\StartupStateWin.cpp" />
+    <ClCompile Include="src\tt\app\WinApp.cpp" />
+    <ClCompile Include="..\shared\src\tt\app\SteamApi.cpp" />
+    <ClCompile Include="..\shared\src\tt\app\SteamAppSystems.cpp" />
+    <ClCompile Include="src\tt\mem\Heap.cpp" />
+    <ClCompile Include="src\tt\input\KeyboardController.cpp" />
+    <ClCompile Include="src\tt\input\MouseController.cpp" />
+    <ClCompile Include="src\tt\input\Xbox360Controller.cpp" />
+    <ClCompile Include="..\shared\src\tt\fs\BufferedFileSystem.cpp" />
+    <ClCompile Include="..\shared\src\tt\fs\CrcFileSystem.cpp" />
+    <ClCompile Include="..\shared\src\tt\fs\Dir.cpp" />
+    <ClCompile Include="..\shared\src\tt\fs\File.cpp" />
+    <ClCompile Include="..\shared\src\tt\fs\FileSystem.cpp" />
+    <ClCompile Include="..\shared\src\tt\fs\fs.cpp" />
+    <ClCompile Include="..\shared\src\tt\fs\MemoryArchive.cpp" />
+    <ClCompile Include="..\shared\src\tt\fs\MemoryFileSystem.cpp" />
+    <ClCompile Include="..\shared\src\tt\fs\PassThroughFileSystem.cpp" />
+    <ClCompile Include="..\shared\src\tt\fs\StdFileSystem.cpp" />
+    <ClCompile Include="..\shared\src\tt\fs\SteamFileSystem.cpp" />
+    <ClCompile Include="..\shared\src\tt\fs\utils\utils.cpp" />
+    <ClCompile Include="src\tt\fs\WindowsFileSystem.cpp" />
+    <ClCompile Include="src\tt\system\utils_system.cpp" />
+    <ClCompile Include="src\tt\thread\BackgroundThread.cpp" />
+    <ClCompile Include="src\tt\thread\ConditionVariable.cpp" />
+    <ClCompile Include="src\tt\thread\Mutex.cpp" />
+    <ClCompile Include="src\tt\thread\Semaphore.cpp" />
+    <ClCompile Include="src\tt\thread\thread.cpp" />
+    <ClCompile Include="..\shared\src\tt\thread\Alarm.cpp" />
+    <ClCompile Include="..\shared\src\tt\thread\Defer.cpp" />
+    <ClCompile Include="..\shared\src\tt\thread\MessageQueue.cpp" />
+    <ClCompile Include="..\shared\src\tt\compression\compression.cpp" />
+    <ClCompile Include="src\tt\snd\XAudio2SoundSystem.cpp" />
+    <ClCompile Include="..\shared\src\tt\snd\Buffer.cpp" />
+    <ClCompile Include="..\shared\src\tt\snd\OpenALSoundSystem.cpp" />
+    <ClCompile Include="..\shared\src\tt\snd\snd.cpp" />
+    <ClCompile Include="..\shared\src\tt\snd\SoundSystem.cpp" />
+    <ClCompile Include="..\shared\src\tt\snd\Stream.cpp" />
+    <ClCompile Include="..\shared\src\tt\snd\Voice.cpp" />
+    <ClCompile Include="src\tt\system\Environment.cpp" />
+    <ClCompile Include="src\tt\system\Process.cpp" />
+    <ClCompile Include="src\tt\pch\pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\steam\Achievements.cpp" />
+    <ClCompile Include="src\tt\dlg\ButtonResource.cpp" />
+    <ClCompile Include="src\tt\dlg\CheckBoxResource.cpp" />
+    <ClCompile Include="src\tt\dlg\ComboBoxResource.cpp" />
+    <ClCompile Include="src\tt\dlg\ControlResource.cpp" />
+    <ClCompile Include="src\tt\dlg\DialogResource.cpp" />
+    <ClCompile Include="src\tt\dlg\EditControlResource.cpp" />
+    <ClCompile Include="src\tt\dlg\GroupBoxResource.cpp" />
+    <ClCompile Include="src\tt\dlg\ListBoxResource.cpp" />
+    <ClCompile Include="src\tt\dlg\RadioButtonResource.cpp" />
+    <ClCompile Include="src\tt\dlg\StaticResource.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\shared\inc\tt\mem\cache.inl" />
+    <None Include="..\shared\inc\tt\mem\util.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="platform.vcxproj">
+      <Project>{3e384a71-8890-4162-9ef2-4ec33194c341}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

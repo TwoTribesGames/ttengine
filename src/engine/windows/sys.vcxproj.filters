@@ -1,0 +1,707 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="settings">
+      <UniqueIdentifier>{e91fb5d0-e568-41c5-bf2b-c39103b5fc63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="settings\Shared">
+      <UniqueIdentifier>{cc64921a-f223-4f99-a7dc-68bd662eb1d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="settings\Windows">
+      <UniqueIdentifier>{f3d06959-b32e-4e79-af6f-b48c6a1ea615}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="app">
+      <UniqueIdentifier>{720b4b3e-1f40-45d7-ba7c-ff9c86533eb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="app\Windows">
+      <UniqueIdentifier>{71eed414-d5cf-4614-aeba-dabe44f6d33e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="app\Shared">
+      <UniqueIdentifier>{bd75bb41-7d2f-48ad-8ba5-9cfb063d6e7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mem">
+      <UniqueIdentifier>{a61d7ca2-112a-4d0d-987f-f11b812966ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mem\Shared">
+      <UniqueIdentifier>{0f8be3f4-7c23-4252-95d1-ac4fd03ba5c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mem\Windows">
+      <UniqueIdentifier>{c7d06ec3-2969-49c3-bb25-cd527365b7ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="input">
+      <UniqueIdentifier>{6e18166e-b53a-4c6e-afb4-2b8d76b6a232}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="input\Windows">
+      <UniqueIdentifier>{d544df36-629b-4701-94e7-1169ac2083e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fs">
+      <UniqueIdentifier>{f2c4046d-be9d-4061-8225-338cfc111c22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fs\Shared">
+      <UniqueIdentifier>{a209e0cb-f536-4359-8ff1-aa80f83736a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fs\Shared\utils">
+      <UniqueIdentifier>{a56728c1-ade0-4188-9b3e-d8b3ab28381c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fs\Windows">
+      <UniqueIdentifier>{d210374c-5332-4aa5-bb7f-830c34664a94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thread">
+      <UniqueIdentifier>{2a320b75-0b3b-4193-8a92-172b9c53894e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thread\Windows">
+      <UniqueIdentifier>{5b08e138-5665-407f-8609-eca62d31af3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thread\Shared">
+      <UniqueIdentifier>{f61f10f2-9e30-4336-a113-c3c57ae0c0d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="compression">
+      <UniqueIdentifier>{8c42dadf-05a2-435f-a9d6-808a7f2dcd6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="compression\Shared">
+      <UniqueIdentifier>{04a145c8-cfa9-4525-b677-61d2cc7b36b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="snd">
+      <UniqueIdentifier>{dfb83667-f078-4272-9509-7cd51e3cb480}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="snd\Windows">
+      <UniqueIdentifier>{fed99e2c-2a4f-4bd2-b0e9-3770467502dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="snd\Shared">
+      <UniqueIdentifier>{8073eee7-e298-4b4f-a0e5-1488cc120f93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system">
+      <UniqueIdentifier>{6f2bd84f-35dc-453a-b66c-b6dff42f374f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\Windows">
+      <UniqueIdentifier>{130131b3-6454-481e-96cf-1b9ac26eb8a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pch">
+      <UniqueIdentifier>{93f697e8-39c2-4a21-b459-de53709bd67d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="steam">
+      <UniqueIdentifier>{04bd627a-974f-40d9-a7f6-ebfef80fd524}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="piracy">
+      <UniqueIdentifier>{33fe2f9f-1e46-4d8d-9f90-a448d63bcf89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="piracy\shared">
+      <UniqueIdentifier>{f7aeb62f-ad5b-44ad-bea7-d8069e8d0d83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dlg">
+      <UniqueIdentifier>{76dc77c0-c64c-4fa9-9f42-9357ea61a8d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="iap">
+      <UniqueIdentifier>{1c4103fd-8d5f-483f-882e-c72f92324cff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="iap\Shared">
+      <UniqueIdentifier>{43077fbc-31a7-4d66-a95e-4cbe18280052}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="iap\Windows">
+      <UniqueIdentifier>{5b74631b-302a-40d5-bcdf-5fecab366734}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="http">
+      <UniqueIdentifier>{c9be0d2a-5c98-4bd6-be15-17d7054151d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="http\Shared">
+      <UniqueIdentifier>{4df5cb72-4535-4967-87d1-b1a87335e51d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="http\Windows">
+      <UniqueIdentifier>{c756f5d5-50c5-409a-9364-a48499f1e9d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\Shared">
+      <UniqueIdentifier>{b64123d3-277c-4eb9-9336-3f6d58e996f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="compression\Shared\lzma">
+      <UniqueIdentifier>{536568a6-4655-40b0-ae1b-b8ca02531ca7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="compression\Shared\lz4">
+      <UniqueIdentifier>{26ed3f0b-37b7-4ff8-9741-020aaebcf230}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\shared\inc\tt\system\Calendar.h">
+      <Filter>settings\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\system\Language.h">
+      <Filter>settings\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\settings\mac.h">
+      <Filter>settings\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\settings\settings.h">
+      <Filter>settings\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\system\Time.h">
+      <Filter>settings\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\app\ComHelper.h">
+      <Filter>app\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\app\StartupStateWin.h">
+      <Filter>app\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\app\WinApp.h">
+      <Filter>app\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\app\SteamApi.h">
+      <Filter>app\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\app\SteamAppSystems.h">
+      <Filter>app\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\mem\cache.h">
+      <Filter>mem\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\mem\types.h">
+      <Filter>mem\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\mem\util.h">
+      <Filter>mem\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\mem\Heap.h">
+      <Filter>mem\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\mem\mem.h">
+      <Filter>mem\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\mem\MemTracer.h">
+      <Filter>mem\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\input\KeyboardController.h">
+      <Filter>input\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\input\MouseController.h">
+      <Filter>input\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\input\platform_fwd.h">
+      <Filter>input\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\input\Xbox360Controller.h">
+      <Filter>input\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\fs\BufferedFileSystem.h">
+      <Filter>fs\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\fs\CrcFileSystem.h">
+      <Filter>fs\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\fs\Dir.h">
+      <Filter>fs\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\fs\DirEntry.h">
+      <Filter>fs\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\fs\File.h">
+      <Filter>fs\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\fs\FileSystem.h">
+      <Filter>fs\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\fs\fs.h">
+      <Filter>fs\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\fs\MemoryArchive.h">
+      <Filter>fs\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\fs\MemoryFileSystem.h">
+      <Filter>fs\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\fs\PassThroughFileSystem.h">
+      <Filter>fs\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\fs\StdFileSystem.h">
+      <Filter>fs\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\fs\SteamFileSystem.h">
+      <Filter>fs\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\fs\types.h">
+      <Filter>fs\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\fs\utils\utils.h">
+      <Filter>fs\Shared\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\fs\utils\WorkingDir.h">
+      <Filter>fs\Shared\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\fs\WindowsFileSystem.h">
+      <Filter>fs\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\thread\Atomic.h">
+      <Filter>thread\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\thread\BackgroundThread.h">
+      <Filter>thread\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\thread\Alarm.h">
+      <Filter>thread\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\thread\ConditionVariable.h">
+      <Filter>thread\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\thread\CriticalSection.h">
+      <Filter>thread\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\thread\Defer.h">
+      <Filter>thread\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\thread\MessageQueue.h">
+      <Filter>thread\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\thread\Mutex.h">
+      <Filter>thread\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\thread\thread.h">
+      <Filter>thread\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\thread\types.h">
+      <Filter>thread\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\compression\compression.h">
+      <Filter>compression\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\snd\XAudio2SoundSystem.h">
+      <Filter>snd\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\snd\Buffer.h">
+      <Filter>snd\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\snd\OpenALSoundSystem.h">
+      <Filter>snd\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\snd\snd.h">
+      <Filter>snd\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\snd\SoundSystem.h">
+      <Filter>snd\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\snd\Stream.h">
+      <Filter>snd\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\snd\StreamSource.h">
+      <Filter>snd\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\snd\types.h">
+      <Filter>snd\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\snd\Voice.h">
+      <Filter>snd\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\system\Environment.h">
+      <Filter>system\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\system\Process.h">
+      <Filter>system\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\pch\pch.h">
+      <Filter>pch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\steam\Achievements.h">
+      <Filter>steam</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\piracy\file_verification.h">
+      <Filter>piracy\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\piracy\obfuscate.h">
+      <Filter>piracy\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\piracy\obfuscate_string.h">
+      <Filter>piracy\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\dlg\ButtonResource.h">
+      <Filter>dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\dlg\CheckBoxResource.h">
+      <Filter>dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\dlg\ComboBoxResource.h">
+      <Filter>dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\dlg\ControlResource.h">
+      <Filter>dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\dlg\DialogResource.h">
+      <Filter>dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\dlg\EditControlResource.h">
+      <Filter>dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\dlg\GroupBoxResource.h">
+      <Filter>dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\dlg\ListBoxResource.h">
+      <Filter>dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\dlg\RadioButtonResource.h">
+      <Filter>dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\dlg\StaticResource.h">
+      <Filter>dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\iap\ProductInfo.h">
+      <Filter>iap\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\iap\PurchaseEventHandler.h">
+      <Filter>iap\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\iap\PurchaseMgr.h">
+      <Filter>iap\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\http\fwd.h">
+      <Filter>http\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\http\helpers.h">
+      <Filter>http\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\http\HttpRequest.h">
+      <Filter>http\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\http\HttpResponseHandler.h">
+      <Filter>http\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\steam\Leaderboards.h">
+      <Filter>steam</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\steam\helpers.h">
+      <Filter>steam</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\app\WindowMessageHelpers.h">
+      <Filter>app\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\compression\png.h">
+      <Filter>compression\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\compression\dds.h">
+      <Filter>compression\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\compression\image.h">
+      <Filter>compression\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\system\utils.h">
+      <Filter>system\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\compression\fastlz.h">
+      <Filter>compression\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\compression\lzma.h">
+      <Filter>compression\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\tt\compression\lzma\LzmaDec.h">
+      <Filter>compression\Shared\lzma</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\tt\compression\lzma\LzmaEnc.h">
+      <Filter>compression\Shared\lzma</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\tt\compression\lzma\Types.h">
+      <Filter>compression\Shared\lzma</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\tt\compression\lzma\LzFind.h">
+      <Filter>compression\Shared\lzma</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\tt\compression\lzma\LzHash.h">
+      <Filter>compression\Shared\lzma</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\fs\utils\memoryarchive_utils.h">
+      <Filter>fs\Shared\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\snd\utils.h">
+      <Filter>snd\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\system\CPUInfo.h">
+      <Filter>system\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\thread\Semaphore.h">
+      <Filter>thread\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\app\fatal_error.h">
+      <Filter>app\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\steam\errorhelpers.h">
+      <Filter>steam</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\compression\context.h">
+      <Filter>compression\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\http\HttpConnectMgr.h">
+      <Filter>http\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\thread\ThreadedWorkload.h">
+      <Filter>thread\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\compression\lz4\lz4frame_static.h">
+      <Filter>compression\Shared\lz4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\compression\lz4\lz4hc.h">
+      <Filter>compression\Shared\lz4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\compression\lz4\lz4opt.h">
+      <Filter>compression\Shared\lz4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\compression\lz4\xxhash.h">
+      <Filter>compression\Shared\lz4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\compression\lz4\lz4.h">
+      <Filter>compression\Shared\lz4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\compression\lz4\lz4frame.h">
+      <Filter>compression\Shared\lz4</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\shared\src\tt\settings\mac.cpp">
+      <Filter>settings\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\settings\settings.cpp">
+      <Filter>settings\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\system\Calendar.cpp">
+      <Filter>settings\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\system\Language.cpp">
+      <Filter>settings\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\settings\mac_win.cpp">
+      <Filter>settings\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\system\Time.cpp">
+      <Filter>settings\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\app\ComHelper.cpp">
+      <Filter>app\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\app\StartupStateWin.cpp">
+      <Filter>app\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\app\WinApp.cpp">
+      <Filter>app\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\app\SteamApi.cpp">
+      <Filter>app\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\app\SteamAppSystems.cpp">
+      <Filter>app\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\mem\Heap.cpp">
+      <Filter>mem\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\input\KeyboardController.cpp">
+      <Filter>input\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\input\MouseController.cpp">
+      <Filter>input\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\input\Xbox360Controller.cpp">
+      <Filter>input\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\fs\BufferedFileSystem.cpp">
+      <Filter>fs\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\fs\CrcFileSystem.cpp">
+      <Filter>fs\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\fs\Dir.cpp">
+      <Filter>fs\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\fs\File.cpp">
+      <Filter>fs\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\fs\FileSystem.cpp">
+      <Filter>fs\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\fs\fs.cpp">
+      <Filter>fs\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\fs\MemoryArchive.cpp">
+      <Filter>fs\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\fs\MemoryFileSystem.cpp">
+      <Filter>fs\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\fs\PassThroughFileSystem.cpp">
+      <Filter>fs\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\fs\StdFileSystem.cpp">
+      <Filter>fs\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\fs\SteamFileSystem.cpp">
+      <Filter>fs\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\fs\utils\utils.cpp">
+      <Filter>fs\Shared\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\fs\WindowsFileSystem.cpp">
+      <Filter>fs\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\thread\BackgroundThread.cpp">
+      <Filter>thread\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\thread\ConditionVariable.cpp">
+      <Filter>thread\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\thread\Mutex.cpp">
+      <Filter>thread\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\thread\thread.cpp">
+      <Filter>thread\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\thread\Alarm.cpp">
+      <Filter>thread\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\thread\Defer.cpp">
+      <Filter>thread\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\thread\MessageQueue.cpp">
+      <Filter>thread\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\compression\compression.cpp">
+      <Filter>compression\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\snd\XAudio2SoundSystem.cpp">
+      <Filter>snd\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\snd\Buffer.cpp">
+      <Filter>snd\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\snd\OpenALSoundSystem.cpp">
+      <Filter>snd\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\snd\snd.cpp">
+      <Filter>snd\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\snd\SoundSystem.cpp">
+      <Filter>snd\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\snd\Stream.cpp">
+      <Filter>snd\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\snd\Voice.cpp">
+      <Filter>snd\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\system\Environment.cpp">
+      <Filter>system\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\system\Process.cpp">
+      <Filter>system\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\pch\pch.cpp">
+      <Filter>pch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\steam\Achievements.cpp">
+      <Filter>steam</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\dlg\ButtonResource.cpp">
+      <Filter>dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\dlg\CheckBoxResource.cpp">
+      <Filter>dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\dlg\ComboBoxResource.cpp">
+      <Filter>dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\dlg\ControlResource.cpp">
+      <Filter>dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\dlg\DialogResource.cpp">
+      <Filter>dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\dlg\EditControlResource.cpp">
+      <Filter>dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\dlg\GroupBoxResource.cpp">
+      <Filter>dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\dlg\ListBoxResource.cpp">
+      <Filter>dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\dlg\RadioButtonResource.cpp">
+      <Filter>dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\dlg\StaticResource.cpp">
+      <Filter>dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\iap\PurchaseMgr.cpp">
+      <Filter>iap\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\http\helpers_http.cpp">
+      <Filter>http\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\steam\Leaderboards.cpp">
+      <Filter>steam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\steam\helpers.cpp">
+      <Filter>steam</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\app\WindowMessageHelpers.cpp">
+      <Filter>app\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\compression\png.cpp">
+      <Filter>compression\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\compression\dds.cpp">
+      <Filter>compression\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\system\utils_system.cpp">
+      <Filter>system\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\compression\fastlz.cpp">
+      <Filter>compression\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\compression\lzma.cpp">
+      <Filter>compression\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\compression\lzma\LzmaDec.cpp">
+      <Filter>compression\Shared\lzma</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\compression\lzma\LzmaEnc.cpp">
+      <Filter>compression\Shared\lzma</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\compression\lzma\LzFind.cpp">
+      <Filter>compression\Shared\lzma</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\fs\utils\memoryarchive_utils.cpp">
+      <Filter>fs\Shared\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\system\CPUInfo.cpp">
+      <Filter>system\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\thread\Semaphore.cpp">
+      <Filter>thread\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\app\fatal_error.cpp">
+      <Filter>app\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\http\HttpConnectMgr.cpp">
+      <Filter>http\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\http\WinHttpConnectMgr.cpp">
+      <Filter>http\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\thread\ThreadedWorkload.cpp">
+      <Filter>thread\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\compression\lz4\lz4frame.cpp">
+      <Filter>compression\Shared\lz4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\compression\lz4\lz4hc.cpp">
+      <Filter>compression\Shared\lz4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\compression\lz4\xxhash.cpp">
+      <Filter>compression\Shared\lz4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\compression\lz4\lz4.cpp">
+      <Filter>compression\Shared\lz4</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\input\IPhoneController.cpp">
+      <Filter>input\Windows</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\shared\inc\tt\mem\cache.inl">
+      <Filter>mem\Shared</Filter>
+    </None>
+    <None Include="..\shared\inc\tt\mem\util.inl">
+      <Filter>mem\Shared</Filter>
+    </None>
+  </ItemGroup>
+</Project>

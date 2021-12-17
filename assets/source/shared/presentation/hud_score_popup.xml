@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		permanent="true">
+
+	<!-- plus animation-->
+	<startvalues>
+		<translation z="0.1"/>
+	</startvalues>
+	
+	<anim2dstack>
+		<scale duration="0.15" delay="0.1" direction="forward">
+			<begin scale="0.5"/>
+			<end scale="1"/>
+		</scale>
+		<translation duration="1.0" direction="forward" timing="easeout">
+			<begin y="0"/>
+			<end y="3"/>
+		</translation>
+	</anim2dstack>
+
+	<coloranimstack>
+		<color direction="forward" duration="0.3" delay="0.7">
+			<begin a="0"/>
+			<end a="-255"/>
+		</color>
+	</coloranimstack>
+</presentation>

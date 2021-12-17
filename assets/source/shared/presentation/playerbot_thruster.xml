@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		permanent="true">
+
+	<startvalues>
+		<scale scale="1.3"/>
+		<origin y="0.1"/>
+		<translation z="0.005"/>
+	</startvalues>
+
+	<startvalues>
+		<musthave>
+			<tag name="floor"/>
+		</musthave>
+		<musthave>
+			<tag name="air"/>
+		</musthave>
+		<scale scale="1.4"/>
+		<translation y="0.5"/>
+	</startvalues>
+	
+	<frameanimstack name="thrust">
+		<musthave>
+			<tag name="air"/>
+		</musthave>
+		<musthave>
+			<tag name="zerogravity"/>
+		</musthave>
+		<musthave>
+			<tag name="water"/>
+		</musthave>
+		<frameanim lightmask="use_alpha" id="id_thrust" directory="spritestrip/playerbot/thruster_boost" blendmode="add" quad_height="1.342" quad_width="0.89" fps="10" looping="true">
+			<begin frame="0"/>
+			<end   frame="2"/>
+			<translation y="-0.9"/>
+		</frameanim>
+	</frameanimstack>
+
+	<anim2dstack name="thrust">
+		<musthave>
+			<tag name="floor"/>
+		</musthave>
+		<musthave>
+			<tag name="air"/>
+		</musthave>
+		<scale duration="0.6" delay="0.4">
+			<begin scale="1"/>
+			<end scale="0.5"/>
+		</scale>
+	</anim2dstack>
+
+	<anim2dstack name="thrust" >
+		<scale duration="0.1" direction="pingpong" looping="true">
+			<begin scale="1"/>
+			<end scale="1.2"/>
+		</scale>
+	</anim2dstack>
+
+	<particles name="thrust" file="particles/thruster_underwater.trigger" looping="true" duration="0" position_type="follow">
+		<musthave>
+			<tag name="water"/>
+		</musthave>
+		<translation x="0" z="0.0025" y="0.0"/>
+		<scale scale="0.77"/>
+	</particles>
+
+	<particles name="thrust" file="particles/thruster_zerogravity.trigger" looping="true" duration="0" position_type="follow">
+		<mustnothave>
+			<tag name="3"/>
+		</mustnothave>
+		<mustnothave>
+			<tag name="water"/>
+			<tag name="air"/>
+		</mustnothave>
+		<translation x="0" z="0.0025" y="0.0"/>
+		<scale scale="0.77"/>
+	</particles>
+
+	<particles name="thrust" file="particles/thruster_smoketrail.trigger" looping="true" duration="0" position_type="follow">
+		<musthave>
+			<tag name="zerogravity"/>
+			<tag name="1"/>
+		</musthave>
+		<translation x="0" z="0.0025" y="0.0"/>
+	</particles>
+	
+	<particles name="thrust" file="particles/thruster_sparktrail.trigger" looping="true" duration="0" position_type="follow">
+		<musthave>
+			<tag name="zerogravity"/>
+			<tag name="1"/>
+		</musthave>
+		<translation x="0" z="0.0025" y="0.0"/>
+		<scale scale="0.77"/>
+	</particles>
+
+	<particles name="thrust" file="particles/thruster_zerogravity.trigger" looping="true" duration="0" position_type="follow">
+		<musthave>
+			<tag name="zerogravity"/>
+			<tag name="1"/>
+		</musthave>
+		<translation x="0" z="0.0025" y="0.0"/>
+		<scale scale="0.27"/>
+	</particles>
+
+
+
+	<trigger name="thrust" type="audio" data="playerbot_thruster_thrust_boost">
+		<musthave>
+			<tag name="floor"/>
+		</musthave>
+		<musthave>
+			<tag name="air"/>
+		</musthave>
+
+		<musthave>
+			<tag name="zerogravity"/>
+		</musthave>
+	</trigger>
+
+
+	<trigger type="audio" data="playerbot_thruster_thrust_boost_submerged" name="thrust">
+		<musthave>
+			<tag name="water"/>
+		</musthave>
+    </trigger>
+
+    	<!-- thruster empty -->
+	<particles name="empty" file="particles/thruster.trigger" looping="true" duration="0" position_type="follow">
+		<translation x="0" z="0.0" y="-0.6"/>
+		<scale scale="0.77"/>
+	</particles>
+
+	<particles name="thrust" file="particles/thruster_flickering.trigger" position_type="follow">
+		<musthave>
+			<tag name="air"/>
+		</musthave>
+		<translation x="0" y="-0.8" z="0"/>
+		<scale scale="0.77"/>
+	</particles>
+
+	<particles name="thrust" file="particles/thruster_boost.trigger" looping="false" position_type="relative">
+		<musthave>
+			<tag name="floor"/>
+		</musthave>
+		<translation x="0" y="0" z="0"/>
+		<scale scale="0.714"/>
+	</particles>
+
+	<particles name="thrust" file="particles/thruster_airboost.trigger" looping="false" position_type="relative">
+		<musthave>
+			<tag name="air"/>
+		</musthave>
+		<translation x="0" y="0" z="0"/>
+		<scale scale="0.714"/> 
+	</particles>
+
+
+	<particles name="thrust" file="particles/thruster_boosttrail.trigger" position_type="follow">
+		<musthave>
+			<tag name="floor"/>
+		</musthave>
+		<musthave>
+			<tag name="air"/>
+		</musthave>
+		<translation x="0" y="0" z="0"/>
+		<scale scale="0.714"/>
+	</particles>
+</presentation>

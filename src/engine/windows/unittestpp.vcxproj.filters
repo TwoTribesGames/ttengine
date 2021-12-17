@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Shared">
+      <UniqueIdentifier>{e197b2b5-9f27-4d91-b3df-0d02c401b8dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\src">
+      <UniqueIdentifier>{2d8e350e-bcb3-4c8d-9426-f65ee24f3069}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\src\Win32">
+      <UniqueIdentifier>{5c1ccbf2-f39e-49d6-aa17-0ccf4e93cb42}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\shared\inc\unittestpp\config.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\unittestpp\unittestpp.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\unittestpp\src\AssertException.h">
+      <Filter>Shared\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\unittestpp\src\CheckMacros.h">
+      <Filter>Shared\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\unittestpp\src\Checks.h">
+      <Filter>Shared\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\unittestpp\src\CompositeTestReporter.h">
+      <Filter>Shared\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\unittestpp\src\CurrentTest.h">
+      <Filter>Shared\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\unittestpp\src\DeferredTestReporter.h">
+      <Filter>Shared\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\unittestpp\src\DeferredTestResult.h">
+      <Filter>Shared\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\unittestpp\src\ExceptionMacros.h">
+      <Filter>Shared\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\unittestpp\src\ExecuteTest.h">
+      <Filter>Shared\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\unittestpp\src\HelperMacros.h">
+      <Filter>Shared\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\unittestpp\src\MemoryOutStream.h">
+      <Filter>Shared\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\unittestpp\src\ReportAssert.h">
+      <Filter>Shared\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\unittestpp\src\ReportAssertImpl.h">
+      <Filter>Shared\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\unittestpp\src\Test.h">
+      <Filter>Shared\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\unittestpp\src\TestDetails.h">
+      <Filter>Shared\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\unittestpp\src\TestList.h">
+      <Filter>Shared\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\unittestpp\src\TestMacros.h">
+      <Filter>Shared\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\unittestpp\src\TestReporter.h">
+      <Filter>Shared\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\unittestpp\src\TestReporterStdout.h">
+      <Filter>Shared\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\unittestpp\src\TestResults.h">
+      <Filter>Shared\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\unittestpp\src\TestRunner.h">
+      <Filter>Shared\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\unittestpp\src\TestSuite.h">
+      <Filter>Shared\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\unittestpp\src\TimeConstraint.h">
+      <Filter>Shared\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\unittestpp\src\TimeHelpers.h">
+      <Filter>Shared\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\unittestpp\src\XmlTestReporter.h">
+      <Filter>Shared\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\unittestpp\src\Win32\TimeHelpers.h">
+      <Filter>Shared\src\Win32</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\shared\inc\unittestpp\src\AssertException.cpp">
+      <Filter>Shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\inc\unittestpp\src\Checks.cpp">
+      <Filter>Shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\inc\unittestpp\src\CompositeTestReporter.cpp">
+      <Filter>Shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\inc\unittestpp\src\CurrentTest.cpp">
+      <Filter>Shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\inc\unittestpp\src\DeferredTestReporter.cpp">
+      <Filter>Shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\inc\unittestpp\src\DeferredTestResult.cpp">
+      <Filter>Shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\inc\unittestpp\src\MemoryOutStream.cpp">
+      <Filter>Shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\inc\unittestpp\src\ReportAssert.cpp">
+      <Filter>Shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\inc\unittestpp\src\Test.cpp">
+      <Filter>Shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\inc\unittestpp\src\TestDetails.cpp">
+      <Filter>Shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\inc\unittestpp\src\TestList.cpp">
+      <Filter>Shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\inc\unittestpp\src\TestReporter.cpp">
+      <Filter>Shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\inc\unittestpp\src\TestReporterStdout.cpp">
+      <Filter>Shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\inc\unittestpp\src\TestResults.cpp">
+      <Filter>Shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\inc\unittestpp\src\TestRunner.cpp">
+      <Filter>Shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\inc\unittestpp\src\TimeConstraint.cpp">
+      <Filter>Shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\inc\unittestpp\src\XmlTestReporter.cpp">
+      <Filter>Shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\inc\unittestpp\src\Win32\TimeHelpers.cpp">
+      <Filter>Shared\src\Win32</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

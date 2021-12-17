@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<ParticleTrigger xmlns="http://intranet.twotribes.com/schemas/common/particletrigger.xsd" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/particletrigger.xsd http://intranet.twotribes.com/schemas/common/particletrigger.xsd">
+	<GameEvent name="placeholder_burst"/>
+	<ParticleEmitter max_particles="10" x="0" y="-2" delay="0" space="world">
+		<RenderGroup value="300"/>
+		<Texture filename="particles/lava_splash_3.png"/>
+		<FrameAnimations framesize="0">
+			<Animation start="0" end="0" fps="30" type="loop"/>
+		</FrameAnimations>
+		<EmissionRect width="2" height="0"/>
+		<ExternalForce min_x="-0.5" max_x="0.5" min_y="-1.7" max_y="-1.7"/>
+		<BlendMode type="blend"/>
+		<PreGeneration time="0" step="0"/>
+		<Emission particles="10" type="burst" lifetime="0.172522"/>
+		<ParticleOrientation type="rotation"/>
+		<Velocity min_x="-2.5" max_x="2.5" min_y="7" max_y="7"/>
+		<VelocityFriction min="0" max="0"/>
+		<ParticleLife min="0.481352" max="0.681352"/>
+		<Size min_start="0.75" max_start="2.25" min_end="2.25" max_end="3.75"/>
+		<Weight min_start="0" max_start="0" min_end="1" max_end="1"/>
+		<Rotation min_start="-180" max_start="180" min_speed="-180" max_speed="180"/>
+		<RotationForce min="0" max="0"/>
+		<RotationFriction min="0" max="0"/>
+		<Frame min_start="0" max_start="4"/>
+		<MinStartColor r="255" g="255" b="255" a="155"/>
+		<MaxStartColor r="255" g="255" b="255" a="155"/>
+		<MinEndColor r="255" g="255" b="255" a="155"/>
+		<MaxEndColor r="150" g="199" b="211" a="155"/>
+		<Fade in="0.1" out="0.9" type="percentage"/>
+	</ParticleEmitter>
+	<ParticleEmitter max_particles="10" x="0" y="-2" delay="0" space="world">
+		<RenderGroup value="300"/>
+		<Texture filename="particles/dust_cloud_balls.png"/>
+		<FrameAnimations framesize="0">
+			<Animation start="0" end="0" fps="30" type="loop"/>
+		</FrameAnimations>
+		<EmissionRect width="3" height="1"/>
+		<ExternalForce min_x="-0.5" max_x="0.5" min_y="-1" max_y="-1"/>
+		<BlendMode type="blend"/>
+		<PreGeneration time="0" step="0"/>
+		<Emission particles="10" type="burst" lifetime="0.172522"/>
+		<ParticleOrientation type="rotation"/>
+		<Velocity min_x="-1.5" max_x="1.5" min_y="8" max_y="8"/>
+		<VelocityFriction min="0" max="0"/>
+		<ParticleLife min="0.481352" max="0.681352"/>
+		<Size min_start="2" max_start="3"/>
+		<Weight min_start="0" max_start="0" min_end="1" max_end="1"/>
+		<Rotation min_start="-180" max_start="180" min_speed="-180" max_speed="180"/>
+		<RotationForce min="0" max="0"/>
+		<RotationFriction min="0" max="0"/>
+		<Frame min_start="0" max_start="4"/>
+		<MinStartColor r="255" g="255" b="255" a="255"/>
+		<MaxStartColor r="145" g="233" b="255" a="255"/>
+		<MinEndColor r="255" g="255" b="255" a="255"/>
+		<MaxEndColor r="120" g="234" b="249" a="255"/>
+		<Fade in="0.1" out="0.9" type="percentage"/>
+	</ParticleEmitter>
+	<ParticleEmitter max_particles="10" x="0" y="-2" delay="0" space="world">
+		<RenderGroup value="300"/>
+		<Texture filename="particles/lava_splash_3.png"/>
+		<FrameAnimations framesize="0">
+			<Animation start="0" end="0" fps="30" type="loop"/>
+		</FrameAnimations>
+		<EmissionRect width="1" height="0"/>
+		<ExternalForce min_x="-0.5" max_x="0.5" min_y="-1.7" max_y="-1.7"/>
+		<BlendMode type="blend"/>
+		<PreGeneration time="0" step="0"/>
+		<Emission particles="10" type="burst" lifetime="0.172522"/>
+		<ParticleOrientation type="rotation"/>
+		<Velocity min_x="-1" max_x="1" min_y="9.5" max_y="12.5"/>
+		<VelocityFriction min="0" max="0"/>
+		<ParticleLife min="0.481352" max="0.681352"/>
+		<Size min_start="0.5" max_start="1.5" min_end="1.5" max_end="2.5"/>
+		<Weight min_start="0" max_start="0" min_end="1" max_end="1"/>
+		<Rotation min_start="-180" max_start="180" min_speed="-180" max_speed="180"/>
+		<RotationForce min="0" max="0"/>
+		<RotationFriction min="0" max="0"/>
+		<Frame min_start="0" max_start="4"/>
+		<MinStartColor r="255" g="255" b="255" a="155"/>
+		<MaxStartColor r="255" g="255" b="255" a="155"/>
+		<MinEndColor r="255" g="255" b="255" a="155"/>
+		<MaxEndColor r="150" g="199" b="211" a="155"/>
+		<Fade in="0.1" out="0.9" type="percentage"/>
+	</ParticleEmitter>
+	<ParticleEmitter max_particles="40" x="0" y="0" delay="0" space="world">
+		<RenderGroup value="300"/>
+		<Texture filename="particles/dust_cloud_balls.png"/>
+		<FrameAnimations framesize="0">
+			<Animation start="0" end="0" fps="30" type="loop"/>
+		</FrameAnimations>
+		<EmissionCircle radius="1" innerradius="0"/>
+		<ExternalForce min_x="-0.5" max_x="0.5" min_y="-1" max_y="-1"/>
+		<BlendMode type="blend"/>
+		<PreGeneration time="0" step="0"/>
+		<Emission particles="40" type="timed" lifetime="0.6"/>
+		<ParticleOrientation type="rotation"/>
+		<Velocity min_x="0" max_x="0" min_y="0" max_y="0"/>
+		<VelocityFriction min="0" max="0"/>
+		<ParticleLife min="0.7" max="0.9"/>
+		<Size min_start="1.5" max_start="2.5" min_end="1.25" max_end="1.75"/>
+		<Weight min_start="1" max_start="1" min_end="2" max_end="2"/>
+		<Rotation min_start="-180" max_start="180" min_speed="-180" max_speed="180"/>
+		<RotationForce min="0" max="0"/>
+		<RotationFriction min="0" max="0"/>
+		<Frame min_start="0" max_start="4"/>
+		<MinStartColor r="255" g="255" b="255" a="255"/>
+		<MaxStartColor r="145" g="233" b="255" a="255"/>
+		<MinEndColor r="255" g="255" b="255" a="255"/>
+		<MaxEndColor r="120" g="234" b="249" a="255"/>
+		<Fade in="0.1" out="0.9" type="percentage"/>
+	</ParticleEmitter>
+	<ParticleEmitter max_particles="60" x="0" y="0" delay="0" space="world">
+		<RenderGroup value="300"/>
+		<Texture filename="particles/splash.png"/>
+		<FrameAnimations framesize="0">
+			<Animation start="0" end="0" fps="30" type="loop"/>
+		</FrameAnimations>
+		<EmissionCircle radius="0" innerradius="0"/>
+		<ExternalForce min_x="-0.5" max_x="0.5" min_y="-1" max_y="-1"/>
+		<BlendMode type="blend"/>
+		<PreGeneration time="0" step="0"/>
+		<Emission particles="60" type="timed" lifetime="0.1"/>
+		<ParticleOrientation type="rotation"/>
+		<Velocity min_x="0" max_x="0" min_y="0" max_y="0"/>
+		<VelocityFriction min="0" max="0"/>
+		<ParticleLife min="0.3" max="0.5"/>
+		<Size min_start="0.375" max_start="0.625" min_end="2" max_end="4"/>
+		<Weight min_start="0" max_start="0" min_end="1" max_end="1"/>
+		<Rotation min_start="-180" max_start="180" min_speed="-180" max_speed="180"/>
+		<RotationForce min="0" max="0"/>
+		<RotationFriction min="0" max="0"/>
+		<Frame min_start="0" max_start="4"/>
+		<MinStartColor r="255" g="255" b="255" a="132"/>
+		<MaxStartColor r="196" g="240" b="251" a="132"/>
+		<MinEndColor r="255" g="255" b="255" a="131"/>
+		<MaxEndColor r="203" g="249" b="255" a="136"/>
+		<Fade in="0.1" out="0.9" type="percentage"/>
+	</ParticleEmitter>
+	<ParticleEmitter max_particles="40" x="0" y="0" delay="0" space="world">
+		<RenderGroup value="300"/>
+		<Texture filename="particles/generic_hardedge_drip.png"/>
+		<FrameAnimations framesize="0">
+			<Animation start="0" end="0" fps="30" type="loop"/>
+		</FrameAnimations>
+		<EmissionCircle radius="1" innerradius="0.5"/>
+		<ExternalForce min_x="-0.5" max_x="0.5" min_y="-1" max_y="-1"/>
+		<BlendMode type="blend"/>
+		<PreGeneration time="0" step="0"/>
+		<Emission particles="80" type="timed" lifetime="0.6"/>
+		<ParticleOrientation type="rotation"/>
+		<Velocity min_x="0" max_x="0" min_y="0" max_y="0"/>
+		<VelocityFriction min="0" max="0"/>
+		<ParticleLife min="0.7" max="0.9"/>
+		<Size min_start="0.125" max_start="0.175" min_end="0" max_end="0"/>
+		<Weight min_start="1" max_start="1" min_end="2" max_end="2"/>
+		<Rotation min_start="-180" max_start="180" min_speed="-180" max_speed="180"/>
+		<RotationForce min="0" max="0"/>
+		<RotationFriction min="0" max="0"/>
+		<Frame min_start="0" max_start="4"/>
+		<MinStartColor r="255" g="255" b="255" a="255"/>
+		<MaxStartColor r="145" g="233" b="255" a="255"/>
+		<MinEndColor r="255" g="255" b="255" a="74"/>
+		<MaxEndColor r="120" g="234" b="249" a="80"/>
+		<Fade in="0.1" out="0.4" type="percentage"/>
+	</ParticleEmitter>
+	<ParticleEmitter max_particles="60" x="0" y="0" delay="0" space="world">
+		<RenderGroup value="200"/>
+		<Texture filename="particles/splash.png"/>
+		<FrameAnimations framesize="0">
+			<Animation start="0" end="0" fps="30" type="loop"/>
+		</FrameAnimations>
+		<EmissionCircle radius="0.5" innerradius="0"/>
+		<ExternalForce min_x="-0.5" max_x="0.5" min_y="-1" max_y="-1"/>
+		<BlendMode type="blend"/>
+		<PreGeneration time="0" step="0"/>
+		<Emission particles="60" type="timed" lifetime="0.4"/>
+		<ParticleOrientation type="rotation"/>
+		<Velocity min_x="0" max_x="0" min_y="0" max_y="0"/>
+		<VelocityFriction min="0" max="0"/>
+		<ParticleLife min="0.25" max="0.35"/>
+		<Size min_start="1.5" max_start="2.5" min_end="0.375" max_end="0.625"/>
+		<Weight min_start="2" max_start="2" min_end="0.5" max_end="0.5"/>
+		<Rotation min_start="-180" max_start="180" min_speed="-180" max_speed="180"/>
+		<RotationForce min="0" max="0"/>
+		<RotationFriction min="0" max="0"/>
+		<Frame min_start="0" max_start="4"/>
+		<MinStartColor r="255" g="255" b="255" a="78"/>
+		<MaxStartColor r="196" g="240" b="251" a="81"/>
+		<MinEndColor r="255" g="255" b="255" a="0"/>
+		<MaxEndColor r="203" g="249" b="255" a="0"/>
+		<Fade in="0.1" out="0.4" type="percentage"/>
+	</ParticleEmitter>
+</ParticleTrigger>

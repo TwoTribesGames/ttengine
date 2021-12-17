@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		permanent="true">
+
+	<coloranimstack>
+		<color duration="0.5" direction="pingpong" looping="true">
+			<begin a="0"/>
+			<end a="-128"/>
+		</color>
+	</coloranimstack>
+
+	<coloranimstack>
+		<color duration="0.1" looping="true">
+			<begin r="-115" g="0" b="-115" a="0"/>
+			<end   r="-115" g="0" b="-115" a="0"/>
+		</color>
+	</coloranimstack>
+</presentation>

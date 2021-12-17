@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		permanent="true" fixed_timestep="0.016">
+
+	<startvalues>
+		<scale y="c(height)"/>
+		<translation z="0.0"/>
+	</startvalues>
+	
+	<!-- fade in -->
+	<coloranimstack name="fadein">
+		<color duration="0.15" delay="0" direction="forward" timing="linear">
+			<begin a="-255"/>
+			<end a="0"/>
+		</color>
+	</coloranimstack>
+	
+	<!-- fade out -->
+	<coloranimstack name="fadeout">
+		<color duration="0.15" delay="0.0" direction="forward" timing="linear">
+			<begin a="0"/>
+			<end a="-255"/>
+		</color>
+	</coloranimstack>
+	
+	<frameanimstack>
+		<frameanim directory="spritestrip/hud/crt_glow" blendmode="add" ignore_fog="true" fps="60" looping="false" quad_width="1.75" quad_height="2.5">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+		</frameanim>
+	</frameanimstack>
+</presentation>
+
+

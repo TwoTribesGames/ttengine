@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		permanent="true">
+	
+	<!--HIT-->
+	<particles name="hit" file="particles/kamikaze_hit.trigger" duration="0.1" position_type="follow">
+		<scale scale="1.25"/>
+	</particles>
+	
+	<particles name="hit" file="particles/hit_sparks.trigger" duration="0.1" position_type="follow"/>
+	
+	<trigger name="hit" type="audio" data="bullet_impact_metal"/>
+	
+	<!--heal-->
+	<particles file="particles/healeffect.trigger" name="heal" duration="0.1" position_type="follow"/>
+
+	<!--warning levels-->
+	<particles file="particles/hit_electricity.trigger" position_type="follow">
+		<musthave>
+			<tag name="low_damage"/>
+		</musthave>
+		<musthave>
+			<tag name="medium_damage"/>
+		</musthave>
+		<musthave>
+			<tag name="high_damage"/>
+		</musthave>
+	</particles>
+	
+	<particles file="particles/hit_warning.trigger" position_type="follow">
+		<musthave>
+			<tag name="high_damage"/>
+		</musthave>
+		<scale scale="1.125"/>
+	</particles>
+	
+	<trigger type="audio" data="enemy_damaged_sparks_1">
+		<musthave>
+			<tag name="high_damage"/>
+		</musthave>
+	</trigger>
+	
+	<trigger type="audio" data="enemy_damaged_sparks_2">
+		<musthave>
+			<tag name="medium_damage"/>
+		</musthave>
+	</trigger>
+	
+	<trigger type="audio" data="enemy_damaged_sparks_3">
+		<musthave>
+			<tag name="low_damage"/>
+		</musthave>
+	</trigger>
+</presentation>

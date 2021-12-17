@@ -1,0 +1,78 @@
+TOKILEVEL
+### ONLY EDIT BELOW AND DON'T ALTER THE *** MARKERS! ###
+*** DATA_START ***
+{
+   "entities" : [
+      {
+         "id" : 10015,
+         "props" : {},
+         "type" : "MenuEntity",
+         "x" : 2.50,
+         "y" : 2.0
+      },
+      {
+         "id" : 92989,
+         "props" : {
+            "BumperEnemy" : "false",
+            "HealthBot" : "false",
+            "KamikazeEnemy" : "false",
+            "Train" : "false",
+            "Turret" : "true",
+            "backgroundBlurRange0" : "-2",
+            "backgroundBlurRange1" : "-6",
+            "backgroundBlurRange2" : "-12",
+            "backgroundBlurRange3" : "-5",
+            "backgroundBlurRange4" : "-25",
+            "colorGrading" : "msdos_tunnels",
+            "fogColor" : "0,0,0",
+            "fogFar" : "-30",
+            "fogNear" : "10",
+            "levelAmbientLight" : "100",
+            "levelLightMode" : "Light",
+            "tvFOV" : "65",
+            "useFog" : "true"
+         },
+         "type" : "LevelSettings",
+         "x" : 4.0,
+         "y" : 3.0
+      }
+   ],
+   "info" : {
+      "background" : "",
+      "default_mission" : "*",
+      "height" : 6,
+      "theme" : "rocks",
+      "version" : 1,
+      "width" : 6
+   },
+   "notes" : [],
+   "pathfinding_radii" : [],
+   "theme_colors" : {
+      "solid" : {
+         "beach" : [ 255, 255, 255, 255 ],
+         "dark_rocks" : [ 255, 255, 255, 255 ],
+         "default" : [ 255, 255, 255, 255 ],
+         "none" : [ 255, 255, 255, 255 ],
+         "rocks" : [ 255, 255, 255, 255 ],
+         "sand" : [ 255, 255, 255, 255 ]
+      }
+   },
+   "version" : 1
+}
+*** DATA_END ***
+*** TILES_BEGIN ***
+      
+      
+      
+      
+      
+      
+*** TILES_END ***
+*** THEME_BEGIN ***
+......
+......
+......
+......
+......
+......
+*** THEME_END ***

@@ -1,0 +1,476 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="WIN_Dev|Win32">
+      <Configuration>WIN_Dev</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="WIN_Dev|x64">
+      <Configuration>WIN_Dev</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="WIN_Final|Win32">
+      <Configuration>WIN_Final</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="WIN_Final|x64">
+      <Configuration>WIN_Final</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="WIN_Test|Win32">
+      <Configuration>WIN_Test</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="WIN_Test|x64">
+      <Configuration>WIN_Test</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5FF5843D-2B9A-4C51-B60D-425D18F0C451}</ProjectGuid>
+    <RootNamespace>gwen</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">$(ProjectDir)lib\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">$(ProjectDir)obj\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'">$(ProjectDir)obj\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">$(ProjectDir)lib\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">$(ProjectDir)obj\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'">$(ProjectDir)obj\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">$(ProjectDir)lib\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">$(ProjectDir)obj\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'">$(ProjectDir)obj\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'">
+    <OutDir>$(ProjectDir)lib\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'">
+    <OutDir>$(ProjectDir)lib\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'">
+    <OutDir>$(ProjectDir)lib\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>inc;..\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;TT_ASSERT_ON;TT_PLATFORM_WIN;TT_BUILD_DEV;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <ProgramDataBaseFileName>$(TargetDir)\$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <ForcedIncludeFiles>tt\pch\pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>inc;..\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;TT_ASSERT_ON;TT_PLATFORM_WIN;TT_BUILD_DEV;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <ProgramDataBaseFileName>$(TargetDir)\$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ForcedIncludeFiles>tt\pch\pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">
+    <ClCompile>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>inc;..\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;TT_ASSERT_ON;TT_PLATFORM_WIN;TT_BUILD_TEST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <ProgramDataBaseFileName>$(TargetDir)\$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ForcedIncludeFiles>tt\pch\pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'">
+    <ClCompile>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>inc;..\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;TT_ASSERT_ON;TT_PLATFORM_WIN;TT_BUILD_TEST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <ProgramDataBaseFileName>$(TargetDir)\$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ForcedIncludeFiles>tt\pch\pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">
+    <ClCompile>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>inc;..\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;TT_PLATFORM_WIN;TT_BUILD_FINAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <ProgramDataBaseFileName>$(TargetDir)\$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ForcedIncludeFiles>tt\pch\pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'">
+    <ClCompile>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>inc;..\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;TT_PLATFORM_WIN;TT_BUILD_FINAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <ProgramDataBaseFileName>$(TargetDir)\$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ForcedIncludeFiles>tt\pch\pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\shared\inc\Gwen\Align.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Anim.h" />
+    <ClInclude Include="..\shared\inc\Gwen\BaseRender.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Config.h" />
+    <ClInclude Include="..\shared\inc\Gwen\ControlList.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Base.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Button.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Canvas.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\CheckBox.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\CollapsibleCategory.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\CollapsibleList.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\ColorControls.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\ColorPicker.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\ComboBox.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\CrossSplitter.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Dialogs\FileOpen.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Dialogs\FileSave.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Dialogs\FolderOpen.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Dialogs\Query.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\DockBase.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\DockedTabControl.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Dragger.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\FieldLabel.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\FilePicker.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\FolderPicker.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\GroupBox.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Highlight.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\HorizontalScrollBar.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\HorizontalSlider.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\ImagePanel.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Label.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\LabelClickable.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Layout\Position.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Layout\Table.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Layout\Tile.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\ListBox.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Menu.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\MenuItem.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\MenuStrip.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Modal.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\NumericUpDown.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\PageControl.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\ProgressBar.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Properties.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\PropertyTree.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Property\BaseProperty.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Property\Checkbox.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Property\ColorSelector.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Property\ComboBox.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Property\File.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Property\Folder.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Property\Text.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\RadioButton.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\RadioButtonController.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Rectangle.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\ResizableControl.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Resizer.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\RGBColorPicker.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\RichLabel.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\ScrollBar.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\ScrollBarBar.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\ScrollBarButton.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\ScrollControl.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Slider.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\SplitterBar.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Splitters.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\StatusBar.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\TabButton.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\TabControl.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\TabStrip.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\TabTitleBar.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\Text.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\TextBox.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\ToolBar.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\TreeControl.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\TreeNode.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\VerticalScrollBar.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\VerticalSlider.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\WindowButtons.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\WindowCanvas.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Controls\WindowControl.h" />
+    <ClInclude Include="..\shared\inc\Gwen\DragAndDrop.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Events.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Exports.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Font.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Gwen.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Hook.h" />
+    <ClInclude Include="..\shared\inc\Gwen\InputHandler.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Macros.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Platform.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Renderers\DirectX9.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Renderers\OpenGL.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Renderers\OpenGL_DebugFont.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Renderers\TTRenderer.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Skin.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Skins\Simple.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Skins\TexturedBase.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Skins\Texturing.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Structures.h" />
+    <ClInclude Include="..\shared\inc\Gwen\TextObject.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Texture.h" />
+    <ClInclude Include="..\shared\inc\Gwen\ToolTip.h" />
+    <ClInclude Include="..\shared\inc\Gwen\UserData.h" />
+    <ClInclude Include="..\shared\inc\Gwen\Utility.h" />
+    <ClInclude Include="..\shared\inc\Gwen\WindowProvider.h" />
+    <ClInclude Include="..\shared\src\gwen\Renderers\DebugFont\FontData.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\shared\src\gwen\Anim.cpp" />
+    <ClCompile Include="..\shared\src\gwen\BaseRender.cpp" />
+    <ClCompile Include="..\shared\src\gwen\ControlList.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\Base.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\Button.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\Canvas.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\CheckBox.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\CollapsibleCategory.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\ColorControls.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\ColorPicker.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\ComboBox.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\CrossSplitter.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\Dialog\FileOpen.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\Dialog\FileSave.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\Dialog\FolderOpen.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\Dialog\Query.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\DockBase.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\DockedTabControl.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\Dragger.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\GroupBox.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\HorizontalScrollBar.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\HorizontalSlider.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\ImagePanel.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\Label.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\LabelClickable.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\ListBox.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\Menu.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\MenuItem.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\MenuStrip.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\NumericUpDown.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\PageControl.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\ProgressBar.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\Properties.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\PropertyTree.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\RadioButton.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\RadioButtonController.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\Rectangle.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\ResizableControl.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\Resizer.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\RGBColorPicker.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\RichLabel.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\ScrollBar.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\ScrollBarBar.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\ScrollBarButton.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\ScrollControl.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\Slider.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\SplitterBar.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\TabButton.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\TabControl.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\TabStrip.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\Text.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\TextBox.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\TextBoxNumeric.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\TreeControl.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\TreeNode.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\VerticalScrollBar.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\VerticalSlider.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\WindowCanvas.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Controls\WindowControl.cpp" />
+    <ClCompile Include="..\shared\src\gwen\DragAndDrop.cpp" />
+    <ClCompile Include="..\shared\src\gwen\events.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Gwen.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Hook.cpp" />
+    <ClCompile Include="..\shared\src\gwen\inputhandler.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Platforms\Null.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Platforms\Windows.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Renderers\DebugFont\OpenGL_DebugFont.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Renderers\DirectX9.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Renderers\OpenGL.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\gwen\Renderers\TTRenderer.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Skin.cpp" />
+    <ClCompile Include="..\shared\src\gwen\ToolTip.cpp" />
+    <ClCompile Include="..\shared\src\gwen\Utility.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

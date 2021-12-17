@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<ParticleTrigger xmlns="http://intranet.twotribes.com/schemas/common/particletrigger.xsd" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/particletrigger.xsd http://intranet.twotribes.com/schemas/common/particletrigger.xsd">
+	<GameEvent name="explosion" max_particles="3000"/>
+	<ParticleCulling enabled="true"/>
+	<ParticleEmitter max_particles="1" x="0" y="0" delay="0" space="world" ignore_fog="false">
+		<RenderGroup value="300"/>
+		<Texture filename="particles/explosion_circle.png"/>
+		<FrameAnimations framesize="0"/>
+		<EmissionCircle radius="0.16875" innerradius="0"/>
+		<ExternalForce min_x="0" max_x="0" min_y="0" max_y="0"/>
+		<BlendMode type="blend"/>
+		<PreGeneration time="0" step="0"/>
+		<Emission particles="1" type="burst" lifetime="0"/>
+		<ParticleOrientation type="rotation"/>
+		<Velocity min_x="0" max_x="0" min_y="0" max_y="0"/>
+		<VelocityFriction min="0" max="0"/>
+		<ParticleLife min="0.2" max="0.2"/>
+		<Size min_start="1.67062" max_start="1.67062" min_end="15.1875" max_end="15.1875"/>
+		<Weight min_start="0" max_start="0" min_end="0" max_end="0"/>
+		<Rotation min_start="0" max_start="0" min_speed="0" max_speed="0"/>
+		<RotationForce min="0" max="0"/>
+		<RotationFriction min="0" max="0"/>
+		<Frame min_start="0" max_start="0"/>
+		<DirectionFromSpawnLocation/>
+		<MinStartColor r="255" g="85" b="238" a="196"/>
+		<MaxStartColor r="255" g="157" b="220" a="196"/>
+		<MinEndColor r="255" g="255" b="255" a="0"/>
+		<MaxEndColor r="255" g="255" b="255" a="0"/>
+		<Fade in="0.1" out="0.7" type="percentage"/>
+		<ExternalImpulseWeight min="0" max="0"/>
+	</ParticleEmitter>
+	<ParticleEmitter max_particles="4" x="0" y="0" delay="0" space="world" ignore_fog="false">
+		<RenderGroup value="350"/>
+		<Texture filename="particles/asteroid_explosion.png"/>
+		<FrameAnimations framesize="247">
+			<Animation start="0" end="3" fps="20" type="once"/>
+		</FrameAnimations>
+		<EmissionCircle radius="0" innerradius="0"/>
+		<ExternalForce min_x="0" max_x="0" min_y="0" max_y="0"/>
+		<BlendMode type="add"/>
+		<BlendModeAlpha type="lightmask"/>
+		<PreGeneration time="0" step="0"/>
+		<Emission particles="4" type="burst" lifetime="0"/>
+		<ParticleOrientation type="rotation"/>
+		<Velocity min_x="0" max_x="0" min_y="0" max_y="0"/>
+		<VelocityFriction min="0" max="0"/>
+		<ParticleLife min="0.25" max="0.25"/>
+		<Size min_start="0.126563" max_start="0.210938" min_end="5.90625" max_end="7.59375"/>
+		<Weight min_start="1" max_start="1" min_end="1" max_end="1"/>
+		<Rotation min_start="-180" max_start="180" min_speed="-50" max_speed="50"/>
+		<RotationForce min="0" max="0"/>
+		<RotationFriction min="0" max="0"/>
+		<Frame min_start="0" max_start="0"/>
+		<MinStartColor r="255" g="255" b="255" a="255"/>
+		<MaxStartColor r="255" g="255" b="255" a="255"/>
+		<MinEndColor r="253" g="83" b="253" a="255"/>
+		<MaxEndColor r="255" g="0" b="165" a="255"/>
+		<Fade in="0" out="0.3" type="percentage"/>
+		<ExternalImpulseWeight min="0" max="0"/>
+	</ParticleEmitter>
+	<ParticleEmitter max_particles="3" x="0" y="0" delay="0" space="world" ignore_fog="false">
+		<RenderGroup value="300"/>
+		<Texture filename="particles/impact_spark_glowy_vertical.png"/>
+		<FrameAnimations framesize="0"/>
+		<EmissionCircle radius="0.07425" innerradius="0"/>
+		<ExternalForce min_x="0" max_x="0" min_y="-0.798187" max_y="-0.686812"/>
+		<BlendMode type="add"/>
+		<BlendModeAlpha type="lightmask"/>
+		<PreGeneration time="0" step="0"/>
+		<Emission particles="3" type="burst" lifetime="0"/>
+		<ParticleOrientation type="direction"/>
+		<Velocity min_x="-1.85625" max_x="1.85625" min_y="-1.85625" max_y="1.85625"/>
+		<VelocityFriction min="0" max="0"/>
+		<ParticleLife min="0.2" max="0.2"/>
+		<Size min_start="0.700734" max_start="0.784266" min_end="0.81" max_end="1.08"/>
+		<Weight min_start="0" max_start="0" min_end="0" max_end="0"/>
+		<Rotation min_start="-180" max_start="180" min_speed="0" max_speed="0"/>
+		<RotationForce min="0" max="0"/>
+		<RotationFriction min="0" max="0"/>
+		<Frame min_start="0" max_start="0"/>
+		<DirectionFromSpawnLocation/>
+		<MinStartColor r="255" g="255" b="255" a="255"/>
+		<MaxStartColor r="242" g="103" b="255" a="255"/>
+		<MinEndColor r="247" g="67" b="184" a="255"/>
+		<MaxEndColor r="251" g="94" b="251" a="255"/>
+		<Fade in="0.2" out="0.2" type="percentage"/>
+		<ExternalImpulseWeight min="0" max="0"/>
+	</ParticleEmitter>
+	<ParticleEmitter max_particles="10" x="0" y="0" delay="0" space="world" ignore_fog="false">
+		<RenderGroup value="300"/>
+		<Texture filename="particles/chunks_79px.png"/>
+		<FrameAnimations framesize="78">
+			<Animation start="0" end="3" fps="0" type="once"/>
+		</FrameAnimations>
+		<EmissionCircle radius="0.07425" innerradius="0.1"/>
+		<ExternalForce min_x="0" max_x="0" min_y="-1.26563" max_y="-0.421875"/>
+		<BlendMode type="blend"/>
+		<PreGeneration time="0" step="0"/>
+		<Emission particles="10" type="burst" lifetime="0"/>
+		<ParticleOrientation type="rotation"/>
+		<Velocity min_x="-16.875" max_x="16.875" min_y="-16.875" max_y="16.875"/>
+		<VelocityFriction min="0.01" max="0.05"/>
+		<ParticleLife min="0.85" max="0.95"/>
+		<Size min_start="0.885937" max_start="1.47656" min_end="0.253125" max_end="0.421875"/>
+		<Weight min_start="0" max_start="0" min_end="1" max_end="1"/>
+		<Rotation min_start="-180" max_start="180" min_speed="-360" max_speed="360"/>
+		<RotationForce min="0" max="0"/>
+		<RotationFriction min="0" max="0"/>
+		<Frame min_start="0" max_start="3"/>
+		<DirectionFromSpawnLocation/>
+		<MinStartColor r="83" g="97" b="114" a="255"/>
+		<MaxStartColor r="96" g="115" b="171" a="255"/>
+		<MinEndColor r="82" g="85" b="89" a="255"/>
+		<MaxEndColor r="86" g="142" b="173" a="255"/>
+		<Fade in="0.2" out="0.1" type="percentage"/>
+		<ExternalImpulseWeight min="0" max="0"/>
+	</ParticleEmitter>
+	<ParticleEmitter max_particles="1" x="0" y="0" delay="0" space="world" ignore_fog="false">
+		<RenderGroup value="300"/>
+		<Texture filename="particles/generic_circle_halo.png"/>
+		<FrameAnimations framesize="0"/>
+		<EmissionCircle radius="0.16875" innerradius="0"/>
+		<ExternalForce min_x="0" max_x="0" min_y="0" max_y="0"/>
+		<BlendMode type="blend"/>
+		<BlendModeAlpha type="lightmask"/>
+		<PreGeneration time="0" step="0"/>
+		<Emission particles="1" type="burst" lifetime="0"/>
+		<ParticleOrientation type="rotation"/>
+		<Velocity min_x="0" max_x="0" min_y="0" max_y="0"/>
+		<VelocityFriction min="0" max="0"/>
+		<ParticleLife min="0.2" max="0.2"/>
+		<Size min_start="1.67062" max_start="1.67062" min_end="16.875" max_end="16.875"/>
+		<Weight min_start="0" max_start="0" min_end="0" max_end="0"/>
+		<Rotation min_start="0" max_start="0" min_speed="0" max_speed="0"/>
+		<RotationForce min="0" max="0"/>
+		<RotationFriction min="0" max="0"/>
+		<Frame min_start="0" max_start="0"/>
+		<DirectionFromSpawnLocation/>
+		<MinStartColor r="255" g="85" b="238" a="196"/>
+		<MaxStartColor r="255" g="157" b="220" a="196"/>
+		<MinEndColor r="255" g="255" b="255" a="0"/>
+		<MaxEndColor r="255" g="255" b="255" a="0"/>
+		<Fade in="0.1" out="0.4" type="percentage"/>
+		<ExternalImpulseWeight min="0" max="0"/>
+	</ParticleEmitter>
+</ParticleTrigger>

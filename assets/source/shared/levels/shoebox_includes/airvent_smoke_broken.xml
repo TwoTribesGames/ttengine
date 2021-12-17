@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<shoebox xmlns="http://intranet.twotribes.com/schemas/common/shoebox.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/shoebox.xsd http://intranet.twotribes.com/schemas/common/shoebox.xsd">
+  <includes/>
+  <plane texture="backgrounds/grate_side_broken.png" x="0.000" y="-0.061" z="0.000" width="12.204" height="12.087" priority="48" rotation="4.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="1">
+    <color_whole_quad r="124" g="124" b="124" a="255"/>
+  </plane>
+  <particle effect_file="smoke_rewind.trigger" x="0.143" y="0.520" z="0.010" scale="2.070" pid="2"/>
+  <fog>
+    <range near="25.000" far="100.000"/>
+    <color r="255" g="255" b="255"/>
+  </fog>
+</shoebox>

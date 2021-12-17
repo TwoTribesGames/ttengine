@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Shared">
+      <UniqueIdentifier>{0a28da60-fede-4328-8b2c-2931d6f801e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\core">
+      <UniqueIdentifier>{d841cc9c-68dd-40a9-be2c-01b4009390fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\extensions">
+      <UniqueIdentifier>{0cf4f3bf-2dbc-4691-85eb-12211938b843}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\extensions\emitters">
+      <UniqueIdentifier>{4d0c1fbd-de70-4813-a1be-0a6c0411f3fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\extensions\modifiers">
+      <UniqueIdentifier>{35264b2d-e0d1-4acf-851a-6fa504c246da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\extensions\renderers">
+      <UniqueIdentifier>{3dc778c3-947b-411e-8f2e-799f6946ef92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\extensions\zones">
+      <UniqueIdentifier>{12b6118f-0494-4988-ae49-e3ebe9341615}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\RenderingAPIs">
+      <UniqueIdentifier>{9d5384c8-edab-4e85-82e2-19224ad67408}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\shared\inc\spark\SPK.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\Core\SPK_ArrayBuffer.h">
+      <Filter>Shared\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\Core\SPK_Buffer.h">
+      <Filter>Shared\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\Core\SPK_BufferHandler.h">
+      <Filter>Shared\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\Core\SPK_DEF.h">
+      <Filter>Shared\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\Core\SPK_Emitter.h">
+      <Filter>Shared\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\Core\SPK_Factory.h">
+      <Filter>Shared\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\Core\SPK_Group.h">
+      <Filter>Shared\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\Core\SPK_Interpolator.h">
+      <Filter>Shared\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\Core\SPK_Model.h">
+      <Filter>Shared\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\Core\SPK_Modifier.h">
+      <Filter>Shared\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\Core\SPK_Particle.h">
+      <Filter>Shared\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\Core\SPK_Pool.h">
+      <Filter>Shared\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\Core\SPK_Registerable.h">
+      <Filter>Shared\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\Core\SPK_RegWrapper.h">
+      <Filter>Shared\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\Core\SPK_Renderer.h">
+      <Filter>Shared\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\Core\SPK_System.h">
+      <Filter>Shared\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\Core\SPK_Transformable.h">
+      <Filter>Shared\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\Core\SPK_Vector3D.h">
+      <Filter>Shared\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\Core\SPK_Zone.h">
+      <Filter>Shared\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\Extensions\Emitters\SPK_NormalEmitter.h">
+      <Filter>Shared\extensions\emitters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\Extensions\Emitters\SPK_RandomEmitter.h">
+      <Filter>Shared\extensions\emitters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\Extensions\Emitters\SPK_SphericEmitter.h">
+      <Filter>Shared\extensions\emitters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\Extensions\Emitters\SPK_StaticEmitter.h">
+      <Filter>Shared\extensions\emitters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\Extensions\Emitters\SPK_StraightEmitter.h">
+      <Filter>Shared\extensions\emitters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\Extensions\Modifiers\SPK_Collision.h">
+      <Filter>Shared\extensions\modifiers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\Extensions\Modifiers\SPK_Destroyer.h">
+      <Filter>Shared\extensions\modifiers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\Extensions\Modifiers\SPK_LinearForce.h">
+      <Filter>Shared\extensions\modifiers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\Extensions\Modifiers\SPK_ModifierGroup.h">
+      <Filter>Shared\extensions\modifiers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\Extensions\Modifiers\SPK_Obstacle.h">
+      <Filter>Shared\extensions\modifiers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\Extensions\Modifiers\SPK_PointMass.h">
+      <Filter>Shared\extensions\modifiers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\Extensions\Modifiers\SPK_Rotator.h">
+      <Filter>Shared\extensions\modifiers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\Extensions\Modifiers\SPK_Vortex.h">
+      <Filter>Shared\extensions\modifiers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\Extensions\Renderers\SPK_LineRendererInterface.h">
+      <Filter>Shared\extensions\renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\Extensions\Renderers\SPK_Oriented2DRendererInterface.h">
+      <Filter>Shared\extensions\renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\Extensions\Renderers\SPK_Oriented3DRendererInterface.h">
+      <Filter>Shared\extensions\renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\Extensions\Renderers\SPK_PointRendererInterface.h">
+      <Filter>Shared\extensions\renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\Extensions\Renderers\SPK_QuadRendererInterface.h">
+      <Filter>Shared\extensions\renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\Extensions\Zones\SPK_AABox.h">
+      <Filter>Shared\extensions\zones</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\Extensions\Zones\SPK_Cylinder.h">
+      <Filter>Shared\extensions\zones</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\Extensions\Zones\SPK_Line.h">
+      <Filter>Shared\extensions\zones</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\Extensions\Zones\SPK_Plane.h">
+      <Filter>Shared\extensions\zones</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\Extensions\Zones\SPK_Point.h">
+      <Filter>Shared\extensions\zones</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\Extensions\Zones\SPK_Ring.h">
+      <Filter>Shared\extensions\zones</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\Extensions\Zones\SPK_Sphere.h">
+      <Filter>Shared\extensions\zones</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\Extensions\Zones\SPK_ZoneIntersection.h">
+      <Filter>Shared\extensions\zones</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\Extensions\Zones\SPK_ZoneUnion.h">
+      <Filter>Shared\extensions\zones</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\RenderingAPIs\Shared\SPK_SharedBufferHandler.h">
+      <Filter>Shared\RenderingAPIs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\RenderingAPIs\Shared\SPK_SharedInfo.h">
+      <Filter>Shared\RenderingAPIs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\RenderingAPIs\Shared\SPK_SharedQuadRenderer.h">
+      <Filter>Shared\RenderingAPIs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\RenderingAPIs\Shared\SPK_SharedRenderer.h">
+      <Filter>Shared\RenderingAPIs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\RenderingAPIs\Shared\SPK_Shared_DEF.h">
+      <Filter>Shared\RenderingAPIs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\spark\RenderingAPIs\Shared\SPK_TTQuadBuffer.h">
+      <Filter>Shared\RenderingAPIs</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\shared\src\spark\SPK_All.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Core\SPK_BufferHandler.cpp">
+      <Filter>Shared\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Core\SPK_DEF.cpp">
+      <Filter>Shared\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Core\SPK_Emitter.cpp">
+      <Filter>Shared\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Core\SPK_Factory.cpp">
+      <Filter>Shared\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Core\SPK_Group.cpp">
+      <Filter>Shared\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Core\SPK_Interpolator.cpp">
+      <Filter>Shared\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Core\SPK_Model.cpp">
+      <Filter>Shared\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Core\SPK_Modifier.cpp">
+      <Filter>Shared\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Core\SPK_Particle.cpp">
+      <Filter>Shared\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Core\SPK_Registerable.cpp">
+      <Filter>Shared\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Core\SPK_Renderer.cpp">
+      <Filter>Shared\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Core\SPK_System.cpp">
+      <Filter>Shared\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Core\SPK_Transformable.cpp">
+      <Filter>Shared\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Core\SPK_Vector3D.cpp">
+      <Filter>Shared\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Core\SPK_Zone.cpp">
+      <Filter>Shared\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Extensions\Emitters\SPK_NormalEmitter.cpp">
+      <Filter>Shared\extensions\emitters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Extensions\Emitters\SPK_RandomEmitter.cpp">
+      <Filter>Shared\extensions\emitters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Extensions\Emitters\SPK_SphericEmitter.cpp">
+      <Filter>Shared\extensions\emitters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Extensions\Emitters\SPK_StraightEmitter.cpp">
+      <Filter>Shared\extensions\emitters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Extensions\Modifiers\SPK_Collision.cpp">
+      <Filter>Shared\extensions\modifiers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Extensions\Modifiers\SPK_Destroyer.cpp">
+      <Filter>Shared\extensions\modifiers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Extensions\Modifiers\SPK_LinearForce.cpp">
+      <Filter>Shared\extensions\modifiers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Extensions\Modifiers\SPK_ModifierGroup.cpp">
+      <Filter>Shared\extensions\modifiers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Extensions\Modifiers\SPK_Obstacle.cpp">
+      <Filter>Shared\extensions\modifiers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Extensions\Modifiers\SPK_PointMass.cpp">
+      <Filter>Shared\extensions\modifiers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Extensions\Modifiers\SPK_Vortex.cpp">
+      <Filter>Shared\extensions\modifiers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Extensions\Renderers\SPK_Oriented3DRendererInterface.cpp">
+      <Filter>Shared\extensions\renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Extensions\Renderers\SPK_QuadRendererInterface.cpp">
+      <Filter>Shared\extensions\renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Extensions\Zones\SPK_AABox.cpp">
+      <Filter>Shared\extensions\zones</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Extensions\Zones\SPK_Cylinder.cpp">
+      <Filter>Shared\extensions\zones</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Extensions\Zones\SPK_Line.cpp">
+      <Filter>Shared\extensions\zones</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Extensions\Zones\SPK_Plane.cpp">
+      <Filter>Shared\extensions\zones</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Extensions\Zones\SPK_Point.cpp">
+      <Filter>Shared\extensions\zones</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Extensions\Zones\SPK_Ring.cpp">
+      <Filter>Shared\extensions\zones</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Extensions\Zones\SPK_Sphere.cpp">
+      <Filter>Shared\extensions\zones</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Extensions\Zones\SPK_ZoneIntersection.cpp">
+      <Filter>Shared\extensions\zones</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Extensions\Zones\SPK_ZoneUnion.cpp">
+      <Filter>Shared\extensions\zones</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\RenderingAPIs\Shared\SPK_SharedBufferHandler.cpp">
+      <Filter>Shared\RenderingAPIs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\RenderingAPIs\Shared\SPK_SharedInfo.cpp">
+      <Filter>Shared\RenderingAPIs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\RenderingAPIs\Shared\SPK_SharedQuadRenderer.cpp">
+      <Filter>Shared\RenderingAPIs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\RenderingAPIs\Shared\SPK_SharedRenderer.cpp">
+      <Filter>Shared\RenderingAPIs</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

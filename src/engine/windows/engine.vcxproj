@@ -1,0 +1,594 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="WIN_Dev|Win32">
+      <Configuration>WIN_Dev</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="WIN_Dev|x64">
+      <Configuration>WIN_Dev</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="WIN_Final|Win32">
+      <Configuration>WIN_Final</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="WIN_Final|x64">
+      <Configuration>WIN_Final</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="WIN_Test|Win32">
+      <Configuration>WIN_Test</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="WIN_Test|x64">
+      <Configuration>WIN_Test</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F3685DA5-E627-4B5D-8A5C-A402760CA7A0}</ProjectGuid>
+    <RootNamespace>engine</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>tt_engine</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">$(ProjectDir)lib\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">$(ProjectDir)obj\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'">$(ProjectDir)obj\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">$(ProjectDir)lib\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">$(ProjectDir)obj\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'">$(ProjectDir)obj\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">$(ProjectDir)lib\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">$(ProjectDir)obj\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'">$(ProjectDir)obj\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'">
+    <OutDir>$(ProjectDir)lib\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'">
+    <OutDir>$(ProjectDir)lib\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'">
+    <OutDir>$(ProjectDir)lib\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(DXSDK_DIR)Include;</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86;$(DXSDK_DIR)Lib\x86;</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>inc;..\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;TT_ASSERT_ON;TT_PLATFORM_WIN;TT_BUILD_DEV;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>tt\pch\pch.h</PrecompiledHeaderFile>
+      <ProgramDataBaseFileName>$(TargetDir)\$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <ForcedIncludeFiles>tt\pch\pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>inc;..\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;TT_ASSERT_ON;TT_PLATFORM_WIN;TT_BUILD_DEV;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>tt\pch\pch.h</PrecompiledHeaderFile>
+      <ProgramDataBaseFileName>$(TargetDir)\$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ForcedIncludeFiles>tt\pch\pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">
+    <ClCompile>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>inc;..\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;TT_ASSERT_ON;TT_PLATFORM_WIN;TT_BUILD_TEST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>tt\pch\pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ForcedIncludeFiles>tt\pch\pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'">
+    <ClCompile>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>inc;..\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;TT_ASSERT_ON;TT_PLATFORM_WIN;TT_BUILD_TEST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>tt\pch\pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ForcedIncludeFiles>tt\pch\pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">
+    <ClCompile>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>inc;..\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;TT_PLATFORM_WIN;TT_BUILD_FINAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>tt\pch\pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ForcedIncludeFiles>tt\pch\pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'">
+    <ClCompile>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>inc;..\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;TT_PLATFORM_WIN;TT_BUILD_FINAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>tt\pch\pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ForcedIncludeFiles>tt\pch\pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\shared\src\tt\engine\debug\DebugFont.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\debug\DebugRenderer.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\debug\DebugStats.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\EngineID.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\animation\Animation.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\animation\AnimationControl.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\animation\HermiteFloatController.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\animation\StepFloatController.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\animation\TexMatrixController.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\animation\TransformController.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\file\FileUtils.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\effect\Effect.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\effect\EffectCollection.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\effect\EffectManager.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\particles\ParticleEffect.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\particles\ParticleMgr.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\renderer\enums.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\renderer\FixedFunction.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\renderer\Material.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\renderer\MatrixStack.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\renderer\pp\Effect_pp.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\renderer\pp\Filter.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\renderer\pp\PostProcessor.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\renderer\RenderTargetStack.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\renderer\ShadowVolumeManager.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\renderer\TextureBase.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\renderer\TexturePainter.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\renderer\UpScaler.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\renderer\ViewPort.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\scene2d\shoebox\PlaneFollower.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\scene\Camera.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\scene\CameraTarget.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\scene\Dummy.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\scene\EventObject.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\scene\Fog.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\scene\Frustum.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\scene\Instance.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\scene\Light.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\scene\LightTarget.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\scene\LightType.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\scene\Model.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\scene\Scene.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\scene\SceneBlurMgr.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\scene\SceneObject.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\scene\ShadowModel.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\scene\UserProperty.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\scene\Bone.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\physics\AABoundingBox.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\physics\BoundingBox.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\physics\BoundingSphere.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\physics\CollisionAASquare.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\physics\Spring.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\physics\CollisionData.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\physics\CollisionFace.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\physics\CollisionModel.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\renderer\ArcQuad.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\renderer\ColorRGB.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\renderer\LightManager.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\renderer\MultiTexture.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\renderer\QuadSprite.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\renderer\TextureHardware.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\renderer\TextureStageData.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\renderer\VertexBuffer.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\renderer\Line.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\renderer\Plane.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\renderer\Sphere.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\particles\ParticleEmitter.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\particles\ParticleTrigger.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\scene2d\BinaryPlanePartition.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\scene2d\PlaneScene.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\scene2d\Scene2D.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\scene2d\VirtualScene.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\scene2d\WorldScene.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\scene2d\shoebox\shoebox.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\scene2d\shoebox\shoebox_types.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\scene2d\shoebox\ShoeboxPlane.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\scene2d\shoebox\Taggable.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\scene2d\shoebox\TagMgr.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\glyph\CustomGlyph.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\glyph\Glyph.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\glyph\GlyphAlpha4.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\glyph\GlyphAlpha8.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\glyph\GlyphSet.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\cache\FileTextureCache.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\cache\ResourceLog.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\anim2d\Animation2D.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\anim2d\AnimationFactory2D.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\anim2d\AnimationStack2D.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\anim2d\ColorAnimation2D.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\anim2d\ColorAnimationStack2D.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\anim2d\ParticleAnimation2D.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\anim2d\PositionAnimation2D.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\anim2d\RotationAnimation2D.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\anim2d\ScaleAnimation2D.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\anim2d\TranslationAnimation2D.cpp" />
+    <ClCompile Include="..\shared\src\tt\engine\anim2d\TweenTypes.cpp" />
+    <ClCompile Include="src\tt\engine\debug\screen_capture.cpp" />
+    <ClCompile Include="src\tt\engine\renderer\D3DResourceRegistry.cpp" />
+    <ClCompile Include="src\tt\engine\renderer\device_enumerations.cpp" />
+    <ClCompile Include="src\tt\engine\renderer\directx.cpp" />
+    <ClCompile Include="src\tt\engine\renderer\FixedFunctionHardware.cpp" />
+    <ClCompile Include="src\tt\engine\renderer\FullscreenTriangle.cpp" />
+    <ClCompile Include="src\tt\engine\renderer\gpu_capabilities.cpp" />
+    <ClCompile Include="src\tt\engine\renderer\Quad2D.cpp" />
+    <ClCompile Include="src\tt\engine\renderer\QuadBuffer.cpp" />
+    <ClCompile Include="src\tt\engine\renderer\RenderTarget.cpp" />
+    <ClCompile Include="src\tt\engine\renderer\Shader.cpp" />
+    <ClCompile Include="src\tt\engine\renderer\SubModel.cpp" />
+    <ClCompile Include="src\tt\engine\renderer\Texture.cpp" />
+    <ClCompile Include="src\tt\engine\renderer\TriangleBuffer.cpp" />
+    <ClCompile Include="src\tt\engine\renderer\TrianglestripBuffer.cpp" />
+    <ClCompile Include="src\tt\engine\renderer\DXUT\DXUT.cpp" />
+    <ClCompile Include="src\tt\engine\renderer\DXUT\DXUTcamera.cpp" />
+    <ClCompile Include="src\tt\engine\renderer\DXUT\DXUTenum.cpp" />
+    <ClCompile Include="src\tt\engine\renderer\DXUT\DXUTgui.cpp" />
+    <ClCompile Include="src\tt\engine\renderer\DXUT\DXUTmisc.cpp" />
+    <ClCompile Include="src\tt\engine\renderer\DXUT\DXUTres.cpp" />
+    <ClCompile Include="src\tt\engine\renderer\DXUT\DXUTsettingsdlg.cpp" />
+    <ClCompile Include="src\tt\engine\renderer\Renderer.cpp" />
+    <ClCompile Include="src\tt\engine\effect\SparkRenderer.cpp" />
+    <ClCompile Include="src\tt\pch\pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\shared\inc\tt\engine\cache\ResourcePersistentCache.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\debug\DebugFont.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\debug\DebugRenderer.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\debug\DebugStats.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\debug\font_data.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\debug\screen_capture.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\LineRendererWrapper.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\LineTrailRendererWrapper.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\PointRendererWrapper.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\QuadRendererWrapper.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\EngineID.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\file\TextureHeader.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\fwd.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\animation\Animation.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\animation\AnimationControl.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\animation\enums.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\animation\fwd.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\animation\Controller.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\animation\HermiteFloatController.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\animation\StepFloatController.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\animation\TexMatrixController.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\animation\TransformController.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\file\FileType.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\file\FileUtils.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\file\ResourceHeader.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\effect\Effect.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\effect\EffectCollection.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\effect\EffectManager.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\AABoxWrapper.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\CollisionWrapper.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\DestroyerWrapper.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\EmitterWrapper.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\GroupWrapper.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\LinearForceWrapper.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\LineWrapper.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\ModelWrapper.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\ModifierGroupWrapper.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\ModifierWrapper.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\NormalEmitterWrapper.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\ObstacleWrapper.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\PlaneWrapper.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\PointMassWrapper.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\PointWrapper.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\RandomEmitterWrapper.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\RendererWrapper.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\RingWrapper.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\RotatorWrapper.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\SphereWrapper.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\SphericEmitterWrapper.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\StaticEmitterWrapper.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\StraightEmitterWrapper.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\SystemWrapper.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\VortexWrapper.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\ZoneIntersectionWrapper.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\ZoneUnionWrapper.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\ZoneWrapper.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\particles\ParticleEffect.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\particles\ParticleMgr.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\BufferVtx_util.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\FixedFunction.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\FixedFunctionHardware.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\gpu_capabilities.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\LightProperties.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\Material.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\MaterialProperties.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\MatrixStack.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\pp\Effect.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\pp\Filter.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\pp\fwd.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\pp\PostProcessor.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\RenderTargetStack.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\ScreenSettings.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\ShadowVolumeManager.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\TextureBase.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\TexturePainter.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\UpScaler.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\scene2d\shoebox\PlaneFollower.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\scene\Camera.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\scene\CameraTarget.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\scene\Dummy.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\scene\EventObject.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\scene\Fog.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\scene\Frustum.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\scene\fwd.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\scene\Instance.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\scene\Light.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\scene\LightTarget.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\scene\LightType.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\scene\Model.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\scene\Scene.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\scene\SceneBlurMgr.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\scene\SceneObject.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\scene\ShadowModel.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\scene\Spline.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\scene\UserProperty.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\scene\Bone.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\scene\BoneModel.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\scene\BoneWeight.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\physics\AABoundingBox.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\physics\BoundingBox.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\physics\BoundingSphere.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\physics\CollisionAASquare.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\physics\fwd.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\physics\Ray.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\physics\Spring.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\physics\Collision.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\physics\CollisionData.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\physics\CollisionFace.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\physics\CollisionModel.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\ArcQuad.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\BatchTriangleUV.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\BufferVtx.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\ColorRGB.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\ColorRGBA.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\enums.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\fwd.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\IndexBuffer.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\LightManager.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\MultiTexture.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\PrimitiveCollectionBuffer.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\QuadSprite.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\RenderContext.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\ShadowSource.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\TextureHardware.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\TextureStageData.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\VertexBuffer.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\ViewPort.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\Face.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\Line.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\Plane.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\Sphere.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\particles\fwd.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\particles\Particle.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\particles\ParticleEmitter.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\particles\ParticleTrigger.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\particles\WorldObject.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\scene2d\BinaryPlanePartition.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\scene2d\fwd.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\scene2d\PlaneScene.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\scene2d\Scene2D.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\scene2d\SceneInterface.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\scene2d\VirtualScene.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\scene2d\WorldScene.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\scene2d\shoebox\fwd.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\scene2d\shoebox\shoebox.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\scene2d\shoebox\shoebox_types.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\scene2d\shoebox\ShoeboxPlane.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\scene2d\shoebox\Taggable.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\scene2d\shoebox\TagMgr.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\glyph\CustomGlyph.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\glyph\fwd.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\glyph\Glyph.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\glyph\GlyphAlpha4.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\glyph\GlyphAlpha8.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\glyph\GlyphSet.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\cache\FileTextureCache.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\cache\ResourceCache.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\cache\ResourceLog.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\anim2d\Animation2D.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\anim2d\AnimationFactory2D.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\anim2d\AnimationStack2D.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\anim2d\ColorAnimation2D.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\anim2d\ColorAnimationStack2D.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\anim2d\fwd.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\anim2d\ParticleAnimation2D.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\anim2d\PositionAnimation2D.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\anim2d\RotationAnimation2D.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\anim2d\ScaleAnimation2D.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\anim2d\StackBase.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\anim2d\TranslationAnimation2D.h" />
+    <ClInclude Include="..\shared\inc\tt\engine\anim2d\TweenTypes.h" />
+    <ClInclude Include="inc\tt\engine\debug\screen_capture.h" />
+    <ClInclude Include="inc\tt\engine\renderer\BufferVtx.h" />
+    <ClInclude Include="inc\tt\engine\renderer\D3DResource.h" />
+    <ClInclude Include="inc\tt\engine\renderer\D3DResourceRegistry.h" />
+    <ClInclude Include="inc\tt\engine\renderer\device_enumeration.h" />
+    <ClInclude Include="inc\tt\engine\renderer\directx.h" />
+    <ClInclude Include="inc\tt\engine\renderer\FullscreenTriangle.h" />
+    <ClInclude Include="inc\tt\engine\renderer\Quad2D.h" />
+    <ClInclude Include="inc\tt\engine\renderer\QuadBuffer.h" />
+    <ClInclude Include="inc\tt\engine\renderer\RenderTarget.h" />
+    <ClInclude Include="inc\tt\engine\renderer\Shader.h" />
+    <ClInclude Include="inc\tt\engine\renderer\SubModel.h" />
+    <ClInclude Include="inc\tt\engine\renderer\Texture.h" />
+    <ClInclude Include="inc\tt\engine\renderer\TriangleBuffer.h" />
+    <ClInclude Include="inc\tt\engine\renderer\TrianglestripBuffer.h" />
+    <ClInclude Include="inc\tt\engine\renderer\DXUT\DXUT.h" />
+    <ClInclude Include="inc\tt\engine\renderer\DXUT\DXUTcamera.h" />
+    <ClInclude Include="inc\tt\engine\renderer\DXUT\DXUTenum.h" />
+    <ClInclude Include="inc\tt\engine\renderer\DXUT\DXUTgui.h" />
+    <ClInclude Include="inc\tt\engine\renderer\DXUT\DXUTmisc.h" />
+    <ClInclude Include="inc\tt\engine\renderer\DXUT\DXUTres.h" />
+    <ClInclude Include="inc\tt\engine\renderer\DXUT\DXUTsettingsdlg.h" />
+    <ClInclude Include="inc\tt\engine\renderer\Renderer.h" />
+    <ClInclude Include="inc\tt\engine\effect\SparkRenderer.h" />
+    <ClInclude Include="inc\tt\pch\pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\shared\inc\tt\engine\cache\ResourceCache.inl" />
+    <None Include="..\shared\inc\tt\engine\anim2d\StackBase.inl" />
+    <None Include="..\shared\inc\tt\engine\cache\ResourcePersistentCache.inl" />
+    <None Include="..\shared\inc\tt\engine\renderer\PrimitiveCollectionBuffer.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="math.vcxproj">
+      <Project>{47862621-ed56-4eb3-89da-a58e3bb1d887}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="platform.vcxproj">
+      <Project>{3e384a71-8890-4162-9ef2-4ec33194c341}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

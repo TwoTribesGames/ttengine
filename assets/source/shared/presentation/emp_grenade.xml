@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		permanent="true">
+
+	<startvalues>
+		<scale scale="1.3"/>
+	</startvalues>
+
+	<!--IDLE-->
+	<frameanimstack name="idle" type="sequence">
+		<frameanim directory="spritestrip/bullet/emp_grenade" lightmask="use_alpha" ignore_fog="true" duration="0.25" fps="60" delay="0" quad_width="1.75" quad_height="1.946" direction="forward">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+		</frameanim>
+		<frameanim directory="spritestrip/bullet/emp_grenade" lightmask="use_alpha" ignore_fog="true" fps="30" delay="0" quad_width="1.75" quad_height="1.946" direction="forward">
+			<begin frame="0" hold="true"/>
+			<end   frame="5" hold="true"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<trigger name="idle" type="audio" data="emp_fired_main_loop">
+	</trigger>
+
+
+	<particles file="particles/emp_grenade.trigger" looping="true" duration="0" position_type="follow">
+		<translation x="0" z="-0.1" y="0.0"/>
+	</particles>
+
+	<anim2dstack name="idle">
+		<rotation duration="1">
+			<begin rotation="r(0),(90)"/>
+			<end rotation="r(300),(420)"/>
+		</rotation>
+	</anim2dstack>
+
+
+	<!-- disappear -->
+	<frameanimstack name="disappear">
+	<frameanim directory="spritestrip/bullet/emp_grenade" lightmask="use_alpha" ignore_fog="true" fps="30" delay="0" quad_width="1.75" quad_height="1.946" direction="forward">
+		<begin frame="5" hold="true"/>
+		<end   frame="5" hold="true"/>
+	</frameanim>
+	</frameanimstack>
+
+	<!--<particles name="disappear" file="particles/emp_disappear.trigger" looping="false" duration="0" position_type="follow"/>-->
+	
+	<coloranimstack>
+		<color name="disappear" delay="0.4" duration="0.3">
+			<begin r="0" g="0" b="0" a="0"/>
+			<end   r="0" g="0" b="0" a="-255"/>
+		</color>
+	</coloranimstack>
+	
+	<anim2dstack>
+		<scale name="disappear" delay="0.4" duration="0.3">
+			<begin scale="1"/>
+			<end   scale="0.3"/>
+		</scale>
+		<rotation name="disappear" duration="1" timing="easein">
+			<begin rotation="0"/>
+			<end rotation="1800"/>
+		</rotation>
+	</anim2dstack>
+	
+	<trigger name="disappear" type="audio" data="emp_fired_dissapears">
+		<mustnothave>
+			<tag name="submerged"/>
+		</mustnothave>
+	</trigger>
+	
+	<trigger name="disappear" type="audio" data="emp_fired_disappears_submerged">
+		<musthave>
+			<tag name="submerged"/>
+		</musthave>
+	</trigger>
+
+
+
+	
+	<!-- disabled -->
+	<frameanimstack name="disabled" type="sequence">
+		<frameanim directory="spritestrip/bullet/emp_grenade" lightmask="use_alpha" ignore_fog="true" fps="30" duration="0.07" quad_width="1.75" quad_height="1.946" direction="forward">
+			<begin frame="3" hold="true"/>
+			<end   frame="3" hold="true"/>
+		</frameanim>
+		<frameanim directory="spritestrip/bullet/emp_grenade" lightmask="use_alpha" ignore_fog="true" fps="15" quad_width="1.75" quad_height="1.946" looping="false" direction="backward">
+			<begin frame="0" hold="true"/>
+			<end   frame="3" hold="true"/>
+		</frameanim>
+	</frameanimstack>
+
+	<anim2dstack name="disabled">
+		<rotation duration="1.5" direction="forward" timing="easeout">
+			<begin rotation="r(0),(60)"/>
+			<end rotation="r(320),(380)"/>
+		</rotation>
+	</anim2dstack>
+
+	<coloranimstack name="disabled">
+		<color duration="1" delay="1.75">
+			<begin a="0"/>
+			<end a="-255"/>
+		</color>
+	</coloranimstack>
+
+	<particles name="disabled" file="particles/water_splash_missile.trigger" position_type="relative">
+		<musthave>
+			<tag name="splash"/>
+		</musthave>
+		<translation x="0" z="0.0" y="0.0"/>
+	</particles>
+
+	<trigger name="disabled" type="audio" data="impact_missile_water">
+		<musthave>
+			<tag name="water"/>
+		</musthave>
+	</trigger>
+
+	<particles name="disabled" file="particles/rocket_underwater.trigger" duration="0.5" position_type="follow">
+		<musthave>
+			<tag name="water"/>
+		</musthave>	
+		<translation x="0" z="0.0" y="0.0"/>
+	</particles>
+
+	<particles name="disabled" file="particles/rocket_sinking.trigger" looping="true" position_type="follow">
+		<musthave>
+			<tag name="water"/>
+		</musthave>	
+		<translation x="0" z="0.0" y="0.0"/>
+	</particles>
+
+</presentation>
+
+

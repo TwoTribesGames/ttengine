@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="shared">
+      <UniqueIdentifier>{de755d37-3d10-4479-b393-165f533ce1f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared\tt">
+      <UniqueIdentifier>{7bbb6f1a-ff5e-4875-b097-9d4c4d0cf171}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared\tt\fs">
+      <UniqueIdentifier>{85e8f5c7-b9aa-486d-a5fb-4dbb332c32da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="win">
+      <UniqueIdentifier>{9ee34eaf-e709-4765-8503-6d0c098d8183}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared\tt\engine">
+      <UniqueIdentifier>{e13350ee-d9af-4575-858e-dcb5b8fc8d26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared\tt\code">
+      <UniqueIdentifier>{1293c900-aa2b-4296-92cf-854170f74ef1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared\tt\math">
+      <UniqueIdentifier>{16591125-cca0-490a-b01c-c0af434ebc65}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\shared\unittest_inc\unittest\unittest.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\unittest_inc\unittest\tt\fs\fs_unittest.cpp">
+      <Filter>shared\tt\fs</Filter>
+    </ClCompile>
+    <ClCompile Include="unittest\main.cpp">
+      <Filter>win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\unittest_inc\unittest\tt\engine\PrimitiveCollectionBuffer_unittest.cpp">
+      <Filter>shared\tt\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\unittest_inc\unittest\tt\code\HandleMgr_unittest.cpp">
+      <Filter>shared\tt\code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\unittest_inc\unittest\tt\code\BitMask_unittest.cpp">
+      <Filter>shared\tt\code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\unittest_inc\unittest\tt\code\bufferutils_unittest.cpp">
+      <Filter>shared\tt\code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\unittest_inc\unittest\tt\math\math_unittest.cpp">
+      <Filter>shared\tt\math</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\shared\unittest_inc\unittest\unittest.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

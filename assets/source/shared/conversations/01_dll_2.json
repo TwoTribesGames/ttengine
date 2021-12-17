@@ -1,0 +1,53 @@
+{
+	"start": 
+	[
+		{
+			"textID": "01_DLL_F_DL",
+			"actor": 1,
+			"emotion": "angry"
+		},
+		{
+			"textID": "01_DLL_G_DL",
+			"actor": 1,
+			"emotion": "neutral"
+		},
+		{
+			"textID": "01_DLL_H_DL",
+			"actor": 1,
+			"emotion": "happy"
+		},
+		{
+			"textID": "01_DLL_J_DL",
+			"actor": 1,
+			"emotion": "neutral"
+		},
+		{
+			"actor": 1,
+			"emotion": "working",
+			"duration": 2.0
+		},
+		{
+			"trigger": 1
+		},
+		{
+			"actor": 1,
+			"callback": {"name": "goHome"}
+		},
+		{
+			"textID": "01_DLL_L_DL",
+			"actor": 1,
+			"emotion": "happy"
+		}
+	],
+	"abort": 
+	[
+		{
+			"textID": "01_DLL_EXIT2_RS",
+			"actor": 0,
+			"emotion": "happy"
+		},
+		{
+			"trigger": 2
+		}
+	]
+}

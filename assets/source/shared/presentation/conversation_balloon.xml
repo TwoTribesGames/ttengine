@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		permanent="true">
+
+	<startvalues>
+		<scale scale="14"/>
+		<translation y="1"/>
+		<origin y="-0.2"/>
+	</startvalues>
+	
+	<frameanimstack>
+    <musthave>
+      <tag name="player"/>
+      <tag name="neutral"/>
+    </musthave>
+    <frameanim directory="spritestrip/hud/avatar" flip_horizontal="false" ignore_fog="false" fps="60" looping="false" quad_width="0.519" quad_height="0.36" direction="pingpong">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+			<translation y="0.1" x="-0.05"/>
+		</frameanim>
+	</frameanimstack>
+
+	<frameanimstack>
+		<musthave>
+			<tag name="player"/>
+			<tag name="happy"/>
+		</musthave>
+		<musthave>
+			<tag name="player"/>
+			<tag name="happy_shout"/>
+		</musthave>
+		<frameanim directory="spritestrip/hud/avatar" flip_horizontal="false" ignore_fog="false" fps="60" looping="false" quad_width="0.519" quad_height="0.36" direction="pingpong">
+			<begin frame="1" hold="true"/>
+			<end   frame="1" hold="true"/>
+			<translation y="0.1" x="-0.05"/>
+		</frameanim>
+	</frameanimstack>
+
+	<frameanimstack>
+    <musthave>
+      <tag name="player"/>
+      <tag name="scared"/>
+    </musthave>
+    <musthave>
+      <tag name="player"/>
+      <tag name="scared_shout"/>
+    </musthave>
+    <frameanim directory="spritestrip/hud/avatar" flip_horizontal="false" ignore_fog="false" fps="60" looping="false" quad_width="0.519" quad_height="0.36" direction="pingpong">
+			<begin frame="2" hold="true"/>
+			<end   frame="2" hold="true"/>
+			<translation y="0.1" x="-0.05"/>
+		</frameanim>
+	</frameanimstack>
+
+	<frameanimstack>
+    <musthave>
+      <tag name="player"/>
+      <tag name="angry"/>
+    </musthave>
+    <musthave>
+      <tag name="player"/>
+      <tag name="angry_shout"/>
+    </musthave>
+    <frameanim directory="spritestrip/hud/avatar" flip_horizontal="false" ignore_fog="false" fps="60" looping="false" quad_width="0.519" quad_height="0.36" direction="pingpong">
+			<begin frame="3" hold="true"/>
+			<end   frame="3" hold="true"/>
+			<translation y="0.1" x="-0.05"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<frameanimstack>
+		<musthave>
+			<tag name="player"/>
+			<tag name="cryo"/>
+		</musthave>
+		<frameanim directory="spritestrip/hud/avatar" flip_horizontal="false" ignore_fog="false" fps="60" looping="false" quad_width="0.519" quad_height="0.36" direction="pingpong">
+			<begin frame="4" hold="true"/>
+			<end   frame="4" hold="true"/>
+			<translation y="0.1" x="-0.05"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<!-- background fade in -->
+	<coloranimstack name="fadein">
+		<color duration="0.25" delay="0" direction="forward" timing="linear">
+			<begin a="-255"/>
+			<end a="0"/>
+		</color>
+	</coloranimstack>
+	
+	<!-- background fade out -->
+	<coloranimstack name="fadeout">
+		<color duration="0.25" delay="0.0" direction="forward" timing="linear">
+		  <begin a="0"/>
+		  <end a="-255"/>
+		</color>
+	</coloranimstack>
+	
+</presentation>

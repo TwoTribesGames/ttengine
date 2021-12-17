@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		permanent="true">
+
+	<startvalues>
+		<scale scale="c(radius)"/>
+		<translation z="0.05"/>
+	</startvalues>  
+
+	<frameanimstack>
+		<frameanim directory="spritestrip/zerogravity/range_circle" ignore_fog="true" blendmode="add" fps="10" looping="true" quad_width="2" quad_height="2">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+		</frameanim>
+	</frameanimstack>
+
+	<anim2dstack name="idle">
+		<scale duration="0.75" looping="true" preset="oscillating">
+			<begin scale="1"/>
+			<end scale="1.0125"/>
+		</scale>
+		<rotation duration="1" looping="true">
+			<begin rotation="0"/>
+			<end rotation="3060"/>
+		</rotation>
+	</anim2dstack>
+
+	<anim2dstack name="enable">
+		<scale duration="0.15" timing="easeout">
+			<begin scale="0.1"/>
+			<end scale="1"/>
+		</scale>
+		<scale duration="0.2" preset="pingpong" timing="easeout" looping="false">
+			<begin scale="1"/>
+			<end scale="1.2"/>
+		</scale>
+		<scale duration="0.75" looping="true" preset="oscillating">
+			<begin scale="1"/>
+			<end scale="1.0125"/>
+		</scale>
+		<rotation duration="1" looping="true">
+			<begin rotation="0"/>
+			<end rotation="3060"/>
+		</rotation>
+	</anim2dstack>
+	
+		<trigger name="enable" type="audio" data="zerogravitybubble_appear"/>
+
+	<anim2dstack name="disable">
+		<scale duration="0.15" delay="0.1" timing="easeout">
+			<begin scale="1"/>
+			<end scale="0.1"/>
+		</scale>
+		<scale duration="0.15" preset="pingpong" timing="easeout" looping="false">
+			<begin scale="1"/>
+			<end scale="1.2"/>
+		</scale>
+		<scale duration="0.75" looping="true" preset="oscillating">
+			<begin scale="1"/>
+			<end scale="1.0125"/>
+		</scale>
+		<rotation duration="1" looping="true">
+			<begin rotation="0"/>
+			<end rotation="3060"/>
+		</rotation>
+	</anim2dstack>
+</presentation>

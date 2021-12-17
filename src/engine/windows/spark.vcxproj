@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="WIN_Dev|Win32">
+      <Configuration>WIN_Dev</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="WIN_Final|Win32">
+      <Configuration>WIN_Final</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="WIN_Test|Win32">
+      <Configuration>WIN_Test</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{435563B6-A4B5-463D-9C7C-FEAD4F6F760B}</ProjectGuid>
+    <RootNamespace>spark</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">$(ProjectDir)lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">$(ProjectDir)obj\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">$(ProjectDir)lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">$(ProjectDir)obj\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">$(ProjectDir)lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">$(ProjectDir)obj\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>inc;..\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;TT_ASSERT_ON;TT_PLATFORM_WIN;TT_BUILD_DEV;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <ProgramDataBaseFileName>$(TargetDir)\$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <ForcedIncludeFiles>tt\pch\pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">
+    <ClCompile>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>inc;..\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;TT_ASSERT_ON;TT_PLATFORM_WIN;TT_BUILD_TEST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <ProgramDataBaseFileName>$(TargetDir)\$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ForcedIncludeFiles>tt\pch\pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">
+    <ClCompile>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>inc;..\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;TT_PLATFORM_WIN;TT_BUILD_FINAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <ProgramDataBaseFileName>$(TargetDir)\$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ForcedIncludeFiles>tt\pch\pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\shared\inc\spark\RenderingAPIs\Shared\SPK_SharedBufferHandler.h" />
+    <ClInclude Include="..\shared\inc\spark\RenderingAPIs\Shared\SPK_SharedInfo.h" />
+    <ClInclude Include="..\shared\inc\spark\RenderingAPIs\Shared\SPK_SharedQuadRenderer.h" />
+    <ClInclude Include="..\shared\inc\spark\RenderingAPIs\Shared\SPK_SharedRenderer.h" />
+    <ClInclude Include="..\shared\inc\spark\RenderingAPIs\Shared\SPK_Shared_DEF.h" />
+    <ClInclude Include="..\shared\inc\spark\RenderingAPIs\Shared\SPK_TTQuadBuffer.h" />
+    <ClInclude Include="..\shared\inc\spark\SPK.h" />
+    <ClInclude Include="..\shared\inc\spark\Core\SPK_ArrayBuffer.h" />
+    <ClInclude Include="..\shared\inc\spark\Core\SPK_Buffer.h" />
+    <ClInclude Include="..\shared\inc\spark\Core\SPK_BufferHandler.h" />
+    <ClInclude Include="..\shared\inc\spark\Core\SPK_DEF.h" />
+    <ClInclude Include="..\shared\inc\spark\Core\SPK_Emitter.h" />
+    <ClInclude Include="..\shared\inc\spark\Core\SPK_Factory.h" />
+    <ClInclude Include="..\shared\inc\spark\Core\SPK_Group.h" />
+    <ClInclude Include="..\shared\inc\spark\Core\SPK_Interpolator.h" />
+    <ClInclude Include="..\shared\inc\spark\Core\SPK_Model.h" />
+    <ClInclude Include="..\shared\inc\spark\Core\SPK_Modifier.h" />
+    <ClInclude Include="..\shared\inc\spark\Core\SPK_Particle.h" />
+    <ClInclude Include="..\shared\inc\spark\Core\SPK_Pool.h" />
+    <ClInclude Include="..\shared\inc\spark\Core\SPK_Registerable.h" />
+    <ClInclude Include="..\shared\inc\spark\Core\SPK_RegWrapper.h" />
+    <ClInclude Include="..\shared\inc\spark\Core\SPK_Renderer.h" />
+    <ClInclude Include="..\shared\inc\spark\Core\SPK_System.h" />
+    <ClInclude Include="..\shared\inc\spark\Core\SPK_Transformable.h" />
+    <ClInclude Include="..\shared\inc\spark\Core\SPK_Vector3D.h" />
+    <ClInclude Include="..\shared\inc\spark\Core\SPK_Zone.h" />
+    <ClInclude Include="..\shared\inc\spark\Extensions\Emitters\SPK_NormalEmitter.h" />
+    <ClInclude Include="..\shared\inc\spark\Extensions\Emitters\SPK_RandomEmitter.h" />
+    <ClInclude Include="..\shared\inc\spark\Extensions\Emitters\SPK_SphericEmitter.h" />
+    <ClInclude Include="..\shared\inc\spark\Extensions\Emitters\SPK_StaticEmitter.h" />
+    <ClInclude Include="..\shared\inc\spark\Extensions\Emitters\SPK_StraightEmitter.h" />
+    <ClInclude Include="..\shared\inc\spark\Extensions\Modifiers\SPK_Collision.h" />
+    <ClInclude Include="..\shared\inc\spark\Extensions\Modifiers\SPK_Destroyer.h" />
+    <ClInclude Include="..\shared\inc\spark\Extensions\Modifiers\SPK_LinearForce.h" />
+    <ClInclude Include="..\shared\inc\spark\Extensions\Modifiers\SPK_ModifierGroup.h" />
+    <ClInclude Include="..\shared\inc\spark\Extensions\Modifiers\SPK_Obstacle.h" />
+    <ClInclude Include="..\shared\inc\spark\Extensions\Modifiers\SPK_PointMass.h" />
+    <ClInclude Include="..\shared\inc\spark\Extensions\Modifiers\SPK_Rotator.h" />
+    <ClInclude Include="..\shared\inc\spark\Extensions\Modifiers\SPK_Vortex.h" />
+    <ClInclude Include="..\shared\inc\spark\Extensions\Renderers\SPK_LineRendererInterface.h" />
+    <ClInclude Include="..\shared\inc\spark\Extensions\Renderers\SPK_Oriented2DRendererInterface.h" />
+    <ClInclude Include="..\shared\inc\spark\Extensions\Renderers\SPK_Oriented3DRendererInterface.h" />
+    <ClInclude Include="..\shared\inc\spark\Extensions\Renderers\SPK_PointRendererInterface.h" />
+    <ClInclude Include="..\shared\inc\spark\Extensions\Renderers\SPK_QuadRendererInterface.h" />
+    <ClInclude Include="..\shared\inc\spark\Extensions\Zones\SPK_AABox.h" />
+    <ClInclude Include="..\shared\inc\spark\Extensions\Zones\SPK_Cylinder.h" />
+    <ClInclude Include="..\shared\inc\spark\Extensions\Zones\SPK_Line.h" />
+    <ClInclude Include="..\shared\inc\spark\Extensions\Zones\SPK_Plane.h" />
+    <ClInclude Include="..\shared\inc\spark\Extensions\Zones\SPK_Point.h" />
+    <ClInclude Include="..\shared\inc\spark\Extensions\Zones\SPK_Ring.h" />
+    <ClInclude Include="..\shared\inc\spark\Extensions\Zones\SPK_Sphere.h" />
+    <ClInclude Include="..\shared\inc\spark\Extensions\Zones\SPK_ZoneIntersection.h" />
+    <ClInclude Include="..\shared\inc\spark\Extensions\Zones\SPK_ZoneUnion.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\shared\src\spark\RenderingAPIs\Shared\SPK_SharedBufferHandler.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\RenderingAPIs\Shared\SPK_SharedInfo.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\RenderingAPIs\Shared\SPK_SharedQuadRenderer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\RenderingAPIs\Shared\SPK_SharedRenderer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\SPK_All.cpp" />
+    <ClCompile Include="..\shared\src\spark\Core\SPK_BufferHandler.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Core\SPK_DEF.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Core\SPK_Emitter.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Core\SPK_Factory.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Core\SPK_Group.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Core\SPK_Interpolator.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Core\SPK_Model.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Core\SPK_Modifier.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Core\SPK_Particle.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Core\SPK_Registerable.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Core\SPK_Renderer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Core\SPK_System.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Core\SPK_Transformable.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Core\SPK_Vector3D.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Core\SPK_Zone.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Extensions\Emitters\SPK_NormalEmitter.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Extensions\Emitters\SPK_RandomEmitter.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Extensions\Emitters\SPK_SphericEmitter.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Extensions\Emitters\SPK_StraightEmitter.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Extensions\Modifiers\SPK_Collision.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Extensions\Modifiers\SPK_Destroyer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Extensions\Modifiers\SPK_LinearForce.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Extensions\Modifiers\SPK_ModifierGroup.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Extensions\Modifiers\SPK_Obstacle.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Extensions\Modifiers\SPK_PointMass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Extensions\Modifiers\SPK_Vortex.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Extensions\Renderers\SPK_Oriented3DRendererInterface.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Extensions\Renderers\SPK_QuadRendererInterface.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Extensions\Zones\SPK_AABox.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Extensions\Zones\SPK_Cylinder.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Extensions\Zones\SPK_Line.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Extensions\Zones\SPK_Plane.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Extensions\Zones\SPK_Point.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Extensions\Zones\SPK_Ring.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Extensions\Zones\SPK_Sphere.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Extensions\Zones\SPK_ZoneIntersection.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\spark\Extensions\Zones\SPK_ZoneUnion.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

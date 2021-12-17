@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Windows">
+      <UniqueIdentifier>{ef0ce360-76df-4f44-8d72-733dcca85643}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared">
+      <UniqueIdentifier>{5ca820f1-611d-49be-beea-fdee7ea6f9eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pch">
+      <UniqueIdentifier>{fe62df50-abf3-4140-acc2-e38e499d7141}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="inc\tt\platform\tt_compiler.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\platform\tt_printf.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\platform\tt_types.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\platform\tt_boost_compiler.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\platform\tt_compile_time_error.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\platform\tt_compiler.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\platform\tt_error.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\platform\tt_printf.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\platform\tt_types.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\pch\pch.h">
+      <Filter>pch</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\platform\tt_error_win.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\platform\tt_types_validation.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\platform\tt_endianess.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\tt\platform\tt_error.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\platform\tt_printf.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\platform\boost_impl.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\pch\pch.cpp">
+      <Filter>pch</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

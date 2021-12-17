@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<ParticleTrigger xmlns="http://intranet.twotribes.com/schemas/common/particletrigger.xsd" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/particletrigger.xsd http://intranet.twotribes.com/schemas/common/particletrigger.xsd">
+	<ParticleCulling enabled="true"/>
+	<ParticleEmitter max_particles="1" x="0" y="0" delay="0" space="world" ignore_fog="false">
+		<RenderGroup value="350"/>
+		<Texture filename="particles/crate_left.png"/>
+		<FrameAnimations framesize="0"/>
+		<EmissionRect width="0" height="0"/>
+		<ExternalForce min_x="0" max_x="0" min_y="0" max_y="0"/>
+		<BlendMode type="blend"/>
+		<PreGeneration time="0" step="0"/>
+		<Emission particles="1" type="burst" lifetime="0"/>
+		<ParticleOrientation type="rotation"/>
+		<Velocity min_x="-18.75" max_x="-11.25" min_y="0" max_y="33.75"/>
+		<VelocityFriction min="0.06" max="0.06"/>
+		<ParticleLife min="1" max="1"/>
+		<Size min_start="0.975" max_start="0.975"/>
+		<Weight min_start="0" max_start="0" min_end="1" max_end="1"/>
+		<Rotation min_start="0" max_start="0" min_speed="720" max_speed="720"/>
+		<RotationForce min="0" max="0"/>
+		<RotationFriction min="0.03" max="0.03"/>
+		<Frame min_start="0" max_start="0"/>
+		<MinStartColor r="87" g="87" b="87" a="255"/>
+		<MaxStartColor r="255" g="255" b="255" a="255"/>
+		<MinEndColor r="255" g="255" b="255" a="255"/>
+		<MaxEndColor r="255" g="255" b="255" a="255"/>
+		<Fade in="0" out="0.2" type="percentage"/>
+		<ExternalImpulseWeight min="0" max="0"/>
+	</ParticleEmitter>
+	<ParticleEmitter max_particles="1" x="0" y="0" delay="0" space="world" ignore_fog="false">
+		<RenderGroup value="350"/>
+		<Texture filename="particles/crate_right.png"/>
+		<FrameAnimations framesize="0"/>
+		<EmissionRect width="0" height="0"/>
+		<ExternalForce min_x="0" max_x="0" min_y="0" max_y="0"/>
+		<BlendMode type="blend"/>
+		<PreGeneration time="0" step="0"/>
+		<Emission particles="1" type="burst" lifetime="0"/>
+		<ParticleOrientation type="rotation"/>
+		<Velocity min_x="11.25" max_x="18.75" min_y="0" max_y="33.75"/>
+		<VelocityFriction min="0.06" max="0.06"/>
+		<ParticleLife min="1" max="1"/>
+		<Size min_start="1.95" max_start="1.95"/>
+		<Weight min_start="0" max_start="0" min_end="1" max_end="1"/>
+		<Rotation min_start="0" max_start="0" min_speed="-720" max_speed="-720"/>
+		<RotationForce min="0" max="0"/>
+		<RotationFriction min="0.03" max="0.03"/>
+		<Frame min_start="0" max_start="0"/>
+		<MinStartColor r="87" g="87" b="87" a="255"/>
+		<MaxStartColor r="255" g="255" b="255" a="255"/>
+		<MinEndColor r="255" g="255" b="255" a="255"/>
+		<MaxEndColor r="255" g="255" b="255" a="255"/>
+		<Fade in="0" out="0.2" type="percentage"/>
+		<ExternalImpulseWeight min="0" max="0"/>
+	</ParticleEmitter>
+	<ParticleEmitter max_particles="1" x="0" y="0" delay="0" space="world" ignore_fog="false">
+		<RenderGroup value="350"/>
+		<Texture filename="particles/crate_middle.png"/>
+		<FrameAnimations framesize="0"/>
+		<EmissionRect width="0" height="0"/>
+		<ExternalForce min_x="0" max_x="0" min_y="0" max_y="0"/>
+		<BlendMode type="blend"/>
+		<PreGeneration time="0" step="0"/>
+		<Emission particles="1" type="burst" lifetime="0"/>
+		<ParticleOrientation type="rotation"/>
+		<Velocity min_x="-3.75" max_x="3.75" min_y="12.75" max_y="17.25"/>
+		<VelocityFriction min="0.06" max="0.06"/>
+		<ParticleLife min="1" max="1"/>
+		<Size min_start="1.95" max_start="1.95"/>
+		<Weight min_start="0" max_start="0" min_end="1" max_end="1"/>
+		<Rotation min_start="0" max_start="0" min_speed="360" max_speed="360"/>
+		<RotationForce min="0" max="0"/>
+		<RotationFriction min="0" max="0"/>
+		<Frame min_start="0" max_start="0"/>
+		<MinStartColor r="87" g="87" b="87" a="255"/>
+		<MaxStartColor r="255" g="255" b="255" a="255"/>
+		<MinEndColor r="255" g="255" b="255" a="255"/>
+		<MaxEndColor r="255" g="255" b="255" a="255"/>
+		<Fade in="0" out="0.2" type="percentage"/>
+		<ExternalImpulseWeight min="0" max="0"/>
+	</ParticleEmitter>
+	<ParticleEmitter max_particles="1" x="0" y="1.5" delay="0" space="world" ignore_fog="false">
+		<RenderGroup value="350"/>
+		<Texture filename="particles/crate_lid.png"/>
+		<FrameAnimations framesize="0"/>
+		<EmissionRect width="0" height="0"/>
+		<ExternalForce min_x="0" max_x="0" min_y="0" max_y="0"/>
+		<BlendMode type="blend"/>
+		<PreGeneration time="0" step="0"/>
+		<Emission particles="1" type="burst" lifetime="0"/>
+		<ParticleOrientation type="rotation"/>
+		<Velocity min_x="-3.75" max_x="3.75" min_y="20.25" max_y="24.75"/>
+		<VelocityFriction min="0.06" max="0.06"/>
+		<ParticleLife min="1" max="1"/>
+		<Size min_start="3" max_start="3"/>
+		<Weight min_start="0" max_start="0" min_end="1" max_end="1"/>
+		<Rotation min_start="-5" max_start="5" min_speed="720" max_speed="720"/>
+		<RotationForce min="0" max="0"/>
+		<RotationFriction min="0.03" max="0.03"/>
+		<Frame min_start="0" max_start="0"/>
+		<MinStartColor r="87" g="87" b="87" a="255"/>
+		<MaxStartColor r="255" g="255" b="255" a="255"/>
+		<MinEndColor r="255" g="255" b="255" a="255"/>
+		<MaxEndColor r="255" g="255" b="255" a="255"/>
+		<Fade in="0" out="0.2" type="percentage"/>
+		<ExternalImpulseWeight min="0" max="0"/>
+	</ParticleEmitter>
+</ParticleTrigger>

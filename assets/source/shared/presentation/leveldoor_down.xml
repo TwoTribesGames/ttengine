@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		permanent="true">
+	
+	<startvalues>
+		<translation x="0.9" y="-0.7" z="-0.03"/>
+		<scale scale="1.3"/>
+	</startvalues>
+	
+	<!-- disabled -->
+	<frameanimstack name="disabled">
+		<frameanim directory="spritestrip/leveldoor/disabled/bottom" fps="3" looping="true" quad_width="3" quad_height="3.447" direction="forward">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<!-- enabled -->
+	<frameanimstack name="enabled">
+		<frameanim directory="spritestrip/leveldoor/enabled/bottom" lightmask="use_lightmask" fps="15" looping="false" quad_width="3" quad_height="3.447" direction="forward">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+		</frameanim>
+	</frameanimstack>
+	
+</presentation>
+

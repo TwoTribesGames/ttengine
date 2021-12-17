@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		dont_precache="true" permanent="true">
+
+	<startvalues>
+		<scale x="1.15" y="1.1"/>
+		<translation x="-0.3"/>
+	</startvalues>
+
+	<!-- idle -->
+	<frameanimstack name="idle">
+		<frameanim directory="spritestrip/pistons/piston/horizontal" lightmask="use_lightmask" fps="15" quad_width="c(width)" quad_height="c(height)" looping="true">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+		</frameanim>
+	</frameanimstack>
+
+	<!-- active (used for elevator) -->
+	<frameanimstack name="active">
+		<frameanim directory="spritestrip/pistons/piston/horizontal" lightmask="use_lightmask" fps="15" quad_width="c(width)" quad_height="c(height)" looping="true">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+		</frameanim>
+	</frameanimstack>
+
+	<!-- opening -->
+	<frameanimstack name="opening">
+		<frameanim directory="spritestrip/pistons/piston/horizontal" lightmask="use_lightmask" fps="15" quad_width="c(width)" quad_height="c(height)" looping="true">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<!-- closing -->	
+	<frameanimstack name="closing">
+		<frameanim directory="spritestrip/pistons/piston/horizontal" lightmask="use_lightmask" fps="15" quad_width="c(width)" quad_height="c(height)" looping="true">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<!-- opened -->	
+	<frameanimstack name="opened">
+		<frameanim directory="spritestrip/pistons/piston/horizontal" lightmask="use_lightmask" fps="15" quad_width="c(width)" quad_height="c(height)" looping="true">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<!-- closed -->	
+	<frameanimstack name="closed">
+		<frameanim directory="spritestrip/pistons/piston/horizontal" lightmask="use_lightmask" fps="15" quad_width="c(width)" quad_height="c(height)" looping="true">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+		</frameanim>
+	</frameanimstack>
+
+	<trigger name="opening" type="audio" data="movingplatform_start">
+		<mustnothave>
+			<tag name="submerged"/>
+		</mustnothave>
+	</trigger>
+
+	<trigger name="opening" type="audio" data="movingplatform_loop" looping="true">
+		<mustnothave>
+			<tag name="submerged"/>
+		</mustnothave>
+	</trigger>
+
+	<trigger name="closing" type="audio" data="movingplatform_start">
+		<mustnothave>
+			<tag name="submerged"/>
+		</mustnothave>
+	</trigger>
+
+	<trigger name="closing" type="audio" data="movingplatform_loop" looping="true">
+		<mustnothave>
+			<tag name="submerged"/>
+		</mustnothave>
+	</trigger>
+
+	<trigger name="opened" type="audio" data="movingplatform_stop">
+		<mustnothave>
+			<tag name="submerged"/>
+		</mustnothave>
+	</trigger>
+
+	<trigger name="closed" type="audio" data="movingplatform_stop">
+		<mustnothave>
+			<tag name="submerged"/>
+		</mustnothave>
+	</trigger>
+	
+	<trigger name="opening" type="audio" data="movingplatform_submerged_loop">
+		<musthave>
+			<tag name="submerged"/>
+		</musthave>
+	</trigger>
+	<trigger name="opening" type="audio" data="movingplatform_submerged_loop" looping="true">
+		<musthave>
+			<tag name="submerged"/>
+		</musthave>
+	</trigger>
+	<trigger name="opened" type="audio" data="movingplatform_submerged_stop">
+		<musthave>
+			<tag name="submerged"/>
+		</musthave>
+	</trigger>
+	<trigger name="closed" type="audio" data="movingplatform_submerged_stop">
+		<musthave>
+			<tag name="submerged"/>
+		</musthave>
+	</trigger>
+</presentation>
+

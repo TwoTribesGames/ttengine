@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{9e737771-9e75-4beb-a2c9-532042d0c52d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="res">
+      <UniqueIdentifier>{70cd5881-b4d7-4b8d-bb59-3a0c8aecb88e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\input">
+      <UniqueIdentifier>{9ba7c74c-2c16-4eb9-bd0f-2a711faeee0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\audio">
+      <UniqueIdentifier>{7aab68f7-7d83-4221-88a4-1ebdce386904}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\seh_main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\input\Controller.cpp">
+      <Filter>src\input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\audio\AudioPlayerWin.cpp">
+      <Filter>src\audio</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\application.rc2">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\assets\source\win\icons\app_icon.ico">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\assets\source\win\cursors\editor_selection_content_clone.cur">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\assets\source\win\cursors\editor_selection_rect_move.cur">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\assets\source\win\cursors\editor_selection_content_cut.cur">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\assets\source\win\cursors\editor_selection_content_move.cur">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\assets\source\win\cursors\editor_selection_rect_create.cur">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\assets\source\win\cursors\editor_hand_closed.cur">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\assets\source\win\cursors\editor_hand_open.cur">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\assets\source\win\cursors\editor_draw.cur">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\assets\source\win\cursors\editor_floodfill.cur">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\assets\source\win\cursors\editor_erase.cur">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\assets\source\win\cursors\editor_drawentity.cur">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\assets\source\win\cursors\editor_tilepicker.cur">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\assets\source\win\cursors\editor_entitypicker_invalid.cur">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\assets\source\win\cursors\editor_entitypicker_valid.cur">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\assets\source\win\cursors\editor_addnote.cur">
+      <Filter>res</Filter>
+    </None>
+    <None Include="..\..\assets\source\win\cursors\game_cursor.cur">
+      <Filter>res</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="src\application.rc">
+      <Filter>res</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\resource.h">
+      <Filter>res</Filter>
+    </ClInclude>
+    <ClInclude Include="src\audio\constants_win.h">
+      <Filter>src\audio</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

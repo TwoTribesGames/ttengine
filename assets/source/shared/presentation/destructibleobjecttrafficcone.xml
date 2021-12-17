@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		permanent="true">
+		
+	<startvalues>
+		<translation y="0.0" z="0.05"/>
+		<scale scale="0.35"/>
+	</startvalues>
+	
+	<frameanimstack name="idle">
+		<frameanim directory="spritestrip/destructible_trafficcone/color" lightmask="use_lightmask" quad_height="2.836" quad_width="3.438" fps="1000" looping="true">
+			<begin frame="0"/>
+			<end frame="r(0),(1)"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<particles name="corpse" file="particles/destructible_trafficcone.trigger" position_type="follow">
+		<mustnothave>
+			<tag name="zerog"/>
+		</mustnothave>
+		<translation x="0" y="0" z="0"/>
+		<scale scale="2.0"/>
+	</particles>
+
+	<particles name="corpse" file="particles/destructible_trafficcone_zerog.trigger" position_type="follow">
+		<musthave>
+			<tag name="zerog"/>
+		</musthave>
+		<translation x="0" y="0" z="0"/>
+		<scale scale="2.0"/>
+	</particles>
+	
+	<trigger name="corpse" type="audio" data="trafficcone_corpse"/>
+	
+</presentation>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<shoebox xmlns="http://intranet.twotribes.com/schemas/common/shoebox.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/shoebox.xsd http://intranet.twotribes.com/schemas/common/shoebox.xsd">
+  <plane texture="backgrounds/fan_ring.png" x="-0.000000000" y="0.000000000" z="0.000000000" width="9.60695076" height="9.60695076" priority="50" rotation="0.000000000" texture_top_left_u="0.000000000" texture_top_left_v="0.000000000" texture_top_right_u="1.00000000" texture_top_right_v="0.000000000" texture_bottom_right_u="1.00000000" texture_bottom_right_v="1.00000000" texture_bottom_left_u="0.000000000" texture_bottom_left_v="1.00000000" ignore_fog="false">
+    <color_whole_quad r="27" g="37" b="44" a="255"/>
+  </plane>
+  <plane texture="backgrounds/fan_ring.png" x="0.000000000" y="-0.000000000" z="0.000000000" width="11.9388828" height="11.9388828" priority="60" rotation="0.000000000" texture_top_left_u="0.000000000" texture_top_left_v="0.000000000" texture_top_right_u="1.00000000" texture_top_right_v="0.000000000" texture_bottom_right_u="1.00000000" texture_bottom_right_v="1.00000000" texture_bottom_left_u="0.000000000" texture_bottom_left_v="1.00000000" ignore_fog="false">
+    <color_whole_quad r="50" g="71" b="82" a="255"/>
+  </plane>
+  <plane texture="backgrounds/fan_blades.png" x="0.000000000" y="-0.000000000" z="0.000000000" width="10.3680544" height="10.3680544" priority="70" rotation="0.000000000" texture_top_left_u="0.000000000" texture_top_left_v="0.000000000" texture_top_right_u="1.00000000" texture_top_right_v="0.000000000" texture_bottom_right_u="1.00000000" texture_bottom_right_v="1.00000000" texture_bottom_left_u="0.000000000" texture_bottom_left_v="1.00000000" ignore_fog="false">
+    <color_whole_quad r="107" g="104" b="113" a="255"/>
+  </plane>
+  <plane texture="backgrounds/fan_ring.png" x="0.000000000" y="-0.000000000" z="0.000000000" width="14.5347281" height="14.5347281" priority="80" rotation="0.000000000" texture_top_left_u="0.000000000" texture_top_left_v="0.000000000" texture_top_right_u="1.00000000" texture_top_right_v="0.000000000" texture_bottom_right_u="1.00000000" texture_bottom_right_v="1.00000000" texture_bottom_left_u="0.000000000" texture_bottom_left_v="1.00000000" ignore_fog="false">
+    <color_whole_quad r="158" g="154" b="165" a="255"/>
+  </plane>
+</shoebox>

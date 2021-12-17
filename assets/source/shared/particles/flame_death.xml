@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<ParticleTrigger xmlns="http://intranet.twotribes.com/schemas/common/particletrigger.xsd" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/particletrigger.xsd http://intranet.twotribes.com/schemas/common/particletrigger.xsd">
+	<GameEvent name="flame_smoke" max_particles="500"/>
+	<ParticleCulling enabled="true"/>
+	<ParticleEmitter max_particles="1" x="0" y="0" delay="0" space="world" ignore_fog="false">
+		<RenderGroup value="200"/>
+		<Texture filename="particles/generic_dust_random4.png"/>
+		<FrameAnimations framesize="0">
+			<Animation start="0" end="0" fps="1" type="loop"/>
+		</FrameAnimations>
+		<EmissionCircle radius="0" innerradius="0"/>
+		<ExternalForce min_x="-0.443279" max_x="0.443279" min_y="-0.2835" max_y="0.2835"/>
+		<BlendMode type="blend"/>
+		<PreGeneration time="0" step="0"/>
+		<Emission particles="1" type="burst" lifetime="0"/>
+		<ParticleOrientation type="rotation"/>
+		<Velocity min_x="-2.25" max_x="2.25" min_y="0" max_y="0"/>
+		<VelocityFriction min="0.0143443" max="0.0156557"/>
+		<ParticleLife min="0.45" max="0.65"/>
+		<Size min_start="2.115" max_start="2.385" min_end="2.025" max_end="2.475"/>
+		<Weight min_start="0.5" max_start="0.5" min_end="1" max_end="1"/>
+		<Rotation min_start="-180" max_start="180" min_speed="0" max_speed="200"/>
+		<RotationForce min="0" max="0"/>
+		<RotationFriction min="0.01" max="0.01"/>
+		<Frame min_start="0" max_start="0"/>
+		<MinStartColor r="54" g="38" b="38" a="255"/>
+		<MaxStartColor r="51" g="35" b="35" a="134"/>
+		<MinEndColor r="20" g="20" b="20" a="0"/>
+		<MaxEndColor r="20" g="20" b="20" a="0"/>
+		<Fade in="0.25" out="0.4" type="percentage"/>
+		<ExternalImpulseWeight min="1.5" max="2.5"/>
+	</ParticleEmitter>
+</ParticleTrigger>

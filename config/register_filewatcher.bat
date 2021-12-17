@@ -1,0 +1,1 @@
+..\tools\ttassetmonitor\TTAssetMonitor.exe --register-config ttgame.ttassmon

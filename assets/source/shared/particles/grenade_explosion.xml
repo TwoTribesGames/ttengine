@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<ParticleTrigger xmlns="http://intranet.twotribes.com/schemas/common/particletrigger.xsd" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/particletrigger.xsd http://intranet.twotribes.com/schemas/common/particletrigger.xsd">
+	<ParticleCulling enabled="true"/>
+	<ParticleEmitter max_particles="30" x="0" y="0" delay="0" space="world" ignore_fog="false">
+		<RenderGroup value="350"/>
+		<Texture filename="particles/generic_hardedge_drip.png"/>
+		<FrameAnimations framesize="0"/>
+		<EmissionCircle radius="0.05" innerradius="0.01"/>
+		<ExternalForce min_x="0" max_x="0" min_y="0" max_y="0"/>
+		<BlendMode type="add"/>
+		<BlendModeAlpha type="lightmask"/>
+		<PreGeneration time="0" step="0"/>
+		<Emission particles="30" type="burst" lifetime="0"/>
+		<ParticleOrientation type="direction"/>
+		<Velocity min_x="-2.5" max_x="22.5" min_y="3.75" max_y="6.25"/>
+		<VelocityFriction min="0" max="0"/>
+		<ParticleLife min="0.175" max="0.425"/>
+		<Size min_start="0.3" max_start="0.3" min_end="0.1" max_end="0.1"/>
+		<Weight min_start="0" max_start="0" min_end="1" max_end="1"/>
+		<Rotation min_start="90" max_start="90" min_speed="0" max_speed="0"/>
+		<RotationForce min="0" max="0"/>
+		<RotationFriction min="0" max="0"/>
+		<Frame min_start="0" max_start="0"/>
+		<DirectionFromSpawnLocation/>
+		<MinStartColor r="251" g="102" b="179" a="255"/>
+		<MaxStartColor r="255" g="27" b="27" a="255"/>
+		<MinEndColor r="255" g="0" b="0" a="255"/>
+		<MaxEndColor r="255" g="137" b="172" a="255"/>
+		<Fade in="0.2" out="0.2" type="percentage"/>
+		<ExternalImpulseWeight min="0" max="0"/>
+	</ParticleEmitter>
+	<ParticleEmitter max_particles="40" x="0" y="0" delay="0" space="world" ignore_fog="false">
+		<RenderGroup value="350"/>
+		<Texture filename="particles/generic_spark_motion_slim.png"/>
+		<FrameAnimations framesize="0"/>
+		<EmissionCircle radius="0.15" innerradius="0.01"/>
+		<ExternalForce min_x="0" max_x="0" min_y="0" max_y="0"/>
+		<BlendMode type="add"/>
+		<BlendModeAlpha type="lightmask"/>
+		<PreGeneration time="0" step="0"/>
+		<Emission particles="40" type="burst" lifetime="0"/>
+		<ParticleOrientation type="direction"/>
+		<Velocity min_x="-7.5" max_x="27.5" min_y="-12.5" max_y="12.5"/>
+		<VelocityFriction min="0.005" max="0.035"/>
+		<ParticleLife min="0.3" max="0.5"/>
+		<Size min_start="0.8" max_start="0.8" min_end="0.35" max_end="0.35"/>
+		<Weight min_start="0" max_start="0" min_end="0.75" max_end="1.25"/>
+		<Rotation min_start="0" max_start="0" min_speed="0" max_speed="0"/>
+		<RotationForce min="0" max="0"/>
+		<RotationFriction min="0" max="0"/>
+		<Frame min_start="0" max_start="0"/>
+		<MinStartColor r="255" g="0" b="0" a="255"/>
+		<MaxStartColor r="255" g="185" b="218" a="255"/>
+		<MinEndColor r="255" g="0" b="208" a="255"/>
+		<MaxEndColor r="255" g="0" b="0" a="255"/>
+		<Fade in="0.2" out="0.4" type="percentage"/>
+		<ExternalImpulseWeight min="0" max="0"/>
+	</ParticleEmitter>
+	<ParticleEmitter max_particles="10" x="0" y="0" delay="0" space="world" ignore_fog="false">
+		<RenderGroup value="350"/>
+		<Texture filename="particles/chunks_79px.png"/>
+		<FrameAnimations framesize="78">
+			<Animation start="0" end="3" fps="0" type="once"/>
+		</FrameAnimations>
+		<EmissionCircle radius="0.35" innerradius="0.4"/>
+		<ExternalForce min_x="0" max_x="0" min_y="-0.025" max_y="0.025"/>
+		<BlendMode type="blend"/>
+		<BlendModeAlpha type="lightmask"/>
+		<PreGeneration time="0" step="0"/>
+		<Emission particles="10" type="burst" lifetime="0"/>
+		<ParticleOrientation type="rotation"/>
+		<Velocity min_x="-12.5" max_x="12.5" min_y="-7.5" max_y="17.5"/>
+		<VelocityFriction min="0.02" max="0.02"/>
+		<ParticleLife min="0.4" max="0.6"/>
+		<Size min_start="0.425" max_start="0.575" min_end="0.5" max_end="1.5"/>
+		<Weight min_start="0.25" max_start="0.25" min_end="1" max_end="1"/>
+		<Rotation min_start="-180" max_start="180" min_speed="1020" max_speed="1380"/>
+		<RotationForce min="0" max="0"/>
+		<RotationFriction min="0" max="0"/>
+		<Frame min_start="0" max_start="3"/>
+		<DirectionFromSpawnLocation/>
+		<MinStartColor r="94" g="117" b="153" a="255"/>
+		<MaxStartColor r="46" g="59" b="78" a="255"/>
+		<MinEndColor r="98" g="115" b="134" a="255"/>
+		<MaxEndColor r="81" g="102" b="140" a="255"/>
+		<Fade in="0" out="0.5" type="percentage"/>
+		<ExternalImpulseWeight min="0" max="0"/>
+	</ParticleEmitter>
+	<ParticleEmitter max_particles="20" x="0" y="0" delay="0" space="world" ignore_fog="false">
+		<RenderGroup value="350"/>
+		<Texture filename="particles/chunks_79px.png"/>
+		<FrameAnimations framesize="78">
+			<Animation start="0" end="3" fps="0" type="once"/>
+		</FrameAnimations>
+		<EmissionCircle radius="0.35" innerradius="0.4"/>
+		<ExternalForce min_x="0" max_x="0" min_y="-0.025" max_y="0.025"/>
+		<BlendMode type="blend"/>
+		<BlendModeAlpha type="lightmask"/>
+		<PreGeneration time="0" step="0"/>
+		<Emission particles="20" type="burst" lifetime="0"/>
+		<ParticleOrientation type="rotation"/>
+		<Velocity min_x="-12.5" max_x="12.5" min_y="-7.5" max_y="17.5"/>
+		<VelocityFriction min="0.02" max="0.02"/>
+		<ParticleLife min="0.4" max="0.6"/>
+		<Size min_start="0.125" max_start="0.275" min_end="0.375" max_end="0.625"/>
+		<Weight min_start="0.25" max_start="0.25" min_end="1" max_end="1"/>
+		<Rotation min_start="-180" max_start="180" min_speed="1020" max_speed="1380"/>
+		<RotationForce min="0" max="0"/>
+		<RotationFriction min="0" max="0"/>
+		<Frame min_start="0" max_start="3"/>
+		<DirectionFromSpawnLocation/>
+		<MinStartColor r="94" g="117" b="153" a="255"/>
+		<MaxStartColor r="46" g="59" b="78" a="255"/>
+		<MinEndColor r="98" g="115" b="134" a="255"/>
+		<MaxEndColor r="81" g="102" b="140" a="255"/>
+		<Fade in="0" out="0.5" type="percentage"/>
+		<ExternalImpulseWeight min="0" max="0"/>
+	</ParticleEmitter>
+</ParticleTrigger>

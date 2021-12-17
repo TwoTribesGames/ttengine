@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<shoebox xmlns="http://intranet.twotribes.com/schemas/common/shoebox.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/shoebox.xsd http://intranet.twotribes.com/schemas/common/shoebox.xsd">
+  <clearcolor r="0" g="0" b="0"/>
+  <plane texture="backgrounds/fan_backlight.png" x="-0.120" y="-0.125" z="0.000" width="65.000" height="65.000" priority="19" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="true" blend_mode="add" pid="0">
+    <animations>
+      <rotation looping="true" duration="5" preset="oscillating">
+        <begin rotation="0"/>
+        <end rotation="5"/>
+      </rotation>
+      <rotation looping="true" duration="30" direction="forward">
+        <begin rotation="0"/>
+        <end rotation="360"/>
+      </rotation>
+    </animations>
+    <color_whole_quad r="120" g="162" b="182" a="150"/>
+  </plane>
+  <plane texture="backgrounds/white.png" x="0.000" y="0.000" z="0.000" width="6.311" height="6.311" priority="10" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="true" pid="3">
+    <animations>
+      <rotation looping="true" duration="5" preset="oscillating">
+        <begin rotation="0"/>
+        <end rotation="5"/>
+      </rotation>
+      <rotation looping="true" duration="30" direction="forward">
+        <begin rotation="0"/>
+        <end rotation="360"/>
+      </rotation>
+    </animations>
+    <color_whole_quad r="128" g="207" b="255" a="255"/>
+  </plane>
+  <plane texture="backgrounds/white_circle_soft.png" x="0.237" y="0.035" z="0.000" width="39.064" height="39.064" priority="5" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="4">
+    <color_whole_quad r="120" g="162" b="182" a="178"/>
+  </plane>
+  <plane texture="backgrounds/fan_ring.png" x="-0.863" y="1.285" z="0.000" width="50.219" height="50.219" priority="18" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="6">
+    <color_whole_quad r="139" g="139" b="139" a="255"/>
+  </plane>
+  <plane texture="backgrounds/fan_blades.png" x="0.000" y="0.000" z="0.000" width="32.000" height="32.000" priority="15" rotation="0.000" texture_top_left_u="0.000" texture_top_left_v="0.000" texture_top_right_u="1.000" texture_top_right_v="0.000" texture_bottom_right_u="1.000" texture_bottom_right_v="1.000" texture_bottom_left_u="0.000" texture_bottom_left_v="1.000" ignore_fog="false" pid="7">
+    <animations>
+      <rotation looping="true" duration="5" preset="oscillating">
+        <begin rotation="0"/>
+        <end rotation="5"/>
+      </rotation>
+      <rotation looping="true" duration="30" direction="forward">
+        <begin rotation="0"/>
+        <end rotation="360"/>
+      </rotation>
+    </animations>
+  </plane>
+</shoebox>

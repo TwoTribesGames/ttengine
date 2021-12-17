@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		permanent="true">
+
+	<!--SINUS GRAPHIC-->
+	<!--wave_high-->
+	<frameanimstack>
+		<frameanim image_namespace="textures.hud" image="wave_high" frame_width="1" frame_height="1" texture_anim_u="r(1.23),(2.2123)" fps="1" looping="true" quad_width="3.7" quad_height="1.3">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+			<scale scale="0.075"/>
+			<translation x="-0.213" y="-0.32"/>
+		</frameanim>
+	</frameanimstack>
+		
+	<!--wave_low-->
+	<frameanimstack>
+		<frameanim image_namespace="textures.hud" image="wave_low" frame_width="1" frame_height="1" texture_anim_u="r(1),(1.5)" fps="1" looping="true" quad_width="3.7" quad_height="0.8">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+			<scale scale="0.075"/>
+			<translation x="-0.213" y="-0.32"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<!--background-->
+	<frameanimstack>
+		<frameanim lightmask="use_alpha" directory="spritestrip/hud/hackmode/sinus/background" fps="1" quad_width="4.04" quad_height="1.786">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+			<scale scale="0.075"/>
+			<translation x="-0.213" y="-0.32"/>
+		</frameanim>
+	</frameanimstack>
+
+	<coloranimstack>
+		<color duration="0.1" looping="true">
+			<begin r="-115" g="0" b="-115" a="0"/>
+			<end   r="-115" g="0" b="-115" a="0"/>
+		</color>
+	</coloranimstack>
+</presentation>

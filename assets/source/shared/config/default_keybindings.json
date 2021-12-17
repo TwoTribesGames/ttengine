@@ -1,0 +1,19 @@
+{
+	"keyboard":
+	{
+		"accept": 32,
+		"cancel": 8,
+		"open_menu": 19,
+		"left": 65,
+		"right": 68,
+		"up": 87,
+		"down": 83,
+		"jump": 87,
+		"hack": 70,
+		"toggle_weapons": 81,
+		"select_weapon_1": 49,
+		"select_weapon_2": 50,
+		"select_weapon_3": 51,
+		"select_weapon_4": 52
+	}
+}

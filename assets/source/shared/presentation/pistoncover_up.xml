@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		dont_precache="true" permanent="true">
+
+	<startvalues>
+		<scale scale="1"/>
+		<origin y="0.5"/>
+	</startvalues>
+
+	<!--bottom block-->
+
+	<frameanimstack>
+		<frameanim directory="spritestrip/pistons/pistoncover/vertical" lightmask="use_lightmask" fps="15" looping="false" quad_width="1.074" quad_height="1" direction="forward">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+		</frameanim>
+	</frameanimstack>
+</presentation>
+

@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Shared">
+      <UniqueIdentifier>{88b9d3f8-50f6-4960-b3dc-19424f463b14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\modes">
+      <UniqueIdentifier>{4ccbf5af-11fa-4fca-a565-b2ae19618818}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\books">
+      <UniqueIdentifier>{9e4f6214-2e6c-456f-9bf2-4b6b12659366}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\books\coupled">
+      <UniqueIdentifier>{997cddce-5611-486d-b409-24f908ca6c04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\books\floor">
+      <UniqueIdentifier>{529af1be-f820-4540-95ba-76b9cd537ccc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\books\uncoupled">
+      <UniqueIdentifier>{8d117436-436d-4c8c-a947-ad8393dafbd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows">
+      <UniqueIdentifier>{34d341d0-92ba-4257-bba7-31357b2c0035}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\shared\src\vorbis\analysis.c">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\vorbis\bitrate.c">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\vorbis\block.c">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\vorbis\codebook.c">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\vorbis\envelope.c">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\vorbis\floor0.c">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\vorbis\floor1.c">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\vorbis\info.c">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\vorbis\lookup.c">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\vorbis\lpc.c">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\vorbis\lsp.c">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\vorbis\mapping0.c">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\vorbis\mdct.c">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\vorbis\psy.c">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\vorbis\registry.c">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\vorbis\res0.c">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\vorbis\sharedbook.c">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\vorbis\smallft.c">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\vorbis\synthesis.c">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\vorbis\vorbisenc.c">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\vorbis\vorbisfile.c">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\vorbis\window.c">
+      <Filter>Shared</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\shared\src\vorbis\backends.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\vorbis\bitrate.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\vorbis\codebook.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\vorbis\codec.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\vorbis\codec_internal.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\vorbis\envelope.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\vorbis\highlevel.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\vorbis\lookup.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\vorbis\lookup_data.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\vorbis\lpc.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\vorbis\lsp.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\vorbis\masking.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\vorbis\mdct.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\vorbis\misc.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\vorbis\os.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\vorbis\psy.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\vorbis\registry.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\vorbis\scales.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\vorbis\smallft.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\vorbis\vorbisenc.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\vorbis\vorbisfile.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\vorbis\window.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\vorbis\modes\floor_all.h">
+      <Filter>Shared\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\vorbis\modes\psych_11.h">
+      <Filter>Shared\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\vorbis\modes\psych_16.h">
+      <Filter>Shared\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\vorbis\modes\psych_44.h">
+      <Filter>Shared\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\vorbis\modes\psych_8.h">
+      <Filter>Shared\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\vorbis\modes\residue_16.h">
+      <Filter>Shared\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\vorbis\modes\residue_44.h">
+      <Filter>Shared\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\vorbis\modes\residue_44u.h">
+      <Filter>Shared\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\vorbis\modes\residue_8.h">
+      <Filter>Shared\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\vorbis\modes\setup_11.h">
+      <Filter>Shared\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\vorbis\modes\setup_16.h">
+      <Filter>Shared\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\vorbis\modes\setup_22.h">
+      <Filter>Shared\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\vorbis\modes\setup_32.h">
+      <Filter>Shared\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\vorbis\modes\setup_44.h">
+      <Filter>Shared\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\vorbis\modes\setup_44u.h">
+      <Filter>Shared\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\vorbis\modes\setup_8.h">
+      <Filter>Shared\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\vorbis\modes\setup_X.h">
+      <Filter>Shared\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\vorbis\books\coupled\res_books_stereo.h">
+      <Filter>Shared\books\coupled</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\vorbis\books\floor\floor_books.h">
+      <Filter>Shared\books\floor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\src\vorbis\books\uncoupled\res_books_uncoupled.h">
+      <Filter>Shared\books\uncoupled</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

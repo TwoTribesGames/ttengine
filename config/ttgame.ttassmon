@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<assetmonitor_config name="Two Tribes Game - Windows" database="$(ConfigDir)..\assets\windows.xml" platform="win" outputfolder="win">
+	<watcher>
+		<path>$(ConfigDir)..\assets\source</path>
+		<watch_subdirectories>true</watch_subdirectories>
+		<watch_events>
+			<watch_event>FILE_NOTIFY_CHANGE_FILE_NAME</watch_event>
+			<watch_event>FILE_NOTIFY_CHANGE_DIR_NAME</watch_event>
+			<watch_event>FILE_NOTIFY_CHANGE_CREATION</watch_event>
+			<watch_event>FILE_NOTIFY_CHANGE_LAST_WRITE</watch_event>
+			<watch_event>FILE_NOTIFY_CHANGE_SIZE</watch_event>
+		</watch_events>
+		
+		<include_filter></include_filter>
+		<exclude_filter>.*\*;.*;*\.*\*;*\.*</exclude_filter>
+		
+		<timeout>0.1</timeout>
+	</watcher>
+</assetmonitor_config>

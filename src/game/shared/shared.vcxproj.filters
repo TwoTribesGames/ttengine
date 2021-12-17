@@ -1,0 +1,1740 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\toki\AppMain.cpp" />
+    <ClCompile Include="src\toki\main\AppStateMachine.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\main\StateExitApp.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\statelist\statelist.cpp">
+      <Filter>statelist</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\main\StateLoadApp.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\StateGame.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\Game.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\level\AttributeLayer.cpp">
+      <Filter>level</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\level\LevelData.cpp">
+      <Filter>level</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\AttributeDebugView.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\StartInfo.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\AppGlobal.cpp" />
+    <ClCompile Include="src\toki\game\Camera.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\input\Controller.cpp">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\cfg.cpp" />
+    <ClCompile Include="src\toki\game\editor\Editor.cpp">
+      <Filter>game\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\entity\Entity.cpp">
+      <Filter>game\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\level\helpers_level.cpp">
+      <Filter>level</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\entity\EntityMgr.cpp">
+      <Filter>game\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\editor\commands\CommandPaintTiles.cpp">
+      <Filter>game\editor\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\editor\tools\Tool.cpp">
+      <Filter>game\editor\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\editor\tools\PaintTool.cpp">
+      <Filter>game\editor\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\level\TileRegistrationMgr.cpp">
+      <Filter>level</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\editor\tools\HandTool.cpp">
+      <Filter>game\editor\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\event\EventMgr.cpp">
+      <Filter>game\event</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\event\Event.cpp">
+      <Filter>game\event</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\editor\tools\FloodFillTool.cpp">
+      <Filter>game\editor\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\editor\tools\BoxSelectTool.cpp">
+      <Filter>game\editor\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\event\helpers\SoundChecker.cpp">
+      <Filter>game\event\helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\editor\tools\ResizeTool.cpp">
+      <Filter>game\editor\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\Border.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\editor\commands\CommandResizeLevel.cpp">
+      <Filter>game\editor\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\editor\ui\EntityPropertyList.cpp">
+      <Filter>game\editor\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\editor\tools\EntityMoveTool.cpp">
+      <Filter>game\editor\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\editor\tools\EntityPaintTool.cpp">
+      <Filter>game\editor\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\movement\MoveBase.cpp">
+      <Filter>game\movement</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\movement\MovementSet.cpp">
+      <Filter>game\movement</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\movement\MoveVector.cpp">
+      <Filter>game\movement</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\movement\MoveAnimation.cpp">
+      <Filter>game\movement</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\movement\Validator.cpp">
+      <Filter>game\movement</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\movement\TileCollisionHelper.cpp">
+      <Filter>game\movement</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\level\entity\EntityInstance.cpp">
+      <Filter>level\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\level\entity\EntityInfo.cpp">
+      <Filter>level\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\level\entity\EntityProperty.cpp">
+      <Filter>level\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\editor\commands\CommandAddRemoveEntities.cpp">
+      <Filter>game\editor\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\entity\movementcontroller\DirectionalMovementController.cpp">
+      <Filter>game\entity\movementcontroller</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\entity\movementcontroller\MovementControllerMgr.cpp">
+      <Filter>game\entity\movementcontroller</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\editor\commands\CommandMoveEntities.cpp">
+      <Filter>game\editor\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\script\EntityScriptClass.cpp">
+      <Filter>game\script</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\script\EntityScriptMgr.cpp">
+      <Filter>game\script</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\script\wrappers\EventWrapper.cpp">
+      <Filter>game\script\wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\script\EntityBase.cpp">
+      <Filter>game\script</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\level\Note.cpp">
+      <Filter>level</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\movement\SurroundingsSurvey.cpp">
+      <Filter>game\movement</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\script\EntityState.cpp">
+      <Filter>game\script</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\entity\EntityLibrary.cpp">
+      <Filter>game\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\editor\commands\CommandApplyLevelSection.cpp">
+      <Filter>game\editor\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\level\LevelSection.cpp">
+      <Filter>level</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\script\wrappers\EntityWrapper.cpp">
+      <Filter>game\script\wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\script\ScriptMgr.cpp">
+      <Filter>script</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\script\attributes\Attribute.cpp">
+      <Filter>script\attributes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\script\attributes\ClassAttributes.cpp">
+      <Filter>script\attributes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\editor\commands\CommandChangeEntityProperties.cpp">
+      <Filter>game\editor\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\entity\EntityTiles.cpp">
+      <Filter>game\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\level\AttributeLayerSection.cpp">
+      <Filter>level</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\script\Bindings.cpp">
+      <Filter>game\script</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\script\Timer.cpp">
+      <Filter>game\script</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\script\TimerMgr.cpp">
+      <Filter>game\script</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\DebugView.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\script\wrappers\PointerEventWrapper.cpp">
+      <Filter>game\script\wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\event\input\PointerEvent.cpp">
+      <Filter>game\event\input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\audio\AudioPlayer.cpp">
+      <Filter>audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\audio\constants.cpp">
+      <Filter>audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\fluid\FluidMgr.cpp">
+      <Filter>game\fluid</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\entity\sensor\Sensor.cpp">
+      <Filter>game\entity\sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\entity\sensor\Shape.cpp">
+      <Filter>game\entity\sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\entity\sensor\RayTracer.cpp">
+      <Filter>game\entity\sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\viewer\StatePresentationViewer.cpp">
+      <Filter>viewer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\entity\sensor\SensorMgr.cpp">
+      <Filter>game\entity\sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\script\wrappers\SensorWrapper.cpp">
+      <Filter>game\script\wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\script\wrappers\ShapeWrapper.cpp">
+      <Filter>game\script\wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\pres\AudioTrigger.cpp">
+      <Filter>pres</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\pres\ResetTrigger.cpp">
+      <Filter>pres</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\pres\TriggerFactory.cpp">
+      <Filter>pres</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\entity\types.cpp">
+      <Filter>game\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\script\wrappers\ParticleEffectWrapper.cpp">
+      <Filter>game\script\wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\entity\graphics\PowerBeamGraphicMgr.cpp">
+      <Filter>game\entity\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\entity\graphics\PowerBeamGraphic.cpp">
+      <Filter>game\entity\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\fluid\FluidGraphicsMgr.cpp">
+      <Filter>game\fluid</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\entity\PresStartSettings.cpp">
+      <Filter>game\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\script\Registry.cpp">
+      <Filter>game\script</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\script\wrappers\CameraWrapper.cpp">
+      <Filter>game\script\wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\script\wrappers\LevelWrapper.cpp">
+      <Filter>game\script\wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\light\LightMgr.cpp">
+      <Filter>game\light</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\light\Light.cpp">
+      <Filter>game\light</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\script\wrappers\LightWrapper.cpp">
+      <Filter>game\script\wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\types_game.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\light\LightTriangle.cpp">
+      <Filter>game\light</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\light\Polygon.cpp">
+      <Filter>game\light</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\light\Circle.cpp">
+      <Filter>game\light</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\light\LightShape.cpp">
+      <Filter>game\light</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\fluid\FluidParticlesMgr.cpp">
+      <Filter>game\fluid</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\fluid\graphics_helpers.cpp">
+      <Filter>game\fluid</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\movement\MovementSetCache.cpp">
+      <Filter>game\movement</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\level\types_level.cpp">
+      <Filter>level</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\script\wrappers\SoundCueWrapper.cpp">
+      <Filter>game\script\wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\script\Callback.cpp">
+      <Filter>game\script</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\script\wrappers\PhysicsSettingsWrapper.cpp">
+      <Filter>game\script\wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\script\wrappers\DebugViewWrapper.cpp">
+      <Filter>game\script\wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\main\loadstate\LoadStateAudioPlayer.cpp">
+      <Filter>main\loadstate</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\main\loadstate\LoadStateEntityLibrary.cpp">
+      <Filter>main\loadstate</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\main\loadstate\LoadStatePrecache.cpp">
+      <Filter>main\loadstate</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\main\loadstate\LoadStateScriptLists.cpp">
+      <Filter>main\loadstate</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\main\loadstate\LoadStateScriptMgr.cpp">
+      <Filter>main\loadstate</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\utils\SectionProfiler.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\serialization\Serializer.cpp">
+      <Filter>serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\unittest\unittest.cpp">
+      <Filter>unittests</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\serialization\SerializationMgr.cpp">
+      <Filter>serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\fluid\WaveGenerator.cpp">
+      <Filter>game\fluid</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\script\serialization\SQSerializer.cpp">
+      <Filter>script\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\serialization\utils.cpp">
+      <Filter>serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\script\serialization\SQUnserializer.cpp">
+      <Filter>script\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\script\serialization\SQCache.cpp">
+      <Filter>script\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\script\serialization\UserType.cpp">
+      <Filter>script\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\CheckPointMgr.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\editor\EditorSettings.cpp">
+      <Filter>game\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\script\wrappers\FluidSettingsWrapper.cpp">
+      <Filter>game\script\wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\fluid\FluidSettings.cpp">
+      <Filter>game\fluid</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\editor\tools\NotesTool.cpp">
+      <Filter>game\editor\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\editor\commands\CommandAddRemoveNotes.cpp">
+      <Filter>game\editor\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\editor\commands\CommandChangeNoteText.cpp">
+      <Filter>game\editor\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\editor\commands\CommandChangeNoteRect.cpp">
+      <Filter>game\editor\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\entity\sensor\TileSensor.cpp">
+      <Filter>game\entity\sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\entity\sensor\TileSensorMgr.cpp">
+      <Filter>game\entity\sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\script\wrappers\TileSensorWrapper.cpp">
+      <Filter>game\script\wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\TextView.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\hud\DebugUI.cpp">
+      <Filter>game\hud</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\editor\ui\SaveChangesDialog.cpp">
+      <Filter>game\editor\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\input\Recorder.cpp">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\input\RecorderGui.cpp">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\input\Recording.cpp">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\entity\movementcontroller\PhysicsSettings.cpp">
+      <Filter>game\entity\movementcontroller</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\script\wrappers\PowerBeamGraphicWrapper.cpp">
+      <Filter>game\script\wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\editor\ui\GenericDialogBox.cpp">
+      <Filter>game\editor\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\level\skin\types_skin.cpp">
+      <Filter>level\skin</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\level\skin\MaterialCache.cpp">
+      <Filter>level\skin</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\level\skin\functions_skin.cpp">
+      <Filter>level\skin</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\level\skin\EdgeCache.cpp">
+      <Filter>level\skin</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\level\skin\SkinConfig.cpp">
+      <Filter>level\skin</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\level\skin\SkinContext.cpp">
+      <Filter>level\skin</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\level\skin\GrowEdge.cpp">
+      <Filter>level\skin</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\audio\SoundCue.cpp">
+      <Filter>audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\pathfinding\PathMgr.cpp">
+      <Filter>game\pathfinding</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\script\wrappers\PresentationObjectWrapper.cpp">
+      <Filter>game\script\wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\main\loadstate\LoadStateShoeboxPrecache.cpp">
+      <Filter>main\loadstate</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\pres\PresentationObject.cpp">
+      <Filter>pres</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\pres\PresentationObjectMgr.cpp">
+      <Filter>pres</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\script\wrappers\PresentationStartSettingsWrapper.cpp">
+      <Filter>game\script\wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\pathfinding\TileCache.cpp">
+      <Filter>game\pathfinding</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\pathfinding\TileRasterizationContext.cpp">
+      <Filter>game\pathfinding</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\main\loadstate\LoadStateGame.cpp">
+      <Filter>main\loadstate</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\CameraEffect.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\script\wrappers\CameraEffectWrapper.cpp">
+      <Filter>game\script\wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\savedata\utils_savedata.cpp">
+      <Filter>savedata</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\main\loadstate\LoadStateInitSaveSystem.cpp">
+      <Filter>main\loadstate</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\StateLoadGame.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\pres\RumbleTrigger.cpp">
+      <Filter>pres</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\level\MetaDataGenerator.cpp">
+      <Filter>level</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\main\loadstate\LoadStateGenerateMetaData.cpp">
+      <Filter>main\loadstate</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\light\DarknessMgr.cpp">
+      <Filter>game\light</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\light\Darkness.cpp">
+      <Filter>game\light</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\script\wrappers\DarknessWrapper.cpp">
+      <Filter>game\script\wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\audio\MusicTrack.cpp">
+      <Filter>audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\audio\MusicTrackMgr.cpp">
+      <Filter>audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\movement\Transition.cpp">
+      <Filter>game\movement</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\script\wrappers\MusicTrackWrapper.cpp">
+      <Filter>game\script\wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\light\Glow.cpp">
+      <Filter>game\light</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\light\JitterEffect.cpp">
+      <Filter>game\light</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\pres\OverallVolumeTrigger.cpp">
+      <Filter>pres</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\utils\utils_utils.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\SharedGraphics.cpp" />
+    <ClCompile Include="src\toki\game\event\SoundGraphicsMgr.cpp">
+      <Filter>game\event</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\level\entity\helpers_level_entity.cpp">
+      <Filter>level\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\audio\PositionalEffect.cpp">
+      <Filter>audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\level\entity\editor\EntityInstanceEditorRepresentation.cpp">
+      <Filter>level\entity\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\entity\effect\EffectRect.cpp">
+      <Filter>game\entity\effect</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\entity\effect\EffectRectMgr.cpp">
+      <Filter>game\entity\effect</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\script\wrappers\EffectRectWrapper.cpp">
+      <Filter>game\script\wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\entity\effect\EffectMgr.cpp">
+      <Filter>game\entity\effect</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\script\wrappers\EffectMgrWrapper.cpp">
+      <Filter>game\script\wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\editor\helpers_editor.cpp">
+      <Filter>game\editor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\editor\ui\helpers_editor_ui.cpp">
+      <Filter>game\editor\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\editor\ui\SvnCommands.cpp">
+      <Filter>game\editor\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\editor\hotkey\HotKeyMgr.cpp">
+      <Filter>game\editor\hotkey</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\editor\hotkey\types_editor_hotkey.cpp">
+      <Filter>game\editor\hotkey</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\editor\commands\CommandSetThemeColor.cpp">
+      <Filter>game\editor\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\editor\ui\SetThemeColorUI.cpp">
+      <Filter>game\editor\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\main\loadstate\LoadStateSkinConfigs.cpp">
+      <Filter>main\loadstate</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\ShutdownDataMgr.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\CameraMgr.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\entity\effect\ColorGradingEffectMgr.cpp">
+      <Filter>game\entity\effect</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\script\wrappers\TextureWrapper.cpp">
+      <Filter>game\script\wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\effects\ColorGrading.cpp">
+      <Filter>effects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\entity\effect\FogEffectMgr.cpp">
+      <Filter>game\entity\effect</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\Minimap.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\editor\ui\EntityPropertyControl.cpp">
+      <Filter>game\editor\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\editor\ui\DialogBoxBase.cpp">
+      <Filter>game\editor\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\editor\ui\Testbed.cpp">
+      <Filter>game\editor\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\editor\ui\SteamWorkshopTest.cpp">
+      <Filter>game\editor\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\editor\ui\SaveAsDialog.cpp">
+      <Filter>game\editor\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\script\wrappers\StatsWrapper.cpp">
+      <Filter>game\script\wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\script\wrappers\ShoeboxPlaneDataWrapper.cpp">
+      <Filter>game\script\wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\steam\Workshop.cpp">
+      <Filter>steam</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\hud\WorkshopLevelPicker.cpp">
+      <Filter>game\hud</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\script\wrappers\WorkshopLevelPickerWrapper.cpp">
+      <Filter>game\script\wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\editor\ui\NewLevelDialog.cpp">
+      <Filter>game\editor\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\editor\ui\PublishToWorkshopDialog.cpp">
+      <Filter>game\editor\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\utils\GlyphSetMgr.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\hud\ListBox.cpp">
+      <Filter>game\hud</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\hud\types_hud.cpp">
+      <Filter>game\hud</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\editor\commands\CommandSetLevelBackground.cpp">
+      <Filter>game\editor\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\editor\commands\CommandSetLevelTheme.cpp">
+      <Filter>game\editor\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\entity\graphics\TextLabel.cpp">
+      <Filter>game\entity\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\entity\graphics\TextLabelMgr.cpp">
+      <Filter>game\entity\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\script\wrappers\TextLabelWrapper.cpp">
+      <Filter>game\script\wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\loc\Loc.cpp">
+      <Filter>loc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\loc\SheetList.cpp">
+      <Filter>loc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\script\wrappers\OptionsWrapper.cpp">
+      <Filter>game\script\wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\script\wrappers\ResolutionPickerWrapper.cpp">
+      <Filter>game\script\wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\hud\ResolutionPicker.cpp">
+      <Filter>game\hud</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\editor\ui\DebugSteamCloudFileManager.cpp">
+      <Filter>game\editor\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\editor\ui\PublishedLevelBrowser.cpp">
+      <Filter>game\editor\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\editor\commands\CommandReplaceLevel.cpp">
+      <Filter>game\editor\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\AppOptions.cpp" />
+    <ClCompile Include="src\toki\game\DemoMgr.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\utils\AssetMonitor.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\script\wrappers\CheckPointMgrWrapper.cpp">
+      <Filter>game\script\wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\editor\commands\CommandSetDefaultMission.cpp">
+      <Filter>game\editor\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\script\wrappers\AudioWrapper.cpp">
+      <Filter>game\script\wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\toki\game\script\wrappers\ResolutionChangerWrapper.cpp">
+      <Filter>game\script\wrappers</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="inc\toki\AppMain.h" />
+    <ClInclude Include="inc\toki\main\AppStateMachine.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\main\StateExitApp.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\statelist\statelist.h">
+      <Filter>statelist</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\main\StateLoadApp.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\StateGame.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\Game.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\level\AttributeLayer.h">
+      <Filter>level</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\level\fwd.h">
+      <Filter>level</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\level\LevelData.h">
+      <Filter>level</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\level\types.h">
+      <Filter>level</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\AttributeDebugView.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\constants.h" />
+    <ClInclude Include="inc\toki\game\StartInfo.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\fwd.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\AppGlobal.h" />
+    <ClInclude Include="inc\toki\game\Camera.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\input\Controller.h">
+      <Filter>input</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\cfg.h" />
+    <ClInclude Include="inc\toki\game\editor\Editor.h">
+      <Filter>game\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\entity\Entity.h">
+      <Filter>game\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\level\helpers.h">
+      <Filter>level</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\entity\EntityMgr.h">
+      <Filter>game\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\entity\fwd.h">
+      <Filter>game\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\editor\commands\CommandPaintTiles.h">
+      <Filter>game\editor\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\editor\tools\Tool.h">
+      <Filter>game\editor\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\editor\tools\PaintTool.h">
+      <Filter>game\editor\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\level\TileRegistrationMgr.h">
+      <Filter>level</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\editor\tools\HandTool.h">
+      <Filter>game\editor\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\event\Event.h">
+      <Filter>game\event</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\event\EventMgr.h">
+      <Filter>game\event</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\event\Signal.h">
+      <Filter>game\event</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\event\fwd.h">
+      <Filter>game\event</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\editor\tools\types.h">
+      <Filter>game\editor\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\editor\tools\FloodFillTool.h">
+      <Filter>game\editor\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\editor\tools\BoxSelectTool.h">
+      <Filter>game\editor\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\event\helpers\SoundChecker.h">
+      <Filter>game\event\helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\event\helpers\fwd.h">
+      <Filter>game\event\helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\editor\tools\ResizeTool.h">
+      <Filter>game\editor\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\Border.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\editor\commands\CommandResizeLevel.h">
+      <Filter>game\editor\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\editor\types.h">
+      <Filter>game\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\editor\ui\EntityPropertyList.h">
+      <Filter>game\editor\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\editor\tools\EntityMoveTool.h">
+      <Filter>game\editor\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\editor\tools\EntityPaintTool.h">
+      <Filter>game\editor\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\movement\MoveBase.h">
+      <Filter>game\movement</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\movement\MovementSet.h">
+      <Filter>game\movement</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\movement\MoveVector.h">
+      <Filter>game\movement</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\movement\MoveAnimation.h">
+      <Filter>game\movement</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\movement\fwd.h">
+      <Filter>game\movement</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\movement\Validator.h">
+      <Filter>game\movement</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\movement\TileCollisionHelper.h">
+      <Filter>game\movement</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\level\entity\EntityInstance.h">
+      <Filter>level\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\level\entity\EntityInfo.h">
+      <Filter>level\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\level\entity\EntityProperty.h">
+      <Filter>level\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\editor\commands\CommandAddRemoveEntities.h">
+      <Filter>game\editor\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\entity\movementcontroller\DirectionalMovementController.h">
+      <Filter>game\entity\movementcontroller</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\entity\movementcontroller\MovementControllerMgr.h">
+      <Filter>game\entity\movementcontroller</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\editor\commands\CommandMoveEntities.h">
+      <Filter>game\editor\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\script\EntityBase.h">
+      <Filter>game\script</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\script\EntityScriptClass.h">
+      <Filter>game\script</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\script\EntityScriptMgr.h">
+      <Filter>game\script</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\level\Note.h">
+      <Filter>level</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\movement\SurroundingsSurvey.h">
+      <Filter>game\movement</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\script\wrappers\EventWrapper.h">
+      <Filter>game\script\wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\script\fwd.h">
+      <Filter>game\script</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\script\EntityState.h">
+      <Filter>game\script</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\level\entity\fwd.h">
+      <Filter>level\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\entity\EntityLibrary.h">
+      <Filter>game\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\editor\commands\CommandApplyLevelSection.h">
+      <Filter>game\editor\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\level\LevelSection.h">
+      <Filter>level</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\editor\fwd.h">
+      <Filter>game\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\level\LevelDataObserver.h">
+      <Filter>level</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\script\wrappers\EntityWrapper.h">
+      <Filter>game\script\wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\script\ScriptMgr.h">
+      <Filter>script</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\script\attributes\ClassAttributes.h">
+      <Filter>script\attributes</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\script\attributes\Attribute.h">
+      <Filter>script\attributes</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\script\attributes\AttributeCollection.h">
+      <Filter>script\attributes</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\editor\commands\CommandChangeEntityProperties.h">
+      <Filter>game\editor\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\level\entity\EntityInstanceObserver.h">
+      <Filter>level\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\entity\EntityTiles.h">
+      <Filter>game\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\level\AttributeLayerSection.h">
+      <Filter>level</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\script\sqbind_bindings.h">
+      <Filter>game\script</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\script\Bindings.h">
+      <Filter>game\script</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\script\Timer.h">
+      <Filter>game\script</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\script\TimerMgr.h">
+      <Filter>game\script</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\DebugView.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\script\wrappers\PointerEventWrapper.h">
+      <Filter>game\script\wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\event\input\PointerEvent.h">
+      <Filter>game\event\input</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\event\input\fwd.h">
+      <Filter>game\event\input</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\audio\AudioPlayer.h">
+      <Filter>audio</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\audio\constants.h">
+      <Filter>audio</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\fluid\FluidMgr.h">
+      <Filter>game\fluid</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\entity\sensor\Sensor.h">
+      <Filter>game\entity\sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\fluid\types.h">
+      <Filter>game\fluid</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\entity\sensor\Shape.h">
+      <Filter>game\entity\sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\entity\sensor\RayTracer.h">
+      <Filter>game\entity\sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\viewer\StatePresentationViewer.h">
+      <Filter>viewer</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\level\TileChangedObserver.h">
+      <Filter>level</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\entity\sensor\SensorMgr.h">
+      <Filter>game\entity\sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\script\wrappers\ShapeWrapper.h">
+      <Filter>game\script\wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\script\wrappers\SensorWrapper.h">
+      <Filter>game\script\wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\script\wrappers\fwd.h">
+      <Filter>game\script\wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\pres\AudioTrigger.h">
+      <Filter>pres</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\pres\ResetTrigger.h">
+      <Filter>pres</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\pres\TriggerFactory.h">
+      <Filter>pres</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\entity\types.h">
+      <Filter>game\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\entity\sensor\fwd.h">
+      <Filter>game\entity\sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\script\wrappers\ParticleEffectWrapper.h">
+      <Filter>game\script\wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\entity\graphics\PowerBeamGraphic.h">
+      <Filter>game\entity\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\entity\graphics\PowerBeamGraphicMgr.h">
+      <Filter>game\entity\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\entity\graphics\fwd.h">
+      <Filter>game\entity\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\fluid\FluidGraphicsMgr.h">
+      <Filter>game\fluid</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\entity\PresStartSettings.h">
+      <Filter>game\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\script\Registry.h">
+      <Filter>game\script</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\script\wrappers\CameraWrapper.h">
+      <Filter>game\script\wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\script\wrappers\LevelWrapper.h">
+      <Filter>game\script\wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\light\fwd.h">
+      <Filter>game\light</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\light\LightMgr.h">
+      <Filter>game\light</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\light\Light.h">
+      <Filter>game\light</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\script\wrappers\LightWrapper.h">
+      <Filter>game\script\wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\types.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\light\LightShape.h">
+      <Filter>game\light</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\light\LightTriangle.h">
+      <Filter>game\light</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\light\Polygon.h">
+      <Filter>game\light</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\light\Circle.h">
+      <Filter>game\light</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\fluid\FluidParticlesMgr.h">
+      <Filter>game\fluid</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\fluid\graphics_helpers.h">
+      <Filter>game\fluid</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\movement\MovementSetCache.h">
+      <Filter>game\movement</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\light\LightRayTracer.h">
+      <Filter>game\light</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\light\BlobData.h">
+      <Filter>game\light</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\script\wrappers\SoundCueWrapper.h">
+      <Filter>game\script\wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\script\Callback.h">
+      <Filter>game\script</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\script\wrappers\PhysicsSettingsWrapper.h">
+      <Filter>game\script\wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\script\wrappers\DebugViewWrapper.h">
+      <Filter>game\script\wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\fluid\fwd.h">
+      <Filter>game\fluid</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\main\loadstate\LoadState.h">
+      <Filter>main\loadstate</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\main\loadstate\LoadStateAudioPlayer.h">
+      <Filter>main\loadstate</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\main\loadstate\LoadStateEntityLibrary.h">
+      <Filter>main\loadstate</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\main\loadstate\LoadStatePrecache.h">
+      <Filter>main\loadstate</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\main\loadstate\LoadStateScriptLists.h">
+      <Filter>main\loadstate</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\main\loadstate\LoadStateScriptMgr.h">
+      <Filter>main\loadstate</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\utils\SectionProfiler.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\serialization\Serializer.h">
+      <Filter>serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\unittest\orientation_unittests.h">
+      <Filter>unittests</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\unittest\unittest.h">
+      <Filter>unittests</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\unittest\serialization_unittests.h">
+      <Filter>unittests</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\serialization\SerializationMgr.h">
+      <Filter>serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\serialization\fwd.h">
+      <Filter>serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\fluid\WaveGenerator.h">
+      <Filter>game\fluid</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\script\serialization\Registry.h">
+      <Filter>script\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\script\serialization\SQSerializer.h">
+      <Filter>script\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\serialization\utils.h">
+      <Filter>serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\script\fwd.h">
+      <Filter>script</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\script\serialization\SQUnserializer.h">
+      <Filter>script\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\script\serialization\SQCache.h">
+      <Filter>script\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\script\serialization\UserType.h">
+      <Filter>script\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\script\serialization\fwd.h">
+      <Filter>script\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\script\serialization\ProcessedObject.h">
+      <Filter>script\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\script\serialization\SQData.h">
+      <Filter>script\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\CheckPointMgr.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\editor\EditorSettings.h">
+      <Filter>game\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\script\wrappers\FluidSettingsWrapper.h">
+      <Filter>game\script\wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\fluid\FluidSettings.h">
+      <Filter>game\fluid</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\editor\tools\NotesTool.h">
+      <Filter>game\editor\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\editor\commands\CommandAddRemoveNotes.h">
+      <Filter>game\editor\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\editor\commands\CommandChangeNoteText.h">
+      <Filter>game\editor\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\editor\commands\CommandChangeNoteRect.h">
+      <Filter>game\editor\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\entity\sensor\TileSensor.h">
+      <Filter>game\entity\sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\entity\sensor\TileSensorMgr.h">
+      <Filter>game\entity\sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\script\wrappers\TileSensorWrapper.h">
+      <Filter>game\script\wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\TextView.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\hud\DebugUI.h">
+      <Filter>game\hud</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\hud\fwd.h">
+      <Filter>game\hud</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\editor\ui\SaveChangesDialog.h">
+      <Filter>game\editor\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\editor\ui\fwd.h">
+      <Filter>game\editor\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\input\Recorder.h">
+      <Filter>input</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\input\RecorderGui.h">
+      <Filter>input</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\input\fwd.h">
+      <Filter>input</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\input\Recording.h">
+      <Filter>input</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\entity\movementcontroller\physics_integration.h">
+      <Filter>game\entity\movementcontroller</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\entity\movementcontroller\PhysicsSettings.h">
+      <Filter>game\entity\movementcontroller</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\entity\graphics\types.h">
+      <Filter>game\entity\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\script\wrappers\PowerBeamGraphicWrapper.h">
+      <Filter>game\script\wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\editor\ui\GenericDialogBox.h">
+      <Filter>game\editor\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\level\skin\fwd.h">
+      <Filter>level\skin</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\level\skin\types.h">
+      <Filter>level\skin</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\level\skin\MaterialCache.h">
+      <Filter>level\skin</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\level\skin\functions.h">
+      <Filter>level\skin</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\level\skin\EdgeCache.h">
+      <Filter>level\skin</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\level\skin\SkinConfig.h">
+      <Filter>level\skin</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\level\skin\SkinContext.h">
+      <Filter>level\skin</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\level\skin\BlobData.h">
+      <Filter>level\skin</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\level\skin\GrowEdge.h">
+      <Filter>level\skin</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\level\skin\TileMaterial.h">
+      <Filter>level\skin</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\audio\SoundCue.h">
+      <Filter>audio</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\pathfinding\fwd.h">
+      <Filter>game\pathfinding</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\pathfinding\PathMgr.h">
+      <Filter>game\pathfinding</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\script\wrappers\PresentationObjectWrapper.h">
+      <Filter>game\script\wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\main\loadstate\LoadStateShoeboxPrecache.h">
+      <Filter>main\loadstate</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\utils\types.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\pres\PresentationObject.h">
+      <Filter>pres</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\pres\fwd.h">
+      <Filter>pres</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\pres\PresentationObjectMgr.h">
+      <Filter>pres</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\script\wrappers\PresentationStartSettingsWrapper.h">
+      <Filter>game\script\wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\pathfinding\TileCache.h">
+      <Filter>game\pathfinding</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\pathfinding\TileRasterizationContext.h">
+      <Filter>game\pathfinding</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\main\loadstate\LoadStateGame.h">
+      <Filter>main\loadstate</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\CameraEffect.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\script\wrappers\CameraEffectWrapper.h">
+      <Filter>game\script\wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\savedata\utils.h">
+      <Filter>savedata</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\main\loadstate\LoadStateInitSaveSystem.h">
+      <Filter>main\loadstate</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\StateLoadGame.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\input\types.h">
+      <Filter>input</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\pres\RumbleTrigger.h">
+      <Filter>pres</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\level\MetaDataGenerator.h">
+      <Filter>level</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\main\loadstate\LoadStateGenerateMetaData.h">
+      <Filter>main\loadstate</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\light\DarknessMgr.h">
+      <Filter>game\light</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\light\Darkness.h">
+      <Filter>game\light</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\script\wrappers\DarknessWrapper.h">
+      <Filter>game\script\wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\audio\MusicTrack.h">
+      <Filter>audio</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\audio\MusicTrackMgr.h">
+      <Filter>audio</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\audio\fwd.h">
+      <Filter>audio</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\movement\Transition.h">
+      <Filter>game\movement</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\script\wrappers\MusicTrackWrapper.h">
+      <Filter>game\script\wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\light\Glow.h">
+      <Filter>game\light</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\light\JitterEffect.h">
+      <Filter>game\light</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\pres\OverallVolumeTrigger.h">
+      <Filter>pres</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\utils\utils.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\SharedGraphics.h" />
+    <ClInclude Include="inc\toki\game\event\SoundGraphicsMgr.h">
+      <Filter>game\event</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\level\entity\helpers.h">
+      <Filter>level\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\audio\PositionalEffect.h">
+      <Filter>audio</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\level\entity\editor\EntityInstanceEditorRepresentation.h">
+      <Filter>level\entity\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\level\entity\editor\fwd.h">
+      <Filter>level\entity\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\entity\effect\EffectRect.h">
+      <Filter>game\entity\effect</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\entity\effect\EffectRectMgr.h">
+      <Filter>game\entity\effect</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\entity\effect\fwd.h">
+      <Filter>game\entity\effect</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\entity\effect\types.h">
+      <Filter>game\entity\effect</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\script\wrappers\EffectRectWrapper.h">
+      <Filter>game\script\wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\entity\effect\EffectMgr.h">
+      <Filter>game\entity\effect</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\script\wrappers\EffectMgrWrapper.h">
+      <Filter>game\script\wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\editor\helpers.h">
+      <Filter>game\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\editor\ui\helpers.h">
+      <Filter>game\editor\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\editor\ui\SvnCommands.h">
+      <Filter>game\editor\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\editor\hotkey\HotKeyMgr.h">
+      <Filter>game\editor\hotkey</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\editor\hotkey\Handler.h">
+      <Filter>game\editor\hotkey</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\editor\hotkey\types.h">
+      <Filter>game\editor\hotkey</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\editor\commands\CommandSetThemeColor.h">
+      <Filter>game\editor\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\editor\ui\SetThemeColorUI.h">
+      <Filter>game\editor\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\main\loadstate\LoadStateSkinConfigs.h">
+      <Filter>main\loadstate</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\ShutdownDataMgr.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\audio\SoundCueWithPosition.h">
+      <Filter>audio</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\CameraMgr.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\entity\effect\ColorGradingEffectMgr.h">
+      <Filter>game\entity\effect</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\effects\ColorGrading.h">
+      <Filter>effects</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\effects\fwd.h">
+      <Filter>effects</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\entity\effect\FogEffectMgr.h">
+      <Filter>game\entity\effect</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\script\wrappers\TextureWrapper.h">
+      <Filter>game\script\wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\Minimap.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\editor\ui\EntityPropertyControl.h">
+      <Filter>game\editor\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\editor\ui\DialogBoxBase.h">
+      <Filter>game\editor\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\editor\ui\Testbed.h">
+      <Filter>game\editor\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\editor\ui\SteamWorkshopTest.h">
+      <Filter>game\editor\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\unittest\squirrel_compile_unittests.h">
+      <Filter>unittests</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\editor\ui\SaveAsDialog.h">
+      <Filter>game\editor\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\editor\ui\types.h">
+      <Filter>game\editor\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\script\wrappers\StatsWrapper.h">
+      <Filter>game\script\wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\editor\features.h">
+      <Filter>game\editor</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\script\wrappers\ShoeboxPlaneDataWrapper.h">
+      <Filter>game\script\wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\steam\Workshop.h">
+      <Filter>steam</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\hud\WorkshopLevelPicker.h">
+      <Filter>game\hud</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\script\wrappers\WorkshopLevelPickerWrapper.h">
+      <Filter>game\script\wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\editor\ui\NewLevelDialog.h">
+      <Filter>game\editor\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\editor\ui\PublishToWorkshopDialog.h">
+      <Filter>game\editor\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\utils\GlyphSetMgr.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\steam\WorkshopObserver.h">
+      <Filter>steam</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\steam\fwd.h">
+      <Filter>steam</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\AppOptions.h" />
+    <ClInclude Include="inc\toki\game\hud\ListBox.h">
+      <Filter>game\hud</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\hud\types.h">
+      <Filter>game\hud</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\editor\ui\LevelNameTextBox.h">
+      <Filter>game\editor\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\editor\commands\CommandSetLevelBackground.h">
+      <Filter>game\editor\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\editor\commands\CommandSetLevelTheme.h">
+      <Filter>game\editor\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\entity\graphics\TextLabel.h">
+      <Filter>game\entity\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\entity\graphics\TextLabelMgr.h">
+      <Filter>game\entity\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\script\wrappers\TextLabelWrapper.h">
+      <Filter>game\script\wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\ScreenshotSettings.h" />
+    <ClInclude Include="inc\toki\loc\Loc.h">
+      <Filter>loc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\loc\SheetList.h">
+      <Filter>loc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\loc\fwd.h">
+      <Filter>loc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\script\wrappers\OptionsWrapper.h">
+      <Filter>game\script\wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\script\wrappers\ResolutionPickerWrapper.h">
+      <Filter>game\script\wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\hud\ResolutionPicker.h">
+      <Filter>game\hud</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\editor\ui\DebugSteamCloudFileManager.h">
+      <Filter>game\editor\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\editor\ui\PublishedLevelBrowser.h">
+      <Filter>game\editor\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\editor\commands\CommandReplaceLevel.h">
+      <Filter>game\editor\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\DemoMgr.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\utils\AssetMonitor.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\script\wrappers\CheckPointMgrWrapper.h">
+      <Filter>game\script\wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\editor\commands\CommandSetDefaultMission.h">
+      <Filter>game\editor\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\script\wrappers\AudioWrapper.h">
+      <Filter>game\script\wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\toki\game\script\wrappers\ResolutionChangerWrapper.h">
+      <Filter>game\script\wrappers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="statelist">
+      <UniqueIdentifier>{12faf617-e72f-4fbe-b2a1-b707667dd06c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main">
+      <UniqueIdentifier>{fb978d49-e2a3-4048-89a4-894bf6109296}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game">
+      <UniqueIdentifier>{d37fb254-f9d6-45c0-90ba-5677d46c8269}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="level">
+      <UniqueIdentifier>{5469d882-86af-4476-85ad-e0e078e9f1b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="input">
+      <UniqueIdentifier>{b27ab183-a09c-44b9-b5c9-01e89338a2f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\editor">
+      <UniqueIdentifier>{d70c3610-cfe0-4f55-9332-af461f05eec4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\entity">
+      <UniqueIdentifier>{758bc165-ca4c-4caf-affc-5e66e1133ed8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\hud">
+      <UniqueIdentifier>{7e820c08-c811-4f5d-bc2e-d46fb4f64fbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\editor\tools">
+      <UniqueIdentifier>{324662ad-41df-41a7-b5fb-c47c9ca217a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\editor\commands">
+      <UniqueIdentifier>{7b8354df-ae41-4b64-b0f7-41c4d9eb5aa3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\event">
+      <UniqueIdentifier>{7c484741-f8fe-4fec-aa5e-59014e334f95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\event\helpers">
+      <UniqueIdentifier>{0d7c9b8e-c171-4e48-ad17-9d4b8947cf2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\editor\ui">
+      <UniqueIdentifier>{fd8b18e8-d156-47c8-85d0-345bcc59c796}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\movement">
+      <UniqueIdentifier>{905059f0-64cc-4a0e-995e-1a4e0b35ffeb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="level\entity">
+      <UniqueIdentifier>{b6314530-61b8-4b46-a5af-9ff32f6a08ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\entity\movementcontroller">
+      <UniqueIdentifier>{b3edf16e-e8d4-48c9-8056-be86a42a9e49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\script">
+      <UniqueIdentifier>{45a30126-58be-42ce-af7e-6976d2e63f70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\script\wrappers">
+      <UniqueIdentifier>{9bcf9ffc-9856-4624-9dc7-fb64489ae575}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="script">
+      <UniqueIdentifier>{c186b789-0d42-4dba-9bde-9d58f8520e2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="script\attributes">
+      <UniqueIdentifier>{a8a9b74e-f1d4-417c-8e32-6abded60059e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\entity\sensor">
+      <UniqueIdentifier>{7dabdc11-1e72-4f85-a3bf-781bde7c312c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\event\input">
+      <UniqueIdentifier>{6b4104c1-f002-4174-b8b7-f5220344caf0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio">
+      <UniqueIdentifier>{6bc88053-ee1a-4d5c-9e6f-51a202ba1121}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\fluid">
+      <UniqueIdentifier>{ea5b78ad-867d-4d69-a9f0-5e3be43b57d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="viewer">
+      <UniqueIdentifier>{05f59aff-d02f-4e20-ab8b-ee2504d2eefb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pres">
+      <UniqueIdentifier>{55926b34-4146-4494-8b74-50419c7133dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\entity\graphics">
+      <UniqueIdentifier>{6d1af00d-e2c8-4df5-b297-726fff32f818}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\light">
+      <UniqueIdentifier>{80d86390-9246-4220-8eb4-089ac0916d6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main\loadstate">
+      <UniqueIdentifier>{b551be26-2a2b-457f-a0ed-37770eaf8244}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils">
+      <UniqueIdentifier>{0f9afd66-af48-450a-8b9c-f1a870886c3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="serialization">
+      <UniqueIdentifier>{12962c88-b781-4fcf-bd7f-c4766defd003}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="unittests">
+      <UniqueIdentifier>{28bb7be6-8dde-44cd-9fa1-88439635a18f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="script\serialization">
+      <UniqueIdentifier>{4f3d2424-89d0-4699-845b-67eec4cc7e4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="level\skin">
+      <UniqueIdentifier>{ae5c6773-1d23-4761-9e25-71de3abbf339}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\pathfinding">
+      <UniqueIdentifier>{22fc7ac6-6d5c-410a-8c9d-d68dadfef3cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="savedata">
+      <UniqueIdentifier>{44b5f6a8-d3c1-4902-9705-aece655848a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="level\entity\editor">
+      <UniqueIdentifier>{dff00766-724c-4604-98f4-3bdc09de434e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\entity\effect">
+      <UniqueIdentifier>{8f10576c-935b-4fd4-ad2e-fb5df4186fb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\editor\hotkey">
+      <UniqueIdentifier>{198500a4-f8ae-4b7d-915f-e722a7bd525f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="effects">
+      <UniqueIdentifier>{676875b1-6259-4f20-954c-e21f8823e399}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="steam">
+      <UniqueIdentifier>{25d6883b-b320-4e84-bb15-0d6960b19092}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="loc">
+      <UniqueIdentifier>{d055b897-b202-4086-9926-a5d4c0b1cc2e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

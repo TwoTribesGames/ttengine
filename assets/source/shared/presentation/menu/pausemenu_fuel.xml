@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		permanent="true" fixed_timestep="0.016">
+	
+	
+	<include file="presentation/menu/include"/>
+	
+	<coloranimstack>
+		<color duration="0.1">
+			<musthave>
+				<tag name="dead"/>
+			</musthave>
+			<begin r="255" g="-255" b="-255"/>
+			<end r="255" g="-255" b="-255"/>
+		</color>
+	</coloranimstack>
+	
+	<!-- FUEL INDICATOR -->
+	<frameanimstack>
+		<musthave>
+			<tag name="fuel"/>
+		</musthave>
+		<mustnothave>
+			<tag name="dead"/>
+		</mustnothave>
+		<frameanim directory="spritestrip/hud/fuel/chunks" ignore_fog="true" fps="60" looping="false" quad_width="0.225" quad_height="0.04">
+			<begin frame="c(frame)" hold="true"/>
+			<end   frame="c(frame)" hold="true"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<coloranimstack>
+		<musthave>
+			<tag name="fuel"/>
+			<tag name="10_waterworks_south"/>
+		</musthave>
+		<musthave>
+			<tag name="fuel"/>
+			<tag name="11_unstable_north"/>
+		</musthave>
+		<musthave>
+			<tag name="fuel"/>
+			<tag name="12_steelworks_north"/>
+		</musthave>
+		<musthave>
+			<tag name="fuel"/>
+			<tag name="13_steelworks_destruction"/>
+		</musthave>
+		<mustnothave>
+			<tag name="dead"/>
+		</mustnothave>
+		<color duration="0.75" preset="oscillating">
+			<begin a="0"/>
+			<end a="-200"/>
+		</color>
+	</coloranimstack>
+
+</presentation>
+
+
+
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		permanent="true" dont_precache="true" fixed_timestep="0.016">
+
+	<startvalues>
+		<translation x="-0.27" y="0.37" z="1.2"/>
+		<scale scale="1.25"/>
+	</startvalues>
+	
+	<frameanimstack>
+		<frameanim directory="spritestrip/hud/achievements/window" fps="30" quad_width="0.5" quad_height="0.16">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+			<translation x="0.0" y="0.0"/>
+			<scale scale="0.9"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<frameanimstack>
+		<frameanim directory="spritestrip/hud/achievements/icons/unlocked" fps="2" quad_width="0.09" quad_height="0.09">
+			<begin frame="c(id)" hold="true"/>
+			<end   frame="c(id)" hold="true"/>
+			<translation x="-0.132" y="-0.001"/>
+			<scale scale="0.9"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<anim2dstack>
+		<translation duration="0.7" timing="easeout">
+			<begin x="1" y="0"/>
+			<end x="0" y="0.0"/>
+		</translation>
+		<translation delay="5" duration="0.7" timing="easein">
+			<begin x="0" y="0"/>
+			<end x="1" y="0.0"/>
+		</translation>
+	</anim2dstack>
+
+	<trigger data="achievement" type="global_audio"/>
+
+</presentation>

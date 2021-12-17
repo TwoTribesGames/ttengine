@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='STEAM_Dev|x64'">
+    <LocalDebuggerWorkingDirectory>$(SolutionDir)..\assets\output</LocalDebuggerWorkingDirectory>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommandArguments>--show_loadecd_files --no_precache --no_shutdown_restore --developer</LocalDebuggerCommandArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'">
+    <NXTargetName>Default</NXTargetName>
+    <LocalDebuggerWorkingDirectory>$(SolutionDir)..\assets\output</LocalDebuggerWorkingDirectory>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommandArguments>--show_loadecd_files --no_precache --no_shutdown_restore --developer</LocalDebuggerCommandArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'">
+    <NXTargetName>Default</NXTargetName>
+    <LocalDebuggerWorkingDirectory>$(SolutionDir)..\assets\output</LocalDebuggerWorkingDirectory>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommandArguments>--show_loadecd_files --no_precache --no_shutdown_restore --developer</LocalDebuggerCommandArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='STEAM_Final|x64'">
+    <LocalDebuggerWorkingDirectory>$(SolutionDir)..\assets\output</LocalDebuggerWorkingDirectory>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommandArguments>--show_loadecd_files --no_precache --no_shutdown_restore --developer</LocalDebuggerCommandArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='STEAM_Test|x64'">
+    <LocalDebuggerWorkingDirectory>$(SolutionDir)..\assets\output</LocalDebuggerWorkingDirectory>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommandArguments>--show_loadecd_files --no_precache --no_shutdown_restore --developer</LocalDebuggerCommandArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'">
+    <LocalDebuggerWorkingDirectory>$(SolutionDir)..\assets\output</LocalDebuggerWorkingDirectory>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommandArguments>--show_loadecd_files --no_precache --no_shutdown_restore --developer</LocalDebuggerCommandArguments>
+  </PropertyGroup>
+</Project>

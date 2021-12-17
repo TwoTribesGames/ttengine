@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<ParticleTrigger xmlns="http://intranet.twotribes.com/schemas/common/particletrigger.xsd" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/particletrigger.xsd http://intranet.twotribes.com/schemas/common/particletrigger.xsd">
+	<GameEvent name="muzzleflash" max_particles="1000"/>
+	<ParticleCulling enabled="true"/>
+	<ParticleEmitter max_particles="8" x="0" y="0" delay="0" space="world" ignore_fog="false">
+		<RenderGroup value="200"/>
+		<Texture filename="particles/generic_dust_random.png"/>
+		<FrameAnimations framesize="0"/>
+		<EmissionCircle radius="0.375" innerradius="0.2"/>
+		<ExternalForce min_x="0" max_x="0" min_y="0.28125" max_y="0.46875"/>
+		<BlendMode type="add"/>
+		<PreGeneration time="0" step="0"/>
+		<Emission particles="8" type="burst" lifetime="0"/>
+		<ParticleOrientation type="rotation"/>
+		<Velocity min_x="-12.5" max_x="12.5" min_y="-12.5" max_y="12.5"/>
+		<VelocityFriction min="0.19875" max="0.20125"/>
+		<ParticleLife min="0.2" max="0.4"/>
+		<Size min_start="0.75" max_start="1.25" min_end="1.5" max_end="2.5"/>
+		<Weight min_start="0" max_start="0" min_end="0.75" max_end="1.25"/>
+		<Rotation min_start="-180" max_start="180" min_speed="0" max_speed="0"/>
+		<RotationForce min="0" max="0"/>
+		<RotationFriction min="0" max="0"/>
+		<Frame min_start="0" max_start="0"/>
+		<DirectionFromSpawnLocation/>
+		<MinStartColor r="0" g="212" b="255" a="255"/>
+		<MaxStartColor r="87" g="188" b="255" a="255"/>
+		<MinEndColor r="30" g="160" b="242" a="255"/>
+		<MaxEndColor r="45" g="182" b="216" a="255"/>
+		<Fade in="0" out="0.5" type="percentage"/>
+		<ExternalImpulseWeight min="0" max="0"/>
+	</ParticleEmitter>
+	<ParticleEmitter max_particles="8" x="0" y="0" delay="0" space="world" ignore_fog="false">
+		<RenderGroup value="200"/>
+		<Texture filename="particles/generic_dust_random.png"/>
+		<FrameAnimations framesize="0"/>
+		<EmissionCircle radius="0.375" innerradius="0.2"/>
+		<ExternalForce min_x="0" max_x="0" min_y="0.28125" max_y="0.46875"/>
+		<BlendMode type="add"/>
+		<PreGeneration time="0" step="0"/>
+		<Emission particles="8" type="burst" lifetime="0"/>
+		<ParticleOrientation type="rotation"/>
+		<Velocity min_x="-12.5" max_x="12.5" min_y="-12.5" max_y="12.5"/>
+		<VelocityFriction min="0.19875" max="0.20125"/>
+		<ParticleLife min="0.2" max="0.4"/>
+		<Size min_start="0.75" max_start="1.25" min_end="1.5" max_end="2.5"/>
+		<Weight min_start="0" max_start="0" min_end="0.75" max_end="1.25"/>
+		<Rotation min_start="-180" max_start="180" min_speed="0" max_speed="0"/>
+		<RotationForce min="0" max="0"/>
+		<RotationFriction min="0" max="0"/>
+		<Frame min_start="0" max_start="0"/>
+		<DirectionFromSpawnLocation/>
+		<MinStartColor r="0" g="212" b="255" a="255"/>
+		<MaxStartColor r="87" g="188" b="255" a="255"/>
+		<MinEndColor r="30" g="160" b="242" a="255"/>
+		<MaxEndColor r="45" g="182" b="216" a="255"/>
+		<Fade in="0" out="0.5" type="percentage"/>
+		<ExternalImpulseWeight min="0" max="0"/>
+	</ParticleEmitter>
+</ParticleTrigger>

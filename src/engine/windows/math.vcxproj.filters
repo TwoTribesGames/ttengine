@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Shared">
+      <UniqueIdentifier>{07b566a0-86fb-42a4-8fd1-effeca9b48c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\hash">
+      <UniqueIdentifier>{dbac6566-f8ff-47e7-aabb-225a6f71d43d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows">
+      <UniqueIdentifier>{b093896c-4ab0-49ea-ab7e-9e819778be64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pch">
+      <UniqueIdentifier>{6058a5d5-5f36-4814-b1d4-280aae1c19dc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\shared\src\tt\math\BezierCurve.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\math\HermiteCurve.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\math\math.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\math\Matrix22.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\math\Matrix33.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\math\Matrix44.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\math\Point2.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\math\Point3.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\math\Quaternion.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\math\QuaternionUtils.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\math\Random.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\math\Spline.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\math\SplineKnot.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\math\Transform.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\math\Vector2.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\math\Vector3.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\math\Vector4.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\math\hash\Checksum16.cpp">
+      <Filter>Shared\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\math\hash\Checksum8.cpp">
+      <Filter>Shared\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\math\hash\CRC16.cpp">
+      <Filter>Shared\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\math\hash\CRC16CCITT.cpp">
+      <Filter>Shared\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\math\hash\CRC32.cpp">
+      <Filter>Shared\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\math\hash\CRC32POSIX.cpp">
+      <Filter>Shared\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\math\hash\CRC8.cpp">
+      <Filter>Shared\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\pch\pch.cpp">
+      <Filter>pch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\math\hash\SHA1.cpp">
+      <Filter>Shared\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\math\hash\hmac_sha1.cpp">
+      <Filter>Shared\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\math\hash\MD5.cpp">
+      <Filter>Shared\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\math\interpolation.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\math\projection.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\shared\inc\tt\math\BezierCurve.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\math\Box.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\math\Fixed.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\math\HermiteCurve.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\math\LinearInterpolation.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\math\math.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\math\Matrix22.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\math\Matrix33.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\math\Matrix44.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\math\Point2.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\math\Point3.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\math\Quaternion.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\math\QuaternionUtils.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\math\Random.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\math\Range.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\math\Rect.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\math\RectPredicates.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\math\Spline.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\math\SplineKnot.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\math\Transform.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\math\tt_cmath.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\math\tt_cmath_fixed.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\math\Vector2.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\math\Vector3.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\math\Vector4.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\math\hash\Checksum16.h">
+      <Filter>Shared\hash</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\math\hash\Checksum8.h">
+      <Filter>Shared\hash</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\math\hash\CRC16.h">
+      <Filter>Shared\hash</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\math\hash\CRC16CCITT.h">
+      <Filter>Shared\hash</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\math\hash\CRC32.h">
+      <Filter>Shared\hash</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\math\hash\CRC32POSIX.h">
+      <Filter>Shared\hash</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\math\hash\CRC8.h">
+      <Filter>Shared\hash</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\math\hash\Hash.h">
+      <Filter>Shared\hash</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\pch\pch.h">
+      <Filter>pch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\math\hash\SHA1.h">
+      <Filter>Shared\hash</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\math\hash\hmac_sha1.h">
+      <Filter>Shared\hash</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\math\hash\MD5.h">
+      <Filter>Shared\hash</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\math\ExponentialGrowth.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\math\fwd.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\math\TimedLinearInterpolation.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\math\interpolation.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\math\projection.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\math\hash\NamedHash.h">
+      <Filter>Shared\hash</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\shared\inc\tt\math\Box.inl">
+      <Filter>Shared</Filter>
+    </None>
+    <None Include="..\shared\inc\tt\math\Rect.inl">
+      <Filter>Shared</Filter>
+    </None>
+  </ItemGroup>
+</Project>

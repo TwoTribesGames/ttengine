@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		permanent="true">
+
+	<frameanimstack>
+		<frameanim directory="spritestrip/square_white/blurred" fps="30" blendmode="add" quad_width="2.8" quad_height="1.6">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+		</frameanim>
+	</frameanimstack>
+
+	<coloranimstack>
+		<color duration="0.035" looping="false" preset="oneshot" timing="easeout">
+			<begin r="-0" g="-0" b="-0" a="-100"/>
+			<end   r="-0" g="-0" b="-0" a="0"/>
+		</color>
+		<color duration="0.5" delay="0.035" looping="false" preset="oneshot" timing="easeout">
+			<begin r="-0" g="-0" b="-0" a="-160"/>
+			<end   r="-0" g="-0" b="-0" a="-255"/>
+		</color>
+	</coloranimstack>
+</presentation>

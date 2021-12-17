@@ -1,0 +1,5 @@
+root=audio/Music/;
+
+start:
+ingamemenu.ogg
+goto start

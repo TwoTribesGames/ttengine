@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<movementset xmlns="http://intranet.twotribes.com/schemas/projects/tokitori2/movementset.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/projects/tokitori2/movementset.xsd http://intranet.twotribes.com/schemas/projects/tokitori2/movementset.xsd">
+	<moves>
+		<!-- idle -->
+		<vector_move always="true" priority="0">
+			<directions>
+				<direction>none</direction>
+			</directions>
+			<speed x="0.0" y="0.0" />
+		</vector_move>
+	</moves>
+</movementset>

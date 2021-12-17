@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<ParticleTrigger xmlns="http://intranet.twotribes.com/schemas/common/particletrigger.xsd" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/particletrigger.xsd http://intranet.twotribes.com/schemas/common/particletrigger.xsd">
+	<ParticleCulling enabled="true"/>
+	<ParticleEmitter max_particles="30" x="0" y="0.00063941" delay="0" space="world" ignore_fog="false">
+		<RenderGroup value="100"/>
+		<Texture filename="particles/generic_dust_random4.png"/>
+		<FrameAnimations framesize="0">
+			<Animation start="0" end="0" fps="1" type="loop"/>
+		</FrameAnimations>
+		<EmissionCircle radius="0" innerradius="0"/>
+		<ExternalForce min_x="-0.28125" max_x="0.28125" min_y="1.11094" max_y="1.13906"/>
+		<BlendMode type="blend"/>
+		<PreGeneration time="0" step="0"/>
+		<Emission particles="60" type="continuous" lifetime="0"/>
+		<ParticleOrientation type="rotation"/>
+		<Velocity min_x="-5.625" max_x="5.625" min_y="-5.625" max_y="5.625"/>
+		<VelocityFriction min="0.2" max="0.2"/>
+		<ParticleLife min="1.625" max="1.875"/>
+		<Size min_start="0.492188" max_start="1.19531" min_end="2.53125" max_end="4.21875"/>
+		<Weight min_start="0" max_start="0.05" min_end="0.3" max_end="0.4"/>
+		<Rotation min_start="-180" max_start="180" min_speed="-60" max_speed="60"/>
+		<RotationForce min="0" max="0"/>
+		<RotationFriction min="0.005" max="0.005"/>
+		<Frame min_start="0" max_start="0"/>
+		<MinStartColor r="35" g="97" b="125" a="147"/>
+		<MaxStartColor r="24" g="96" b="109" a="147"/>
+		<MinEndColor r="0" g="0" b="0" a="7"/>
+		<MaxEndColor r="0" g="0" b="0" a="0"/>
+		<Fade in="0.1" out="0.8" type="percentage"/>
+		<ExternalImpulseWeight min="0" max="0"/>
+	</ParticleEmitter>
+</ParticleTrigger>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		permanent="true">
+	<startvalues>
+		<translation x="r(-0.2),(0.2)" y="r(-0.2),(0.2)" z="0.1"/>
+		<scale scale="r(0.5),(1.5)"/>
+	</startvalues>
+	
+	<anim2dstack name="idle">
+		<scale duration="c(lifeTime)" looping="false" tweening="cubic" timing="easeout">
+			<begin scale="c(startScale)"/>
+			<end scale="c(endScale)"/>
+		</scale>
+		<scale duration="c(lifeTime)" looping="false" tweening="cubic" timing="easeout">
+			<begin scale="1"/>
+			<end scale="1.8"/>
+		</scale>
+		<rotation duration="c(lifeTime)" looping="true">
+			<begin rotation="r(-360),(0)"/>
+			<end rotation="r(0),(-360)"/>
+		</rotation>
+	</anim2dstack>
+	
+	<frameanimstack name="idle">
+		<frameanim directory="spritestrip/bullet/flame" lightmask="use_alpha" ignore_fog="true" blendmode="add" fps="1" looping="true" quad_width="1.5" quad_height="1.5">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+		</frameanim>	
+	</frameanimstack>
+	
+	<coloranimstack name="idle">
+		<color duration="c(lifeTime)">
+			<begin r="0" g="0" b="0" a="-75" />
+			<end r="0" g="0" b="0" a="-255" />
+		</color>  
+	</coloranimstack>
+
+	<particles file="particles/flamethrower_embers.trigger" duration="0.55"  position_type="follow">
+	</particles>
+
+</presentation>
+
+

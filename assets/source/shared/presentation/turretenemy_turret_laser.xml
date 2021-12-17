@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		permanent="true">
+	<startvalues>
+		<rotation value="90"/>
+		<translation z="0.02"/>
+		<scale scale="0.85"/>
+	</startvalues>
+
+	<anim2dstack>
+		<translation duration="0.25" preset="oscillating">
+			<begin y="-0.025"/>
+			<end   y="0.025"/>
+		</translation>
+	</anim2dstack>
+	
+	<!-- ring -->
+	<frameanimstack>
+		<mustnothave>
+			<tag name="ishackable"/>
+		</mustnothave>
+		<frameanim directory="spritestrip/turretenemy/gun/gun_ring" quad_height="2" quad_width="2" fps="60" looping="true">
+			<begin frame="0"/>
+			<end   frame="0"/>
+			<scale scale="0.9"/>
+		</frameanim>
+	</frameanimstack>
+
+	<!--barrelcount_1-->
+	<frameanimstack>
+		<musthave>
+			<tag name="barrelcount_1"/>
+		</musthave>
+		<mustnothave>
+			<tag name="ishackable"/>
+		</mustnothave>
+		<frameanim directory="spritestrip/turretenemy/gun/guns" lightmask="use_lightmask" quad_width="1.867" quad_height="1.215" fps="10" looping="true">
+			<begin frame="0"/>
+			<end   frame="0"/>
+			<translation x="1.2"/>
+		</frameanim>
+	</frameanimstack>
+
+	<!--barrelcount_2-->
+	<frameanimstack>
+		<musthave>
+			<tag name="barrelcount_2"/>
+		</musthave>
+		<mustnothave>
+			<tag name="ishackable"/>
+		</mustnothave>
+		<frameanim directory="spritestrip/turretenemy/gun/guns" lightmask="use_lightmask" quad_width="1.867" quad_height="1.215" fps="10" looping="true">
+			<begin frame="0"/>
+			<end   frame="0"/>
+			<translation x="1.2"/>
+		</frameanim>
+		<frameanim directory="spritestrip/turretenemy/gun/guns" lightmask="use_lightmask" quad_width="1.867" quad_height="1.215" fps="10" looping="true">
+			<begin frame="0"/>
+			<end   frame="0"/>
+			<translation x="-1.2"/>
+			<rotation value="180"/>
+		</frameanim>
+	</frameanimstack>
+
+	<!--barrelcount_4-->
+	<frameanimstack>
+		<musthave>
+			<tag name="barrelcount_4"/>
+		</musthave>
+		<mustnothave>
+			<tag name="ishackable"/>
+		</mustnothave>
+		<frameanim directory="spritestrip/turretenemy/gun/guns" lightmask="use_lightmask" quad_width="1.867" quad_height="1.215" fps="10" looping="true">
+			<begin frame="0"/>
+			<end   frame="0"/>
+			<translation x="1.2"/>
+		</frameanim>
+		<frameanim directory="spritestrip/turretenemy/gun/guns" lightmask="use_lightmask" quad_width="1.867" quad_height="1.215" fps="10" looping="true">
+			<begin frame="0"/>
+			<end   frame="0"/>
+			<translation y="1.2"/>
+			<rotation value="90"/>
+		</frameanim>
+		<frameanim directory="spritestrip/turretenemy/gun/guns" lightmask="use_lightmask" quad_width="1.867" quad_height="1.215" fps="10" looping="true">
+			<begin frame="0"/>
+			<end   frame="0"/>
+			<translation x="-1.2"/>
+			<rotation value="180"/>
+		</frameanim>
+		<frameanim directory="spritestrip/turretenemy/gun/guns" lightmask="use_lightmask" quad_width="1.867" quad_height="1.215" fps="10" looping="true">
+			<begin frame="0"/>
+			<end   frame="0"/>
+			<translation y="-1.2"/>
+			<rotation value="-90"/>
+		</frameanim>
+	</frameanimstack>
+
+	<!--barrelcount_5-->
+	<frameanimstack>
+		<musthave>
+			<tag name="barrelcount_5"/>
+		</musthave>
+		<mustnothave>
+			<tag name="ishackable"/>
+		</mustnothave>
+		<frameanim directory="spritestrip/turretenemy/gun/guns" lightmask="use_lightmask" quad_width="1.867" quad_height="1.215" fps="10" looping="true">
+			<begin frame="0"/>
+			<end   frame="0"/>
+			<translation x="1.2"/>
+		</frameanim>
+		<frameanim directory="spritestrip/turretenemy/gun/guns" lightmask="use_lightmask" quad_width="1.867" quad_height="1.215" fps="10" looping="true">
+			<begin frame="0"/>
+			<end   frame="0"/>
+			<translation x="0.4" y="1.1"/>
+			<rotation value="72"/>
+		</frameanim>
+		<frameanim directory="spritestrip/turretenemy/gun/guns" lightmask="use_lightmask" quad_width="1.867" quad_height="1.215" fps="10" looping="true">
+			<begin frame="0"/>
+			<end   frame="0"/>
+			<translation x="-1" y="0.7"/>
+			<rotation value="144"/>
+		</frameanim>
+		<frameanim directory="spritestrip/turretenemy/gun/guns" lightmask="use_lightmask" quad_width="1.867" quad_height="1.215" fps="10" looping="true">
+			<begin frame="0"/>
+			<end   frame="0"/>
+			<translation x="-1" y="-0.7"/>
+			<rotation value="216"/>
+		</frameanim>
+		<frameanim directory="spritestrip/turretenemy/gun/guns" lightmask="use_lightmask" quad_width="1.867" quad_height="1.215" fps="10" looping="true">
+			<begin frame="0"/>
+			<end   frame="0"/>
+			<translation x="0.4" y="-1.1"/>
+			<rotation value="288"/>
+		</frameanim>
+	</frameanimstack>
+
+	<!--barrelcount_8-->
+	<frameanimstack>
+		<musthave>
+			<tag name="barrelcount_8"/>
+		</musthave>
+		<mustnothave>
+			<tag name="ishackable"/>
+		</mustnothave>
+		<frameanim directory="spritestrip/turretenemy/gun/guns" lightmask="use_lightmask" quad_width="1.867" quad_height="1.215" fps="10" looping="true">
+			<begin frame="0"/>
+			<end   frame="0"/>
+			<translation x="1.2"/>
+		</frameanim>
+		<frameanim directory="spritestrip/turretenemy/gun/guns" lightmask="use_lightmask" quad_width="1.867" quad_height="1.215" fps="10" looping="true">
+			<begin frame="0"/>
+			<end   frame="0"/>
+			<translation x="0.8" y="0.8"/>
+			<rotation value="45"/>
+		</frameanim>
+		<frameanim directory="spritestrip/turretenemy/gun/guns" lightmask="use_lightmask" quad_width="1.867" quad_height="1.215" fps="10" looping="true">
+			<begin frame="0"/>
+			<end   frame="0"/>
+			<translation y="1.2"/>
+			<rotation value="90"/>
+		</frameanim>
+		<frameanim directory="spritestrip/turretenemy/gun/guns" lightmask="use_lightmask" quad_width="1.867" quad_height="1.215" fps="10" looping="true">
+			<begin frame="0"/>
+			<end   frame="0"/>
+			<translation x="-0.8" y="0.8"/>
+			<rotation value="135"/>
+		</frameanim>
+		<frameanim directory="spritestrip/turretenemy/gun/guns" lightmask="use_lightmask" quad_width="1.867" quad_height="1.215" fps="10" looping="true">
+			<begin frame="0"/>
+			<end   frame="0"/>
+			<translation x="-1.2"/>
+			<rotation value="180"/>
+		</frameanim>
+		<frameanim directory="spritestrip/turretenemy/gun/guns" lightmask="use_lightmask" quad_width="1.867" quad_height="1.215" fps="10" looping="true">
+			<begin frame="0"/>
+			<end   frame="0"/>
+			<translation x="-0.8" y="-0.8"/>
+			<rotation value="-135"/>
+		</frameanim>
+		<frameanim directory="spritestrip/turretenemy/gun/guns" lightmask="use_lightmask" quad_width="1.867" quad_height="1.215" fps="10" looping="true">
+			<begin frame="0"/>
+			<end   frame="0"/>
+			<translation y="-1.2"/>
+			<rotation value="-90"/>
+		</frameanim>
+		<frameanim directory="spritestrip/turretenemy/gun/guns" lightmask="use_lightmask" quad_width="1.867" quad_height="1.215" fps="10" looping="true">
+			<begin frame="0"/>
+			<end   frame="0"/>
+			<translation x="0.8" y="-0.8"/>
+			<rotation value="-45"/>
+		</frameanim>
+	</frameanimstack>
+</presentation>

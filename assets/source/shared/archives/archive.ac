@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<archive>
+	<file path="audio/"               file_extension="ttim" recursive="true" />
+	<file path="config/"              file_extension="xml"  recursive="true" />
+	<file path="conversations/"       file_extension=""     recursive="true" />
+	<file path="levels/"              file_extension=""     recursive="true" />
+	<file path="localization/"        file_extension=""     recursive="true" />
+	<file path="missions/"            file_extension=""     recursive="true" />
+	<file path="movement/"            file_extension=""     recursive="true" />
+	<file path="particles/"           file_extension=""     recursive="true" />
+	<file path="presentation/"        file_extension=""     recursive="true" />
+	<file path="scripts/"             file_extension=""     recursive="true" />
+	<file path="textures/"            file_extension=""     size_limit="40000"  recursive="true" />
+</archive>

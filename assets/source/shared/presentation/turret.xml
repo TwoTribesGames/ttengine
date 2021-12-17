@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		permanent="true">
+
+	<startvalues>
+		<translation z="0.01"/>
+	</startvalues>
+
+	<frameanimstack name="idle">
+		<mustnothave>
+			<tag name="flying"/>
+		</mustnothave>
+		<frameanim directory="spritestrip/turretenemy/body_hackable" lightmask="use_lightmask" quad_height="2" quad_width="2" fps="60" looping="true">
+			<begin frame="0"/>
+			<end   frame="0"/>
+			<translation y="0.45"/>
+			<scale scale="1.3"/>
+		</frameanim>
+	</frameanimstack>
+
+	<frameanimstack name="idle">
+		<musthave>
+			<tag name="flying"/>
+		</musthave>
+		<frameanim directory="spritestrip/turretenemy/body_flying_hackable" lightmask="use_lightmask" quad_height="2" quad_width="2" fps="20" looping="true">
+			<begin frame="1"/>
+			<end   frame="15"/>
+			<translation y="0.2"/>
+			<scale scale="1.3"/>
+		</frameanim>
+	</frameanimstack>
+
+	<anim2dstack name="idle">
+		<musthave>
+			<tag name="flying"/>
+		</musthave>
+		<rotation duration="1.5" direction="pingpong" looping="true" timing="easeends">
+			<begin rotation="-2"/>
+			<end   rotation="2"/>
+		</rotation>
+	</anim2dstack>
+
+	<!--dazed-->
+	<frameanimstack name="dazed">
+		<mustnothave>
+			<tag name="flying"/>
+		</mustnothave>
+		<frameanim directory="spritestrip/turretenemy/body_hackable" lightmask="use_lightmask" quad_height="2" quad_width="2" fps="30" looping="true">
+			<begin frame="0"/>
+			<end   frame="0"/>
+			<translation y="0.45"/>
+			<scale scale="1.3"/>
+		</frameanim>
+	</frameanimstack>
+
+	<frameanimstack name="dazed">
+		<musthave>
+			<tag name="flying"/>
+		</musthave>
+		<frameanim directory="spritestrip/turretenemy/body_flying_hackable" lightmask="use_lightmask" quad_height="2" quad_width="2" fps="20" looping="true">
+			<begin frame="1"/>
+			<end   frame="15"/>
+			<translation y="0.2"/>
+			<scale scale="1.3"/>
+		</frameanim>
+	</frameanimstack>
+
+	<anim2dstack  name="dazed">
+		<musthave>
+			<tag name="flying"/>
+		</musthave>
+		<rotation duration="1" direction="pingpong" timing="easeends" looping="true">
+			<begin rotation="-5"/>
+			<end rotation="15"/>
+		</rotation>
+	</anim2dstack>
+
+	<particles name="dazed" file="particles/dazed.trigger" position_type="follow">
+		<translation x="0" y="0" z="0"/>
+	</particles>
+	
+
+	<trigger type="audio" data="turret_flying_loop">
+		<musthave>
+			<tag name="flying"/>
+		</musthave>
+    </trigger>
+
+
+	<!--corpse-->
+	<particles duration="0.2" name="corpse" file="particles/enemy_explosion_turret_hackable.trigger" position_type="relative">
+		<mustnothave>
+			<tag name="zerog"/>
+		</mustnothave>
+		<translation x="0" y="1" z="0"/>
+	</particles>
+
+	<particles name="corpse" file="particles/enemy_explosion_turret_hackable_zerog.trigger" position_type="relative">
+		<musthave>
+			<tag name="zerog"/>
+		</musthave>
+		<translation x="0" y="1" z="0"/>
+	</particles>
+
+	<!--basic corpse explosion-->
+	<particles name="corpse" file="particles/enemy_explosion_base.trigger" position_type="relative">
+		<mustnothave>
+			<tag name="zerog"/>
+		</mustnothave>
+		<translation x="0" y="1" z="0"/>
+		<scale scale="0.8"/>
+	</particles>
+
+	<!--zerog corpse explosion-->
+	<particles name="corpse" file="particles/enemy_explosion_base_zerog.trigger" position_type="relative">
+		<musthave>
+			<tag name="zerog"/>
+		</musthave>
+		<translation x="0" y="1" z="0"/>
+		<scale scale="0.8"/>
+	</particles>
+
+	<particles file="particles/turret_engine_blast.trigger" position_type="follow">
+		<musthave>
+			<tag name="flying"/>
+		</musthave>
+		<translation x="-0.50" y="0.2" z="0"/>
+	</particles>
+
+	<trigger name="corpse" type="audio" data="turret_explode"/>
+
+</presentation>

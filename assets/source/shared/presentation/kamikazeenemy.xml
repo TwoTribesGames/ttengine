@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		permanent="true">
+
+	<startvalues>
+		<scale scale="1.3"/>
+		<translation y="0" z="0.03"/>
+	</startvalues>
+
+	<!--idle-->
+	<frameanimstack name="idle">
+		<frameanim directory="spritestrip/kamikazeenemy/idle" lightmask="use_lightmask" fps="20" quad_height="2" quad_width="2" looping="true">
+			<begin frame="0"/>
+			<end   frame="11"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<trigger name="idle" type="audio" data="kamikaze_enemy_idle"/>
+
+	<!--fly-->
+	<frameanimstack name="fly">
+		<mustnothave>
+			<tag name="MoveToTarget"/>
+		</mustnothave>
+		<frameanim directory="spritestrip/kamikazeenemy/idle" lightmask="use_lightmask" fps="r(20),(25)" quad_height="2" quad_width="2" looping="true">
+			<begin frame="0"/>
+			<end   frame="11"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<trigger name="fly" type="audio" data="kamikaze_enemy_fly">
+		<mustnothave>
+			<tag name="MoveToTarget"/>
+		</mustnothave>
+	</trigger>
+
+
+
+	<!--fly_blink-->
+	<frameanimstack name="fly">
+		<musthave>
+			<tag name="MoveToTarget"/>
+		</musthave>
+		<frameanim directory="spritestrip/kamikazeenemy/active" lightmask="use_lightmask" fps="r(20),(25)" quad_height="2" quad_width="2" looping="true">
+			<begin frame="0"/>
+			<end   frame="11"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<trigger name="fly" type="audio" data="kamikaze_enemy_fly_move_to_target">
+		<musthave>
+			<tag name="MoveToTarget"/>
+		</musthave>
+	</trigger>
+	
+	<trigger name="fly" type="audio" data="kamikaze_talk">
+		<musthave>
+			<tag name="MoveToTarget"/>
+		</musthave>                       
+	</trigger>
+	
+	<trigger name="fly" type="audio" data="kamikaze_enemy_move_to_target_beep">
+		<musthave>
+			<tag name="MoveToTarget"/>
+		</musthave>
+	</trigger>
+
+	<!--turn_blink-->
+	<frameanimstack type="sequence" name="turn">
+		<musthave>
+			<tag name="MoveToTarget"/>
+		</musthave>
+		<frameanim directory="spritestrip/kamikazeenemy/turn_blink" lightmask="use_lightmask" fps="20" quad_height="2" quad_width="2">
+			<begin frame="0"/>
+			<end   frame="4"/>
+		</frameanim>
+	</frameanimstack>
+
+	<trigger name="turn" type="audio" data="kamikaze_enemy_fly_move_to_target">
+		<musthave>
+			<tag name="MoveToTarget"/>
+		</musthave>
+	</trigger>
+
+
+
+
+	<!--turn_off-->
+	<frameanimstack type="sequence" name="turn">
+		<mustnothave>
+			<tag name="MoveToTarget"/>
+		</mustnothave>
+		<frameanim directory="spritestrip/kamikazeenemy/turn_off" lightmask="use_lightmask" fps="20" quad_height="2" quad_width="2">
+			<begin frame="0"/>
+			<end   frame="4"/>
+		</frameanim>
+	</frameanimstack>
+
+	<anim2dstack name="turn">
+		<rotation duration="0.25" direction="pingpong" timing="easeends">
+			<begin rotation="0"/>
+			<end rotation="-20"/>
+		</rotation>
+	</anim2dstack>
+	
+	<trigger name="turn" type="audio" data="kamikaze_enemy_turn">
+		<mustnothave>
+			<tag name="MoveToTarget"/>
+		</mustnothave>
+	</trigger>
+
+	<!--dazed-->
+	<frameanimstack name="dazed">
+		<frameanim directory="spritestrip/kamikazeenemy/dazed" lightmask="use_lightmask" fps="20" quad_height="2" quad_width="2" looping="true">
+			<begin frame="0"/>
+			<end   frame="11"/>
+		</frameanim>
+	</frameanimstack>
+
+	<anim2dstack  name="dazed">
+		<rotation duration="1" direction="pingpong" timing="easeends" looping="true">
+			<begin rotation="-5"/>
+			<end	rotation="15"/>
+		</rotation>
+	</anim2dstack>
+
+	<particles name="dazed" file="particles/dazed.trigger" position_type="follow">
+		<translation x="0" y="0" z="0"/>
+		<scale scale="0.769"/>
+	</particles>
+
+	<particles file="particles/kamikaze_active.trigger" position_type="follow">
+		<translation x="0" y="-0.2" z="0"/>
+		<scale scale="0.8"/>
+	</particles>
+	
+	<trigger name="dazed" type="audio" data="kamikaze_enemy_dazed"/>
+
+	<!--corpse-->
+	<particles name="corpse" file="particles/enemy_explosion_kamikazebot.trigger" position_type="relative">
+		<mustnothave>
+			<tag name="zerog"/>
+		</mustnothave>
+		<translation x="0" y="0" z="0"/>
+		<scale scale="0.769"/>
+	</particles>
+
+	<particles name="corpse" file="particles/enemy_explosion_kamikazebot_zerog.trigger" position_type="relative">
+		<musthave>
+			<tag name="zerog"/>
+		</musthave>
+		<translation x="0" y="0" z="0"/>
+		<scale scale="0.769"/>
+	</particles>
+
+	<!--basic corpse explosion-->
+	<particles name="corpse" file="particles/enemy_explosion_base.trigger" position_type="relative">
+		<mustnothave>
+			<tag name="zerog"/>
+		</mustnothave>
+		<translation x="0" y="0" z="0"/>
+		<scale scale="0.769"/>
+	</particles>
+
+	<!--zerog corpse explosion-->
+	<particles name="corpse" file="particles/enemy_explosion_base_zerog.trigger" position_type="relative">
+		<musthave>
+			<tag name="zerog"/>
+		</musthave>
+		<translation x="0" y="0" z="0"/>
+		<scale scale="0.769"/>
+	</particles>
+
+	<trigger name="corpse" delay="0.01" type="audio" data="kamikaze_enemy_corpse"/>
+</presentation>

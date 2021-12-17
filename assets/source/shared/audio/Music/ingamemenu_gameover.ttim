@@ -1,0 +1,5 @@
+root=audio/Music/;
+
+start:
+ingamemenu_gameover.ogg
+goto start

@@ -1,0 +1,9 @@
+root=audio/Music/;
+
+start:
+area_introduction_01.ogg
+area_introduction_02.ogg
+area_introduction_03.ogg
+loop:
+area_introduction_endloop.ogg
+goto loop

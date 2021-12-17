@@ -1,0 +1,462 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="WIN_Dev|Win32">
+      <Configuration>WIN_Dev</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="WIN_Dev|x64">
+      <Configuration>WIN_Dev</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="WIN_Final|Win32">
+      <Configuration>WIN_Final</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="WIN_Final|x64">
+      <Configuration>WIN_Final</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="WIN_Test|Win32">
+      <Configuration>WIN_Test</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="WIN_Test|x64">
+      <Configuration>WIN_Test</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\shared\inc\visualboy\lib\apu\blargg_common.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\apu\blargg_config.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\apu\blargg_source.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\apu\Blip_Buffer.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\apu\Effects_Buffer.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\apu\Gb_Apu.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\apu\Gb_Oscs.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\apu\Multi_Buffer.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\common\array.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\common\ConfigManager.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\common\cstdint.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\common\dictionary.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\common\ffmpeg.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\common\iniparser.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\common\memgzio.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\common\Patch.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\common\Port.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\common\ringbuffer.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\common\SoundDriver.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\common\SoundSDL.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\common\Types.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\fex\Binary_Extractor.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\fex\blargg_common.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\fex\blargg_config.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\fex\blargg_endian.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\fex\blargg_errors.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\fex\blargg_source.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\fex\Data_Reader.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\fex\fex.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\fex\File_Extractor.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\fex\Gzip_Extractor.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\fex\Gzip_Reader.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\fex\Rar_Extractor.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\fex\Zip7_Extractor.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\visualboy\lib\fex\Zip_Extractor.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\fex\Zlib_Inflater.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\filters\hq2x.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\filters\hq\hq3x_pattern.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\filters\hq\hq4x_pattern.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\filters\hq\hq_base.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\filters\hq\hq_shared.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\filters\interframe.hpp" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\filters\interp.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\filters\lq2x.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\filters\xBRZ\config.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\filters\xBRZ\xbrz.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\gba\agbprint.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\gba\armdis.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\gba\bios.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\gba\BreakpointStructures.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\gba\Cheats.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\gba\CheatSearch.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\gba\debugger-expr-yacc.hpp" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\gba\EEprom.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\gba\elf.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\gba\ereader.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\gba\Flash.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\gba\GBA.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\gba\GBAcpu.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\gba\gbafilter.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\gba\GBAGfx.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\gba\GBAinline.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\gba\GBALink.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\gba\GBASockClient.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\gba\Globals.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\gba\remote.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\gba\RTC.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\gba\Sound.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\gba\Sram.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\gb\gb.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\gb\gbCheats.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\gb\gbCodes.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\gb\gbCodesCB.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\gb\gbGlobals.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\gb\gbMemory.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\gb\gbPrinter.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\gb\gbSGB.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\gb\gbSound.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\NLS.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\sdl\filters.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\System.h" />
+    <ClInclude Include="..\shared\inc\visualboy\lib\Util.h" />
+    <ClInclude Include="..\shared\inc\visualboy\VisualBoy.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\shared\src\visualboy\lib\apu\Blip_Buffer.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\apu\Effects_Buffer.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\apu\Gb_Apu.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\apu\Gb_Apu_State.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\apu\Gb_Oscs.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\apu\Multi_Buffer.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\common\ConfigManager.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\common\dictionary.c" />
+    <ClCompile Include="..\shared\src\visualboy\lib\common\ffmpeg.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\common\iniparser.c" />
+    <ClCompile Include="..\shared\src\visualboy\lib\common\memgzio.c" />
+    <ClCompile Include="..\shared\src\visualboy\lib\common\Patch.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\common\SoundSDL.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\fex\Binary_Extractor.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\fex\blargg_common.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\fex\blargg_errors.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\fex\Data_Reader.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\fex\fex.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\fex\File_Extractor.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\fex\Gzip_Extractor.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\fex\Gzip_Reader.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\fex\Rar_Extractor.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\fex\Zip7_Extractor.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\fex\Zip_Extractor.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\fex\Zlib_Inflater.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\filters\2xSaI.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\filters\admame.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\filters\bilinear.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\filters\hq2x.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\filters\hq\hq_implementation.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\filters\interframe.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\filters\pixel.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\filters\scanline.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\filters\simpleFilter.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\filters\xbrzfilter.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\filters\xBRZ\xbrz.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\agbprint.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\armdis.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\bios.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\BreakpointStructures.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\Cheats.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\CheatSearch.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\debugger-expr-lex.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\debugger-expr-yacc.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\EEprom.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\elf.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\ereader.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\Flash.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\GBA-arm.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\GBA-thumb.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\GBA.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\gbafilter.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\GBAGfx.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\GBALink.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\GBASockClient.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\Globals.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\Mode0.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\Mode1.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\Mode2.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\Mode3.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\Mode4.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\Mode5.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\remote.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\RTC.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\Sound.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\gba\Sram.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\gb\GB.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\gb\gbCheats.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\gb\gbDis.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\gb\gbGfx.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\gb\gbGlobals.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\gb\gbMemory.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\gb\gbPrinter.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\gb\gbSGB.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\gb\gbSound.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\sdl\filters.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\System.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\lib\Util.cpp" />
+    <ClCompile Include="..\shared\src\visualboy\VisualBoy.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{51589D6E-9497-4502-AA73-5F25BBA5C2FA}</ProjectGuid>
+    <RootNamespace>visualboy</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">$(ProjectDir)lib\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">$(ProjectDir)obj\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'">$(ProjectDir)obj\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">$(ProjectDir)lib\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">$(ProjectDir)obj\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'">$(ProjectDir)obj\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">$(ProjectDir)lib\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">$(ProjectDir)obj\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'">$(ProjectDir)obj\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'">
+    <OutDir>$(ProjectDir)lib\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'">
+    <OutDir>$(ProjectDir)lib\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'">
+    <OutDir>$(ProjectDir)lib\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>inc;..\shared\inc;..\shared\inc\visualboy\lib\common;..\shared\inc\visualboy\lib\gb;..\shared\inc\visualboy\lib\gba;..\shared\inc\visualboy\lib\sdl;..\shared\inc\visualboy\lib\fex;..\shared\inc\visualboy\lib\apu;..\shared\inc\visualboy\lib\filters\xBRZ;..\shared\inc\visualboy\lib\filters\hq;..\shared\inc\visualboy\lib\filters;..\shared\inc\visualboy\lib\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;C_CORE;NO_LINK;NO_PNG;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;TT_ASSERT_ON;TT_PLATFORM_WIN;TT_BUILD_DEV;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <ProgramDataBaseFileName>$(TargetDir)\$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>inc;..\shared\inc;..\shared\inc\visualboy\lib\common;..\shared\inc\visualboy\lib\gb;..\shared\inc\visualboy\lib\gba;..\shared\inc\visualboy\lib\sdl;..\shared\inc\visualboy\lib\fex;..\shared\inc\visualboy\lib\apu;..\shared\inc\visualboy\lib\filters\xBRZ;..\shared\inc\visualboy\lib\filters\hq;..\shared\inc\visualboy\lib\filters;..\shared\inc\visualboy\lib\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;C_CORE;NO_LINK;NO_PNG;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;TT_ASSERT_ON;TT_PLATFORM_WIN;TT_BUILD_DEV;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <ProgramDataBaseFileName>$(TargetDir)\$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|Win32'">
+    <ClCompile>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>inc;..\shared\inc;..\shared\inc\visualboy\lib\common;..\shared\inc\visualboy\lib\gb;..\shared\inc\visualboy\lib\gba;..\shared\inc\visualboy\lib\sdl;..\shared\inc\visualboy\lib\fex;..\shared\inc\visualboy\lib\apu;..\shared\inc\visualboy\lib\filters\xBRZ;..\shared\inc\visualboy\lib\filters\hq;..\shared\inc\visualboy\lib\filters;..\shared\inc\visualboy\lib\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;C_CORE;NO_LINK;NO_PNG;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;TT_ASSERT_ON;TT_PLATFORM_WIN;TT_BUILD_TEST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <ProgramDataBaseFileName>$(TargetDir)\$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'">
+    <ClCompile>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>inc;..\shared\inc;..\shared\inc\visualboy\lib\common;..\shared\inc\visualboy\lib\gb;..\shared\inc\visualboy\lib\gba;..\shared\inc\visualboy\lib\sdl;..\shared\inc\visualboy\lib\fex;..\shared\inc\visualboy\lib\apu;..\shared\inc\visualboy\lib\filters\xBRZ;..\shared\inc\visualboy\lib\filters\hq;..\shared\inc\visualboy\lib\filters;..\shared\inc\visualboy\lib\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;C_CORE;NO_LINK;NO_PNG;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;TT_ASSERT_ON;TT_PLATFORM_WIN;TT_BUILD_TEST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <ProgramDataBaseFileName>$(TargetDir)\$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|Win32'">
+    <ClCompile>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>inc;..\shared\inc;..\shared\inc\visualboy\lib\common;..\shared\inc\visualboy\lib\gb;..\shared\inc\visualboy\lib\gba;..\shared\inc\visualboy\lib\sdl;..\shared\inc\visualboy\lib\fex;..\shared\inc\visualboy\lib\apu;..\shared\inc\visualboy\lib\filters\xBRZ;..\shared\inc\visualboy\lib\filters\hq;..\shared\inc\visualboy\lib\filters;..\shared\inc\visualboy\lib\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;C_CORE;NO_LINK;NO_PNG;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;TT_PLATFORM_WIN;TT_BUILD_FINAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <ProgramDataBaseFileName>$(TargetDir)\$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'">
+    <ClCompile>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>inc;..\shared\inc;..\shared\inc\visualboy\lib\common;..\shared\inc\visualboy\lib\gb;..\shared\inc\visualboy\lib\gba;..\shared\inc\visualboy\lib\sdl;..\shared\inc\visualboy\lib\fex;..\shared\inc\visualboy\lib\apu;..\shared\inc\visualboy\lib\filters\xBRZ;..\shared\inc\visualboy\lib\filters\hq;..\shared\inc\visualboy\lib\filters;..\shared\inc\visualboy\lib\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;C_CORE;NO_LINK;NO_PNG;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;TT_PLATFORM_WIN;TT_BUILD_FINAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <ProgramDataBaseFileName>$(TargetDir)\$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

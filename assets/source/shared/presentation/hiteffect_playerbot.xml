@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		permanent="true">
+	
+	<!--hit-->
+	<particles file="particles/playerbot_hit.trigger" name="hit" duration="0.1" position_type="follow"/>
+	
+	<!--heal-->
+	<particles file="particles/healeffect.trigger" name="heal" duration="0.1" position_type="follow"/>
+	
+	<!--warning levels-->
+	<particles file="particles/playerbot_hit_electricity.trigger" position_type="follow">
+		<musthave>
+			<tag name="low_damage"/>
+		</musthave>
+		<musthave>
+			<tag name="medium_damage"/>
+		</musthave>
+		<musthave>
+			<tag name="high_damage"/>
+		</musthave>
+	</particles>
+
+	<particles file="particles/playerbot_hit_warning.trigger" position_type="follow">
+		<musthave>
+			<tag name="high_damage"/>
+		</musthave>
+	</particles>
+	
+	<particles file="particles/playerbot_hit_smoke.trigger" position_type="follow">
+		<musthave>
+			<tag name="high_damage"/>
+		</musthave>
+		<musthave>
+			<tag name="medium_damage"/>
+		</musthave>
+	</particles>
+
+	<trigger name="hit" type="audio" data="hiteffect_playerbot"/>
+	
+	<trigger type="audio" data="playerbot_damaged_sparks_1">
+		<musthave>
+			<tag name="high_damage"/>
+		</musthave>
+	</trigger>
+	<trigger type="audio" data="playerbot_damaged_sparks_2">
+		<musthave>
+			<tag name="medium_damage"/>
+		</musthave>
+	</trigger>
+	<trigger type="audio" data="playerbot_damaged_sparks_3">
+		<musthave>
+			<tag name="low_damage"/>
+		</musthave>
+	</trigger>
+</presentation>

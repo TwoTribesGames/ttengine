@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		permanent="true">
+
+	<frameanimstack name="gameover">
+		<frameanim blendmode="add" directory="spritestrip/hud/gameover" fps="20" quad_width="0.95" quad_height="0.2" looping="true">
+			<begin frame="0"/>
+			<end   frame="0"/>
+		</frameanim>
+	</frameanimstack>
+
+	<anim2dstack name="gameover">
+		<scale duration="0.5" delay="0.5" timing="easeout">
+			<begin scale="4.0"/>
+			<end scale="1.5"/>
+		</scale>
+		<scale duration="5" delay="0.0" preset="oscillating">
+			<begin scale="1.0"/>
+			<end scale="1.1"/>
+		</scale>
+	</anim2dstack>
+
+	<coloranimstack name="gameover">
+		<color duration="0.5" delay="0.5">
+			<begin r="0" g="-200" b="-200" a="-255"/>
+			<end r="0" g="-200" b="-200"  a="-50"/>
+		</color>
+		<color duration="1.0" delay="0.5" preset="oscillating">
+			<begin a="-50"/>
+			<end a="0"/>
+		</color>
+	</coloranimstack>
+	
+	<trigger type="global_audio" data="level_failed" name="gameover"/>
+
+	<anim2dstack name="buttonprompt">
+		<translation duration="0.75" delay="0.75" timing="easeout">
+			<begin y="-0.6"/>
+			<end y="-0.435"/>
+		</translation>
+	</anim2dstack>
+
+	<coloranimstack name="buttonprompt">
+		<color duration="1.5" delay="0.0" preset="oscillating">
+			<begin a="-155"/>
+			<end a="0"/>
+		</color>
+	</coloranimstack>
+
+</presentation>

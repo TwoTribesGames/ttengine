@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		permanent="true">
+
+	<particles name="disabled" file="particles/water_splash_bullet.trigger" position_type="relative">
+		<musthave>
+			<tag name="splash"/>
+		</musthave>
+		<translation x="0" z="0.0" y="0.0"/>
+	</particles>
+	
+	<trigger name="disabled" type="audio" data="impact_bullet_water">
+		<musthave>
+			<tag name="splash"/>
+		</musthave>
+	</trigger>
+</presentation>

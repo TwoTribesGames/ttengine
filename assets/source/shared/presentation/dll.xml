@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		permanent="true">
+	
+	<startvalues>
+		<scale scale="2.0"/>
+	</startvalues>
+	
+	<anim2dstack name="idle">
+		<translation duration="2" direction="pingpong" looping="true" timing="easeends">
+			<begin y="0"/>
+			<end   y="0.2"/>
+		</translation>
+	</anim2dstack>
+
+	<!--working-->
+	<frameanimstack name="idle">
+		<musthave>
+			<tag name="working"/>
+		</musthave>
+		<frameanim directory="spritestrip/dll/plug_idle" fps="20" quad_height="1" quad_width="0.312" direction="pingpong" looping="true">
+			<begin frame="0"/>
+			<end   frame="6"/>
+			<translation y="-1.1" x="0.15"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<frameanimstack name="idle">
+		<musthave>
+			<tag name="working"/>
+		</musthave>
+		<frameanim directory="spritestrip/dll/idle_nolight" id="idle_callback" fps="20" quad_height="1.62" quad_width="2" looping="true">
+			<begin frame="0"/>
+			<end   frame="19"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<frameanimstack name="idle" type="sequence">
+		<musthave>
+			<tag name="working"/>
+		</musthave>
+		<frameanim directory="spritestrip/dll/idle_happy" lightmask="use_alpha" fps="20" quad_height="1.62" quad_width="2" looping="false">
+			<begin frame="0"/>
+			<end   frame="1"/>
+			<translation y="0.0" x="0.0" z="0.01"/>
+		</frameanim>
+		<frameanim directory="spritestrip/dll/idle_sad" lightmask="use_alpha" fps="20" quad_height="1.62" quad_width="2" looping="false">
+			<begin frame="2"/>
+			<end   frame="3"/>
+			<translation y="0.0" x="0.0" z="0.01"/>
+		</frameanim>
+		<frameanim directory="spritestrip/dll/idle_normal" lightmask="use_alpha" fps="20" quad_height="1.62" quad_width="2" looping="false">
+			<begin frame="4"/>
+			<end   frame="5"/>
+			<translation y="0.0" x="0.0" z="0.01"/>
+		</frameanim>
+		<frameanim directory="spritestrip/dll/idle_angry" lightmask="use_alpha" fps="20" quad_height="1.62" quad_width="2" looping="false">
+			<begin frame="6"/>
+			<end   frame="7"/>
+			<translation y="0.0" x="0.0" z="0.01"/>
+		</frameanim>
+		<frameanim directory="spritestrip/dll/idle_happy" lightmask="use_alpha" fps="20" quad_height="1.62" quad_width="2" looping="false">
+			<begin frame="8"/>
+			<end   frame="9"/>
+			<translation y="0.0" x="0.0" z="0.01"/>
+		</frameanim>
+		<frameanim directory="spritestrip/dll/idle_sad" lightmask="use_alpha" fps="20" quad_height="1.62" quad_width="2" looping="false">
+			<begin frame="10"/>
+			<end   frame="11"/>
+			<translation y="0.0" x="0.0" z="0.01"/>
+		</frameanim>
+		<frameanim directory="spritestrip/dll/idle_normal" lightmask="use_alpha" fps="20" quad_height="1.62" quad_width="2" looping="false">
+			<begin frame="12"/>
+			<end   frame="13"/>
+			<translation y="0.0" x="0.0" z="0.01"/>
+		</frameanim>
+		<frameanim directory="spritestrip/dll/idle_angry" lightmask="use_alpha" fps="20" quad_height="1.62" quad_width="2" looping="false">
+			<begin frame="14"/>
+			<end   frame="15"/>
+			<translation y="0.0" x="0.0" z="0.01"/>
+		</frameanim>
+		<frameanim directory="spritestrip/dll/idle_happy" lightmask="use_alpha" fps="20" quad_height="1.62" quad_width="2" looping="false">
+			<begin frame="16"/>
+			<end   frame="17"/>
+			<translation y="0.0" x="0.0" z="0.01"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<particles name="idle" file="particles/dll_enableing.trigger" position_type="follow">
+		<musthave>
+			<tag name="working"/>
+		</musthave>
+		<translation x="0" y="0.6" z="0"/>
+		<scale scale="0.5"/>
+	</particles>
+
+	<particles name="idle" file="particles/dll_working_result.trigger" delay="0.9" position_type="follow">
+		<musthave>
+			<tag name="working"/>
+		</musthave>
+		<translation x="0" y="0.0" z="0"/>
+		<scale scale="1"/>
+	</particles>
+
+	<trigger name="idle" type="audio" data="DLL_calculating">
+		<musthave>
+			<tag name="working"/>
+		</musthave>
+	</trigger>
+	
+	<anim2dstack  name="idle">
+		<musthave>
+			<tag name="working"/>
+		</musthave>
+		<translation duration="0.1341" direction="pingpong" looping="true">
+			<begin x="-0.0251" y="0" z="0"/>
+			<end   x="0.0251" y="0" z="0"/>
+		</translation>
+		<translation duration="0.182" direction="pingpong" looping="true">
+			<begin x="0.0" y="0.0251" z="0"/>
+			<end   x="0.0" y="-0.0251" z="0"/>
+		</translation>
+	</anim2dstack>
+	
+	<!--idle-->
+	<frameanimstack name="idle">
+		<frameanim directory="spritestrip/dll/plug_idle" fps="20" quad_height="1" quad_width="0.312" direction="pingpong" looping="true">
+			<begin frame="0"/>
+			<end   frame="6"/>
+			<translation y="-1.1" x="0.15"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<trigger name="idle" end_sync_id="idle_callback" type="callback" data="end_anim" />
+	
+	<frameanimstack name="idle">
+		<mustnothave>
+			<tag name="working"/>
+		</mustnothave>
+		<frameanim directory="spritestrip/dll/idle_nolight" id="idle_callback" fps="20" quad_height="1.62" quad_width="2" looping="true">
+			<begin frame="0"/>
+			<end   frame="19"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<trigger name="idle" type="audio" data="dll_idle_loop"/>
+	
+	<!--NEUTRAL expression-->
+	<frameanimstack name="idle">
+		<musthave>
+			<tag name="neutral"/>
+		</musthave>
+		<frameanim directory="spritestrip/dll/idle_normal" lightmask="use_alpha" fps="20" quad_height="1.62" quad_width="2" looping="true">
+			<begin frame="0"/>
+			<end   frame="19"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<!--ANGRY expression-->
+	<frameanimstack name="idle">
+		<musthave>
+			<tag name="angry"/>
+		</musthave>
+		<frameanim directory="spritestrip/dll/idle_angry" lightmask="use_alpha" fps="20" quad_height="1.62" quad_width="2" looping="true">
+			<begin frame="0"/>
+			<end   frame="19"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<!--HAPPY expression-->
+	<frameanimstack name="idle">
+		<musthave>
+			<tag name="happy"/>
+		</musthave>
+		<frameanim directory="spritestrip/dll/idle_happy" lightmask="use_alpha" fps="20" quad_height="1.62" quad_width="2" looping="true">
+			<begin frame="0"/>
+			<end   frame="19"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<!--scared expression-->
+	<frameanimstack name="idle">
+		<musthave>
+			<tag name="scared"/>
+		</musthave>
+		<frameanim directory="spritestrip/dll/idle_sad" lightmask="use_alpha" fps="20" quad_height="1.62" quad_width="2" looping="true">
+			<begin frame="0"/>
+			<end   frame="19"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<!--TURN-->
+	<frameanimstack name="turn" type="sequence">
+		<frameanim directory="spritestrip/dll/plug_turn" flip_horizontal="true" fps="20" quad_height="1" quad_width="0.625" timing="easeout">
+			<begin frame="0"/>
+			<end   frame="2"/>
+			<translation y="-1.1"/>
+		</frameanim>
+		<frameanim directory="spritestrip/dll/plug_turn" flip_horizontal="true" fps="20" quad_height="1" quad_width="0.625" timing="easeout">
+			<begin frame="5"/>
+			<end   frame="7"/>
+			<translation y="-1.1"/>
+		</frameanim>
+	</frameanimstack>
+
+	<frameanimstack name="turn">
+		<frameanim directory="spritestrip/dll/turn" flip_horizontal="true" fps="30" quad_height="1.562" quad_width="2">
+			<begin frame="0"/>
+			<end   frame="6"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<trigger name="turn" type="audio" data="dll_turn"/>
+
+	<!--NEUTRAL turn-->
+	<frameanimstack name="turn">
+		<musthave>
+			<tag name="neutral"/>
+		</musthave>
+		<frameanim directory="spritestrip/dll/turn_normal" flip_horizontal="true" lightmask="use_alpha" fps="30" quad_height="1.562" quad_width="2" looping="false">
+			<begin frame="0"/>
+			<end   frame="6"/>
+		</frameanim>
+	</frameanimstack>
+
+	<!--ANGRY turn-->
+	<frameanimstack name="turn">
+		<musthave>
+			<tag name="angry"/>
+		</musthave>
+		<frameanim directory="spritestrip/dll/turn_angry" flip_horizontal="true" lightmask="use_alpha" fps="30" quad_height="1.562" quad_width="2" looping="false">
+			<begin frame="0"/>
+			<end   frame="6"/>
+		</frameanim>
+	</frameanimstack>
+
+	<!--HAPPY turn-->
+	<frameanimstack name="turn">
+		<musthave>
+			<tag name="happy"/>
+		</musthave>
+		<frameanim directory="spritestrip/dll/turn_happy" flip_horizontal="true" lightmask="use_alpha" fps="30" quad_height="1.562" quad_width="2" looping="false">
+			<begin frame="0"/>
+			<end   frame="6"/>
+		</frameanim>
+	</frameanimstack>
+
+	<!--scared turn-->
+	<frameanimstack name="turn">
+		<musthave>
+			<tag name="scared"/>
+		</musthave>
+		<frameanim directory="spritestrip/dll/turn_sad" flip_horizontal="true" lightmask="use_alpha" fps="30" quad_height="1.562" quad_width="2" looping="false">
+			<begin frame="0"/>
+			<end   frame="6"/>
+		</frameanim>
+	</frameanimstack>
+
+
+	<!--dazed-->
+	<frameanimstack name="dazed" type="sequence">
+		<frameanim directory="spritestrip/dll/plug_move" fps="30" quad_height="1" quad_width="0.468" direction="backward">
+			<begin frame="0"/>
+			<end   frame="6"/>
+			<translation y="-1.1"/>
+		</frameanim>
+		<frameanim directory="spritestrip/dll/plug_idle" fps="20" quad_height="1" quad_width="0.312" direction="pingpong" looping="true">
+			<begin frame="0"/>
+			<end   frame="6"/>
+			<translation y="-1.1" x="0.15"/>
+		</frameanim>
+	</frameanimstack>
+
+	<frameanimstack name="dazed">
+		<frameanim directory="spritestrip/dll/idle" fps="20" quad_height="1.62" quad_width="2" looping="true">
+			<begin frame="0"/>
+			<end   frame="19"/>
+		</frameanim>
+	</frameanimstack>
+
+	<anim2dstack  name="dazed">
+		<rotation duration="1" direction="pingpong" timing="easeends" looping="true">
+			<begin rotation="-5"/>
+			<end rotation="15"/>
+		</rotation>
+	</anim2dstack>
+
+	<particles name="dazed" file="particles/dazed.trigger" position_type="follow">
+		<translation x="0" y="0.6" z="0"/>
+	<scale scale="0.77"/>
+	</particles>
+
+	<!--WORKING booster IDLE-->
+	<particles name="idle" file="particles/dll_booster_happy.trigger" position_type="follow">
+		<musthave>
+			<tag name="working"/>
+		</musthave>
+		<scale scale="0.65"/>
+		<translation x="-0.65" y="-0.175"/>
+	</particles>
+
+	<!--NEUTRAL booster IDLE-->
+	<particles name="idle" file="particles/dll_booster_normal.trigger" position_type="follow">
+		<musthave>
+			<tag name="neutral"/>
+		</musthave>
+		<scale scale="0.65"/>
+		<translation x="-0.65" y="-0.175"/>
+	</particles>
+
+	<!--ANGRY booster IDLE-->
+	<particles name="idle" file="particles/dll_booster_angry.trigger" position_type="follow">
+		<musthave>
+			<tag name="angry"/>
+		</musthave>
+		<scale scale="0.65"/>
+		<translation x="-0.65" y="-0.175"/>
+	</particles>
+
+	<!--HAPPY booster IDLE-->
+	<particles name="idle" file="particles/dll_booster_happy.trigger" position_type="follow">
+		<musthave>
+			<tag name="happy"/>
+		</musthave>
+		<scale scale="0.65"/>
+		<translation x="-0.65" y="-0.175"/>
+	</particles>
+
+	<!--scared booster IDLE-->
+	<particles name="idle" file="particles/dll_booster_sad.trigger" position_type="follow">
+		<musthave>
+			<tag name="scared"/>
+		</musthave>
+		<scale scale="0.65"/>
+		<translation x="-0.65" y="-0.175"/>
+	</particles>
+	
+	<!--corpse-->
+	<particles duration="0.2" name="corpse" file="particles/enemy_explosion_base.trigger" position_type="relative">
+		<translation x="0" y="0" z="0"/>
+	<scale scale="0.45"/>
+	</particles>
+	
+	<particles name="corpse" file="particles/enemy_explosion_dll.trigger" position_type="relative">
+		<translation x="0" y="0" z="0"/>
+		<scale scale="0.77"/>
+	</particles>
+
+	<trigger name="corpse" type="audio" data="gruntenemy_corpse"/>
+
+	<!--ENABLE_DOOR-->
+	<particles name="idle" file="particles/dll_enableing.trigger" position_type="follow">
+		<musthave>
+			<tag name="enable_door"/>
+		</musthave>
+		<translation x="0" y="0.6" z="0"/>
+		<scale scale="0.77"/>
+	</particles>
+</presentation>

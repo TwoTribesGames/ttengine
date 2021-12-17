@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://www.twotribes.com/schemas/trayconfig.xsd"
+	elementFormDefault="qualified"
+	xmlns="http://www.twotribes.com/schemas/trayconfig.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="trayconfig">
+		<xs:complexType>
+			<xs:annotation><xs:documentation>Configuration for TTtray, specifying a list of commands that can be executed.</xs:documentation></xs:annotation>
+			<xs:sequence>
+				<xs:choice maxOccurs="unbounded" minOccurs="1">
+					<xs:element name="separator">
+						<xs:annotation><xs:documentation>Adds a separator line between commands.</xs:documentation></xs:annotation>
+						<xs:complexType></xs:complexType>
+					</xs:element>
+
+					<xs:element name="command">
+						<xs:annotation><xs:documentation>Specifies a command to execute.</xs:documentation></xs:annotation>
+						<xs:complexType>
+							<xs:all>
+								<xs:element name="target">
+									<xs:annotation><xs:documentation>Specifies what to launch (can be a file, executable, URL, etc).</xs:documentation></xs:annotation>
+									<xs:simpleType>
+										<xs:restriction base="xs:string"/>
+									</xs:simpleType>
+								</xs:element>
+
+								<xs:element name="arguments" minOccurs="0">
+									<xs:annotation><xs:documentation>Optional: Specifies the command line arguments to pass to the target.</xs:documentation></xs:annotation>
+									<xs:simpleType>
+										<xs:restriction base="xs:string"/>
+									</xs:simpleType>
+								</xs:element>
+
+								<xs:element name="working_dir" minOccurs="0">
+									<xs:annotation><xs:documentation>Optional: Specifies the working directory for the target.</xs:documentation></xs:annotation>
+									<xs:simpleType>
+										<xs:restriction base="xs:string"/>
+									</xs:simpleType>
+								</xs:element>
+							</xs:all>
+
+							<xs:attribute name="name" type="xs:string" use="required">
+								<xs:annotation><xs:documentation>Display name for the command.</xs:documentation></xs:annotation>
+							</xs:attribute>
+						</xs:complexType>
+					</xs:element>
+				</xs:choice>
+			</xs:sequence>
+		
+			<xs:attribute name="name" type="xs:string" use="required">
+				<xs:annotation><xs:documentation>Display name for the tray configuration.</xs:documentation></xs:annotation>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

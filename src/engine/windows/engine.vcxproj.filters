@@ -1,0 +1,1052 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Shared">
+      <UniqueIdentifier>{6253e90a-530c-4c9a-9f8f-643a5486e0a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\animation">
+      <UniqueIdentifier>{e648f938-902d-49f9-9b5f-e23a25f7ec79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\animation\Controllers">
+      <UniqueIdentifier>{c0c3c5fe-d605-4150-b045-3519c3f74d5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\file">
+      <UniqueIdentifier>{9e8db0fa-8fa4-43af-bb63-19beaac1c5a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\effect">
+      <UniqueIdentifier>{c72bbff4-07a5-4edc-8af1-aa65defde445}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\effect\SPARK wrappers">
+      <UniqueIdentifier>{d1014876-c2fb-49db-8fb8-40ca547467b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\scene">
+      <UniqueIdentifier>{4777da59-e7aa-402b-9d17-f544045a9d71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\scene\bones">
+      <UniqueIdentifier>{13ebd612-8ae1-4497-a977-5e31a6312e03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\physics">
+      <UniqueIdentifier>{110674ed-7f77-4d5f-bbdf-571203cabe23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\physics\Collision">
+      <UniqueIdentifier>{17411599-972d-4d55-8868-eb39eaf8a918}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\renderer">
+      <UniqueIdentifier>{605d3a44-34fe-4383-9ca6-88a70351a2cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\renderer\shapes">
+      <UniqueIdentifier>{543b0c09-fa9f-4116-838e-947b2455e4f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\particles">
+      <UniqueIdentifier>{f8c03b12-66ef-4936-b2bf-d870697b69c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\glyph">
+      <UniqueIdentifier>{7cb59552-d223-4b34-a21d-4ee4aa224f35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\cache">
+      <UniqueIdentifier>{86143281-02fe-4384-bc39-b47c2d53a4c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\anim2d">
+      <UniqueIdentifier>{567e290b-a3b0-4962-86af-585f8ce569f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows">
+      <UniqueIdentifier>{7d52d044-1c03-4fe6-8a02-a889c5762d2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows\renderer">
+      <UniqueIdentifier>{f94e116d-05f9-49d5-8608-c419f6c5362c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows\renderer\DXUT">
+      <UniqueIdentifier>{198f3088-de5e-4120-bb17-2a46b0811939}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows\effect">
+      <UniqueIdentifier>{f7cc0566-d335-41d7-afe7-d03f980e1039}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pch">
+      <UniqueIdentifier>{3aa2e80f-5a24-4721-abc0-54d52115845c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\scene2d">
+      <UniqueIdentifier>{0301b19c-3917-4c94-895f-3ca6bd57e73f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\scene2d\shoebox">
+      <UniqueIdentifier>{6e3a0250-8cd9-4246-953c-f20283497678}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\debug">
+      <UniqueIdentifier>{99131e47-ee5a-4417-b533-eb6481167ee1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\renderer\post-processing">
+      <UniqueIdentifier>{ea28b9b1-70ec-4030-92fe-09d305e50a34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows\debug">
+      <UniqueIdentifier>{e122dc75-74b4-4d31-977b-6d3621129c58}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\shared\src\tt\engine\EngineID.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\animation\Animation.cpp">
+      <Filter>Shared\animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\animation\AnimationControl.cpp">
+      <Filter>Shared\animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\animation\HermiteFloatController.cpp">
+      <Filter>Shared\animation\Controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\animation\StepFloatController.cpp">
+      <Filter>Shared\animation\Controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\animation\TexMatrixController.cpp">
+      <Filter>Shared\animation\Controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\animation\TransformController.cpp">
+      <Filter>Shared\animation\Controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\file\FileUtils.cpp">
+      <Filter>Shared\file</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\effect\Effect.cpp">
+      <Filter>Shared\effect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\effect\EffectCollection.cpp">
+      <Filter>Shared\effect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\effect\EffectManager.cpp">
+      <Filter>Shared\effect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\scene\Camera.cpp">
+      <Filter>Shared\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\scene\CameraTarget.cpp">
+      <Filter>Shared\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\scene\Dummy.cpp">
+      <Filter>Shared\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\scene\EventObject.cpp">
+      <Filter>Shared\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\scene\Fog.cpp">
+      <Filter>Shared\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\scene\Frustum.cpp">
+      <Filter>Shared\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\scene\Instance.cpp">
+      <Filter>Shared\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\scene\Light.cpp">
+      <Filter>Shared\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\scene\LightTarget.cpp">
+      <Filter>Shared\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\scene\Model.cpp">
+      <Filter>Shared\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\scene\Scene.cpp">
+      <Filter>Shared\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\scene\SceneObject.cpp">
+      <Filter>Shared\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\scene\ShadowModel.cpp">
+      <Filter>Shared\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\scene\UserProperty.cpp">
+      <Filter>Shared\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\scene\Bone.cpp">
+      <Filter>Shared\scene\bones</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\physics\AABoundingBox.cpp">
+      <Filter>Shared\physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\physics\BoundingBox.cpp">
+      <Filter>Shared\physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\physics\BoundingSphere.cpp">
+      <Filter>Shared\physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\physics\CollisionAASquare.cpp">
+      <Filter>Shared\physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\physics\Spring.cpp">
+      <Filter>Shared\physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\physics\CollisionData.cpp">
+      <Filter>Shared\physics\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\physics\CollisionFace.cpp">
+      <Filter>Shared\physics\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\physics\CollisionModel.cpp">
+      <Filter>Shared\physics\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\renderer\ArcQuad.cpp">
+      <Filter>Shared\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\renderer\ColorRGB.cpp">
+      <Filter>Shared\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\renderer\LightManager.cpp">
+      <Filter>Shared\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\renderer\MultiTexture.cpp">
+      <Filter>Shared\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\renderer\QuadSprite.cpp">
+      <Filter>Shared\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\renderer\TextureHardware.cpp">
+      <Filter>Shared\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\renderer\TextureStageData.cpp">
+      <Filter>Shared\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\renderer\VertexBuffer.cpp">
+      <Filter>Shared\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\renderer\Line.cpp">
+      <Filter>Shared\renderer\shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\renderer\Plane.cpp">
+      <Filter>Shared\renderer\shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\renderer\Sphere.cpp">
+      <Filter>Shared\renderer\shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\particles\ParticleEmitter.cpp">
+      <Filter>Shared\particles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\particles\ParticleTrigger.cpp">
+      <Filter>Shared\particles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\scene2d\BinaryPlanePartition.cpp">
+      <Filter>Shared\scene2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\scene2d\PlaneScene.cpp">
+      <Filter>Shared\scene2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\scene2d\Scene2D.cpp">
+      <Filter>Shared\scene2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\scene2d\VirtualScene.cpp">
+      <Filter>Shared\scene2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\scene2d\WorldScene.cpp">
+      <Filter>Shared\scene2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\scene2d\shoebox\shoebox.cpp">
+      <Filter>Shared\scene2d\shoebox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\scene2d\shoebox\shoebox_types.cpp">
+      <Filter>Shared\scene2d\shoebox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\scene2d\shoebox\ShoeboxPlane.cpp">
+      <Filter>Shared\scene2d\shoebox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\scene2d\shoebox\Taggable.cpp">
+      <Filter>Shared\scene2d\shoebox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\scene2d\shoebox\TagMgr.cpp">
+      <Filter>Shared\scene2d\shoebox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\glyph\CustomGlyph.cpp">
+      <Filter>Shared\glyph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\glyph\Glyph.cpp">
+      <Filter>Shared\glyph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\glyph\GlyphAlpha4.cpp">
+      <Filter>Shared\glyph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\glyph\GlyphAlpha8.cpp">
+      <Filter>Shared\glyph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\glyph\GlyphSet.cpp">
+      <Filter>Shared\glyph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\cache\FileTextureCache.cpp">
+      <Filter>Shared\cache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\cache\ResourceLog.cpp">
+      <Filter>Shared\cache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\anim2d\Animation2D.cpp">
+      <Filter>Shared\anim2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\anim2d\AnimationFactory2D.cpp">
+      <Filter>Shared\anim2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\anim2d\AnimationStack2D.cpp">
+      <Filter>Shared\anim2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\anim2d\ColorAnimation2D.cpp">
+      <Filter>Shared\anim2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\anim2d\ColorAnimationStack2D.cpp">
+      <Filter>Shared\anim2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\anim2d\ParticleAnimation2D.cpp">
+      <Filter>Shared\anim2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\anim2d\PositionAnimation2D.cpp">
+      <Filter>Shared\anim2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\anim2d\RotationAnimation2D.cpp">
+      <Filter>Shared\anim2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\anim2d\ScaleAnimation2D.cpp">
+      <Filter>Shared\anim2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\anim2d\TranslationAnimation2D.cpp">
+      <Filter>Shared\anim2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\anim2d\TweenTypes.cpp">
+      <Filter>Shared\anim2d</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\engine\renderer\D3DResourceRegistry.cpp">
+      <Filter>Windows\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\engine\renderer\directx.cpp">
+      <Filter>Windows\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\engine\renderer\Quad2D.cpp">
+      <Filter>Windows\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\engine\renderer\QuadBuffer.cpp">
+      <Filter>Windows\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\engine\renderer\SubModel.cpp">
+      <Filter>Windows\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\engine\renderer\Texture.cpp">
+      <Filter>Windows\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\engine\renderer\TriangleBuffer.cpp">
+      <Filter>Windows\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\engine\renderer\TrianglestripBuffer.cpp">
+      <Filter>Windows\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\engine\renderer\DXUT\DXUT.cpp">
+      <Filter>Windows\renderer\DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\engine\renderer\DXUT\DXUTcamera.cpp">
+      <Filter>Windows\renderer\DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\engine\renderer\DXUT\DXUTenum.cpp">
+      <Filter>Windows\renderer\DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\engine\renderer\DXUT\DXUTgui.cpp">
+      <Filter>Windows\renderer\DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\engine\renderer\DXUT\DXUTmisc.cpp">
+      <Filter>Windows\renderer\DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\engine\renderer\DXUT\DXUTres.cpp">
+      <Filter>Windows\renderer\DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\engine\renderer\DXUT\DXUTsettingsdlg.cpp">
+      <Filter>Windows\renderer\DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\engine\effect\SparkRenderer.cpp">
+      <Filter>Windows\effect</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\pch\pch.cpp">
+      <Filter>pch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\renderer\enums.cpp">
+      <Filter>Shared\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\renderer\ShadowVolumeManager.cpp">
+      <Filter>Shared\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\scene\LightType.cpp">
+      <Filter>Shared\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\engine\renderer\Renderer.cpp">
+      <Filter>Windows\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\renderer\TextureBase.cpp">
+      <Filter>Shared\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\debug\DebugFont.cpp">
+      <Filter>Shared\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\scene\SceneBlurMgr.cpp">
+      <Filter>Shared\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\scene2d\shoebox\PlaneFollower.cpp">
+      <Filter>Shared\scene2d\shoebox</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\engine\renderer\Shader.cpp">
+      <Filter>Windows\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\renderer\pp\PostProcessor.cpp">
+      <Filter>Shared\renderer\post-processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\renderer\pp\Filter.cpp">
+      <Filter>Shared\renderer\post-processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\renderer\pp\Effect_pp.cpp">
+      <Filter>Shared\renderer\post-processing</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\engine\renderer\gpu_capabilities.cpp">
+      <Filter>Windows\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\engine\renderer\RenderTarget.cpp">
+      <Filter>Windows\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\engine\renderer\FullscreenTriangle.cpp">
+      <Filter>Windows\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\debug\DebugRenderer.cpp">
+      <Filter>Shared\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\engine\debug\screen_capture.cpp">
+      <Filter>Windows\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\renderer\MatrixStack.cpp">
+      <Filter>Shared\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\debug\DebugStats.cpp">
+      <Filter>Shared\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\renderer\UpScaler.cpp">
+      <Filter>Shared\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\engine\renderer\device_enumerations.cpp">
+      <Filter>Windows\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\renderer\RenderTargetStack.cpp">
+      <Filter>Shared\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\renderer\TexturePainter.cpp">
+      <Filter>Shared\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\renderer\ViewPort.cpp">
+      <Filter>Shared\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tt\engine\renderer\FixedFunctionHardware.cpp">
+      <Filter>Windows\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\renderer\FixedFunction.cpp">
+      <Filter>Shared\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\renderer\Material.cpp">
+      <Filter>Shared\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\particles\ParticleEffect.cpp">
+      <Filter>Shared\particles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\tt\engine\particles\ParticleMgr.cpp">
+      <Filter>Shared\particles</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\shared\inc\tt\engine\EngineID.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\fwd.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\animation\Animation.h">
+      <Filter>Shared\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\animation\AnimationControl.h">
+      <Filter>Shared\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\animation\enums.h">
+      <Filter>Shared\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\animation\fwd.h">
+      <Filter>Shared\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\animation\Controller.h">
+      <Filter>Shared\animation\Controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\animation\HermiteFloatController.h">
+      <Filter>Shared\animation\Controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\animation\StepFloatController.h">
+      <Filter>Shared\animation\Controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\animation\TexMatrixController.h">
+      <Filter>Shared\animation\Controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\animation\TransformController.h">
+      <Filter>Shared\animation\Controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\file\FileType.h">
+      <Filter>Shared\file</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\file\FileUtils.h">
+      <Filter>Shared\file</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\file\ResourceHeader.h">
+      <Filter>Shared\file</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\effect\Effect.h">
+      <Filter>Shared\effect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\effect\EffectCollection.h">
+      <Filter>Shared\effect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\effect\EffectManager.h">
+      <Filter>Shared\effect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\AABoxWrapper.h">
+      <Filter>Shared\effect\SPARK wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\CollisionWrapper.h">
+      <Filter>Shared\effect\SPARK wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\DestroyerWrapper.h">
+      <Filter>Shared\effect\SPARK wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\EmitterWrapper.h">
+      <Filter>Shared\effect\SPARK wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\GroupWrapper.h">
+      <Filter>Shared\effect\SPARK wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\LinearForceWrapper.h">
+      <Filter>Shared\effect\SPARK wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\LineWrapper.h">
+      <Filter>Shared\effect\SPARK wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\ModelWrapper.h">
+      <Filter>Shared\effect\SPARK wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\ModifierGroupWrapper.h">
+      <Filter>Shared\effect\SPARK wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\ModifierWrapper.h">
+      <Filter>Shared\effect\SPARK wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\NormalEmitterWrapper.h">
+      <Filter>Shared\effect\SPARK wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\ObstacleWrapper.h">
+      <Filter>Shared\effect\SPARK wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\PlaneWrapper.h">
+      <Filter>Shared\effect\SPARK wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\PointMassWrapper.h">
+      <Filter>Shared\effect\SPARK wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\PointWrapper.h">
+      <Filter>Shared\effect\SPARK wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\RandomEmitterWrapper.h">
+      <Filter>Shared\effect\SPARK wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\RendererWrapper.h">
+      <Filter>Shared\effect\SPARK wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\RingWrapper.h">
+      <Filter>Shared\effect\SPARK wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\RotatorWrapper.h">
+      <Filter>Shared\effect\SPARK wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\SphereWrapper.h">
+      <Filter>Shared\effect\SPARK wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\SphericEmitterWrapper.h">
+      <Filter>Shared\effect\SPARK wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\StaticEmitterWrapper.h">
+      <Filter>Shared\effect\SPARK wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\StraightEmitterWrapper.h">
+      <Filter>Shared\effect\SPARK wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\SystemWrapper.h">
+      <Filter>Shared\effect\SPARK wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\VortexWrapper.h">
+      <Filter>Shared\effect\SPARK wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\ZoneIntersectionWrapper.h">
+      <Filter>Shared\effect\SPARK wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\ZoneUnionWrapper.h">
+      <Filter>Shared\effect\SPARK wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\ZoneWrapper.h">
+      <Filter>Shared\effect\SPARK wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\scene\Camera.h">
+      <Filter>Shared\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\scene\CameraTarget.h">
+      <Filter>Shared\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\scene\Dummy.h">
+      <Filter>Shared\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\scene\EventObject.h">
+      <Filter>Shared\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\scene\Fog.h">
+      <Filter>Shared\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\scene\Frustum.h">
+      <Filter>Shared\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\scene\fwd.h">
+      <Filter>Shared\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\scene\Instance.h">
+      <Filter>Shared\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\scene\Light.h">
+      <Filter>Shared\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\scene\LightTarget.h">
+      <Filter>Shared\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\scene\Model.h">
+      <Filter>Shared\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\scene\Scene.h">
+      <Filter>Shared\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\scene\SceneObject.h">
+      <Filter>Shared\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\scene\ShadowModel.h">
+      <Filter>Shared\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\scene\Spline.h">
+      <Filter>Shared\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\scene\UserProperty.h">
+      <Filter>Shared\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\scene\Bone.h">
+      <Filter>Shared\scene\bones</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\scene\BoneModel.h">
+      <Filter>Shared\scene\bones</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\scene\BoneWeight.h">
+      <Filter>Shared\scene\bones</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\physics\AABoundingBox.h">
+      <Filter>Shared\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\physics\BoundingBox.h">
+      <Filter>Shared\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\physics\BoundingSphere.h">
+      <Filter>Shared\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\physics\CollisionAASquare.h">
+      <Filter>Shared\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\physics\fwd.h">
+      <Filter>Shared\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\physics\Ray.h">
+      <Filter>Shared\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\physics\Spring.h">
+      <Filter>Shared\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\physics\Collision.h">
+      <Filter>Shared\physics\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\physics\CollisionData.h">
+      <Filter>Shared\physics\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\physics\CollisionFace.h">
+      <Filter>Shared\physics\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\physics\CollisionModel.h">
+      <Filter>Shared\physics\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\ArcQuad.h">
+      <Filter>Shared\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\BatchTriangleUV.h">
+      <Filter>Shared\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\BufferVtx.h">
+      <Filter>Shared\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\ColorRGB.h">
+      <Filter>Shared\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\ColorRGBA.h">
+      <Filter>Shared\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\enums.h">
+      <Filter>Shared\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\fwd.h">
+      <Filter>Shared\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\IndexBuffer.h">
+      <Filter>Shared\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\LightManager.h">
+      <Filter>Shared\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\MultiTexture.h">
+      <Filter>Shared\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\PrimitiveCollectionBuffer.h">
+      <Filter>Shared\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\QuadSprite.h">
+      <Filter>Shared\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\RenderContext.h">
+      <Filter>Shared\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\ShadowSource.h">
+      <Filter>Shared\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\TextureHardware.h">
+      <Filter>Shared\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\TextureStageData.h">
+      <Filter>Shared\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\VertexBuffer.h">
+      <Filter>Shared\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\ViewPort.h">
+      <Filter>Shared\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\Face.h">
+      <Filter>Shared\renderer\shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\Line.h">
+      <Filter>Shared\renderer\shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\Plane.h">
+      <Filter>Shared\renderer\shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\Sphere.h">
+      <Filter>Shared\renderer\shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\particles\fwd.h">
+      <Filter>Shared\particles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\particles\Particle.h">
+      <Filter>Shared\particles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\particles\ParticleEmitter.h">
+      <Filter>Shared\particles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\particles\ParticleTrigger.h">
+      <Filter>Shared\particles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\particles\WorldObject.h">
+      <Filter>Shared\particles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\scene2d\BinaryPlanePartition.h">
+      <Filter>Shared\scene2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\scene2d\fwd.h">
+      <Filter>Shared\scene2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\scene2d\PlaneScene.h">
+      <Filter>Shared\scene2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\scene2d\Scene2D.h">
+      <Filter>Shared\scene2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\scene2d\SceneInterface.h">
+      <Filter>Shared\scene2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\scene2d\VirtualScene.h">
+      <Filter>Shared\scene2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\scene2d\WorldScene.h">
+      <Filter>Shared\scene2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\scene2d\shoebox\fwd.h">
+      <Filter>Shared\scene2d\shoebox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\scene2d\shoebox\shoebox.h">
+      <Filter>Shared\scene2d\shoebox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\scene2d\shoebox\shoebox_types.h">
+      <Filter>Shared\scene2d\shoebox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\scene2d\shoebox\ShoeboxPlane.h">
+      <Filter>Shared\scene2d\shoebox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\scene2d\shoebox\Taggable.h">
+      <Filter>Shared\scene2d\shoebox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\scene2d\shoebox\TagMgr.h">
+      <Filter>Shared\scene2d\shoebox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\glyph\CustomGlyph.h">
+      <Filter>Shared\glyph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\glyph\fwd.h">
+      <Filter>Shared\glyph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\glyph\Glyph.h">
+      <Filter>Shared\glyph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\glyph\GlyphAlpha4.h">
+      <Filter>Shared\glyph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\glyph\GlyphAlpha8.h">
+      <Filter>Shared\glyph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\glyph\GlyphSet.h">
+      <Filter>Shared\glyph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\cache\FileTextureCache.h">
+      <Filter>Shared\cache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\cache\ResourceCache.h">
+      <Filter>Shared\cache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\cache\ResourceLog.h">
+      <Filter>Shared\cache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\anim2d\Animation2D.h">
+      <Filter>Shared\anim2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\anim2d\AnimationFactory2D.h">
+      <Filter>Shared\anim2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\anim2d\AnimationStack2D.h">
+      <Filter>Shared\anim2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\anim2d\ColorAnimation2D.h">
+      <Filter>Shared\anim2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\anim2d\ColorAnimationStack2D.h">
+      <Filter>Shared\anim2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\anim2d\fwd.h">
+      <Filter>Shared\anim2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\anim2d\ParticleAnimation2D.h">
+      <Filter>Shared\anim2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\anim2d\PositionAnimation2D.h">
+      <Filter>Shared\anim2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\anim2d\RotationAnimation2D.h">
+      <Filter>Shared\anim2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\anim2d\ScaleAnimation2D.h">
+      <Filter>Shared\anim2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\anim2d\StackBase.h">
+      <Filter>Shared\anim2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\anim2d\TranslationAnimation2D.h">
+      <Filter>Shared\anim2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\anim2d\TweenTypes.h">
+      <Filter>Shared\anim2d</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\engine\renderer\BufferVtx.h">
+      <Filter>Windows\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\engine\renderer\D3DResource.h">
+      <Filter>Windows\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\engine\renderer\D3DResourceRegistry.h">
+      <Filter>Windows\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\engine\renderer\directx.h">
+      <Filter>Windows\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\engine\renderer\Quad2D.h">
+      <Filter>Windows\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\engine\renderer\QuadBuffer.h">
+      <Filter>Windows\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\engine\renderer\SubModel.h">
+      <Filter>Windows\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\engine\renderer\Texture.h">
+      <Filter>Windows\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\engine\renderer\TriangleBuffer.h">
+      <Filter>Windows\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\engine\renderer\TrianglestripBuffer.h">
+      <Filter>Windows\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\engine\renderer\DXUT\DXUT.h">
+      <Filter>Windows\renderer\DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\engine\renderer\DXUT\DXUTcamera.h">
+      <Filter>Windows\renderer\DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\engine\renderer\DXUT\DXUTenum.h">
+      <Filter>Windows\renderer\DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\engine\renderer\DXUT\DXUTgui.h">
+      <Filter>Windows\renderer\DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\engine\renderer\DXUT\DXUTmisc.h">
+      <Filter>Windows\renderer\DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\engine\renderer\DXUT\DXUTres.h">
+      <Filter>Windows\renderer\DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\engine\renderer\DXUT\DXUTsettingsdlg.h">
+      <Filter>Windows\renderer\DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\engine\effect\SparkRenderer.h">
+      <Filter>Windows\effect</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\pch\pch.h">
+      <Filter>pch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\BufferVtx_util.h">
+      <Filter>Shared\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\ScreenSettings.h">
+      <Filter>Shared\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\ShadowVolumeManager.h">
+      <Filter>Shared\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\scene\LightType.h">
+      <Filter>Shared\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\engine\renderer\Renderer.h">
+      <Filter>Windows\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\file\TextureHeader.h">
+      <Filter>Shared\file</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\TextureBase.h">
+      <Filter>Shared\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\debug\DebugFont.h">
+      <Filter>Shared\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\debug\font_data.h">
+      <Filter>Shared\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\scene\SceneBlurMgr.h">
+      <Filter>Shared\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\scene2d\shoebox\PlaneFollower.h">
+      <Filter>Shared\scene2d\shoebox</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\engine\renderer\Shader.h">
+      <Filter>Windows\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\pp\PostProcessor.h">
+      <Filter>Shared\renderer\post-processing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\gpu_capabilities.h">
+      <Filter>Shared\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\pp\fwd.h">
+      <Filter>Shared\renderer\post-processing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\pp\Filter.h">
+      <Filter>Shared\renderer\post-processing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\pp\Effect.h">
+      <Filter>Shared\renderer\post-processing</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\engine\renderer\RenderTarget.h">
+      <Filter>Windows\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\engine\renderer\FullscreenTriangle.h">
+      <Filter>Windows\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\debug\DebugRenderer.h">
+      <Filter>Shared\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\debug\screen_capture.h">
+      <Filter>Shared\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\engine\debug\screen_capture.h">
+      <Filter>Windows\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\MatrixStack.h">
+      <Filter>Shared\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\debug\DebugStats.h">
+      <Filter>Shared\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\UpScaler.h">
+      <Filter>Shared\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tt\engine\renderer\device_enumeration.h">
+      <Filter>Windows\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\RenderTargetStack.h">
+      <Filter>Shared\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\TexturePainter.h">
+      <Filter>Shared\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\MaterialProperties.h">
+      <Filter>Shared\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\LightProperties.h">
+      <Filter>Shared\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\LineRendererWrapper.h">
+      <Filter>Shared\effect\SPARK wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\LineTrailRendererWrapper.h">
+      <Filter>Shared\effect\SPARK wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\QuadRendererWrapper.h">
+      <Filter>Shared\effect\SPARK wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\effect\wrapper\PointRendererWrapper.h">
+      <Filter>Shared\effect\SPARK wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\FixedFunctionHardware.h">
+      <Filter>Shared\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\FixedFunction.h">
+      <Filter>Shared\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\renderer\Material.h">
+      <Filter>Shared\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\particles\ParticleEffect.h">
+      <Filter>Shared\particles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\particles\ParticleMgr.h">
+      <Filter>Shared\particles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\tt\engine\cache\ResourcePersistentCache.h">
+      <Filter>Shared\cache</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\shared\inc\tt\engine\cache\ResourceCache.inl">
+      <Filter>Shared\cache</Filter>
+    </None>
+    <None Include="..\shared\inc\tt\engine\anim2d\StackBase.inl">
+      <Filter>Shared\anim2d</Filter>
+    </None>
+    <None Include="..\shared\inc\tt\engine\renderer\PrimitiveCollectionBuffer.inl">
+      <Filter>Shared\renderer</Filter>
+    </None>
+    <None Include="..\shared\inc\tt\engine\cache\ResourcePersistentCache.inl">
+      <Filter>Shared\cache</Filter>
+    </None>
+  </ItemGroup>
+</Project>

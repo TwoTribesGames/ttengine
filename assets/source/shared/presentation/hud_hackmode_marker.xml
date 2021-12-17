@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		permanent="true">
+
+	<!--SMALL MARKER-->
+	<startvalues>
+		<mustnothave>
+			<tag name="BumperEnemy"/>
+		</mustnothave>
+		<mustnothave>
+			<tag name="Train"/>
+		</mustnothave>
+		<scale scale="2"/>
+	</startvalues>
+
+	<startvalues>
+		<musthave>
+			<tag name="Train"/>
+		</musthave>
+		<scale scale="1.5"/>
+	</startvalues>
+
+	<startvalues>
+		<musthave>
+			<tag name="HealthBot"/>
+		</musthave>
+		<scale scale="1.15"/>
+	</startvalues>
+
+	<startvalues>
+		<musthave>
+			<tag name="VirusUploadTrigger"/>
+		</musthave>
+		<scale scale="1.2"/>
+	</startvalues>
+
+	<startvalues>
+		<musthave>
+			<tag name="KamikazeEnemy"/>
+		</musthave>
+		<translation x="-0.05" y="0.0"/>
+	</startvalues>
+
+	<!--TURRET OFFSETS-->
+	<!--left-->
+	<startvalues>
+		<musthave>
+			<tag name="Turret"/>
+			<tag name="left"/>
+		</musthave>
+		<translation x="0.5" y="0"/>
+	</startvalues>
+
+	<!--right-->
+	<startvalues>
+		<musthave>
+			<tag name="Turret"/>
+			<tag name="right"/>
+		</musthave>
+		<translation x="-0.5" y="0"/>
+	</startvalues>
+
+	<!--up-->
+	<startvalues>
+		<musthave>
+			<tag name="Turret"/>
+			<tag name="up"/>
+		</musthave>
+		<translation x="0.0" y="-0.5"/>
+	</startvalues>
+
+	<!--down-->
+	<startvalues>
+		<musthave>
+			<tag name="Turret"/>
+			<tag name="down"/>
+		</musthave>
+		<translation x="0.0" y="0.5"/>
+	</startvalues>
+
+	<!--none-->
+	<startvalues>
+		<musthave>
+			<tag name="Turret"/>
+		</musthave>
+		<mustnothave>
+			<tag name="down"/>
+		</mustnothave>
+		<mustnothave>
+			<tag name="up"/>
+		</mustnothave>
+		<mustnothave>
+			<tag name="left"/>
+		</mustnothave>
+		<mustnothave>
+			<tag name="right"/>
+		</mustnothave>
+		<translation x="0.0" y="0.3"/>
+	</startvalues>
+
+
+	<!--This is the marker during normal mode-->
+	<frameanimstack type="sequence" name="normal_hud">
+		<mustnothave>
+			<tag name="BumperEnemy"/>
+		</mustnothave>
+		<frameanim lightmask="use_alpha" directory="spritestrip/hud/hackmode/marker" fps="40" quad_width="2.5" quad_height="2.5" direction="backward" ignore_fog="true">
+			<begin frame="0" hold="true"/>
+			<end   frame="7" hold="true"/>
+			<translation x="0.2" y="-0.005"/>
+		</frameanim>
+		<frameanim lightmask="use_alpha" directory="spritestrip/hud/hackmode/marker" fps="40" quad_width="2.5" quad_height="2.5" ignore_fog="true" looping="true">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+			<translation x="0.2" y="-0.005"/>
+		</frameanim>
+	</frameanimstack>
+
+	<anim2dstack name="normal_hud">
+		<mustnothave>
+			<tag name="BumperEnemy"/>
+		</mustnothave>
+		<mustnothave>
+			<tag name="uploading"/>
+		</mustnothave>
+		<rotation duration="0.2" timing="linear">
+			<begin rotation="0"/>
+			<end   rotation="-45"/>
+		</rotation>
+	</anim2dstack>
+
+	<anim2dstack name="normal_hud">
+		<mustnothave>
+			<tag name="uploading"/>
+		</mustnothave>
+		<rotation duration="0.2" timing="linear">
+			<begin rotation="0"/>
+			<end   rotation="-45"/>
+		</rotation>
+	</anim2dstack>
+
+	<coloranimstack name="normal_hud">
+		<mustnothave>
+			<tag name="uploading"/>
+		</mustnothave>
+		<color duration="0.2">
+			<begin r="0" g="0" b="0" a="-255"/>
+			<end   r="0" g="0" b="0" a="0"/>
+		</color>
+	</coloranimstack>
+
+	<anim2dstack name="normal_hud">
+		<mustnothave>
+			<tag name="uploading"/>
+		</mustnothave>
+		<rotation duration="2" looping="true" timing="linear">
+			<begin rotation="0"/>
+			<end   rotation="360"/>
+		</rotation>
+		<scale duration="0.75" preset="oscillating">
+			<begin scale="1.0"/>
+			<end scale="1.15"/>
+		</scale>
+	</anim2dstack>
+
+	<!--This is the marker during hacking mode-->
+	<!--Marker PRE uploading-->
+	<frameanimstack type="sequence" name="hack_hud">
+		<mustnothave>
+			<tag name="BumperEnemy"/>
+		</mustnothave>
+		<mustnothave>
+			<tag name="uploading"/>
+		</mustnothave>
+		<frameanim lightmask="use_alpha" directory="spritestrip/hud/hackmode/marker" fps="40" quad_width="2.5" quad_height="2.5" ignore_fog="true">
+			<begin frame="0" hold="true"/>
+			<end   frame="7" hold="true"/>
+			<translation x="0.2" y="-0.0"/>
+		</frameanim>
+		<frameanim lightmask="use_alpha" directory="spritestrip/hud/hackmode/marker" fps="40" quad_width="2.5" quad_height="2.5" ignore_fog="true" looping="true">
+			<begin frame="7" hold="true"/>
+			<end   frame="7" hold="true"/>
+			<translation x="0.2" y="-0.0"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<!--Marker DURING uploading-->
+	<frameanimstack name="hack_hud">
+		<mustnothave>
+			<tag name="BumperEnemy"/>
+		</mustnothave>
+		<musthave>
+			<tag name="uploading"/>
+		</musthave>
+		<frameanim lightmask="use_alpha" directory="spritestrip/hud/hackmode/marker" fps="40" quad_width="2.5" quad_height="2.5" ignore_fog="true" looping="true">
+			<begin frame="7" hold="true"/>
+			<end   frame="7" hold="true"/>
+			<translation x="0.2" y="-0.0"/>
+		</frameanim>
+	</frameanimstack>
+
+	<anim2dstack name="hack_hud">
+		<mustnothave>
+			<tag name="BumperEnemy"/>
+		</mustnothave>
+		<mustnothave>
+			<tag name="uploading"/>
+		</mustnothave>
+		<rotation duration="0.2" timing="linear">
+			<begin rotation="-45"/>
+			<end   rotation="0"/>
+		</rotation>
+	</anim2dstack>
+
+	<!--HACK PROGRESS SMALL ENTITIES -- Adds a hacking progress bar to the marker-->
+	<frameanimstack name="hack_hud">
+		<mustnothave>
+			<tag name="BumperEnemy"/>
+		</mustnothave>
+		<mustnothave>
+			<tag name="Train"/>
+		</mustnothave>
+		<musthave>
+			<tag name="uploading"/>
+		</musthave>
+		<frameanim lightmask="use_alpha" directory="spritestrip/hud/hackmode/progress" fps="40" delay="0.0" blendmode="blend" quad_width="1.10" quad_height="0.375" direction="forward">
+			<begin frame="0" hold="true"/>
+			<end   frame="5" hold="true"/>
+			<scale scale="1"/>
+			<translation x="1.375" y="0.2"/>
+		</frameanim>
+	</frameanimstack>
+
+	<!--HACK PROGRESS TRAIN -- Adds a hacking progress bar to the marker-->
+	<frameanimstack name="hack_hud">
+		<musthave>
+			<tag name="Train"/>
+			<tag name="uploading"/>
+		</musthave>
+		<frameanim lightmask="use_alpha" directory="spritestrip/hud/hackmode/progress" fps="40" delay="0.0" blendmode="blend" quad_width="1.10" quad_height="0.375" direction="forward">
+			<begin frame="0" hold="true"/>
+			<end   frame="5" hold="true"/>
+			<scale scale="1.4"/>
+			<translation x="1.55" y="0.2"/>
+		</frameanim>
+	</frameanimstack>
+
+	<!--random number - SMALL ENTITIES-->
+	<frameanimstack name="hack_hud">
+		<mustnothave>
+			<tag name="BumperEnemy"/>
+		</mustnothave>
+		<mustnothave>
+			<tag name="Train"/>
+		</mustnothave>
+		<frameanim lightmask="use_alpha" directory="spritestrip/hud/hackmode/random_numbers" fps="10" delay="0" blendmode="blend" quad_width="2.0" quad_height="0.25" looping="true">
+			<begin frame="0" hold="true"/>
+			<end   frame="6" hold="true"/>
+			<scale scale="0.4"/>
+			<translation x="1.26" y="-0.115"/>
+		</frameanim>
+
+		<frameanim lightmask="use_alpha" directory="spritestrip/hud/hackmode/random_numbers" fps="10" delay="0" blendmode="blend" quad_width="2.0" quad_height="0.25" direction="backward" looping="true">
+			<begin frame="0" hold="true"/>
+			<end   frame="6" hold="true"/>
+			<scale scale="0.4"/>
+			<translation x="1.26" y="-0.23"/>
+		</frameanim>
+	</frameanimstack>
+
+	<!--random number - TRAIN-->
+	<frameanimstack name="hack_hud">
+		<musthave>
+			<tag name="Train"/>
+		</musthave>
+		<frameanim lightmask="use_alpha" directory="spritestrip/hud/hackmode/random_numbers" fps="10" delay="0" blendmode="blend" quad_width="2.0" quad_height="0.25" looping="true">
+			<begin frame="0" hold="true"/>
+			<end   frame="6" hold="true"/>
+			<scale scale="0.5"/>
+			<translation x="1.42" y="-0.175"/>
+		</frameanim>
+
+		<frameanim lightmask="use_alpha" directory="spritestrip/hud/hackmode/random_numbers" fps="10" delay="0" blendmode="blend" quad_width="2.0" quad_height="0.25" direction="backward" looping="true">
+			<begin frame="0" hold="true"/>
+			<end   frame="6" hold="true"/>
+			<scale scale="0.5"/>
+			<translation x="1.42" y="-0.41"/>
+		</frameanim>
+	</frameanimstack>
+
+	<!--LARGE MARKER-->
+	<startvalues>
+		<musthave>
+			<tag name="BumperEnemy"/>
+		</musthave>
+		<scale scale="4"/>
+	</startvalues>
+	
+	<!--This is the marker during normal mode-->
+	<frameanimstack type="sequence" name="normal_hud">
+		<musthave>
+			<tag name="BumperEnemy"/>
+		</musthave>
+		<mustnothave>
+			<tag name="uploading"/>
+		</mustnothave>
+		<frameanim lightmask="use_alpha" directory="spritestrip/hud/hackmode/marker_large" fps="40" quad_width="1" quad_height="1" direction="backward" ignore_fog="true">
+			<begin frame="0" hold="true"/>
+			<end   frame="7" hold="true"/>
+			<scale scale="2"/>
+			<translation x="0.125" y="-0.00"/>
+		</frameanim>
+		<frameanim lightmask="use_alpha" directory="spritestrip/hud/hackmode/marker_large" fps="40" quad_width="1" quad_height="1" ignore_fog="true" looping="true">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+			<scale scale="2"/>
+			<translation x="0.125" y="-0.00"/>
+		</frameanim>
+	</frameanimstack>
+
+	<anim2dstack name="normal_hud">
+		<musthave>
+			<tag name="BumperEnemy"/>
+		</musthave>
+		<mustnothave>
+			<tag name="uploading"/>
+		</mustnothave>
+		<rotation duration="0.2" timing="linear">
+			<begin rotation="0"/>
+			<end   rotation="-45"/>
+		</rotation>
+	</anim2dstack>
+
+	<!--This is the marker during hacking mode-->
+	<!--Marker PRE uploading-->
+	<frameanimstack type="sequence" name="hack_hud">
+		<musthave>
+			<tag name="BumperEnemy"/>
+		</musthave>
+		<mustnothave>
+			<tag name="uploading"/>
+		</mustnothave>
+		<frameanim lightmask="use_alpha" directory="spritestrip/hud/hackmode/marker_large" fps="40" quad_width="1" quad_height="1" ignore_fog="true">
+			<begin frame="0" hold="true"/>
+			<end   frame="7" hold="true"/>
+			<scale scale="2"/>
+			<translation x="0.125" y="-0.0"/>
+		</frameanim>
+		<frameanim lightmask="use_alpha" directory="spritestrip/hud/hackmode/marker_large" fps="40" quad_width="1" quad_height="1" ignore_fog="true" looping="true">
+			<begin frame="7" hold="true"/>
+			<end   frame="7" hold="true"/>
+			<scale scale="2"/>
+			<translation x="0.125" y="-0.0"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<!--Marker DURING uploading-->
+	<frameanimstack name="hack_hud">
+		<musthave>
+			<tag name="BumperEnemy"/>
+			<tag name="uploading"/>
+		</musthave>
+		<frameanim lightmask="use_alpha" directory="spritestrip/hud/hackmode/marker_large" fps="40" quad_width="1" quad_height="1" ignore_fog="true" looping="true">
+			<begin frame="7" hold="true"/>
+			<end   frame="7" hold="true"/>
+			<scale scale="2"/>
+			<translation x="0.125" y="-0.0"/>
+		</frameanim>
+	</frameanimstack>
+	
+
+	<anim2dstack name="hack_hud">
+		<musthave>
+			<tag name="BumperEnemy"/>
+		</musthave>
+		<mustnothave>
+			<tag name="uploading"/>
+		</mustnothave>
+		<rotation duration="0.2" timing="linear">
+			<begin rotation="-45"/>
+			<end   rotation="0"/>
+		</rotation>
+	</anim2dstack>
+
+	<!--HACK PROGRESS -- Adds a hacking progress bar to the marker-->
+	<frameanimstack name="hack_hud">
+		<musthave>
+			<tag name="BumperEnemy"/>
+			<tag name="uploading"/>
+		</musthave>
+		<frameanim directory="spritestrip/hud/hackmode/progress" lightmask="use_alpha" fps="40" blendmode="blend" quad_width="1.10" quad_height="0.375" direction="forward">
+			<begin frame="0" hold="true"/>
+			<end   frame="5" hold="true"/>
+			<scale scale="0.51"/>
+			<translation x="0.94" y="0.075"/>
+		</frameanim>
+	</frameanimstack>
+
+	<!--random number-->
+	<frameanimstack name="hack_hud">
+		<musthave>
+			<tag name="BumperEnemy"/>
+		</musthave>
+		<frameanim lightmask="use_alpha" directory="spritestrip/hud/hackmode/random_numbers" fps="10" delay="0" blendmode="blend" quad_width="2.0" quad_height="0.25" looping="true">
+			<begin frame="0" hold="true"/>
+			<end   frame="6" hold="true"/>
+			<scale scale="0.2"/>
+			<translation x="0.885" y="-0.12"/>
+		</frameanim>
+
+		<frameanim lightmask="use_alpha" directory="spritestrip/hud/hackmode/random_numbers" fps="10" delay="0" blendmode="blend" quad_width="2.0" quad_height="0.25" direction="backward" looping="true">
+			<begin frame="0" hold="true"/>
+			<end   frame="6" hold="true"/>
+			<scale scale="0.2"/>
+			<translation x="0.885" y="-0.06"/>
+		</frameanim>
+	</frameanimstack>
+	
+</presentation>

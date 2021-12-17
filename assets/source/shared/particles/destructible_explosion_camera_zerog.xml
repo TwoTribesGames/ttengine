@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<ParticleTrigger xmlns="http://intranet.twotribes.com/schemas/common/particletrigger.xsd" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/particletrigger.xsd http://intranet.twotribes.com/schemas/common/particletrigger.xsd">
+	<ParticleCulling enabled="true"/>
+	<ParticleEmitter max_particles="1" x="0" y="0" delay="0" space="world" ignore_fog="false">
+		<RenderGroup value="350"/>
+		<Texture filename="particles/camera_0000.png"/>
+		<FrameAnimations framesize="0"/>
+		<EmissionRect width="2.25" height="2.25"/>
+		<ExternalForce min_x="0" max_x="0" min_y="0" max_y="0"/>
+		<BlendMode type="blend"/>
+		<PreGeneration time="0" step="0"/>
+		<Emission particles="1" type="burst" lifetime="0"/>
+		<ParticleOrientation type="rotation"/>
+		<Velocity min_x="-12.5" max_x="-7.5" min_y="0" max_y="22.5"/>
+		<VelocityFriction min="0.03" max="0.03"/>
+		<ParticleLife min="1" max="1"/>
+		<Size min_start="1.3" max_start="1.3"/>
+		<Weight min_start="0" max_start="0" min_end="1" max_end="1"/>
+		<Rotation min_start="-10" max_start="10" min_speed="-3600" max_speed="-3600"/>
+		<RotationForce min="-1" max="-1"/>
+		<RotationFriction min="0.05" max="0.05"/>
+		<Frame min_start="0" max_start="0"/>
+		<MinStartColor r="87" g="87" b="87" a="255"/>
+		<MaxStartColor r="255" g="255" b="255" a="255"/>
+		<MinEndColor r="255" g="255" b="255" a="255"/>
+		<MaxEndColor r="255" g="255" b="255" a="255"/>
+		<Fade in="0" out="0.2" type="percentage"/>
+		<ExternalImpulseWeight min="0" max="0"/>
+	</ParticleEmitter>
+	<ParticleEmitter max_particles="1" x="0" y="0" delay="0" space="world" ignore_fog="false">
+		<RenderGroup value="350"/>
+		<Texture filename="particles/camera_0001.png"/>
+		<FrameAnimations framesize="0"/>
+		<EmissionRect width="2.25" height="2.25"/>
+		<ExternalForce min_x="0" max_x="0" min_y="0" max_y="0"/>
+		<BlendMode type="blend"/>
+		<PreGeneration time="0" step="0"/>
+		<Emission particles="1" type="burst" lifetime="0"/>
+		<ParticleOrientation type="rotation"/>
+		<Velocity min_x="7.5" max_x="12.5" min_y="0" max_y="22.5"/>
+		<VelocityFriction min="0.03" max="0.03"/>
+		<ParticleLife min="1" max="1"/>
+		<Size min_start="1.3" max_start="1.3"/>
+		<Weight min_start="0" max_start="0" min_end="1" max_end="1"/>
+		<Rotation min_start="-10" max_start="10" min_speed="3600" max_speed="3600"/>
+		<RotationForce min="1" max="1"/>
+		<RotationFriction min="0.045" max="0.055"/>
+		<Frame min_start="0" max_start="0"/>
+		<MinStartColor r="87" g="87" b="87" a="255"/>
+		<MaxStartColor r="255" g="255" b="255" a="255"/>
+		<MinEndColor r="255" g="255" b="255" a="255"/>
+		<MaxEndColor r="255" g="255" b="255" a="255"/>
+		<Fade in="0" out="0.2" type="percentage"/>
+		<ExternalImpulseWeight min="0" max="0"/>
+	</ParticleEmitter>
+	<ParticleEmitter max_particles="1" x="0" y="0" delay="0" space="world" ignore_fog="false">
+		<RenderGroup value="350"/>
+		<Texture filename="particles/camera_0002.png"/>
+		<FrameAnimations framesize="0"/>
+		<EmissionRect width="2.25" height="2.25"/>
+		<ExternalForce min_x="0" max_x="0" min_y="0" max_y="0"/>
+		<BlendMode type="blend"/>
+		<PreGeneration time="0" step="0"/>
+		<Emission particles="1" type="burst" lifetime="0"/>
+		<ParticleOrientation type="rotation"/>
+		<Velocity min_x="-2.5" max_x="2.5" min_y="8.5" max_y="11.5"/>
+		<VelocityFriction min="0.03" max="0.03"/>
+		<ParticleLife min="1" max="1"/>
+		<Size min_start="1.3" max_start="1.3"/>
+		<Weight min_start="0" max_start="0" min_end="1" max_end="1"/>
+		<Rotation min_start="-10" max_start="10" min_speed="1200" max_speed="1200"/>
+		<RotationForce min="1" max="1"/>
+		<RotationFriction min="0.045" max="0.055"/>
+		<Frame min_start="0" max_start="0"/>
+		<MinStartColor r="87" g="87" b="87" a="255"/>
+		<MaxStartColor r="255" g="255" b="255" a="255"/>
+		<MinEndColor r="255" g="255" b="255" a="255"/>
+		<MaxEndColor r="255" g="255" b="255" a="255"/>
+		<Fade in="0" out="0.2" type="percentage"/>
+		<ExternalImpulseWeight min="0" max="0"/>
+	</ParticleEmitter>
+</ParticleTrigger>

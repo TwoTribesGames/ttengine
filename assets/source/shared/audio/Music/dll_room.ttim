@@ -1,0 +1,5 @@
+root=audio/Music/;
+
+start:
+dll_room.ogg
+goto start

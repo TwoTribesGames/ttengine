@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		permanent="true" fixed_timestep="0.016">
+
+	<include file="presentation/menu/include"/>
+			
+	<startvalues>
+		<translation z="-1"/>
+	</startvalues>
+
+	<coloranimstack>
+		<color duration="0.01">
+			<begin r="-214" g="-39" b="-100"/>
+			<end r="-214" g="-39" b="-100"/>
+		</color>
+	</coloranimstack>
+
+	<!-- GURU MEDITATION OUTLINE -->
+	<frameanimstack>
+		<musthave>
+			<tag name="dead"/>
+		</musthave>
+		<frameanim directory="spritestrip/hud/guru_meditation" ignore_fog="true" fps="2" looping="true" quad_width="1.0" quad_height="0.135">
+			<begin frame="0" hold="true"/>
+			<end   frame="1" hold="true"/>
+			<translation x="0.0" y="0.435"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<!-- FUEL BACKGROUND -->
+	<frameanimstack>
+		<mustnothave>
+			<tag name="dead"/>
+		</mustnothave>
+		<frameanim directory="spritestrip/hud/fuel/background" ignore_fog="true" fps="60" looping="false" quad_width="0.225" quad_height="0.04">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+			<translation x="-0.45" y="-0.3"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<!-- SPIDERBOT -->	
+	<frameanimstack>
+		<musthave>
+			<tag name="spiderbot"/>
+			<tag name="singleplayer"/>
+		</musthave>	
+		<mustnothave>
+			<tag name="dead"/>
+		</mustnothave>
+		<frameanim directory="spritestrip/hud/spiderbot" ignore_fog="true" fps="12" looping="true" quad_width="0.54" quad_height="0.34">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+			<translation x="0.0" y="-0.16"/>
+			<scale scale="0.85"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<frameanimstack>
+		<musthave>
+			<tag name="spiderbot"/>
+			<tag name="multiplayer"/>
+		</musthave>	
+		<mustnothave>
+			<tag name="dead"/>
+		</mustnothave>
+		<frameanim directory="spritestrip/hud/spiderbot" ignore_fog="true" fps="12" looping="true" quad_width="0.54" quad_height="0.34">
+			<begin frame="2" hold="true"/>
+			<end   frame="2" hold="true"/>
+			<translation x="0.0" y="-0.16"/>
+			<scale scale="0.85"/>
+		</frameanim>
+	</frameanimstack>
+	
+
+	<frameanimstack>
+		<musthave>
+			<tag name="spiderbot"/>
+		</musthave>
+		<mustnothave>
+			<tag name="dead"/>
+		</mustnothave>
+		<frameanim directory="spritestrip/hud/crt_glow" blendmode="add" ignore_fog="true" fps="60" looping="false" quad_width="2.0" quad_height="0.6">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+			<translation x="0.0" y="-0.19"/>
+		</frameanim>
+	</frameanimstack>
+
+	<frameanimstack>
+		<musthave>
+			<tag name="spiderbot"/>
+			<tag name="dead"/>
+		</musthave>
+		<frameanim directory="spritestrip/hud/spiderbot" ignore_fog="true" fps="8" looping="true" quad_width="0.54" quad_height="0.34">
+			<begin frame="1" hold="true"/>
+			<end   frame="1" hold="true"/>
+			<translation x="0.0" y="-0.16"/>
+			<scale scale="0.85"/>
+		</frameanim>
+	</frameanimstack>
+
+</presentation>

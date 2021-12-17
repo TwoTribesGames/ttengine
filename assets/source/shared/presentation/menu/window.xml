@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		permanent="true" fixed_timestep="0.016">
+
+	<include file="presentation/menu/include"/>
+	
+	<startvalues>
+		<translation z="-0.01"/>
+	</startvalues>
+	
+	<frameanimstack>
+		<frameanim directory="spritestrip/hud/window/dropshadow" filter_magnify="point" fps="1" looping="true" quad_width="c(dropshadowWidth)" quad_height="c(dropshadowHeight)">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+		</frameanim>
+	</frameanimstack>
+
+	<frameanimstack>
+		<frameanim directory="spritestrip/hud/window/border" filter_magnify="point" fps="1" looping="true" quad_width="c(borderWidth)" quad_height="c(borderHeight)">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+		</frameanim>
+	</frameanimstack>
+
+	<frameanimstack>
+		<frameanim directory="spritestrip/hud/window/canvas" filter_magnify="point" fps="1" looping="true" quad_width="c(canvasWidth)" quad_height="c(canvasHeight)">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+		</frameanim>
+	</frameanimstack>
+
+	<frameanimstack>
+		<frameanim directory="spritestrip/hud/window/titlebar" filter_magnify="point" fps="1" looping="true" quad_width="c(canvasWidth)" quad_height="0.05">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+			<translation y="c(titlebarOffset)"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<trigger data="intro_camera_on" type="global_audio"/>
+
+</presentation>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		permanent="true" fixed_timestep="0.016">
+
+	<frameanimstack>
+		<frameanim directory="spritestrip/square_white/sharp" fps="30" quad_width="2.8" quad_height="1.6">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+			<translation y="c(tvOffset, 0)"/>
+		</frameanim>
+	</frameanimstack>
+
+	<trigger name="transparent_to_opaque" type="overall_volume" data="0.0" duration="0.25" delay="0.01"/>
+	<coloranimstack name="transparent_to_opaque">
+		<color duration="0.25" looping="false" preset="oneshot">
+			<begin r="-255" g="-255" b="-255" a="-255"/>
+			<end   r="-255" g="-255" b="-255" a="0"/>
+		</color>
+	</coloranimstack>
+
+	<!-- HACK FIX for last frame not being totally black -->
+	<frameanimstack name="transparent_to_opaque">
+		<frameanim delay="0.25" directory="spritestrip/square_white/sharp" fps="60" quad_width="2.8" quad_height="1.6">
+			<begin frame="0" hold="false"/>
+			<end   frame="0" hold="true"/>
+			<translation y="c(tvOffset, 0)"/>
+		</frameanim>
+	</frameanimstack>
+
+	<trigger name="ending" type="overall_volume" data="0.0" duration="5.0" delay="2.0"/>
+	<coloranimstack name="ending">
+		<color delay="2.0" duration="5.0" looping="false" preset="oneshot">
+			<begin r="-255" g="-255" b="-255" a="-255"/>
+			<end   r="-255" g="-255" b="-255" a="0"/>
+		</color>
+	</coloranimstack>
+
+	<!-- HACK FIX for last frame not being totally black -->
+	<frameanimstack name="ending">
+		<frameanim delay="2.0" directory="spritestrip/square_white/sharp" fps="60" quad_width="2.8" quad_height="1.6">
+			<begin frame="0" hold="false"/>
+			<end   frame="0" hold="true"/>
+			<translation y="c(tvOffset, 0)"/>
+		</frameanim>
+	</frameanimstack>
+
+	<trigger name="opaque_to_transparent" type="overall_volume" data="100.0" duration="0.25" delay="0.01"/>
+	<coloranimstack name="opaque_to_transparent">
+		<color duration="0.25" looping="false" preset="oneshot">
+			<begin r="-255" g="-255" b="-255" a="0"/>
+			<end   r="-255" g="-255" b="-255" a="-255"/>
+		</color>
+	</coloranimstack>
+</presentation>
+
+

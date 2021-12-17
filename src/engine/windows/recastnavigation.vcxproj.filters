@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Shared">
+      <UniqueIdentifier>{b653b797-d0bc-4db7-a9a2-d989e1bc127f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\Detour">
+      <UniqueIdentifier>{6f93e1b4-764c-4aec-bd5f-07aa27c8f1dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\DetourCrowd">
+      <UniqueIdentifier>{64ad7865-4aa8-4bc5-a48e-1ebdce9c6833}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\DetourTileCache">
+      <UniqueIdentifier>{100ed190-bcee-4ee9-8f6d-814a6e2b3dc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\Recast">
+      <UniqueIdentifier>{bdc27045-4457-4387-aa78-703bed224169}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\DebugUtils">
+      <UniqueIdentifier>{3eccd499-9c77-4e5d-825e-c73676456b8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\DebugUtils\tt">
+      <UniqueIdentifier>{c759a323-ca64-4879-bed7-7b7d9d5d45b1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\shared\src\recastnavigation\Detour\DetourCommon.cpp">
+      <Filter>Shared\Detour</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\recastnavigation\Detour\DetourNavMesh.cpp">
+      <Filter>Shared\Detour</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\recastnavigation\Detour\DetourNavMeshBuilder.cpp">
+      <Filter>Shared\Detour</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\recastnavigation\Detour\DetourNavMeshQuery.cpp">
+      <Filter>Shared\Detour</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\recastnavigation\Detour\DetourNode.cpp">
+      <Filter>Shared\Detour</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\recastnavigation\Detour\DetourAlloc.cpp">
+      <Filter>Shared\Detour</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\recastnavigation\DetourCrowd\DetourCrowd.cpp">
+      <Filter>Shared\DetourCrowd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\recastnavigation\DetourCrowd\DetourLocalBoundary.cpp">
+      <Filter>Shared\DetourCrowd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\recastnavigation\DetourCrowd\DetourObstacleAvoidance.cpp">
+      <Filter>Shared\DetourCrowd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\recastnavigation\DetourCrowd\DetourPathCorridor.cpp">
+      <Filter>Shared\DetourCrowd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\recastnavigation\DetourCrowd\DetourPathQueue.cpp">
+      <Filter>Shared\DetourCrowd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\recastnavigation\DetourCrowd\DetourProximityGrid.cpp">
+      <Filter>Shared\DetourCrowd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\recastnavigation\DetourTileCache\DetourTileCache.cpp">
+      <Filter>Shared\DetourTileCache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\recastnavigation\DetourTileCache\DetourTileCacheBuilder.cpp">
+      <Filter>Shared\DetourTileCache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\recastnavigation\Recast\Recast.cpp">
+      <Filter>Shared\Recast</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\recastnavigation\Recast\RecastAlloc.cpp">
+      <Filter>Shared\Recast</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\recastnavigation\Recast\RecastArea.cpp">
+      <Filter>Shared\Recast</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\recastnavigation\Recast\RecastContour.cpp">
+      <Filter>Shared\Recast</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\recastnavigation\Recast\RecastFilter.cpp">
+      <Filter>Shared\Recast</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\recastnavigation\Recast\RecastLayers.cpp">
+      <Filter>Shared\Recast</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\recastnavigation\Recast\RecastMesh.cpp">
+      <Filter>Shared\Recast</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\recastnavigation\Recast\RecastMeshDetail.cpp">
+      <Filter>Shared\Recast</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\recastnavigation\Recast\RecastRasterization.cpp">
+      <Filter>Shared\Recast</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\recastnavigation\Recast\RecastRegion.cpp">
+      <Filter>Shared\Recast</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\recastnavigation\DebugUtils\DebugDraw.cpp">
+      <Filter>Shared\DebugUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\recastnavigation\DebugUtils\DetourDebugDraw.cpp">
+      <Filter>Shared\DebugUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\recastnavigation\DebugUtils\RecastDebugDraw.cpp">
+      <Filter>Shared\DebugUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\recastnavigation\DebugUtils\RecastDump.cpp">
+      <Filter>Shared\DebugUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\src\recastnavigation\DebugUtils\tt\RecastDebugDrawTT.cpp">
+      <Filter>Shared\DebugUtils\tt</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\shared\inc\recastnavigation\Detour\DetourAlloc.h">
+      <Filter>Shared\Detour</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\recastnavigation\Detour\DetourAssert.h">
+      <Filter>Shared\Detour</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\recastnavigation\Detour\DetourCommon.h">
+      <Filter>Shared\Detour</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\recastnavigation\Detour\DetourNavMesh.h">
+      <Filter>Shared\Detour</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\recastnavigation\Detour\DetourNavMeshBuilder.h">
+      <Filter>Shared\Detour</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\recastnavigation\Detour\DetourNavMeshQuery.h">
+      <Filter>Shared\Detour</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\recastnavigation\Detour\DetourNode.h">
+      <Filter>Shared\Detour</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\recastnavigation\Detour\DetourStatus.h">
+      <Filter>Shared\Detour</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\recastnavigation\DetourCrowd\DetourCrowd.h">
+      <Filter>Shared\DetourCrowd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\recastnavigation\DetourCrowd\DetourLocalBoundary.h">
+      <Filter>Shared\DetourCrowd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\recastnavigation\DetourCrowd\DetourObstacleAvoidance.h">
+      <Filter>Shared\DetourCrowd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\recastnavigation\DetourCrowd\DetourPathCorridor.h">
+      <Filter>Shared\DetourCrowd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\recastnavigation\DetourCrowd\DetourPathQueue.h">
+      <Filter>Shared\DetourCrowd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\recastnavigation\DetourCrowd\DetourProximityGrid.h">
+      <Filter>Shared\DetourCrowd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\recastnavigation\DetourTileCache\DetourTileCache.h">
+      <Filter>Shared\DetourTileCache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\recastnavigation\DetourTileCache\DetourTileCacheBuilder.h">
+      <Filter>Shared\DetourTileCache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\recastnavigation\Recast\Recast.h">
+      <Filter>Shared\Recast</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\recastnavigation\Recast\RecastAlloc.h">
+      <Filter>Shared\Recast</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\recastnavigation\Recast\RecastAssert.h">
+      <Filter>Shared\Recast</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\recastnavigation\DebugUtils\DebugDraw.h">
+      <Filter>Shared\DebugUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\recastnavigation\DebugUtils\DetourDebugDraw.h">
+      <Filter>Shared\DebugUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\recastnavigation\DebugUtils\RecastDebugDraw.h">
+      <Filter>Shared\DebugUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\recastnavigation\DebugUtils\RecastDump.h">
+      <Filter>Shared\DebugUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\inc\recastnavigation\DebugUtils\tt\RecastDebugDrawTT.h">
+      <Filter>Shared\DebugUtils\tt</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

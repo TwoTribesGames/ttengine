@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<ParticleTrigger xmlns="http://intranet.twotribes.com/schemas/common/particletrigger.xsd" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/particletrigger.xsd http://intranet.twotribes.com/schemas/common/particletrigger.xsd">
+	<GameEvent name="dll_booster" max_particles="300"/>
+	<ParticleCulling enabled="true"/>
+	<ParticleEmitter max_particles="13" x="0" y="-0.6" delay="0" space="world" ignore_fog="false">
+		<RenderGroup value="100"/>
+		<Texture filename="particles/generic_dust_random.png"/>
+		<FrameAnimations framesize="0"/>
+		<EmissionRect width="0" height="0"/>
+		<ExternalForce min_x="0" max_x="0" min_y="0" max_y="0"/>
+		<BlendMode type="blend"/>
+		<PreGeneration time="0" step="0"/>
+		<Emission particles="30" type="continuous" lifetime="0"/>
+		<ParticleOrientation type="rotation"/>
+		<Velocity min_x="-2.5" max_x="-2.5" min_y="-2.5" max_y="-2.5"/>
+		<VelocityFriction min="0" max="0"/>
+		<ParticleLife min="0.4" max="0.4"/>
+		<Size min_start="0.5" max_start="0.7" min_end="1.25" max_end="1.75"/>
+		<Weight min_start="1" max_start="1" min_end="0" max_end="0"/>
+		<Rotation min_start="-180" max_start="180" min_speed="0" max_speed="0"/>
+		<RotationForce min="0" max="0"/>
+		<RotationFriction min="0" max="0"/>
+		<Frame min_start="0" max_start="0"/>
+		<MinStartColor r="49" g="49" b="49" a="255"/>
+		<MaxStartColor r="0" g="0" b="0" a="255"/>
+		<MinEndColor r="105" g="105" b="105" a="255"/>
+		<MaxEndColor r="123" g="123" b="123" a="255"/>
+		<Fade in="0" out="0.3" type="percentage"/>
+		<ExternalImpulseWeight min="0" max="0"/>
+	</ParticleEmitter>
+	<ParticleEmitter max_particles="10" x="0" y="-0.6" delay="0" space="world" ignore_fog="false">
+		<RenderGroup value="200"/>
+		<Texture filename="particles/ring_perspective.png"/>
+		<FrameAnimations framesize="0"/>
+		<EmissionRect width="0" height="0"/>
+		<ExternalForce min_x="0" max_x="0" min_y="0" max_y="0"/>
+		<BlendMode type="add"/>
+		<BlendModeAlpha type="lightmask"/>
+		<PreGeneration time="0" step="0"/>
+		<Emission particles="60" type="continuous" lifetime="0"/>
+		<ParticleOrientation type="rotation"/>
+		<Velocity min_x="-4" max_x="-4" min_y="-4" max_y="-4"/>
+		<VelocityFriction min="0" max="0"/>
+		<ParticleLife min="0.15" max="0.15"/>
+		<Size min_start="0.65" max_start="0.95" min_end="0" max_end="0"/>
+		<Weight min_start="0" max_start="0" min_end="0" max_end="0"/>
+		<Rotation min_start="-55" max_start="-35" min_speed="40" max_speed="40"/>
+		<RotationForce min="0" max="0"/>
+		<RotationFriction min="0" max="0"/>
+		<Frame min_start="0" max_start="0"/>
+		<MinStartColor r="0" g="135" b="255" a="255"/>
+		<MaxStartColor r="0" g="148" b="255" a="255"/>
+		<MinEndColor r="255" g="255" b="255" a="255"/>
+		<MaxEndColor r="255" g="255" b="255" a="255"/>
+		<Fade in="0" out="0.9" type="percentage"/>
+		<ExternalImpulseWeight min="0" max="0"/>
+	</ParticleEmitter>
+	<ParticleEmitter max_particles="3" x="0" y="-0.6" delay="0" space="world" ignore_fog="false">
+		<RenderGroup value="200"/>
+		<Texture filename="particles/ring_perspective.png"/>
+		<FrameAnimations framesize="0"/>
+		<EmissionRect width="0" height="0"/>
+		<ExternalForce min_x="0" max_x="0" min_y="0" max_y="0"/>
+		<BlendMode type="add"/>
+		<BlendModeAlpha type="lightmask"/>
+		<PreGeneration time="0" step="0"/>
+		<Emission particles="4" type="continuous" lifetime="0"/>
+		<ParticleOrientation type="rotation"/>
+		<Velocity min_x="-2" max_x="-2" min_y="-2" max_y="-2"/>
+		<VelocityFriction min="0" max="0"/>
+		<ParticleLife min="0.5" max="0.5"/>
+		<Size min_start="0.8" max_start="1.6" min_end="0.6" max_end="0.6"/>
+		<Weight min_start="0" max_start="0" min_end="0" max_end="0"/>
+		<Rotation min_start="-55" max_start="-35" min_speed="0" max_speed="0"/>
+		<RotationForce min="0" max="0"/>
+		<RotationFriction min="0" max="0"/>
+		<Frame min_start="0" max_start="0"/>
+		<MinStartColor r="0" g="157" b="255" a="255"/>
+		<MaxStartColor r="0" g="148" b="255" a="255"/>
+		<MinEndColor r="255" g="255" b="255" a="0"/>
+		<MaxEndColor r="255" g="255" b="255" a="0"/>
+		<Fade in="0.3" out="0.7" type="percentage"/>
+		<ExternalImpulseWeight min="0" max="0"/>
+	</ParticleEmitter>
+</ParticleTrigger>

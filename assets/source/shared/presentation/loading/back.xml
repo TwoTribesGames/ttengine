@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		permanent="true">
+
+	<startvalues>
+		<scale scale="0.99259"/>
+		<translation z="-0.2"/>
+	</startvalues>
+
+	<frameanimstack>
+		<frameanim directory="spritestrip/loading/back" fps="30" quad_width="1.92" quad_height="1.08">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+			<translation x="0.0" y="-0.0"/>
+		</frameanim>
+	</frameanimstack>
+
+</presentation>

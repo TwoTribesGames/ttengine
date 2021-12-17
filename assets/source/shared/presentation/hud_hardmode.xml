@@ -1,0 +1,26 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		permanent="true">
+
+	<startvalues>
+		<translation x="0.135" y="-0.34"/>
+	</startvalues>
+
+	<!--TEDDY!-->
+	<frameanimstack>
+		<frameanim directory="spritestrip/hud/hardmode" looping="true" fps="2" quad_width="0.12" quad_height="0.12">
+			<begin frame="0" hold="true"/>
+			<end   frame="1" hold="true"/>
+		</frameanim>
+	</frameanimstack>
+
+	<coloranimstack>
+		<color duration="2" preset="oscillating">
+			<begin r="0" g="0" b="0" a="-75"/>
+			<end   r="0" g="0" b="0" a="-95"/>
+		</color>
+	</coloranimstack>
+</presentation>

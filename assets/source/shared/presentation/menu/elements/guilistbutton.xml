@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		permanent="true">
+
+	<startvalues>
+		<translation z="0.1"/>
+	</startvalues>
+	
+	<coloranimstack>
+		<color duration="0.1">
+			<begin r="-50" g="-20" b="-50" a="0"/>
+			<end r="-50" g="-20" b="-50" a="0"/>
+		</color>
+	</coloranimstack>
+	
+	<!-- disabled -->
+	<coloranimstack>
+		<musthave>
+			<tag name="disabled"/>
+		</musthave>
+		<color duration="0.1" preset="oneshot">
+			<begin r="0" g="0" b="0" a="-150"/>
+			<end r="0" g="0" b="0" a="-150"/>
+		</color>
+	</coloranimstack>
+
+	<!-- selected -->
+	<frameanimstack name="selected">
+		<frameanim directory="spritestrip/hud/button/bar" blendmode="add" ignore_fog="true" fps="60" looping="false" quad_width="1.2" quad_height="0.067">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+		</frameanim>
+	</frameanimstack>
+
+	<frameanimstack  name="selected">
+		<frameanim directory="spritestrip/hud/crt_glow" blendmode="add" ignore_fog="true" fps="60" looping="false" quad_width="2.0" quad_height="0.2">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+		</frameanim>
+	</frameanimstack>
+
+	<coloranimstack name="selected">
+		<color duration="0.1">
+			<begin r="50" g="30" b="50" a="0"/>
+			<end r="50" g="30" b="50" a="0"/>
+		</color>
+	</coloranimstack>
+
+	<!-- hide -->
+	<anim2dstack name="hide">
+		<translation duration="0.05" delay="0.0">
+			<begin x="0" y="0" z="0"/>
+			<end x="0" y="0" z="0"/>
+		</translation>
+	</anim2dstack>
+
+	<!-- selected -->
+	<frameanimstack name="selected">
+		<mustnothave>
+			<tag name="disabled"/>
+		</mustnothave>
+		<frameanim directory="spritestrip/hud/button/arrow" flip_horizontal="true" blendmode="add" ignore_fog="true" fps="60" looping="false" quad_width="0.067" quad_height="0.067">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+			<translation x="0.5665"/>
+		</frameanim>
+		<frameanim  directory="spritestrip/hud/button/arrow" blendmode="add" ignore_fog="true" fps="60" looping="false" quad_width="0.067" quad_height="0.067">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+			<translation x="-0.5665"/>
+		</frameanim>
+	</frameanimstack>
+
+	<!-- pressed -->
+	<coloranimstack name="pressed">
+		<mustnothave>
+			<tag name="disabled"/>
+		</mustnothave>
+		<color duration="0.1">
+			<begin r="50" g="30" b="50" a="0"/>
+			<end r="50" g="30" b="50" a="0"/>
+		</color>
+	</coloranimstack>
+	
+	<frameanimstack name="pressed">
+		<frameanim directory="spritestrip/hud/crt_glow" blendmode="add" ignore_fog="true" fps="60" looping="false" quad_width="2.0" quad_height="0.2">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+		</frameanim>
+	</frameanimstack>
+
+	<frameanimstack name="pressed">
+		<musthave>
+			<tag name="left"/>
+		</musthave>
+		<frameanim  directory="spritestrip/hud/button/arrow" blendmode="add" ignore_fog="true" fps="60" looping="false" quad_width="0.067" quad_height="0.067">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+			<translation x="-0.5665"/>
+			<scale scale="1.15"/>
+		</frameanim>
+		<frameanim directory="spritestrip/hud/button/arrow" flip_horizontal="true" blendmode="add" ignore_fog="true" fps="60" looping="false" quad_width="0.067" quad_height="0.067">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+			<translation x="0.5665"/>
+		</frameanim>
+		<frameanim directory="spritestrip/hud/button/bar_listbutton" flip_horizontal="true" blendmode="add" ignore_fog="true" fps="60" looping="false" quad_width="1.2" quad_height="0.067">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+		</frameanim>
+	</frameanimstack>
+
+	<frameanimstack name="pressed">
+		<musthave>
+			<tag name="right"/>
+		</musthave>
+		<frameanim  directory="spritestrip/hud/button/arrow" blendmode="add" ignore_fog="true" fps="60" looping="false" quad_width="0.067" quad_height="0.067">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+			<translation x="-0.5665"/>
+		</frameanim>
+		<frameanim directory="spritestrip/hud/button/arrow" flip_horizontal="true" blendmode="add" ignore_fog="true" fps="60" looping="false" quad_width="0.067" quad_height="0.067">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+			<translation x="0.5665"/>
+			<scale scale="1.15"/>
+		</frameanim>
+		<frameanim directory="spritestrip/hud/button/bar_listbutton" flip_horizontal="false" blendmode="add" ignore_fog="true" fps="60" looping="false" quad_width="1.2" quad_height="0.067">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+		</frameanim>
+	</frameanimstack>
+</presentation>
+
+

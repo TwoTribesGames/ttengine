@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		permanent="true" fixed_timestep="0.016">
+
+	<startvalues >
+		<translation z="0.2"/>
+	</startvalues>
+	
+	<startvalues>
+		<musthave>
+			<tag name="toothbrush"/>
+		</musthave>	
+		<origin x="0.0" y="-0.15"/>
+		<translation z="0.2"/>
+	</startvalues>
+
+	<frameanimstack>
+		<musthave>
+			<tag name="toothbrush"/>
+		</musthave>
+		<mustnothave>
+			<tag name="dead"/>
+		</mustnothave>
+		<frameanim directory="spritestrip/hud/roughshot/toothbrush" ignore_fog="true" fps="12" looping="true" quad_width="1" quad_height="0.8">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+			<translation x="-0.1" y="-0.375"/>
+			<scale scale="0.3"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<frameanimstack type="sequence">
+		<musthave>
+			<tag name="head"/>
+		</musthave>
+		<mustnothave>
+			<tag name="dead"/>
+		</mustnothave>
+		<frameanim directory="spritestrip/hud/roughshot/body" duration="8.2" ignore_fog="true" fps="60" looping="true" quad_width="1" quad_height="1">
+			<begin frame="1"/>
+			<end   frame="1"/>
+			<translation x="0.2" y="-0.18"/>
+		</frameanim>
+		<frameanim directory="spritestrip/hud/roughshot/body" ignore_fog="true" fps="40" quad_width="1" quad_height="1">
+			<begin frame="1"/>
+			<end   frame="3"/>
+			<translation x="0.2" y="-0.18"/>
+		</frameanim>
+		<frameanim directory="spritestrip/hud/roughshot/body" id="blink" delay="0.05" ignore_fog="true" fps="40" quad_width="1" quad_height="1" direction="backward">
+			<begin frame="1"/>
+			<end   frame="3"/>
+			<translation x="0.2" y="-0.18"/>
+		</frameanim>
+	</frameanimstack>
+
+	<trigger type="reset" data="0.0" end_sync_id="blink" looping="true">
+		<musthave>
+			<tag name="head"/>
+		</musthave>
+	</trigger>
+
+	<frameanimstack>
+		<musthave>
+			<tag name="body"/>
+		</musthave>	
+		<mustnothave>
+			<tag name="dead"/>
+		</mustnothave>
+		<frameanim directory="spritestrip/hud/roughshot/body" ignore_fog="true" fps="12" looping="true" quad_width="1" quad_height="1">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+			<translation x="0.2" y="-0.7"/>
+		</frameanim>
+	</frameanimstack>
+
+	<anim2dstack>
+		<musthave>
+			<tag name="head"/>
+		</musthave>
+		<rotation duration="4" delay="0.8" preset="oscillating">
+			<begin rotation="0.25"/>
+			<end rotation="-0.25"/>
+		</rotation>
+		<translation duration="4" delay="0.5" preset="oscillating">
+			<begin y="0"/>
+			<end y="0.012"/>
+		</translation>
+	</anim2dstack>
+
+	<anim2dstack>
+		<musthave>
+			<tag name="body"/>
+		</musthave>
+		<translation duration="4" delay="0" preset="oscillating">
+			<begin y="0"/>
+			<end y="0.012"/>
+		</translation>
+	</anim2dstack>
+
+	<anim2dstack>
+		<musthave>
+			<tag name="toothbrush"/>
+		</musthave>
+		<rotation duration="4.2" delay="1.5" preset="oscillating">
+			<begin rotation="2"/>
+			<end rotation="-2"/>
+		</rotation>
+		<translation duration="4.2" delay="0.5" preset="oscillating">
+			<begin y="0"/>
+			<end y="0.012"/>
+		</translation>
+	</anim2dstack>
+
+	<coloranimstack>
+		<color duration="0.1">
+			<begin a="-200"/>
+			<end a="-200"/>
+		</color>
+	</coloranimstack>
+
+</presentation>

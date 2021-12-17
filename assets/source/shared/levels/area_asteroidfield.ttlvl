@@ -1,0 +1,2850 @@
+TOKILEVEL
+### ONLY EDIT BELOW AND DON'T ALTER THE *** MARKERS! ###
+*** DATA_START ***
+{
+   "entities" : [
+      {
+         "id" : 360,
+         "props" : {
+            "SoundLayer1" : "true",
+            "SoundLayer2" : "false",
+            "SoundLayer4" : "false",
+            "SoundLayer5" : "false",
+            "SoundLayer6" : "false",
+            "SoundLayer7" : "false",
+            "enterAction" : "Disable",
+            "exitAction" : "Do nothing",
+            "fadeOutDuration" : "2",
+            "height" : "40",
+            "useFadeInDuration" : "false"
+         },
+         "type" : "SoundLayerAreaTrigger",
+         "x" : 234.0,
+         "y" : 40.0
+      },
+      {
+         "id" : 380,
+         "props" : {
+            "color" : "255,0,0,110",
+            "enableFlickering" : "true",
+            "flickerColor" : "255,0,0,95",
+            "flickerDelay" : "0.1",
+            "flickerDuration" : "0.1",
+            "flickerRadius" : "11.5",
+            "radius" : "12",
+            "texture" : "ambientlight"
+         },
+         "type" : "LightSource",
+         "x" : 442.50,
+         "y" : 77.0
+      },
+      {
+         "id" : 1062,
+         "props" : {
+            "enabled" : "false",
+            "followEntity" : "2588"
+         },
+         "type" : "DLL",
+         "x" : 254.0,
+         "y" : 83.0
+      },
+      {
+         "id" : 1625,
+         "props" : {
+            "entities" : "96979",
+            "entitiesPerWave" : "1",
+            "maxTotalSpawnedEntities" : "12",
+            "spawnDelay" : "0.25",
+            "spawnDelayDampening" : "0.95",
+            "triggerAfterDeathCount" : "12",
+            "useSpawnEffect" : "false"
+         },
+         "type" : "Spawner",
+         "x" : 429.0,
+         "y" : 58.0
+      },
+      {
+         "id" : 2010,
+         "props" : {
+            "distance" : "10",
+            "enableSignal" : "4756",
+            "hasCoverGraphic" : "true",
+            "height" : "5",
+            "isOpened" : "true",
+            "rotation" : "270",
+            "speedClose" : "5",
+            "width" : "10"
+         },
+         "type" : "Piston",
+         "x" : 465.0,
+         "y" : 31.0
+      },
+      {
+         "id" : 2025,
+         "props" : {
+            "affectsEnemies" : "false",
+            "disableMoveControls" : "true",
+            "enabled" : "true",
+            "height" : "24",
+            "rotation" : "180",
+            "visual" : "wind",
+            "width" : "216"
+         },
+         "type" : "ForceField",
+         "x" : 107.0,
+         "y" : 85.0
+      },
+      {
+         "id" : 2588,
+         "props" : {},
+         "type" : "PlayerBot",
+         "x" : 19.0,
+         "y" : 49.0
+      },
+      {
+         "id" : 2591,
+         "props" : {
+            "enabled" : "true",
+            "level" : "credits",
+            "rotation" : "180",
+            "showLevelName" : "false",
+            "useNoFollowZone" : "true",
+            "width" : "20"
+         },
+         "type" : "LevelExitTrigger",
+         "x" : 450.0,
+         "y" : 10.0
+      },
+      {
+         "id" : 3171,
+         "props" : {},
+         "type" : "PickupAmmo",
+         "x" : 157.0,
+         "y" : 51.0
+      },
+      {
+         "id" : 3655,
+         "props" : {
+            "enableEntities" : "79735,75079",
+            "parentTrigger" : "16629"
+         },
+         "type" : "EnableTrigger",
+         "x" : 383.0,
+         "y" : 34.0
+      },
+      {
+         "id" : 3925,
+         "props" : {
+            "hasShield" : "false",
+            "rotation" : "0",
+            "rotationSpeed" : "101"
+         },
+         "type" : "Turret",
+         "x" : 453.0,
+         "y" : 40.0
+      },
+      {
+         "id" : 3943,
+         "props" : {
+            "advanceDelay" : "0",
+            "autoAdvance" : "false"
+         },
+         "type" : "Waypoint",
+         "x" : 299.50,
+         "y" : 45.0
+      },
+      {
+         "id" : 4396,
+         "props" : {
+            "offsetYEnter" : "2"
+         },
+         "type" : "CameraOffsetTrigger",
+         "x" : 319.0,
+         "y" : 52.0
+      },
+      {
+         "id" : 4712,
+         "props" : {
+            "enabled" : "true",
+            "rotation" : "-104.211",
+            "speed" : "1.14035"
+         },
+         "type" : "AsteroidMedium",
+         "x" : 53.0,
+         "y" : 35.0
+      },
+      {
+         "id" : 4713,
+         "props" : {
+            "enabled" : "true",
+            "rotation" : "-28.4211",
+            "speed" : "2.98246"
+         },
+         "type" : "AsteroidBig",
+         "x" : 70.0,
+         "y" : 56.0
+      },
+      {
+         "id" : 4714,
+         "props" : {
+            "enabled" : "true",
+            "rotation" : "90",
+            "speed" : "3.24561"
+         },
+         "type" : "AsteroidSmall",
+         "x" : 66.0,
+         "y" : 37.0
+      },
+      {
+         "id" : 4722,
+         "props" : {
+            "enabled" : "true",
+            "rotation" : "90",
+            "speed" : "3.24561"
+         },
+         "type" : "AsteroidSmall",
+         "x" : 63.0,
+         "y" : 54.0
+      },
+      {
+         "id" : 4741,
+         "props" : {
+            "enabled" : "true",
+            "rotation" : "90",
+            "speed" : "3.24561"
+         },
+         "type" : "AsteroidSmall",
+         "x" : 110.0,
+         "y" : 52.0
+      },
+      {
+         "id" : 4742,
+         "props" : {
+            "enabled" : "true",
+            "rotation" : "90",
+            "speed" : "3.24561"
+         },
+         "type" : "AsteroidSmall",
+         "x" : 98.0,
+         "y" : 35.0
+      },
+      {
+         "id" : 4748,
+         "props" : {
+            "advanceDelay" : "0",
+            "autoAdvance" : "false",
+            "nextWaypoint" : "3943"
+         },
+         "type" : "Waypoint",
+         "x" : 208.50,
+         "y" : 46.0
+      },
+      {
+         "id" : 4749,
+         "props" : {
+            "crushEntities" : "true",
+            "enabled" : "false",
+            "firstStop" : "4773",
+            "height" : "40",
+            "positionCulling" : "false",
+            "presentationFile" : "door_airlock",
+            "useWaypointAdvanceDelay" : "true",
+            "width" : "11",
+            "ySpeed" : "10"
+         },
+         "type" : "Elevator",
+         "x" : 227.50,
+         "y" : 35.0
+      },
+      {
+         "id" : 4753,
+         "props" : {
+            "enableEntities" : "4749",
+            "enterAction" : "Enable",
+            "enterDelay" : "0.5",
+            "parentTrigger" : "59770"
+         },
+         "type" : "EnableTrigger",
+         "x" : 240.0,
+         "y" : 67.0
+      },
+      {
+         "id" : 4754,
+         "props" : {
+            "FOVEnter" : "60",
+            "SetFOVOnExit" : "false",
+            "easingDuration" : "2.63158",
+            "once" : "true",
+            "parentTrigger" : "59770"
+         },
+         "type" : "CameraFOVTrigger",
+         "x" : 240.0,
+         "y" : 63.0
+      },
+      {
+         "id" : 4756,
+         "props" : {
+            "radius" : "2"
+         },
+         "type" : "VirusUploadTrigger",
+         "x" : 463.1580810546875,
+         "y" : 61.04731750488281
+      },
+      {
+         "id" : 4773,
+         "props" : {
+            "advanceDelay" : "0",
+            "autoAdvance" : "false",
+            "nextWaypoint" : "28858"
+         },
+         "type" : "Waypoint",
+         "x" : 227.50,
+         "y" : 45.0
+      },
+      {
+         "id" : 4774,
+         "props" : {
+            "enableEntities" : "4749",
+            "enterAction" : "Enable",
+            "once" : "true",
+            "parentTrigger" : "5101"
+         },
+         "type" : "EnableTrigger",
+         "x" : 211.0,
+         "y" : 53.0
+      },
+      {
+         "id" : 4839,
+         "props" : {
+            "enabled" : "true",
+            "rotation" : "-180",
+            "speed" : "1.66667"
+         },
+         "type" : "AsteroidSmall",
+         "x" : 4.0,
+         "y" : 56.0
+      },
+      {
+         "id" : 4841,
+         "props" : {
+            "enabled" : "true",
+            "rotation" : "-41.0526",
+            "speed" : "1.66667"
+         },
+         "type" : "AsteroidSmall",
+         "x" : 8.0,
+         "y" : 58.0
+      },
+      {
+         "id" : 4842,
+         "props" : {
+            "enabled" : "true",
+            "rotation" : "-101.053",
+            "speed" : "1.66667"
+         },
+         "type" : "AsteroidSmall",
+         "x" : 13.0,
+         "y" : 48.0
+      },
+      {
+         "id" : 4843,
+         "props" : {
+            "enabled" : "true",
+            "rotation" : "-101.053",
+            "speed" : "1.66667"
+         },
+         "type" : "AsteroidSmall",
+         "x" : 11.0,
+         "y" : 53.0
+      },
+      {
+         "id" : 4844,
+         "props" : {
+            "enabled" : "true",
+            "rotation" : "-101.053",
+            "speed" : "1.66667"
+         },
+         "type" : "AsteroidSmall",
+         "x" : 21.0,
+         "y" : 65.0
+      },
+      {
+         "id" : 4845,
+         "props" : {
+            "enabled" : "true",
+            "rotation" : "-101.053",
+            "speed" : "1.66667"
+         },
+         "type" : "AsteroidSmall",
+         "x" : 13.0,
+         "y" : 69.0
+      },
+      {
+         "id" : 4846,
+         "props" : {
+            "enabled" : "true",
+            "rotation" : "-101.053",
+            "speed" : "1.66667"
+         },
+         "type" : "AsteroidSmall",
+         "x" : 30.0,
+         "y" : 63.0
+      },
+      {
+         "id" : 4847,
+         "props" : {
+            "enabled" : "true",
+            "rotation" : "-116.842",
+            "speed" : "1.66667"
+         },
+         "type" : "AsteroidSmall",
+         "x" : 22.0,
+         "y" : 43.0
+      },
+      {
+         "id" : 4848,
+         "props" : {
+            "enabled" : "true",
+            "rotation" : "-101.053",
+            "speed" : "1.66667"
+         },
+         "type" : "AsteroidSmall",
+         "x" : 14.0,
+         "y" : 48.0
+      },
+      {
+         "id" : 4849,
+         "props" : {
+            "enabled" : "true",
+            "rotation" : "9.47369",
+            "speed" : "1.66667"
+         },
+         "type" : "AsteroidSmall",
+         "x" : 4.0,
+         "y" : 37.0
+      },
+      {
+         "id" : 4850,
+         "props" : {
+            "enabled" : "true",
+            "rotation" : "-101.053",
+            "speed" : "1.66667"
+         },
+         "type" : "AsteroidSmall",
+         "x" : 26.0,
+         "y" : 38.0
+      },
+      {
+         "id" : 4851,
+         "props" : {
+            "enabled" : "true",
+            "rotation" : "-101.053",
+            "speed" : "1.66667"
+         },
+         "type" : "AsteroidSmall",
+         "x" : 5.0,
+         "y" : 44.0
+      },
+      {
+         "id" : 4853,
+         "props" : {
+            "advanceDelay" : "0",
+            "autoAdvance" : "true",
+            "customScale" : "1.25",
+            "nextWaypoint" : "4748"
+         },
+         "type" : "Waypoint",
+         "x" : 88.50,
+         "y" : 46.0
+      },
+      {
+         "id" : 4855,
+         "props" : {
+            "enabled" : "true",
+            "rotation" : "138.947",
+            "speed" : "1.66667"
+         },
+         "type" : "AsteroidSmall",
+         "x" : 5.0,
+         "y" : 50.0
+      },
+      {
+         "id" : 4856,
+         "props" : {
+            "enabled" : "true",
+            "rotation" : "-180",
+            "speed" : "1.66667"
+         },
+         "type" : "AsteroidSmall",
+         "x" : 30.0,
+         "y" : 68.0
+      },
+      {
+         "id" : 4857,
+         "props" : {
+            "enabled" : "true",
+            "rotation" : "-101.053",
+            "speed" : "1.66667"
+         },
+         "type" : "AsteroidSmall",
+         "x" : 16.0,
+         "y" : 60.0
+      },
+      {
+         "id" : 4859,
+         "props" : {
+            "enabled" : "true",
+            "rotation" : "-180",
+            "speed" : "1.66667"
+         },
+         "type" : "AsteroidSmall",
+         "x" : 31.0,
+         "y" : 41.0
+      },
+      {
+         "id" : 4860,
+         "props" : {
+            "enabled" : "true",
+            "rotation" : "63.1579",
+            "speed" : "1.66667"
+         },
+         "type" : "AsteroidSmall",
+         "x" : 13.0,
+         "y" : 36.0
+      },
+      {
+         "id" : 4877,
+         "props" : {
+            "enabled" : "true",
+            "rotation" : "-78.9474",
+            "speed" : "3.24561"
+         },
+         "type" : "AsteroidSmall",
+         "x" : 157.0,
+         "y" : 36.0
+      },
+      {
+         "id" : 4878,
+         "props" : {
+            "enabled" : "true",
+            "rotation" : "180",
+            "speed" : "3.24561"
+         },
+         "type" : "AsteroidSmall",
+         "x" : 117.0,
+         "y" : 33.0
+      },
+      {
+         "id" : 4881,
+         "props" : {
+            "enabled" : "true",
+            "rotation" : "90",
+            "speed" : "3.24561"
+         },
+         "type" : "AsteroidSmall",
+         "x" : 122.0,
+         "y" : 55.0
+      },
+      {
+         "id" : 4883,
+         "props" : {
+            "enabled" : "true",
+            "rotation" : "12.6316",
+            "speed" : "3.24561"
+         },
+         "type" : "AsteroidSmall",
+         "x" : 162.0,
+         "y" : 42.0
+      },
+      {
+         "id" : 4884,
+         "props" : {
+            "enabled" : "true",
+            "rotation" : "120",
+            "speed" : "3.59649"
+         },
+         "type" : "AsteroidSmall",
+         "x" : 150.0,
+         "y" : 57.0
+      },
+      {
+         "id" : 4886,
+         "props" : {
+            "enabled" : "true",
+            "rotation" : "120",
+            "speed" : "3.59649"
+         },
+         "type" : "AsteroidSmall",
+         "x" : 128.0,
+         "y" : 58.0
+      },
+      {
+         "id" : 4975,
+         "props" : {
+            "shoeboxInclude" : "airlock"
+         },
+         "type" : "ShoeboxIncluder",
+         "x" : 253.0,
+         "y" : 76.0
+      },
+      {
+         "id" : 5008,
+         "props" : {
+            "crushEntities" : "true",
+            "enabled" : "false",
+            "firstStop" : "5010",
+            "height" : "40",
+            "positionCulling" : "false",
+            "presentationFile" : "door_airlock_right",
+            "useWaypointAdvanceDelay" : "true",
+            "width" : "11",
+            "ySpeed" : "20"
+         },
+         "type" : "Elevator",
+         "x" : 291.50,
+         "y" : 34.0
+      },
+      {
+         "id" : 5009,
+         "props" : {
+            "advanceDelay" : "0",
+            "autoAdvance" : "false",
+            "customScale" : "5"
+         },
+         "type" : "Waypoint",
+         "x" : 291.50,
+         "y" : 34.0
+      },
+      {
+         "id" : 5010,
+         "props" : {
+            "advanceDelay" : "0",
+            "autoAdvance" : "false",
+            "nextWaypoint" : "5009"
+         },
+         "type" : "Waypoint",
+         "x" : 291.50,
+         "y" : 44.0
+      },
+      {
+         "id" : 5018,
+         "props" : {
+            "color" : "171,227,255,114",
+            "radius" : "85",
+            "spread" : "200",
+            "texture" : "ambientlight",
+            "textureRotationSpeed" : "-2.5"
+         },
+         "type" : "LightSource",
+         "x" : 450.50,
+         "y" : 6.0
+      },
+      {
+         "id" : 5019,
+         "props" : {
+            "shoeboxInclude" : "introduction_warehouse"
+         },
+         "type" : "ShoeboxIncluder",
+         "x" : 471.0,
+         "y" : 56.0
+      },
+      {
+         "id" : 5043,
+         "props" : {
+            "height" : "28",
+            "weaponDropFactor" : "0.25"
+         },
+         "type" : "CheckpointTrigger",
+         "x" : 228.0,
+         "y" : 40.0
+      },
+      {
+         "id" : 5062,
+         "props" : {
+            "enterEvent" : "start_and_show",
+            "parentTrigger" : "5065",
+            "tag" : "aircompressor_start"
+         },
+         "type" : "ShoeboxTagTrigger",
+         "x" : 273.0,
+         "y" : 55.0
+      },
+      {
+         "id" : 5063,
+         "props" : {
+            "enterEvent" : "start_and_show",
+            "parentTrigger" : "5064",
+            "tag" : "aircompressor_start_particle"
+         },
+         "type" : "ShoeboxTagTrigger",
+         "x" : 273.0,
+         "y" : 50.0
+      },
+      {
+         "id" : 5064,
+         "props" : {
+            "enterDelay" : "2",
+            "once" : "true",
+            "parentTrigger" : "5099"
+         },
+         "type" : "DelayTrigger",
+         "x" : 270.0,
+         "y" : 49.0
+      },
+      {
+         "id" : 5065,
+         "props" : {
+            "enterDelay" : "1.5",
+            "once" : "true",
+            "parentTrigger" : "5099"
+         },
+         "type" : "DelayTrigger",
+         "x" : 270.0,
+         "y" : 54.0
+      },
+      {
+         "id" : 5068,
+         "props" : {
+            "shoeboxInclude" : "ship_outside"
+         },
+         "type" : "ShoeboxIncluder",
+         "x" : 4.0,
+         "y" : 56.0
+      },
+      {
+         "id" : 5071,
+         "props" : {
+            "colorGradingEnter" : "airlock",
+            "colorGradingExit" : "rewind_greenhouse",
+            "duration" : "2.01754",
+            "once" : "true",
+            "parentTrigger" : "59770"
+         },
+         "type" : "ColorGradingTrigger",
+         "x" : 240.0,
+         "y" : 69.0
+      },
+      {
+         "id" : 5077,
+         "props" : {
+            "enabled" : "true",
+            "height" : "78",
+            "width" : "60"
+         },
+         "type" : "DarknessSource",
+         "x" : 260.0,
+         "y" : 53.0
+      },
+      {
+         "id" : 5078,
+         "props" : {
+            "easingDuration" : "0.125",
+            "easingType" : "Linear",
+            "once" : "true",
+            "parentTrigger" : "5102",
+            "targetAmbientLight" : "255"
+         },
+         "type" : "AmbientLightTrigger",
+         "x" : 273.0,
+         "y" : 60.0
+      },
+      {
+         "id" : 5079,
+         "props" : {
+            "color" : "255,255,255,255",
+            "direction" : "109.565",
+            "positionCulling" : "false",
+            "radius" : "74.0761",
+            "spread" : "60",
+            "texture" : "ambientlight_nocolor",
+            "textureRotationSpeed" : "4"
+         },
+         "type" : "LightSource",
+         "x" : 202.50,
+         "y" : 48.0
+      },
+      {
+         "id" : 5091,
+         "props" : {
+            "enterEvent" : "show",
+            "height" : "2",
+            "parentTrigger" : "4756",
+            "tag" : "hacked"
+         },
+         "type" : "ShoeboxTagTrigger",
+         "x" : 467.0,
+         "y" : 62.0
+      },
+      {
+         "id" : 5092,
+         "props" : {
+            "enterEvent" : "hide",
+            "parentTrigger" : "4756",
+            "tag" : "hacked_hide"
+         },
+         "type" : "ShoeboxTagTrigger",
+         "x" : 467.0,
+         "y" : 60.0
+      },
+      {
+         "id" : 5093,
+         "props" : {
+            "backgroundBlurRange0" : "-2",
+            "backgroundBlurRange1" : "-10",
+            "backgroundBlurRange2" : "-16",
+            "backgroundBlurRange3" : "-25",
+            "backgroundBlurRange4" : "-40",
+            "easingDuration" : "1",
+            "foregroundBlurRange0" : "1",
+            "foregroundBlurRange1" : "1.5",
+            "foregroundBlurRange2" : "2",
+            "parentTrigger" : "58803",
+            "useForegroundBlur" : "true"
+         },
+         "type" : "BlurTrigger",
+         "x" : 305.0,
+         "y" : 42.0
+      },
+      {
+         "id" : 5096,
+         "props" : {
+            "barrelCount" : "4",
+            "hasIndestructibleShield" : "true",
+            "hasShield" : "true",
+            "laserLength" : "25",
+            "preset" : "laser_asteroidfield",
+            "rotation" : "140",
+            "rotationSpeed" : "50"
+         },
+         "type" : "LaserTurret",
+         "x" : 139.0,
+         "y" : 48.0
+      },
+      {
+         "id" : 5098,
+         "props" : {
+            "barrelCount" : "4",
+            "hasIndestructibleShield" : "true",
+            "hasShield" : "true",
+            "laserLength" : "25",
+            "preset" : "laser_asteroidfield",
+            "rotationSpeed" : "50"
+         },
+         "type" : "LaserTurret",
+         "x" : 90.0,
+         "y" : 48.0
+      },
+      {
+         "id" : 5099,
+         "props" : {
+            "enabled" : "false",
+            "height" : "44",
+            "once" : "true",
+            "width" : "30"
+         },
+         "type" : "Trigger",
+         "x" : 247.0,
+         "y" : 52.0
+      },
+      {
+         "id" : 5101,
+         "props" : {
+            "height" : "15",
+            "width" : "11"
+         },
+         "type" : "Trigger",
+         "x" : 217.50,
+         "y" : 38.0
+      },
+      {
+         "id" : 5102,
+         "props" : {
+            "enterDelay" : "1.1",
+            "parentTrigger" : "5099"
+         },
+         "type" : "DelayTrigger",
+         "x" : 270.0,
+         "y" : 59.0
+      },
+      {
+         "id" : 5333,
+         "props" : {
+            "rotation" : "90"
+         },
+         "type" : "PipeGateHorizontal",
+         "x" : 433.2697753906250,
+         "y" : 54.07676315307617
+      },
+      {
+         "id" : 5408,
+         "props" : {
+            "disableMoveControls" : "false",
+            "height" : "11"
+         },
+         "type" : "DisableControlsTrigger",
+         "x" : 426.0,
+         "y" : 48.0
+      },
+      {
+         "id" : 5890,
+         "props" : {
+            "height" : "95",
+            "width" : "229"
+         },
+         "type" : "ZeroGravityTrigger",
+         "x" : 113.50,
+         "y" : 79.0
+      },
+      {
+         "id" : 5928,
+         "props" : {
+            "enableSignal" : "56476",
+            "enabled" : "false",
+            "followEntity" : "2588"
+         },
+         "type" : "DLL",
+         "x" : 254.0,
+         "y" : 87.0
+      },
+      {
+         "id" : 7533,
+         "props" : {
+            "enabled" : "true",
+            "playerIsScourArea" : "false",
+            "positionCulling" : "false",
+            "scourAreas" : "65993"
+         },
+         "type" : "KamikazeEnemy",
+         "x" : 372.0,
+         "y" : 56.0
+      },
+      {
+         "id" : 7980,
+         "props" : {
+            "order" : "8"
+         },
+         "type" : "PlayerBotSpawnPoint",
+         "x" : 238.0,
+         "y" : 43.0
+      },
+      {
+         "id" : 10711,
+         "props" : {
+            "shoeboxInclude" : "planet_asteroidbelt"
+         },
+         "type" : "ShoeboxIncluder",
+         "x" : 90.0,
+         "y" : 69.0
+      },
+      {
+         "id" : 11263,
+         "props" : {},
+         "type" : "DestructibleObjectCameraWall",
+         "x" : 235.7333374023438,
+         "y" : 60.26664733886719
+      },
+      {
+         "id" : 11745,
+         "props" : {
+            "enabled" : "true",
+            "enterDelay" : "10",
+            "height" : "2",
+            "parentTrigger" : "67160",
+            "type" : "rectangle"
+         },
+         "type" : "DelayTrigger",
+         "x" : 375.0,
+         "y" : 34.0
+      },
+      {
+         "id" : 11808,
+         "props" : {
+            "enabled" : "false",
+            "entities" : "5928",
+            "parentTrigger" : "28989"
+         },
+         "type" : "AssassinateTrigger",
+         "x" : 299.0,
+         "y" : 27.0
+      },
+      {
+         "id" : 12255,
+         "props" : {},
+         "type" : "PickupAmmo",
+         "x" : 242.0,
+         "y" : 32.0
+      },
+      {
+         "id" : 12309,
+         "props" : {
+            "emotion" : "angry",
+            "parentTrigger" : "50460",
+            "textID" : "01_STARSHIP_RS",
+            "triggerOnTouch" : "false"
+         },
+         "type" : "TextBalloonTrigger",
+         "x" : 216.0,
+         "y" : 76.0
+      },
+      {
+         "id" : 12643,
+         "props" : {
+            "effectsCue" : "aircompressor_ambience",
+            "innerRadius" : "50",
+            "positionCulling" : "false",
+            "radius" : "98"
+         },
+         "type" : "SoundSource",
+         "x" : 449.0,
+         "y" : 55.0
+      },
+      {
+         "id" : 12700,
+         "props" : {
+            "conversation" : "01_jumptutorial",
+            "parentTrigger" : "85823"
+         },
+         "type" : "ConversationTrigger",
+         "x" : 244.0,
+         "y" : 27.0
+      },
+      {
+         "id" : 14168,
+         "props" : {
+            "enableEntities" : "1062",
+            "triggerOnTouch" : "false"
+         },
+         "type" : "EnableTrigger",
+         "x" : 243.0,
+         "y" : 75.0
+      },
+      {
+         "id" : 14579,
+         "props" : {},
+         "type" : "CameraFOVTrigger",
+         "x" : 19.0,
+         "y" : 48.0
+      },
+      {
+         "id" : 15797,
+         "props" : {
+            "once" : "true",
+            "parentTrigger" : "21601"
+         },
+         "type" : "MusicIntensityFastTrigger",
+         "x" : 396.0,
+         "y" : 43.0
+      },
+      {
+         "id" : 16629,
+         "props" : {
+            "enterDelay" : "5",
+            "height" : "2",
+            "parentTrigger" : "67160",
+            "type" : "rectangle"
+         },
+         "type" : "DelayTrigger",
+         "x" : 379.0,
+         "y" : 34.0
+      },
+      {
+         "id" : 16690,
+         "props" : {},
+         "type" : "PickupAmmo",
+         "x" : 53.0,
+         "y" : 53.0
+      },
+      {
+         "id" : 17305,
+         "props" : {
+            "enableEntities" : "4749",
+            "enterAction" : "Enable",
+            "parentTrigger" : "79464"
+         },
+         "type" : "EnableTrigger",
+         "x" : 424.0,
+         "y" : 27.0
+      },
+      {
+         "id" : 17568,
+         "props" : {},
+         "type" : "DestructibleObjectCameraWall",
+         "x" : 443.0,
+         "y" : 61.0
+      },
+      {
+         "id" : 17877,
+         "props" : {
+            "affectsEnemies" : "true",
+            "affectsPlayer" : "false",
+            "force" : "90",
+            "height" : "33",
+            "rotation" : "-90",
+            "visual" : "nothing",
+            "width" : "12"
+         },
+         "type" : "ForceField",
+         "x" : 292.0,
+         "y" : 47.0
+      },
+      {
+         "id" : 18849,
+         "props" : {},
+         "type" : "PickupAmmo",
+         "x" : 190.0,
+         "y" : 63.0
+      },
+      {
+         "id" : 18997,
+         "props" : {
+            "buttonType" : "jump",
+            "enabled" : "false",
+            "stickToEntity" : "2588"
+         },
+         "type" : "ButtonPromptTrigger",
+         "x" : 247.0,
+         "y" : 25.0
+      },
+      {
+         "id" : 19383,
+         "props" : {
+            "enabled" : "true",
+            "rotation" : "72.6316",
+            "speed" : "3.24561"
+         },
+         "type" : "AsteroidSmall",
+         "x" : 73.0,
+         "y" : 35.0
+      },
+      {
+         "id" : 19501,
+         "props" : {},
+         "type" : "ZeroGravityGenerator",
+         "x" : 304.0,
+         "y" : 52.0
+      },
+      {
+         "id" : 19960,
+         "props" : {},
+         "type" : "PickupAmmo",
+         "x" : 439.0,
+         "y" : 37.0
+      },
+      {
+         "id" : 19979,
+         "props" : {
+            "SoundLayer1" : "false",
+            "SoundLayer2" : "true",
+            "SoundLayer3" : "false",
+            "enterAction" : "Enable",
+            "exitAction" : "Do nothing",
+            "fadeInDuration" : "2",
+            "fadeOutDuration" : "2",
+            "height" : "32",
+            "useFadeOutDuration" : "false"
+         },
+         "type" : "SoundLayerAreaTrigger",
+         "x" : 234.0,
+         "y" : 43.0
+      },
+      {
+         "id" : 20096,
+         "props" : {},
+         "type" : "DestructibleObjectTrafficCone",
+         "x" : 436.5174560546875,
+         "y" : 37.45413208007813
+      },
+      {
+         "id" : 20259,
+         "props" : {
+            "effectsCue" : "aircompressor_pump",
+            "enabled" : "false",
+            "innerRadius" : "56",
+            "positionCulling" : "false",
+            "radius" : "60"
+         },
+         "type" : "SoundSource",
+         "x" : 274.50,
+         "y" : 54.0
+      },
+      {
+         "id" : 20448,
+         "props" : {
+            "enableEntities" : "87797,20259,68853",
+            "parentTrigger" : "5065"
+         },
+         "type" : "EnableTrigger",
+         "x" : 273.0,
+         "y" : 53.0
+      },
+      {
+         "id" : 21170,
+         "props" : {
+            "height" : "70",
+            "id" : "0"
+         },
+         "type" : "LapTrigger",
+         "x" : 257.0,
+         "y" : 40.0
+      },
+      {
+         "id" : 21351,
+         "props" : {
+            "FOVEnter" : "65",
+            "SetFOVOnExit" : "false",
+            "easingDuration" : "2",
+            "height" : "10",
+            "width" : "13"
+         },
+         "type" : "CameraFOVTrigger",
+         "x" : 472.50,
+         "y" : 50.0
+      },
+      {
+         "id" : 21601,
+         "props" : {
+            "disableEntities" : "67160,16629,49718,3655,79735,75079,11745,30066",
+            "enableEntities" : "1625",
+            "enterAction" : "Enable / Disable",
+            "height" : "8",
+            "once" : "true"
+         },
+         "type" : "EnableTrigger",
+         "x" : 388.0,
+         "y" : 49.0
+      },
+      {
+         "id" : 23737,
+         "props" : {
+            "offsetYEnter" : "2",
+            "parentTrigger" : "79464"
+         },
+         "type" : "CameraOffsetTrigger",
+         "x" : 424.0,
+         "y" : 19.0
+      },
+      {
+         "id" : 24784,
+         "props" : {
+            "enableEntities" : "18997",
+            "parentTrigger" : "85823"
+         },
+         "type" : "EnableTrigger",
+         "x" : 247.0,
+         "y" : 27.0
+      },
+      {
+         "id" : 25015,
+         "props" : {},
+         "type" : "Cockroach",
+         "x" : 359.50,
+         "y" : 37.0
+      },
+      {
+         "id" : 25016,
+         "props" : {
+            "hasShield" : "false",
+            "preset" : "missile_asteroidfield",
+            "rotation" : "-40"
+         },
+         "type" : "Turret",
+         "x" : 189.0,
+         "y" : 36.0
+      },
+      {
+         "id" : 25042,
+         "props" : {
+            "easingDuration" : "1",
+            "fogColorEnter" : "57,104,131",
+            "fogFarEnter" : "-60",
+            "fogNearEnter" : "10",
+            "parentTrigger" : "58803",
+            "resetColorOnExit" : "false",
+            "resetNearFarOnExit" : "false"
+         },
+         "type" : "FogTrigger",
+         "x" : 305.0,
+         "y" : 40.0
+      },
+      {
+         "id" : 25162,
+         "props" : {},
+         "type" : "DestructibleObjectCable",
+         "x" : 475.50,
+         "y" : 52.0
+      },
+      {
+         "id" : 25232,
+         "props" : {
+            "height" : "9",
+            "id" : "1"
+         },
+         "type" : "LapTrigger",
+         "x" : 420.0,
+         "y" : 47.0
+      },
+      {
+         "id" : 26294,
+         "props" : {
+            "actors" : "1062",
+            "conversation" : "01_dll_2",
+            "height" : "20",
+            "radius" : "12",
+            "stickToEntity" : "1062",
+            "triggers" : "58026,54749",
+            "type" : "circle",
+            "width" : "2"
+         },
+         "type" : "ConversationTrigger",
+         "x" : 252.0,
+         "y" : 83.0
+      },
+      {
+         "id" : 27040,
+         "props" : {
+            "color" : "169,231,228,0",
+            "direction" : "180",
+            "enableFlickering" : "true",
+            "enableSignal" : "85027",
+            "enabled" : "false",
+            "flickerColor" : "0,0,0,255",
+            "flickerDelay" : "0.9",
+            "flickerDuration" : "0.1",
+            "flickerRadius" : "34",
+            "positionCulling" : "false",
+            "radius" : "70",
+            "spread" : "180",
+            "texture" : "ambientlight",
+            "textureRotationSpeed" : "3.1579"
+         },
+         "type" : "LightSource",
+         "x" : 261.50,
+         "y" : 72.0
+      },
+      {
+         "id" : 27467,
+         "props" : {},
+         "type" : "PickupAmmo",
+         "x" : 404.0,
+         "y" : 46.0
+      },
+      {
+         "id" : 28038,
+         "props" : {
+            "actors" : "5928",
+            "conversation" : "01_dll_1",
+            "height" : "20",
+            "radius" : "12",
+            "stickToEntity" : "5928",
+            "triggers" : "58026,14168",
+            "type" : "circle",
+            "width" : "2"
+         },
+         "type" : "ConversationTrigger",
+         "x" : 252.0,
+         "y" : 87.0
+      },
+      {
+         "id" : 28153,
+         "props" : {
+            "hasShield" : "false",
+            "rotation" : "-140",
+            "stickToCollision" : "Detect"
+         },
+         "type" : "Turret",
+         "x" : 217.0,
+         "y" : 54.0
+      },
+      {
+         "id" : 28230,
+         "props" : {
+            "ambientCue" : "amb_general_1",
+            "innerRadius" : "24",
+            "radius" : "41",
+            "soundbank" : "Ambient"
+         },
+         "type" : "SoundSource",
+         "x" : 347.0,
+         "y" : 48.0
+      },
+      {
+         "id" : 28858,
+         "props" : {
+            "advanceDelay" : "0",
+            "autoAdvance" : "false"
+         },
+         "type" : "Waypoint",
+         "x" : 227.50,
+         "y" : 35.0
+      },
+      {
+         "id" : 28986,
+         "props" : {
+            "FOVEnter" : "60",
+            "SetFOVOnExit" : "false",
+            "easingDuration" : "2.63158",
+            "once" : "true",
+            "parentTrigger" : "79464"
+         },
+         "type" : "CameraFOVTrigger",
+         "x" : 424.0,
+         "y" : 23.0
+      },
+      {
+         "id" : 28989,
+         "props" : {
+            "enterDelay" : "1",
+            "parentTrigger" : "58803"
+         },
+         "type" : "DelayTrigger",
+         "x" : 304.0,
+         "y" : 30.0
+      },
+      {
+         "id" : 29260,
+         "props" : {
+            "enableEntities" : "",
+            "enterAction" : "Enable",
+            "parentTrigger" : "5102"
+         },
+         "type" : "EnableTrigger",
+         "x" : 275.0,
+         "y" : 58.0
+      },
+      {
+         "id" : 29756,
+         "props" : {},
+         "type" : "DestructibleObjectCrateCorpse02",
+         "x" : 364.50,
+         "y" : 37.0
+      },
+      {
+         "id" : 30066,
+         "props" : {
+            "delay" : "0",
+            "parentTrigger" : "11745",
+            "textID" : "01_DOUBLEJUMPREMINDER_RS",
+            "triggerOnTouch" : "false"
+         },
+         "type" : "TextBalloonTrigger",
+         "x" : 375.0,
+         "y" : 32.0
+      },
+      {
+         "id" : 30151,
+         "props" : {
+            "enableEntities" : "87942",
+            "parentTrigger" : "63294"
+         },
+         "type" : "EnableTrigger",
+         "x" : 273.0,
+         "y" : 64.0
+      },
+      {
+         "id" : 30217,
+         "props" : {},
+         "type" : "DestructibleObjectTrafficCone",
+         "x" : 432.5632324218750,
+         "y" : 37.38210678100586
+      },
+      {
+         "id" : 30287,
+         "props" : {
+            "actors" : "69747",
+            "conversation" : "01_dll_3",
+            "height" : "20",
+            "radius" : "12",
+            "stickToEntity" : "69747",
+            "triggers" : "58026",
+            "type" : "circle",
+            "width" : "2"
+         },
+         "type" : "ConversationTrigger",
+         "x" : 252.0,
+         "y" : 85.0
+      },
+      {
+         "id" : 31268,
+         "props" : {
+            "conversation" : "01_hacktutorial",
+            "height" : "2",
+            "width" : "11"
+         },
+         "type" : "ConversationTrigger",
+         "x" : 450.50,
+         "y" : 53.0
+      },
+      {
+         "id" : 32639,
+         "props" : {},
+         "type" : "DestructibleObjectLightCeiling",
+         "x" : 468.0,
+         "y" : 55.0
+      },
+      {
+         "id" : 33284,
+         "props" : {
+            "preset" : "flame",
+            "rotation" : "-90",
+            "rotationSpeed" : "130",
+            "rotationSpreadLimit" : "46"
+         },
+         "type" : "Turret",
+         "x" : 422.0,
+         "y" : 47.0
+      },
+      {
+         "id" : 33844,
+         "props" : {
+            "enableEntities" : "40540",
+            "once" : "true"
+         },
+         "type" : "EnableTrigger",
+         "x" : 323.0,
+         "y" : 58.0
+      },
+      {
+         "id" : 34395,
+         "props" : {
+            "fadeDuration" : "3",
+            "parentTrigger" : "95175",
+            "useDefaultFade" : "false"
+         },
+         "type" : "MusicIntensityMediumTrigger",
+         "x" : 291.0,
+         "y" : 27.0
+      },
+      {
+         "id" : 34822,
+         "props" : {
+            "disableEntities" : "44465,55836",
+            "enableEntities" : "44465,55836",
+            "exitAction" : "Disable",
+            "height" : "6",
+            "width" : "11"
+         },
+         "type" : "EnableTrigger",
+         "x" : 450.50,
+         "y" : 55.0
+      },
+      {
+         "id" : 37920,
+         "props" : {
+            "hasShield" : "false",
+            "rotation" : "-150",
+            "stickToCollision" : "Detect"
+         },
+         "type" : "Turret",
+         "x" : 327.0,
+         "y" : 49.0
+      },
+      {
+         "id" : 38790,
+         "props" : {
+            "color" : "255,0,0,110",
+            "enableFlickering" : "true",
+            "flickerColor" : "255,0,0,95",
+            "flickerDelay" : "0.1",
+            "flickerDuration" : "0.1",
+            "flickerRadius" : "11.5",
+            "radius" : "12",
+            "texture" : "ambientlight"
+         },
+         "type" : "LightSource",
+         "x" : 461.50,
+         "y" : 94.0
+      },
+      {
+         "id" : 39497,
+         "props" : {
+            "height" : "7",
+            "width" : "19"
+         },
+         "type" : "Area",
+         "x" : 414.50,
+         "y" : 48.0
+      },
+      {
+         "id" : 39716,
+         "props" : {
+            "color" : "169,231,228,0",
+            "direction" : "180",
+            "enableFlickering" : "true",
+            "enableSignal" : "5099",
+            "enabled" : "false",
+            "flickerColor" : "0,0,0,255",
+            "flickerDelay" : "0.9",
+            "flickerDuration" : "0.1",
+            "flickerRadius" : "34",
+            "positionCulling" : "false",
+            "radius" : "70",
+            "spread" : "180",
+            "texture" : "ambientlight",
+            "textureRotationSpeed" : "3.1579"
+         },
+         "type" : "LightSource",
+         "x" : 260.50,
+         "y" : 72.0
+      },
+      {
+         "id" : 40540,
+         "props" : {
+            "entities" : "7533",
+            "entitiesPerWave" : "1",
+            "maxTotalSpawnedEntities" : "5",
+            "spawnDelay" : "0.6",
+            "spawnDelayDampening" : "0.95",
+            "useSpawnEffect" : "false"
+         },
+         "type" : "Spawner",
+         "x" : 377.0,
+         "y" : 60.0
+      },
+      {
+         "id" : 40938,
+         "props" : {
+            "disableEntities" : "12700,24784,18997",
+            "enableEntities" : "5099",
+            "enterAction" : "Enable / Disable",
+            "height" : "38",
+            "type" : "rectangle"
+         },
+         "type" : "EnableTrigger",
+         "x" : 253.0,
+         "y" : 54.0
+      },
+      {
+         "id" : 41235,
+         "props" : {
+            "hasShield" : "false",
+            "rotation" : "-150",
+            "stickToCollision" : "Detect"
+         },
+         "type" : "Turret",
+         "x" : 335.0,
+         "y" : 49.0
+      },
+      {
+         "id" : 41907,
+         "props" : {},
+         "type" : "DestructibleObjectTrafficCone",
+         "x" : 352.50,
+         "y" : 46.0
+      },
+      {
+         "id" : 41983,
+         "props" : {
+            "enabled" : "true",
+            "rotation" : "135.789",
+            "speed" : "3.24561"
+         },
+         "type" : "AsteroidSmall",
+         "x" : 72.0,
+         "y" : 59.0
+      },
+      {
+         "id" : 42095,
+         "props" : {},
+         "type" : "PickupAmmo",
+         "x" : 186.0,
+         "y" : 52.0
+      },
+      {
+         "id" : 43068,
+         "props" : {
+            "color" : "255,0,0,110",
+            "enableFlickering" : "true",
+            "flickerColor" : "255,0,0,95",
+            "flickerDelay" : "0.1",
+            "flickerDuration" : "0.1",
+            "flickerRadius" : "11.5",
+            "radius" : "12",
+            "texture" : "ambientlight"
+         },
+         "type" : "LightSource",
+         "x" : 442.50,
+         "y" : 108.0
+      },
+      {
+         "id" : 44465,
+         "props" : {
+            "enableEntities" : "55836",
+            "parentTrigger" : "31268"
+         },
+         "type" : "EnableTrigger",
+         "x" : 452.0,
+         "y" : 51.0
+      },
+      {
+         "id" : 46562,
+         "props" : {
+            "enableEntities" : "4749",
+            "enterAction" : "Enable",
+            "enterDelay" : "1",
+            "once" : "true",
+            "parentTrigger" : "50460"
+         },
+         "type" : "EnableTrigger",
+         "x" : 209.0,
+         "y" : 66.0
+      },
+      {
+         "id" : 46664,
+         "props" : {},
+         "type" : "DestructibleObjectTrafficCone",
+         "x" : 462.50,
+         "y" : 38.0
+      },
+      {
+         "id" : 46682,
+         "props" : {
+            "effectsCue" : "aircompressor_steam_loop",
+            "innerRadius" : "17",
+            "positionCulling" : "false",
+            "radius" : "34"
+         },
+         "type" : "SoundSource",
+         "x" : 425.0,
+         "y" : 42.0
+      },
+      {
+         "id" : 46697,
+         "props" : {},
+         "type" : "DestructibleObjectTrafficCone",
+         "x" : 435.6004638671875,
+         "y" : 37.43669891357422
+      },
+      {
+         "id" : 46826,
+         "props" : {},
+         "type" : "DestructibleObjectLightCeiling",
+         "x" : 413.0,
+         "y" : 52.0
+      },
+      {
+         "id" : 49174,
+         "props" : {
+            "order" : "9"
+         },
+         "type" : "PlayerBotSpawnPoint",
+         "x" : 424.0,
+         "y" : 46.0
+      },
+      {
+         "id" : 49718,
+         "props" : {
+            "delay" : "0",
+            "parentTrigger" : "16629",
+            "textID" : "01_DOUBLEJUMPTUTORIAL_RS",
+            "triggerOnTouch" : "false"
+         },
+         "type" : "TextBalloonTrigger",
+         "x" : 379.0,
+         "y" : 32.0
+      },
+      {
+         "id" : 50109,
+         "props" : {
+            "distance" : "10",
+            "enableSignal" : "4756",
+            "hasCoverGraphic" : "true",
+            "height" : "5",
+            "isOpened" : "true",
+            "rotation" : "90",
+            "speedClose" : "5",
+            "width" : "10"
+         },
+         "type" : "Piston",
+         "x" : 435.0,
+         "y" : 31.0
+      },
+      {
+         "id" : 50460,
+         "props" : {
+            "entities" : "83390,28153,51083,62023"
+         },
+         "type" : "KilledSensingTrigger",
+         "x" : 215.0,
+         "y" : 65.0
+      },
+      {
+         "id" : 50858,
+         "props" : {},
+         "type" : "PickupAmmo",
+         "x" : 356.0,
+         "y" : 46.0
+      },
+      {
+         "id" : 51074,
+         "props" : {
+            "onEnter" : "Off",
+            "parentTrigger" : "5078"
+         },
+         "type" : "PlayerLightTrigger",
+         "x" : 275.0,
+         "y" : 60.0
+      },
+      {
+         "id" : 51083,
+         "props" : {
+            "hasShield" : "false",
+            "rotation" : "-140",
+            "stickToCollision" : "Detect"
+         },
+         "type" : "Turret",
+         "x" : 217.0,
+         "y" : 50.0
+      },
+      {
+         "id" : 51924,
+         "props" : {
+            "height" : "10",
+            "triggerLeft" : "4396",
+            "triggerRight" : "99317,33844"
+         },
+         "type" : "DirectionTrigger",
+         "x" : 321.0,
+         "y" : 45.0
+      },
+      {
+         "id" : 53388,
+         "props" : {},
+         "type" : "DestructibleObjectTrafficCone",
+         "x" : 460.8347167968750,
+         "y" : 37.49128341674805
+      },
+      {
+         "id" : 54749,
+         "props" : {
+            "enableEntities" : "69747",
+            "triggerOnTouch" : "false"
+         },
+         "type" : "EnableTrigger",
+         "x" : 247.0,
+         "y" : 75.0
+      },
+      {
+         "id" : 55356,
+         "props" : {
+            "hasShield" : "false",
+            "preset" : "missile_asteroidfield",
+            "rotation" : "-40"
+         },
+         "type" : "Turret",
+         "x" : 185.0,
+         "y" : 36.0
+      },
+      {
+         "id" : 55836,
+         "props" : {
+            "buttonType" : "virusUpload",
+            "enabled" : "false",
+            "once" : "true",
+            "stickToEntity" : "2588"
+         },
+         "type" : "ButtonPromptTrigger",
+         "x" : 452.0,
+         "y" : 49.0
+      },
+      {
+         "id" : 56261,
+         "props" : {
+            "parentTrigger" : "1625"
+         },
+         "type" : "MusicIntensityNoneTrigger",
+         "x" : 424.0,
+         "y" : 61.0
+      },
+      {
+         "id" : 56476,
+         "props" : {
+            "enableEntities" : "5099",
+            "height" : "32",
+            "once" : "true",
+            "width" : "2"
+         },
+         "type" : "EnableTrigger",
+         "x" : 262.0,
+         "y" : 56.0
+      },
+      {
+         "id" : 56678,
+         "props" : {
+            "colorGradingEnter" : "airlock",
+            "colorGradingExit" : "rewind_greenhouse",
+            "duration" : "2.01754",
+            "once" : "true",
+            "parentTrigger" : "79464"
+         },
+         "type" : "ColorGradingTrigger",
+         "x" : 424.0,
+         "y" : 29.0
+      },
+      {
+         "id" : 57340,
+         "props" : {
+            "hasShield" : "false",
+            "preset" : "missile_asteroidfield",
+            "rotation" : "-40"
+         },
+         "type" : "Turret",
+         "x" : 181.0,
+         "y" : 36.0
+      },
+      {
+         "id" : 58026,
+         "props" : {
+            "disableEntities" : "14168,54749",
+            "enableEntities" : "5008",
+            "enterAction" : "Enable / Disable",
+            "once" : "true"
+         },
+         "type" : "EnableTrigger",
+         "x" : 286.0,
+         "y" : 32.0
+      },
+      {
+         "id" : 58803,
+         "props" : {
+            "disableEntities" : "62438",
+            "enableEntities" : "5008",
+            "enterAction" : "Enable / Disable",
+            "height" : "40",
+            "once" : "true"
+         },
+         "type" : "EnableTrigger",
+         "x" : 302.0,
+         "y" : 53.0
+      },
+      {
+         "id" : 59493,
+         "props" : {},
+         "type" : "DestructibleObjectTrafficCone",
+         "x" : 310.50,
+         "y" : 37.0
+      },
+      {
+         "id" : 59770,
+         "props" : {
+            "enabled" : "true",
+            "height" : "28"
+         },
+         "type" : "Trigger",
+         "x" : 238.0,
+         "y" : 43.0
+      },
+      {
+         "id" : 59977,
+         "props" : {
+            "achievementID" : "breaking_and_entering",
+            "parentTrigger" : "28989"
+         },
+         "type" : "AchievementTrigger",
+         "x" : 299.0,
+         "y" : 31.0
+      },
+      {
+         "id" : 60133,
+         "props" : {
+            "parentTrigger" : "59770"
+         },
+         "type" : "PlayerLightTrigger",
+         "x" : 240.0,
+         "y" : 61.0
+      },
+      {
+         "id" : 62023,
+         "props" : {
+            "hasShield" : "false",
+            "rotation" : "-140",
+            "stickToCollision" : "Detect"
+         },
+         "type" : "Turret",
+         "x" : 217.0,
+         "y" : 46.0
+      },
+      {
+         "id" : 62145,
+         "props" : {
+            "disableEntities" : "55836,31268,44465",
+            "enterAction" : "Disable",
+            "parentTrigger" : "4756"
+         },
+         "type" : "EnableTrigger",
+         "x" : 469.0,
+         "y" : 62.0
+      },
+      {
+         "id" : 62438,
+         "props" : {
+            "affectsEnemies" : "true",
+            "affectsPlayer" : "false",
+            "force" : "30",
+            "height" : "33",
+            "rotation" : "-90",
+            "visual" : "nothing",
+            "width" : "12"
+         },
+         "type" : "ForceField",
+         "x" : 286.0,
+         "y" : 47.0
+      },
+      {
+         "id" : 63294,
+         "props" : {
+            "enterDelay" : "1",
+            "parentTrigger" : "5099"
+         },
+         "type" : "DelayTrigger",
+         "x" : 270.0,
+         "y" : 64.0
+      },
+      {
+         "id" : 64732,
+         "props" : {
+            "disableMoveControls" : "true",
+            "force" : "215",
+            "height" : "42",
+            "rotation" : "90",
+            "visual" : "wind",
+            "width" : "48"
+         },
+         "type" : "ForceField",
+         "x" : 19.0,
+         "y" : 52.0
+      },
+      {
+         "id" : 65849,
+         "props" : {},
+         "type" : "PickupAmmo",
+         "x" : 94.0,
+         "y" : 64.0
+      },
+      {
+         "id" : 65993,
+         "props" : {},
+         "type" : "Area",
+         "x" : 351.0,
+         "y" : 51.0
+      },
+      {
+         "id" : 67160,
+         "props" : {
+            "width" : "14"
+         },
+         "type" : "Trigger",
+         "x" : 381.0,
+         "y" : 37.0
+      },
+      {
+         "id" : 67294,
+         "props" : {},
+         "type" : "PickupAmmo",
+         "x" : 362.0,
+         "y" : 37.0
+      },
+      {
+         "id" : 68086,
+         "props" : {
+            "height" : "20",
+            "weaponDropFactor" : "0.25"
+         },
+         "type" : "CheckpointTrigger",
+         "x" : 312.0,
+         "y" : 45.0
+      },
+      {
+         "id" : 68775,
+         "props" : {
+            "enableEntities" : "4748",
+            "enterAction" : "Enable",
+            "once" : "true",
+            "parentTrigger" : "5101"
+         },
+         "type" : "EnableTrigger",
+         "x" : 208.0,
+         "y" : 52.0
+      },
+      {
+         "id" : 68853,
+         "props" : {
+            "effectsCue" : "aircompressor_engineloop",
+            "enabled" : "false",
+            "innerRadius" : "49",
+            "positionCulling" : "false",
+            "radius" : "66"
+         },
+         "type" : "SoundSource",
+         "x" : 274.50,
+         "y" : 53.0
+      },
+      {
+         "id" : 69641,
+         "props" : {},
+         "type" : "DestructibleObjectLightCeiling",
+         "x" : 352.0,
+         "y" : 58.0
+      },
+      {
+         "id" : 69747,
+         "props" : {
+            "enabled" : "false",
+            "followEntity" : "2588",
+            "hasShield" : "true"
+         },
+         "type" : "DLL",
+         "x" : 254.0,
+         "y" : 85.0
+      },
+      {
+         "id" : 70435,
+         "props" : {
+            "KamikazeEnemy" : "false",
+            "backgroundBlurRange0" : "-4",
+            "backgroundBlurRange1" : "-10",
+            "backgroundBlurRange2" : "-15",
+            "backgroundBlurRange3" : "-123.316",
+            "backgroundBlurRange4" : "-123.316",
+            "fogColor" : "0,0,0",
+            "fogFar" : "-250",
+            "fogNear" : "-249",
+            "foregroundBlurRange0" : "1",
+            "foregroundBlurRange1" : "2",
+            "foregroundBlurRange2" : "3",
+            "levelAmbientLight" : "50",
+            "levelLightMode" : "Light",
+            "shoeboxSplitPriority" : "behind",
+            "tvFOV" : "45",
+            "useBackgroundBlur" : "true",
+            "useFog" : "true",
+            "useForegroundBlur" : "true"
+         },
+         "type" : "LevelSettings",
+         "x" : 22.0,
+         "y" : 55.0
+      },
+      {
+         "id" : 73810,
+         "props" : {},
+         "type" : "DestructibleObjectTrafficCone",
+         "x" : 353.50,
+         "y" : 46.0
+      },
+      {
+         "id" : 74335,
+         "props" : {
+            "rotation" : "180"
+         },
+         "type" : "PipeGateVertical",
+         "x" : 368.50,
+         "y" : 55.0
+      },
+      {
+         "id" : 75002,
+         "props" : {
+            "parentTrigger" : "4756",
+            "weaponDropFactor" : "0.25"
+         },
+         "type" : "CheckpointTrigger",
+         "x" : 463.0,
+         "y" : 64.0
+      },
+      {
+         "id" : 75079,
+         "props" : {
+            "buttonType" : "jump",
+            "enabled" : "false",
+            "height" : "4",
+            "width" : "23"
+         },
+         "type" : "ButtonPromptTrigger",
+         "x" : 375.50,
+         "y" : 43.0
+      },
+      {
+         "id" : 75469,
+         "props" : {},
+         "type" : "PickupAmmo",
+         "x" : 115.0,
+         "y" : 43.0
+      },
+      {
+         "id" : 75675,
+         "props" : {
+            "enableEntities" : "79063",
+            "parentTrigger" : "5099"
+         },
+         "type" : "EnableTrigger",
+         "x" : 273.0,
+         "y" : 67.0
+      },
+      {
+         "id" : 78199,
+         "props" : {},
+         "type" : "DestructibleObjectLightCeiling",
+         "x" : 311.0,
+         "y" : 56.0
+      },
+      {
+         "id" : 78881,
+         "props" : {},
+         "type" : "DestructibleObjectTrafficCone",
+         "x" : 434.4455566406250,
+         "y" : 37.34495544433594
+      },
+      {
+         "id" : 79063,
+         "props" : {
+            "effectsCue" : "machineroom_lights_on",
+            "enabled" : "false",
+            "innerRadius" : "99",
+            "positionCulling" : "false",
+            "radius" : "100",
+            "volume" : "0"
+         },
+         "type" : "SoundSource",
+         "x" : 266.50,
+         "y" : 50.0
+      },
+      {
+         "id" : 79464,
+         "props" : {
+            "enabled" : "true"
+         },
+         "type" : "Trigger",
+         "x" : 439.0,
+         "y" : 28.0
+      },
+      {
+         "id" : 79735,
+         "props" : {
+            "buttonType" : "jump",
+            "enabled" : "false",
+            "stickToEntity" : "2588"
+         },
+         "type" : "ButtonPromptTrigger",
+         "x" : 383.0,
+         "y" : 32.0
+      },
+      {
+         "id" : 80588,
+         "props" : {
+            "hasShield" : "false",
+            "rotation" : "0",
+            "rotationSpeed" : "-101"
+         },
+         "type" : "Turret",
+         "x" : 448.0,
+         "y" : 40.0
+      },
+      {
+         "id" : 81349,
+         "props" : {},
+         "type" : "DestructibleObjectCrateCorpse01",
+         "x" : 238.50,
+         "y" : 32.0
+      },
+      {
+         "id" : 81599,
+         "props" : {
+            "parentTrigger" : "79464"
+         },
+         "type" : "PlayerLightTrigger",
+         "x" : 424.0,
+         "y" : 21.0
+      },
+      {
+         "id" : 82492,
+         "props" : {
+            "effectsCue" : "aircompressor_steam_burst",
+            "enabled" : "false",
+            "innerRadius" : "50",
+            "positionCulling" : "false",
+            "radius" : "55"
+         },
+         "type" : "SoundSource",
+         "x" : 274.50,
+         "y" : 48.0
+      },
+      {
+         "id" : 83390,
+         "props" : {
+            "hasShield" : "false",
+            "rotation" : "-140",
+            "stickToCollision" : "Detect"
+         },
+         "type" : "Turret",
+         "x" : 217.0,
+         "y" : 58.0
+      },
+      {
+         "id" : 83577,
+         "props" : {
+            "hasShield" : "false",
+            "rotation" : "-150",
+            "stickToCollision" : "Detect"
+         },
+         "type" : "Turret",
+         "x" : 331.0,
+         "y" : 49.0
+      },
+      {
+         "id" : 84672,
+         "props" : {
+            "disableEntities" : "4774",
+            "enterAction" : "Disable",
+            "enterDelay" : "1",
+            "once" : "true",
+            "parentTrigger" : "50460"
+         },
+         "type" : "EnableTrigger",
+         "x" : 204.0,
+         "y" : 64.0
+      },
+      {
+         "id" : 85027,
+         "props" : {
+            "enterDelay" : "0.25",
+            "parentTrigger" : "5099"
+         },
+         "type" : "DelayTrigger",
+         "x" : 259.0,
+         "y" : 70.0
+      },
+      {
+         "id" : 85823,
+         "props" : {
+            "enterDelay" : "5",
+            "height" : "4",
+            "type" : "rectangle",
+            "width" : "15"
+         },
+         "type" : "DelayTrigger",
+         "x" : 244.50,
+         "y" : 32.0
+      },
+      {
+         "id" : 86712,
+         "props" : {},
+         "type" : "Cockroach",
+         "x" : 315.50,
+         "y" : 37.0
+      },
+      {
+         "id" : 87622,
+         "props" : {
+            "scourAreas" : "99418"
+         },
+         "type" : "KamikazeEnemy",
+         "x" : 304.0,
+         "y" : 54.0
+      },
+      {
+         "id" : 87797,
+         "props" : {
+            "effectsCue" : "aircompressor_ambience",
+            "enabled" : "false",
+            "innerRadius" : "60",
+            "positionCulling" : "false",
+            "radius" : "69"
+         },
+         "type" : "SoundSource",
+         "x" : 258.50,
+         "y" : 52.0
+      },
+      {
+         "id" : 87942,
+         "props" : {
+            "effectsCue" : "aircompressor_activate",
+            "enabled" : "false",
+            "innerRadius" : "45",
+            "positionCulling" : "false",
+            "radius" : "50"
+         },
+         "type" : "SoundSource",
+         "x" : 274.50,
+         "y" : 64.0
+      },
+      {
+         "id" : 88685,
+         "props" : {},
+         "type" : "PickupAmmo",
+         "x" : 395.0,
+         "y" : 46.0
+      },
+      {
+         "id" : 89005,
+         "props" : {},
+         "type" : "DestructibleObjectTrafficCone",
+         "x" : 273.50,
+         "y" : 37.0
+      },
+      {
+         "id" : 89413,
+         "props" : {
+            "orientation" : "left"
+         },
+         "type" : "DestructibleObjectCameraWall",
+         "x" : 315.0,
+         "y" : 52.0
+      },
+      {
+         "id" : 89695,
+         "props" : {
+            "hasShield" : "false",
+            "preset" : "missile_asteroidfield",
+            "rotation" : "-40"
+         },
+         "type" : "Turret",
+         "x" : 177.0,
+         "y" : 36.0
+      },
+      {
+         "id" : 90038,
+         "props" : {
+            "delay" : "1",
+            "emotion" : "happy",
+            "parentTrigger" : "59770",
+            "textID" : "01_GRAVITY_RS",
+            "triggerOnTouch" : "false"
+         },
+         "type" : "TextBalloonTrigger",
+         "x" : 240.0,
+         "y" : 57.0
+      },
+      {
+         "id" : 90709,
+         "props" : {},
+         "type" : "Cockroach",
+         "x" : 446.0,
+         "y" : 55.0
+      },
+      {
+         "id" : 90858,
+         "props" : {
+            "effectsCue" : "aircompressor_steam_loop",
+            "enabled" : "false",
+            "innerRadius" : "20",
+            "positionCulling" : "false",
+            "radius" : "45"
+         },
+         "type" : "SoundSource",
+         "x" : 274.50,
+         "y" : 47.0
+      },
+      {
+         "id" : 91675,
+         "props" : {
+            "enableEntities" : "82492,90858",
+            "parentTrigger" : "5064"
+         },
+         "type" : "EnableTrigger",
+         "x" : 273.0,
+         "y" : 47.0
+      },
+      {
+         "id" : 92976,
+         "props" : {},
+         "type" : "DestructibleObjectCrateCorpse02",
+         "x" : 250.50,
+         "y" : 32.0
+      },
+      {
+         "id" : 94580,
+         "props" : {},
+         "type" : "DestructibleObjectTrafficCone",
+         "x" : 311.50,
+         "y" : 37.0
+      },
+      {
+         "id" : 95046,
+         "props" : {
+            "musicTrack" : "area_introduction",
+            "soundLayer" : "SoundLayer1"
+         },
+         "type" : "MusicSource",
+         "x" : 53.50,
+         "y" : 50.0
+      },
+      {
+         "id" : 95175,
+         "props" : {
+            "enterDelay" : "1",
+            "parentTrigger" : "58026"
+         },
+         "type" : "DelayTrigger",
+         "x" : 287.0,
+         "y" : 27.0
+      },
+      {
+         "id" : 95337,
+         "props" : {
+            "order" : "10"
+         },
+         "type" : "PlayerBotSpawnPoint",
+         "x" : 439.0,
+         "y" : 28.0
+      },
+      {
+         "id" : 96243,
+         "props" : {
+            "offsetYEnter" : "5",
+            "parentTrigger" : "59770"
+         },
+         "type" : "CameraOffsetTrigger",
+         "x" : 240.0,
+         "y" : 59.0
+      },
+      {
+         "id" : 96583,
+         "props" : {
+            "disableEntities" : "27040,39716",
+            "enterAction" : "Disable",
+            "parentTrigger" : "5102"
+         },
+         "type" : "EnableTrigger",
+         "x" : 273.0,
+         "y" : 58.0
+      },
+      {
+         "id" : 96923,
+         "props" : {},
+         "type" : "DestructibleObjectTrafficCone",
+         "x" : 461.6994628906250,
+         "y" : 37.45413208007813
+      },
+      {
+         "id" : 96979,
+         "props" : {
+            "enabled" : "true",
+            "playerIsScourArea" : "true",
+            "positionCulling" : "false",
+            "scourAreas" : "39497"
+         },
+         "type" : "KamikazeEnemy",
+         "x" : 433.0,
+         "y" : 56.0
+      },
+      {
+         "id" : 98911,
+         "props" : {
+            "ambientCue" : "amb_outside_spacedrone_2",
+            "innerRadius" : "81",
+            "positionCulling" : "false",
+            "radius" : "100",
+            "soundbank" : "Ambient"
+         },
+         "type" : "SoundSource",
+         "x" : 162.0,
+         "y" : 64.0
+      },
+      {
+         "id" : 99317,
+         "props" : {
+            "offsetYEnter" : "0"
+         },
+         "type" : "CameraOffsetTrigger",
+         "x" : 323.0,
+         "y" : 52.0
+      },
+      {
+         "id" : 99418,
+         "props" : {},
+         "type" : "Area",
+         "x" : 303.0,
+         "y" : 50.0
+      },
+      {
+         "id" : 99757,
+         "props" : {},
+         "type" : "PickupAmmo",
+         "x" : 65.0,
+         "y" : 49.0
+      },
+      {
+         "id" : 99846,
+         "props" : {},
+         "type" : "DestructibleObjectTrafficCone",
+         "x" : 270.50,
+         "y" : 42.0
+      }
+   ],
+   "info" : {
+      "background" : "",
+      "default_mission" : "01_asteroidfield",
+      "height" : 126,
+      "theme" : "rocks",
+      "version" : 1,
+      "width" : 478
+   },
+   "notes" : [],
+   "pathfinding_radii" : [ 0.6660000085830688 ],
+   "theme_colors" : {
+      "solid" : {
+         "beach" : [ 255, 255, 255, 255 ],
+         "dark_rocks" : [ 255, 255, 255, 255 ],
+         "default" : [ 255, 255, 255, 255 ],
+         "none" : [ 255, 255, 255, 255 ],
+         "rocks" : [ 151, 162, 171, 255 ],
+         "sand" : [ 255, 255, 255, 255 ]
+      }
+   },
+   "version" : 1
+}
+*** DATA_END ***
+*** TILES_BEGIN ***
+                                                                                                                                                                                                                         sssss           sssssssssssssssssssssssssssssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+                                                                                                                                                                                                                         sssss           sssssssssssssssssssssssssssssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+                                                                                                                                                                                                                         sssss           sssssssssssssssssssssssssssssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+                                                                                                                                                                                                                         sssss           sssssssssssssssssssssssssssssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+                                                                                                                                                                                                                         sssss           sssssssssssssssssssssssssssssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+                                                                                                                                                                                                                         sssss           sssssssssssssssssssssssssssssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+                                                                                                                                                                                                                         sssss           sssssssssssssssssssssssssssssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+                                                                                                                                                                                                                         sssss           sssssssssssssssssssssssssssssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+                                                                                                                                                                                                                         sssss           sssssssssssssssssssssssssssssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+                                                                                                                                                                                                                         sssss           sssssssssssssssssssssssssssssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+                                                                                                                                                                                                                         sssss           sssssssssssssssssssssssssssssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+                                                                                                                                                                                                                         sssss           sssssssssssssssssssssssssssssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+                                                                                                                                                                                                                         sssss           sssssssssssssssssssssssssssssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+                                                                                                                                                                                                                         sssss           sssssssssssssssssssssssssssssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssss
+                                                                                                                                                                                                                         sssss           sssssssssssssssssssssssssssssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssss
+                                                                                                                                                                                                                         sssss           sssssssssssssssssssssssssssssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssss
+                                                                                                                                                                                                                         sssss           sssssssssssssssssssssssssssssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssss
+                                                                                                                                                                                                                         sssss           sssssssssssssssssssssssssssssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssss
+                                                                                                                                                                                                                         sssss           sssssssssssssssssssssssssssssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssss
+                                                                                                                                                                                                                         sssss           sssssssssssssssssssssssssssssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssss
+                                                                                                                                                                                                                         sssss           sssssssssssssssssssssssssssssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssss
+                                                                                                                                                                                                                         sssss           sssssssssssssssssssssssssssssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssss
+                                                                                                                                                                                                                         sssss           sssssssssssssssssssssssssssssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssss
+                                                                                                                                                                                                                         sssss           sssssssssssssssssssssssssssssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssss
+                                                                                                                                                                                                                         sssss           sssssssssssssssssssssssssssssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssss
+                                                                                                                                                                                                                         sssss           sssssssssssssssssssssssssssssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssss
+                                                                                                                                                                                                                         sssss           sssssssssssssssssssssssssssssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssss
+                                                                                                                                                                                                                         sssss           sssssssssssssssssssssssssssssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssss
+                                                                                                                                                                                                                         sssss           sssssssssssssssssssssssssssssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssss
+                                                                                                                                                                                                                         sssss           sssssssssssssssssssssssssssssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssss
+                                                                                                                                                                                                                         sssss           sssssssssssssssssssssssssssssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssss
+                                                                                                                                                                                                                         sssss           sssssssssssssssssssssssssssssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssss
+                                                                                                                                                                                                                         sssss           sssssssssssssssssssssssssssssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssss
+                                                                                                                                                                                                                         sssss           sssssssssssssssssssssssssssssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssss
+                                                                                                                                                                                                                         sssss           sssssssssssssssssssssssssssssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssss
+                                                                                                                                                                                                                         sssss           ssssssssssssssssss        sssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssss
+                                                                                                                                                                                                                         sssss           ssssssssssssssssss        sssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssss
+                                                                                                                                                                                                                         sssss           ssssssssssssssssss        sssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssss
+                                                                                                                                                                                                                         sssss           ssssssssssssssssss        sssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssss
+                                                                                                                                                                                                                         sssss           ssssssssssssssssss        sssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssss
+                                                                                                                                                                                                                         sssss           ssssssssssssssssss        sssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssss
+                                                                                                                                                                                                                         sssss           ssssssssssssssssss        sssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssss
+                                                                                                                                                                                                                      ssssssss           ssssssssssssssssss        sssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssss
+                                                                                                                                                                                                                      ssssssss           ssssssssssssssssss        sssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssss
+                                                                                                                                                                                                                      ssssssss           ssssssssssssssssss        sssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssss
+                                                                                                                                                                                                                      ssssssss           ssssssssssssssssss        sssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssss
+                                                                                                                                                                                                                      ssssssss           ssssssssssssssssss        sssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssss
+                                                                                                                                                                                                                      ssssssss           ssssssssssssssssss        sssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssss
+                                                                                                                                                                                                                      ssssssss           ssssssssssssssssss        sssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssss
+                                                                                                                                                                                                                      ssssssss           ssssssssssssssssss        sssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssss
+                                                                                                                                                                                                                      ssssssss           ssssssssssssssssss        sssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssss
+                                                                                                                                                                                                                                         ssssssssssssssssss        sssssssssssssssssssssssssss           sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssss
+                                                                                                                                                                                                                                                                                                                   sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssss
+                                                                                                                                                                                                                                                                                                                   sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssss
+                                                                                                                                                                                                                                                                                                                   sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssss
+                                                                                                                                                                                                                                                                                                                   sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssss
+                                                                                                                                                                                                                                                                                                                   sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssss
+                                                                                                                                                                                                                                                                                                                   sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssss
+                                                                                                                                                                                                                                                                                                                   sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssss
+                                                                                                                                                                                                                                                                                                                   sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssss
+                                                                                                                                                                                                                                                                                                                   sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssss
+                                                                                                                                                                                                                                                                                                                   sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss  ssssssss                    ssssssssssssssss
+                                                                                                                                                                                                                                                                                                                   sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss  ssssssss                    ssssssssssssssss
+                                                                                                                                                                                                                                                                                                                   sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss  ssssssss                    ccssssssssssssss
+                                                                                                                                                                                                                                                                                                                   sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss  ssssssss                    ccssssssssssssss
+                                                                                                                                                                                                                                                                                                                   sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss  s                           ccssssssssssssss
+                                                                                                                                                                                                                                                                                                                   sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss  s                           ccssssssssssssss
+                                                                                                                                                                                                                                                                                                                   sssssssssssssssssssssssssssssssss                            ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss  s                           ssssssssssssssss
+                                                                                                                                                                                                                                                                                                                   sssssssssssssssssssssssssssssssss                                       sssssssssssssssssssssssssssssssssssssssssssssssssssss  s                           ssssssssssssssss
+                                                                                                                                                                                                                                                                                                                            ssssssssssssssssssssssss                                       sssssssssssssssssssssssssssssssssssssssssssssssssssss  s                           ssssssssssssssss
+                                                                                                                                                                                                                                                                                                                            ssssssssssssssssssssssss                                       ssssssssssssssssssssssssssssssssssssssssssssssss                                              sssss
+                                                                                                                                                                                                                                                                                                                            ssssssssssssssssssssssss                            sssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                                              sssss
+                                                                                                                                                                                                                                                                                                                            ssssssssssssssssssssssss                            sssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                  sssssssssss                 sssss
+                                                                                                                                                                                                                                                                                                                            ssssssssssssssssssssssss                            ssssssss                                                                     sssssssssss                     s
+                                                                                                                                                                                                                                                                                                                            ssssssssssssssssssssssss                            ssssssss                                                                     sssssssssss                     s
+                                                                                                                                                                                                                                                                                                                                                                                ssssssss                                                                     sssssssssss                     s
+                                                                                                                                                                                                                                                                                                                                                                                ssssssss                                                                     sssssssssss                     s
+                                                                                                                                                                                                                                                                                                                                                                                ssssssss                                                                                                     s
+                                                                                                                                                                                                                                                                                                                                                                                ssssssss                                                                                                     s
+                                                                                                                                                                                                                                                                                                                                                                                ssssssss                                                                                                     s
+                                                                                                                                                                                                                                                                                                                                                           ssssssssss           ssssssss           sssssssssssssssssssss                                                          ssssssssssss
+                                                                                                                                                                                                                                                                                                                                                           ssssssssss              ww              sssssssssssssssssssss                                                          ssssssssssss
+                                                                                                                                                                                                                                                                                                                                                           ssssssssss                              ssssssssssssssssssssssssssLLLLLLssssssss                                       ssssssssssss
+                                                                                                                                                                                                                                                                                                                                                           ssssssssss                              ssssssssssssssssssssssssssLLLLLLssssssss                                       ssssssssssss
+                                                                                                                                                                                                                                                                       sssssssss                                                                           ssssssssss                              ssssssssssssssssssssssssssssssssssssssss                                       ssssssssssss
+                                                                                                                                                                                                                                                                       sssssssss                                            sssssssssssssssssssssssssssssssssssssssss                              ssssssssssssssssssssssssssssssssssssssss                                       ssssssssssss
+                                                                                                                                                                                                                                                                       sssssssss                                            sssssssssssssssssssssssssssssssssssssssss                              ssssssssssssssssssssssssssssssssssssssss                                       ssssssssssss
+                                                                                                                                                                                                                                                                       sssssssss                                            sssssssssssssssssssssssssssssssssssssssss                              ssssssssssssssssssssssssssssssssssssssss                                       ssssssssssss
+                                                                                                                                                                                                                                                                       sssssssss                                            sssssssssssssssssssssssssssssssssssssssss                              ssssssssssssssssssssssssssssssssssssssss                                       ssssssssssss
+                                                                                                                                                                                                                                                            ssssssssssssssssssssss                                          ssssssssssssssssssssssssssssssssssssssssssssssssssssWWWWWWWWssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssssss
+                                                                                                                                                                               ssssssssssssssss                                                             ssssssssssssssssssssss                                   sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssWWWWWWWWssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssssss
+sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss               ssssssssssssssssssssss                                   sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssWWWWWWWWssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssssss
+sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss               ssssssssssssssssssssss       sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssWWWWWWWWssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssssss
+sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss               ssssssssssssssssssssss       sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssWWWWWWWWssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssssss
+ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssWWWWWWWWssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssssss
+ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssWWWWWWWWssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssssss
+ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssWWWWWWWWssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssssss
+ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssWWWWWWWWssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssssss
+ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssWWWWWWWWssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssssss
+ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssWWWWWWWWssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssssss
+ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssWWWWWWWWssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssssss
+ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssWWWWWWWWssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssssss
+ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssWWWWWWWWssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssssss
+ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssssss
+ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssssss
+ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssssss
+ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssssss
+ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssssss
+ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssssss
+ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssssss
+ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssssss
+ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssssss
+ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssssss
+ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssssss
+ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssssss
+ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssssss
+ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssssss
+ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssssss
+ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssssss
+ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssssss
+ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssssss
+ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssssss
+ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssssss
+ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssssss
+ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssssss
+ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                    ssssssssssssssssss
+*** TILES_END ***
+*** THEME_BEGIN ***
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................xx..............
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................xx..............
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................xx..............
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................xx..............
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................xx..............
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................xx..............
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................xx..............
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................xx..............
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................xx..............
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................xx..............
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................xx..............
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................xx..............
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................xx..............
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................xx..............
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................xx..............
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................xx..............
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................xx..............
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................xx..............
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................xx..............
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................xx..............
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................xx..............
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................xx..............
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................xx..............
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................xx..............
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................xx..............
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................xx..............
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................xx..............
+...........................................................................................................................................................................................................................................................xxxxxx.............................................................................................................................................................................................................xx..............
+...........................................................................................................................................................................................................................................................xxxxxx.............................................................................................................................................................................................................xx..............
+......................................................................................................................................................................................................................xxxxxxxx...........xxxxxxxxxxxxxxxxxxxxxxxx..xxxxxxxxxxxxxxxxxxxxxx.....................................................................................................................................................................................xx..............
+......................................................................................................................................................................................................................xxxxxxxx...........xxxxxxxxxxxxxxxxxx......xxxxxxxxxxxxxxxxxxxxxxxxxxxxx................................................................................................................................................................................xx..............
+......................................................................................................................................................................................................................xxxxxxxx...........xxxxxxxxxxxxxxxxxx......xxxxxxxxxxxxxxxxxxxxxxxxxxxxx................................................................................................................................................................................xx..............
+......................................................................................................................................................................................................................xxxxxxxx...........xxxxxxxxxxxxxxxxxx......xxxxxxxxxxxxxxxxxxxxxxxxxxxxx................................................................................................................................................................................xx..............
+......................................................................................................................................................................................................................xxxxxxxx...........xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx................................................................................................................................................................................................
+......................................................................................................................................................................................................................xxxxxxxx...........xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx................................................................................................................................................................................................
+......................................................................................................................................................................................................................xxxxxxxx...........xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx................................................................................................................................................................................................
+......................................................................................................................................................................................................................xxxxxxxx...........xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx................................................................................................................................................................................................
+......................................................................................................................................................................................................................xxxxxxxx...........xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx................................................................................................................................................................................................
+.........................................................................................................................................................................................................................................xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................xx..............
+...............................................................................................................................................................................................................................................................................................................................................................................................................................................x..x...........................xx..............
+...............................................................................................................................................................................................................................................................................................................................................................................................................................................x..x...........................xx..............
+...............................................................................................................................................................................................................................................................................................................................................................................................................................................x..x...........................xx..............
+...............................................................................................................................................................................................................................................................................................................................................................................................................................................x..x...........................................
+...............................................................................................................................................................................................................................................................................................................................................................................................................................................x..x...........................................
+...............................................................................................................................................................................................................................................................................................................................................................................................................................................x..x...........................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+.............................................................................................................................................................................................................................................................................................................................................................................................................................................................xxxxxxxxxxx......................
+.............................................................................................................................................................................................................................................................................................................................................................................................................................................................xxxxxxxxxxx......................
+.............................................................................................................................................................................................................................................................................................................................................................................................................................................................xxxxxxxxxxx......................
+.............................................................................................................................................................................................................................................................................................................................................................................................................................................................xxxxxxxxxxx......................
+.............................................................................................................................................................................................................................................................................................................................................................................................................................................................xxxxxxxxxxx......................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+.......................................................................................................................................................................................................................................................................xxxxxxxxx..............................................................................................................................................................................................................
+.......................................................................................................................................................................................................................................................................xxxxxxxxx..............................................................................................................................................................................................................
+.......................................................................................................................................................................................................................................................................xxxxxxxxx..............................................................................................................................................................................................................
+.......................................................................................................................................................................................................................................................................xxxxxxxxx..............................................................................................................................................................................................................
+.......................................................................................................................................................................................................................................................................xxxxxxxxx..............................................................................................................................................................................................................
+............................................................................................................................................................................................................................................................xxxxxxxxxxxxxxxxxxxxxx............................................................................................................................................................................................................
+............................................................................................................................................................................................................................................................xxxxxxxxxxxxxxxxxxxxxx............................................................................................................................................................................................................
+............................................................................................................................................................................................................................................................xxxxxxxxxxxxxxxxxxxxxx............................................................................................................................................................................................................
+............................................................................................................................................................................................................................................................xxxxxxxxxxxxxxxxxxxxxx............................................................................................................................................................................................................
+............................................................................................................................................................................................................................................................xxxxxxxxxxxxxxxxxxxxxx............................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+*** THEME_END ***

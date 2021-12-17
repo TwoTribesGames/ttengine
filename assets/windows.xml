@@ -1,0 +1,2267 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<project name="Windows" inputpath="source" outputpath="output" intermediatepath="conversion\intermediate" converterpath="" localconverterpath="..\tools\assetconverters">
+	<enum name="compressiontypes">
+		<enumvalue name="FastLZ"/>
+		<enumvalue name="LZ4"/>
+		<enumvalue name="LZ4HC"/>
+		<enumvalue name="PNG"/>
+		<enumvalue name="Uncompressed"/>
+	</enum>
+	<enum name="pixelformats">
+		<enumvalue name="A8"/>
+		<enumvalue name="BC1"/>
+		<enumvalue name="BC2"/>
+		<enumvalue name="BC3"/>
+		<enumvalue name="RGBA8"/>
+	</enum>
+	<filetype name="cur"/>
+	<filetype name="dds"/>
+	<filetype name="fx"/>
+	<filetype name="gb"/>
+	<filetype name="gba"/>
+	<filetype name="sav"/>
+	<filetype name="json"/>
+	<filetype name="nut"/>
+	<filetype name="ogg"/>
+	<filetype name="png"/>
+	<filetype name="ttim"/>
+	<filetype name="ttlvl"/>
+	<filetype name="ttmeta"/>
+	<filetype name="ttms"/>
+	<filetype name="txt"/>
+	<filetype name="xap"/>
+	<filetype name="xls"/>
+	<filetype name="xml"/>
+	<assettype name="Copy" ext="*"/>
+	<assettype name="Config" ext="bcfg">
+		<setting name="XSD" displayname="XSD" type="string" limit=""/>
+		<settingvalue name="XSD" source="custom" value=""/>
+	</assettype>
+	<assettype name="XACT" ext="bxap">
+		<setting name="CompressADPCM" displayname="ADPCM" type="bool" limit=""/>
+		<setting name="CompressWaveBanks" displayname="Compress Wave Banks" type="bool" limit=""/>
+		<setting name="Native" displayname="Native" type="bool" limit=""/>
+		<setting name="OutputBXAP" displayname="Output Binary XAP" type="bool" limit=""/>
+		<settingvalue name="CompressADPCM" source="custom" value="false"/>
+		<settingvalue name="CompressWaveBanks" source="custom" value="false"/>
+		<settingvalue name="Native" source="custom" value="true"/>
+		<settingvalue name="OutputBXAP" source="custom" value="true"/>
+	</assettype>
+	<assettype name="Cursor" ext="cur"/>
+	<assettype name="Image (DDS)" ext="dds"/>
+	<assettype name="Game Boy Rom" ext="gb"/>
+	<assettype name="Game Boy Advance Rom" ext="gba"/>
+	<assettype name="VisualBoy Save Data" ext="sav"/>
+	<assettype name="GlyphSet" ext="glyph">
+		<setting name="Font" displayname="Font" type="string" limit=""/>
+		<setting name="FontSize" displayname="Font Size" type="int" limit=""/>
+		<setting name="PixelDepth" displayname="Pixel Depth" type="string" limit="enum.glyphpixeldepth"/>
+		<settingvalue name="Font" source="custom" value=""/>
+		<settingvalue name="FontSize" source="custom" value="12"/>
+		<settingvalue name="PixelDepth" source="custom" value="4"/>
+	</assettype>
+	<assettype name="Image" ext="img">
+		<setting name="Compression" displayname="Compression" type="string" limit="enum.compressiontypes"/>
+		<setting name="MipDebug" displayname="Visualize Mip Levels" type="bool" limit=""/>
+		<setting name="MipLevels" displayname="Mipmap Levels" type="int" limit=""/>
+		<setting name="PixelFormat" displayname="Pixel Format" type="string" limit="enum.pixelformats"/>
+		<setting name="Posterize" displayname="Posterize" type="int" limit=""/>
+		<setting name="Premultiplied" displayname="Premultiplied Alpha" type="bool" limit=""/>
+		<setting name="ResizeScale" displayname="Resize Scale" type="float" limit="&gt; 0"/>
+		<setting name="Solidify" displayname="Solidify" type="int" limit=""/>
+		<settingvalue name="Compression" source="custom" value="LZ4HC"/>
+		<settingvalue name="MipDebug" source="custom" value="false"/>
+		<settingvalue name="MipLevels" source="custom" value="0"/>
+		<settingvalue name="PixelFormat" source="custom" value="RGBA8"/>
+		<settingvalue name="Posterize" source="custom" value="100"/>
+		<settingvalue name="Premultiplied" source="custom" value="true"/>
+		<settingvalue name="ResizeScale" source="custom" value="1.0"/>
+		<settingvalue name="Solidify" source="custom" value="8"/>
+	</assettype>
+	<assettype name="Mission" ext="json"/>
+	<assettype name="LocSheet" ext="loc">
+		<setting name="AllCharacters" displayname="Character File" type="string" limit=""/>
+		<setting name="ChainFrom" displayname="ChainFrom" type="string" limit=""/>
+		<setting name="ChainTo" displayname="ChainTo" type="string" limit=""/>
+		<setting name="Sheet" displayname="Sheet" type="string" limit=""/>
+		<settingvalue name="AllCharacters" source="custom" value=""/>
+		<settingvalue name="ChainFrom" source="custom" value=""/>
+		<settingvalue name="ChainTo" source="custom" value=""/>
+		<settingvalue name="Sheet" source="custom" value=""/>
+	</assettype>
+	<assettype name="Squirrel Script" ext="nut"/>
+	<assettype name="Ogg Vorbis" ext="ogg"/>
+	<assettype name="Presentation" ext="pres">
+		<setting name="Compression" displayname="Compression" type="string" limit="enum.compressiontypes"/>
+		<setting name="MipDebug" displayname="Visualize Mip Levels" type="bool" limit=""/>
+		<setting name="MipLevels" displayname="Mipmap Levels" type="int" limit=""/>
+		<setting name="OptimizePNG" displayname="OptimizePNG" type="bool" limit=""/>
+		<setting name="PixelFormat" displayname="Pixel Format" type="string" limit="enum.pixelformats"/>
+		<setting name="Posterize" displayname="Posterize" type="int" limit=""/>
+		<setting name="Premultiplied" displayname="Premultiplied Alpha" type="bool" limit=""/>
+		<setting name="ResizeScale" displayname="Resize Scale" type="float" limit="&gt; 0"/>
+		<setting name="Solidify" displayname="Solidify" type="int" limit=""/>
+		<settingvalue name="Compression" source="custom" value="LZ4HC"/>
+		<settingvalue name="MipDebug" source="custom" value="false"/>
+		<settingvalue name="MipLevels" source="custom" value="0"/>
+		<settingvalue name="OptimizePNG" source="custom" value="false"/>
+		<settingvalue name="PixelFormat" source="custom" value="RGBA8"/>
+		<settingvalue name="Posterize" source="custom" value="100"/>
+		<settingvalue name="Premultiplied" source="custom" value="true"/>
+		<settingvalue name="ResizeScale" source="custom" value="1.0"/>
+		<settingvalue name="Solidify" source="custom" value="8"/>
+	</assettype>
+	<assettype name="Shader" ext="shader"/>
+	<assettype name="Shoebox" ext="shoebox"/>
+	<assettype name="Particle Trigger" ext="trigger">
+		<setting name="flipY" displayname="Flip Y" type="bool" limit=""/>
+		<settingvalue name="flipY" source="custom" value="false"/>
+	</assettype>
+	<assettype name="TTIM" ext="ttim"/>
+	<assettype name="Level" ext="ttlvl"/>
+	<assettype name="Meta Data" ext="ttmeta"/>
+	<assettype name="Movement Set" ext="ttms">
+		<setting name="StripSchemaDeclaration" displayname="Strip Schema" type="bool" limit=""/>
+		<settingvalue name="StripSchemaDeclaration" source="custom" value="true"/>
+	</assettype>
+	<assettype name="Volume Texture" ext="volt">
+		<setting name="RectHeight" displayname="Input Crop Rect Height" type="int" limit=""/>
+		<setting name="RectWidth" displayname="Input Crop Rect Width" type="int" limit=""/>
+		<setting name="RectX" displayname="Input Crop Rect X" type="int" limit=""/>
+		<setting name="RectY" displayname="Input Crop Rect Y" type="int" limit=""/>
+		<setting name="VolumeDepth" displayname="Output Depth" type="int" limit=""/>
+		<setting name="VolumeHeight" displayname="Output Height" type="int" limit=""/>
+		<setting name="VolumeWidth" displayname="Output Width" type="int" limit=""/>
+		<settingvalue name="RectHeight" source="custom" value="32"/>
+		<settingvalue name="RectWidth" source="custom" value="1024"/>
+		<settingvalue name="RectX" source="custom" value="0"/>
+		<settingvalue name="RectY" source="custom" value="0"/>
+		<settingvalue name="VolumeDepth" source="custom" value="32"/>
+		<settingvalue name="VolumeHeight" source="custom" value="32"/>
+		<settingvalue name="VolumeWidth" source="custom" value="32"/>
+	</assettype>
+	<assettype name="XACT Cue List" ext="xcl"/>
+	<assettype name="XML Stripper" ext="xml">
+		<setting name="StripSchemaDeclaration" displayname="Strip Schema" type="bool" limit=""/>
+		<settingvalue name="StripSchemaDeclaration" source="custom" value="true"/>
+	</assettype>
+	<converter filetype="cur" assettype="cur" command="convert_copy.exe"/>
+	<converter filetype="gb" assettype="gb" command="convert_copy.exe"/>
+	<converter filetype="gba" assettype="gba" command="convert_copy.exe"/>
+	<converter filetype="sav" assettype="sav" command="convert_copy.exe"/>
+	<converter filetype="json" assettype="json" command="convert_copy.exe"/>
+	<converter filetype="ttlvl" assettype="ttlvl" command="convert_level.exe"/>
+	<converter filetype="ttmeta" assettype="ttmeta" command="convert_copy.exe"/>
+	<converter filetype="xml" assettype="shoebox" command="convert_shoebox.exe"/>
+	<converter filetype="xap" assettype="bxap" command="convert_xact.exe"/>
+	<converter filetype="xap" assettype="xcl" command="convert_xactcuelist.exe"/>
+	<converter filetype="nut" assettype="nut" command="convert_copy.exe"/>
+	<converter filetype="ttms" assettype="ttms" command="convert_xmlstripper.exe"/>
+	<converter filetype="ogg" assettype="ogg" command="convert_copy.exe"/>
+	<converter filetype="ttim" assettype="ttim" command="convert_copy.exe"/>
+	<converter filetype="dds" assettype="dds" command="convert_image.exe"/>
+	<converter filetype="png" assettype="img" command="convert_image.exe"/>
+	<converter filetype="png" assettype="volt" command="convert_volume_texture.exe"/>
+	<converter filetype="png" assettype="*" command="convert_copy.exe"/>
+	<converter filetype="xml" assettype="pres" command="convert_presentation.exe"/>
+	<converter filetype="txt" assettype="*" command="convert_copy.exe"/>
+	<converter filetype="xls" assettype="glyph" command="convert_glyph.exe"/>
+	<converter filetype="xls" assettype="loc" command="convert_loc.exe"/>
+	<converter filetype="xml" assettype="xml" command="convert_xmlstripper.exe"/>
+	<converter filetype="xml" assettype="bcfg" command="convert_config_wrapper.exe"/>
+	<converter filetype="xml" assettype="trigger" command="convert_particle.exe"/>
+	<converter filetype="xml" assettype="*" command="convert_copy.exe"/>
+	<converter filetype="fx" assettype="shader" command="convert_shader.exe"/>
+	<dir name="source">
+		<dir name="shared">
+			<dir name="audio">
+				<dir name="Music">
+					<auto_add_for_assettype ext="ogg" recursive="true"/>
+					<auto_add_for_assettype ext="ttim" recursive="true"/>
+				</dir>
+				<file name="rewind" type="xap"/>
+			</dir>
+			<dir name="color_grading">
+				<auto_add_for_assettype ext="volt" recursive="true"/>
+			</dir>
+			<dir name="config">
+				<file name="config" type="xml"/>
+				<file name="default_keybindings" type="json"/>
+				<file name="skin_config" type="xml"/>
+			</dir>
+			<dir name="conversations">
+				<auto_add_for_assettype ext="json" recursive="true"/>
+			</dir>
+			<dir name="default">
+				<file name="default" type="png"/>
+			</dir>
+			<dir name="levels">
+				<auto_add_for_assettype ext="nut" recursive="true"/>
+				<auto_add_for_assettype ext="shoebox" recursive="false"/>
+				<auto_add_for_assettype ext="ttlvl" recursive="true"/>
+				<dir name="shoebox_includes">
+					<auto_add_for_assettype ext="shoebox" recursive="true"/>
+				</dir>
+			</dir>
+			<dir name="localization">
+				<file name="glyphs" type="xls"/>
+				<file name="localization" type="xls"/>
+			</dir>
+			<dir name="metadata">
+				<auto_add_for_assettype ext="ttmeta" recursive="true"/>
+			</dir>
+			<dir name="missions">
+				<auto_add_for_assettype ext="json" recursive="true"/>
+			</dir>
+			<dir name="movement">
+				<auto_add_for_assettype ext="ttms" recursive="true"/>
+			</dir>
+			<dir name="particles">
+				<auto_add_for_assettype ext="trigger" recursive="true"/>
+			</dir>
+			<dir name="presentation">
+				<from_dir_for_assettype ext="pres">
+					<settingvalue name="MipLevels" source="custom" value="99"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.45"/>
+				</from_dir_for_assettype>
+				<auto_add_for_assettype ext="pres" recursive="true"/>
+				<dir name="menu">
+					<file name="ingameeasymode" type="xml"/>
+					<file name="menuscreencontrollersettings" type="xml"/>
+					<file name="pausemenu" type="xml"/>
+					<file name="resultscreentracker" type="xml"/>
+				</dir>
+				<file name="bat" type="xml"/>
+				<file name="credits" type="xml"/>
+				<file name="destructibleobjectbarrelcorpse" type="xml"/>
+				<file name="destructibleobjectbarrelnocorpse" type="xml"/>
+				<file name="destructibleobjectcameraair" type="xml"/>
+				<file name="destructibleobjectcamerawall" type="xml"/>
+				<file name="destructibleobjectcratecorpse01" type="xml"/>
+				<file name="destructibleobjectcratecorpse02" type="xml"/>
+				<file name="destructibleobjectcratenocorpse01" type="xml"/>
+				<file name="destructibleobjectcratenocorpse02" type="xml"/>
+				<file name="destructibleobjectdropship" type="xml"/>
+				<file name="destructibleobjectdropshiplarge" type="xml"/>
+				<file name="destructibleobjectlightceiling" type="xml"/>
+				<file name="destructibleobjectsquid" type="xml"/>
+				<file name="destructibleobjecttrafficcone" type="xml"/>
+				<file name="destructibleobjectwaterplug" type="xml"/>
+				<file name="dll" type="xml"/>
+				<file name="dropship" type="xml"/>
+				<file name="dropship_back" type="xml"/>
+				<file name="emp_grenade" type="xml"/>
+				<file name="endbossextensionleftbottom" type="xml"/>
+				<file name="endbossextensionleftmiddle" type="xml"/>
+				<file name="endbossextensionlefttop" type="xml"/>
+				<file name="endbossextensionrightbottom" type="xml"/>
+				<file name="endbossextensionrightmiddle" type="xml"/>
+				<file name="endbossextensionrighttop" type="xml"/>
+				<file name="grenade" type="xml"/>
+				<file name="grinder" type="xml"/>
+				<file name="grinder_smallteeth" type="xml"/>
+				<file name="healthbot" type="xml"/>
+				<file name="hud_hackmode_hacked_indicator" type="xml"/>
+				<file name="hud_hackmode_left" type="xml"/>
+				<file name="hud_hackmode_marker" type="xml"/>
+				<file name="hud_health_chunk" type="xml"/>
+				<file name="introduction_logo_second" type="xml"/>
+				<file name="introduction_logo_twotribes" type="xml"/>
+				<file name="leveldoor_down" type="xml"/>
+				<file name="leveldoor_up" type="xml"/>
+				<file name="pickup_ammo" type="xml"/>
+				<file name="pipegate" type="xml"/>
+				<file name="pipegate_back" type="xml"/>
+				<file name="piston_chubby_down" type="xml"/>
+				<file name="piston_chubby_horizontal" type="xml"/>
+				<file name="piston_chubby_up" type="xml"/>
+				<file name="piston_down" type="xml"/>
+				<file name="piston_elevator_thin_horizontal_left" type="xml"/>
+				<file name="piston_elevator_thin_horizontal_right" type="xml"/>
+				<file name="piston_horizontal" type="xml"/>
+				<file name="piston_lava_up" type="xml"/>
+				<file name="piston_thin_down" type="xml"/>
+				<file name="piston_thin_horizontal" type="xml"/>
+				<file name="piston_thin_up" type="xml"/>
+				<file name="piston_up" type="xml"/>
+				<file name="shield_enemy_indestructible" type="xml"/>
+				<file name="shield_player" type="xml"/>
+				<file name="slicer" type="xml"/>
+				<file name="tetromino_preview" type="xml"/>
+				<file name="traincrossingsign" type="xml"/>
+				<file name="turretenemy_turret_bullet" type="xml"/>
+				<file name="turretenemy_turret_flamethrower" type="xml"/>
+				<file name="turretenemy_turret_laser" type="xml"/>
+				<file name="turretenemy_turret_missile" type="xml"/>
+				<file name="underwaterrotorenemy" type="xml"/>
+				<file name="walkerturret" type="xml"/>
+				<file name="walkerturret_front" type="xml"/>
+				<file name="walkerturretbig" type="xml"/>
+				<file name="walkerturretbig_front" type="xml"/>
+				<file name="walkerturretmega" type="xml"/>
+				<file name="walkerturretmega_front" type="xml"/>
+				<file name="wallminebot" type="xml"/>
+				<file name="waspenemy" type="xml"/>
+				<file name="wipes" type="xml"/>
+			</dir>
+			<dir name="roms">
+				<auto_add_for_assettype ext="gb" recursive="true"/>
+				<auto_add_for_assettype ext="gba" recursive="true"/>
+				<auto_add_for_assettype ext="sav" recursive="true"/>
+			</dir>
+			<dir name="scripts">
+				<auto_add_for_assettype ext="nut" recursive="true"/>
+			</dir>
+			<dir name="shaders">
+				<auto_add_for_assettype ext="shader" recursive="true"/>
+			</dir>
+			<dir name="textures">
+				<auto_add_for_assettype ext="img" recursive="true"/>
+				<dir name="backgrounds">
+					<from_dir_for_assettype ext="img">
+						<settingvalue name="MipLevels" source="custom" value="99"/>
+						<settingvalue name="Premultiplied" source="type"/>
+						<settingvalue name="ResizeScale" source="custom" value="0.65"/>
+					</from_dir_for_assettype>
+					<dir name="brokenpipes">
+						<from_dir_for_assettype ext="img">
+							<settingvalue name="MipDebug" source="type"/>
+							<settingvalue name="MipLevels" source="custom" value="99"/>
+							<settingvalue name="Premultiplied" source="type"/>
+							<settingvalue name="ResizeScale" source="custom" value="0.7"/>
+							<settingvalue name="Solidify" source="type"/>
+						</from_dir_for_assettype>
+					</dir>
+					<dir name="brokenpipes_alt">
+						<from_dir_for_assettype ext="img">
+							<settingvalue name="MipLevels" source="custom" value="99"/>
+							<settingvalue name="ResizeScale" source="custom" value="0.7"/>
+						</from_dir_for_assettype>
+					</dir>
+					<dir name="cables">
+						<from_dir_for_assettype ext="img">
+							<settingvalue name="MipLevels" source="custom" value="99"/>
+							<settingvalue name="ResizeScale" source="custom" value="0.7"/>
+						</from_dir_for_assettype>
+					</dir>
+					<dir name="floating_bits">
+						<from_dir_for_assettype ext="img">
+							<settingvalue name="MipDebug" source="type"/>
+							<settingvalue name="MipLevels" source="custom" value="99"/>
+						</from_dir_for_assettype>
+					</dir>
+					<dir name="hacking_console">
+						<from_dir_for_assettype ext="img">
+							<settingvalue name="MipDebug" source="type"/>
+							<settingvalue name="MipLevels" source="custom" value="99"/>
+							<settingvalue name="ResizeScale" source="custom" value="0.7"/>
+						</from_dir_for_assettype>
+					</dir>
+					<dir name="images">
+						<from_dir_for_assettype ext="img">
+							<settingvalue name="ResizeScale" source="custom" value="0.7"/>
+						</from_dir_for_assettype>
+					</dir>
+					<dir name="kamikazepipes">
+						<from_dir_for_assettype ext="img">
+							<settingvalue name="MipLevels" source="custom" value="99"/>
+							<settingvalue name="ResizeScale" source="custom" value="0.7"/>
+						</from_dir_for_assettype>
+					</dir>
+					<dir name="leveldoor">
+						<from_dir_for_assettype ext="img">
+							<settingvalue name="MipDebug" source="type"/>
+							<settingvalue name="MipLevels" source="custom" value="99"/>
+						</from_dir_for_assettype>
+					</dir>
+					<dir name="marketing">
+						<from_dir_for_assettype ext="img">
+							<settingvalue name="MipDebug" source="type"/>
+							<settingvalue name="MipLevels" source="custom" value="99"/>
+						</from_dir_for_assettype>
+					</dir>
+					<dir name="numbers">
+						<from_dir_for_assettype ext="img">
+							<settingvalue name="MipLevels" source="custom" value="99"/>
+						</from_dir_for_assettype>
+					</dir>
+					<dir name="rivetpipes">
+						<from_dir_for_assettype ext="img">
+							<settingvalue name="MipLevels" source="custom" value="99"/>
+							<settingvalue name="ResizeScale" source="custom" value="1.0"/>
+						</from_dir_for_assettype>
+					</dir>
+					<dir name="thin_pipes">
+						<from_dir_for_assettype ext="img">
+							<settingvalue name="ResizeScale" source="custom" value="1.0"/>
+						</from_dir_for_assettype>
+					</dir>
+					<file name="asteroid_01" type="png"/>
+					<file name="asteroid_02" type="png"/>
+					<file name="asteroid_big" type="png"/>
+					<file name="asteroid_lava" type="png"/>
+					<file name="asteroid_small0" type="png"/>
+					<file name="asteroid_small1" type="png"/>
+					<file name="asteroid_small2" type="png"/>
+					<file name="baobab" type="png"/>
+					<file name="baobab_eyes" type="png"/>
+					<file name="barrel_bend_back" type="png"/>
+					<file name="barrel_bend_front" type="png"/>
+					<file name="barrel_horizontal_01" type="png"/>
+					<file name="barrel_horizontal_02" type="png"/>
+					<file name="barrel_horizontal_03" type="png"/>
+					<file name="barrel_vertical_01" type="png"/>
+					<file name="barrel_vertical_02" type="png"/>
+					<file name="beam_ceiling" type="png"/>
+					<file name="beam_ceiling_cap" type="png"/>
+					<file name="bucket_lava_back" type="png"/>
+					<file name="bucket_lava_front" type="png"/>
+					<file name="crushbox" type="png"/>
+					<file name="engine" type="png"/>
+					<file name="fan_backlight" type="png"/>
+					<file name="fan_blades" type="png"/>
+					<file name="fan_blades_broken" type="png"/>
+					<file name="fan_blades_rim" type="png"/>
+					<file name="fan_blades_skinny" type="png"/>
+					<file name="fan_ring" type="png"/>
+					<file name="fan_ring_nocables" type="png"/>
+					<file name="fueltank" type="png"/>
+					<file name="furnace" type="png"/>
+					<file name="furnace_back" type="png"/>
+					<file name="generator_back" type="png"/>
+					<file name="generator_front" type="png"/>
+					<file name="generator_light" type="png"/>
+					<file name="glasshouse" type="png"/>
+					<file name="grate" type="png"/>
+					<file name="grate_repeating" type="png"/>
+					<file name="grate_ring" type="png"/>
+					<file name="healthbot_sign" type="png"/>
+					<file name="healthbot_sign_lightmask" type="png"/>
+					<file name="lightbeam" type="png"/>
+					<file name="lightbeam_bigarea" type="png"/>
+					<file name="lightray_forest" type="png"/>
+					<file name="logo_rive" type="png"/>
+					<file name="planet_notearth" type="png"/>
+					<file name="planet_notearth_5000ADLL" type="png"/>
+					<file name="planet_satellites" type="png"/>
+					<file name="plants" type="png"/>
+					<file name="rewindmachine" type="png"/>
+					<file name="rewindmachine_dark" type="png"/>
+					<file name="rewindmachine_glow" type="png"/>
+					<file name="rock_empty_00" type="png"/>
+					<file name="rock_empty_01" type="png"/>
+					<file name="rocks" type="png"/>
+					<file name="rocks_center" type="png"/>
+					<file name="rocks_center_moss" type="png"/>
+					<file name="rocks_mini" type="png"/>
+					<file name="shredder_corner_left" type="png"/>
+					<file name="shredder_corner_right" type="png"/>
+					<file name="shredder_pusher" type="png"/>
+					<file name="shredder_repeatable" type="png"/>
+					<file name="shredder_single" type="png"/>
+					<file name="silhouette_beam" type="png"/>
+					<file name="tllight_0000" type="png"/>
+					<file name="tllight_0001" type="png"/>
+					<file name="train_carriage_000" type="png"/>
+					<file name="train_carriage_001" type="png"/>
+					<file name="train_carriage_002" type="png"/>
+					<file name="train_carriage_003" type="png"/>
+					<file name="train_engine" type="png"/>
+					<file name="train_engine_light" type="png"/>
+					<file name="tree_01" type="png"/>
+					<file name="tree_02" type="png"/>
+					<file name="tree_03" type="png"/>
+					<file name="vine_hanging" type="png"/>
+					<file name="vines" type="png"/>
+					<file name="watertower_back" type="png"/>
+					<file name="watertower_front" type="png"/>
+					<file name="white_fog" type="png"/>
+				</dir>
+				<dir name="crushbox">
+					<from_dir_for_assettype ext="img">
+						<settingvalue name="MipLevels" source="custom" value="99"/>
+						<settingvalue name="ResizeScale" source="custom" value="0.25"/>
+					</from_dir_for_assettype>
+				</dir>
+				<dir name="fluids">
+					<from_dir_for_assettype ext="img">
+						<settingvalue name="MipLevels" source="custom" value="99"/>
+						<settingvalue name="Premultiplied" source="custom" value="false"/>
+						<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+					</from_dir_for_assettype>
+				</dir>
+				<dir name="hud">
+					<from_dir_for_assettype ext="img">
+						<settingvalue name="Compression" source="type"/>
+						<settingvalue name="MipLevels" source="custom" value="99"/>
+					</from_dir_for_assettype>
+				</dir>
+				<dir name="lights">
+					<file name="glow" type="png"/>
+				</dir>
+				<dir name="loading">
+					<from_dir_for_assettype ext="img">
+						<settingvalue name="MipLevels" source="custom" value="99"/>
+						<settingvalue name="Posterize" source="custom" value="0"/>
+						<settingvalue name="Premultiplied" source="custom" value="true"/>
+					</from_dir_for_assettype>
+					<dir name="level">
+						<from_dir_for_assettype ext="img">
+							<settingvalue name="Posterize" source="custom" value="0"/>
+							<settingvalue name="Premultiplied" source="custom" value="false"/>
+							<settingvalue name="ResizeScale" source="custom" value="0.25"/>
+							<settingvalue name="Solidify" source="custom" value="0"/>
+						</from_dir_for_assettype>
+					</dir>
+				</dir>
+				<dir name="mega_crusher">
+					<from_dir_for_assettype ext="img">
+						<settingvalue name="MipLevels" source="custom" value="99"/>
+						<settingvalue name="ResizeScale" source="custom" value="0.7"/>
+					</from_dir_for_assettype>
+				</dir>
+				<dir name="particles">
+					<from_dir_for_assettype ext="img">
+						<settingvalue name="MipLevels" source="custom" value="99"/>
+					</from_dir_for_assettype>
+					<file name="anim_slash" type="png"/>
+					<file name="asteroid_glow" type="png"/>
+					<file name="asteroid_hit_inner" type="png"/>
+					<file name="asteroidbelt" type="png"/>
+					<file name="backgroundstar" type="png"/>
+					<file name="balloon_bottom" type="png"/>
+					<file name="balloon_front" type="png"/>
+					<file name="balloon_left" type="png"/>
+					<file name="balloon_right" type="png"/>
+					<file name="bat_debris_000" type="png"/>
+					<file name="bat_debris_001" type="png"/>
+					<file name="bat_debris_002" type="png"/>
+					<file name="bat_hit" type="png"/>
+					<file name="battery_leftmiddle" type="png"/>
+					<file name="bolt1" type="png"/>
+					<file name="bolt2" type="png"/>
+					<file name="bolt3" type="png"/>
+					<file name="bolt_nut1" type="png"/>
+					<file name="bolt_nut2" type="png"/>
+					<file name="bubble_cloud" type="png"/>
+					<file name="bubble_cloud_nodust" type="png"/>
+					<file name="bucket_0000" type="png"/>
+					<file name="bullet_casing" type="png"/>
+					<file name="bumper_debris_000" type="png"/>
+					<file name="bumper_debris_001" type="png"/>
+					<file name="bumper_debris_002" type="png"/>
+					<file name="bumper_debris_003" type="png"/>
+					<file name="bumper_debris_004" type="png"/>
+					<file name="bumper_debris_005" type="png"/>
+					<file name="bumper_hit" type="png"/>
+					<file name="bumper_phantom" type="png"/>
+					<file name="camera_0000" type="png"/>
+					<file name="camera_0001" type="png"/>
+					<file name="camera_0002" type="png"/>
+					<file name="chimneycap_00" type="png"/>
+					<file name="chimneycap_01" type="png"/>
+					<file name="chimneycap_02" type="png"/>
+					<file name="chimneycap_hit" type="png"/>
+					<file name="cogwheel1" type="png"/>
+					<file name="cogwheel2" type="png"/>
+					<file name="cogwheel3" type="png"/>
+					<file name="collapsiblebridge_hit_one" type="png"/>
+					<file name="crate_00" type="png"/>
+					<file name="crate_01" type="png"/>
+					<file name="crate_02" type="png"/>
+					<file name="crate_03" type="png"/>
+					<file name="crate_04" type="png"/>
+					<file name="crate_left" type="png"/>
+					<file name="crate_lid" type="png"/>
+					<file name="crate_middle" type="png"/>
+					<file name="crate_right" type="png"/>
+					<file name="debris_000" type="png"/>
+					<file name="debris_001" type="png"/>
+					<file name="debris_chunk" type="png"/>
+					<file name="destructible_barrel_hiteffect" type="png"/>
+					<file name="destructible_bucket_hiteffect" type="png"/>
+					<file name="destructible_cameraballoon_hiteffect" type="png"/>
+					<file name="destructible_camerawall_hiteffect" type="png"/>
+					<file name="destructible_ceilinglight_hiteffect" type="png"/>
+					<file name="destructible_controlpanel_hiteffect" type="png"/>
+					<file name="destructible_crate_hiteffect" type="png"/>
+					<file name="destructible_dropship_hit" type="png"/>
+					<file name="destructible_tllight_hiteffect" type="png"/>
+					<file name="destructible_trafficcone_hiteffect" type="png"/>
+					<file name="destructible_wallchargepoint_hiteffect" type="png"/>
+					<file name="dirt_chunks" type="png"/>
+					<file name="enemy_shield_shards_00" type="png"/>
+					<file name="enemy_shield_shards_01" type="png"/>
+					<file name="enemy_shield_shards_02" type="png"/>
+					<file name="enemy_shield_shards_03" type="png"/>
+					<file name="enemy_shield_shards_04" type="png"/>
+					<file name="fuelstation_debris_00" type="png"/>
+					<file name="fuelstation_debris_01" type="png"/>
+					<file name="fuelstation_debris_02" type="png"/>
+					<file name="fuelstation_debris_03" type="png"/>
+					<file name="fuelstation_debris_04" type="png"/>
+					<file name="fuelstation_debris_05" type="png"/>
+					<file name="fuelstation_tank_debris_00" type="png"/>
+					<file name="fuelstation_tank_debris_01" type="png"/>
+					<file name="fuelstation_tank_debris_02" type="png"/>
+					<file name="fuelstation_tank_debris_03" type="png"/>
+					<file name="fuelstation_tank_debris_04" type="png"/>
+					<file name="fuelstation_tank_debris_05" type="png"/>
+					<file name="fuelstation_tank_debris_06" type="png"/>
+					<file name="fuelstation_tank_debris_07" type="png"/>
+					<file name="fuelstation_tank_debris_08" type="png"/>
+					<file name="fuelstation_tank_debris_09" type="png"/>
+					<file name="generator_coil" type="png"/>
+					<file name="generic_circle_outline" type="png"/>
+					<file name="generic_circle_outline_blurred" type="png"/>
+					<file name="hamster" type="png"/>
+					<file name="health_00" type="png"/>
+					<file name="health_01" type="png"/>
+					<file name="health_02" type="png"/>
+					<file name="healthbot_hit" type="png"/>
+					<file name="jellyfish" type="png"/>
+					<file name="kamikaze_bottom" type="png"/>
+					<file name="kamikaze_hit" type="png"/>
+					<file name="kamikaze_top" type="png"/>
+					<file name="lava_ball" type="png"/>
+					<file name="lava_blobs" type="png"/>
+					<file name="lava_drip" type="png"/>
+					<file name="lava_geyser" type="png"/>
+					<file name="lava_glow" type="png"/>
+					<file name="nut" type="png"/>
+					<file name="nut2" type="png"/>
+					<file name="nut3" type="png"/>
+					<file name="powersource_00" type="png"/>
+					<file name="powersource_01" type="png"/>
+					<file name="powersource_02" type="png"/>
+					<file name="powersource_03" type="png"/>
+					<file name="rockcrush_conveyerwheel" type="png"/>
+					<file name="rockcrush_crushwheel" type="png"/>
+					<file name="scaffolding_support_00" type="png"/>
+					<file name="scaffolding_support_01" type="png"/>
+					<file name="scaffolding_tensioner_00" type="png"/>
+					<file name="scaffolding_tensioner_01" type="png"/>
+					<file name="scaffolding_tensioner_02" type="png"/>
+					<file name="scaffolding_wood_00" type="png"/>
+					<file name="scaffolding_wood_01" type="png"/>
+					<file name="scaffolding_wood_chip" type="png"/>
+					<file name="shard_00" type="png"/>
+					<file name="shard_01" type="png"/>
+					<file name="shard_02" type="png"/>
+					<file name="shard_03" type="png"/>
+					<file name="squid_debris00" type="png"/>
+					<file name="squid_debris01" type="png"/>
+					<file name="squid_debris02" type="png"/>
+					<file name="squid_debris03" type="png"/>
+					<file name="squid_debris04" type="png"/>
+					<file name="squid_hit" type="png"/>
+					<file name="stone_chunks_small" type="png"/>
+					<file name="trafficcones" type="png"/>
+					<file name="train_carriage_001" type="png"/>
+					<file name="train_engine_off" type="png"/>
+					<file name="turret_body" type="png"/>
+					<file name="turret_body_01" type="png"/>
+					<file name="turret_body_hackable" type="png"/>
+					<file name="turret_body_hackable_01" type="png"/>
+					<file name="turret_flying_hit" type="png"/>
+					<file name="turret_gun" type="png"/>
+					<file name="turret_gun_hackable" type="png"/>
+					<file name="turret_hit" type="png"/>
+					<file name="underwaterwalker_hit" type="png"/>
+					<file name="unicorn" type="png"/>
+					<file name="vendingmachineshard_00" type="png"/>
+					<file name="vendingmachineshard_01" type="png"/>
+					<file name="vendingmachineshard_02" type="png"/>
+					<file name="vendingmachineshard_03" type="png"/>
+					<file name="vendingmachineshard_04" type="png"/>
+					<file name="virusupload_binary" type="png"/>
+					<file name="walkerturret_debris_00" type="png"/>
+					<file name="walkerturret_debris_01" type="png"/>
+					<file name="walkerturret_debris_02" type="png"/>
+					<file name="walkerturret_debris_03" type="png"/>
+					<file name="walkerturret_debris_04" type="png"/>
+					<file name="walkerturret_debris_05" type="png"/>
+					<file name="walkerturret_hiteffect" type="png"/>
+					<file name="wallmine_debris_000" type="png"/>
+					<file name="wallmine_debris_001" type="png"/>
+					<file name="wallmine_debris_002" type="png"/>
+					<file name="wallmine_debris_003" type="png"/>
+					<file name="wallminebot_hit" type="png"/>
+					<file name="wasp_debris_00" type="png"/>
+					<file name="wasp_debris_01" type="png"/>
+					<file name="wasp_debris_02" type="png"/>
+					<file name="wasp_debris_03" type="png"/>
+					<file name="waspenemy_hit" type="png"/>
+					<file name="water_drop" type="png"/>
+					<file name="water_splash" type="png"/>
+					<file name="waterfan" type="png"/>
+					<file name="waterplug_hit" type="png"/>
+					<file name="white_ring" type="png"/>
+					<file name="wreckingball_debris_00" type="png"/>
+					<file name="wreckingball_debris_01" type="png"/>
+					<file name="wreckingball_debris_02" type="png"/>
+					<file name="wreckingball_debris_03" type="png"/>
+					<file name="wreckingball_debris_04" type="png"/>
+					<file name="zerog_generator_coil_side" type="png"/>
+				</dir>
+				<dir name="sight_beam">
+					<from_dir_for_assettype ext="img">
+						<settingvalue name="MipLevels" source="custom" value="99"/>
+					</from_dir_for_assettype>
+				</dir>
+				<dir name="tilesets">
+					<from_dir_for_assettype ext="img">
+						<settingvalue name="MipLevels" source="custom" value="99"/>
+					</from_dir_for_assettype>
+					<file name="rocks_tiles" type="png"/>
+				</dir>
+			</dir>
+			<file name="steam_appid_full" type="txt"/>
+			<file name="workshop_temp_preview_image" type="png"/>
+		</dir>
+		<dir name="steam">
+			<dir name="particles">
+				<auto_add_for_assettype ext="trigger" recursive="true"/>
+			</dir>
+			<dir name="presentation">
+				<from_dir_for_assettype ext="pres">
+					<settingvalue name="MipLevels" source="custom" value="99"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</from_dir_for_assettype>
+				<auto_add_for_assettype ext="pres" recursive="true"/>
+			</dir>
+			<dir name="textures">
+				<auto_add_for_assettype ext="img" recursive="true"/>
+				<dir name="backgrounds">
+					<from_dir_for_assettype ext="img">
+						<settingvalue name="MipLevels" source="custom" value="99"/>
+					</from_dir_for_assettype>
+				</dir>
+				<dir name="fluids">
+					<from_dir_for_assettype ext="img">
+						<settingvalue name="MipLevels" source="custom" value="99"/>
+						<settingvalue name="Premultiplied" source="custom" value="false"/>
+						<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+					</from_dir_for_assettype>
+				</dir>
+				<dir name="hud">
+					<from_dir_for_assettype ext="img">
+						<settingvalue name="Compression" source="type"/>
+						<settingvalue name="MipLevels" source="custom" value="99"/>
+					</from_dir_for_assettype>
+				</dir>
+				<dir name="loading">
+					<from_dir_for_assettype ext="img">
+						<settingvalue name="MipLevels" source="custom" value="99"/>
+						<settingvalue name="Posterize" source="custom" value="0"/>
+						<settingvalue name="Premultiplied" source="custom" value="true"/>
+					</from_dir_for_assettype>
+					<dir name="level">
+						<from_dir_for_assettype ext="img">
+							<settingvalue name="Posterize" source="custom" value="0"/>
+							<settingvalue name="Premultiplied" source="custom" value="false"/>
+							<settingvalue name="ResizeScale" source="custom" value="0.25"/>
+							<settingvalue name="Solidify" source="custom" value="0"/>
+						</from_dir_for_assettype>
+					</dir>
+				</dir>
+				<dir name="particles">
+					<from_dir_for_assettype ext="img">
+						<settingvalue name="MipLevels" source="custom" value="99"/>
+					</from_dir_for_assettype>
+				</dir>
+				<dir name="sight_beam">
+					<from_dir_for_assettype ext="img">
+						<settingvalue name="MipLevels" source="custom" value="99"/>
+					</from_dir_for_assettype>
+				</dir>
+				<dir name="tilesets">
+					<from_dir_for_assettype ext="img">
+						<settingvalue name="MipLevels" source="custom" value="99"/>
+					</from_dir_for_assettype>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="win">
+			<dir name="cursors">
+				<file name="game_cursor" type="cur"/>
+			</dir>
+			<dir name="levels">
+				<auto_add_for_assettype ext="nut" recursive="true"/>
+				<auto_add_for_assettype ext="shoebox" recursive="true"/>
+				<auto_add_for_assettype ext="ttlvl" recursive="true"/>
+			</dir>
+			<dir name="textures">
+				<auto_add_for_assettype ext="img" recursive="true"/>
+			</dir>
+		</dir>
+	</dir>
+	<namespace name="root">
+		<namespace name="audio">
+			<asset id="rewind" type="bxap">
+				<file name="/shared/audio/rewind.xap"/>
+			</asset>
+			<asset id="rewind" type="xcl">
+				<file name="/shared/audio/rewind.xap"/>
+			</asset>
+		</namespace>
+		<namespace name="config">
+			<asset id="config" type="bcfg">
+				<file name="/shared/config/config.xml"/>
+				<settingvalue name="XSD" source="custom" value="shared/config/config.xsd"/>
+			</asset>
+			<asset id="default_keybindings" type="json">
+				<file name="/shared/config/default_keybindings.json"/>
+			</asset>
+			<asset id="skin_config" type="xml">
+				<file name="/shared/config/skin_config.xml"/>
+			</asset>
+		</namespace>
+		<namespace name="cursors">
+			<asset id="game_cursor" type="cur">
+				<file name="/win/cursors/game_cursor.cur"/>
+			</asset>
+		</namespace>
+		<namespace name="default">
+			<asset id="default" type="img">
+				<file name="/shared/default/default.png"/>
+			</asset>
+		</namespace>
+		<namespace name="localization">
+			<asset id="achievements" type="loc">
+				<file name="/shared/localization/localization.xls"/>
+				<settingvalue name="AllCharacters" source="custom" value="shared/localization/allcharacters.xls"/>
+				<settingvalue name="Sheet" source="custom" value="achievements"/>
+			</asset>
+			<asset id="editor" type="loc">
+				<file name="/shared/localization/localization.xls"/>
+				<settingvalue name="AllCharacters" source="custom" value="shared/localization/allcharacters.xls"/>
+				<settingvalue name="Sheet" source="custom" value="editor"/>
+			</asset>
+			<asset id="editor_helptext" type="glyph">
+				<file name="/shared/localization/glyphs.xls"/>
+				<settingvalue name="Font" source="custom" value="RIVE"/>
+				<settingvalue name="FontSize" source="custom" value="16"/>
+				<settingvalue name="PixelDepth" source="custom" value="8"/>
+			</asset>
+			<asset id="game" type="loc">
+				<file name="/shared/localization/localization.xls"/>
+				<settingvalue name="AllCharacters" source="custom" value="shared/localization/allcharacters.xls"/>
+				<settingvalue name="Sheet" source="custom" value="game"/>
+			</asset>
+			<asset id="header" type="glyph">
+				<file name="/shared/localization/glyphs.xls"/>
+				<settingvalue name="Font" source="custom" value="RIVE"/>
+				<settingvalue name="FontSize" source="custom" value="50"/>
+				<settingvalue name="PixelDepth" source="custom" value="8"/>
+			</asset>
+			<asset id="notes" type="glyph">
+				<file name="/shared/localization/glyphs.xls"/>
+				<settingvalue name="Font" source="custom" value="Trebuchet MS"/>
+				<settingvalue name="FontSize" source="custom" value="45"/>
+				<settingvalue name="PixelDepth" source="custom" value="8"/>
+			</asset>
+			<asset id="text" type="glyph">
+				<file name="/shared/localization/glyphs.xls"/>
+				<settingvalue name="Font" source="custom" value="RIVE"/>
+				<settingvalue name="FontSize" source="custom" value="30"/>
+				<settingvalue name="PixelDepth" source="custom" value="8"/>
+			</asset>
+			<asset id="title" type="glyph">
+				<file name="/shared/localization/glyphs.xls"/>
+				<settingvalue name="Font" source="custom" value="RIVE"/>
+				<settingvalue name="FontSize" source="custom" value="85"/>
+				<settingvalue name="PixelDepth" source="custom" value="8"/>
+			</asset>
+		</namespace>
+		<namespace name="presentation">
+			<namespace name="menu">
+				<asset id="ingameeasymode" type="pres">
+					<file name="/shared/presentation/menu/ingameeasymode.xml"/>
+					<settingvalue name="MipLevels" source="custom" value="99"/>
+				</asset>
+				<asset id="menuscreencontrollersettings" type="pres">
+					<file name="/shared/presentation/menu/menuscreencontrollersettings.xml"/>
+					<settingvalue name="MipLevels" source="custom" value="99"/>
+				</asset>
+				<asset id="pausemenu" type="pres">
+					<file name="/shared/presentation/menu/pausemenu.xml"/>
+					<settingvalue name="MipLevels" source="custom" value="99"/>
+				</asset>
+				<asset id="resultscreentracker" type="pres">
+					<file name="/shared/presentation/menu/resultscreentracker.xml"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+			</namespace>
+			<asset id="bat" type="pres">
+				<file name="/shared/presentation/bat.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="0.35"/>
+			</asset>
+			<asset id="credits" type="pres">
+				<file name="/shared/presentation/credits.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="1"/>
+			</asset>
+			<asset id="destructibleobjectbarrelcorpse" type="pres">
+				<file name="/shared/presentation/destructibleobjectbarrelcorpse.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="0.3"/>
+			</asset>
+			<asset id="destructibleobjectbarrelnocorpse" type="pres">
+				<file name="/shared/presentation/destructibleobjectbarrelnocorpse.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="0.3"/>
+			</asset>
+			<asset id="destructibleobjectcameraair" type="pres">
+				<file name="/shared/presentation/destructibleobjectcameraair.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="0.25"/>
+			</asset>
+			<asset id="destructibleobjectcamerawall" type="pres">
+				<file name="/shared/presentation/destructibleobjectcamerawall.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="0.25"/>
+			</asset>
+			<asset id="destructibleobjectcratecorpse01" type="pres">
+				<file name="/shared/presentation/destructibleobjectcratecorpse01.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="0.3"/>
+			</asset>
+			<asset id="destructibleobjectcratecorpse02" type="pres">
+				<file name="/shared/presentation/destructibleobjectcratecorpse02.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="0.3"/>
+			</asset>
+			<asset id="destructibleobjectcratenocorpse01" type="pres">
+				<file name="/shared/presentation/destructibleobjectcratenocorpse01.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="0.3"/>
+			</asset>
+			<asset id="destructibleobjectcratenocorpse02" type="pres">
+				<file name="/shared/presentation/destructibleobjectcratenocorpse02.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="0.3"/>
+			</asset>
+			<asset id="destructibleobjectdropship" type="pres">
+				<file name="/shared/presentation/destructibleobjectdropship.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="1"/>
+			</asset>
+			<asset id="destructibleobjectdropshiplarge" type="pres">
+				<file name="/shared/presentation/destructibleobjectdropshiplarge.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="1"/>
+			</asset>
+			<asset id="destructibleobjectlightceiling" type="pres">
+				<file name="/shared/presentation/destructibleobjectlightceiling.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="0.3"/>
+			</asset>
+			<asset id="destructibleobjectsquid" type="pres">
+				<file name="/shared/presentation/destructibleobjectsquid.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="0.3"/>
+			</asset>
+			<asset id="destructibleobjecttrafficcone" type="pres">
+				<file name="/shared/presentation/destructibleobjecttrafficcone.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="0.2"/>
+			</asset>
+			<asset id="destructibleobjectwaterplug" type="pres">
+				<file name="/shared/presentation/destructibleobjectwaterplug.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="1"/>
+			</asset>
+			<asset id="dll" type="pres">
+				<file name="/shared/presentation/dll.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="0.7"/>
+			</asset>
+			<asset id="dropship" type="pres">
+				<file name="/shared/presentation/dropship.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="0.6"/>
+			</asset>
+			<asset id="dropship_back" type="pres">
+				<file name="/shared/presentation/dropship_back.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="0.6"/>
+			</asset>
+			<asset id="emp_grenade" type="pres">
+				<file name="/shared/presentation/emp_grenade.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="0.3"/>
+			</asset>
+			<asset id="endbossextensionleftbottom" type="pres">
+				<file name="/shared/presentation/endbossextensionleftbottom.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="1"/>
+			</asset>
+			<asset id="endbossextensionleftmiddle" type="pres">
+				<file name="/shared/presentation/endbossextensionleftmiddle.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="1"/>
+			</asset>
+			<asset id="endbossextensionlefttop" type="pres">
+				<file name="/shared/presentation/endbossextensionlefttop.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="1"/>
+			</asset>
+			<asset id="endbossextensionrightbottom" type="pres">
+				<file name="/shared/presentation/endbossextensionrightbottom.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="1"/>
+			</asset>
+			<asset id="endbossextensionrightmiddle" type="pres">
+				<file name="/shared/presentation/endbossextensionrightmiddle.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="1"/>
+			</asset>
+			<asset id="endbossextensionrighttop" type="pres">
+				<file name="/shared/presentation/endbossextensionrighttop.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="1"/>
+			</asset>
+			<asset id="grenade" type="pres">
+				<file name="/shared/presentation/grenade.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="0.25"/>
+			</asset>
+			<asset id="grinder" type="pres">
+				<file name="/shared/presentation/grinder.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="1"/>
+			</asset>
+			<asset id="grinder_smallteeth" type="pres">
+				<file name="/shared/presentation/grinder_smallteeth.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="1"/>
+			</asset>
+			<asset id="healthbot" type="pres">
+				<file name="/shared/presentation/healthbot.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+			</asset>
+			<asset id="hud_hackmode_hacked_indicator" type="pres">
+				<file name="/shared/presentation/hud_hackmode_hacked_indicator.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="1"/>
+			</asset>
+			<asset id="hud_hackmode_left" type="pres">
+				<file name="/shared/presentation/hud_hackmode_left.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="1"/>
+			</asset>
+			<asset id="hud_hackmode_marker" type="pres">
+				<file name="/shared/presentation/hud_hackmode_marker.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="1"/>
+			</asset>
+			<asset id="hud_health_chunk" type="pres">
+				<file name="/shared/presentation/hud_health_chunk.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="1.0"/>
+			</asset>
+			<asset id="introduction_logo_second" type="pres">
+				<file name="/shared/presentation/introduction_logo_second.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="1.0"/>
+			</asset>
+			<asset id="introduction_logo_twotribes" type="pres">
+				<file name="/shared/presentation/introduction_logo_twotribes.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="1.0"/>
+			</asset>
+			<asset id="leveldoor_down" type="pres">
+				<file name="/shared/presentation/leveldoor_down.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="0.7"/>
+			</asset>
+			<asset id="leveldoor_up" type="pres">
+				<file name="/shared/presentation/leveldoor_up.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="0.7"/>
+			</asset>
+			<asset id="pickup_ammo" type="pres">
+				<file name="/shared/presentation/pickup_ammo.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="0.3"/>
+			</asset>
+			<asset id="pipegate" type="pres">
+				<file name="/shared/presentation/pipegate.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="0.35"/>
+			</asset>
+			<asset id="pipegate_back" type="pres">
+				<file name="/shared/presentation/pipegate_back.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="0.35"/>
+			</asset>
+			<asset id="piston_chubby_down" type="pres">
+				<file name="/shared/presentation/piston_chubby_down.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="1"/>
+			</asset>
+			<asset id="piston_chubby_horizontal" type="pres">
+				<file name="/shared/presentation/piston_chubby_horizontal.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="1"/>
+			</asset>
+			<asset id="piston_chubby_up" type="pres">
+				<file name="/shared/presentation/piston_chubby_up.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="1"/>
+			</asset>
+			<asset id="piston_down" type="pres">
+				<file name="/shared/presentation/piston_down.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="1"/>
+			</asset>
+			<asset id="piston_elevator_thin_horizontal_left" type="pres">
+				<file name="/shared/presentation/piston_elevator_thin_horizontal_left.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="1"/>
+			</asset>
+			<asset id="piston_elevator_thin_horizontal_right" type="pres">
+				<file name="/shared/presentation/piston_elevator_thin_horizontal_right.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="1"/>
+			</asset>
+			<asset id="piston_horizontal" type="pres">
+				<file name="/shared/presentation/piston_horizontal.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="1"/>
+			</asset>
+			<asset id="piston_lava_up" type="pres">
+				<file name="/shared/presentation/piston_lava_up.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="1"/>
+			</asset>
+			<asset id="piston_thin_down" type="pres">
+				<file name="/shared/presentation/piston_thin_down.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="1"/>
+			</asset>
+			<asset id="piston_thin_horizontal" type="pres">
+				<file name="/shared/presentation/piston_thin_horizontal.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="1"/>
+			</asset>
+			<asset id="piston_thin_up" type="pres">
+				<file name="/shared/presentation/piston_thin_up.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="1"/>
+			</asset>
+			<asset id="piston_up" type="pres">
+				<file name="/shared/presentation/piston_up.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="1"/>
+			</asset>
+			<asset id="shield_enemy_indestructible" type="pres">
+				<file name="/shared/presentation/shield_enemy_indestructible.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+			</asset>
+			<asset id="shield_player" type="pres">
+				<file name="/shared/presentation/shield_player.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+			</asset>
+			<asset id="slicer" type="pres">
+				<file name="/shared/presentation/slicer.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="0.3"/>
+			</asset>
+			<asset id="tetromino_preview" type="pres">
+				<file name="/shared/presentation/tetromino_preview.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="1.0"/>
+			</asset>
+			<asset id="traincrossingsign" type="pres">
+				<file name="/shared/presentation/traincrossingsign.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="0.35"/>
+			</asset>
+			<asset id="turretenemy_turret_bullet" type="pres">
+				<file name="/shared/presentation/turretenemy_turret_bullet.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="0.25"/>
+			</asset>
+			<asset id="turretenemy_turret_flamethrower" type="pres">
+				<file name="/shared/presentation/turretenemy_turret_flamethrower.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="0.25"/>
+			</asset>
+			<asset id="turretenemy_turret_laser" type="pres">
+				<file name="/shared/presentation/turretenemy_turret_laser.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="0.25"/>
+			</asset>
+			<asset id="turretenemy_turret_missile" type="pres">
+				<file name="/shared/presentation/turretenemy_turret_missile.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="0.25"/>
+			</asset>
+			<asset id="underwaterrotorenemy" type="pres">
+				<file name="/shared/presentation/underwaterrotorenemy.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="0.25"/>
+			</asset>
+			<asset id="walkerturret" type="pres">
+				<file name="/shared/presentation/walkerturret.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="0.4"/>
+			</asset>
+			<asset id="walkerturret_front" type="pres">
+				<file name="/shared/presentation/walkerturret_front.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="0.4"/>
+			</asset>
+			<asset id="walkerturretbig" type="pres">
+				<file name="/shared/presentation/walkerturretbig.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="0.4"/>
+			</asset>
+			<asset id="walkerturretbig_front" type="pres">
+				<file name="/shared/presentation/walkerturretbig_front.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="0.4"/>
+			</asset>
+			<asset id="walkerturretmega" type="pres">
+				<file name="/shared/presentation/walkerturretmega.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="0.4"/>
+			</asset>
+			<asset id="walkerturretmega_front" type="pres">
+				<file name="/shared/presentation/walkerturretmega_front.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="0.4"/>
+			</asset>
+			<asset id="wallminebot" type="pres">
+				<file name="/shared/presentation/wallminebot.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="0.3"/>
+			</asset>
+			<asset id="waspenemy" type="pres">
+				<file name="/shared/presentation/waspenemy.xml"/>
+				<settingvalue name="ResizeScale" source="custom" value="0.35"/>
+			</asset>
+			<asset id="wipes" type="pres">
+				<file name="/shared/presentation/wipes.xml"/>
+				<settingvalue name="MipLevels" source="custom" value="0"/>
+				<settingvalue name="Posterize" source="custom" value="0"/>
+				<settingvalue name="Premultiplied" source="dir"/>
+				<settingvalue name="ResizeScale" source="custom" value="1.0"/>
+			</asset>
+		</namespace>
+		<namespace name="textures">
+			<namespace name="backgrounds">
+				<asset id="asteroid_01" type="img">
+					<file name="/shared/textures/backgrounds/asteroid_01.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="asteroid_02" type="img">
+					<file name="/shared/textures/backgrounds/asteroid_02.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="asteroid_big" type="img">
+					<file name="/shared/textures/backgrounds/asteroid_big.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="asteroid_lava" type="img">
+					<file name="/shared/textures/backgrounds/asteroid_lava.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="asteroid_small0" type="img">
+					<file name="/shared/textures/backgrounds/asteroid_small0.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="asteroid_small1" type="img">
+					<file name="/shared/textures/backgrounds/asteroid_small1.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="asteroid_small2" type="img">
+					<file name="/shared/textures/backgrounds/asteroid_small2.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="baobab" type="img">
+					<file name="/shared/textures/backgrounds/baobab.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="1"/>
+				</asset>
+				<asset id="baobab_eyes" type="img">
+					<file name="/shared/textures/backgrounds/baobab_eyes.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="barrel_bend_back" type="img">
+					<file name="/shared/textures/backgrounds/barrel_bend_back.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="barrel_bend_front" type="img">
+					<file name="/shared/textures/backgrounds/barrel_bend_front.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="barrel_horizontal_01" type="img">
+					<file name="/shared/textures/backgrounds/barrel_horizontal_01.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="barrel_horizontal_02" type="img">
+					<file name="/shared/textures/backgrounds/barrel_horizontal_02.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="barrel_horizontal_03" type="img">
+					<file name="/shared/textures/backgrounds/barrel_horizontal_03.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="barrel_vertical_01" type="img">
+					<file name="/shared/textures/backgrounds/barrel_vertical_01.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="barrel_vertical_02" type="img">
+					<file name="/shared/textures/backgrounds/barrel_vertical_02.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="beam_ceiling" type="img">
+					<file name="/shared/textures/backgrounds/beam_ceiling.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="beam_ceiling_cap" type="img">
+					<file name="/shared/textures/backgrounds/beam_ceiling_cap.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="bucket_lava_back" type="img">
+					<file name="/shared/textures/backgrounds/bucket_lava_back.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="bucket_lava_front" type="img">
+					<file name="/shared/textures/backgrounds/bucket_lava_front.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="crushbox" type="img">
+					<file name="/shared/textures/backgrounds/crushbox.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.25"/>
+				</asset>
+				<asset id="engine" type="img">
+					<file name="/shared/textures/backgrounds/engine.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="fan_backlight" type="img">
+					<file name="/shared/textures/backgrounds/fan_backlight.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="fan_blades" type="img">
+					<file name="/shared/textures/backgrounds/fan_blades.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="fan_blades_broken" type="img">
+					<file name="/shared/textures/backgrounds/fan_blades_broken.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="1"/>
+				</asset>
+				<asset id="fan_blades_rim" type="img">
+					<file name="/shared/textures/backgrounds/fan_blades_rim.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="fan_blades_skinny" type="img">
+					<file name="/shared/textures/backgrounds/fan_blades_skinny.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="fan_ring" type="img">
+					<file name="/shared/textures/backgrounds/fan_ring.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="fan_ring_nocables" type="img">
+					<file name="/shared/textures/backgrounds/fan_ring_nocables.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="fueltank" type="img">
+					<file name="/shared/textures/backgrounds/fueltank.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="furnace" type="img">
+					<file name="/shared/textures/backgrounds/furnace.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="furnace_back" type="img">
+					<file name="/shared/textures/backgrounds/furnace_back.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="generator_back" type="img">
+					<file name="/shared/textures/backgrounds/generator_back.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.25"/>
+				</asset>
+				<asset id="generator_front" type="img">
+					<file name="/shared/textures/backgrounds/generator_front.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.25"/>
+				</asset>
+				<asset id="generator_light" type="img">
+					<file name="/shared/textures/backgrounds/generator_light.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.25"/>
+				</asset>
+				<asset id="glasshouse" type="img">
+					<file name="/shared/textures/backgrounds/glasshouse.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="grate" type="img">
+					<file name="/shared/textures/backgrounds/grate.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="grate_repeating" type="img">
+					<file name="/shared/textures/backgrounds/grate_repeating.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="grate_ring" type="img">
+					<file name="/shared/textures/backgrounds/grate_ring.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="healthbot_sign" type="img">
+					<file name="/shared/textures/backgrounds/healthbot_sign.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="healthbot_sign_lightmask" type="img">
+					<file name="/shared/textures/backgrounds/healthbot_sign_lightmask.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="lightbeam" type="img">
+					<file name="/shared/textures/backgrounds/lightbeam.png"/>
+					<settingvalue name="Posterize" source="custom" value="0"/>
+					<settingvalue name="ResizeScale" source="custom" value="1"/>
+				</asset>
+				<asset id="lightbeam_bigarea" type="img">
+					<file name="/shared/textures/backgrounds/lightbeam_bigarea.png"/>
+					<settingvalue name="Posterize" source="custom" value="0"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="lightray_forest" type="img">
+					<file name="/shared/textures/backgrounds/lightray_forest.png"/>
+					<settingvalue name="Posterize" source="custom" value="0"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="logo_rive" type="img">
+					<file name="/shared/textures/backgrounds/logo_rive.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.25"/>
+				</asset>
+				<asset id="planet_notearth" type="img">
+					<file name="/shared/textures/backgrounds/planet_notearth.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.75"/>
+				</asset>
+				<asset id="planet_notearth_5000ADLL" type="img">
+					<file name="/shared/textures/backgrounds/planet_notearth_5000ADLL.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.75"/>
+				</asset>
+				<asset id="planet_satellites" type="img">
+					<file name="/shared/textures/backgrounds/planet_satellites.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="1"/>
+				</asset>
+				<asset id="plants" type="img">
+					<file name="/shared/textures/backgrounds/plants.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="1"/>
+				</asset>
+				<asset id="rewindmachine" type="img">
+					<file name="/shared/textures/backgrounds/rewindmachine.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="rewindmachine_dark" type="img">
+					<file name="/shared/textures/backgrounds/rewindmachine_dark.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="rewindmachine_glow" type="img">
+					<file name="/shared/textures/backgrounds/rewindmachine_glow.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="rock_empty_00" type="img">
+					<file name="/shared/textures/backgrounds/rock_empty_00.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="rock_empty_01" type="img">
+					<file name="/shared/textures/backgrounds/rock_empty_01.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="rocks" type="img">
+					<file name="/shared/textures/backgrounds/rocks.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="1"/>
+				</asset>
+				<asset id="rocks_center" type="img">
+					<file name="/shared/textures/backgrounds/rocks_center.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="rocks_center_moss" type="img">
+					<file name="/shared/textures/backgrounds/rocks_center_moss.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="rocks_mini" type="img">
+					<file name="/shared/textures/backgrounds/rocks_mini.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="1"/>
+				</asset>
+				<asset id="shredder_corner_left" type="img">
+					<file name="/shared/textures/backgrounds/shredder_corner_left.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="shredder_corner_right" type="img">
+					<file name="/shared/textures/backgrounds/shredder_corner_right.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="shredder_pusher" type="img">
+					<file name="/shared/textures/backgrounds/shredder_pusher.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="shredder_repeatable" type="img">
+					<file name="/shared/textures/backgrounds/shredder_repeatable.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="shredder_single" type="img">
+					<file name="/shared/textures/backgrounds/shredder_single.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="silhouette_beam" type="img">
+					<file name="/shared/textures/backgrounds/silhouette_beam.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="tllight_0000" type="img">
+					<file name="/shared/textures/backgrounds/tllight_0000.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.35"/>
+				</asset>
+				<asset id="tllight_0001" type="img">
+					<file name="/shared/textures/backgrounds/tllight_0001.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.35"/>
+				</asset>
+				<asset id="train_carriage_000" type="img">
+					<file name="/shared/textures/backgrounds/train_carriage_000.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="train_carriage_001" type="img">
+					<file name="/shared/textures/backgrounds/train_carriage_001.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="train_carriage_002" type="img">
+					<file name="/shared/textures/backgrounds/train_carriage_002.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="train_carriage_003" type="img">
+					<file name="/shared/textures/backgrounds/train_carriage_003.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="train_engine" type="img">
+					<file name="/shared/textures/backgrounds/train_engine.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="train_engine_light" type="img">
+					<file name="/shared/textures/backgrounds/train_engine_light.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="tree_01" type="img">
+					<file name="/shared/textures/backgrounds/tree_01.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="tree_02" type="img">
+					<file name="/shared/textures/backgrounds/tree_02.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="tree_03" type="img">
+					<file name="/shared/textures/backgrounds/tree_03.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="vine_hanging" type="img">
+					<file name="/shared/textures/backgrounds/vine_hanging.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="1"/>
+				</asset>
+				<asset id="vines" type="img">
+					<file name="/shared/textures/backgrounds/vines.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="1"/>
+				</asset>
+				<asset id="watertower_back" type="img">
+					<file name="/shared/textures/backgrounds/watertower_back.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="watertower_front" type="img">
+					<file name="/shared/textures/backgrounds/watertower_front.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="white_fog" type="img">
+					<file name="/shared/textures/backgrounds/white_fog.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+			</namespace>
+			<namespace name="lights">
+				<asset id="glow" type="img">
+					<file name="/shared/textures/lights/glow.png"/>
+					<settingvalue name="Posterize" source="custom" value="0"/>
+				</asset>
+			</namespace>
+			<namespace name="loading">
+				<namespace name="level">
+					<asset id="default" type="img">
+						<settingvalue name="ResizeScale" source="custom" value="1"/>
+					</asset>
+				</namespace>
+			</namespace>
+			<namespace name="particles">
+				<asset id="anim_slash" type="img">
+					<file name="/shared/textures/particles/anim_slash.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="asteroid_glow" type="img">
+					<file name="/shared/textures/particles/asteroid_glow.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="asteroid_hit_inner" type="img">
+					<file name="/shared/textures/particles/asteroid_hit_inner.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="asteroidbelt" type="img">
+					<file name="/shared/textures/particles/asteroidbelt.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="backgroundstar" type="img">
+					<file name="/shared/textures/particles/backgroundstar.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.25"/>
+				</asset>
+				<asset id="balloon_bottom" type="img">
+					<file name="/shared/textures/particles/balloon_bottom.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="balloon_front" type="img">
+					<file name="/shared/textures/particles/balloon_front.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="balloon_left" type="img">
+					<file name="/shared/textures/particles/balloon_left.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="balloon_right" type="img">
+					<file name="/shared/textures/particles/balloon_right.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="bat_debris_000" type="img">
+					<file name="/shared/textures/particles/bat_debris_000.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="bat_debris_001" type="img">
+					<file name="/shared/textures/particles/bat_debris_001.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="bat_debris_002" type="img">
+					<file name="/shared/textures/particles/bat_debris_002.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="bat_hit" type="img">
+					<file name="/shared/textures/particles/bat_hit.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="battery_leftmiddle" type="img">
+					<file name="/shared/textures/particles/battery_leftmiddle.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="bolt1" type="img">
+					<file name="/shared/textures/particles/bolt1.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="bolt2" type="img">
+					<file name="/shared/textures/particles/bolt2.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="bolt3" type="img">
+					<file name="/shared/textures/particles/bolt3.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="bolt_nut1" type="img">
+					<file name="/shared/textures/particles/bolt_nut1.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="bolt_nut2" type="img">
+					<file name="/shared/textures/particles/bolt_nut2.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="bubble_cloud" type="img">
+					<file name="/shared/textures/particles/bubble_cloud.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="bubble_cloud_nodust" type="img">
+					<file name="/shared/textures/particles/bubble_cloud_nodust.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="bucket_0000" type="img">
+					<file name="/shared/textures/particles/bucket_0000.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="bullet_casing" type="img">
+					<file name="/shared/textures/particles/bullet_casing.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="1"/>
+				</asset>
+				<asset id="bumper_debris_000" type="img">
+					<file name="/shared/textures/particles/bumper_debris_000.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="bumper_debris_001" type="img">
+					<file name="/shared/textures/particles/bumper_debris_001.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="bumper_debris_002" type="img">
+					<file name="/shared/textures/particles/bumper_debris_002.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="bumper_debris_003" type="img">
+					<file name="/shared/textures/particles/bumper_debris_003.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="bumper_debris_004" type="img">
+					<file name="/shared/textures/particles/bumper_debris_004.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="bumper_debris_005" type="img">
+					<file name="/shared/textures/particles/bumper_debris_005.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="bumper_hit" type="img">
+					<file name="/shared/textures/particles/bumper_hit.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="bumper_phantom" type="img">
+					<file name="/shared/textures/particles/bumper_phantom.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="camera_0000" type="img">
+					<file name="/shared/textures/particles/camera_0000.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="camera_0001" type="img">
+					<file name="/shared/textures/particles/camera_0001.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="camera_0002" type="img">
+					<file name="/shared/textures/particles/camera_0002.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="chimneycap_00" type="img">
+					<file name="/shared/textures/particles/chimneycap_00.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="chimneycap_01" type="img">
+					<file name="/shared/textures/particles/chimneycap_01.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="chimneycap_02" type="img">
+					<file name="/shared/textures/particles/chimneycap_02.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="chimneycap_hit" type="img">
+					<file name="/shared/textures/particles/chimneycap_hit.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="1"/>
+				</asset>
+				<asset id="cogwheel1" type="img">
+					<file name="/shared/textures/particles/cogwheel1.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="cogwheel2" type="img">
+					<file name="/shared/textures/particles/cogwheel2.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="cogwheel3" type="img">
+					<file name="/shared/textures/particles/cogwheel3.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="collapsiblebridge_hit_one" type="img">
+					<file name="/shared/textures/particles/collapsiblebridge_hit_one.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="crate_00" type="img">
+					<file name="/shared/textures/particles/crate_00.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="crate_01" type="img">
+					<file name="/shared/textures/particles/crate_01.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="crate_02" type="img">
+					<file name="/shared/textures/particles/crate_02.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="crate_03" type="img">
+					<file name="/shared/textures/particles/crate_03.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="crate_04" type="img">
+					<file name="/shared/textures/particles/crate_04.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="crate_left" type="img">
+					<file name="/shared/textures/particles/crate_left.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="crate_lid" type="img">
+					<file name="/shared/textures/particles/crate_lid.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="crate_middle" type="img">
+					<file name="/shared/textures/particles/crate_middle.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="crate_right" type="img">
+					<file name="/shared/textures/particles/crate_right.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="debris_000" type="img">
+					<file name="/shared/textures/particles/debris_000.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="debris_001" type="img">
+					<file name="/shared/textures/particles/debris_001.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="debris_chunk" type="img">
+					<file name="/shared/textures/particles/debris_chunk.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="destructible_barrel_hiteffect" type="img">
+					<file name="/shared/textures/particles/destructible_barrel_hiteffect.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.25"/>
+				</asset>
+				<asset id="destructible_bucket_hiteffect" type="img">
+					<file name="/shared/textures/particles/destructible_bucket_hiteffect.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.25"/>
+				</asset>
+				<asset id="destructible_cameraballoon_hiteffect" type="img">
+					<file name="/shared/textures/particles/destructible_cameraballoon_hiteffect.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.25"/>
+				</asset>
+				<asset id="destructible_camerawall_hiteffect" type="img">
+					<file name="/shared/textures/particles/destructible_camerawall_hiteffect.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.25"/>
+				</asset>
+				<asset id="destructible_ceilinglight_hiteffect" type="img">
+					<file name="/shared/textures/particles/destructible_ceilinglight_hiteffect.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.25"/>
+				</asset>
+				<asset id="destructible_controlpanel_hiteffect" type="img">
+					<file name="/shared/textures/particles/destructible_controlpanel_hiteffect.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.25"/>
+				</asset>
+				<asset id="destructible_crate_hiteffect" type="img">
+					<file name="/shared/textures/particles/destructible_crate_hiteffect.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.25"/>
+				</asset>
+				<asset id="destructible_dropship_hit" type="img">
+					<file name="/shared/textures/particles/destructible_dropship_hit.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.25"/>
+				</asset>
+				<asset id="destructible_tllight_hiteffect" type="img">
+					<file name="/shared/textures/particles/destructible_tllight_hiteffect.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.25"/>
+				</asset>
+				<asset id="destructible_trafficcone_hiteffect" type="img">
+					<file name="/shared/textures/particles/destructible_trafficcone_hiteffect.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.25"/>
+				</asset>
+				<asset id="destructible_wallchargepoint_hiteffect" type="img">
+					<file name="/shared/textures/particles/destructible_wallchargepoint_hiteffect.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.25"/>
+				</asset>
+				<asset id="dirt_chunks" type="img">
+					<file name="/shared/textures/particles/dirt_chunks.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="1"/>
+				</asset>
+				<asset id="enemy_shield_shards_00" type="img">
+					<file name="/shared/textures/particles/enemy_shield_shards_00.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="enemy_shield_shards_01" type="img">
+					<file name="/shared/textures/particles/enemy_shield_shards_01.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="enemy_shield_shards_02" type="img">
+					<file name="/shared/textures/particles/enemy_shield_shards_02.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="enemy_shield_shards_03" type="img">
+					<file name="/shared/textures/particles/enemy_shield_shards_03.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="enemy_shield_shards_04" type="img">
+					<file name="/shared/textures/particles/enemy_shield_shards_04.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="fuelstation_debris_00" type="img">
+					<file name="/shared/textures/particles/fuelstation_debris_00.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="fuelstation_debris_01" type="img">
+					<file name="/shared/textures/particles/fuelstation_debris_01.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="fuelstation_debris_02" type="img">
+					<file name="/shared/textures/particles/fuelstation_debris_02.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="fuelstation_debris_03" type="img">
+					<file name="/shared/textures/particles/fuelstation_debris_03.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="fuelstation_debris_04" type="img">
+					<file name="/shared/textures/particles/fuelstation_debris_04.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="fuelstation_debris_05" type="img">
+					<file name="/shared/textures/particles/fuelstation_debris_05.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="fuelstation_tank_debris_00" type="img">
+					<file name="/shared/textures/particles/fuelstation_tank_debris_00.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="fuelstation_tank_debris_01" type="img">
+					<file name="/shared/textures/particles/fuelstation_tank_debris_01.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="fuelstation_tank_debris_02" type="img">
+					<file name="/shared/textures/particles/fuelstation_tank_debris_02.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="fuelstation_tank_debris_03" type="img">
+					<file name="/shared/textures/particles/fuelstation_tank_debris_03.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="fuelstation_tank_debris_04" type="img">
+					<file name="/shared/textures/particles/fuelstation_tank_debris_04.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.50"/>
+				</asset>
+				<asset id="fuelstation_tank_debris_05" type="img">
+					<file name="/shared/textures/particles/fuelstation_tank_debris_05.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="fuelstation_tank_debris_06" type="img">
+					<file name="/shared/textures/particles/fuelstation_tank_debris_06.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="fuelstation_tank_debris_07" type="img">
+					<file name="/shared/textures/particles/fuelstation_tank_debris_07.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="fuelstation_tank_debris_08" type="img">
+					<file name="/shared/textures/particles/fuelstation_tank_debris_08.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="fuelstation_tank_debris_09" type="img">
+					<file name="/shared/textures/particles/fuelstation_tank_debris_09.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="generator_coil" type="img">
+					<file name="/shared/textures/particles/generator_coil.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="generic_circle_outline" type="img">
+					<file name="/shared/textures/particles/generic_circle_outline.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.25"/>
+				</asset>
+				<asset id="generic_circle_outline_blurred" type="img">
+					<file name="/shared/textures/particles/generic_circle_outline_blurred.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.25"/>
+				</asset>
+				<asset id="hamster" type="img">
+					<file name="/shared/textures/particles/hamster.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="health_00" type="img">
+					<file name="/shared/textures/particles/health_00.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="health_01" type="img">
+					<file name="/shared/textures/particles/health_01.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="health_02" type="img">
+					<file name="/shared/textures/particles/health_02.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="healthbot_hit" type="img">
+					<file name="/shared/textures/particles/healthbot_hit.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="jellyfish" type="img">
+					<file name="/shared/textures/particles/jellyfish.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="kamikaze_bottom" type="img">
+					<file name="/shared/textures/particles/kamikaze_bottom.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="kamikaze_hit" type="img">
+					<file name="/shared/textures/particles/kamikaze_hit.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="kamikaze_top" type="img">
+					<file name="/shared/textures/particles/kamikaze_top.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="lava_ball" type="img">
+					<file name="/shared/textures/particles/lava_ball.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="lava_blobs" type="img">
+					<file name="/shared/textures/particles/lava_blobs.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="1"/>
+				</asset>
+				<asset id="lava_drip" type="img">
+					<file name="/shared/textures/particles/lava_drip.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.2"/>
+				</asset>
+				<asset id="lava_geyser" type="img">
+					<file name="/shared/textures/particles/lava_geyser.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="lava_glow" type="img">
+					<file name="/shared/textures/particles/lava_glow.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.2"/>
+				</asset>
+				<asset id="nut" type="img">
+					<file name="/shared/textures/particles/nut.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="nut2" type="img">
+					<file name="/shared/textures/particles/nut2.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="nut3" type="img">
+					<file name="/shared/textures/particles/nut3.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="powersource_00" type="img">
+					<file name="/shared/textures/particles/powersource_00.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="powersource_01" type="img">
+					<file name="/shared/textures/particles/powersource_01.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="powersource_02" type="img">
+					<file name="/shared/textures/particles/powersource_02.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="powersource_03" type="img">
+					<file name="/shared/textures/particles/powersource_03.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="rockcrush_conveyerwheel" type="img">
+					<file name="/shared/textures/particles/rockcrush_conveyerwheel.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="rockcrush_crushwheel" type="img">
+					<file name="/shared/textures/particles/rockcrush_crushwheel.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="scaffolding_support_00" type="img">
+					<file name="/shared/textures/particles/scaffolding_support_00.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="scaffolding_support_01" type="img">
+					<file name="/shared/textures/particles/scaffolding_support_01.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="scaffolding_tensioner_00" type="img">
+					<file name="/shared/textures/particles/scaffolding_tensioner_00.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="scaffolding_tensioner_01" type="img">
+					<file name="/shared/textures/particles/scaffolding_tensioner_01.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="scaffolding_tensioner_02" type="img">
+					<file name="/shared/textures/particles/scaffolding_tensioner_02.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="scaffolding_wood_00" type="img">
+					<file name="/shared/textures/particles/scaffolding_wood_00.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="scaffolding_wood_01" type="img">
+					<file name="/shared/textures/particles/scaffolding_wood_01.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="scaffolding_wood_chip" type="img">
+					<file name="/shared/textures/particles/scaffolding_wood_chip.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="shard_00" type="img">
+					<file name="/shared/textures/particles/shard_00.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.25"/>
+				</asset>
+				<asset id="shard_01" type="img">
+					<file name="/shared/textures/particles/shard_01.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.25"/>
+				</asset>
+				<asset id="shard_02" type="img">
+					<file name="/shared/textures/particles/shard_02.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.25"/>
+				</asset>
+				<asset id="shard_03" type="img">
+					<file name="/shared/textures/particles/shard_03.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.25"/>
+				</asset>
+				<asset id="squid_debris00" type="img">
+					<file name="/shared/textures/particles/squid_debris00.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="squid_debris01" type="img">
+					<file name="/shared/textures/particles/squid_debris01.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="squid_debris02" type="img">
+					<file name="/shared/textures/particles/squid_debris02.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="squid_debris03" type="img">
+					<file name="/shared/textures/particles/squid_debris03.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="squid_debris04" type="img">
+					<file name="/shared/textures/particles/squid_debris04.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="squid_hit" type="img">
+					<file name="/shared/textures/particles/squid_hit.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="stone_chunks_small" type="img">
+					<file name="/shared/textures/particles/stone_chunks_small.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="trafficcones" type="img">
+					<file name="/shared/textures/particles/trafficcones.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="train_carriage_001" type="img">
+					<file name="/shared/textures/particles/train_carriage_001.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="train_engine_off" type="img">
+					<file name="/shared/textures/particles/train_engine_off.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="turret_body" type="img">
+					<file name="/shared/textures/particles/turret_body.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="turret_body_01" type="img">
+					<file name="/shared/textures/particles/turret_body_01.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="turret_body_hackable" type="img">
+					<file name="/shared/textures/particles/turret_body_hackable.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="turret_body_hackable_01" type="img">
+					<file name="/shared/textures/particles/turret_body_hackable_01.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="turret_flying_hit" type="img">
+					<file name="/shared/textures/particles/turret_flying_hit.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="turret_gun" type="img">
+					<file name="/shared/textures/particles/turret_gun.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="turret_gun_hackable" type="img">
+					<file name="/shared/textures/particles/turret_gun_hackable.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="turret_hit" type="img">
+					<file name="/shared/textures/particles/turret_hit.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="underwaterwalker_hit" type="img">
+					<file name="/shared/textures/particles/underwaterwalker_hit.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="unicorn" type="img">
+					<file name="/shared/textures/particles/unicorn.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="vendingmachineshard_00" type="img">
+					<file name="/shared/textures/particles/vendingmachineshard_00.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="vendingmachineshard_01" type="img">
+					<file name="/shared/textures/particles/vendingmachineshard_01.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="vendingmachineshard_02" type="img">
+					<file name="/shared/textures/particles/vendingmachineshard_02.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="vendingmachineshard_03" type="img">
+					<file name="/shared/textures/particles/vendingmachineshard_03.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="vendingmachineshard_04" type="img">
+					<file name="/shared/textures/particles/vendingmachineshard_04.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="virusupload_binary" type="img">
+					<file name="/shared/textures/particles/virusupload_binary.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="1"/>
+				</asset>
+				<asset id="walkerturret_debris_00" type="img">
+					<file name="/shared/textures/particles/walkerturret_debris_00.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="walkerturret_debris_01" type="img">
+					<file name="/shared/textures/particles/walkerturret_debris_01.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="walkerturret_debris_02" type="img">
+					<file name="/shared/textures/particles/walkerturret_debris_02.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="walkerturret_debris_03" type="img">
+					<file name="/shared/textures/particles/walkerturret_debris_03.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="walkerturret_debris_04" type="img">
+					<file name="/shared/textures/particles/walkerturret_debris_04.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="walkerturret_debris_05" type="img">
+					<file name="/shared/textures/particles/walkerturret_debris_05.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="walkerturret_hiteffect" type="img">
+					<file name="/shared/textures/particles/walkerturret_hiteffect.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="wallmine_debris_000" type="img">
+					<file name="/shared/textures/particles/wallmine_debris_000.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="wallmine_debris_001" type="img">
+					<file name="/shared/textures/particles/wallmine_debris_001.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="wallmine_debris_002" type="img">
+					<file name="/shared/textures/particles/wallmine_debris_002.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="wallmine_debris_003" type="img">
+					<file name="/shared/textures/particles/wallmine_debris_003.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="wallminebot_hit" type="img">
+					<file name="/shared/textures/particles/wallminebot_hit.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="wasp_debris_00" type="img">
+					<file name="/shared/textures/particles/wasp_debris_00.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="wasp_debris_01" type="img">
+					<file name="/shared/textures/particles/wasp_debris_01.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="wasp_debris_02" type="img">
+					<file name="/shared/textures/particles/wasp_debris_02.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="wasp_debris_03" type="img">
+					<file name="/shared/textures/particles/wasp_debris_03.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="waspenemy_hit" type="img">
+					<file name="/shared/textures/particles/waspenemy_hit.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="water_drop" type="img">
+					<file name="/shared/textures/particles/water_drop.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="water_splash" type="img">
+					<file name="/shared/textures/particles/water_splash.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="waterfan" type="img">
+					<file name="/shared/textures/particles/waterfan.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="waterplug_hit" type="img">
+					<file name="/shared/textures/particles/waterplug_hit.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="white_ring" type="img">
+					<file name="/shared/textures/particles/white_ring.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="wreckingball_debris_00" type="img">
+					<file name="/shared/textures/particles/wreckingball_debris_00.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="wreckingball_debris_01" type="img">
+					<file name="/shared/textures/particles/wreckingball_debris_01.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="wreckingball_debris_02" type="img">
+					<file name="/shared/textures/particles/wreckingball_debris_02.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="wreckingball_debris_03" type="img">
+					<file name="/shared/textures/particles/wreckingball_debris_03.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="wreckingball_debris_04" type="img">
+					<file name="/shared/textures/particles/wreckingball_debris_04.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+				<asset id="zerog_generator_coil_side" type="img">
+					<file name="/shared/textures/particles/zerog_generator_coil_side.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.5"/>
+				</asset>
+			</namespace>
+			<namespace name="tilesets">
+				<asset id="rocks_tiles" type="img">
+					<file name="/shared/textures/tilesets/rocks_tiles.png"/>
+					<settingvalue name="ResizeScale" source="custom" value="0.66"/>
+				</asset>
+			</namespace>
+			<namespace name="warpbeam">
+				<asset id="beam_line" type="img">
+					<settingvalue name="MipLevels" source="custom" value="0"/>
+				</asset>
+			</namespace>
+		</namespace>
+		<namespace name="userlevels">
+			<asset id="readme" type="*"/>
+		</namespace>
+		<asset id="steam_appid" type="*">
+			<file name="/shared/steam_appid_full.txt"/>
+		</asset>
+		<asset id="workshop_temp_preview_image" type="*">
+			<file name="/shared/workshop_temp_preview_image.png"/>
+		</asset>
+	</namespace>
+</project>

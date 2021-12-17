@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		permanent="true" fixed_timestep="0.016">
+	
+	<include file="presentation/menu/include"/>
+		
+	<startvalues>
+		<origin x="c(origin_x)" y="c(origin_y)"/>
+	</startvalues>
+
+  <!-- SUBTITLES -->
+	
+	<!--conversation_back-->
+	<frameanimstack>
+		<musthave>
+			<tag name="subtitle"/>
+		</musthave>
+		<frameanim directory="spritestrip/hud/avatar_bg" flip_horizontal="false" ignore_fog="false" fps="60" looping="false" quad_width="1.9" quad_height="0.25" direction="pingpong">
+			<begin frame="0" hold="true"/>
+			<end   frame="0" hold="true"/>
+		</frameanim>
+	</frameanimstack>
+
+</presentation>
+
+
+
+

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		permanent="true">
+	
+	<startvalues>
+		<scale scale="c(shieldRange, 2)"/>
+		<translation z="0.09"/>
+	</startvalues>
+	
+	<!-- compensates for the slightly smaller graphic versus shield size-->
+	<startvalues>
+		<scale scale="1.075"/>
+	</startvalues>
+
+	<!--HIT-->
+	<frameanimstack name="hit">
+		<musthave>
+			<tag name="normal"/>
+		</musthave>
+		<frameanim directory="spritestrip/shield/enemy_impenetrable/hit" ignore_fog="true" lightmask="use_alpha" quad_height="2.2" quad_width="2.2" fps="10" looping="true" duration="0.048">
+			<begin frame="0"/>
+			<end   frame="0"/>
+		</frameanim>
+	</frameanimstack>
+
+	<frameanimstack name="hit">
+		<mustnothave>
+			<tag name="normal"/>
+		</mustnothave>
+		<frameanim directory="spritestrip/shield/enemy_big/hit" ignore_fog="true" lightmask="use_alpha" quad_height="2.2" quad_width="2.2" fps="10" looping="true" duration="0.048">
+			<begin frame="0"/>
+			<end   frame="0"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<anim2dstack name="hit">
+		<scale duration="0.048">
+			<begin scale="1.0"/>
+			<end scale="1"/>
+		</scale>
+	</anim2dstack>
+	
+	<trigger name="hit" type="audio" data="shield_enemy_hit"/>
+	
+	<!--HIDE-->
+	<frameanimstack name="hide">
+		<musthave>
+			<tag name="normal"/>
+		</musthave>
+		<frameanim directory="spritestrip/shield/enemy_impenetrable/idle" ignore_fog="true" lightmask="use_alpha" quad_height="2.2" quad_width="2.2" fps="120" looping="false" direction="backward">
+			<begin frame="0" hold="true" />
+			<end   frame="0" />
+		</frameanim>
+	</frameanimstack>
+
+	<frameanimstack name="hide">
+		<mustnothave>
+			<tag name="normal"/>
+		</mustnothave>
+		<frameanim directory="spritestrip/shield/enemy_big/idle" ignore_fog="true" lightmask="use_alpha" quad_height="2.2" quad_width="2.2" fps="120" looping="false" direction="backward">
+			<begin frame="0" hold="true" />
+			<end   frame="0" />
+		</frameanim>
+	</frameanimstack>
+
+	<coloranimstack name="hide">
+		<color duration="0.3" looping="false" timing="easeends">
+			<begin a="0"/>
+			<end   a="-255"/>
+		</color>
+	</coloranimstack>
+	
+	<!--IDLE-->
+	<frameanimstack name="idle">
+		<musthave>
+			<tag name="normal"/>
+		</musthave>
+		<frameanim directory="spritestrip/shield/enemy_impenetrable/idle" ignore_fog="true" lightmask="use_alpha" quad_height="2.2" quad_width="2.2" fps="120" looping="false" direction="backward">
+			<begin frame="0" hold="true" />
+			<end   frame="0" />
+		</frameanim>
+	</frameanimstack>
+
+	<frameanimstack name="idle">
+		<mustnothave>
+			<tag name="normal"/>
+		</mustnothave>
+		<frameanim directory="spritestrip/shield/enemy_big/idle" ignore_fog="true" lightmask="use_alpha" quad_height="2.2" quad_width="2.2" fps="120" looping="false" direction="backward">
+			<begin frame="0" hold="true" />
+			<end   frame="0" />
+		</frameanim>
+	</frameanimstack>
+
+	<coloranimstack name="idle">
+		<color duration="r(0.9),(1.1)" preset="oscillating">
+			<begin a="0"/>
+			<end a="-30"/>
+		</color>
+		<color duration="r(0.5),(0.7)" preset="oscillating">
+			<begin a="0"/>
+			<end a="-30"/>
+		</color>
+		<color duration="0.2" preset="oscillating">
+			<begin a="0"/>
+			<end a="-20"/>
+		</color>
+	</coloranimstack>
+
+	<anim2dstack name="idle">
+		<scale duration="r(0.9),(1.1)" preset="oscillating">
+			<begin scale="1"/>
+			<end scale="1.01"/>
+		</scale>
+		<scale duration="r(0.5),(0.7)" preset="oscillating">
+			<begin scale="1"/>
+			<end scale="1.01"/>
+		</scale>
+		<rotation duration="r(0.9),(1.1)" preset="oscillating">
+			<begin rotation="-0.2"/>
+			<end rotation="0.2"/>
+		</rotation>
+		<rotation duration="r(0.5),(0.7)" preset="oscillating">
+			<begin rotation="-0.2"/>
+			<end rotation="0.2"/>
+		</rotation>
+	</anim2dstack>
+	
+	<!--SHOW-->
+	<frameanimstack name="show">
+		<musthave>
+			<tag name="normal"/>
+		</musthave>
+		<frameanim directory="spritestrip/shield/enemy_impenetrable/hit" ignore_fog="true" lightmask="use_alpha" quad_height="2.2" quad_width="2.2" fps="10" looping="true" duration="0.4">
+			<begin frame="0"/>
+			<end   frame="0"/>
+		</frameanim>
+	</frameanimstack>
+
+	<frameanimstack name="show">
+		<mustnothave>
+			<tag name="normal"/>
+		</mustnothave>
+		<frameanim directory="spritestrip/shield/enemy_big/hit" ignore_fog="true" lightmask="use_alpha" quad_height="2.2" quad_width="2.2" fps="10" looping="true" duration="0.4">
+			<begin frame="0"/>
+			<end   frame="0"/>
+		</frameanim>
+	</frameanimstack>
+
+	<coloranimstack name="show">
+		<color duration="0.3" looping="false" timing="easeends">
+			<begin a="-255"/>
+			<end   a="0"/>
+		</color>
+	</coloranimstack>
+
+	<anim2dstack name="show">
+		<scale duration="0.3" timing="easeout">
+			<begin scale="0.6"/>
+			<end   scale="1.1"/>
+		</scale>
+		<scale delay="0.3" duration="0.1" timing="easeout">
+			<begin scale="1.0"/>
+			<end   scale="0.9"/>
+		</scale>
+	</anim2dstack>
+	
+</presentation>

@@ -1,0 +1,43 @@
+key                 function
+--------------------------------------------------------------
+
+q                   select plane mode
+    +shift          add plane to selection
+    +alt            remove plane from selection
+w                   move plane mode
+e                   rotate plane mode
+arrow keys          nudge
+pageup/pagedown     nudge in z axis in move mode
+[ ]                 nudge priority in move mode
+r                   scale first plane over both axes
+    +ctrl           scale width only
+    +alt            scale height only
+    +shift          scale with texture size locked
+h                   toggle preview level plane
+t                   scale plane to texture size
+ctrl + t            load new texture for selected plane
+    +shift          scale planes to selected texture size
+
+tab                 switch camera bookmark
+enter               toggle sliced view (slice focusses on (first) selected plane)
+
+ctrl + a            select all
+ctrl + shift + a    select all foreground
+ctrl + alt + a      select all background
+ctrl + d            deselect all
+ctrl + m            select all planes with the texture of the current (first) selected plane
+ctrl + h            hide selection
+ctrl + shift + h    unhide all
+ctrl + z            undo
+ctrl + shift + z    redo
+
+alt + o             open external xml editor
+ctrl + o            open
+ctrl + r            reload file
+ctrl + s            save
+ctrl + shift + s    save as
+
+ctrl + delete       delete selected planes ( not undoable, in fact, screws up undo stack... )
+c                   clone selected planes ( not undoable, in fact, screws up undo stack... )
+space               photoshop-like scrolling
+    +ctrl           focus camera on first selected plane

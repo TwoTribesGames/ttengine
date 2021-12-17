@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		permanent="true">
+
+	<startvalues>
+		<scale scale="1.28"/>
+	</startvalues>
+
+	<frameanimstack name="idle">
+		<frameanim directory="spritestrip/door_airlock" flip_horizontal="true" quad_width="9.2" quad_height="31" fps="10" looping="true">
+			<begin frame="0"/>
+			<end   frame="0"/>
+			<translation x="2"/>
+		</frameanim>
+	</frameanimstack>
+
+	<frameanimstack name="active">
+		<frameanim directory="spritestrip/door_airlock" flip_horizontal="true" quad_width="9.2" quad_height="31" fps="10" looping="true">
+			<begin frame="0"/>
+			<end   frame="0"/>
+			<translation x="2"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<trigger name="active" type="audio" data="door_airlock_start"/>
+	
+	<frameanimstack name="stop">
+		<frameanim directory="spritestrip/door_airlock" flip_horizontal="true" quad_width="9.2" quad_height="31" fps="10" looping="true">
+			<begin frame="0"/>
+			<end   frame="0"/>
+			<translation x="2"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<trigger name="stop" type="audio" data="door_airlock_end"/>	
+	
+</presentation>

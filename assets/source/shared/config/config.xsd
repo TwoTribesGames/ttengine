@@ -1,0 +1,1185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://www.twotribes.com/schemas/config.xsd"
+           elementFormDefault="qualified"
+           xmlns="http://www.twotribes.com/schemas/config.xsd"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="toki">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="startup">
+					<xs:complexType>
+						<xs:all>
+							<xs:element name="default_level" type="xs:string">
+								<xs:annotation><xs:documentation>Name of the level to start if no level was specified explicitly.</xs:documentation></xs:annotation>
+							</xs:element>
+							<xs:element name="restore_failure_level" type="xs:string">
+								<xs:annotation><xs:documentation>Name of the level to start if game fails to startup properly.</xs:documentation></xs:annotation>
+							</xs:element>
+						</xs:all>
+					</xs:complexType>
+				</xs:element>
+				
+				<xs:element name="loading">
+					<xs:complexType>
+						<xs:all>
+							<xs:element name="presentations" type="xs:string">
+								<xs:annotation><xs:documentation>Name of the directory containing all boot screen presentations.</xs:documentation></xs:annotation>
+							</xs:element>
+							<xs:element name="level_preview">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="time"      type="positiveFloat"/>
+										<xs:element name="scale_min" type="xs:float"/>
+										<xs:element name="scale_max" type="xs:float"/>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+						</xs:all>
+					</xs:complexType>
+				</xs:element>
+				
+				<xs:element name="effects">
+					<xs:complexType>
+						<xs:all>
+							<xs:element name="camera_position">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="decay" type="positiveFloat"/>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+						</xs:all>
+					</xs:complexType>
+				</xs:element>
+				
+				<xs:element name="glyphsets">
+					<xs:complexType>
+						<xs:all>
+							<xs:element name="title">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="name"                 type="xs:string"/>
+										<xs:element name="character_spacing"    type="xs:unsignedShort"/>
+										<xs:element name="character_spacing_jp" type="xs:unsignedShort"/>
+										<xs:element name="character_spacing_zh" type="xs:unsignedShort"/>
+										<xs:element name="word_separator_width" type="xs:unsignedShort"/>
+										<xs:element name="vertical_spacing"     type="xs:unsignedShort"/>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+							
+							<xs:element name="header">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="name"                 type="xs:string"/>
+										<xs:element name="character_spacing"    type="xs:unsignedShort"/>
+										<xs:element name="character_spacing_jp" type="xs:unsignedShort"/>
+										<xs:element name="character_spacing_zh" type="xs:unsignedShort"/>
+										<xs:element name="word_separator_width" type="xs:unsignedShort"/>
+										<xs:element name="vertical_spacing"     type="xs:unsignedShort"/>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+							
+							<xs:element name="text">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="name"                 type="xs:string"/>
+										<xs:element name="character_spacing"    type="xs:unsignedShort"/>
+										<xs:element name="character_spacing_jp" type="xs:unsignedShort"/>
+										<xs:element name="character_spacing_zh" type="xs:unsignedShort"/>
+										<xs:element name="word_separator_width" type="xs:unsignedShort"/>
+										<xs:element name="vertical_spacing"     type="xs:unsignedShort"/>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+							
+							<xs:element name="leaderboard_text">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="name"                 type="xs:string"/>
+										<xs:element name="character_spacing"    type="xs:unsignedShort"/>
+										<xs:element name="word_separator_width" type="xs:unsignedShort"/>
+										<xs:element name="vertical_spacing"     type="xs:unsignedShort"/>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+							
+							<xs:element name="notes">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="name"                 type="xs:string"/>
+										<xs:element name="character_spacing"    type="xs:unsignedShort"/>
+										<xs:element name="word_separator_width" type="xs:unsignedShort"/>
+										<xs:element name="vertical_spacing"     type="xs:unsignedShort"/>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+							
+							<xs:element name="editor_helptext">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="name"                 type="xs:string"/>
+										<xs:element name="character_spacing"    type="xs:unsignedShort"/>
+										<xs:element name="word_separator_width" type="xs:unsignedShort"/>
+										<xs:element name="vertical_spacing"     type="xs:unsignedShort"/>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+						</xs:all>
+					</xs:complexType>
+				</xs:element>
+				
+				
+				<xs:element name="fluids">
+					<xs:complexType>
+						<xs:all>
+							<xs:element name="water">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="grow_interval">
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="fall_single" type="positiveFloat"/>
+													<xs:element name="left" type="positiveFloat"/>
+													<xs:element name="right" type="positiveFloat"/>
+													<xs:element name="drain_fall" type="positiveFloat"/>
+													<xs:element name="drain_flow" type="positiveFloat"/>
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="texture_speed">
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="fall" type="xs:float"/>
+													<xs:element name="fall_back" type="xs:float"/>
+													<xs:element name="sideways" type="xs:float"/>
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="lava">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="grow_interval">
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="fall_single" type="positiveFloat"/>
+													<xs:element name="left" type="positiveFloat"/>
+													<xs:element name="right" type="positiveFloat"/>
+													<xs:element name="drain_fall" type="positiveFloat"/>
+													<xs:element name="drain_flow" type="positiveFloat"/>
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="texture_speed">
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="fall" type="xs:float"/>
+													<xs:element name="fall_back" type="xs:float"/>
+													<xs:element name="sideways" type="xs:float"/>
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="waves">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="maxheight" type="xs:float"/>
+										<xs:element name="minheight" type="xs:float"/>
+										<xs:element name="default_height" type="positiveFloat"/>
+										<xs:element name="quad_split_height" type="positiveFloat"/>
+										<xs:element name="water">
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="wave_trigger_interval" type="positiveFloat"/>
+													<xs:element name="wave_trigger_height" type="xs:float"/>
+													<xs:element name="velocitydiffusion" type="positiveFloat"/>
+													<xs:element name="diffusion" type="positiveFloat"/>
+													<xs:element name="default_wave_left1">
+														<xs:complexType>
+															<xs:all>
+																<xs:element name="movespeed" type="xs:float"/>
+																<xs:element name="wavewidth" type="xs:float"/>
+																<xs:element name="waveheight" type="xs:float"/>
+															</xs:all>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="default_wave_left2">
+														<xs:complexType>
+															<xs:all>
+																<xs:element name="movespeed" type="xs:float"/>
+																<xs:element name="wavewidth" type="xs:float"/>
+																<xs:element name="waveheight" type="xs:float"/>
+															</xs:all>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="default_wave_still1">
+														<xs:complexType>
+															<xs:all>
+																<xs:element name="movespeed" type="xs:float"/>
+																<xs:element name="wavewidth" type="xs:float"/>
+																<xs:element name="waveheight" type="xs:float"/>
+															</xs:all>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="default_wave_still2">
+														<xs:complexType>
+															<xs:all>
+																<xs:element name="movespeed" type="xs:float"/>
+																<xs:element name="wavewidth" type="xs:float"/>
+																<xs:element name="waveheight" type="xs:float"/>
+															</xs:all>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="default_wave_right1">
+														<xs:complexType>
+															<xs:all>
+																<xs:element name="movespeed" type="xs:float"/>
+																<xs:element name="wavewidth" type="xs:float"/>
+																<xs:element name="waveheight" type="xs:float"/>
+															</xs:all>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="default_wave_right2">
+														<xs:complexType>
+															<xs:all>
+																<xs:element name="movespeed" type="xs:float"/>
+																<xs:element name="wavewidth" type="xs:float"/>
+																<xs:element name="waveheight" type="xs:float"/>
+															</xs:all>
+														</xs:complexType>
+													</xs:element>
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="lava">
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="wave_trigger_interval" type="positiveFloat"/>
+													<xs:element name="wave_trigger_height" type="xs:float"/>
+													<xs:element name="velocitydiffusion" type="positiveFloat"/>
+													<xs:element name="diffusion" type="positiveFloat"/>
+													<xs:element name="default_wave_left1">
+														<xs:complexType>
+															<xs:all>
+																<xs:element name="movespeed" type="xs:float"/>
+																<xs:element name="wavewidth" type="xs:float"/>
+																<xs:element name="waveheight" type="xs:float"/>
+															</xs:all>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="default_wave_left2">
+														<xs:complexType>
+															<xs:all>
+																<xs:element name="movespeed" type="xs:float"/>
+																<xs:element name="wavewidth" type="xs:float"/>
+																<xs:element name="waveheight" type="xs:float"/>
+															</xs:all>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="default_wave_still1">
+														<xs:complexType>
+															<xs:all>
+																<xs:element name="movespeed" type="xs:float"/>
+																<xs:element name="wavewidth" type="xs:float"/>
+																<xs:element name="waveheight" type="xs:float"/>
+															</xs:all>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="default_wave_still2">
+														<xs:complexType>
+															<xs:all>
+																<xs:element name="movespeed" type="xs:float"/>
+																<xs:element name="wavewidth" type="xs:float"/>
+																<xs:element name="waveheight" type="xs:float"/>
+															</xs:all>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="default_wave_right1">
+														<xs:complexType>
+															<xs:all>
+																<xs:element name="movespeed" type="xs:float"/>
+																<xs:element name="wavewidth" type="xs:float"/>
+																<xs:element name="waveheight" type="xs:float"/>
+															</xs:all>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="default_wave_right2">
+														<xs:complexType>
+															<xs:all>
+																<xs:element name="movespeed" type="xs:float"/>
+																<xs:element name="wavewidth" type="xs:float"/>
+																<xs:element name="waveheight" type="xs:float"/>
+															</xs:all>
+														</xs:complexType>
+													</xs:element>
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+						</xs:all>
+					</xs:complexType>
+				</xs:element>
+				
+				<xs:element name="camera">
+					<xs:complexType>
+						<xs:all>
+							<xs:element name="game">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="culling_scale" type="xs:float"/>
+										<xs:element name="unculling_scale" type="xs:float"/>
+										<xs:element name="fov" type="fov_type"/>
+										<xs:element name="fov_zoom_step" type="fov_type"/>
+										<xs:element name="min_fov" type="fov_type"/>
+										<xs:element name="max_fov" type="fov_type"/>
+										<xs:element name="scroll_length">
+											<xs:simpleType>
+												<xs:restriction base="xs:float">
+													<xs:minExclusive value="0.0"/>
+													<xs:maxExclusive value="20.0"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+							
+							<xs:element name="editor">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="fov" type="fov_type"/>
+										<xs:element name="fov_zoom_step" type="fov_type"/>
+										<xs:element name="min_fov" type="fov_type"/>
+										<xs:element name="max_fov" type="fov_type"/>
+										<xs:element name="scroll_length">
+											<xs:simpleType>
+												<xs:restriction base="xs:float">
+													<xs:minExclusive value="0.0"/>
+													<xs:maxExclusive value="20.0"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+						</xs:all>
+					</xs:complexType>
+				</xs:element>
+				
+				<!-- ========== HACK BEAM ========== -->
+				<xs:element name="hack_beam">
+					<xs:complexType>
+						<xs:all>
+							<xs:element name="show_if_blocked" type="xs:boolean"/>
+							<xs:element name="break_on_entityhit" type="xs:boolean"/>
+							
+							<xs:element name="line" minOccurs="0">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="texture_name"       type="xs:string"/>
+										<xs:element name="texture_namespace"  type="xs:string"/>
+										<xs:element name="render_additive"    type="xs:boolean"/>										
+										<xs:element name="begin_offset"       type="xs:float"/>
+										<xs:element name="end_offset"         type="xs:float"/>
+										<xs:element name="end_offset_blocked" type="xs:float"/>
+										
+										<xs:element name="thickness">
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="base_value" type="xs:float"/>
+													
+													<xs:element name="sine_a">
+														<xs:complexType>
+															<xs:all>
+																<xs:element name="frequency" type="xs:float"/>
+																<xs:element name="amplitude" type="xs:float"/>
+															</xs:all>
+														</xs:complexType>
+													</xs:element>
+													
+													<xs:element name="sine_b">
+														<xs:complexType>
+															<xs:all>
+																<xs:element name="frequency" type="xs:float"/>
+																<xs:element name="amplitude" type="xs:float"/>
+															</xs:all>
+														</xs:complexType>
+													</xs:element>
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+							
+							<xs:element name="rider" minOccurs="0">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="texture_name"       type="xs:string"/>
+										<xs:element name="texture_namespace"  type="xs:string"/>
+										<xs:element name="texture_length"     type="positiveFloat"/>
+										<xs:element name="render_additive"    type="xs:boolean"/>
+										<xs:element name="begin_offset"       type="xs:float"/>
+										<xs:element name="end_offset"         type="xs:float"/>
+										<xs:element name="end_offset_blocked" type="xs:float"/>
+										<xs:element name="thickness"          type="positiveFloat"/>
+										
+										<xs:element name="uv_animation">
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="u" type="xs:float"/>
+													<xs:element name="v" type="xs:float"/>
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+
+							<xs:element name="seeker" minOccurs="0">
+								<xs:complexType>
+									<xs:all minOccurs="0">
+										<xs:element name="texture_name"       type="xs:string"/>
+										<xs:element name="texture_namespace"  type="xs:string"/>
+										<xs:element name="texture_length"     type="positiveFloat"/>
+										<xs:element name="render_additive"    type="xs:boolean"/>
+										<xs:element name="begin_offset"       type="xs:float"/>
+										<xs:element name="end_offset"         type="xs:float"/>
+										<xs:element name="width"              type="positiveFloat"/>
+										<xs:element name="height"             type="positiveFloat"/>
+										<xs:element name="speed"              type="xs:float"/>
+										<xs:element name="fixed_uv"           type="xs:boolean"/>
+										<xs:element name="repeat_count"       type="xs:integer"/>
+										<xs:element name="repeat_delay"       type="xs:float"/>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+							
+							<xs:element name="start" minOccurs="0">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="texture_name"      type="xs:string"/>
+										<xs:element name="texture_namespace" type="xs:string"/>
+										<xs:element name="offset"            type="xs:float"/>
+										<xs:element name="width"             type="xs:float"/>
+										<xs:element name="height"            type="xs:float"/>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+							
+							<xs:element name="end" minOccurs="0">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="texture_name"      type="xs:string"/>
+										<xs:element name="texture_namespace" type="xs:string"/>
+										<xs:element name="offset"            type="xs:float"/>
+										<xs:element name="width"             type="xs:float"/>
+										<xs:element name="height"            type="xs:float"/>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+							
+							<xs:element name="particles" minOccurs="0">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="start">
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="filename" type="xs:string"/>
+													<xs:element name="offset"   type="xs:float"/>
+													<xs:element name="sound"    type="xs:string"/>
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+										
+										<xs:element name="end">
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="filename" type="xs:string"/>
+													<xs:element name="offset"   type="xs:float"/>
+													<xs:element name="sound"    type="xs:string"/>
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+										
+										<xs:element name="end_blocked">
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="filename" type="xs:string"/>
+													<xs:element name="offset"   type="xs:float"/>
+													<xs:element name="sound"    type="xs:string"/>
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+						</xs:all>
+					</xs:complexType>
+				</xs:element>
+				<!-- ========== WARP POWER BEAM   END  ========== -->
+				
+				<!-- ========== ELECTRICITY BEAM ========== -->
+				<xs:element name="electricity_beam">
+					<xs:complexType>
+						<xs:all>
+							<xs:element name="show_if_blocked" type="xs:boolean"/>
+							<xs:element name="break_on_entityhit" type="xs:boolean"/>							
+							
+							<xs:element name="line" minOccurs="0">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="texture_name"       type="xs:string"/>
+										<xs:element name="texture_namespace"  type="xs:string"/>
+										<xs:element name="render_additive"    type="xs:boolean"/>										
+										<xs:element name="begin_offset"       type="xs:float"/>
+										<xs:element name="end_offset"         type="xs:float"/>
+										<xs:element name="end_offset_blocked" type="xs:float"/>
+										
+										<xs:element name="thickness">
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="base_value" type="xs:float"/>
+													
+													<xs:element name="sine_a">
+														<xs:complexType>
+															<xs:all>
+																<xs:element name="frequency" type="xs:float"/>
+																<xs:element name="amplitude" type="xs:float"/>
+															</xs:all>
+														</xs:complexType>
+													</xs:element>
+													
+													<xs:element name="sine_b">
+														<xs:complexType>
+															<xs:all>
+																<xs:element name="frequency" type="xs:float"/>
+																<xs:element name="amplitude" type="xs:float"/>
+															</xs:all>
+														</xs:complexType>
+													</xs:element>
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+							
+							<xs:element name="rider" minOccurs="0">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="texture_name"       type="xs:string"/>
+										<xs:element name="texture_namespace"  type="xs:string"/>
+										<xs:element name="texture_length"     type="positiveFloat"/>
+										<xs:element name="render_additive"    type="xs:boolean"/>
+										<xs:element name="begin_offset"       type="xs:float"/>
+										<xs:element name="end_offset"         type="xs:float"/>
+										<xs:element name="end_offset_blocked" type="xs:float"/>
+										<xs:element name="thickness"          type="positiveFloat"/>
+										
+										<xs:element name="uv_animation">
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="u" type="xs:float"/>
+													<xs:element name="v" type="xs:float"/>
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+
+							<xs:element name="seeker" minOccurs="0">
+								<xs:complexType>
+									<xs:all minOccurs="0">
+										<xs:element name="texture_name"       type="xs:string"/>
+										<xs:element name="texture_namespace"  type="xs:string"/>
+										<xs:element name="texture_length"     type="positiveFloat"/>
+										<xs:element name="render_additive"    type="xs:boolean"/>
+										<xs:element name="begin_offset"       type="xs:float"/>
+										<xs:element name="end_offset"         type="xs:float"/>
+										<xs:element name="width"              type="positiveFloat"/>
+										<xs:element name="height"             type="positiveFloat"/>
+										<xs:element name="speed"              type="xs:float"/>
+										<xs:element name="fixed_uv"           type="xs:boolean"/>
+										<xs:element name="repeat_count"       type="xs:integer"/>
+										<xs:element name="repeat_delay"       type="xs:float"/>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+							
+							<xs:element name="start" minOccurs="0">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="texture_name"      type="xs:string"/>
+										<xs:element name="texture_namespace" type="xs:string"/>
+										<xs:element name="offset"            type="xs:float"/>
+										<xs:element name="width"             type="xs:float"/>
+										<xs:element name="height"            type="xs:float"/>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+							
+							<xs:element name="end" minOccurs="0">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="texture_name"      type="xs:string"/>
+										<xs:element name="texture_namespace" type="xs:string"/>
+										<xs:element name="offset"            type="xs:float"/>
+										<xs:element name="width"             type="xs:float"/>
+										<xs:element name="height"            type="xs:float"/>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+							
+							<xs:element name="particles" minOccurs="0">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="start">
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="filename" type="xs:string"/>
+													<xs:element name="offset"   type="xs:float"/>
+													<xs:element name="sound"    type="xs:string"/>
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+										
+										<xs:element name="end">
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="filename" type="xs:string"/>
+													<xs:element name="offset"   type="xs:float"/>
+													<xs:element name="sound"    type="xs:string"/>
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+										
+										<xs:element name="end_blocked">
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="filename" type="xs:string"/>
+													<xs:element name="offset"   type="xs:float"/>
+													<xs:element name="sound"    type="xs:string"/>
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+						</xs:all>
+					</xs:complexType>
+				</xs:element>
+				<!-- ========== ELECTRICITY BEAM   END  ========== -->				
+				
+				<!-- ========== LASER BEAM ========== -->
+				<xs:element name="laser_beam">
+					<xs:complexType>
+						<xs:all>
+							<xs:element name="show_if_blocked" type="xs:boolean"/>
+							<xs:element name="break_on_entityhit" type="xs:boolean"/>
+							
+							<xs:element name="line" minOccurs="0">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="texture_name"       type="xs:string"/>
+										<xs:element name="texture_namespace"  type="xs:string"/>
+										<xs:element name="render_additive"    type="xs:boolean"/>										
+										<xs:element name="begin_offset"       type="xs:float"/>
+										<xs:element name="end_offset"         type="xs:float"/>
+										<xs:element name="end_offset_blocked" type="xs:float"/>
+										
+										<xs:element name="thickness">
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="base_value" type="xs:float"/>
+													
+													<xs:element name="sine_a">
+														<xs:complexType>
+															<xs:all>
+																<xs:element name="frequency" type="xs:float"/>
+																<xs:element name="amplitude" type="xs:float"/>
+															</xs:all>
+														</xs:complexType>
+													</xs:element>
+													
+													<xs:element name="sine_b">
+														<xs:complexType>
+															<xs:all>
+																<xs:element name="frequency" type="xs:float"/>
+																<xs:element name="amplitude" type="xs:float"/>
+															</xs:all>
+														</xs:complexType>
+													</xs:element>
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+							
+							<xs:element name="rider" minOccurs="0">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="texture_name"       type="xs:string"/>
+										<xs:element name="texture_namespace"  type="xs:string"/>
+										<xs:element name="texture_length"     type="positiveFloat"/>
+										<xs:element name="render_additive"    type="xs:boolean"/>
+										<xs:element name="begin_offset"       type="xs:float"/>
+										<xs:element name="end_offset"         type="xs:float"/>
+										<xs:element name="end_offset_blocked" type="xs:float"/>
+										<xs:element name="thickness"          type="positiveFloat"/>
+										
+										<xs:element name="uv_animation">
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="u" type="xs:float"/>
+													<xs:element name="v" type="xs:float"/>
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+
+							<xs:element name="seeker" minOccurs="0">
+								<xs:complexType>
+									<xs:all minOccurs="0">
+										<xs:element name="texture_name"       type="xs:string"/>
+										<xs:element name="texture_namespace"  type="xs:string"/>
+										<xs:element name="texture_length"     type="positiveFloat"/>
+										<xs:element name="render_additive"    type="xs:boolean"/>
+										<xs:element name="begin_offset"       type="xs:float"/>
+										<xs:element name="end_offset"         type="xs:float"/>
+										<xs:element name="width"              type="positiveFloat"/>
+										<xs:element name="height"             type="positiveFloat"/>
+										<xs:element name="speed"              type="xs:float"/>
+										<xs:element name="fixed_uv"           type="xs:boolean"/>
+										<xs:element name="repeat_count"       type="xs:integer"/>
+										<xs:element name="repeat_delay"       type="xs:float"/>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+							
+							<xs:element name="start" minOccurs="0">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="texture_name"      type="xs:string"/>
+										<xs:element name="texture_namespace" type="xs:string"/>
+										<xs:element name="offset"            type="xs:float"/>
+										<xs:element name="width"             type="xs:float"/>
+										<xs:element name="height"            type="xs:float"/>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+							
+							<xs:element name="end" minOccurs="0">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="texture_name"      type="xs:string"/>
+										<xs:element name="texture_namespace" type="xs:string"/>
+										<xs:element name="offset"            type="xs:float"/>
+										<xs:element name="width"             type="xs:float"/>
+										<xs:element name="height"            type="xs:float"/>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+							
+							<xs:element name="particles" minOccurs="0">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="start">
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="filename" type="xs:string"/>
+													<xs:element name="offset"   type="xs:float"/>
+													<xs:element name="sound"    type="xs:string"/>
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+										
+										<xs:element name="end">
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="filename" type="xs:string"/>
+													<xs:element name="offset"   type="xs:float"/>
+													<xs:element name="sound"    type="xs:string"/>
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+										
+										<xs:element name="end_blocked">
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="filename" type="xs:string"/>
+													<xs:element name="offset"   type="xs:float"/>
+													<xs:element name="sound"    type="xs:string"/>
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+						</xs:all>
+					</xs:complexType>
+				</xs:element>
+				<!-- ========== LASER BEAM   END  ========== -->
+				
+				<!-- ========== PREVIEWLASER PREVIEW ========== -->
+				<xs:element name="previewlaser_beam">
+					<xs:complexType>
+						<xs:all>
+							<xs:element name="show_if_blocked" type="xs:boolean"/>
+							<xs:element name="break_on_entityhit" type="xs:boolean"/>
+							
+							<xs:element name="line" minOccurs="0">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="texture_name"       type="xs:string"/>
+										<xs:element name="texture_namespace"  type="xs:string"/>
+										<xs:element name="render_additive"    type="xs:boolean"/>
+										<xs:element name="begin_offset"       type="xs:float"/>
+										<xs:element name="end_offset"         type="xs:float"/>
+										<xs:element name="end_offset_blocked" type="xs:float"/>
+										
+										<xs:element name="thickness">
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="base_value" type="xs:float"/>
+													
+													<xs:element name="sine_a">
+														<xs:complexType>
+															<xs:all>
+																<xs:element name="frequency" type="xs:float"/>
+																<xs:element name="amplitude" type="xs:float"/>
+															</xs:all>
+														</xs:complexType>
+													</xs:element>
+													
+													<xs:element name="sine_b">
+														<xs:complexType>
+															<xs:all>
+																<xs:element name="frequency" type="xs:float"/>
+																<xs:element name="amplitude" type="xs:float"/>
+															</xs:all>
+														</xs:complexType>
+													</xs:element>
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+							
+							<xs:element name="rider" minOccurs="0">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="texture_name"       type="xs:string"/>
+										<xs:element name="texture_namespace"  type="xs:string"/>
+										<xs:element name="texture_length"     type="positiveFloat"/>
+										<xs:element name="render_additive"    type="xs:boolean"/>
+										<xs:element name="begin_offset"       type="xs:float"/>
+										<xs:element name="end_offset"         type="xs:float"/>
+										<xs:element name="end_offset_blocked" type="xs:float"/>
+										<xs:element name="thickness"          type="positiveFloat"/>
+										
+										<xs:element name="uv_animation">
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="u" type="xs:float"/>
+													<xs:element name="v" type="xs:float"/>
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+
+							<xs:element name="seeker" minOccurs="0">
+								<xs:complexType>
+									<xs:all minOccurs="0">
+										<xs:element name="texture_name"       type="xs:string"/>
+										<xs:element name="texture_namespace"  type="xs:string"/>
+										<xs:element name="texture_length"     type="positiveFloat"/>
+										<xs:element name="render_additive"    type="xs:boolean"/>
+										<xs:element name="begin_offset"       type="xs:float"/>
+										<xs:element name="end_offset"         type="xs:float"/>
+										<xs:element name="width"              type="positiveFloat"/>
+										<xs:element name="height"             type="positiveFloat"/>
+										<xs:element name="speed"              type="xs:float"/>
+										<xs:element name="fixed_uv"           type="xs:boolean"/>
+										<xs:element name="repeat_count"       type="xs:integer"/>
+										<xs:element name="repeat_delay"       type="xs:float"/>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+							
+							<xs:element name="start" minOccurs="0">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="texture_name"      type="xs:string"/>
+										<xs:element name="texture_namespace" type="xs:string"/>
+										<xs:element name="offset"            type="xs:float"/>
+										<xs:element name="width"             type="xs:float"/>
+										<xs:element name="height"            type="xs:float"/>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+							
+							<xs:element name="end" minOccurs="0">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="texture_name"      type="xs:string"/>
+										<xs:element name="texture_namespace" type="xs:string"/>
+										<xs:element name="offset"            type="xs:float"/>
+										<xs:element name="width"             type="xs:float"/>
+										<xs:element name="height"            type="xs:float"/>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+							
+							<xs:element name="particles" minOccurs="0">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="start">
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="filename" type="xs:string"/>
+													<xs:element name="offset"   type="xs:float"/>
+													<xs:element name="sound"    type="xs:string"/>
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+										
+										<xs:element name="end">
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="filename" type="xs:string"/>
+													<xs:element name="offset"   type="xs:float"/>
+													<xs:element name="sound"    type="xs:string"/>
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+										
+										<xs:element name="end_blocked">
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="filename" type="xs:string"/>
+													<xs:element name="offset"   type="xs:float"/>
+													<xs:element name="sound"    type="xs:string"/>
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+						</xs:all>
+					</xs:complexType>
+				</xs:element>
+				<!-- ========== PREVIEWLASER BEAM END  ========== -->
+				
+				<!-- ========== SIGHT BEAM ========== -->
+				<xs:element name="sight_beam">
+					<xs:complexType>
+						<xs:all>
+							<xs:element name="show_if_blocked" type="xs:boolean"/>
+							<xs:element name="break_on_entityhit" type="xs:boolean"/>
+							
+							<xs:element name="line" minOccurs="0">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="texture_name"       type="xs:string"/>
+										<xs:element name="texture_namespace"  type="xs:string"/>
+										<xs:element name="render_additive"    type="xs:boolean"/>										
+										<xs:element name="begin_offset"       type="xs:float"/>
+										<xs:element name="end_offset"         type="xs:float"/>
+										<xs:element name="end_offset_blocked" type="xs:float"/>
+										
+										<xs:element name="thickness">
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="base_value" type="xs:float"/>
+													
+													<xs:element name="sine_a">
+														<xs:complexType>
+															<xs:all>
+																<xs:element name="frequency" type="xs:float"/>
+																<xs:element name="amplitude" type="xs:float"/>
+															</xs:all>
+														</xs:complexType>
+													</xs:element>
+													
+													<xs:element name="sine_b">
+														<xs:complexType>
+															<xs:all>
+																<xs:element name="frequency" type="xs:float"/>
+																<xs:element name="amplitude" type="xs:float"/>
+															</xs:all>
+														</xs:complexType>
+													</xs:element>
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+							
+							<xs:element name="rider" minOccurs="0">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="texture_name"       type="xs:string"/>
+										<xs:element name="texture_namespace"  type="xs:string"/>
+										<xs:element name="texture_length"     type="positiveFloat"/>
+										<xs:element name="render_additive"    type="xs:boolean"/>
+										<xs:element name="begin_offset"       type="xs:float"/>
+										<xs:element name="end_offset"         type="xs:float"/>
+										<xs:element name="end_offset_blocked" type="xs:float"/>
+										<xs:element name="thickness"          type="positiveFloat"/>
+										
+										<xs:element name="uv_animation">
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="u" type="xs:float"/>
+													<xs:element name="v" type="xs:float"/>
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+
+							<xs:element name="seeker" minOccurs="0">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="texture_name"       type="xs:string"/>
+										<xs:element name="texture_namespace"  type="xs:string"/>
+										<xs:element name="texture_length"     type="positiveFloat"/>
+										<xs:element name="render_additive"    type="xs:boolean"/>
+										<xs:element name="begin_offset"       type="xs:float"/>
+										<xs:element name="end_offset"         type="xs:float"/>
+										<xs:element name="width"              type="positiveFloat"/>
+										<xs:element name="height"             type="positiveFloat"/>
+										<xs:element name="speed"              type="xs:float"/>
+										<xs:element name="fixed_uv"           type="xs:boolean"/>
+										<xs:element name="repeat_count"       type="xs:integer"/>
+										<xs:element name="repeat_delay"       type="xs:float"/>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+							
+							<xs:element name="start" minOccurs="0">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="texture_name"      type="xs:string"/>
+										<xs:element name="texture_namespace" type="xs:string"/>
+										<xs:element name="offset"            type="xs:float"/>
+										<xs:element name="width"             type="xs:float"/>
+										<xs:element name="height"            type="xs:float"/>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+							
+							<xs:element name="end" minOccurs="0">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="texture_name"      type="xs:string"/>
+										<xs:element name="texture_namespace" type="xs:string"/>
+										<xs:element name="offset"            type="xs:float"/>
+										<xs:element name="width"             type="xs:float"/>
+										<xs:element name="height"            type="xs:float"/>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+							
+							<xs:element name="particles" minOccurs="0">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="start">
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="filename" type="xs:string"/>
+													<xs:element name="offset"   type="xs:float"/>
+													<xs:element name="sound"    type="xs:string"/>
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+										
+										<xs:element name="end">
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="filename" type="xs:string"/>
+													<xs:element name="offset"   type="xs:float"/>
+													<xs:element name="sound"    type="xs:string"/>
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+										
+										<xs:element name="end_blocked">
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="filename" type="xs:string"/>
+													<xs:element name="offset"   type="xs:float"/>
+													<xs:element name="sound"    type="xs:string"/>
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+						</xs:all>
+					</xs:complexType>
+				</xs:element>
+				<!-- ========== SIGHT BEAM   END  ========== -->
+				
+				<xs:element name="shoebox">
+					<xs:complexType>
+						<xs:all>
+							<xs:element name="split_priority" type="xs:integer"/>
+						</xs:all>
+					</xs:complexType>
+				</xs:element>
+				
+				<xs:element name="input">
+					<xs:complexType>
+						<xs:all>
+							<xs:element name="pointer_autohide_timeout" type="positiveFloat"/>
+							<xs:element name="recording_ff_speed" type="xs:unsignedShort"/>
+						</xs:all>
+					</xs:complexType>
+				</xs:element>
+				
+				<xs:element name="demo">
+					<xs:complexType>
+						<xs:all>
+							<xs:element name="duration" type="xs:float"/>
+						</xs:all>
+					</xs:complexType>
+				</xs:element>
+				
+				<xs:element name="level_screenshot_texels_per_tile" type="positiveFloat"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:simpleType name="positiveFloat">
+		<xs:restriction base="xs:float">
+			<xs:minInclusive value="0"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="fov_type">
+		<xs:restriction base="xs:float">
+			<xs:minExclusive value="0.0"/>
+			<xs:maxExclusive value="180.0"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+</xs:schema>

@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation xmlns="http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://intranet.twotribes.com/schemas/common/presentation.xsd http://intranet.twotribes.com/schemas/common/presentation.xsd"
+		permanent="true">
+	
+	<anim2dstack>
+		<scale duration="0.15" preset="oscillating" looping="false">
+			<begin scale="1.25"/>
+			<end scale="2.0"/>
+		</scale>
+	</anim2dstack>
+	
+	<anim2dstack>
+		<translation duration="1" preset="oscillating" delay="0.1">
+			<begin y="-0.05"/>
+			<end y="0.05"/>
+		</translation>
+		<scale duration="1" preset="oscillating" delay="0.1">
+			<begin scale="1"/>
+			<end scale="0.9"/>
+		</scale>
+	</anim2dstack>
+	
+	<!-- show / hide -->
+	<coloranimstack name="show">
+		<color duration="0.05">
+			<begin a="-255"/>
+			<end a="0"/>
+		</color>
+	</coloranimstack>
+	
+	<coloranimstack name="hide">
+		<color duration="0.1">
+			<begin a="0"/>
+			<end a="-255"/>
+		</color>
+	</coloranimstack>
+	
+	<!-- virus aim -->
+
+	<frameanimstack>
+		<musthave>
+			<tag name="virusAim"/>
+			<tag name="pc"/>
+			<tag name="controller"/>
+		</musthave>
+		<frameanim directory="spritestrip/controls_xboxone/button_rightstick" fps="30" quad_height="2.25" quad_width="2.25" looping="true">
+			<begin frame="1"/>
+			<end   frame="1"/>
+		</frameanim>
+	</frameanimstack>
+
+
+	<!-- accept -->
+	<frameanimstack>
+		<musthave>
+			<tag name="accept"/>
+			<tag name="pc"/>
+			<tag name="controller"/>
+		</musthave>
+		<frameanim directory="spritestrip/controls_xboxone/button_a" fps="30" quad_height="1.5" quad_width="1.5" looping="true">
+			<begin frame="1"/>
+			<end   frame="1"/>
+		</frameanim>
+	</frameanimstack>
+
+	<frameanimstack>
+		<musthave>
+			<tag name="accept"/>
+			<tag name="pc"/>
+			<tag name="keyboard"/>
+		</musthave>
+		<frameanim directory="spritestrip/controls_keyboard/key_enter" fps="30" quad_height="1.5" quad_width="3" looping="true">
+			<begin frame="1"/>
+			<end   frame="1"/>
+		</frameanim>
+	</frameanimstack>
+
+
+	<!-- cancel -->
+	<frameanimstack>
+		<musthave>
+			<tag name="cancel"/>
+			<tag name="pc"/>
+			<tag name="controller"/>
+		</musthave>
+		<frameanim directory="spritestrip/controls_xboxone/button_b" fps="30" quad_height="1.5" quad_width="1.5" looping="true">
+			<begin frame="1"/>
+			<end   frame="1"/>
+		</frameanim>
+	</frameanimstack>
+	<frameanimstack>
+		<musthave>
+			<tag name="cancel"/>
+			<tag name="pc"/>
+			<tag name="keyboard"/>
+		</musthave>
+		<frameanim directory="spritestrip/controls_keyboard/key_escape" fps="30" quad_height="1.5" quad_width="1.5" looping="true">
+			<begin frame="1"/>
+			<end   frame="1"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<!-- jump controls_a1 -->
+	<frameanimstack>
+		<musthave>
+			<tag name="jump"/>
+			<tag name="pc"/>
+			<tag name="controller"/>
+			<tag name="controls_a1"/>
+		</musthave>
+		<frameanim directory="spritestrip/controls_xboxone/button_lefttrigger" fps="30" quad_height="1.78" quad_width="1.5" looping="true">
+			<begin frame="1"/>
+			<end   frame="1"/>
+			<scale scale="1.3"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<!-- jump controls_a2 -->
+	<frameanimstack>
+		<musthave>
+			<tag name="jump"/>
+			<tag name="pc"/>
+			<tag name="controller"/>
+			<tag name="controls_a2"/>
+		</musthave>
+		<frameanim directory="spritestrip/controls_xboxone/button_leftbumper" fps="30" quad_height="1.5" quad_width="2.2" looping="true">
+			<begin frame="1"/>
+			<end   frame="1"/>
+			<scale scale="1.3"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<!-- jump controls_b1 -->
+	<frameanimstack>
+		<musthave>
+			<tag name="jump"/>
+			<tag name="pc"/>
+			<tag name="controller"/>
+			<tag name="controls_b1"/>
+		</musthave>
+		<frameanim directory="spritestrip/controls_xboxone/button_lefttrigger" fps="30" quad_height="1.78" quad_width="1.5" looping="true">
+			<begin frame="1"/>
+			<end   frame="1"/>
+			<scale scale="1.3"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<!-- jump controls_b2 -->
+	<frameanimstack>
+		<musthave>
+			<tag name="jump"/>
+			<tag name="pc"/>
+			<tag name="controller"/>
+			<tag name="controls_b2"/>
+		</musthave>
+		<frameanim directory="spritestrip/controls_xboxone/button_leftbumper" fps="30" quad_height="1.5" quad_width="2.2" looping="true">
+			<begin frame="1"/>
+			<end   frame="1"/>
+			<scale scale="1.3"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<!-- jump keyboard -->
+	<frameanimstack>
+		<musthave>
+			<tag name="jump"/>
+			<tag name="pc"/>
+			<tag name="keyboard"/>
+		</musthave>
+		<frameanim directory="spritestrip/controls_keyboard/key_up" fps="30" quad_height="1.5" quad_width="1.5" looping="true">
+			<begin frame="1"/>
+			<end   frame="1"/>
+			<scale scale="1.3"/>
+		</frameanim>
+	</frameanimstack>
+
+	<!-- virusUpload_a1 -->
+
+	<frameanimstack>
+		<musthave>
+			<tag name="virusUpload"/>
+			<tag name="pc"/>
+			<tag name="controller"/>
+			<tag name="controls_a1"/>
+		</musthave>
+		<frameanim directory="spritestrip/controls_xboxone/button_rightbumper" fps="30" quad_height="1.5" quad_width="2.2" looping="true">
+			<begin frame="1"/>
+			<end   frame="1"/>
+			<scale scale="1.15"/>
+		</frameanim>
+	</frameanimstack>
+
+	<!-- virusUpload_a2 -->
+	<frameanimstack>
+		<musthave>
+			<tag name="virusUpload"/>
+			<tag name="pc"/>
+			<tag name="controller"/>
+			<tag name="controls_a2"/>
+		</musthave>
+		<frameanim directory="spritestrip/controls_xboxone/button_rightbumper" fps="30" quad_height="1.5" quad_width="2.2" looping="true">
+			<begin frame="1"/>
+			<end   frame="1"/>
+			<scale scale="1.15"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<!-- virusUpload_b1 -->
+	<frameanimstack>
+		<musthave>
+			<tag name="virusUpload"/>
+			<tag name="pc"/>
+			<tag name="controller"/>
+			<tag name="controls_b1"/>
+		</musthave>
+		<frameanim directory="spritestrip/controls_xboxone/button_leftbumper" fps="30" quad_height="1.5" quad_width="2.2" looping="true">
+			<begin frame="1"/>
+			<end   frame="1"/>
+			<scale scale="1.3"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<!-- virusUpload_b2 -->
+	<frameanimstack>
+		<musthave>
+			<tag name="virusUpload"/>
+			<tag name="pc"/>
+			<tag name="controller"/>
+			<tag name="controls_b2"/>
+		</musthave>
+		<frameanim directory="spritestrip/controls_xboxone/button_lefttrigger" fps="30" quad_height="1.78" quad_width="1.5" looping="true">
+			<begin frame="1"/>
+			<end   frame="1"/>
+			<scale scale="1.3"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<!-- virusUpload keyboard -->
+	<frameanimstack>
+		<musthave>
+			<tag name="virusUpload"/>
+			<tag name="pc"/>
+			<tag name="keyboard"/>
+		</musthave>
+		<frameanim directory="spritestrip/controls_keyboard/key_f" fps="30" quad_height="1.5" quad_width="1.5" looping="true">
+			<begin frame="1"/>
+			<end   frame="1"/>
+			<scale scale="1.15"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<!-- primaryFire _ Stick -->
+
+	<frameanimstack>
+		<musthave>
+			<tag name="primaryFire"/>
+			<tag name="pc"/>
+			<tag name="controller"/>
+			<tag name="controls_a1"/>
+		</musthave>
+		<frameanim directory="spritestrip/controls_xboxone/button_rightstick" fps="30" quad_height="2.25" quad_width="2.25" looping="true">
+			<begin frame="1"/>
+			<end   frame="1"/>
+			<scale scale="1.2"/>
+		</frameanim>
+	</frameanimstack>
+
+	<frameanimstack>
+		<musthave>
+			<tag name="primaryFire"/>
+			<tag name="pc"/>
+			<tag name="keyboard"/>
+		</musthave>
+		<frameanim directory="spritestrip/controls_keyboard/mouse" fps="30" quad_height="1.5" quad_width="2" looping="true">
+			<begin frame="1"/>
+			<end   frame="1"/>
+			<scale scale="1.2"/>
+		</frameanim>
+	</frameanimstack>
+
+	<!-- primaryFire _ Normal -->
+	<frameanimstack>
+		<musthave>
+			<tag name="primaryFire"/>
+			<tag name="pc"/>
+			<tag name="controller"/>
+			<tag name="controls_b1"/>
+		</musthave>
+		<frameanim directory="spritestrip/controls_xboxone/button_righttrigger" fps="30" quad_height="1.5" quad_width="1.263" looping="true">
+			<begin frame="1"/>
+			<end   frame="1"/>
+			<scale scale="1.3"/>
+		</frameanim>
+	</frameanimstack>
+	
+	<!-- secondaryFire _ controlsStick -->
+
+	<frameanimstack>
+		<musthave>
+			<tag name="secondaryFire"/>
+			<tag name="pc"/>
+			<tag name="controller"/>
+			<tag name="controls_a1"/>
+		</musthave>
+		<musthave>
+			<tag name="secondaryFire"/>
+			<tag name="pc"/>
+			<tag name="keyboard"/>
+			<tag name="controls_a1"/>
+		</musthave>
+		<frameanim directory="spritestrip/controls_xboxone/button_righttrigger" fps="30" quad_height="1.5" quad_width="1.263" looping="true">
+			<begin frame="1"/>
+			<end   frame="1"/>
+			<scale scale="1.3"/>
+		</frameanim>
+	</frameanimstack>
+
+	<frameanimstack>
+		<musthave>
+			<tag name="secondaryFire"/>
+			<tag name="pc"/>
+			<tag name="keyboard"/>
+		</musthave>
+		<frameanim directory="spritestrip/controls_keyboard/mouse" flip_horizontal="true" fps="30" quad_height="1.5" quad_width="2" looping="true">
+			<begin frame="1"/>
+			<end   frame="1"/>
+			<scale scale="1.3"/>
+		</frameanim>
+	</frameanimstack>
+
+	<!-- secondaryFire _ controlsNormal -->
+
+	<frameanimstack>
+		<musthave>
+			<tag name="secondaryFire"/>
+			<tag name="pc"/>
+			<tag name="controller"/>
+			<tag name="controls_b1"/>
+		</musthave>
+		<frameanim directory="spritestrip/controls_xboxone/button_rightbumper" fps="30" quad_height="1.5" quad_width="2.2" looping="true">
+			<begin frame="1"/>
+			<end   frame="1"/>
+		</frameanim>
+	</frameanimstack>
+</presentation>
