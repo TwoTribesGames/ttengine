@@ -2,7 +2,7 @@
 #define SYSTEM_H
 
 #include <tt/engine/renderer/Texture.h>
-#include <tt/platform/TT_Printf.h>
+#include <tt/platform/tt_printf.h>
 #include "common/Types.h"
 
 #define winlog log

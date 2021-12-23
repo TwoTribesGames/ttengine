@@ -226,9 +226,7 @@ void AppGlobal::clearPrecache()
 	tt::code::helpers::freeContainer(ms_texturePrecache);
 	tt::code::helpers::freeContainer(ms_presentationPrecache);
 	tt::code::helpers::freeContainer(ms_movementSetPrecache);
-	
-	tt::engine::renderer::TextureCache::clear();
-	
+
 #if !defined(TT_BUILD_FINAL)
 	ms_texturePrecacheMemUsage      = 0;
 	tt::code::helpers::freeContainer(ms_presentationPrecacheTextures);

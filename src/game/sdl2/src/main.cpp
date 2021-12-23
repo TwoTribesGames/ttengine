@@ -11,7 +11,6 @@
 #include <tt/snd/OpenALSoundSystem.h>
 #include <tt/input/MouseController.h>
 
-#include <toki/__revision_autogen.h>
 #include <toki/unittest/unittest.h>
 #include <toki/AppGlobal.h>
 #include <toki/AppMain.h>
@@ -116,7 +115,7 @@ int main(int p_argc, char** p_argv)
 	{
 		settings.name += " Level Editor";
 	}
-	settings.version   = TT_REVISION_NUMBER;
+	settings.version   = 1;
 	settings.portrait  = false;
 	settings.targetFPS = 60;
 	settings.emulate   = tt::app::AppSettings::Emulate_None;
@@ -138,13 +137,6 @@ int main(int p_argc, char** p_argv)
 	if (tt::app::getCmdLine().exists("supress_asserts"))
 	{
 		tt::platform::error::supressAssertsAndWarnings();
-	}
-	
-	if (tt::app::getCmdLine().exists("emulate_cat"))
-	{
-		settings.emulate = tt::app::AppSettings::Emulate_Cat;
-		settings.graphicsSettings.clampScreenTo4t3  = false;
-		settings.graphicsSettings.clampScreenTo16t9 = false;
 	}
 	
 	if (toki::AppGlobal::shouldCompileSquirrel())

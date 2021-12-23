@@ -5,7 +5,7 @@
 #if defined(TT_PLATFORM_OSX) && !defined(TT_FORCE_OPENAL_SOFT)
 #include <OpenAL/al.h>
 #else
-#include <al/al.h>
+#include <AL/al.h>
 #endif
 
 #include <tt/audio/chibi/XMSoftwareMixer.h>

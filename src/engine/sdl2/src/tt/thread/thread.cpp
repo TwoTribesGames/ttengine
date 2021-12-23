@@ -76,6 +76,11 @@ int sdl2_initThread(void* data)
 	return attribs->proc(attribs->param);
 }
 
+s32 getProcessorCount()
+{
+    return SDL_GetCPUCount();
+}
+
 handle create(ThreadProc    p_proc,
               void*         p_param,
               bool          p_suspended,

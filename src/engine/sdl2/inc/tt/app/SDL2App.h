@@ -120,8 +120,7 @@ private:
 	
 	inline bool isDualScreen() // was bool m_emulateNitro
 	{
-		return m_settings.emulate == AppSettings::Emulate_Nitro ||
-		       m_settings.emulate == AppSettings::Emulate_Twl;
+		return false;
 	}
 	inline bool isSteamEnabled() // was bool m_steamEnabled;
 	{

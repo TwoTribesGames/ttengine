@@ -1020,8 +1020,7 @@ void Renderer::endViewPort(ViewPort& p_viewport)
 	}
 	
 	m_debugRenderer->flush();
-	debug::DebugFont::flush();
-	
+
 	p_viewport.end();
 	
 	if ((m_currentViewport + 1) < ViewPort::getViewPorts().size())
@@ -1271,7 +1270,6 @@ m_debugRenderer(new debug::DebugRenderer),
 m_postProcessor(new pp::PostProcessor),
 m_postProcessingActive(false),
 m_screenSize(math::Point2::zero),
-m_outputResolution(math::Point2::zero)
 m_backBufferSize(math::Point2::zero),
 m_upScaler(new UpScaler(math::Point2::zero, true)),
 m_upScalerActive(false),

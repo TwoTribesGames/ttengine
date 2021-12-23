@@ -178,16 +178,7 @@ m_debugKeys(DebugKeys_All)
 		m_frameLimiterForced = true;
 	}
 
-	if (m_settings.emulate == AppSettings::Emulate_IOS_detectDevice)
-	{
-		m_settings.emulate = (m_cmdLine.exists("ipad")) ? AppSettings::Emulate_IOS_iPad : 
-		                                                  AppSettings::Emulate_IOS_iPhone;
-	}
-
-	m_settings.useIOS2xMode = (m_settings.useIOS2xMode || m_cmdLine.exists("ios2xmode"));
-	TT_ASSERTMSG(m_settings.useIOS2xMode == false ||
-	             p_settings.emulate == AppSettings::Emulate_IOS_iPhone,
-	             "2x Mode ('Retina' Mode) is only available in iOS emulation mode.");
+	m_settings.graphicsSettings.useIOS2xMode = (m_settings.graphicsSettings.useIOS2xMode || m_cmdLine.exists("ios2xmode"));
 
 #if TT_SUPPORTS_PLATFORM_EMULATION
 	setPlatformEmulation(m_settings.emulate);
@@ -312,7 +303,7 @@ m_debugKeys(DebugKeys_All)
 	using tt::engine::renderer::Renderer;
 	m_contextWrapper = new engine::renderer::OpenGLContextWrapper(m_screen, context);
 	if (Renderer::hasInstance() == false &&
-	    Renderer::createInstance(m_contextWrapper, m_settings.useIOS2xMode) == false)
+	    Renderer::createInstance(m_contextWrapper, m_settings.graphicsSettings.useIOS2xMode) == false)
 	{
 		reportFatalError("Could not initialize render system.");
 	}
@@ -1150,13 +1141,6 @@ std::string SDL2App::composeAssetRootDir(const std::string& p_basePath) const
 		// Set directory based on platform
 		switch (m_settings.emulate)
 		{
-		case AppSettings::Emulate_Twl:        currentDirStr += "/win-twl"; break;
-		case AppSettings::Emulate_Nitro:      currentDirStr += "/win-ntr"; break;
-		case AppSettings::Emulate_Rvl:        currentDirStr += "/win-rvl"; break;
-		case AppSettings::Emulate_Cat:        currentDirStr += "/win-cat"; break;
-			// FIXME: Change to win-osx for IOS emulation. (Needs converter change!)
-		case AppSettings::Emulate_IOS_iPhone: currentDirStr += "/win-osx"; break;
-		case AppSettings::Emulate_IOS_iPad:   currentDirStr += "/win-osx"; break;
 		case AppSettings::Emulate_None:       currentDirStr += "/osx"; break;
 		default: TT_PANIC("Unsupported emulation mode: %d", m_settings.emulate); break;
 		}
