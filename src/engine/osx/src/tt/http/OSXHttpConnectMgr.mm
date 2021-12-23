@@ -8,13 +8,11 @@
 #include <tt/http/HttpConnectMgr.h>
 #include <tt/http/HttpRequest.h>
 #include <tt/http/HttpResponseHandler.h>
-#include <tt/mem/util.h>
 #include <tt/platform/tt_error.h>
 #include <tt/platform/tt_printf.h>
 #include <tt/settings/settings.h>
 #include <tt/str/str.h>
 #include <tt/version/Version.h>
-#include <tt/app/Application.h>
 
 
 #include <curl/curl.h>

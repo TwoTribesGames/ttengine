@@ -6,12 +6,6 @@ namespace tt {
 namespace audio {
 namespace player {
 
-#if defined(TT_PLATFORM_OSX_IPHONE)
-
-class AVAudioMusicPlayer;
-
-#endif
-
 // Namespace end
 }
 }
