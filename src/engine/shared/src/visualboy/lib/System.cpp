@@ -1,5 +1,8 @@
 #include <tt/engine/renderer/TexturePainter.h>
-#if defined(TT_PLATFORM_WIN)
+#if defined(TT_PLATFORM_SDL)
+#include <tt/input/KeyboardController.h>
+#include <tt/input/SDLJoypadController.h>
+#elif defined(TT_PLATFORM_WIN)
 #include <tt/input/KeyboardController.h>
 #include <tt/input/Xbox360Controller.h>
 #endif
@@ -346,8 +349,23 @@ uint32_t systemReadJoypad(int p_index)
 	bool isRDown     = false;
 	bool isLDown     = false;
 	tt::input::Stick stick;
-	
-#if defined(TT_PLATFORM_WIN)
+
+#if defined(TT_PLATFORM_SDL)
+    const SDLJoypadController& ctrl(SDLJoypadController::getState(idx));
+	const KeyboardController& kbd(KeyboardController::getState(ControllerIndex_One));
+
+	isUpDown    = ctrl.up.down;
+	isDownDown  = ctrl.down.down;
+	isLeftDown  = ctrl.left.down;
+	isRightDown = ctrl.right.down;
+	isXDown     = ctrl.y.down;
+	isBDown     = ctrl.a.down;
+	isYDown     = ctrl.b.down;
+	isADown     = ctrl.x.down;
+	isRDown     = ctrl.r.down || ctrl.rtrig.value > 0.5f;
+	isLDown     = ctrl.l.down || ctrl.ltrig.value > 0.5f;
+	stick       = ctrl.lstick;
+#elif defined(TT_PLATFORM_WIN)
 	const Xbox360Controller& ctrl(Xbox360Controller::getState(idx));
 	const KeyboardController& kbd(KeyboardController::getState(ControllerIndex_One));
 	
@@ -543,4 +561,3 @@ void Sm60FPS_Sleep()
 void DbgMsg(const char *msg, ...)
 {
 }
-

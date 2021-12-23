@@ -1,28 +1,9 @@
 cmake_minimum_required(VERSION 3.2)
-Project(RIVE)
+Project(Game)
 
 string(TIMESTAMP BUNDLE_VERSION "%y%m%d%H" UTC)
 
-find_path(TTDEV_ROOT libs/CMakeLists.txt
-    PATHS ${CMAKE_CURRENT_SOURCE_DIR}/../../ttdev ENV TTDEV_ROOT
-    DOC "The location of the TTDEV root directory"
-    NO_DEFAULT_PATH
-)
-if (NOT TTDEV_ROOT)
-    message(FATAL_ERROR "Could not find TTDEV_ROOT make sure to set the ENV var or set the CMake TTDEV_ROOT variable")
-endif()
-add_subdirectory(${TTDEV_ROOT}/libs ttdev)
-
 OPTION(DEMO_BUILD "Enable the demo build" OFF)
-
-## Setup rule to generate the revision header
-## Output destination is in the ${PROJECT_NAME}_REVISION_HEADER_FILE variable
-GenerateRevisionHeader(
-    ${CMAKE_CURRENT_SOURCE_DIR}/..
-    ${CMAKE_CURRENT_BINARY_DIR}/toki
-    ${TTDEV_REVISION_TEMPLATE}
-    ${PROJECT_NAME}__REVISION_HEADER_FILE
-)
 
 CreateLibrary(${PROJECT_NAME}_shared
 DIRS
@@ -49,12 +30,12 @@ if(LINUX)
 elseif(APPLE)
     set(PLATFORM_SOURCE
         DIRS
-            osx_sdl2/src/**
+            osx/src/**
         FILES
-            ../assets/source/mac/icons/app_icon.icns
+            ${TTDEV_ROOT}/assets/source/mac/icons/app_icon.icns
     )
     set_source_files_properties(
-        ../assets/source/mac/icons/app_icon.icns
+            ${TTDEV_ROOT}/assets/source/mac/icons/app_icon.icns
         PROPERTIES
             MACOSX_PACKAGE_LOCATION Resources
     )
@@ -72,7 +53,7 @@ CreateProgram(${PROJECT_NAME}
 DIRS
     sdl2/src/**
 REFERENCE
-    ../assets/source/shared/scripts
+    ${TTDEV_ROOT}/assets/source/shared/scripts
 FILES
     ${${PROJECT_NAME}__REVISION_HEADER_FILE}
 INCLUDES
@@ -81,12 +62,12 @@ INCLUDES
 LINK
     ${PROJECT_NAME}_shared
 PROPERTIES
-    MACOSX_BUNDLE_INFO_PLIST "${CMAKE_CURRENT_SOURCE_DIR}/osx_sdl2/res/Info.plist.in"
-    MACOSX_BUNDLE_COPYRIGHT "Copyright © 2017 Two Tribes Publishing B.V."
+    MACOSX_BUNDLE_INFO_PLIST "${CMAKE_CURRENT_SOURCE_DIR}/osx/res/Info.plist.in"
+    MACOSX_BUNDLE_COPYRIGHT "Copyright ©"
     MACOSX_BUNDLE_ICON_FILE "app_icon.icns"
-    MACOSX_BUNDLE_GUI_IDENTIFIER "com.twotribes.rive"
-    MACOSX_BUNDLE_BUNDLE_NAME "RIVE"
-    MACOSX_BUNDLE_SHORT_VERSION_STRING "1.15"
+    MACOSX_BUNDLE_GUI_IDENTIFIER "com.example.game"
+    MACOSX_BUNDLE_BUNDLE_NAME "Game"
+    MACOSX_BUNDLE_SHORT_VERSION_STRING "1.0"
     MACOSX_BUNDLE_BUNDLE_VERSION "${BUNDLE_VERSION}"
     FOLDER Game
 )

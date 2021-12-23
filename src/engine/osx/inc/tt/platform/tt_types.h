@@ -71,15 +71,15 @@ inline int realToInt(real p_value)
 //-------------------------------------
 // Smart pointer
 
-#include <tr1/memory>
+#include <memory>
 
 template<typename T>
 class tt_ptr
 {
 public:
-	typedef std::auto_ptr<T> unique;
-	typedef std::tr1::shared_ptr<T> shared;
-	typedef std::tr1::weak_ptr<T>   weak;
+	typedef std::unique_ptr<T> unique;
+	typedef std::shared_ptr<T> shared;
+	typedef std::weak_ptr<T>   weak;
 };
 
 
@@ -87,21 +87,21 @@ public:
 template<class Ty, class Other>
 typename tt_ptr<Ty>::shared tt_ptr_dynamic_cast(const Other& p_other)
 {
-	return std::tr1::dynamic_pointer_cast<Ty>(p_other);
+	return std::dynamic_pointer_cast<Ty>(p_other);
 }
 
 /*! \brief Const cast for shared pointers. */
 template<class Ty, class Other>
 typename tt_ptr<Ty>::shared tt_ptr_const_cast(const Other& p_other)
 {
-	return std::tr1::const_pointer_cast<Ty>(p_other);
+	return std::const_pointer_cast<Ty>(p_other);
 }
 
 /*! \brief Static cast for shared pointers. */
 template<class Ty, class Other>
 typename tt_ptr<Ty>::shared tt_ptr_static_cast(const Other& p_other)
 {
-	return std::tr1::static_pointer_cast<Ty>(p_other);
+	return std::static_pointer_cast<Ty>(p_other);
 }
 
 //-------------------------------------

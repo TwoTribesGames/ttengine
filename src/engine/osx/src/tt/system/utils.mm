@@ -33,32 +33,32 @@ bool editWithDefaultApplication(const std::string& p_item)
 bool showFileInFileNavigator(const std::string& p_item)
 {
 #if defined(TT_PLATFORM_OSX_MAC)
-	
 	if ([[NSWorkspace sharedWorkspace] respondsToSelector:@selector(activateFileViewerSelectingURLs:)])
 	{
 		// For Mac OS X 10.6 and up:
+		@autoreleasepool {
+			NSArray* fileUrls = [NSArray arrayWithObjects:[NSString stringWithUTF8String:p_item.c_str()], nil];
 		
-		NSArray* fileUrls = [NSArray arrayWithObjects:[NSString stringWithUTF8String:p_item.c_str()], nil];
-		
-		[[NSWorkspace sharedWorkspace] activateFileViewerSelectingURLs:fileUrls];
-		
-		[fileUrls release]; // FIXME: Is this needed?
-		
+			[[NSWorkspace sharedWorkspace] activateFileViewerSelectingURLs:fileUrls];
+		}
+
 		return true;
 	}
 	else
 	{
 		// Backwards compatible implementation:
 		
-		return [[NSWorkspace sharedWorkspace] selectFile:[NSString stringWithUTF8String:p_item.c_str()] inFileViewerRootedAtPath:nil];
+		return [[NSWorkspace sharedWorkspace] selectFile:[NSString stringWithUTF8String:p_item.c_str()] inFileViewerRootedAtPath:@""];
 	}
-	
 #else
 	TT_PANIC("No implementation for iOS yet. Cannot show file '%s' in file navigator.", p_item.c_str());
 	return false;
 #endif
 }
 
+
+// for SDL2 we are using SDL2's clipboard code
+#ifndef TT_PLATFORM_SDL
 
 bool setSystemClipboardText(const str::Strings& p_lines)
 {
@@ -142,18 +142,49 @@ bool getSystemClipboardText(str::Strings* p_lines_OUT)
 	return false;
 #endif
 }
+
+#endif
 	
 
 std::string getDesktopPath()
-{	
+{
+#ifdef TT_PLATFORM_OSX_MAC
 	// Get the user's Desktop path
-	NSArray* paths = NSSearchPathForDirectoriesInDomains(NSDesktopDirectory, NSUserDomainMask, YES);
-	std::string desktopDir([[paths objectAtIndex:0] UTF8String]);
-	if (*desktopDir.rbegin() != '/') desktopDir += "/";
-	
+	std::string desktopDir;
+	@autoreleasepool {
+		NSArray* paths = NSSearchPathForDirectoriesInDomains(NSDesktopDirectory, NSUserDomainMask, YES);
+		desktopDir = [[paths objectAtIndex:0] UTF8String];
+		if (*desktopDir.rbegin() != '/') desktopDir += "/";
+	}
 	return desktopDir;
+#else
+	TT_PANIC("No implementation for iOS yet. Cannot get desktop path");
+	return "";
+#endif
 }
-	
+
+std::string getOldMacOSXSavePath()
+{
+#ifdef TT_PLATFORM_OSX_MAC
+	std::string rootDir;
+
+	@autoreleasepool {
+		// Get the user's Library path
+		NSArray* paths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
+		rootDir = [[paths objectAtIndex:0] UTF8String];
+		if (*rootDir.rbegin() != '/') rootDir += "/";
+
+		// Append this application's bundle identifier (requires that this app is actually a bundle)
+		rootDir += [[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleIdentifier"] UTF8String];
+		rootDir += "/";
+	}
+
+	return rootDir;
+#else
+	TT_PANIC("No implementation for iOS yet. Cannot get desktop path");
+	return "";
+#endif
+}
 
 // Namespace end
 }

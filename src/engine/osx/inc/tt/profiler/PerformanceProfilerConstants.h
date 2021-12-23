@@ -15,7 +15,7 @@ namespace profiler {
 
 // Platform specific constants
 #ifdef PERFORMANCE_PROFILER_ENABLED
-	#define TT_PROFILER_PRINTF	TT_FinalPrintf
+	#define TT_PROFILER_PRINTF	TT_Printf
 #else
 	#define TT_PROFILER_PRINTF(...)
 #endif

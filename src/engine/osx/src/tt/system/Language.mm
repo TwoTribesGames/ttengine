@@ -71,8 +71,45 @@ std::string Language::getLanguage(std::vector<std::string> p_supportedLanguages)
 	
 std::string Language::setLocStrLanguage(tt::loc::LocStr* p_locStr)
 {
-	std::string returnStr(getLanguage());
+	std::string returnStr("en"); // Default to 'en'.
+
+	CFArrayRef languages = CFLocaleCopyPreferredLanguages();
+	TT_NULL_ASSERT(languages);
 	
+	if (CFArrayGetCount(languages) > 0)
+	{
+		for (CFIndex idx = 0; idx < CFArrayGetCount(languages); ++idx)
+		{
+			// Get language code at index and convert to a C-string.
+			CFStringRef preferredLang = (CFStringRef) CFArrayGetValueAtIndex(languages, idx);
+			TT_NULL_ASSERT(preferredLang);
+
+			enum { BUFFER_SIZE = 6 };
+			char buffer[BUFFER_SIZE];
+			bool result = CFStringGetCString(preferredLang, buffer, BUFFER_SIZE, kCFStringEncodingASCII);
+			
+			if (result)
+			{
+				if (strlen(buffer) > 2) {
+					buffer[2] = '\0';
+				}
+				if (p_locStr->supportsLanguage(buffer))
+				{
+					TT_Printf("Language::setLocStrLanguage: Found supported language "
+					          "on preferred language index: %d\n", idx);
+					// Found a supported languages.
+					returnStr = buffer;
+					break;
+				};
+			}
+			else
+			{
+				TT_PANIC("CFStringGetString for the preferred language CFString failed.");
+			}
+		}
+	}
+	
+	CFRelease(languages);
 	TT_Printf("Language::setLocStrLanguage: Setting language: '%s'\n", returnStr.c_str());
 	p_locStr->selectLanguage(returnStr);
 	
@@ -94,12 +131,15 @@ std::string Language::getLanguage()
 	{
 		CFStringRef preferredLang = (CFStringRef) CFArrayGetValueAtIndex(languages, 0);
 		
-		enum { BUFFER_SIZE = 5 };
+		enum { BUFFER_SIZE = 6 };
 		char buffer[BUFFER_SIZE];
 		bool result = CFStringGetCString(preferredLang, buffer, BUFFER_SIZE, kCFStringEncodingASCII);	
 		if (result)
 		{
-			returnStr = std::string(buffer).substr(0, 2);
+			if (strlen(buffer) > 2) {
+				buffer[2] = '\0';
+			}
+			returnStr = buffer;
 		}
 		else
 		{

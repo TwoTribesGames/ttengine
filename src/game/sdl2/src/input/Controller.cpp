@@ -108,9 +108,7 @@ void Controller::updatePlatformState()
 	// Update buttons
 	newInput.accept.update(gamepad.a.down || isKeyDown(BindableAction_Accept));
 	newInput.cancel.update(gamepad.b.down || isKeyDown(BindableAction_Cancel) || mouse.right.down);
-	newInput.leaderboards.update(gamepad.y.down || kbd.keys[tt::input::Key_2].down); 
-	newInput.statistics.update(gamepad.x.down || kbd.keys[tt::input::Key_1].down);
-	
+
 	newInput.scroll    = getNormalizedStick(gamepad.rstick); // This needs to be done before the scroll addon below.
 	
 	const bool rawLeft  = isKeyDown(BindableAction_Left)  || gamepad.left.down;
@@ -261,7 +259,11 @@ void Controller::setConnectionRequired(bool /*p_required*/)
 //--------------------------------------------------------------------------------------------------
 // Private member functions
 
-void Controller::startRumble(RumbleStrength /*p_strength*/, real /*p_durationInSeconds*/)
+void Controller::initRumble()
+{
+}
+
+void Controller::startRumble(RumbleStrength /*p_strength*/, real /*p_durationInSeconds*/, real /*p_panning*/)
 {
 	// Nothing to do here: regular update processing takes care of starting rumble
 }

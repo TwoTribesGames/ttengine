@@ -130,7 +130,7 @@ enum yytokentype {
 #include <string>
 
 unsigned int dexp_result = 0;
-extern int dexp_error(char*);
+extern int dexp_error(const char*);
 extern int dexp_lex();
 extern char* dexp_text;
 
@@ -1696,7 +1696,7 @@ bool dexp_eval(char* expr, uint32_t* result)
     }
 }
 
-int dexp_error(char* s)
+int dexp_error(const char* s)
 {
     return 0;
 }

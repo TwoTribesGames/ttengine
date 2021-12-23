@@ -642,7 +642,6 @@ void DebugRenderer::startRenderGroup(const char* p_name)
 {
 #if defined(TT_PLATFORM_SDL)
 	renderer::Renderer::getInstance()->pushMarker(p_name);
-	GX2UTDebugTagIndent(p_name);
 #elif defined(TT_PLATFORM_WIN)
 	std::wstring eventName(str::widen(std::string(p_name)));
 	D3DPERF_BeginEvent(D3DCOLOR_XRGB(255,0,0), eventName.c_str());

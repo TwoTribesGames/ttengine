@@ -2,19 +2,14 @@ cmake_minimum_required(VERSION 3.2)
 Project(ttdev)
 
 ### pull in boilerplate cmake
-set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/../tools/shared/cmake")
-if(APPLE)
-  set(CMAKE_OSX_DEPLOYMENT_TARGET "10.7" CACHE STRING "")
-  set(CMAKE_OSX_ARCHITECTURES "x86_64" CACHE STRING "")
-  set(USE_LIBCPP_DEFAULT ON)
-endif()
+set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/../../tools/cmake")
 include(BoilerPlate)
 include(UtilityFunctions)
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
 
 if(APPLE)
-    set(PLATFORM_PREFIX "osx_sdl2")
+    set(PLATFORM_PREFIX "osx")
     set(PLATFORM_LIB_PREFIX "osx")
     set(USE_OPENAL_SOFT ON)
     set(USE_SDL2 ON)
@@ -115,23 +110,15 @@ endif()
 
 ### Setup Compler definitions
 
-set(TTDEV_COMPILE_FLAGS
+set(EXTRA_BASE_CFLAGS
 #    -Wno-missing-field-initializers
 #    -Wno-ignored-qualifiers
 #    -Wno-missing-braces # Seems to be incorrectly triggered by OpenALSoundSystem
-)
-
-## Setup rule to generate the revision header
-## Output destination is in the TTDEV_REVISION_HEADER_FILE variable
-GenerateRevisionHeader(
-    ${CMAKE_CURRENT_SOURCE_DIR}
-    ${CMAKE_CURRENT_BINARY_DIR}/tt/version
-    ${TTDEV_LIB_REVISION_TEMPLATE}
-    TTDEV_REVISION_HEADER_FILE
+    -Wno-absolute-value
 )
 
 if(LINUX)
-    set(EXTRA_BASE_CFLAGS -mpc64 -mfpmath=sse)
+    list(APPEND EXTRA_BASE_CFLAGS -mpc64 -mfpmath=sse)
 endif()
 CheckCXXFlags(TT_BASE_CFLAGS -Wno-unused-local-typedef ${EXTRA_BASE_CFLAGS})
 
@@ -233,6 +220,74 @@ PROPERTIES
     FOLDER 3rdParty
 )
 
+set(VISUAL_BOY_COMMON
+    LINK tt_base
+    PROPERTIES FOLDER 3rdParty
+    DEFINES PRIVATE C_CORE NO_LINK NO_PNG register=
+)
+
+CreateLibrary(VisualBoy_fex
+DIRS
+    shared/inc/visualboy/lib/fex
+    shared/src/visualboy/lib/fex
+EXCLUDE
+    shared/inc/visualboy/lib/fex/Zip7_Extractor.h
+    shared/src/visualboy/lib/fex/Zip7_Extractor.cpp
+INCLUDES
+    PRIVATE
+        shared/inc/visualboy/lib
+        shared/inc/visualboy/lib/fex
+${VISUAL_BOY_COMMON}
+)
+
+CreateLibrary(VisualBoy
+DIRS
+    shared/inc/visualboy
+    shared/src/visualboy
+    shared/src/visualboy/lib
+    shared/src/visualboy/lib
+    shared/inc/visualboy/lib/apu
+    shared/src/visualboy/lib/apu
+    shared/inc/visualboy/lib/common
+    shared/src/visualboy/lib/common
+    shared/inc/visualboy/lib/gb
+    shared/src/visualboy/lib/gb
+    shared/inc/visualboy/lib/gba
+    shared/src/visualboy/lib/gba
+    shared/inc/visualboy/lib/filters
+    shared/src/visualboy/lib/filters
+    shared/inc/visualboy/lib/filters/hq
+    shared/src/visualboy/lib/filters/hq
+    shared/inc/visualboy/lib/filters/xBRZ
+    shared/src/visualboy/lib/filters/xBRZ
+FILES
+    shared/inc/visualboy/lib/sdl/filters.h
+    shared/src/visualboy/lib/sdl/filters.cpp
+INCLUDES
+    PRIVATE
+        shared/inc/visualboy/lib
+        shared/inc/visualboy/lib/apu
+        shared/inc/visualboy/lib/common
+        shared/inc/visualboy/lib/gb
+        shared/inc/visualboy/lib/gba
+        shared/inc/visualboy/lib/filters
+        shared/inc/visualboy/lib/filters/hq
+        shared/inc/visualboy/lib/filters/xBRZ
+        shared/inc/visualboy/lib/sdl
+EXCLUDE
+    shared/inc/visualboy/lib/common/ffmpeg.h
+    shared/src/visualboy/lib/common/ffmpeg.cpp
+    shared/inc/visualboy/lib/common/SoundSDL.h
+    shared/src/visualboy/lib/common/SoundSDL.cpp
+    shared/src/visualboy/lib/gb/GBASockClient.cpp
+    shared/src/visualboy/lib/gba/GBASockClient.cpp
+    shared/src/visualboy/lib/gba/GBALink.cpp
+    shared/src/visualboy/lib/gba/remote.cpp
+LINK
+    VisualBoy_fex
+${VISUAL_BOY_COMMON}
+)
+
 CreateLibrary(gwen
 DIRS
     shared/src/gwen/**
@@ -246,25 +301,6 @@ FILES
     shared/src/gwen/Renderers/DebugFont/FontData.h
 LINK
     tt_base
-PROPERTIES
-    FOLDER 3rdParty
-)
-
-# silence some noise in freeimage
-CheckCFlags(FREEIMAGE_FLAGS -Wno-write-strings)
-
-CreateLibrary(freeimage
-DIRS
-    shared/src/freeimage/**
-    shared/inc/freeimage/**
-EXCLUDE
-    shared/src/freeimage/OpenEXR/**
-    shared/src/freeimage/LibRawLite/internal/*
-LINK
-    tt_base
-FLAGS
-    PRIVATE
-        ${FREEIMAGE_FLAGS}
 PROPERTIES
     FOLDER 3rdParty
 )
@@ -360,6 +396,8 @@ DIRS
     shared/inc/tt/settings
     shared/src/tt/snd
     shared/inc/tt/snd
+    shared/src/tt/stats
+    shared/inc/tt/stats
     shared/src/tt/str
     shared/inc/tt/str
     shared/src/tt/streams
@@ -372,6 +410,9 @@ DIRS
     shared/inc/tt/version
     shared/src/tt/xml/**
     shared/inc/tt/xml/**
+FILES
+    shared/src/tt/thread/ThreadedWorkload.cpp
+    shared/inc/tt/thread/ThreadedWorkload.h
 INCLUDES
     PRIVATE
         ${CMAKE_CURRENT_BINARY_DIR}
@@ -385,7 +426,7 @@ FILES
     ${TTDEV_REVISION_HEADER_FILE}
 LINK
     tt_base
-    gwen json png vorbis squirrel
+    gwen json png vorbis squirrel VisualBoy
     tt_engine tt_sys
     ${OPENAL_LIBRARY}
     $<$<BOOL:${USE_SDL2}>:lodepng>
@@ -474,6 +515,3 @@ LINK
 PROPERTIES
     FOLDER TwoTribes
 )
-
-add_subdirectory(../tools/shared tools)
-

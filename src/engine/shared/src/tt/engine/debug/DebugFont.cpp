@@ -2,6 +2,7 @@
 #include <tt/engine/debug/DebugFont.h>
 
 #include <tt/engine/debug/font_data.h>
+#include <tt/code/helpers.h>
 #include <tt/engine/renderer/Renderer.h>
 #include <tt/engine/renderer/Texture.h>
 #include <tt/engine/renderer/TexturePainter.h>

@@ -433,7 +433,7 @@ static inline s64 exchangeAdd64(vs32* p_addend, s64 p_value)
 static inline u32 compareExchange32(vu32* p_destination, u32 p_exchange, u32 p_comparand)
 {
 #ifdef __GNUC__
-	return __sync_comare_and_swap(p_destination, p_comparand, p_exchange);
+	return __sync_val_compare_and_swap(p_destination, p_comparand, p_exchange);
 #else
 	#error No Atomic implementation for this compiler
 #endif
@@ -443,7 +443,7 @@ static inline u32 compareExchange32(vu32* p_destination, u32 p_exchange, u32 p_c
 static inline s32 compareExchange32(vs32* p_destination, s32 p_exchange, s32 p_comparand)
 {
 #ifdef __GNUC__
-	return __sync_comare_and_swap(p_destination, p_comparand, p_exchange);
+	return __sync_val_compare_and_swap(p_destination, p_comparand, p_exchange);
 #else
 	#error No Atomic implementation for this compiler
 #endif
@@ -453,7 +453,7 @@ static inline s32 compareExchange32(vs32* p_destination, s32 p_exchange, s32 p_c
 static inline u64 compareExchange64(vu64* p_destination, u64 p_exchange, u64 p_comparand)
 {
 #ifdef __GNUC__
-	return __sync_comare_and_swap(p_destination, p_comparand, p_exchange);
+	return __sync_val_compare_and_swap(p_destination, p_comparand, p_exchange);
 #else
 	#error No Atomic implementation for this compiler
 #endif
@@ -463,7 +463,7 @@ static inline u64 compareExchange64(vu64* p_destination, u64 p_exchange, u64 p_c
 static inline s64 compareExchange64(vs64* p_destination, s64 p_exchange, s64 p_comparand)
 {
 #ifdef __GNUC__
-	return __sync_comare_and_swap(p_destination, p_comparand, p_exchange);
+	return __sync_val_compare_and_swap(p_destination, p_comparand, p_exchange);
 #else
 	#error No Atomic implementation for this compiler
 #endif
