@@ -221,7 +221,7 @@ PROPERTIES
 )
 
 set(VISUAL_BOY_COMMON
-    LINK tt_base
+    LINK tt_base z
     PROPERTIES FOLDER 3rdParty
     DEFINES PRIVATE C_CORE NO_LINK NO_PNG register=
 )

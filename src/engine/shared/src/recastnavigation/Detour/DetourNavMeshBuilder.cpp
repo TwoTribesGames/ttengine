@@ -37,7 +37,13 @@ struct BVItem
 	int i;
 };
 
-static int __cdecl compareItemX(const void* va, const void* vb)
+#ifdef _WIN32
+#define RECASTAPI __cdecl
+#else
+#define RECASTAPI
+#endif
+
+static int RECASTAPI compareItemX(const void* va, const void* vb)
 {
 	const BVItem* a = (const BVItem*)va;
 	const BVItem* b = (const BVItem*)vb;
@@ -48,7 +54,7 @@ static int __cdecl compareItemX(const void* va, const void* vb)
 	return 0;
 }
 
-static int __cdecl compareItemY(const void* va, const void* vb)
+static int RECASTAPI compareItemY(const void* va, const void* vb)
 {
 	const BVItem* a = (const BVItem*)va;
 	const BVItem* b = (const BVItem*)vb;
@@ -59,7 +65,7 @@ static int __cdecl compareItemY(const void* va, const void* vb)
 	return 0;
 }
 
-static int __cdecl compareItemZ(const void* va, const void* vb)
+static int RECASTAPI compareItemZ(const void* va, const void* vb)
 {
 	const BVItem* a = (const BVItem*)va;
 	const BVItem* b = (const BVItem*)vb;

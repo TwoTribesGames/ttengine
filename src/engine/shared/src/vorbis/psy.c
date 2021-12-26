@@ -1022,7 +1022,12 @@ float **_vp_quantize_couple_memo(vorbis_block *vb,
 }
 
 /* this is for per-channel noise normalization */
-static int __cdecl apsort(const void *a, const void *b){
+#ifdef _WIN32
+#define VORBISAPI __cdecl
+#else
+#define VORBISAPI
+#endif
+static int VORBISAPI apsort(const void *a, const void *b){
   float f1=(float)fabs(**(float**)a);
   float f2=(float)fabs(**(float**)b);
   return (f1<f2)-(f1>f2);

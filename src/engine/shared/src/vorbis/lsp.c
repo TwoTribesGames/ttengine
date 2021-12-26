@@ -294,7 +294,12 @@ static void cheby(float *g, int ord) {
   }
 }
 
-static int __cdecl comp(const void *a,const void *b){
+#ifdef _WIN32
+#define VORBISAPI __cdecl
+#else
+#define VORBISAPI
+#endif
+static int VORBISAPI comp(const void *a,const void *b){
   return (*(float *)a<*(float *)b)-(*(float *)a>*(float *)b);
 }
 

@@ -313,7 +313,12 @@ static ogg_uint32_t bitreverse(ogg_uint32_t x){
   return((x>> 1)&0x55555555UL) | ((x<< 1)&0xaaaaaaaaUL);
 }
 
-static int __cdecl sort32a(const void *a,const void *b){
+#ifdef _WIN32
+#define VORBISAPI __cdecl
+#else
+#define VORBISAPI
+#endif
+static int VORBISAPI sort32a(const void *a,const void *b){
   return ( **(ogg_uint32_t **)a>**(ogg_uint32_t **)b)- 
     ( **(ogg_uint32_t **)a<**(ogg_uint32_t **)b);
 }

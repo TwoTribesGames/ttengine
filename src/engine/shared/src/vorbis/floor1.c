@@ -193,7 +193,12 @@ static vorbis_info_floor *floor1_unpack (vorbis_info *vi,oggpack_buffer *opb){
   return(NULL);
 }
 
-static int __cdecl icomp(const void *a,const void *b){
+#ifdef _WIN32
+#define VORBISAPI __cdecl
+#else
+#define VORBISAPI
+#endif
+static int VORBISAPI icomp(const void *a,const void *b){
   return(**(int **)a-**(int **)b);
 }
 
