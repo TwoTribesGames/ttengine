@@ -13,14 +13,14 @@ namespace compression {
 
 
 // PNG custom function declarations
-void      __cdecl pngReadData    (png_structp p_pngPtr, png_bytep p_targetData, png_size_t p_requestedLength);
-void      __cdecl pngWriteData   (png_structp p_pngPtr, png_bytep p_dataToWrite, png_size_t p_dataLength);
-png_voidp __cdecl pngMalloc      (png_structp p_pngPtr, png_size_t p_size);
-void      __cdecl pngFree        (png_structp p_pngPtr, png_voidp p_ptr);
-void      __cdecl pngReadError   (png_structp p_pngPtr, png_const_charp p_errorMessage);
-void      __cdecl pngReadWarning (png_structp p_pngPtr, png_const_charp p_errorMessage);
-void      __cdecl pngWriteError  (png_structp p_pngPtr, png_const_charp p_errorMessage);
-void      __cdecl pngWriteWarning(png_structp p_pngPtr, png_const_charp p_errorMessage);
+void      PNGCAPI pngReadData    (png_structp p_pngPtr, png_bytep p_targetData, png_size_t p_requestedLength);
+void      PNGCAPI pngWriteData   (png_structp p_pngPtr, png_bytep p_dataToWrite, png_size_t p_dataLength);
+png_voidp PNGCAPI pngMalloc      (png_structp p_pngPtr, png_size_t p_size);
+void      PNGCAPI pngFree        (png_structp p_pngPtr, png_voidp p_ptr);
+void      PNGCAPI pngReadError   (png_structp p_pngPtr, png_const_charp p_errorMessage);
+void      PNGCAPI pngReadWarning (png_structp p_pngPtr, png_const_charp p_errorMessage);
+void      PNGCAPI pngWriteError  (png_structp p_pngPtr, png_const_charp p_errorMessage);
+void      PNGCAPI pngWriteWarning(png_structp p_pngPtr, png_const_charp p_errorMessage);
 
 
 // PNG Header information
@@ -375,7 +375,7 @@ void modifySettingsForRGBA(png_structp p_png, const PNGHeader& p_header, const P
 //--------------------------------------------------------------------------------------------------
 // PNG Custom function implementations
 
-void __cdecl pngReadData(png_structp p_pngPtr, png_bytep p_targetData, png_size_t p_requestedLength)
+void PNGCAPI pngReadData(png_structp p_pngPtr, png_bytep p_targetData, png_size_t p_requestedLength)
 {
 	void* ioPtr = png_get_io_ptr(p_pngPtr);
 	if (ioPtr == 0)
@@ -399,7 +399,7 @@ void __cdecl pngReadData(png_structp p_pngPtr, png_bytep p_targetData, png_size_
 }
 
 
-void __cdecl pngWriteData(png_structp p_pngPtr, png_bytep p_dataToWrite, png_size_t p_dataLength)
+void PNGCAPI pngWriteData(png_structp p_pngPtr, png_bytep p_dataToWrite, png_size_t p_dataLength)
 {
 	void* ioPtr = png_get_io_ptr(p_pngPtr);
 	if (ioPtr == 0)
@@ -418,7 +418,7 @@ void __cdecl pngWriteData(png_structp p_pngPtr, png_bytep p_dataToWrite, png_siz
 }
 
 
-png_voidp __cdecl pngMalloc(png_structp p_pngPtr, png_size_t p_size)
+png_voidp PNGCAPI pngMalloc(png_structp p_pngPtr, png_size_t p_size)
 {
 	if (p_pngPtr == 0 || p_size == 0)
 	{
@@ -428,7 +428,7 @@ png_voidp __cdecl pngMalloc(png_structp p_pngPtr, png_size_t p_size)
 }
 
 
-void __cdecl pngFree(png_structp p_pngPtr, png_voidp p_ptr)
+void PNGCAPI pngFree(png_structp p_pngPtr, png_voidp p_ptr)
 {
 	if (p_pngPtr != 0 && p_ptr != 0)
 	{
@@ -437,7 +437,7 @@ void __cdecl pngFree(png_structp p_pngPtr, png_voidp p_ptr)
 }
 
 
-void __cdecl pngReadError(png_structp p_pngPtr, png_const_charp p_errorMessage)
+void PNGCAPI pngReadError(png_structp p_pngPtr, png_const_charp p_errorMessage)
 {
 #if !defined(TT_BUILD_FINAL)
 	const char* filename = "";
@@ -456,7 +456,7 @@ void __cdecl pngReadError(png_structp p_pngPtr, png_const_charp p_errorMessage)
 }
 
 
-void __cdecl pngReadWarning(png_structp p_pngPtr, png_const_charp p_errorMessage)
+void PNGCAPI pngReadWarning(png_structp p_pngPtr, png_const_charp p_errorMessage)
 {
 #if !defined(TT_BUILD_FINAL)
 	const char* filename = "";
@@ -475,7 +475,7 @@ void __cdecl pngReadWarning(png_structp p_pngPtr, png_const_charp p_errorMessage
 }
 
 
-void __cdecl pngWriteError(png_structp p_pngPtr, png_const_charp p_errorMessage)
+void PNGCAPI pngWriteError(png_structp p_pngPtr, png_const_charp p_errorMessage)
 {
 #if !defined(TT_BUILD_FINAL)
 	const char* filename = "";
@@ -494,7 +494,7 @@ void __cdecl pngWriteError(png_structp p_pngPtr, png_const_charp p_errorMessage)
 }
 
 
-void __cdecl pngWriteWarning(png_structp p_pngPtr, png_const_charp p_errorMessage)
+void PNGCAPI pngWriteWarning(png_structp p_pngPtr, png_const_charp p_errorMessage)
 {
 #if !defined(TT_BUILD_FINAL)
 	const char* filename = "";
