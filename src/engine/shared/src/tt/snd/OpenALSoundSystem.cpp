@@ -2,8 +2,8 @@
 #include <vector>
 
 #if !defined(TT_PLATFORM_OSX) && !defined(TT_PLATFORM_LNX)
-#include <AL/efx-creative.h>
-#include <AL/EFX-Util.h>
+#include <al/efx-creative.h>
+#include <al/EFX-Util.h>
 #endif
 
 #include <tt/audio/helpers.h>
