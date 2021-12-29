@@ -261,7 +261,7 @@
       <AdditionalManifestFiles>$(ProjectDir)res\visualstyle.manifest;%(AdditionalManifestFiles)</AdditionalManifestFiles>
     </Manifest>
     <PostBuildEvent>
-      <Command>copy $(SolutionDir)..\tools\dlls\* $(OutDir) &amp;&amp; $(TargetPath) --unittest</Command>
+      <Command>copy $(SolutionDir)..\tools\dlls\* $(OutDir)</Command>
     </PostBuildEvent>
     <PostBuildEvent>
       <Message>Performing Unit Tests...</Message>
@@ -388,7 +388,7 @@
       <AdditionalManifestFiles>$(ProjectDir)res\visualstyle.manifest;%(AdditionalManifestFiles)</AdditionalManifestFiles>
     </Manifest>
     <PostBuildEvent>
-      <Command>copy $(SolutionDir)..\tools\dlls\* $(OutDir) &amp;&amp; $(TargetPath) --unittest</Command>
+      <Command>copy $(SolutionDir)..\tools\dlls\* $(OutDir)</Command>
     </PostBuildEvent>
     <PostBuildEvent>
       <Message>Performing Unit Tests...</Message>
