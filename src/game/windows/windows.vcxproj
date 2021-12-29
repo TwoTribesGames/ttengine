@@ -143,7 +143,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Dev|x64'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(SolutionDir)engine\windows\inc;$(SolutionDir)engine\shared\inc;$(SolutionDir)game\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)engine\windows\inc;$(SolutionDir)engine\windows\prebuilt\openal\include;$(SolutionDir)engine\shared\inc;$(SolutionDir)game\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;TT_ASSERT_ON;TT_PLATFORM_WIN;TT_BUILD_DEV;TT_DEMO_BUILD=0;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -182,7 +182,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Test|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(SolutionDir)engine\windows\inc;$(SolutionDir)engine\shared\inc;$(SolutionDir)game\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)engine\windows\inc;$(SolutionDir)engine\windows\prebuilt\openal\include;$(SolutionDir)engine\shared\inc;$(SolutionDir)game\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CRT_SECURE_NO_WARNINGS;TT_ASSERT_ON;TT_PLATFORM_WIN;TT_BUILD_TEST;TT_DEMO_BUILD=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <PrecompiledHeader>
@@ -227,7 +227,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WIN_Final|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(SolutionDir)engine\windows\inc;$(SolutionDir)engine\shared\inc;$(SolutionDir)game\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)engine\windows\inc;$(SolutionDir)engine\windows\prebuilt\openal\include;$(SolutionDir)engine\shared\inc;$(SolutionDir)game\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CRT_SECURE_NO_WARNINGS;TT_PLATFORM_WIN;TT_BUILD_FINAL;TT_DEMO_BUILD=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <PrecompiledHeader>
@@ -270,7 +270,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='STEAM_Dev|x64'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(SolutionDir)engine\windows\inc;$(SolutionDir)engine\shared\inc;$(SolutionDir)game\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)engine\windows\inc;$(SolutionDir)engine\windows\prebuilt\openal\include;$(SolutionDir)engine\shared\inc;$(SolutionDir)game\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;TT_ASSERT_ON;TT_PLATFORM_WIN;TT_BUILD_DEV;TT_DEMO_BUILD=0;TT_STEAM_BUILD;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -309,7 +309,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='STEAM_Test|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(SolutionDir)engine\windows\inc;$(SolutionDir)engine\shared\inc;$(SolutionDir)game\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)engine\windows\inc;$(SolutionDir)engine\windows\prebuilt\openal\include;$(SolutionDir)engine\shared\inc;$(SolutionDir)game\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CRT_SECURE_NO_WARNINGS;TT_ASSERT_ON;TT_PLATFORM_WIN;TT_BUILD_TEST;TT_DEMO_BUILD=0;TT_STEAM_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <PrecompiledHeader>
@@ -354,7 +354,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='STEAM_Final|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(SolutionDir)engine\windows\inc;$(SolutionDir)engine\shared\inc;$(SolutionDir)game\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)engine\windows\inc;$(SolutionDir)engine\windows\prebuilt\openal\include;$(SolutionDir)engine\shared\inc;$(SolutionDir)game\shared\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CRT_SECURE_NO_WARNINGS;TT_PLATFORM_WIN;TT_BUILD_FINAL;TT_DEMO_BUILD=0;TT_STEAM_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <PrecompiledHeader>
