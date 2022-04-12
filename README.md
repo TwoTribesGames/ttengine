@@ -46,7 +46,7 @@ Without our written permission you are not allowed to use them (nor any derivate
 ├── src
 │   ├── engine                  -> contains the Two Tribes engine. The main engine upon which our games were built
 │   ├── game                    -> contains game specific code. This code was used in our latest projects: Toki Tori 2+ and RIVE.
-│   ├── ttgame.sln              -> the Visual Studio 2017 solution
+│   ├── ttgame.sln              -> the Visual Studio 2022 solution
 ├── tools                       -> contains various tools required for the asset conversion
 └── .gitattributes
 └── .gitignore
@@ -108,11 +108,15 @@ Any text editor would do fine, but VS Code is highly recommended.
 
 # Prerequisites
 
-## Visual Studio 2017
+## Visual Studio 2022
 
--   Get and install VS 2017:
+-   Get and install VS 2022: https://visualstudio.microsoft.com/vs/
 
-https://visualstudio.microsoft.com/vs/older-downloads/#visual-studio-2017-and-other-products
+-   select VS 2022. The Community Edition should work fine.
+
+-   Select the "Game Development with C++" workload. This will automatically include the latest Windows 10 SDK.
+
+-   Ensure to add the following "Individual Component": `"C++ ATL for latest v143 build tools (x86 & x64)`
 
 ## DirectX June 2010 SDK
 
@@ -156,9 +160,3 @@ Now we need to let Visual Studio know the location of this DirectX version.
 ### Win32
 
 Win32 support in the engine has been deprecated.
-
-## Windows SDK
-
--   Go to https://developer.microsoft.com/en-us/windows/downloads/sdk-archive/
-
--   Locate and install Windows 10 SDK, version 1809 (10.0.17763.0). Newer versions can be used too, but then you need to retarget the SDK version of all projects.
